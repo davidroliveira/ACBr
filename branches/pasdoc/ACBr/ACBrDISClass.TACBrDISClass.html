@@ -1,0 +1,307 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrDISClass: Classe TACBrDISClass</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrDISClass"></a><h1 class="cio">Classe TACBrDISClass</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrDISClass.html">ACBrDISClass</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrDISClass = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+Classe generica de DISPLAY, nao implementa nenhum modelo especifico, apenas declara a Classe. NAO DEVE SER INSTANCIADA. Usada apenas como base para as demais Classes de DISPLAY como por exemplo a classe <a class="normal"  href="ACBrDISGertecSerial.TACBrDISGertecSerial.html">TACBrDISGertecSerial</a></p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TACBrDISClass</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDISClass.TACBrDISClass.html#fsColunas">fsColunas</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDISClass.TACBrDISClass.html#fsLinhasCount">fsLinhasCount</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDISClass.TACBrDISClass.html#fpDevice">fpDevice</a></b>: <a   href="ACBrDevice.TACBrDevice.html">TACBrDevice</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDISClass.TACBrDISClass.html#fpAtivo">fpAtivo</a></b>: Boolean ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDISClass.TACBrDISClass.html#fpModeloStr">fpModeloStr</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDISClass.TACBrDISClass.html#fpPassos">fpPassos</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDISClass.TACBrDISClass.html#fpIntervaloEnvioBytes">fpIntervaloEnvioBytes</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDISClass.TACBrDISClass.html#Cursor">Cursor</a></b>: TPoint ;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDISClass.TACBrDISClass.html#SetAtivo">SetAtivo</a></b>(const Value: Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDISClass.TACBrDISClass.html#SetColunas">SetColunas</a></b>(const Value: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrDISClass.TACBrDISClass.html#Create">Create</a></b>(AOwner: TComponent);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Destructor <b><a   href="ACBrDISClass.TACBrDISClass.html#Destroy">Destroy</a></b> ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDISClass.TACBrDISClass.html#Ativar">Ativar</a></b> ; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDISClass.TACBrDISClass.html#Desativar">Desativar</a></b> ; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDISClass.TACBrDISClass.html#LimparDisplay">LimparDisplay</a></b> ; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDISClass.TACBrDISClass.html#PosicionarCursor">PosicionarCursor</a></b>( Linha, Coluna: Integer ) ; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDISClass.TACBrDISClass.html#Escrever">Escrever</a></b>( Texto : String ) ; virtual;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDISClass.TACBrDISClass.html#Ativo">Ativo</a></b>  : Boolean read <a   href="ACBrDISClass.TACBrDISClass.html#fpAtivo">fpAtivo</a> write <a   href="ACBrDISClass.TACBrDISClass.html#SetAtivo">SetAtivo</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDISClass.TACBrDISClass.html#ModeloStr">ModeloStr</a></b>: String  read <a   href="ACBrDISClass.TACBrDISClass.html#fpModeloStr">fpModeloStr</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDISClass.TACBrDISClass.html#LinhasCount">LinhasCount</a></b> : Integer read <a   href="ACBrDISClass.TACBrDISClass.html#fsLinhasCount">fsLinhasCount</a>  write <a   href="ACBrDISClass.TACBrDISClass.html#fsLinhasCount">fsLinhasCount</a>  ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDISClass.TACBrDISClass.html#Colunas">Colunas</a></b> : Integer read <a   href="ACBrDISClass.TACBrDISClass.html#fsColunas">fsColunas</a> write <a   href="ACBrDISClass.TACBrDISClass.html#SetColunas">SetColunas</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDISClass.TACBrDISClass.html#IntervaloEnvioBytes">IntervaloEnvioBytes</a></b> : Integer read <a   href="ACBrDISClass.TACBrDISClass.html#fpIntervaloEnvioBytes">fpIntervaloEnvioBytes</a>
+        write <a   href="ACBrDISClass.TACBrDISClass.html#fpIntervaloEnvioBytes">fpIntervaloEnvioBytes</a> ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsColunas"></a><code><b>fsColunas</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsLinhasCount"></a><code><b>fsLinhasCount</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpDevice"></a><code><b>fpDevice</b>: <a   href="ACBrDevice.TACBrDevice.html">TACBrDevice</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpAtivo"></a><code><b>fpAtivo</b>: Boolean ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpModeloStr"></a><code><b>fpModeloStr</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpPassos"></a><code><b>fpPassos</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpIntervaloEnvioBytes"></a><code><b>fpIntervaloEnvioBytes</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Cursor"></a><code><b>Cursor</b>: TPoint ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetAtivo"></a><code>procedure <b>SetAtivo</b>(const Value: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetColunas"></a><code>procedure <b>SetColunas</b>(const Value: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>Destructor <b>Destroy</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Ativar"></a><code>procedure <b>Ativar</b> ; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Desativar"></a><code>procedure <b>Desativar</b> ; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LimparDisplay"></a><code>procedure <b>LimparDisplay</b> ; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PosicionarCursor"></a><code>procedure <b>PosicionarCursor</b>( Linha, Coluna: Integer ) ; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Escrever"></a><code>procedure <b>Escrever</b>( Texto : String ) ; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Ativo"></a><code>property <b>Ativo</b>  : Boolean read <a   href="ACBrDISClass.TACBrDISClass.html#fpAtivo">fpAtivo</a> write <a   href="ACBrDISClass.TACBrDISClass.html#SetAtivo">SetAtivo</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ModeloStr"></a><code>property <b>ModeloStr</b>: String  read <a   href="ACBrDISClass.TACBrDISClass.html#fpModeloStr">fpModeloStr</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LinhasCount"></a><code>property <b>LinhasCount</b> : Integer read <a   href="ACBrDISClass.TACBrDISClass.html#fsLinhasCount">fsLinhasCount</a>  write <a   href="ACBrDISClass.TACBrDISClass.html#fsLinhasCount">fsLinhasCount</a>  ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Colunas"></a><code>property <b>Colunas</b> : Integer read <a   href="ACBrDISClass.TACBrDISClass.html#fsColunas">fsColunas</a> write <a   href="ACBrDISClass.TACBrDISClass.html#SetColunas">SetColunas</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IntervaloEnvioBytes"></a><code>property <b>IntervaloEnvioBytes</b> : Integer read <a   href="ACBrDISClass.TACBrDISClass.html#fpIntervaloEnvioBytes">fpIntervaloEnvioBytes</a>
+        write <a   href="ACBrDISClass.TACBrDISClass.html#fpIntervaloEnvioBytes">fpIntervaloEnvioBytes</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:24</em>
+</span>
+</body></html>

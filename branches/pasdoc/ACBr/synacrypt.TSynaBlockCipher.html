@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: synacrypt: Classe TSynaBlockCipher</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TSynaBlockCipher"></a><h1 class="cio">Classe TSynaBlockCipher</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="synacrypt.html">synacrypt</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TSynaBlockCipher = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+Implementation of common routines for 64-bit block ciphers</p>
+<p>
+:
+
+<p>Do not use this class directly, use descendants only!</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TSynaBlockCipher</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="synacrypt.TSynaBlockCipher.html#IV">IV</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="synacrypt.TSynaBlockCipher.html#CV">CV</a></b>: AnsiString;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synacrypt.TSynaBlockCipher.html#InitKey">InitKey</a></b>(Key: AnsiString); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synacrypt.TSynaBlockCipher.html#IncCounter">IncCounter</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synacrypt.TSynaBlockCipher.html#SetIV">SetIV</a></b>(const Value: AnsiString); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synacrypt.TSynaBlockCipher.html#GetIV">GetIV</a></b>: AnsiString; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synacrypt.TSynaBlockCipher.html#Reset">Reset</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synacrypt.TSynaBlockCipher.html#EncryptECB">EncryptECB</a></b>(const InData: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synacrypt.TSynaBlockCipher.html#DecryptECB">DecryptECB</a></b>(const InData: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synacrypt.TSynaBlockCipher.html#EncryptCBC">EncryptCBC</a></b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synacrypt.TSynaBlockCipher.html#DecryptCBC">DecryptCBC</a></b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synacrypt.TSynaBlockCipher.html#EncryptCFB8bit">EncryptCFB8bit</a></b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synacrypt.TSynaBlockCipher.html#DecryptCFB8bit">DecryptCFB8bit</a></b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synacrypt.TSynaBlockCipher.html#EncryptCFBblock">EncryptCFBblock</a></b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synacrypt.TSynaBlockCipher.html#DecryptCFBblock">DecryptCFBblock</a></b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synacrypt.TSynaBlockCipher.html#EncryptOFB">EncryptOFB</a></b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synacrypt.TSynaBlockCipher.html#DecryptOFB">DecryptOFB</a></b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synacrypt.TSynaBlockCipher.html#EncryptCTR">EncryptCTR</a></b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synacrypt.TSynaBlockCipher.html#DecryptCTR">DecryptCTR</a></b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="synacrypt.TSynaBlockCipher.html#Create">Create</a></b>(Key: AnsiString);</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="IV"></a><code><b>IV</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CV"></a><code><b>CV</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="InitKey"></a><code>procedure <b>InitKey</b>(Key: AnsiString); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="IncCounter"></a><code>procedure <b>IncCounter</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetIV"></a><code>procedure <b>SetIV</b>(const Value: AnsiString); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Sets the <a class="normal"  href="synacrypt.TSynaBlockCipher.html#IV">IV</a> to Value and performs a <a class="normal"  href="synacrypt.TSynaBlockCipher.html#Reset">reset</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetIV"></a><code>function <b>GetIV</b>: AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Returns the current chaining information, not the actual <a class="normal"  href="synacrypt.TSynaBlockCipher.html#IV">IV</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Reset"></a><code>procedure <b>Reset</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<code>Reset</code> any stored chaining information</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EncryptECB"></a><code>function <b>EncryptECB</b>(const InData: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Encrypt a 64-bit block of data using the ECB method of encryption</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DecryptECB"></a><code>function <b>DecryptECB</b>(const InData: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Decrypt a 64-bit block of data using the ECB method of decryption</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EncryptCBC"></a><code>function <b>EncryptCBC</b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Encrypt data using the CBC method of encryption</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DecryptCBC"></a><code>function <b>DecryptCBC</b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Decrypt data using the CBC method of decryption</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EncryptCFB8bit"></a><code>function <b>EncryptCFB8bit</b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Encrypt data using the CFB (8 bit) method of encryption</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DecryptCFB8bit"></a><code>function <b>DecryptCFB8bit</b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Decrypt data using the CFB (8 bit) method of decryption</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EncryptCFBblock"></a><code>function <b>EncryptCFBblock</b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Encrypt data using the CFB (block) method of encryption</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DecryptCFBblock"></a><code>function <b>DecryptCFBblock</b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Decrypt data using the CFB (block) method of decryption</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EncryptOFB"></a><code>function <b>EncryptOFB</b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Encrypt data using the OFB method of encryption</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DecryptOFB"></a><code>function <b>DecryptOFB</b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Decrypt data using the OFB method of decryption</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EncryptCTR"></a><code>function <b>EncryptCTR</b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Encrypt data using the CTR method of encryption</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DecryptCTR"></a><code>function <b>DecryptCTR</b>(const Indata: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Decrypt data using the CTR method of decryption</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(Key: AnsiString);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<code>Create</code> a encryptor/decryptor instance and initialize it by the Key.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:21:06</em>
+</span>
+</body></html>

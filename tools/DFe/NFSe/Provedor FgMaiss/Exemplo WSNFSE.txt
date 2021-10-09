@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<definitions xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="https://www1.fgmaiss.com.br/issqn/ws/wsnfe_teste_homologacao.php" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="https://www1.fgmaiss.com.br/issqn/ws/wsnfe_teste_homologacao.php">
+<types>
+<xsd:schema targetNamespace="https://www1.fgmaiss.com.br/issqn/ws/wsnfe_teste_homologacao.php">
+ <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+ <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/"/>
+ <xsd:complexType name="StrEnvNfe">
+  <xsd:complexContent>
+   <xsd:restriction base="SOAP-ENC:Array">
+    <xsd:attribute ref="SOAP-ENC:arrayType" wsdl:arrayType="tns:EnvNfe[]"/>
+   </xsd:restriction>
+  </xsd:complexContent>
+ </xsd:complexType>
+ <xsd:complexType name="EnvNfe">
+  <xsd:all>
+   <xsd:element name="okk" type="xsd:string"/>
+  </xsd:all>
+ </xsd:complexType>
+</xsd:schema>
+</types>
+<message name="EnvNfeRequest">
+  <part name="usuario" type="xsd:string"/>           <usuario xsi:type="xsd:string">901567</usuario>
+  <part name="pass" type="xsd:string"/>              <pass xsi:type="xsd:string">123456</pass>             
+  <part name="prf" type="xsd:string"/>               ->00.000.000/0000-00 
+  <part name="usr" type="xsd:string"/>               ->57.657.017/0001-33 
+  <part name="ctr" type="xsd:string"/>               ->00001
+  <part name="cnpj" type="xsd:string"/>              ->99.999.999/9999-99
+  <part name="cnpjn" type="xsd:string"/>             ->ZE S/A
+  <part name="ie" type="xsd:string"/>                ->908.098.800
+  <part name="im" type="xsd:string"/>                ->890
+  <part name="lgr" type="xsd:string"/>               ->RUA SAO PAULO
+  <part name="num" type="xsd:string"/>               ->8520
+  <part name="cpl" type="xsd:string"/>               ->PREDIO
+  <part name="bai" type="xsd:string"/>               ->CENTRO
+  <part name="cid" type="xsd:string"/>               ->SAO PAULO
+  <part name="est" type="xsd:string"/>               ->SP
+  <part name="cep" type="xsd:string"/>               ->15150000
+  <part name="fon" type="xsd:string"/>               ->1732750000
+  <part name="mail" type="xsd:string"/>              ->sa@sa.com.br
+  <part name="dat" type="xsd:string"/>               ->10/11/2011
+  <part name="f1n" type="xsd:string"/>               ->123
+  <part name="f1d" type="xsd:string"/>               ->10/11/2011
+  <part name="f1v" type="xsd:string"/>               ->1000.00
+  <part name="f2n" type="xsd:string"/>               ->
+  <part name="f2d" type="xsd:string"/>               ->
+  <part name="f2v" type="xsd:string"/>               ->
+  <part name="f3n" type="xsd:string"/>               ->
+  <part name="f3d" type="xsd:string"/>               ->
+  <part name="f3v" type="xsd:string"/>               ->
+  <part name="f4n" type="xsd:string"/>               ->
+  <part name="f4d" type="xsd:string"/>               ->
+  <part name="f4v" type="xsd:string"/>               ->
+  <part name="f5n" type="xsd:string"/>               ->
+  <part name="f5d" type="xsd:string"/>               ->
+  <part name="f5v" type="xsd:string"/>               ->
+  <part name="f6n" type="xsd:string"/>               ->
+  <part name="f6d" type="xsd:string"/>               ->
+  <part name="f6v" type="xsd:string"/>               ->
+  <part name="item1" type="xsd:string"/>             ->01.01
+  <part name="item2" type="xsd:string"/>             ->
+  <part name="item3" type="xsd:string"/>             ->
+  <part name="aliq1" type="xsd:string"/>             ->2.00
+  <part name="aliq2" type="xsd:string"/>             ->
+  <part name="aliq3" type="xsd:string"/>             ->
+  <part name="val1" type="xsd:string"/>              ->1000.00
+  <part name="val2" type="xsd:string"/>              ->
+  <part name="val3" type="xsd:string"/>              ->
+  <part name="loc" type="xsd:string"/>               ->4102
+  <part name="ret" type="xsd:string"/>               ->NAO
+  <part name="txt" type="xsd:string"/>               ->PRESTACAO DE SERVICOS
+  <part name="val" type="xsd:string"/>               ->1000.00
+  <part name="valtrib" type="xsd:string"/>           ->1000.00
+  <part name="iss" type="xsd:string"/>               ->20.00
+  <part name="issret" type="xsd:string"/>            ->0.00
+  <part name="desci" type="xsd:string"/>             ->0.00
+  <part name="desco" type="xsd:string"/>             ->0.00
+  <part name="binss" type="xsd:string"/>             ->0.00
+  <part name="birrf" type="xsd:string"/>             ->0.00
+  <part name="bcsll" type="xsd:string"/>             ->0.00
+  <part name="bpis" type="xsd:string"/>              ->0.00
+  <part name="bcofins" type="xsd:string"/>           ->0.00
+  <part name="ainss" type="xsd:string"/>             ->0.00
+  <part name="airrf" type="xsd:string"/>             ->0.00
+  <part name="acsll" type="xsd:string"/>             ->0.00
+  <part name="apis" type="xsd:string"/>              ->0.00
+  <part name="acofins" type="xsd:string"/>           ->0.00
+  <part name="inss" type="xsd:string"/>              ->0.00
+  <part name="irrf" type="xsd:string"/>              ->0.00
+  <part name="csll" type="xsd:string"/>              ->0.00
+  <part name="pis" type="xsd:string"/>               ->0.00
+  <part name="cofins" type="xsd:string"/>			 ->0.00
+  <part name="item4" type="xsd:string"/>             ->
+  <part name="item5" type="xsd:string"/>             ->
+  <part name="item6" type="xsd:string"/>             ->
+  <part name="item7" type="xsd:string"/>             ->
+  <part name="item8" type="xsd:string"/>             ->
+  <part name="aliq4" type="xsd:string"/>             ->
+  <part name="aliq5" type="xsd:string"/>             ->
+  <part name="aliq6" type="xsd:string"/>             ->
+  <part name="aliq7" type="xsd:string"/>             ->
+  <part name="aliq8" type="xsd:string"/>             ->
+  <part name="val4" type="xsd:string"/>              ->
+  <part name="val5" type="xsd:string"/>              ->
+  <part name="val6" type="xsd:string"/>              ->
+  <part name="val7" type="xsd:string"/>              ->
+  <part name="val8" type="xsd:string"/>              ->
+  <part name="iteser1" type="xsd:string"/>           ->01.01
+  <part name="iteser2" type="xsd:string"/>           ->
+  <part name="iteser3" type="xsd:string"/>           ->
+  <part name="iteser4" type="xsd:string"/>           ->
+  <part name="iteser5" type="xsd:string"/>           ->
+  <part name="iteser6" type="xsd:string"/>           ->
+  <part name="iteser7" type="xsd:string"/>           ->
+  <part name="iteser8" type="xsd:string"/>           ->
+  <part name="alqser1" type="xsd:string"/>           ->2.00
+  <part name="alqser2" type="xsd:string"/>           ->
+  <part name="alqser3" type="xsd:string"/>           ->
+  <part name="alqser4" type="xsd:string"/>           ->
+  <part name="alqser5" type="xsd:string"/>           ->
+  <part name="alqser6" type="xsd:string"/>           ->
+  <part name="alqser7" type="xsd:string"/>           ->
+  <part name="alqser8" type="xsd:string"/>           ->
+  <part name="valser1" type="xsd:string"/>           ->1000.00
+  <part name="valser2" type="xsd:string"/>           ->
+  <part name="valser3" type="xsd:string"/>           ->
+  <part name="valser4" type="xsd:string"/>           ->
+  <part name="valser5" type="xsd:string"/>           ->
+  <part name="valser6" type="xsd:string"/>           ->
+  <part name="valser7" type="xsd:string"/>           ->
+  <part name="valser8" type="xsd:string"/>           ->
+  <part name="paisest" type="xsd:string"/>           ->
+  <part name="ssrecbr" type="xsd:string"/>           ->
+  <part name="ssanexo" type="xsd:string"/>           ->
+  <part name="ssdtini" type="xsd:string"/>           ->
+</message>
+<message name="EnvNfeResponse">
+  <part name="return" type="tns:StrEnvNfe"/></message>
+<portType name="webservicePortType">
+  <operation name="EnvNfe">
+    <input message="tns:EnvNfeRequest"/>
+    <output message="tns:EnvNfeResponse"/>
+  </operation>
+</portType>
+<binding name="webserviceBinding" type="tns:webservicePortType">
+  <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <operation name="EnvNfe">
+    <soap:operation soapAction="https://www1.fgmaiss.com.br/issqn/wservice/wsnfe_teste_homologacao.php/EnvNfe" style="rpc"/>
+    <input><soap:body use="encoded" namespace="" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/></input>
+    <output><soap:body use="encoded" namespace="" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/></output>
+  </operation>
+</binding>
+<service name="webservice">
+  <port name="webservicePort" binding="tns:webserviceBinding">
+    <soap:address location="https://www1.fgmaiss.com.br/issqn/wservice/wsnfe_teste_homologacao.php"/>
+  </port>
+</service>
+</definitions>

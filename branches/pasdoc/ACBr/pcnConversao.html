@@ -1,0 +1,3025 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: pcnConversao</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit pcnConversao</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td>Classes, Interfaces, Objetos e Registros</td><td><a class="section"  href="#%40FuncsProcs">Funções e Procedimentos</a></td><td><a class="section"  href="#%40Types">Tipos</a></td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+////////////////////////////////////////////////////////////////////////////// // PCN - Projeto Cooperar NFe // // Descrição: Classes para geração/leitura dos arquivos xml da NFe // // site: www.projetocooperar.org/nfe // email: projetocooperar@zipmail.com.br // forum: <a  target="_parent" href="http://br.groups.yahoo.com/group/projeto_cooperar_nfe/">http://br.groups.yahoo.com/group/projeto_cooperar_nfe/</a> // projeto: <a  target="_parent" href="http://code.google.com/p/projetocooperar/">http://code.google.com/p/projetocooperar/</a> // svn: <a  target="_parent" href="http://projetocooperar.googlecode.com/svn/trunk/">http://projetocooperar.googlecode.com/svn/trunk/</a> // // Coordenação: (c) 2009 - Paulo Casagrande // // Equipe: Vide o arquivo leiame.txt na pasta raiz do projeto // // Desenvolvimento // de Cte: Wiliam Zacarias da Silva Rosa // // Versão: Vide o arquivo leiame.txt na pasta raiz do projeto // // Licença: GNU Lesser General Public License (GNU LGPL) // // - Este programa é software livre; você pode redistribuí-lo // e/ou modificá-lo sob os termos da Licença Pública Geral GNU, // conforme publicada pela Free Software Foundation; tanto a // versão 2 da Licença como (a seu critério) qualquer versão // mais nova. // // - Este programa é distribuído na expectativa de ser útil, // mas SEM QUALQUER GARANTIA; sem mesmo a garantia implícita de // COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO EM // PARTICULAR. Consulte a Licença Pública Geral GNU para obter // mais detalhes. Você deve ter recebido uma cópia da Licença // Pública Geral GNU junto com este programa; se não, escreva // para a Free Software Foundation, Inc., 59 Temple Place, // Suite 330, Boston, MA - 02111-1307, USA ou consulte a // licença oficial em <a  target="_parent" href="http://www.gnu.org/licenses/gpl.txt">http://www.gnu.org/licenses/gpl.txt</a> // // Nota (1): - Esta licença não concede o direito de uso do nome // &quot;PCN - Projeto Cooperar NFe&quot;, não podendo o mesmo ser // utilizado sem previa autorização. // // Nota (2): - O uso integral (ou parcial) das units do projeto esta // condicionado a manutenção deste cabeçalho junto ao código // // //////////////////////////////////////////////////////////////////////////////</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>Variants</li><li>Classes</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40FuncsProcs"></a><h3 class="summary">Funções e Procedimentos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToEnumerado">StrToEnumerado</a></b>(var ok: boolean; const s: string; const AString: array of string; const AEnumerados: array of variant): variant;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#EnumeradoToStr">EnumeradoToStr</a></b>(const t: variant; const AString: array of string; const AEnumerados: array of variant): variant;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#SchemaToStr">SchemaToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnSchema">TpcnSchema</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToSchema">StrToSchema</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnSchema">TpcnSchema</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TipoLayoutToStr">TipoLayoutToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnTipoLayout">TpcnTipoLayout</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTipoLayout">StrToTipoLayout</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnTipoLayout">TpcnTipoLayout</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#IndpagToStr">IndpagToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnIndicadorPagamento">TpcnIndicadorPagamento</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToIndpag">StrToIndpag</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnIndicadorPagamento">TpcnIndicadorPagamento</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#tpNFToStr">tpNFToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnTipoNFe">TpcnTipoNFe</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpNF">StrToTpNF</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnTipoNFe">TpcnTipoNFe</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpImpToStr">TpImpToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnTipoImpressao">TpcnTipoImpressao</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpImp">StrToTpImp</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnTipoImpressao">TpcnTipoImpressao</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpEmisToStr">TpEmisToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnTipoEmissao">TpcnTipoEmissao</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpEmis">StrToTpEmis</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnTipoEmissao">TpcnTipoEmissao</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpAmbToStr">TpAmbToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnTipoAmbiente">TpcnTipoAmbiente</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpAmb">StrToTpAmb</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnTipoAmbiente">TpcnTipoAmbiente</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpSitToStr">TpSitToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnSituacaoEmissor">TpcnSituacaoEmissor</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpSit">StrToTpSit</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnSituacaoEmissor">TpcnSituacaoEmissor</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#FinNFeToStr">FinNFeToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnFinalidadeNFe">TpcnFinalidadeNFe</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToFinNFe">StrToFinNFe</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnFinalidadeNFe">TpcnFinalidadeNFe</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#procEmiToStr">procEmiToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnProcessoEmissao">TpcnProcessoEmissao</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToprocEmi">StrToprocEmi</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnProcessoEmissao">TpcnProcessoEmissao</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#tpOPToStr">tpOPToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnTipoOperacao">TpcnTipoOperacao</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrTotpOP">StrTotpOP</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnTipoOperacao">TpcnTipoOperacao</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#condVeicToStr">condVeicToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnCondicaoVeiculo">TpcnCondicaoVeiculo</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrTocondVeic">StrTocondVeic</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnCondicaoVeiculo">TpcnCondicaoVeiculo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#tpArmaToStr">tpArmaToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnTipoArma">TpcnTipoArma</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrTotpArma">StrTotpArma</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnTipoArma">TpcnTipoArma</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#OrigToStr">OrigToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnOrigemMercadoria">TpcnOrigemMercadoria</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToOrig">StrToOrig</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnOrigemMercadoria">TpcnOrigemMercadoria</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#CSTICMSToStr">CSTICMSToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnCSTIcms">TpcnCSTIcms</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToCSTICMS">StrToCSTICMS</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnCSTIcms">TpcnCSTIcms</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#CSOSNIcmsToStr">CSOSNIcmsToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnCSOSNIcms">TpcnCSOSNIcms</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToCSOSNIcms">StrToCSOSNIcms</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnCSOSNIcms">TpcnCSOSNIcms</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#CSTICMSToStrTagPos">CSTICMSToStrTagPos</a></b>(const t: <a   href="pcnConversao.html#TpcnCSTIcms">TpcnCSTIcms</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#CSTICMSToStrTagPosText">CSTICMSToStrTagPosText</a></b>(const t: <a   href="pcnConversao.html#TpcnCSTIcms">TpcnCSTIcms</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#CSOSNToStrTagPos">CSOSNToStrTagPos</a></b>(const t: <a   href="pcnConversao.html#TpcnCSOSNIcms">TpcnCSOSNIcms</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#CSOSNToStrID">CSOSNToStrID</a></b>(const t: <a   href="pcnConversao.html#TpcnCSOSNIcms">TpcnCSOSNIcms</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#modBCToStr">modBCToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcms">TpcnDeterminacaoBaseIcms</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrTomodBC">StrTomodBC</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcms">TpcnDeterminacaoBaseIcms</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#modBCSTToStr">modBCSTToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcmsST">TpcnDeterminacaoBaseIcmsST</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrTomodBCST">StrTomodBCST</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcmsST">TpcnDeterminacaoBaseIcmsST</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#motDesICMSToStr">motDesICMSToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnMotivoDesoneracaoICMS">TpcnMotivoDesoneracaoICMS</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrTomotDesICMS">StrTomotDesICMS</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnMotivoDesoneracaoICMS">TpcnMotivoDesoneracaoICMS</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#CSTIPIToStr">CSTIPIToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnCstIpi">TpcnCstIpi</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToCSTIPI">StrToCSTIPI</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnCstIpi">TpcnCstIpi</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#CSTPISToStr">CSTPISToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnCstPis">TpcnCstPIS</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToCSTPIS">StrToCSTPIS</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnCstPis">TpcnCstPIS</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#CSTCOFINSToStr">CSTCOFINSToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnCstCofins">TpcnCstCOFINS</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToCSTCOFINS">StrToCSTCOFINS</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnCstCofins">TpcnCstCOFINS</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#modFreteToStr">modFreteToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnModalidadeFrete">TpcnModalidadeFrete</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrTomodFrete">StrTomodFrete</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnModalidadeFrete">TpcnModalidadeFrete</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#indProcToStr">indProcToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnIndicadorProcesso">TpcnIndicadorProcesso</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToindProc">StrToindProc</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnIndicadorProcesso">TpcnIndicadorProcesso</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#CRTToStr">CRTToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnCRT">TpcnCRT</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToCRT">StrToCRT</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnCRT">TpcnCRT</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#indTotToStr">indTotToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnIndicadorTotal">TpcnIndicadorTotal</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToindTot">StrToindTot</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnIndicadorTotal">TpcnIndicadorTotal</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#tpforPagToStr">tpforPagToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteFormaPagamento">TpcteFormaPagamento</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#tpforPagToStrText">tpforPagToStrText</a></b>(const t: <a   href="pcnConversao.html#TpcteFormaPagamento">TpcteFormaPagamento</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrTotpforPag">StrTotpforPag</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteFormaPagamento">TpcteFormaPagamento</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#tpCTePagToStr">tpCTePagToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoCTe">TpcteTipoCTe</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#tpCTToStr">tpCTToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoCTe">TpcteTipoCTe</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#tpCTToStrText">tpCTToStrText</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoCTe">TpcteTipoCTe</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrTotpCTe">StrTotpCTe</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoCTe">TpcteTipoCTe</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpModalToStr">TpModalToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteModal">TpcteModal</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpModalToStrText">TpModalToStrText</a></b>(const t: <a   href="pcnConversao.html#TpcteModal">TpcteModal</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpModal">StrToTpModal</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteModal">TpcteModal</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpServPagToStr">TpServPagToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoServico">TpcteTipoServico</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpServToStrText">TpServToStrText</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoServico">TpcteTipoServico</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpServ">StrToTpServ</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoServico">TpcteTipoServico</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpRetiraPagToStr">TpRetiraPagToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteRetira">TpcteRetira</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpRetira">StrToTpRetira</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteRetira">TpcteRetira</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpTomadorPagToStr">TpTomadorPagToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTomador">TpcteTomador</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpTomadorToStr">TpTomadorToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTomador">TpcteTomador</a>): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpTomadorToStrText">TpTomadorToStrText</a></b>(const t: <a   href="pcnConversao.html#TpcteTomador">TpcteTomador</a>): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpRspSeguroToStr">TpRspSeguroToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteRspSeg">TpcteRspSeg</a>): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpRspSeguroToStrText">TpRspSeguroToStrText</a></b>(const t: <a   href="pcnConversao.html#TpcteRspSeg">TpcteRspSeg</a>): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpLotacaoToStr">TpLotacaoToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteLotacao">TpcteLotacao</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpPropToStr">TpPropToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteProp">TpcteProp</a>): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#UnidMedToStr">UnidMedToStr</a></b>(const t: <a   href="pcnConversao.html#UnidMed">UnidMed</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpTomador">StrToTpTomador</a></b>(var ok: boolean; const s: String ): <a   href="pcnConversao.html#TpcteTomador">TpcteTomador</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpRspSeguro">StrToTpRspSeguro</a></b>(var ok: boolean; const s: String ): <a   href="pcnConversao.html#TpcteRspSeg">TpcteRspSeg</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpLotacao">StrToTpLotacao</a></b>(var ok: boolean; const s: String ): <a   href="pcnConversao.html#TpcteLotacao">TpcteLotacao</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpProp">StrToTpProp</a></b>(var ok: boolean; const s: String ): <a   href="pcnConversao.html#TpcteProp">TpcteProp</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToUnidMed">StrToUnidMed</a></b>(var ok: boolean; const s: String ): <a   href="pcnConversao.html#UnidMed">UnidMed</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpMaskToStrText">TpMaskToStrText</a></b>(const t: <a   href="pcnConversao.html#TpcteMask">TpcteMask</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpMask">StrToTpMask</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteMask">TpcteMask</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#ECFModRefToStr">ECFModRefToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnECFModRef">TpcnECFModRef</a> ): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToECFModRef">StrToECFModRef</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnECFModRef">TpcnECFModRef</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#ISSQNcSitTribToStr">ISSQNcSitTribToStr</a></b>(const t: <a   href="pcnConversao.html#TpcnISSQNcSitTrib">TpcnISSQNcSitTrib</a> ): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToISSQNcSitTrib">StrToISSQNcSitTrib</a></b>(var ok: boolean; const s: string) : <a   href="pcnConversao.html#TpcnISSQNcSitTrib">TpcnISSQNcSitTrib</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpDirecaoToStr">TpDirecaoToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteDirecao">TpcteDirecao</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpDirecao">StrToTpDirecao</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteDirecao">TpcteDirecao</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpNavegacaoToStr">TpNavegacaoToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoNavegacao">TpcteTipoNavegacao</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpNavegacao">StrToTpNavegacao</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoNavegacao">TpcteTipoNavegacao</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpTrafegoToStr">TpTrafegoToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoTrafego">TpcteTipoTrafego</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpTrafego">StrToTpTrafego</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoTrafego">TpcteTipoTrafego</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpDataPeriodoToStr">TpDataPeriodoToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoDataPeriodo">TpcteTipoDataPeriodo</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpDataPeriodo">StrToTpDataPeriodo</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoDataPeriodo">TpcteTipoDataPeriodo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpHorarioIntervaloToStr">TpHorarioIntervaloToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoHorarioIntervalo">TpcteTipoHorarioIntervalo</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpHorarioIntervalo">StrToTpHorarioIntervalo</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoHorarioIntervalo">TpcteTipoHorarioIntervalo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpDocumentoToStr">TpDocumentoToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoDocumento">TpcteTipoDocumento</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpDocumento">StrToTpDocumento</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoDocumento">TpcteTipoDocumento</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpDocumentoAnteriorToStr">TpDocumentoAnteriorToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoDocumentoAnterior">TpcteTipoDocumentoAnterior</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpDocumentoAnterior">StrToTpDocumentoAnterior</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoDocumentoAnterior">TpcteTipoDocumentoAnterior</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#RspPagPedagioToStr">RspPagPedagioToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteRspPagPedagio">TpcteRspPagPedagio</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToRspPagPedagio">StrToRspPagPedagio</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteRspPagPedagio">TpcteRspPagPedagio</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpDispositivoToStr">TpDispositivoToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoDispositivo">TpcteTipoDispositivo</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpDispositivo">StrToTpDispositivo</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoDispositivo">TpcteTipoDispositivo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpPropriedadeToStr">TpPropriedadeToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoPropriedade">TpcteTipoPropriedade</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpPropriedade">StrToTpPropriedade</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoPropriedade">TpcteTipoPropriedade</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpVeiculoToStr">TpVeiculoToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoVeiculo">TpcteTipoVeiculo</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpVeiculo">StrToTpVeiculo</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoVeiculo">TpcteTipoVeiculo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpRodadoToStr">TpRodadoToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoRodado">TpcteTipoRodado</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpRodado">StrToTpRodado</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoRodado">TpcteTipoRodado</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#TpCarroceriaToStr">TpCarroceriaToStr</a></b>(const t: <a   href="pcnConversao.html#TpcteTipoCarroceria">TpcteTipoCarroceria</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnConversao.html#StrToTpCarroceria">StrToTpCarroceria</a></b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoCarroceria">TpcteTipoCarroceria</a>;</code></td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TStatusACBrNFe">TStatusACBrNFe</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TStatusACBrCTe">TStatusACBrCTe</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TLayOut">TLayOut</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnSchema">TpcnSchema</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnTipoLayout">TpcnTipoLayout</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnTipoCampo">TpcnTipoCampo</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnFormatoGravacao">TpcnFormatoGravacao</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnTagAssinatura">TpcnTagAssinatura</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnIndicadorPagamento">TpcnIndicadorPagamento</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnTipoNFe">TpcnTipoNFe</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnTipoImpressao">TpcnTipoImpressao</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnTipoEmissao">TpcnTipoEmissao</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnTipoAmbiente">TpcnTipoAmbiente</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnSituacaoEmissor">TpcnSituacaoEmissor</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnFinalidadeNFe">TpcnFinalidadeNFe</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnProcessoEmissao">TpcnProcessoEmissao</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnTipoOperacao">TpcnTipoOperacao</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnCondicaoVeiculo">TpcnCondicaoVeiculo</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnTipoArma">TpcnTipoArma</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnOrigemMercadoria">TpcnOrigemMercadoria</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnCSTIcms">TpcnCSTIcms</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnCSOSNIcms">TpcnCSOSNIcms</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnDeterminacaoBaseIcms">TpcnDeterminacaoBaseIcms</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnDeterminacaoBaseIcmsST">TpcnDeterminacaoBaseIcmsST</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnMotivoDesoneracaoICMS">TpcnMotivoDesoneracaoICMS</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnCstIpi">TpcnCstIpi</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnCstPis">TpcnCstPis</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnCstCofins">TpcnCstCofins</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnModalidadeFrete">TpcnModalidadeFrete</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnIndicadorProcesso">TpcnIndicadorProcesso</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnCRT">TpcnCRT</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnIndicadorTotal">TpcnIndicadorTotal</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteFormaPagamento">TpcteFormaPagamento</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteTipoCTe">TpcteTipoCTe</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteModal">TpcteModal</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteTipoServico">TpcteTipoServico</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteRetira">TpcteRetira</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteTomador">TpcteTomador</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteRspSeg">TpcteRspSeg</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteLotacao">TpcteLotacao</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteProp">TpcteProp</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteMask">TpcteMask</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#UnidMed">UnidMed</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnECFModRef">TpcnECFModRef</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcnISSQNcSitTrib">TpcnISSQNcSitTrib</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteDirecao">TpcteDirecao</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteTipoNavegacao">TpcteTipoNavegacao</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteTipoTrafego">TpcteTipoTrafego</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteTipoDataPeriodo">TpcteTipoDataPeriodo</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteTipoHorarioIntervalo">TpcteTipoHorarioIntervalo</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteTipoDocumento">TpcteTipoDocumento</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteTipoDocumentoAnterior">TpcteTipoDocumentoAnterior</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteRspPagPedagio">TpcteRspPagPedagio</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteTipoDispositivo">TpcteTipoDispositivo</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteTipoPropriedade">TpcteTipoPropriedade</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteTipoVeiculo">TpcteTipoVeiculo</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteTipoRodado">TpcteTipoRodado</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TpcteTipoCarroceria">TpcteTipoCarroceria</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#TPosRecibo">TPosRecibo</a></b> = (...);</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#NFeUF">NFeUF</a></b>: array[0..26] of String =
+  ('AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA',
+   'PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO');</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#NFeUFCodigo">NFeUFCodigo</a></b>: array[0..26] of Integer =
+  (12,27,16,13,29,23,53,32,52,21,51,50,31,15,25,41,26,22,33,24,43,11,14,42,35,28,17);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#NfVersao">NfVersao</a></b>        = '2.0.0.0';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#NFecabMsg">NFecabMsg</a></b>       = '2.00';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#NFeconsStatServ">NFeconsStatServ</a></b> = '2.00';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#NFenviNFe">NFenviNFe</a></b>       = '2.00';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#NFeconsReciNFe">NFeconsReciNFe</a></b>  = '2.00';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#NFeconsSitNFe">NFeconsSitNFe</a></b>   = '2.00';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#NFecancNFe">NFecancNFe</a></b>      = '2.00';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#NFeinutNFe">NFeinutNFe</a></b>      = '2.00';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#NFeconsCad">NFeconsCad</a></b>      = '2.00';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#NFeEnvDPEC">NFeEnvDPEC</a></b>      = '1.01';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#NFeConsDPEC">NFeConsDPEC</a></b>     = '1.01';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#CTecabMsg">CTecabMsg</a></b>       = '1.02';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#CTeconsStatServ">CTeconsStatServ</a></b> = '1.03';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#CTeenviCTe">CTeenviCTe</a></b>      = '1.03';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#CTeconsReciCTe">CTeconsReciCTe</a></b>  = '1.03';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#CTeconsSitCTe">CTeconsSitCTe</a></b>   = '1.03';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#CTecancCTe">CTecancCTe</a></b>      = '1.03';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#CTeinutCTe">CTeinutCTe</a></b>      = '1.03';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#CTeconsCad">CTeconsCad</a></b>      = '1.01';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnConversao.html#LineBreak">LineBreak</a></b> = #13#10;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Funções e Procedimentos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToEnumerado"></a><code>function <b>StrToEnumerado</b>(var ok: boolean; const s: string; const AString: array of string; const AEnumerados: array of variant): variant;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="EnumeradoToStr"></a><code>function <b>EnumeradoToStr</b>(const t: variant; const AString: array of string; const AEnumerados: array of variant): variant;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SchemaToStr"></a><code>function <b>SchemaToStr</b>(const t: <a   href="pcnConversao.html#TpcnSchema">TpcnSchema</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToSchema"></a><code>function <b>StrToSchema</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnSchema">TpcnSchema</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TipoLayoutToStr"></a><code>function <b>TipoLayoutToStr</b>(const t: <a   href="pcnConversao.html#TpcnTipoLayout">TpcnTipoLayout</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTipoLayout"></a><code>function <b>StrToTipoLayout</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnTipoLayout">TpcnTipoLayout</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IndpagToStr"></a><code>function <b>IndpagToStr</b>(const t: <a   href="pcnConversao.html#TpcnIndicadorPagamento">TpcnIndicadorPagamento</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToIndpag"></a><code>function <b>StrToIndpag</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnIndicadorPagamento">TpcnIndicadorPagamento</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="tpNFToStr"></a><code>function <b>tpNFToStr</b>(const t: <a   href="pcnConversao.html#TpcnTipoNFe">TpcnTipoNFe</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpNF"></a><code>function <b>StrToTpNF</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnTipoNFe">TpcnTipoNFe</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpImpToStr"></a><code>function <b>TpImpToStr</b>(const t: <a   href="pcnConversao.html#TpcnTipoImpressao">TpcnTipoImpressao</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpImp"></a><code>function <b>StrToTpImp</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnTipoImpressao">TpcnTipoImpressao</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpEmisToStr"></a><code>function <b>TpEmisToStr</b>(const t: <a   href="pcnConversao.html#TpcnTipoEmissao">TpcnTipoEmissao</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpEmis"></a><code>function <b>StrToTpEmis</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnTipoEmissao">TpcnTipoEmissao</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpAmbToStr"></a><code>function <b>TpAmbToStr</b>(const t: <a   href="pcnConversao.html#TpcnTipoAmbiente">TpcnTipoAmbiente</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpAmb"></a><code>function <b>StrToTpAmb</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnTipoAmbiente">TpcnTipoAmbiente</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpSitToStr"></a><code>function <b>TpSitToStr</b>(const t: <a   href="pcnConversao.html#TpcnSituacaoEmissor">TpcnSituacaoEmissor</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpSit"></a><code>function <b>StrToTpSit</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnSituacaoEmissor">TpcnSituacaoEmissor</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FinNFeToStr"></a><code>function <b>FinNFeToStr</b>(const t: <a   href="pcnConversao.html#TpcnFinalidadeNFe">TpcnFinalidadeNFe</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToFinNFe"></a><code>function <b>StrToFinNFe</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnFinalidadeNFe">TpcnFinalidadeNFe</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="procEmiToStr"></a><code>function <b>procEmiToStr</b>(const t: <a   href="pcnConversao.html#TpcnProcessoEmissao">TpcnProcessoEmissao</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToprocEmi"></a><code>function <b>StrToprocEmi</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnProcessoEmissao">TpcnProcessoEmissao</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="tpOPToStr"></a><code>function <b>tpOPToStr</b>(const t: <a   href="pcnConversao.html#TpcnTipoOperacao">TpcnTipoOperacao</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrTotpOP"></a><code>function <b>StrTotpOP</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnTipoOperacao">TpcnTipoOperacao</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="condVeicToStr"></a><code>function <b>condVeicToStr</b>(const t: <a   href="pcnConversao.html#TpcnCondicaoVeiculo">TpcnCondicaoVeiculo</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrTocondVeic"></a><code>function <b>StrTocondVeic</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnCondicaoVeiculo">TpcnCondicaoVeiculo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="tpArmaToStr"></a><code>function <b>tpArmaToStr</b>(const t: <a   href="pcnConversao.html#TpcnTipoArma">TpcnTipoArma</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrTotpArma"></a><code>function <b>StrTotpArma</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnTipoArma">TpcnTipoArma</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="OrigToStr"></a><code>function <b>OrigToStr</b>(const t: <a   href="pcnConversao.html#TpcnOrigemMercadoria">TpcnOrigemMercadoria</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToOrig"></a><code>function <b>StrToOrig</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnOrigemMercadoria">TpcnOrigemMercadoria</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CSTICMSToStr"></a><code>function <b>CSTICMSToStr</b>(const t: <a   href="pcnConversao.html#TpcnCSTIcms">TpcnCSTIcms</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToCSTICMS"></a><code>function <b>StrToCSTICMS</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnCSTIcms">TpcnCSTIcms</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CSOSNIcmsToStr"></a><code>function <b>CSOSNIcmsToStr</b>(const t: <a   href="pcnConversao.html#TpcnCSOSNIcms">TpcnCSOSNIcms</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToCSOSNIcms"></a><code>function <b>StrToCSOSNIcms</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnCSOSNIcms">TpcnCSOSNIcms</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CSTICMSToStrTagPos"></a><code>function <b>CSTICMSToStrTagPos</b>(const t: <a   href="pcnConversao.html#TpcnCSTIcms">TpcnCSTIcms</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CSTICMSToStrTagPosText"></a><code>function <b>CSTICMSToStrTagPosText</b>(const t: <a   href="pcnConversao.html#TpcnCSTIcms">TpcnCSTIcms</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CSOSNToStrTagPos"></a><code>function <b>CSOSNToStrTagPos</b>(const t: <a   href="pcnConversao.html#TpcnCSOSNIcms">TpcnCSOSNIcms</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CSOSNToStrID"></a><code>function <b>CSOSNToStrID</b>(const t: <a   href="pcnConversao.html#TpcnCSOSNIcms">TpcnCSOSNIcms</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="modBCToStr"></a><code>function <b>modBCToStr</b>(const t: <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcms">TpcnDeterminacaoBaseIcms</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrTomodBC"></a><code>function <b>StrTomodBC</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcms">TpcnDeterminacaoBaseIcms</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="modBCSTToStr"></a><code>function <b>modBCSTToStr</b>(const t: <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcmsST">TpcnDeterminacaoBaseIcmsST</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrTomodBCST"></a><code>function <b>StrTomodBCST</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcmsST">TpcnDeterminacaoBaseIcmsST</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="motDesICMSToStr"></a><code>function <b>motDesICMSToStr</b>(const t: <a   href="pcnConversao.html#TpcnMotivoDesoneracaoICMS">TpcnMotivoDesoneracaoICMS</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrTomotDesICMS"></a><code>function <b>StrTomotDesICMS</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnMotivoDesoneracaoICMS">TpcnMotivoDesoneracaoICMS</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CSTIPIToStr"></a><code>function <b>CSTIPIToStr</b>(const t: <a   href="pcnConversao.html#TpcnCstIpi">TpcnCstIpi</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToCSTIPI"></a><code>function <b>StrToCSTIPI</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnCstIpi">TpcnCstIpi</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CSTPISToStr"></a><code>function <b>CSTPISToStr</b>(const t: <a   href="pcnConversao.html#TpcnCstPis">TpcnCstPIS</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToCSTPIS"></a><code>function <b>StrToCSTPIS</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnCstPis">TpcnCstPIS</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CSTCOFINSToStr"></a><code>function <b>CSTCOFINSToStr</b>(const t: <a   href="pcnConversao.html#TpcnCstCofins">TpcnCstCOFINS</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToCSTCOFINS"></a><code>function <b>StrToCSTCOFINS</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnCstCofins">TpcnCstCOFINS</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="modFreteToStr"></a><code>function <b>modFreteToStr</b>(const t: <a   href="pcnConversao.html#TpcnModalidadeFrete">TpcnModalidadeFrete</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrTomodFrete"></a><code>function <b>StrTomodFrete</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnModalidadeFrete">TpcnModalidadeFrete</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="indProcToStr"></a><code>function <b>indProcToStr</b>(const t: <a   href="pcnConversao.html#TpcnIndicadorProcesso">TpcnIndicadorProcesso</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToindProc"></a><code>function <b>StrToindProc</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnIndicadorProcesso">TpcnIndicadorProcesso</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CRTToStr"></a><code>function <b>CRTToStr</b>(const t: <a   href="pcnConversao.html#TpcnCRT">TpcnCRT</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToCRT"></a><code>function <b>StrToCRT</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnCRT">TpcnCRT</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="indTotToStr"></a><code>function <b>indTotToStr</b>(const t: <a   href="pcnConversao.html#TpcnIndicadorTotal">TpcnIndicadorTotal</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToindTot"></a><code>function <b>StrToindTot</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnIndicadorTotal">TpcnIndicadorTotal</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="tpforPagToStr"></a><code>function <b>tpforPagToStr</b>(const t: <a   href="pcnConversao.html#TpcteFormaPagamento">TpcteFormaPagamento</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="tpforPagToStrText"></a><code>function <b>tpforPagToStrText</b>(const t: <a   href="pcnConversao.html#TpcteFormaPagamento">TpcteFormaPagamento</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrTotpforPag"></a><code>function <b>StrTotpforPag</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteFormaPagamento">TpcteFormaPagamento</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="tpCTePagToStr"></a><code>function <b>tpCTePagToStr</b>(const t: <a   href="pcnConversao.html#TpcteTipoCTe">TpcteTipoCTe</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="tpCTToStr"></a><code>function <b>tpCTToStr</b>(const t: <a   href="pcnConversao.html#TpcteTipoCTe">TpcteTipoCTe</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="tpCTToStrText"></a><code>function <b>tpCTToStrText</b>(const t: <a   href="pcnConversao.html#TpcteTipoCTe">TpcteTipoCTe</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrTotpCTe"></a><code>function <b>StrTotpCTe</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoCTe">TpcteTipoCTe</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpModalToStr"></a><code>function <b>TpModalToStr</b>(const t: <a   href="pcnConversao.html#TpcteModal">TpcteModal</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpModalToStrText"></a><code>function <b>TpModalToStrText</b>(const t: <a   href="pcnConversao.html#TpcteModal">TpcteModal</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpModal"></a><code>function <b>StrToTpModal</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteModal">TpcteModal</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpServPagToStr"></a><code>function <b>TpServPagToStr</b>(const t: <a   href="pcnConversao.html#TpcteTipoServico">TpcteTipoServico</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpServToStrText"></a><code>function <b>TpServToStrText</b>(const t: <a   href="pcnConversao.html#TpcteTipoServico">TpcteTipoServico</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpServ"></a><code>function <b>StrToTpServ</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoServico">TpcteTipoServico</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpRetiraPagToStr"></a><code>function <b>TpRetiraPagToStr</b>(const t: <a   href="pcnConversao.html#TpcteRetira">TpcteRetira</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpRetira"></a><code>function <b>StrToTpRetira</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteRetira">TpcteRetira</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpTomadorPagToStr"></a><code>function <b>TpTomadorPagToStr</b>(const t: <a   href="pcnConversao.html#TpcteTomador">TpcteTomador</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpTomadorToStr"></a><code>function <b>TpTomadorToStr</b>(const t: <a   href="pcnConversao.html#TpcteTomador">TpcteTomador</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpTomadorToStrText"></a><code>function <b>TpTomadorToStrText</b>(const t: <a   href="pcnConversao.html#TpcteTomador">TpcteTomador</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpRspSeguroToStr"></a><code>function <b>TpRspSeguroToStr</b>(const t: <a   href="pcnConversao.html#TpcteRspSeg">TpcteRspSeg</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpRspSeguroToStrText"></a><code>function <b>TpRspSeguroToStrText</b>(const t: <a   href="pcnConversao.html#TpcteRspSeg">TpcteRspSeg</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpLotacaoToStr"></a><code>function <b>TpLotacaoToStr</b>(const t: <a   href="pcnConversao.html#TpcteLotacao">TpcteLotacao</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpPropToStr"></a><code>function <b>TpPropToStr</b>(const t: <a   href="pcnConversao.html#TpcteProp">TpcteProp</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="UnidMedToStr"></a><code>function <b>UnidMedToStr</b>(const t: <a   href="pcnConversao.html#UnidMed">UnidMed</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpTomador"></a><code>function <b>StrToTpTomador</b>(var ok: boolean; const s: String ): <a   href="pcnConversao.html#TpcteTomador">TpcteTomador</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpRspSeguro"></a><code>function <b>StrToTpRspSeguro</b>(var ok: boolean; const s: String ): <a   href="pcnConversao.html#TpcteRspSeg">TpcteRspSeg</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpLotacao"></a><code>function <b>StrToTpLotacao</b>(var ok: boolean; const s: String ): <a   href="pcnConversao.html#TpcteLotacao">TpcteLotacao</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpProp"></a><code>function <b>StrToTpProp</b>(var ok: boolean; const s: String ): <a   href="pcnConversao.html#TpcteProp">TpcteProp</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToUnidMed"></a><code>function <b>StrToUnidMed</b>(var ok: boolean; const s: String ): <a   href="pcnConversao.html#UnidMed">UnidMed</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpMaskToStrText"></a><code>function <b>TpMaskToStrText</b>(const t: <a   href="pcnConversao.html#TpcteMask">TpcteMask</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpMask"></a><code>function <b>StrToTpMask</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteMask">TpcteMask</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ECFModRefToStr"></a><code>function <b>ECFModRefToStr</b>(const t: <a   href="pcnConversao.html#TpcnECFModRef">TpcnECFModRef</a> ): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToECFModRef"></a><code>function <b>StrToECFModRef</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcnECFModRef">TpcnECFModRef</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ISSQNcSitTribToStr"></a><code>function <b>ISSQNcSitTribToStr</b>(const t: <a   href="pcnConversao.html#TpcnISSQNcSitTrib">TpcnISSQNcSitTrib</a> ): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToISSQNcSitTrib"></a><code>function <b>StrToISSQNcSitTrib</b>(var ok: boolean; const s: string) : <a   href="pcnConversao.html#TpcnISSQNcSitTrib">TpcnISSQNcSitTrib</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpDirecaoToStr"></a><code>function <b>TpDirecaoToStr</b>(const t: <a   href="pcnConversao.html#TpcteDirecao">TpcteDirecao</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Incluido por Italo em 31/09/2010</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpDirecao"></a><code>function <b>StrToTpDirecao</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteDirecao">TpcteDirecao</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpNavegacaoToStr"></a><code>function <b>TpNavegacaoToStr</b>(const t: <a   href="pcnConversao.html#TpcteTipoNavegacao">TpcteTipoNavegacao</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpNavegacao"></a><code>function <b>StrToTpNavegacao</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoNavegacao">TpcteTipoNavegacao</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpTrafegoToStr"></a><code>function <b>TpTrafegoToStr</b>(const t: <a   href="pcnConversao.html#TpcteTipoTrafego">TpcteTipoTrafego</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Incluido por Italo em 19/11/2010</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpTrafego"></a><code>function <b>StrToTpTrafego</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoTrafego">TpcteTipoTrafego</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpDataPeriodoToStr"></a><code>function <b>TpDataPeriodoToStr</b>(const t: <a   href="pcnConversao.html#TpcteTipoDataPeriodo">TpcteTipoDataPeriodo</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Incluido por Italo em 25/01/2011</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpDataPeriodo"></a><code>function <b>StrToTpDataPeriodo</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoDataPeriodo">TpcteTipoDataPeriodo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpHorarioIntervaloToStr"></a><code>function <b>TpHorarioIntervaloToStr</b>(const t: <a   href="pcnConversao.html#TpcteTipoHorarioIntervalo">TpcteTipoHorarioIntervalo</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpHorarioIntervalo"></a><code>function <b>StrToTpHorarioIntervalo</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoHorarioIntervalo">TpcteTipoHorarioIntervalo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpDocumentoToStr"></a><code>function <b>TpDocumentoToStr</b>(const t: <a   href="pcnConversao.html#TpcteTipoDocumento">TpcteTipoDocumento</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpDocumento"></a><code>function <b>StrToTpDocumento</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoDocumento">TpcteTipoDocumento</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpDocumentoAnteriorToStr"></a><code>function <b>TpDocumentoAnteriorToStr</b>(const t: <a   href="pcnConversao.html#TpcteTipoDocumentoAnterior">TpcteTipoDocumentoAnterior</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpDocumentoAnterior"></a><code>function <b>StrToTpDocumentoAnterior</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoDocumentoAnterior">TpcteTipoDocumentoAnterior</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RspPagPedagioToStr"></a><code>function <b>RspPagPedagioToStr</b>(const t: <a   href="pcnConversao.html#TpcteRspPagPedagio">TpcteRspPagPedagio</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToRspPagPedagio"></a><code>function <b>StrToRspPagPedagio</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteRspPagPedagio">TpcteRspPagPedagio</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpDispositivoToStr"></a><code>function <b>TpDispositivoToStr</b>(const t: <a   href="pcnConversao.html#TpcteTipoDispositivo">TpcteTipoDispositivo</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpDispositivo"></a><code>function <b>StrToTpDispositivo</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoDispositivo">TpcteTipoDispositivo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpPropriedadeToStr"></a><code>function <b>TpPropriedadeToStr</b>(const t: <a   href="pcnConversao.html#TpcteTipoPropriedade">TpcteTipoPropriedade</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpPropriedade"></a><code>function <b>StrToTpPropriedade</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoPropriedade">TpcteTipoPropriedade</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpVeiculoToStr"></a><code>function <b>TpVeiculoToStr</b>(const t: <a   href="pcnConversao.html#TpcteTipoVeiculo">TpcteTipoVeiculo</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpVeiculo"></a><code>function <b>StrToTpVeiculo</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoVeiculo">TpcteTipoVeiculo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpRodadoToStr"></a><code>function <b>TpRodadoToStr</b>(const t: <a   href="pcnConversao.html#TpcteTipoRodado">TpcteTipoRodado</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpRodado"></a><code>function <b>StrToTpRodado</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoRodado">TpcteTipoRodado</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpCarroceriaToStr"></a><code>function <b>TpCarroceriaToStr</b>(const t: <a   href="pcnConversao.html#TpcteTipoCarroceria">TpcteTipoCarroceria</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToTpCarroceria"></a><code>function <b>StrToTpCarroceria</b>(var ok: boolean; const s: string): <a   href="pcnConversao.html#TpcteTipoCarroceria">TpcteTipoCarroceria</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TStatusACBrNFe"></a><code><b>TStatusACBrNFe</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+stIdle: &nbsp;</li>
+<li>
+stNFeStatusServico: &nbsp;</li>
+<li>
+stNFeRecepcao: &nbsp;</li>
+<li>
+stNFeRetRecepcao: &nbsp;</li>
+<li>
+stNFeConsulta: &nbsp;</li>
+<li>
+stNFeCancelamento: &nbsp;</li>
+<li>
+stNFeInutilizacao: &nbsp;</li>
+<li>
+stNFeRecibo: &nbsp;</li>
+<li>
+stNFeCadastro: &nbsp;</li>
+<li>
+stNFeEmail: &nbsp;</li>
+<li>
+stNFeEnvDPEC: &nbsp;</li>
+<li>
+stNFeConsultaDPEC: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TStatusACBrCTe"></a><code><b>TStatusACBrCTe</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+stCTeIdle: &nbsp;</li>
+<li>
+stCTeStatusServico: &nbsp;</li>
+<li>
+stCTeRecepcao: &nbsp;</li>
+<li>
+stCTeRetRecepcao: &nbsp;</li>
+<li>
+stCTeConsulta: &nbsp;</li>
+<li>
+stCTeCancelamento: &nbsp;</li>
+<li>
+stCTeInutilizacao: &nbsp;</li>
+<li>
+stCTeRecibo: &nbsp;</li>
+<li>
+stCTeCadastro: &nbsp;</li>
+<li>
+stCTeEmail: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TLayOut"></a><code><b>TLayOut</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+IMPORTANTE - Sempre que alterar um Tipo efetuar a atualização das funções de conversão correspondentes</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+LayNfeRecepcao: &nbsp;</li>
+<li>
+LayNfeRetRecepcao: &nbsp;</li>
+<li>
+LayNfeCancelamento: &nbsp;</li>
+<li>
+LayNfeInutilizacao: &nbsp;</li>
+<li>
+LayNfeConsulta: &nbsp;</li>
+<li>
+LayNfeStatusServico: &nbsp;</li>
+<li>
+LayNfeCadastro: &nbsp;</li>
+<li>
+LayNfeEnvDPEC: &nbsp;</li>
+<li>
+LayNfeConsultaDPEC: &nbsp;</li>
+<li>
+LayCTeRecepcao: &nbsp;</li>
+<li>
+LayCTeRetRecepcao: &nbsp;</li>
+<li>
+LayCTeCancelamento: &nbsp;</li>
+<li>
+LayCTeInutilizacao: &nbsp;</li>
+<li>
+LayCTeConsultaCT: &nbsp;</li>
+<li>
+LayCTeStatusServico: &nbsp;</li>
+<li>
+LayCTeCadastro: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnSchema"></a><code><b>TpcnSchema</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+TsPL005c: &nbsp;</li>
+<li>
+TsPL006: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnTipoLayout"></a><code><b>TpcnTipoLayout</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Incluido o tlConsStatServCTe para CTe por possuir uma versão diferente da NFe</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tlAtuCadEmiDFe: &nbsp;</li>
+<li>
+tlCadEmiDFe: &nbsp;</li>
+<li>
+tlCancNFe: &nbsp;</li>
+<li>
+tlConsCad: &nbsp;</li>
+<li>
+tlConsReciNFe: &nbsp;</li>
+<li>
+tlConsSitNFe: &nbsp;</li>
+<li>
+tlConsStatServ: &nbsp;</li>
+<li>
+tlInutNFe: &nbsp;</li>
+<li>
+tlNFe: &nbsp;</li>
+<li>
+tlProcNFe: &nbsp;</li>
+<li>
+tlProcInutNFe: &nbsp;</li>
+<li>
+tlRetAtuCadEmiDFe: &nbsp;</li>
+<li>
+tlRetCancNFe: &nbsp;</li>
+<li>
+tlRetConsCad: &nbsp;</li>
+<li>
+tlRetConsReciNFe: &nbsp;</li>
+<li>
+tlRetConsStatServ: &nbsp;</li>
+<li>
+tlRetConsSitNFe: &nbsp;</li>
+<li>
+tlRetEnvNFe: &nbsp;</li>
+<li>
+tlRetInutNFe: &nbsp;</li>
+<li>
+tlEnvNFe: &nbsp;</li>
+<li>
+tlProcCancNFe: &nbsp;</li>
+<li>
+tlCancCTe: &nbsp;</li>
+<li>
+tlConsReciCTe: &nbsp;</li>
+<li>
+tlConsSitCTe: &nbsp;</li>
+<li>
+tlInutCTe: &nbsp;</li>
+<li>
+tlCTe: &nbsp;</li>
+<li>
+tlProcCTe: &nbsp;</li>
+<li>
+tlProcInutCTe: &nbsp;</li>
+<li>
+tlRetCancCTe: &nbsp;</li>
+<li>
+tlRetConsReciCTe: &nbsp;</li>
+<li>
+tlRetConsSitCTe: &nbsp;</li>
+<li>
+tlRetEnvCTe: &nbsp;</li>
+<li>
+tlRetInutCTe: &nbsp;</li>
+<li>
+tlEnvCTe: &nbsp;</li>
+<li>
+tlProcCancCTe: &nbsp;</li>
+<li>
+tlEnvDPEC: &nbsp;</li>
+<li>
+tlConsDPEC: &nbsp;</li>
+<li>
+tlConsStatServCTe: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnTipoCampo"></a><code><b>TpcnTipoCampo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Tipo tcDe6 incluido por Italo em 30/09/2010 (usado no CTe campo 435: vTar = valor da tarifa do modal Dutoviário)</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tcStr: &nbsp;</li>
+<li>
+tcInt: &nbsp;</li>
+<li>
+tcDat: &nbsp;</li>
+<li>
+tcDatHor: &nbsp;</li>
+<li>
+tcEsp: &nbsp;</li>
+<li>
+tcDe2: &nbsp;</li>
+<li>
+tcDe3: &nbsp;</li>
+<li>
+tcDe4: &nbsp;</li>
+<li>
+tcDe10: &nbsp;</li>
+<li>
+tcHor: &nbsp;</li>
+<li>
+tcDe6: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnFormatoGravacao"></a><code><b>TpcnFormatoGravacao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+tcEsp = String: somente numeros;</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+fgXML: &nbsp;</li>
+<li>
+fgTXT: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnTagAssinatura"></a><code><b>TpcnTagAssinatura</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+taSempre: &nbsp;</li>
+<li>
+taNunca: &nbsp;</li>
+<li>
+taSomenteSeAssinada: &nbsp;</li>
+<li>
+taSomenteParaNaoAssinada: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnIndicadorPagamento"></a><code><b>TpcnIndicadorPagamento</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ipVista: &nbsp;</li>
+<li>
+ipPrazo: &nbsp;</li>
+<li>
+ipOutras: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnTipoNFe"></a><code><b>TpcnTipoNFe</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tnEntrada: &nbsp;</li>
+<li>
+tnSaida: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnTipoImpressao"></a><code><b>TpcnTipoImpressao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tiRetrato: &nbsp;</li>
+<li>
+tiPaisagem: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnTipoEmissao"></a><code><b>TpcnTipoEmissao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+teNormal: &nbsp;</li>
+<li>
+teContingencia: &nbsp;</li>
+<li>
+teSCAN: &nbsp;</li>
+<li>
+teDPEC: &nbsp;</li>
+<li>
+teFSDA: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnTipoAmbiente"></a><code><b>TpcnTipoAmbiente</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+taProducao: &nbsp;</li>
+<li>
+taHomologacao: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnSituacaoEmissor"></a><code><b>TpcnSituacaoEmissor</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+seHomologacao: &nbsp;</li>
+<li>
+seProducao: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnFinalidadeNFe"></a><code><b>TpcnFinalidadeNFe</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+fnNormal: &nbsp;</li>
+<li>
+fnComplementar: &nbsp;</li>
+<li>
+fnAjuste: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnProcessoEmissao"></a><code><b>TpcnProcessoEmissao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+peAplicativoContribuinte: &nbsp;</li>
+<li>
+peAvulsaFisco: &nbsp;</li>
+<li>
+peAvulsaContribuinte: &nbsp;</li>
+<li>
+peContribuinteAplicativoFisco: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnTipoOperacao"></a><code><b>TpcnTipoOperacao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+toVendaConcessionaria: &nbsp;</li>
+<li>
+toFaturamentoDireto: &nbsp;</li>
+<li>
+toVendaDireta: &nbsp;</li>
+<li>
+toOutros: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnCondicaoVeiculo"></a><code><b>TpcnCondicaoVeiculo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+cvAcabado: &nbsp;</li>
+<li>
+cvInacabado: &nbsp;</li>
+<li>
+cvSemiAcabado: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnTipoArma"></a><code><b>TpcnTipoArma</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+taUsoPermitido: &nbsp;</li>
+<li>
+taUsoRestrito: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnOrigemMercadoria"></a><code><b>TpcnOrigemMercadoria</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+oeNacional: &nbsp;</li>
+<li>
+oeEstrangeiraImportacaoDireta: &nbsp;</li>
+<li>
+oeEstrangeiraAdquiridaBrasil: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnCSTIcms"></a><code><b>TpcnCSTIcms</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+cst00: &nbsp;</li>
+<li>
+cst10: &nbsp;</li>
+<li>
+cst20: &nbsp;</li>
+<li>
+cst30: &nbsp;</li>
+<li>
+cst40: &nbsp;</li>
+<li>
+cst41: &nbsp;</li>
+<li>
+cst45: &nbsp;</li>
+<li>
+cst50: &nbsp;</li>
+<li>
+cst51: &nbsp;</li>
+<li>
+cst60: &nbsp;</li>
+<li>
+cst70: &nbsp;</li>
+<li>
+cst80: &nbsp;</li>
+<li>
+cst81: &nbsp;</li>
+<li>
+cst90: &nbsp;</li>
+<li>
+cstPart10: &nbsp;</li>
+<li>
+cstPart90: &nbsp;</li>
+<li>
+cstRep41: &nbsp;</li>
+<li>
+cstVazio: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnCSOSNIcms"></a><code><b>TpcnCSOSNIcms</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+80 e 81 apenas para CTe</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+csosnVazio: &nbsp;</li>
+<li>
+csosn101: &nbsp;</li>
+<li>
+csosn102: &nbsp;</li>
+<li>
+csosn103: &nbsp;</li>
+<li>
+csosn201: &nbsp;</li>
+<li>
+csosn202: &nbsp;</li>
+<li>
+csosn203: &nbsp;</li>
+<li>
+csosn300: &nbsp;</li>
+<li>
+csosn400: &nbsp;</li>
+<li>
+csosn500: &nbsp;</li>
+<li>
+csosn900: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnDeterminacaoBaseIcms"></a><code><b>TpcnDeterminacaoBaseIcms</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+dbiMargemValorAgregado: &nbsp;</li>
+<li>
+dbiPauta: &nbsp;</li>
+<li>
+dbiPrecoTabelado: &nbsp;</li>
+<li>
+dbiValorOperacao: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnDeterminacaoBaseIcmsST"></a><code><b>TpcnDeterminacaoBaseIcmsST</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+dbisPrecoTabelado: &nbsp;</li>
+<li>
+dbisListaNegativa: &nbsp;</li>
+<li>
+dbisListaPositiva: &nbsp;</li>
+<li>
+dbisListaNeutra: &nbsp;</li>
+<li>
+dbisMargemValorAgregado: &nbsp;</li>
+<li>
+dbisPauta: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnMotivoDesoneracaoICMS"></a><code><b>TpcnMotivoDesoneracaoICMS</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+mdiTaxi: &nbsp;</li>
+<li>
+mdiDeficienteFisico: &nbsp;</li>
+<li>
+mdiProdutorAgropecuario: &nbsp;</li>
+<li>
+mdiFrotistaLocadora: &nbsp;</li>
+<li>
+mdiDiplomaticoConsular: &nbsp;</li>
+<li>
+mdiAmazoniaLivreComercio: &nbsp;</li>
+<li>
+mdiSuframa: &nbsp;</li>
+<li>
+mdiOutros: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnCstIpi"></a><code><b>TpcnCstIpi</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ipi00: &nbsp;</li>
+<li>
+ipi49: &nbsp;</li>
+<li>
+ipi50: &nbsp;</li>
+<li>
+ipi99: &nbsp;</li>
+<li>
+ipi01: &nbsp;</li>
+<li>
+ipi02: &nbsp;</li>
+<li>
+ipi03: &nbsp;</li>
+<li>
+ipi04: &nbsp;</li>
+<li>
+ipi05: &nbsp;</li>
+<li>
+ipi51: &nbsp;</li>
+<li>
+ipi52: &nbsp;</li>
+<li>
+ipi53: &nbsp;</li>
+<li>
+ipi54: &nbsp;</li>
+<li>
+ipi55: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnCstPis"></a><code><b>TpcnCstPis</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+pis01: &nbsp;</li>
+<li>
+pis02: &nbsp;</li>
+<li>
+pis03: &nbsp;</li>
+<li>
+pis04: &nbsp;</li>
+<li>
+pis06: &nbsp;</li>
+<li>
+pis07: &nbsp;</li>
+<li>
+pis08: &nbsp;</li>
+<li>
+pis09: &nbsp;</li>
+<li>
+pis49: &nbsp;</li>
+<li>
+pis50: &nbsp;</li>
+<li>
+pis51: &nbsp;</li>
+<li>
+pis52: &nbsp;</li>
+<li>
+pis53: &nbsp;</li>
+<li>
+pis54: &nbsp;</li>
+<li>
+pis55: &nbsp;</li>
+<li>
+pis56: &nbsp;</li>
+<li>
+pis60: &nbsp;</li>
+<li>
+pis61: &nbsp;</li>
+<li>
+pis62: &nbsp;</li>
+<li>
+pis63: &nbsp;</li>
+<li>
+pis64: &nbsp;</li>
+<li>
+pis65: &nbsp;</li>
+<li>
+pis66: &nbsp;</li>
+<li>
+pis67: &nbsp;</li>
+<li>
+pis70: &nbsp;</li>
+<li>
+pis71: &nbsp;</li>
+<li>
+pis72: &nbsp;</li>
+<li>
+pis73: &nbsp;</li>
+<li>
+pis74: &nbsp;</li>
+<li>
+pis75: &nbsp;</li>
+<li>
+pis98: &nbsp;</li>
+<li>
+pis99: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnCstCofins"></a><code><b>TpcnCstCofins</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+cof01: &nbsp;</li>
+<li>
+cof02: &nbsp;</li>
+<li>
+cof03: &nbsp;</li>
+<li>
+cof04: &nbsp;</li>
+<li>
+cof06: &nbsp;</li>
+<li>
+cof07: &nbsp;</li>
+<li>
+cof08: &nbsp;</li>
+<li>
+cof09: &nbsp;</li>
+<li>
+cof49: &nbsp;</li>
+<li>
+cof50: &nbsp;</li>
+<li>
+cof51: &nbsp;</li>
+<li>
+cof52: &nbsp;</li>
+<li>
+cof53: &nbsp;</li>
+<li>
+cof54: &nbsp;</li>
+<li>
+cof55: &nbsp;</li>
+<li>
+cof56: &nbsp;</li>
+<li>
+cof60: &nbsp;</li>
+<li>
+cof61: &nbsp;</li>
+<li>
+cof62: &nbsp;</li>
+<li>
+cof63: &nbsp;</li>
+<li>
+cof64: &nbsp;</li>
+<li>
+cof65: &nbsp;</li>
+<li>
+cof66: &nbsp;</li>
+<li>
+cof67: &nbsp;</li>
+<li>
+cof70: &nbsp;</li>
+<li>
+cof71: &nbsp;</li>
+<li>
+cof72: &nbsp;</li>
+<li>
+cof73: &nbsp;</li>
+<li>
+cof74: &nbsp;</li>
+<li>
+cof75: &nbsp;</li>
+<li>
+cof98: &nbsp;</li>
+<li>
+cof99: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnModalidadeFrete"></a><code><b>TpcnModalidadeFrete</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+mfContaEmitente: &nbsp;</li>
+<li>
+mfContaDestinatario: &nbsp;</li>
+<li>
+mfContaTerceiros: &nbsp;</li>
+<li>
+mfSemFrete: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnIndicadorProcesso"></a><code><b>TpcnIndicadorProcesso</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ipSEFAZ: &nbsp;</li>
+<li>
+ipJusticaFederal: &nbsp;</li>
+<li>
+ipJusticaEstadual: &nbsp;</li>
+<li>
+ipSecexRFB: &nbsp;</li>
+<li>
+ipOutros: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnCRT"></a><code><b>TpcnCRT</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+crtSimplesNacional: &nbsp;</li>
+<li>
+crtSimplesExcessoReceita: &nbsp;</li>
+<li>
+crtRegimeNormal: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnIndicadorTotal"></a><code><b>TpcnIndicadorTotal</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+itSomaTotalNFe: &nbsp;</li>
+<li>
+itNaoSomaTotalNFe: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteFormaPagamento"></a><code><b>TpcteFormaPagamento</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+fpPago: &nbsp;</li>
+<li>
+fpAPagar: &nbsp;</li>
+<li>
+fpOutros: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteTipoCTe"></a><code><b>TpcteTipoCTe</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tcNormal: &nbsp;</li>
+<li>
+tcComplemento: &nbsp;</li>
+<li>
+tcAnulacao: &nbsp;</li>
+<li>
+tcSubstituto: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteModal"></a><code><b>TpcteModal</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+mdRodoviario: &nbsp;</li>
+<li>
+mdAereo: &nbsp;</li>
+<li>
+mdAquaviario: &nbsp;</li>
+<li>
+mdFerroviario: &nbsp;</li>
+<li>
+mdDutoviario: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteTipoServico"></a><code><b>TpcteTipoServico</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tsNormal: &nbsp;</li>
+<li>
+tsSubcontratacao: &nbsp;</li>
+<li>
+tsRedespacho: &nbsp;</li>
+<li>
+tsIntermediario: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteRetira"></a><code><b>TpcteRetira</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+rtSim: &nbsp;</li>
+<li>
+rtNao: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteTomador"></a><code><b>TpcteTomador</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tmRemetente: &nbsp;</li>
+<li>
+tmExpedidor: &nbsp;</li>
+<li>
+tmRecebedor: &nbsp;</li>
+<li>
+tmDestinatario: &nbsp;</li>
+<li>
+tmOutros: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteRspSeg"></a><code><b>TpcteRspSeg</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+rsRemetente: &nbsp;</li>
+<li>
+rsExpedidor: &nbsp;</li>
+<li>
+rsRecebedor: &nbsp;</li>
+<li>
+rsDestinatario: &nbsp;</li>
+<li>
+rsEmitenteCTe: &nbsp;</li>
+<li>
+rsTomadorServico: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteLotacao"></a><code><b>TpcteLotacao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ltNao: &nbsp;</li>
+<li>
+ltSim: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteProp"></a><code><b>TpcteProp</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tpTACAgregado: &nbsp;</li>
+<li>
+tpTACIndependente: &nbsp;</li>
+<li>
+tpOutros: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteMask"></a><code><b>TpcteMask</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+msk4x2: &nbsp;</li>
+<li>
+msk7x2: &nbsp;</li>
+<li>
+msk9x2: &nbsp;</li>
+<li>
+msk10x2: &nbsp;</li>
+<li>
+msk13x2: &nbsp;</li>
+<li>
+msk15x2: &nbsp;</li>
+<li>
+msk6x3: &nbsp;</li>
+<li>
+mskAliq: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="UnidMed"></a><code><b>UnidMed</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+uM3: &nbsp;</li>
+<li>
+uKG: &nbsp;</li>
+<li>
+uTON: &nbsp;</li>
+<li>
+uUNIDADE: &nbsp;</li>
+<li>
+uLITROS: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnECFModRef"></a><code><b>TpcnECFModRef</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ECFModRefVazio: &nbsp;</li>
+<li>
+ECFModRef2B: &nbsp;</li>
+<li>
+ECFModRef2C: &nbsp;</li>
+<li>
+ECFModRef2D: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcnISSQNcSitTrib"></a><code><b>TpcnISSQNcSitTrib</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ISSQNcSitTribVazio: &nbsp;</li>
+<li>
+ISSQNcSitTribNORMAL: &nbsp;</li>
+<li>
+ISSQNcSitTribRETIDA: &nbsp;</li>
+<li>
+ISSQNcSitTribSUBSTITUTA: &nbsp;</li>
+<li>
+ISSQNcSitTribISENTA: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteDirecao"></a><code><b>TpcteDirecao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Incluido por Italo em 31/09/2010</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+drNorte: &nbsp;</li>
+<li>
+drLeste: &nbsp;</li>
+<li>
+drSul: &nbsp;</li>
+<li>
+drOeste: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteTipoNavegacao"></a><code><b>TpcteTipoNavegacao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tnInterior: &nbsp;</li>
+<li>
+tnCabotagem: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteTipoTrafego"></a><code><b>TpcteTipoTrafego</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Incluido por Italo em 19/11/2010</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ttProprio: &nbsp;</li>
+<li>
+ttMutuo: &nbsp;</li>
+<li>
+ttRodoferroviario: &nbsp;</li>
+<li>
+ttRodoviario: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteTipoDataPeriodo"></a><code><b>TpcteTipoDataPeriodo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Incluido por Italo em 24/01/2011</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tdSemData: &nbsp;</li>
+<li>
+tdNaData: &nbsp;</li>
+<li>
+tdAteData: &nbsp;</li>
+<li>
+tdApartirData: &nbsp;</li>
+<li>
+tdNoPeriodo: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteTipoHorarioIntervalo"></a><code><b>TpcteTipoHorarioIntervalo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+thSemHorario: &nbsp;</li>
+<li>
+thNoHorario: &nbsp;</li>
+<li>
+thAteHorario: &nbsp;</li>
+<li>
+thApartirHorario: &nbsp;</li>
+<li>
+thNoIntervalo: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteTipoDocumento"></a><code><b>TpcteTipoDocumento</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tdDeclaracao: &nbsp;</li>
+<li>
+tdOutros: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteTipoDocumentoAnterior"></a><code><b>TpcteTipoDocumentoAnterior</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+daCTRC: &nbsp;</li>
+<li>
+daCTAC: &nbsp;</li>
+<li>
+daACT: &nbsp;</li>
+<li>
+daNF7: &nbsp;</li>
+<li>
+daNF27: &nbsp;</li>
+<li>
+daCAN: &nbsp;</li>
+<li>
+daCTMC: &nbsp;</li>
+<li>
+daATRE: &nbsp;</li>
+<li>
+daDTA: &nbsp;</li>
+<li>
+daCAI: &nbsp;</li>
+<li>
+daCCPI: &nbsp;</li>
+<li>
+daCA: &nbsp;</li>
+<li>
+daTIF: &nbsp;</li>
+<li>
+daOutros: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteRspPagPedagio"></a><code><b>TpcteRspPagPedagio</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+rpEmitente: &nbsp;</li>
+<li>
+rpRemetente: &nbsp;</li>
+<li>
+rpExpedidor: &nbsp;</li>
+<li>
+rpRecebedor: &nbsp;</li>
+<li>
+rpDestinatario: &nbsp;</li>
+<li>
+rpTomadorServico: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteTipoDispositivo"></a><code><b>TpcteTipoDispositivo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tdCartaoMagnetico: &nbsp;</li>
+<li>
+tdTAG: &nbsp;</li>
+<li>
+tdTicket: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteTipoPropriedade"></a><code><b>TpcteTipoPropriedade</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tpProprio: &nbsp;</li>
+<li>
+tpTerceiro: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteTipoVeiculo"></a><code><b>TpcteTipoVeiculo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tvTracao: &nbsp;</li>
+<li>
+tvReboque: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteTipoRodado"></a><code><b>TpcteTipoRodado</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+trNaoAplicavel: &nbsp;</li>
+<li>
+trTruck: &nbsp;</li>
+<li>
+trToco: &nbsp;</li>
+<li>
+trCavaloMecanico: &nbsp;</li>
+<li>
+trVAN: &nbsp;</li>
+<li>
+trUtilitario: &nbsp;</li>
+<li>
+trOutros: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TpcteTipoCarroceria"></a><code><b>TpcteTipoCarroceria</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tcNaoAplicavel: &nbsp;</li>
+<li>
+tcAberta: &nbsp;</li>
+<li>
+tcFechada: &nbsp;</li>
+<li>
+tcGraneleira: &nbsp;</li>
+<li>
+tcPortaContainer: &nbsp;</li>
+<li>
+tcSider: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPosRecibo"></a><code><b>TPosRecibo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Incluido por Italo em 28/04/2011</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+prCabecalho: &nbsp;</li>
+<li>
+prRodape: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NFeUF"></a><code><b>NFeUF</b>: array[0..26] of String =
+  ('AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA',
+   'PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO');</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NFeUFCodigo"></a><code><b>NFeUFCodigo</b>: array[0..26] of Integer =
+  (12,27,16,13,29,23,53,32,52,21,51,50,31,15,25,41,26,22,33,24,43,11,14,42,35,28,17);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NfVersao"></a><code><b>NfVersao</b>        = '2.0.0.0';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NFecabMsg"></a><code><b>NFecabMsg</b>       = '2.00';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NFeconsStatServ"></a><code><b>NFeconsStatServ</b> = '2.00';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NFenviNFe"></a><code><b>NFenviNFe</b>       = '2.00';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NFeconsReciNFe"></a><code><b>NFeconsReciNFe</b>  = '2.00';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NFeconsSitNFe"></a><code><b>NFeconsSitNFe</b>   = '2.00';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NFecancNFe"></a><code><b>NFecancNFe</b>      = '2.00';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NFeinutNFe"></a><code><b>NFeinutNFe</b>      = '2.00';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NFeconsCad"></a><code><b>NFeconsCad</b>      = '2.00';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NFeEnvDPEC"></a><code><b>NFeEnvDPEC</b>      = '1.01';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NFeConsDPEC"></a><code><b>NFeConsDPEC</b>     = '1.01';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CTecabMsg"></a><code><b>CTecabMsg</b>       = '1.02';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CTeconsStatServ"></a><code><b>CTeconsStatServ</b> = '1.03';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1.02</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CTeenviCTe"></a><code><b>CTeenviCTe</b>      = '1.03';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1.01</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CTeconsReciCTe"></a><code><b>CTeconsReciCTe</b>  = '1.03';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1.02 // Nome da constante corrigita por Italo em 18/03/2011</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CTeconsSitCTe"></a><code><b>CTeconsSitCTe</b>   = '1.03';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1.02</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CTecancCTe"></a><code><b>CTecancCTe</b>      = '1.03';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1.02</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CTeinutCTe"></a><code><b>CTeinutCTe</b>      = '1.03';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1.01</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CTeconsCad"></a><code><b>CTeconsCad</b>      = '1.01';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1.01</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="LineBreak"></a><code><b>LineBreak</b> = #13#10;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Incluido por Italo em 18/03/2011 CTeEnvDPEC = '1.01'; CTeConsDPEC = '1.01';</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:59</em>
+</span>
+</body></html>

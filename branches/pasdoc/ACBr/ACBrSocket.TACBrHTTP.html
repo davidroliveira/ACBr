@@ -1,0 +1,332 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrSocket: Classe TACBrHTTP</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrHTTP"></a><h1 class="cio">Classe TACBrHTTP</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrSocket.html">ACBrSocket</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrHTTP = class(<a class="normal"  href="ACBrBase.TACBrComponent.html">TACBrComponent</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<div class="nodescription">no description available, TACBrComponent description follows</div><p>
+ACBrComponente contém apenas a propriedade ACBrAbout</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="ancestor"><a class="normal"  href="ACBrBase.TACBrComponent.html">TACBrComponent</a></li>
+<li class="thisitem">TACBrHTTP</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSocket.TACBrHTTP.html#fHTTPSend">fHTTPSend</a></b>: <a   href="httpsend.THTTPSend.html">THTTPSend</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSocket.TACBrHTTP.html#fOnAntesAbrirHTTP">fOnAntesAbrirHTTP</a></b>: <a   href="ACBrSocket.html#TACBrOnAntesAbrirHTTP">TACBrOnAntesAbrirHTTP</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSocket.TACBrHTTP.html#fRespHTTP">fRespHTTP</a></b>: TStringList ;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSocket.TACBrHTTP.html#GetProxyHost">GetProxyHost</a></b> : string ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSocket.TACBrHTTP.html#GetProxyPass">GetProxyPass</a></b> : string ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSocket.TACBrHTTP.html#GetProxyPort">GetProxyPort</a></b> : string ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSocket.TACBrHTTP.html#GetProxyUser">GetProxyUser</a></b> : string ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrHTTP.html#SetProxyHost">SetProxyHost</a></b>(const AValue : string) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrHTTP.html#SetProxyPass">SetProxyPass</a></b>(const AValue : string) ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrHTTP.html#SetProxyPort">SetProxyPort</a></b>(const AValue : string) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrHTTP.html#SetProxyUser">SetProxyUser</a></b>(const AValue : string) ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrSocket.TACBrHTTP.html#Create">Create</a></b>( AOwner : TComponent ) ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrSocket.TACBrHTTP.html#Destroy">Destroy</a></b> ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSocket.TACBrHTTP.html#AjustaParam">AjustaParam</a></b>(AParam : String) : String ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrHTTP.html#HTTPGet">HTTPGet</a></b>( AURL : String) ; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSocket.TACBrHTTP.html#GetHeaderValue">GetHeaderValue</a></b>( AValue : String ) : String ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrHTTP.html#LerConfiguracoesProxy">LerConfiguracoesProxy</a></b>;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrHTTP.html#HTTPSend">HTTPSend</a></b>  : <a   href="httpsend.THTTPSend.html">THTTPSend</a> read <a   href="ACBrSocket.TACBrHTTP.html#fHTTPSend">fHTTPSend</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrHTTP.html#RespHTTP">RespHTTP</a></b>  : TStringList read <a   href="ACBrSocket.TACBrHTTP.html#fRespHTTP">fRespHTTP</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrHTTP.html#ProxyHost">ProxyHost</a></b> : string read <a   href="ACBrSocket.TACBrHTTP.html#GetProxyHost">GetProxyHost</a> write <a   href="ACBrSocket.TACBrHTTP.html#SetProxyHost">SetProxyHost</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrHTTP.html#ProxyPort">ProxyPort</a></b> : string read <a   href="ACBrSocket.TACBrHTTP.html#GetProxyPort">GetProxyPort</a> write <a   href="ACBrSocket.TACBrHTTP.html#SetProxyPort">SetProxyPort</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrHTTP.html#ProxyUser">ProxyUser</a></b> : string read <a   href="ACBrSocket.TACBrHTTP.html#GetProxyUser">GetProxyUser</a> write <a   href="ACBrSocket.TACBrHTTP.html#SetProxyUser">SetProxyUser</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrHTTP.html#ProxyPass">ProxyPass</a></b> : string read <a   href="ACBrSocket.TACBrHTTP.html#GetProxyPass">GetProxyPass</a> write <a   href="ACBrSocket.TACBrHTTP.html#SetProxyPass">SetProxyPass</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrHTTP.html#OnAntesAbrirHTTP">OnAntesAbrirHTTP</a></b> : <a   href="ACBrSocket.html#TACBrOnAntesAbrirHTTP">TACBrOnAntesAbrirHTTP</a>
+       read <a   href="ACBrSocket.TACBrHTTP.html#fOnAntesAbrirHTTP">fOnAntesAbrirHTTP</a> write <a   href="ACBrSocket.TACBrHTTP.html#fOnAntesAbrirHTTP">fOnAntesAbrirHTTP</a> ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fHTTPSend"></a><code><b>fHTTPSend</b>: <a   href="httpsend.THTTPSend.html">THTTPSend</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnAntesAbrirHTTP"></a><code><b>fOnAntesAbrirHTTP</b>: <a   href="ACBrSocket.html#TACBrOnAntesAbrirHTTP">TACBrOnAntesAbrirHTTP</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fRespHTTP"></a><code><b>fRespHTTP</b>: TStringList ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetProxyHost"></a><code>function <b>GetProxyHost</b> : string ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetProxyPass"></a><code>function <b>GetProxyPass</b> : string ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetProxyPort"></a><code>function <b>GetProxyPort</b> : string ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetProxyUser"></a><code>function <b>GetProxyUser</b> : string ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetProxyHost"></a><code>procedure <b>SetProxyHost</b>(const AValue : string) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetProxyPass"></a><code>procedure <b>SetProxyPass</b>(const AValue : string) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetProxyPort"></a><code>procedure <b>SetProxyPort</b>(const AValue : string) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetProxyUser"></a><code>procedure <b>SetProxyUser</b>(const AValue : string) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>( AOwner : TComponent ) ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AjustaParam"></a><code>function <b>AjustaParam</b>(AParam : String) : String ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HTTPGet"></a><code>procedure <b>HTTPGet</b>( AURL : String) ; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetHeaderValue"></a><code>function <b>GetHeaderValue</b>( AValue : String ) : String ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LerConfiguracoesProxy"></a><code>procedure <b>LerConfiguracoesProxy</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HTTPSend"></a><code>property <b>HTTPSend</b>  : <a   href="httpsend.THTTPSend.html">THTTPSend</a> read <a   href="ACBrSocket.TACBrHTTP.html#fHTTPSend">fHTTPSend</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RespHTTP"></a><code>property <b>RespHTTP</b>  : TStringList read <a   href="ACBrSocket.TACBrHTTP.html#fRespHTTP">fRespHTTP</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ProxyHost"></a><code>property <b>ProxyHost</b> : string read <a   href="ACBrSocket.TACBrHTTP.html#GetProxyHost">GetProxyHost</a> write <a   href="ACBrSocket.TACBrHTTP.html#SetProxyHost">SetProxyHost</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ProxyPort"></a><code>property <b>ProxyPort</b> : string read <a   href="ACBrSocket.TACBrHTTP.html#GetProxyPort">GetProxyPort</a> write <a   href="ACBrSocket.TACBrHTTP.html#SetProxyPort">SetProxyPort</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ProxyUser"></a><code>property <b>ProxyUser</b> : string read <a   href="ACBrSocket.TACBrHTTP.html#GetProxyUser">GetProxyUser</a> write <a   href="ACBrSocket.TACBrHTTP.html#SetProxyUser">SetProxyUser</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ProxyPass"></a><code>property <b>ProxyPass</b> : string read <a   href="ACBrSocket.TACBrHTTP.html#GetProxyPass">GetProxyPass</a> write <a   href="ACBrSocket.TACBrHTTP.html#SetProxyPass">SetProxyPass</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAntesAbrirHTTP"></a><code>property <b>OnAntesAbrirHTTP</b> : <a   href="ACBrSocket.html#TACBrOnAntesAbrirHTTP">TACBrOnAntesAbrirHTTP</a>
+       read <a   href="ACBrSocket.TACBrHTTP.html#fOnAntesAbrirHTTP">fOnAntesAbrirHTTP</a> write <a   href="ACBrSocket.TACBrHTTP.html#fOnAntesAbrirHTTP">fOnAntesAbrirHTTP</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:53</em>
+</span>
+</body></html>

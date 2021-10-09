@@ -1,0 +1,1491 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrEFDBlocos</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrEFDBlocos</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td><a class="section"  href="#%40Types">Tipos</a></td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+****************************************************************************** |* Historico |* |* 10/04/2009: Isaque Pinheiro |* - Criação e distribuição da Primeira Versao *******************************************************************************</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>Classes</li><li>DateUtils</li><li><a   href="ACBrTXTClass.html">ACBrTXTClass</a></li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrEFDBlocos.TOpenBlocos.html"><code>TOpenBlocos</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrIndicadorMovimento">TACBrIndicadorMovimento</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrPerfil">TACBrPerfil</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrAtividade">TACBrAtividade</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrVersaoLeiaute">TACBrVersaoLeiaute</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrCodFinalidade">TACBrCodFinalidade</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoItem">TACBrTipoItem</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoOperacao">TACBrTipoOperacao</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrEmitente">TACBrEmitente</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoPagamento">TACBrTipoPagamento</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoFrete">TACBrTipoFrete</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoFreteRedespacho">TACBrTipoFreteRedespacho</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrOrigemProcesso">TACBrOrigemProcesso</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrDoctoArrecada">TACBrDoctoArrecada</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoTransporte">TACBrTipoTransporte</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrDoctoImporta">TACBrDoctoImporta</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoTitulo">TACBrTipoTitulo</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrMovimentacaoFisica">TACBrMovimentacaoFisica</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrApuracaoIPI">TACBrApuracaoIPI</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoBaseMedicamento">TACBrTipoBaseMedicamento</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoProduto">TACBrTipoProduto</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoArmaFogo">TACBrTipoArmaFogo</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoOperacaoVeiculo">TACBrTipoOperacaoVeiculo</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoReceita">TACBrTipoReceita</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoVeiculo">TACBrTipoVeiculo</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoNavegacao">TACBrTipoNavegacao</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrSituacaoDocto">TACBrSituacaoDocto</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoTarifa">TACBrTipoTarifa</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrNaturezaFrete">TACBrNaturezaFrete</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrIndTipoReceita">TACBrIndTipoReceita</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrServicoPrestado">TACBrServicoPrestado</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrMovimentoST">TACBrMovimentoST</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoAjuste">TACBrTipoAjuste</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrOrigemDocto">TACBrOrigemDocto</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrPosseItem">TACBrPosseItem</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoDocto">TACBrTipoDocto</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrExportacao">TACBrExportacao</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrConhecEmbarque">TACBrConhecEmbarque</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrMedicao">TACBrMedicao</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrMovimentoBens">TACBrMovimentoBens</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrGrupoTensao">TACBrGrupoTensao</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrClasseConsumo">TACBrClasseConsumo</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoLigacao">TACBrTipoLigacao</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrDispositivo">TACBrDispositivo</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#TACBrTipoAssinante">TACBrTipoAssinante</a></b> = (...);</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#ipiEntradaRecuperacaoCredito">ipiEntradaRecuperacaoCredito</a></b> = '00' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#ipiEntradaTributradaZero">ipiEntradaTributradaZero</a></b>     = '01' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#ipiEntradaIsenta">ipiEntradaIsenta</a></b>             = '02' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#ipiEntradaNaoTributada">ipiEntradaNaoTributada</a></b>       = '03' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#ipiEntradaImune">ipiEntradaImune</a></b>              = '04' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#ipiEntradaComSuspensao">ipiEntradaComSuspensao</a></b>       = '05' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#ipiOutrasEntradas">ipiOutrasEntradas</a></b>            = '49' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#ipiSaidaTributada">ipiSaidaTributada</a></b>            = '50' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#ipiSaidaTributadaZero">ipiSaidaTributadaZero</a></b>        = '51' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#ipiSaidaIsenta">ipiSaidaIsenta</a></b>               = '52' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#ipiSaidaNaoTributada">ipiSaidaNaoTributada</a></b>         = '53' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#ipiSaidaImune">ipiSaidaImune</a></b>                = '54' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#ipiSaidaComSuspensao">ipiSaidaComSuspensao</a></b>         = '55' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#ipiOutrasSaidas">ipiOutrasSaidas</a></b>              = '99' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#pisValorAliquotaNormal">pisValorAliquotaNormal</a></b>        = '01' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#pisValorAliquotaDiferenciada">pisValorAliquotaDiferenciada</a></b>  = '02' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#pisQtdeAliquotaUnidade">pisQtdeAliquotaUnidade</a></b>        = '03' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#pisMonofaticaAliquotaZero">pisMonofaticaAliquotaZero</a></b>     = '04' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#pisAliquotaZero">pisAliquotaZero</a></b>               = '06' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#pisIsentaContribuicao">pisIsentaContribuicao</a></b>         = '07' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#pisSemIncidenciaContribuicao">pisSemIncidenciaContribuicao</a></b>  = '08' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#pisSuspensaoContribuicao">pisSuspensaoContribuicao</a></b>      = '09' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#pisOutrasOperacoes">pisOutrasOperacoes</a></b>            = '99' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#cofinsValorAliquotaNormal">cofinsValorAliquotaNormal</a></b>       = '01' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#cofinsValorAliquotaDiferenciada">cofinsValorAliquotaDiferenciada</a></b> = '02' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#cofinsQtdeAliquotaUnidade">cofinsQtdeAliquotaUnidade</a></b>       = '03' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#cofinsMonofaticaAliquotaZero">cofinsMonofaticaAliquotaZero</a></b>    = '04' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#cofinsAliquotaZero">cofinsAliquotaZero</a></b>              = '06' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#cofinsIsentaContribuicao">cofinsIsentaContribuicao</a></b>        = '07' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#cofinsSemIncidenciaContribuicao">cofinsSemIncidenciaContribuicao</a></b> = '08' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#cofinsSuspensaoContribuicao">cofinsSuspensaoContribuicao</a></b>     = '09' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEFDBlocos.html#cofinsOutrasOperacoes">cofinsOutrasOperacoes</a></b>           = '99' ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrIndicadorMovimento"></a><code><b>TACBrIndicadorMovimento</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Outras Operações, / Indicador de movimento - <a class="normal"  href="ACBrEFDBlocos.TOpenBlocos.html">TOpenBlocos</a></p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+imComDados: &nbsp;</li>
+<li>
+imSemDados: 0- Bloco com dados informados;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrPerfil"></a><code><b>TACBrPerfil</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1- Bloco sem dados informados. / Perfil de apresentação do arquivo fiscal - <a class="normal"  href="ACBrECDBloco_0.TRegistro0000.html">TRegistro0000</a></p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+pfPerfilA: &nbsp;</li>
+<li>
+pfPerfilB: A – Perfil A</li>
+<li>
+pfPerfilC: B – Perfil B</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrAtividade"></a><code><b>TACBrAtividade</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+C – Perfil C / Indicador de tipo de atividade - <a class="normal"  href="ACBrECDBloco_0.TRegistro0000.html">TRegistro0000</a></p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+atIndustrial: &nbsp;</li>
+<li>
+atOutros: 0 – Industrial ou equiparado a industrial</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrVersaoLeiaute"></a><code><b>TACBrVersaoLeiaute</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 – Outros. / Versão do Leiaute do arquivo - <a class="normal"  href="ACBrECDBloco_0.TRegistro0000.html">TRegistro0000</a></p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+vlVersao100: &nbsp;</li>
+<li>
+vlVersao101: Código 001 - Versão 100 Ato COTEPE 01/01/2008</li>
+<li>
+vlVersao102: Código 002 - Versão 101 Ato COTEPE 01/01/2009</li>
+<li>
+vlVersao103: Código 003 - Versão 102 Ato COTEPE 01/01/2010</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrCodFinalidade"></a><code><b>TACBrCodFinalidade</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Código 004 - Versão 103 Ato COTEPE 01/01/2011 / Código da finalidade do arquivo - <a class="normal"  href="ACBrECDBloco_0.TRegistro0000.html">TRegistro0000</a></p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+raOriginal: &nbsp;</li>
+<li>
+raSubstituto: 0 - Remessa do arquivo original</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoItem"></a><code><b>TACBrTipoItem</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 - Remessa do arquivo substituto / Tipo do item – Atividades Industriais, Comerciais e Serviços:</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tiMercadoriaRevenda: &nbsp;</li>
+<li>
+tiMateriaPrima: 00 – Mercadoria para Revenda</li>
+<li>
+tiEmbalagem: 01 – Matéria-Prima;</li>
+<li>
+tiProdutoProcesso: 02 – Embalagem;</li>
+<li>
+tiProdutoAcabado: 03 – Produto em Processo;</li>
+<li>
+tiSubproduto: 04 – Produto Acabado;</li>
+<li>
+tiProdutoIntermediario: 05 – Subproduto;</li>
+<li>
+tiMaterialConsumo: 06 – Produto Intermediário;</li>
+<li>
+tiAtivoImobilizado: 07 – Material de Uso e Consumo;</li>
+<li>
+tiServicos: 08 – Ativo Imobilizado;</li>
+<li>
+tiOutrosInsumos: 09 – Serviços;</li>
+<li>
+tiOutras: 10 – Outros Insumos;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoOperacao"></a><code><b>TACBrTipoOperacao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+99 – Outras / Indicador do tipo de operação:</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tpEntradaAquisicao: &nbsp;</li>
+<li>
+tpSaidaPrestacao: 0 - Entrada</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrEmitente"></a><code><b>TACBrEmitente</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 - Saída / Indicador do emitente do documento fiscal</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+edEmissaoPropria: &nbsp;</li>
+<li>
+edTerceiros: 0 - Emissão própria</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoPagamento"></a><code><b>TACBrTipoPagamento</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 - Terceiro / Indicador do tipo de pagamento</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tpVista: &nbsp;</li>
+<li>
+tpPrazo: 0 - À Vista</li>
+<li>
+tpSemPagamento: 1 - A Prazo</li>
+<li>
+tpNenhum: 9 - Sem pagamento</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoFrete"></a><code><b>TACBrTipoFrete</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Preencher vazio / Indicador do tipo do frete</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tfPorContaTerceiros: &nbsp;</li>
+<li>
+tfPorContaEmitente: 0 - Por conta de terceiros</li>
+<li>
+tfPorContaDestinatario: 1 - Por conta do emitente</li>
+<li>
+tfSemCobrancaFrete: 2 - Por conta do destinatário</li>
+<li>
+tfNenhum: 9 - Sem cobrança de frete</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoFreteRedespacho"></a><code><b>TACBrTipoFreteRedespacho</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Preencher vazio / Indicador do tipo do frete da operação de redespacho</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+frSemRedespacho: &nbsp;</li>
+<li>
+frPorContaEmitente: 0 – Sem redespacho</li>
+<li>
+frPorContaDestinatario: 1 - Por conta do emitente</li>
+<li>
+frOutros: 2 - Por conta do destinatário</li>
+<li>
+frNenhum: 9 – Outros</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrOrigemProcesso"></a><code><b>TACBrOrigemProcesso</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Preencher vazio / Indicador da origem do processo</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+opSefaz: &nbsp;</li>
+<li>
+opJusticaFederal: 0 - Sefaz</li>
+<li>
+opJusticaEstadual: 1 - Justiça Federal</li>
+<li>
+opSecexRFB: 2 - Justiça Estadual</li>
+<li>
+opOutros: 3 - Secex/RFB</li>
+<li>
+opNenhum: 9 - Outros</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrDoctoArrecada"></a><code><b>TACBrDoctoArrecada</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Preencher vazio /</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+daEstadualArrecadacao: &nbsp;</li>
+<li>
+daGNRE: 0 - Documento Estadual de Arrecadação</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoTransporte"></a><code><b>TACBrTipoTransporte</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 - GNRE / Indicador do tipo de transporte</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ttRodoviario: &nbsp;</li>
+<li>
+ttFerroviario: 0 – Rodoviário</li>
+<li>
+ttRodoFerroviario: 1 – Ferroviário</li>
+<li>
+ttAquaviario: 2 – Rodo-Ferroviário</li>
+<li>
+ttDutoviario: 3 – Aquaviário</li>
+<li>
+ttAereo: 4 – Dutoviário</li>
+<li>
+ttOutros: 5 – Aéreo</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrDoctoImporta"></a><code><b>TACBrDoctoImporta</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+9 – Outros / Documento de importação</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+diImportacao: &nbsp;</li>
+<li>
+diSimplificadaImport: 0 – Declaração de Importação</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoTitulo"></a><code><b>TACBrTipoTitulo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 – Declaração Simplificada de Importação / Indicador do tipo de título de <a class="normal"  href="ACBrBALToledo.html#CR">cr</a>édito</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tcDuplicata: &nbsp;</li>
+<li>
+tcCheque: 00- Duplicata</li>
+<li>
+tcPromissoria: 01- Cheque</li>
+<li>
+tcRecibo: 02- Promissória</li>
+<li>
+tcOutros: 03- Recibo</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrMovimentacaoFisica"></a><code><b>TACBrMovimentacaoFisica</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+99- Outros (descrever) / Movimentação física do ITEM/PRODUTO:</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+mfSim: &nbsp;</li>
+<li>
+mfNao: 0 - Sim</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrApuracaoIPI"></a><code><b>TACBrApuracaoIPI</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 - Não / Indicador de período de apuração do IPI</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+iaMensal: &nbsp;</li>
+<li>
+iaDecendial: 0 - Mensal</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoBaseMedicamento"></a><code><b>TACBrTipoBaseMedicamento</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 - Decendial / Indicador de tipo de referência da base de cálculo do ICMS (ST) do produto farmacêutico</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+bmCalcTabeladoSugerido: &nbsp;</li>
+<li>
+bmCalMargemAgregado: 0 - Base de cálculo referente ao preço tabelado ou preço máximo sugerido;</li>
+<li>
+bmCalListNegativa: 1 - Base cálculo – Margem de valor agregado;</li>
+<li>
+bmCalListaPositiva: 2 - Base de cálculo referente à Lista Negativa;</li>
+<li>
+bmCalListNeutra: 3 - Base de cálculo referente à Lista Positiva;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoProduto"></a><code><b>TACBrTipoProduto</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+4 - Base de cálculo referente à Lista Neutra / Tipo Produto</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tpSimilar: &nbsp;</li>
+<li>
+tpGenerico: 0 - Similar</li>
+<li>
+tpMarca: 1 - Genérico</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoArmaFogo"></a><code><b>TACBrTipoArmaFogo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+2 - Ético ou de Marca / Indicador do tipo da arma de fogo</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tafPermitido: &nbsp;</li>
+<li>
+tafRestrito: 0 - Permitido</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoOperacaoVeiculo"></a><code><b>TACBrTipoOperacaoVeiculo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 - Restrito / Indicador do tipo de operação com veículo</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tovVendaPConcess: &nbsp;</li>
+<li>
+tovFaturaDireta: 0 - Venda para concessionária</li>
+<li>
+tovVendaDireta: 1 - Faturamento direto</li>
+<li>
+tovVendaDConcess: 2 - Venda direta</li>
+<li>
+tovVendaOutros: 3 - Venda da concessionária</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoReceita"></a><code><b>TACBrTipoReceita</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+9 - Outros / Indicador do tipo de receita</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+trPropria: &nbsp;</li>
+<li>
+trTerceiro: 0 - Receita própria</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoVeiculo"></a><code><b>TACBrTipoVeiculo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 - Receita de terceiros / Indicador do tipo do veículo transportador</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tvEmbarcacao: &nbsp;</li>
+<li>
+tvEmpuradorRebocador: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoNavegacao"></a><code><b>TACBrTipoNavegacao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+/ Indicador do tipo da navegação</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tnInterior: &nbsp;</li>
+<li>
+tnCabotagem: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrSituacaoDocto"></a><code><b>TACBrSituacaoDocto</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+/ Situação do Documento</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+sdRegular: &nbsp;</li>
+<li>
+sdExtempRegular: 00 - Documento regular</li>
+<li>
+sdCancelado: 01 - Escrituração extemporânea de documento regular</li>
+<li>
+sdCanceladoExtemp: 02 - Documento cancelado</li>
+<li>
+sdDoctoDenegado: 03 - Escrituração extemporânea de documento cancelado</li>
+<li>
+sdDoctoNumInutilizada: 04 - NF-e ou CT-e - denegado</li>
+<li>
+sdFiscalCompl: 05 - NF-e ou CT-e - Numeração inutilizada</li>
+<li>
+sdExtempCompl: 06 - Documento Fiscal Complementar</li>
+<li>
+sdRegimeEspecNEsp: 07 - Escrituração extemporânea de documento complementar</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoTarifa"></a><code><b>TACBrTipoTarifa</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+08 - Documento Fiscal emitido com base em Regime Especial ou Norma Específica / Indicador do tipo de tarifa aplicada:</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tipExp: &nbsp;</li>
+<li>
+tipEnc: 0 - Exp</li>
+<li>
+tipCI: 1 - Enc</li>
+<li>
+tipOutra: 2 - CI</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrNaturezaFrete"></a><code><b>TACBrNaturezaFrete</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+9 - Outra / Indicador da natureza do frete</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+nfNegociavel: &nbsp;</li>
+<li>
+nfNaoNegociavel: 0 - Negociavel</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrIndTipoReceita"></a><code><b>TACBrIndTipoReceita</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 - Não Negociavel / Indicador do tipo de receita</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+recServicoPrestado: &nbsp;</li>
+<li>
+recCobrancaDebitos: 0 - Receita própria - serviços prestados;</li>
+<li>
+recVendaMerc: 1 - Receita própria - cobrança de débitos;</li>
+<li>
+recServicoPrePago: 2 - Receita própria - venda de mercadorias;</li>
+<li>
+recOutrasProprias: 3 - Receita própria - venda de serviço pré-pago;</li>
+<li>
+recTerceiroCoFaturamento: 4 - Outras receitas próprias;</li>
+<li>
+recTerceiroOutras: 5 - Receitas de terceiros (co-faturamento);</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrServicoPrestado"></a><code><b>TACBrServicoPrestado</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+9 - Outras receitas de terceiros / Indicador do tipo de serviço prestado</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+spTelefonia: &nbsp;</li>
+<li>
+spComunicacaoDados: 0- Telefonia;</li>
+<li>
+spTVAssinatura: 1- Comunicação de dados;</li>
+<li>
+spAcessoInternet: 2- TV por assinatura;</li>
+<li>
+spMultimidia: 3- Provimento de acesso à Internet;</li>
+<li>
+spOutros: 4- Multimídia;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrMovimentoST"></a><code><b>TACBrMovimentoST</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+9- Outros / Indicador de movimento</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+mstSemOperacaoST: &nbsp;</li>
+<li>
+mstComOperacaoST: 0 - Sem operações com ST</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoAjuste"></a><code><b>TACBrTipoAjuste</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 - Com operações de ST / Indicador do tipo de ajuste</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ajDebito: &nbsp;</li>
+<li>
+ajCredito: 0 - Ajuste a débito;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrOrigemDocto"></a><code><b>TACBrOrigemDocto</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1- Ajuste a <a class="normal"  href="ACBrBALToledo.html#CR">cr</a>édito / Indicador da origem do documento vinculado ao ajuste</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+odPorcessoJudicial: &nbsp;</li>
+<li>
+odProcessoAdminist: 0 - Processo Judicial;</li>
+<li>
+odPerDcomp: 1 - Processo Administrativo;</li>
+<li>
+odOutros: 2 - PER/DCOMP;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrPosseItem"></a><code><b>TACBrPosseItem</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+9 – Outros. / Indicador de propriedade/posse do item</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+piInformante: &nbsp;</li>
+<li>
+piInformanteNoTerceiro: 0- Item de propriedade do informante e em seu poder;</li>
+<li>
+piTerceiroNoInformante: 1- Item de propriedade do informante em posse de terceiros;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoDocto"></a><code><b>TACBrTipoDocto</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+2- Item de propriedade de terceiros em posse do informante / Informe o tipo de documento</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+docDeclaracaoExportacao: &nbsp;</li>
+<li>
+docDeclaracaoSimplesExportacao: 0 - Declaração de Exportação;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrExportacao"></a><code><b>TACBrExportacao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 - Declaração Simplificada de Exportação. / Preencher com</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+exDireta: &nbsp;</li>
+<li>
+exIndireta: 0 - Exportação Direta</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrConhecEmbarque"></a><code><b>TACBrConhecEmbarque</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 - Exportação Indireta / Informação do tipo de <a class="normal"  href="ACBrCTeConhecimentos.Conhecimento.html">conhecimento</a> de embarque</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ceAWB: &nbsp;</li>
+<li>
+ceMAWB: 01 – AWB;</li>
+<li>
+ceHAWB: 02 – MAWB;</li>
+<li>
+ceCOMAT: 03 – HAWB;</li>
+<li>
+ceRExpressas: 04 – COMAT;</li>
+<li>
+ceEtiqREspressas: 06 – <a class="normal"  href="ACBrECFUrano.html#R">R</a>. EXPRESSAS;</li>
+<li>
+ceHrExpressas: 07 – ETIQ. REXPRESSAS;</li>
+<li>
+ceAV7: 08 – HR. EXPRESSAS;</li>
+<li>
+ceBL: 09 – AV7;</li>
+<li>
+ceMBL: 10 – BL;</li>
+<li>
+ceHBL: 11 – MBL;</li>
+<li>
+ceCTR: 12 – HBL;</li>
+<li>
+ceDSIC: 13 – CRT;</li>
+<li>
+ceComatBL: 14 – DSIC;</li>
+<li>
+ceRWB: 16 – COMAT BL;</li>
+<li>
+ceHRWB: 17 – RWB;</li>
+<li>
+ceTifDta: 18 – HRWB;</li>
+<li>
+ceCP2: 19 – TIF/DTA;</li>
+<li>
+ceNaoIATA: 20 – CP2;</li>
+<li>
+ceMNaoIATA: 91 – NÂO IATA;</li>
+<li>
+ceHNaoIATA: 92 – MNAO IATA;</li>
+<li>
+ceCOutros: 93 – HNAO IATA;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrMedicao"></a><code><b>TACBrMedicao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+99 – OUTROS. / Identificador de medição</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+medAnalogico: &nbsp;</li>
+<li>
+medDigital: 0 - analógico;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrMovimentoBens"></a><code><b>TACBrMovimentoBens</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+1 – digital / Tipo de movimentação do bem ou componente</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+mbcSI: &nbsp;</li>
+<li>
+mbcIM: SI = Saldo inicial de bens imobilizados</li>
+<li>
+mbcIA: IM = Imobilização de bem individual</li>
+<li>
+mbcCI: IA = Imobilização em Andamento - Componente</li>
+<li>
+mbcMC: CI = Conclusão de Imobilização em Andamento – Bem Resultante</li>
+<li>
+mbcBA: MC = Imobilização oriunda do Ativo Circulante</li>
+<li>
+mbcAT: BA = Baixa do Saldo de ICMS - Fim do período de apropriação</li>
+<li>
+mbcPE: AT = Alienação ou Transferência</li>
+<li>
+mbcOT: PE = Perecimento, Extravio ou Deterioração</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrGrupoTensao"></a><code><b>TACBrGrupoTensao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+OT = Outras Saídas do Imobilizado / Código de grupo de tensão</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+gtA1: &nbsp;</li>
+<li>
+gtA2: 01 - A1 - Alta Tensão (230kV ou mais)</li>
+<li>
+gtA3: 02 - A2 - Alta Tensão (88 a 138kV)</li>
+<li>
+gtA3a: 03 - A3 - Alta Tensão (69kV)</li>
+<li>
+gtA4: 04 - A3a - Alta Tensão (30kV a 44kV)</li>
+<li>
+gtAS: 05 - A4 - Alta Tensão (2,3kV a 25kV)</li>
+<li>
+gtB107: 06 - AS - Alta Tensão Subterrâneo 06</li>
+<li>
+gtB108: 07 - B1 - Residencial 07</li>
+<li>
+gtB209: 08 - B1 - Residencial Baixa Renda 08</li>
+<li>
+gtB2Rural: 09 - B2 - Rural 09</li>
+<li>
+gtB2Irrigacao: 10 - B2 - Cooperativa de Eletrificação Rural</li>
+<li>
+gtB3: 11 - B2 - Serviço Público de Irrigação</li>
+<li>
+gtB4a: 12 - B3 - Demais Classes</li>
+<li>
+gtB4b: 13 - B4a - Iluminação Pública - rede de distribuição</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrClasseConsumo"></a><code><b>TACBrClasseConsumo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+14 - B4b - Iluminação Pública - bulbo de lâmpada / Código de classe de consumo de energia elétrica ou gás</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ccComercial: &nbsp;</li>
+<li>
+ccConsumoProprio: 01 - Comercial</li>
+<li>
+ccIluminacaoPublica: 02 - Consumo Próprio</li>
+<li>
+ccIndustrial: 03 - Iluminação Pública</li>
+<li>
+ccPoderPublico: 04 - Industrial</li>
+<li>
+ccResidencial: 05 - Poder Público</li>
+<li>
+ccRural: 06 - Residencial</li>
+<li>
+ccServicoPublico: 07 - Rural</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoLigacao"></a><code><b>TACBrTipoLigacao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+08 -Serviço Público / Código de tipo de Ligação</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tlMonofasico: &nbsp;</li>
+<li>
+tlBifasico: 1 - Monofásico</li>
+<li>
+tlTrifasico: 2 - Bifásico</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrDispositivo"></a><code><b>TACBrDispositivo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+3 - Trifásico / Código dispositivo autorizado</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+cdaFormSeguranca: &nbsp;</li>
+<li>
+cdaFSDA: 00 - Formulário de Segurança</li>
+<li>
+cdaNFe: 01 - <a class="normal"  href="ACBrECFDaruma.html#FS">FS</a>-DA – Formulário de Segurança para Impressão de DANFE</li>
+<li>
+cdaFormContinuo: 02 – Formulário de segurança - NF-e</li>
+<li>
+cdaBlocos: 03 - Formulário Contínuo</li>
+<li>
+cdaJogosSoltos: 04 – Blocos</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoAssinante"></a><code><b>TACBrTipoAssinante</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+05 - Jogos Soltos / Código do Tipo de Assinante</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+assComercialIndustrial: &nbsp;</li>
+<li>
+assPodrPublico: 1 - Comercial/Industrial</li>
+<li>
+assResidencial: 2 - Poder Público</li>
+<li>
+assPublico: 3 - Residencial/Pessoa física</li>
+<li>
+assSemiPublico: 4 - Público</li>
+<li>
+assOutros: 5 - Semi-Público</li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ipiEntradaRecuperacaoCredito"></a><code><b>ipiEntradaRecuperacaoCredito</b> = '00' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+/ Código da Situação Tributária referente ao IPI.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ipiEntradaTributradaZero"></a><code><b>ipiEntradaTributradaZero</b>     = '01' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Entrada com recuperação de <a class="normal"  href="ACBrBALToledo.html#CR">cr</a>édito</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ipiEntradaIsenta"></a><code><b>ipiEntradaIsenta</b>             = '02' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Entrada tributada com alíquota zero</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ipiEntradaNaoTributada"></a><code><b>ipiEntradaNaoTributada</b>       = '03' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Entrada isenta</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ipiEntradaImune"></a><code><b>ipiEntradaImune</b>              = '04' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Entrada não-tributada</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ipiEntradaComSuspensao"></a><code><b>ipiEntradaComSuspensao</b>       = '05' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Entrada imune</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ipiOutrasEntradas"></a><code><b>ipiOutrasEntradas</b>            = '49' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Entrada com suspensão</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ipiSaidaTributada"></a><code><b>ipiSaidaTributada</b>            = '50' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Outras entradas</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ipiSaidaTributadaZero"></a><code><b>ipiSaidaTributadaZero</b>        = '51' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Saída tributada</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ipiSaidaIsenta"></a><code><b>ipiSaidaIsenta</b>               = '52' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Saída tributada com alíquota zero</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ipiSaidaNaoTributada"></a><code><b>ipiSaidaNaoTributada</b>         = '53' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Saída isenta</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ipiSaidaImune"></a><code><b>ipiSaidaImune</b>                = '54' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Saída não-tributada</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ipiSaidaComSuspensao"></a><code><b>ipiSaidaComSuspensao</b>         = '55' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Saída imune</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ipiOutrasSaidas"></a><code><b>ipiOutrasSaidas</b>              = '99' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Saída com suspensão</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="pisValorAliquotaNormal"></a><code><b>pisValorAliquotaNormal</b>        = '01' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Outras saídas / Código da Situação Tributária referente ao PIS.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="pisValorAliquotaDiferenciada"></a><code><b>pisValorAliquotaDiferenciada</b>  = '02' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação Tributável (base de cálculo = valor da operação alíquota normal (cumulativo/não cumulativo)).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="pisQtdeAliquotaUnidade"></a><code><b>pisQtdeAliquotaUnidade</b>        = '03' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação Tributável (base de cálculo = valor da operação (alíquota diferenciada)).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="pisMonofaticaAliquotaZero"></a><code><b>pisMonofaticaAliquotaZero</b>     = '04' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação Tributável (base de cálculo = quantidade vendida x alíquota por unidade de produto).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="pisAliquotaZero"></a><code><b>pisAliquotaZero</b>               = '06' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação Tributável (tributação monofásica (alíquota zero)).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="pisIsentaContribuicao"></a><code><b>pisIsentaContribuicao</b>         = '07' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação Tributável (alíquota zero).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="pisSemIncidenciaContribuicao"></a><code><b>pisSemIncidenciaContribuicao</b>  = '08' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação Isenta da Contribuição.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="pisSuspensaoContribuicao"></a><code><b>pisSuspensaoContribuicao</b>      = '09' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação Sem Incidência da Contribuição.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="pisOutrasOperacoes"></a><code><b>pisOutrasOperacoes</b>            = '99' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação com Suspensão da Contribuição.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cofinsValorAliquotaNormal"></a><code><b>cofinsValorAliquotaNormal</b>       = '01' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Outras Operações, / Código da Situação Tributária referente ao COFINS.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cofinsValorAliquotaDiferenciada"></a><code><b>cofinsValorAliquotaDiferenciada</b> = '02' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação Tributável (base de cálculo = valor da operação alíquota normal (cumulativo/não cumulativo)).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cofinsQtdeAliquotaUnidade"></a><code><b>cofinsQtdeAliquotaUnidade</b>       = '03' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação Tributável (base de cálculo = valor da operação (alíquota diferenciada)).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cofinsMonofaticaAliquotaZero"></a><code><b>cofinsMonofaticaAliquotaZero</b>    = '04' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação Tributável (base de cálculo = quantidade vendida x alíquota por unidade de produto).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cofinsAliquotaZero"></a><code><b>cofinsAliquotaZero</b>              = '06' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação Tributável (tributação monofásica (alíquota zero)).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cofinsIsentaContribuicao"></a><code><b>cofinsIsentaContribuicao</b>        = '07' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação Tributável (alíquota zero).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cofinsSemIncidenciaContribuicao"></a><code><b>cofinsSemIncidenciaContribuicao</b> = '08' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação Isenta da Contribuição.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cofinsSuspensaoContribuicao"></a><code><b>cofinsSuspensaoContribuicao</b>     = '09' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação Sem Incidência da Contribuição.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cofinsOutrasOperacoes"></a><code><b>cofinsOutrasOperacoes</b>           = '99' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Operação com Suspensão da Contribuição.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:29</em>
+</span>
+</body></html>

@@ -1,0 +1,329 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrArqAuxCriptografado: Classe TACBrArqAuxCriptografado</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrArqAuxCriptografado"></a><h1 class="cio">Classe TACBrArqAuxCriptografado</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrArqAuxCriptografado.html">ACBrArqAuxCriptografado</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrArqAuxCriptografado = class(TComponent)</code></p>
+<h2 class="description">Descrição</h2>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="thisitem">TACBrArqAuxCriptografado</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FACBrEAD">FACBrEAD</a></b>: <a   href="ACBrEAD.TACBrEAD.html">TACBrEAD</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FMD5">FMD5</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FArquivo">FArquivo</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FECFsAutorizados">FECFsAutorizados</a></b>: <a   href="ACBrArqAuxCriptografado.TACBrImpressorasFiscais.html">TACBrImpressorasFiscais</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FPAth">FPAth</a></b>: String;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#CryptTexto">CryptTexto</a></b>(const Texto: String): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#DeCryptTexto">DeCryptTexto</a></b>(const Texto: String): String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#GetChavePrivada">GetChavePrivada</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#GetCaminhoArquivo">GetCaminhoArquivo</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#GetOnPAFGetKeyRSA">GetOnPAFGetKeyRSA</a></b>: <a   href="ACBrEAD.html#TACBrEADGetChave">TACBrEADGetChave</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#SetOnPAFGetKeyRSA">SetOnPAFGetKeyRSA</a></b>(const Value: <a   href="ACBrEAD.html#TACBrEADGetChave">TACBrEADGetChave</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#AbrirArquivo">AbrirArquivo</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#SalvarArquivo">SalvarArquivo</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#VerificarECFCadastrado">VerificarECFCadastrado</a></b>(const NumeroSerie: String): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#VerificarGTECF">VerificarGTECF</a></b>(const NumeroSerie: String; const ValorGT: Double): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#AtualizarMD5">AtualizarMD5</a></b>(const AMD5: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#AtualizarGTECF">AtualizarGTECF</a></b>(const NumeroSerie: String; const ValorGT: Double);</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#OnPAFGetKeyRSA">OnPAFGetKeyRSA</a></b>: <a   href="ACBrEAD.html#TACBrEADGetChave">TACBrEADGetChave</a>
+      read <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#GetOnPAFGetKeyRSA">GetOnPAFGetKeyRSA</a> write <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#SetOnPAFGetKeyRSA">SetOnPAFGetKeyRSA</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#Path">Path</a></b>: String read <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FPAth">FPAth</a> write <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FPAth">FPath</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#Arquivo">Arquivo</a></b>: String read <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FArquivo">FArquivo</a> write <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FArquivo">FArquivo</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#MD5">MD5</a></b>: String read <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FMD5">FMD5</a> write <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FMD5">FMD5</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#ECFsAutorizados">ECFsAutorizados</a></b>: <a   href="ACBrArqAuxCriptografado.TACBrImpressorasFiscais.html">TACBrImpressorasFiscais</a> read <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FECFsAutorizados">FECFsAutorizados</a> write <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FECFsAutorizados">FECFsAutorizados</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FACBrEAD"></a><code><b>FACBrEAD</b>: <a   href="ACBrEAD.TACBrEAD.html">TACBrEAD</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FMD5"></a><code><b>FMD5</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FArquivo"></a><code><b>FArquivo</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FECFsAutorizados"></a><code><b>FECFsAutorizados</b>: <a   href="ACBrArqAuxCriptografado.TACBrImpressorasFiscais.html">TACBrImpressorasFiscais</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FPAth"></a><code><b>FPAth</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CryptTexto"></a><code>function <b>CryptTexto</b>(const Texto: String): String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="DeCryptTexto"></a><code>function <b>DeCryptTexto</b>(const Texto: String): String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetChavePrivada"></a><code>function <b>GetChavePrivada</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetCaminhoArquivo"></a><code>function <b>GetCaminhoArquivo</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetOnPAFGetKeyRSA"></a><code>function <b>GetOnPAFGetKeyRSA</b>: <a   href="ACBrEAD.html#TACBrEADGetChave">TACBrEADGetChave</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetOnPAFGetKeyRSA"></a><code>procedure <b>SetOnPAFGetKeyRSA</b>(const Value: <a   href="ACBrEAD.html#TACBrEADGetChave">TACBrEADGetChave</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AbrirArquivo"></a><code>procedure <b>AbrirArquivo</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SalvarArquivo"></a><code>procedure <b>SalvarArquivo</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VerificarECFCadastrado"></a><code>function <b>VerificarECFCadastrado</b>(const NumeroSerie: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VerificarGTECF"></a><code>function <b>VerificarGTECF</b>(const NumeroSerie: String; const ValorGT: Double): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AtualizarMD5"></a><code>procedure <b>AtualizarMD5</b>(const AMD5: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AtualizarGTECF"></a><code>procedure <b>AtualizarGTECF</b>(const NumeroSerie: String; const ValorGT: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnPAFGetKeyRSA"></a><code>property <b>OnPAFGetKeyRSA</b>: <a   href="ACBrEAD.html#TACBrEADGetChave">TACBrEADGetChave</a>
+      read <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#GetOnPAFGetKeyRSA">GetOnPAFGetKeyRSA</a> write <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#SetOnPAFGetKeyRSA">SetOnPAFGetKeyRSA</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Path"></a><code>property <b>Path</b>: String read <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FPAth">FPAth</a> write <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FPAth">FPath</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Arquivo"></a><code>property <b>Arquivo</b>: String read <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FArquivo">FArquivo</a> write <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FArquivo">FArquivo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MD5"></a><code>property <b>MD5</b>: String read <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FMD5">FMD5</a> write <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FMD5">FMD5</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ECFsAutorizados"></a><code>property <b>ECFsAutorizados</b>: <a   href="ACBrArqAuxCriptografado.TACBrImpressorasFiscais.html">TACBrImpressorasFiscais</a> read <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FECFsAutorizados">FECFsAutorizados</a> write <a   href="ACBrArqAuxCriptografado.TACBrArqAuxCriptografado.html#FECFsAutorizados">FECFsAutorizados</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:18</em>
+</span>
+</body></html>

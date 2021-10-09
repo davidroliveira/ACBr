@@ -1,0 +1,193 @@
+object frVendeItem: TfrVendeItem
+  Left = 373
+  Top = 247
+  Width = 373
+  Height = 246
+  HorzScrollBar.Range = 361
+  VertScrollBar.Range = 232
+  ActiveControl = edCodigo
+  BorderStyle = fbsSingle
+  Caption = 'Vende Item'
+  Color = clBackground
+  Font.Color = clBlack
+  Font.Height = 12
+  Font.Name = 'Bitstream Vera Sans'
+  Font.Pitch = fpVariable
+  Font.Style = []
+  Font.Weight = 48
+  ParentFont = False
+  Position = poDefault
+  Scaled = False
+  PixelsPerInch = 84
+  object Label1: TLabel
+    Left = 19
+    Top = 24
+    Width = 44
+    Height = 15
+    Alignment = taRightJustify
+    Caption = '&C'#243'digo'
+    FocusControl = edCodigo
+  end
+  object edCodigo: TEdit
+    Left = 72
+    Top = 16
+    Width = 101
+    Height = 23
+    Cursor = crIBeam
+    TabOrder = 0
+    Text = '111222333'
+  end
+  object Label2: TLabel
+    Left = 0
+    Top = 56
+    Width = 65
+    Height = 15
+    Alignment = taRightJustify
+    Caption = '&Descri'#231#227'o'
+    FocusControl = edDescricao
+  end
+  object edDescricao: TEdit
+    Left = 72
+    Top = 48
+    Width = 289
+    Height = 23
+    Cursor = crIBeam
+    TabOrder = 1
+    Text = 'TESTE DE PRODUTO'
+  end
+  object Label3: TLabel
+    Left = 38
+    Top = 88
+    Width = 22
+    Height = 15
+    Alignment = taRightJustify
+    Caption = '&Qtd'
+  end
+  object Label4: TLabel
+    Left = 180
+    Top = 88
+    Width = 88
+    Height = 15
+    Alignment = taRightJustify
+    Caption = '&Pre'#231'o Unit'#225'rio'
+    FocusControl = edPrecoUnita
+  end
+  object edPrecoUnita: TEdit
+    Left = 272
+    Top = 80
+    Width = 89
+    Height = 23
+    Cursor = crIBeam
+    TabOrder = 3
+    Text = '1'
+    OnKeyPress = edQtdKeyPress
+  end
+  object Label5: TLabel
+    Left = 167
+    Top = 120
+    Width = 100
+    Height = 15
+    Alignment = taRightJustify
+    Caption = '&Valor Aliq. ICMS'
+    FocusControl = edICMS
+  end
+  object edICMS: TEdit
+    Left = 272
+    Top = 112
+    Width = 89
+    Height = 23
+    Cursor = crIBeam
+    TabOrder = 5
+    Text = 'NN'
+    OnKeyPress = edQtdKeyPress
+  end
+  object Label6: TLabel
+    Left = 5
+    Top = 152
+    Width = 60
+    Height = 15
+    Alignment = taRightJustify
+    Caption = '&Desc (%)'
+    FocusControl = edDesconto
+  end
+  object edDesconto: TEdit
+    Left = 72
+    Top = 144
+    Width = 81
+    Height = 23
+    Cursor = crIBeam
+    TabOrder = 6
+    Text = '0'
+    OnKeyPress = edQtdKeyPress
+  end
+  object Label7: TLabel
+    Left = 10
+    Top = 120
+    Width = 52
+    Height = 15
+    Alignment = taRightJustify
+    Caption = '&Unidade'
+    FocusControl = edUN
+  end
+  object edUN: TEdit
+    Left = 72
+    Top = 112
+    Width = 81
+    Height = 23
+    Cursor = crIBeam
+    TabOrder = 4
+    Text = 'UN'
+  end
+  object Button1: TButton
+    Left = 79
+    Top = 207
+    Width = 75
+    Height = 25
+    Caption = '&Imprimir'
+    Default = True
+    TabOrder = 7
+    OnClick = Button1Click
+  end
+  object Label8: TLabel
+    Left = 173
+    Top = 143
+    Width = 62
+    Height = 15
+    Caption = 'II = Isento'
+  end
+  object Label9: TLabel
+    Left = 173
+    Top = 159
+    Width = 130
+    Height = 15
+    Caption = 'NN = Nao Incidencia'
+  end
+  object Label10: TLabel
+    Left = 173
+    Top = 175
+    Width = 173
+    Height = 15
+    Caption = 'FF = Substitui'#231'ao Tribut'#225'ria'
+  end
+  object Button2: TButton
+    Left = 218
+    Top = 207
+    Width = 75
+    Height = 25
+    Cancel = True
+    Caption = 'Fechar'
+    ModalResult = 2
+    TabOrder = 8
+    OnClick = Button2Click
+  end
+  object edQtd: TEdit
+    Left = 72
+    Top = 80
+    Width = 81
+    Height = 23
+    Cursor = crIBeam
+    TabOrder = 2
+    Text = '1'
+    OnKeyPress = edQtdKeyPress
+  end
+end

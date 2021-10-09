@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrNFeNotasFiscais: Classe TNotasFiscais</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TNotasFiscais"></a><h1 class="cio">Classe TNotasFiscais</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrNFeNotasFiscais.html">ACBrNFeNotasFiscais</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TNotasFiscais = class(TOwnedCollection)</code></p>
+<h2 class="description">Descrição</h2>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TOwnedCollection</li>
+<li class="thisitem">TNotasFiscais</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#FConfiguracoes">FConfiguracoes</a></b>: <a   href="ACBrNFeConfiguracoes.TConfiguracoes.html">TConfiguracoes</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#FACBrNFe">FACBrNFe</a></b>: TComponent ;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#GetItem">GetItem</a></b>(Index: Integer): <a   href="ACBrNFeNotasFiscais.NotaFiscal.html">NotaFiscal</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#SetItem">SetItem</a></b>(Index: Integer; const Value: <a   href="ACBrNFeNotasFiscais.NotaFiscal.html">NotaFiscal</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#Create">Create</a></b>(AOwner: TPersistent; ItemClass: TCollectionItemClass);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#GerarNFe">GerarNFe</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#Assinar">Assinar</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#Valida">Valida</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#Imprimir">Imprimir</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#ImprimirPDF">ImprimirPDF</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#Add">Add</a></b>: <a   href="ACBrNFeNotasFiscais.NotaFiscal.html">NotaFiscal</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#Insert">Insert</a></b>(Index: Integer): <a   href="ACBrNFeNotasFiscais.NotaFiscal.html">NotaFiscal</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#GetNamePath">GetNamePath</a></b>: string; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#LoadFromFile">LoadFromFile</a></b>(CaminhoArquivo: string): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#LoadFromStream">LoadFromStream</a></b>(Stream: TStringStream): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#SaveToFile">SaveToFile</a></b>(PathArquivo: string = ''; SalvaTXT : Boolean = False): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#SaveToTXT">SaveToTXT</a></b>(PathArquivo: string = ''): boolean;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#Items">Items</a></b>[Index: Integer]: <a   href="ACBrNFeNotasFiscais.NotaFiscal.html">NotaFiscal</a> read <a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#GetItem">GetItem</a>  write <a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#SetItem">SetItem</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#Configuracoes">Configuracoes</a></b>: <a   href="ACBrNFeConfiguracoes.TConfiguracoes.html">TConfiguracoes</a> read <a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#FConfiguracoes">FConfiguracoes</a>  write <a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#FConfiguracoes">FConfiguracoes</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#ACBrNFe">ACBrNFe</a></b> : TComponent read <a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#FACBrNFe">FACBrNFe</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FConfiguracoes"></a><code><b>FConfiguracoes</b>: <a   href="ACBrNFeConfiguracoes.TConfiguracoes.html">TConfiguracoes</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FACBrNFe"></a><code><b>FACBrNFe</b>: TComponent ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetItem"></a><code>function <b>GetItem</b>(Index: Integer): <a   href="ACBrNFeNotasFiscais.NotaFiscal.html">NotaFiscal</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetItem"></a><code>procedure <b>SetItem</b>(Index: Integer; const Value: <a   href="ACBrNFeNotasFiscais.NotaFiscal.html">NotaFiscal</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TPersistent; ItemClass: TCollectionItemClass);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GerarNFe"></a><code>procedure <b>GerarNFe</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Assinar"></a><code>procedure <b>Assinar</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Valida"></a><code>procedure <b>Valida</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Imprimir"></a><code>procedure <b>Imprimir</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ImprimirPDF"></a><code>procedure <b>ImprimirPDF</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>: <a   href="ACBrNFeNotasFiscais.NotaFiscal.html">NotaFiscal</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Insert"></a><code>function <b>Insert</b>(Index: Integer): <a   href="ACBrNFeNotasFiscais.NotaFiscal.html">NotaFiscal</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetNamePath"></a><code>function <b>GetNamePath</b>: string; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromFile"></a><code>function <b>LoadFromFile</b>(CaminhoArquivo: string): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromStream"></a><code>function <b>LoadFromStream</b>(Stream: TStringStream): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToFile"></a><code>function <b>SaveToFile</b>(PathArquivo: string = ''; SalvaTXT : Boolean = False): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToTXT"></a><code>function <b>SaveToTXT</b>(PathArquivo: string = ''): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Items"></a><code>property <b>Items</b>[Index: Integer]: <a   href="ACBrNFeNotasFiscais.NotaFiscal.html">NotaFiscal</a> read <a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#GetItem">GetItem</a>  write <a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#SetItem">SetItem</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Configuracoes"></a><code>property <b>Configuracoes</b>: <a   href="ACBrNFeConfiguracoes.TConfiguracoes.html">TConfiguracoes</a> read <a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#FConfiguracoes">FConfiguracoes</a>  write <a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#FConfiguracoes">FConfiguracoes</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ACBrNFe"></a><code>property <b>ACBrNFe</b> : TComponent read <a   href="ACBrNFeNotasFiscais.TNotasFiscais.html#FACBrNFe">FACBrNFe</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:49</em>
+</span>
+</body></html>

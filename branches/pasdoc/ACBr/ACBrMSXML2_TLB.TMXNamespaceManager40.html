@@ -1,0 +1,293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrMSXML2_TLB: Classe TMXNamespaceManager40</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TMXNamespaceManager40"></a><h1 class="cio">Classe TMXNamespaceManager40</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrMSXML2_TLB.html">ACBrMSXML2_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TMXNamespaceManager40 = class(TOleServer)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// OLE Server Proxy class declaration Server Object : <code>TMXNamespaceManager40</code> Help String : MX Namespace Manager 4.0 coclass Default Interface: <a class="normal"  href="ACBrMSXML2_TLB.IVBMXNamespaceManager.html">IVBMXNamespaceManager</a> Def. Intf. DISP? : No Event Interface: TypeFlags : (2) CanCreate *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TOleServer</li>
+<li class="thisitem">TMXNamespaceManager40</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#FIntf">FIntf</a></b>:        <a   href="ACBrMSXML2_TLB.IVBMXNamespaceManager.html">IVBMXNamespaceManager</a>;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#GetDefaultInterface">GetDefaultInterface</a></b>: <a   href="ACBrMSXML2_TLB.IVBMXNamespaceManager.html">IVBMXNamespaceManager</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#InitServerData">InitServerData</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#Set_allowOverride">Set_allowOverride</a></b>(fOverride: WordBool);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#Get_allowOverride">Get_allowOverride</a></b>: WordBool;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#Connect">Connect</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#ConnectTo">ConnectTo</a></b>(svrIntf: <a   href="ACBrMSXML2_TLB.IVBMXNamespaceManager.html">IVBMXNamespaceManager</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#Disconnect">Disconnect</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#reset">reset</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#pushContext">pushContext</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#pushNodeContext">pushNodeContext</a></b>(const contextNode: <a   href="ACBrMSXML2_TLB.IXMLDOMNode.html">IXMLDOMNode</a>; fDeep: WordBool);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#popContext">popContext</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#declarePrefix">declarePrefix</a></b>(const prefix: WideString; const namespaceURI: WideString);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#getDeclaredPrefixes">getDeclaredPrefixes</a></b>: <a   href="ACBrMSXML2_TLB.IMXNamespacePrefixes.html">IMXNamespacePrefixes</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#getPrefixes">getPrefixes</a></b>(const namespaceURI: WideString): <a   href="ACBrMSXML2_TLB.IMXNamespacePrefixes.html">IMXNamespacePrefixes</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#getURI">getURI</a></b>(const prefix: WideString): OleVariant;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#getURIFromNode">getURIFromNode</a></b>(const strPrefix: WideString; const contextNode: <a   href="ACBrMSXML2_TLB.IXMLDOMNode.html">IXMLDOMNode</a>): OleVariant;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#DefaultInterface">DefaultInterface</a></b>: <a   href="ACBrMSXML2_TLB.IVBMXNamespaceManager.html">IVBMXNamespaceManager</a> read <a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#GetDefaultInterface">GetDefaultInterface</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#allowOverride">allowOverride</a></b>: WordBool read <a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#Get_allowOverride">Get_allowOverride</a> write <a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#Set_allowOverride">Set_allowOverride</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FIntf"></a><code><b>FIntf</b>:        <a   href="ACBrMSXML2_TLB.IVBMXNamespaceManager.html">IVBMXNamespaceManager</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetDefaultInterface"></a><code>function <b>GetDefaultInterface</b>: <a   href="ACBrMSXML2_TLB.IVBMXNamespaceManager.html">IVBMXNamespaceManager</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="InitServerData"></a><code>procedure <b>InitServerData</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Set_allowOverride"></a><code>procedure <b>Set_allowOverride</b>(fOverride: WordBool);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_allowOverride"></a><code>function <b>Get_allowOverride</b>: WordBool;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Connect"></a><code>procedure <b>Connect</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ConnectTo"></a><code>procedure <b>ConnectTo</b>(svrIntf: <a   href="ACBrMSXML2_TLB.IVBMXNamespaceManager.html">IVBMXNamespaceManager</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Disconnect"></a><code>procedure <b>Disconnect</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="reset"></a><code>procedure <b>reset</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="pushContext"></a><code>procedure <b>pushContext</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="pushNodeContext"></a><code>procedure <b>pushNodeContext</b>(const contextNode: <a   href="ACBrMSXML2_TLB.IXMLDOMNode.html">IXMLDOMNode</a>; fDeep: WordBool);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="popContext"></a><code>procedure <b>popContext</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="declarePrefix"></a><code>procedure <b>declarePrefix</b>(const prefix: WideString; const namespaceURI: WideString);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="getDeclaredPrefixes"></a><code>function <b>getDeclaredPrefixes</b>: <a   href="ACBrMSXML2_TLB.IMXNamespacePrefixes.html">IMXNamespacePrefixes</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="getPrefixes"></a><code>function <b>getPrefixes</b>(const namespaceURI: WideString): <a   href="ACBrMSXML2_TLB.IMXNamespacePrefixes.html">IMXNamespacePrefixes</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="getURI"></a><code>function <b>getURI</b>(const prefix: WideString): OleVariant;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="getURIFromNode"></a><code>function <b>getURIFromNode</b>(const strPrefix: WideString; const contextNode: <a   href="ACBrMSXML2_TLB.IXMLDOMNode.html">IXMLDOMNode</a>): OleVariant;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DefaultInterface"></a><code>property <b>DefaultInterface</b>: <a   href="ACBrMSXML2_TLB.IVBMXNamespaceManager.html">IVBMXNamespaceManager</a> read <a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#GetDefaultInterface">GetDefaultInterface</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="allowOverride"></a><code>property <b>allowOverride</b>: WordBool read <a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#Get_allowOverride">Get_allowOverride</a> write <a   href="ACBrMSXML2_TLB.TMXNamespaceManager40.html#Set_allowOverride">Set_allowOverride</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:47</em>
+</span>
+</body></html>

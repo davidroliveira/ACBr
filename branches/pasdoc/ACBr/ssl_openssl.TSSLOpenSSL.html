@@ -1,0 +1,440 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ssl_openssl: Classe TSSLOpenSSL</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TSSLOpenSSL"></a><h1 class="cio">Classe TSSLOpenSSL</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ssl_openssl.html">ssl_openssl</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TSSLOpenSSL = class(<a class="normal"  href="blcksock.TCustomSSL.html">TCustomSSL</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+class implementing <a class="normal"  href="OpenSSL.html">OpenSSL</a> SSL plugin.</p>
+<p>
+: Instance of this class will be created for each <a class="normal"  href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>. You not need to <a class="normal"  href="ssl_openssl.TSSLOpenSSL.html#Create">create</a> instance of this class, all is done by Synapse itself!</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal"  href="blcksock.TCustomSSL.html">TCustomSSL</a></li>
+<li class="thisitem">TSSLOpenSSL</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ssl_openssl.TSSLOpenSSL.html#FSsl">FSsl</a></b>: <a   href="ssl_openssl_lib.html#PSSL">PSSL</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ssl_openssl.TSSLOpenSSL.html#Fctx">Fctx</a></b>: <a   href="ssl_openssl_lib.html#PSSL_CTX">PSSL_CTX</a>;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#SSLCheck">SSLCheck</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#SetSslKeys">SetSslKeys</a></b>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#Init">Init</a></b>(server:Boolean): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#DeInit">DeInit</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#Prepare">Prepare</a></b>(server:Boolean): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#LoadPFX">LoadPFX</a></b>(pfxdata: ansistring): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#CreateSelfSignedCert">CreateSelfSignedCert</a></b>(Host: string): Boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ssl_openssl.TSSLOpenSSL.html#Create">Create</a></b>(const Value: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ssl_openssl.TSSLOpenSSL.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#LibVersion">LibVersion</a></b>: String; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#LibName">LibName</a></b>: String; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#Connect">Connect</a></b>: boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#Accept">Accept</a></b>: boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#Shutdown">Shutdown</a></b>: boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#BiShutdown">BiShutdown</a></b>: boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#SendBuffer">SendBuffer</a></b>(Buffer: TMemory; Len: Integer): Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#RecvBuffer">RecvBuffer</a></b>(Buffer: TMemory; Len: Integer): Integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#WaitingData">WaitingData</a></b>: Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#GetSSLVersion">GetSSLVersion</a></b>: string; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#GetPeerSubject">GetPeerSubject</a></b>: string; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#GetPeerIssuer">GetPeerIssuer</a></b>: string; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#GetPeerName">GetPeerName</a></b>: string; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#GetPeerFingerprint">GetPeerFingerprint</a></b>: string; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#GetCertInfo">GetCertInfo</a></b>: string; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#GetCipherName">GetCipherName</a></b>: string; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#GetCipherBits">GetCipherBits</a></b>: integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#GetCipherAlgBits">GetCipherAlgBits</a></b>: integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ssl_openssl.TSSLOpenSSL.html#GetVerifyCert">GetVerifyCert</a></b>: integer; override;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FSsl"></a><code><b>FSsl</b>: <a   href="ssl_openssl_lib.html#PSSL">PSSL</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Fctx"></a><code><b>Fctx</b>: <a   href="ssl_openssl_lib.html#PSSL_CTX">PSSL_CTX</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="SSLCheck"></a><code>function <b>SSLCheck</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="SetSslKeys"></a><code>function <b>SetSslKeys</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Init"></a><code>function <b>Init</b>(server:Boolean): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="DeInit"></a><code>function <b>DeInit</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Prepare"></a><code>function <b>Prepare</b>(server:Boolean): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="LoadPFX"></a><code>function <b>LoadPFX</b>(pfxdata: ansistring): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="CreateSelfSignedCert"></a><code>function <b>CreateSelfSignedCert</b>(Host: string): Boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(const Value: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#Create">TCustomSSL.Create</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LibVersion"></a><code>function <b>LibVersion</b>: String; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#LibVersion">TCustomSSL.LibVersion</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LibName"></a><code>function <b>LibName</b>: String; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#LibName">TCustomSSL.LibName</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Connect"></a><code>function <b>Connect</b>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#Connect">TCustomSSL.Connect</a> and <a class="normal"  href="ssl_cryptlib.html">ssl_cryptlib</a> for more details.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Accept"></a><code>function <b>Accept</b>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#Accept">TCustomSSL.Accept</a> and <a class="normal"  href="ssl_cryptlib.html">ssl_cryptlib</a> for more details.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Shutdown"></a><code>function <b>Shutdown</b>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#Shutdown">TCustomSSL.Shutdown</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BiShutdown"></a><code>function <b>BiShutdown</b>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#BiShutdown">TCustomSSL.BiShutdown</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SendBuffer"></a><code>function <b>SendBuffer</b>(Buffer: TMemory; Len: Integer): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#SendBuffer">TCustomSSL.SendBuffer</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RecvBuffer"></a><code>function <b>RecvBuffer</b>(Buffer: TMemory; Len: Integer): Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#RecvBuffer">TCustomSSL.RecvBuffer</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WaitingData"></a><code>function <b>WaitingData</b>: Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#WaitingData">TCustomSSL.WaitingData</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetSSLVersion"></a><code>function <b>GetSSLVersion</b>: string; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#GetSSLVersion">TCustomSSL.GetSSLVersion</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetPeerSubject"></a><code>function <b>GetPeerSubject</b>: string; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#GetPeerSubject">TCustomSSL.GetPeerSubject</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetPeerIssuer"></a><code>function <b>GetPeerIssuer</b>: string; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#GetPeerIssuer">TCustomSSL.GetPeerIssuer</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetPeerName"></a><code>function <b>GetPeerName</b>: string; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#GetPeerName">TCustomSSL.GetPeerName</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetPeerFingerprint"></a><code>function <b>GetPeerFingerprint</b>: string; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#GetPeerFingerprint">TCustomSSL.GetPeerFingerprint</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetCertInfo"></a><code>function <b>GetCertInfo</b>: string; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#GetCertInfo">TCustomSSL.GetCertInfo</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetCipherName"></a><code>function <b>GetCipherName</b>: string; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#GetCipherName">TCustomSSL.GetCipherName</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetCipherBits"></a><code>function <b>GetCipherBits</b>: integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#GetCipherBits">TCustomSSL.GetCipherBits</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetCipherAlgBits"></a><code>function <b>GetCipherAlgBits</b>: integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#GetCipherAlgBits">TCustomSSL.GetCipherAlgBits</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetVerifyCert"></a><code>function <b>GetVerifyCert</b>: integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:See <a class="normal"  href="blcksock.TCustomSSL.html#GetVerifyCert">TCustomSSL.GetVerifyCert</a></p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:21:05</em>
+</span>
+</body></html>

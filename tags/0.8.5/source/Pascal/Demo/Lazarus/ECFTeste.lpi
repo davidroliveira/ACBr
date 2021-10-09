@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="/"/>
+    <Version Value="5"/>
+    <General>
+      <Flags>
+        <SaveOnlyProjectUnits Value="True"/>
+      </Flags>
+      <MainUnit Value="0"/>
+      <IconPath Value="./"/>
+      <TargetFileExt Value=""/>
+      <Title Value="ECFTeste Lazarus - http://acbr.sf.net"/>
+      <ActiveEditorIndexAtStart Value="1"/>
+    </General>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="5">
+      <Unit0>
+        <Filename Value="ecfteste.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ecfteste"/>
+        <CursorPos X="9" Y="10"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="31"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="ecfteste1.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceFilename Value="ecfteste1.lrs"/>
+        <UnitName Value="ecfteste1"/>
+        <CursorPos X="29" Y="830"/>
+        <TopLine Value="821"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="31"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="vendeitem.pas"/>
+        <ComponentName Value="frVendeItem"/>
+        <HasResources Value="True"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceFilename Value="vendeitem.lrs"/>
+        <UnitName Value="vendeitem"/>
+        <CursorPos X="61" Y="62"/>
+        <TopLine Value="50"/>
+        <UsageCount Value="31"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="efetuapagamento.pas"/>
+        <ComponentName Value="frPagamento"/>
+        <HasResources Value="True"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceFilename Value="efetuapagamento.lrs"/>
+        <UnitName Value="efetuapagamento"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="31"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="relatorio.pas"/>
+        <ComponentName Value="frRelatorio"/>
+        <HasResources Value="True"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceFilename Value="relatorio.lrs"/>
+        <UnitName Value="relatorio"/>
+        <CursorPos X="13" Y="6"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="31"/>
+      </Unit4>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="5"/>
+    <SearchPaths>
+      <IncludeFiles Value="../../"/>
+      <OtherUnitFiles Value="../../"/>
+      <UnitOutputDirectory Value="../../../../dcu"/>
+      <SrcPath Value="$(LazarusDir)/lcl/;$(LazarusDir)/lcl/interfaces/$(LCLWidgetType)/"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+      <Generate Value="Smaller"/>
+      <Optimizations>
+        <OptimizationLevel Value="2"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Source Value="mnt/win_c/delphi/ACBr/source/Pascal/ACBrECFSweda.pas"/>
+        <Line Value="828"/>
+      </Item1>
+    </BreakPoints>
+    <Exceptions Count="7">
+      <Item1>
+        <Name Value="Exception"/>
+      </Item1>
+      <Item2>
+        <Name Value="ESynaSerError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EACBrECFCMDInvalido"/>
+      </Item3>
+      <Item4>
+        <Name Value="EACBrECFSemResposta"/>
+      </Item4>
+      <Item5>
+        <Name Value="EACBrECFNaoInicializado"/>
+      </Item5>
+      <Item6>
+        <Name Value="EInOutError"/>
+      </Item6>
+      <Item7>
+        <Name Value="RunError"/>
+      </Item7>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

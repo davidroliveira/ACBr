@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrSocket</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrSocket</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td><a class="section"  href="#%40Types">Tipos</a></td><td>Constantes</td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF}</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>Classes</li><li><a   href="blcksock.html">blcksock</a></li><li>synsock</li><li><a   href="httpsend.html">httpsend</a></li><li>windows</li><li>wininet</li><li><a   href="ACBrBase.html">ACBrBase</a></li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrSocket.TACBrTCPServerDaemon.html"><code>TACBrTCPServerDaemon</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrSocket.TACBrTCPServerThread.html"><code>TACBrTCPServerThread</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrSocket.TACBrTCPServer.html"><code>TACBrTCPServer</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrSocket.EACBrHTTPError.html"><code>EACBrHTTPError</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrSocket.TACBrHTTP.html"><code>TACBrHTTP</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrSocket.html#TACBrTCPServerConecta">TACBrTCPServerConecta</a></b> = procedure( const TCPBlockSocket : <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>; var Enviar : AnsiString ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrSocket.html#TACBrTCPServerDesConecta">TACBrTCPServerDesConecta</a></b> = procedure( const TCPBlockSocket : <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>; Erro: Integer; ErroDesc : String ) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrSocket.html#TACBrTCPServerRecive">TACBrTCPServerRecive</a></b> = procedure( const TCPBlockSocket : <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>; const Recebido : AnsiString; var Enviar : AnsiString) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrSocket.html#TACBrOnAntesAbrirHTTP">TACBrOnAntesAbrirHTTP</a></b> = procedure( var AURL : String ) of object ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTCPServerConecta"></a><code><b>TACBrTCPServerConecta</b> = procedure( const TCPBlockSocket : <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>; var Enviar : AnsiString ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Evento disparada quando Conecta</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTCPServerDesConecta"></a><code><b>TACBrTCPServerDesConecta</b> = procedure( const TCPBlockSocket : <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>; Erro: Integer; ErroDesc : String ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Evento disparada quando DesConecta</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTCPServerRecive"></a><code><b>TACBrTCPServerRecive</b> = procedure( const TCPBlockSocket : <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>; const Recebido : AnsiString; var Enviar : AnsiString) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Evento disparado quando recebe dados</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrOnAntesAbrirHTTP"></a><code><b>TACBrOnAntesAbrirHTTP</b> = procedure( var AURL : String ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<a class="normal"  href="ACBrSocket.TACBrHTTP.html">TACBrHTTP</a></p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:53</em>
+</span>
+</body></html>

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrEAD</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrEAD</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td><a class="section"  href="#%40Types">Tipos</a></td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF}</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Classes</li><li>SysUtils</li><li><a   href="ACBrUtil.html">ACBrUtil</a></li><li><a   href="libeay32.html">libeay32</a></li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrEAD.TACBrEAD.html"><code>TACBrEAD</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEAD.html#TACBrEADDgst">TACBrEADDgst</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEAD.html#TACBrEADCalc">TACBrEADCalc</a></b> = procedure(Arquivo: String) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEAD.html#TACBrEADGetChave">TACBrEADGetChave</a></b> = procedure(var Chave: AnsiString) of object ;</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrEAD.html#CACBrEAD_Versao">CACBrEAD_Versao</a></b> = '0.3.0' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrEAD.html#cRFDRSAKey">cRFDRSAKey</a></b> = '-----BEGIN RSA PRIVATE KEY-----' + <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'MIICXQIBAAKBgQCtpPqcoOX4rwgdoKi6zJwPX9PA2iX2KxgvyxjE+daI5ZmYxcg0'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'NScjX59nXRaLmtltVRfsRc1n4+mLSXiWMh3jIbw+TWn+GXKQhS2GitpLVhO3A6Ns'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'vO1+RuP77s+uGYhqVvbD0Pziq+I2r4oktsjTbpnC7Mof3BjJdIUFsTHKYwIDAQAB'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'AoGAXXqwU7umsi8ADnsb+pwF85zh8TM/NnvSpIAQkJHzNXVtL7ph4gEvVbK3rLyH'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'U5aEMICbxV16i9A9PPfLjAfk4CuPpZlTibgfBRIG3MXirum0tjcyzbPyiDrk0qwM'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'e83MyRkrnGlss6cRT3mZk67txEamqTVmDwz/Sfo1fVlCQAkCQQDW3N/EKyT+8tPW'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                '1EuPXafRONMel4xB1RiBmHYJP1bo/sDebLpocL6oiVlUX/k/zPRo1wMvlXJxPyiz'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'mnf37cZ9AkEAzuPcDvGxwawr7EPGmPQ0f7aWv87tS/rt9L3nKiz8HfrT6WT0R1Bh'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'I7lLGq4VFWE29I6hQ2lPNGX9IGFjiflKXwJBALgsO+J62QtwOgU7lEkfjmnYu57N'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'aHxFnOv5M7RZhrXRKKF/sYk0mzj8AoZAffYiSJ5VL3XqNF6+NLU/AvaR6kECQQCV'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'nY6sd/kWmA4DhFgAkMnOehq2h0xwH/0pepPLmlCQ1a2eIVXOpMA692rq1m2E0pLN'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'dMAGYgfXWtIdMpCrXM59AkB5npcELeGBv1K8B41fmrlA6rEq4aqmfwAFRKcQTj8a'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'n09FVtccLVPJ42AM1/QXK6a8DGCtB9R+j5j3UO/iL0+3'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                '-----END RSA PRIVATE KEY-----' ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrEADDgst"></a><code><b>TACBrEADDgst</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+**** IMPORTANTE **** Por motivos de segurança, GERE A SUA PROPRIA CHAVE e informe-a em: &quot;OnGetChavePrivada&quot;</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+dgstMD2: &nbsp;</li>
+<li>
+dgstMD4: &nbsp;</li>
+<li>
+dgstMD5: &nbsp;</li>
+<li>
+dgstRMD160: &nbsp;</li>
+<li>
+dgstSHA: &nbsp;</li>
+<li>
+dgstSHA1: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrEADCalc"></a><code><b>TACBrEADCalc</b> = procedure(Arquivo: String) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrEADGetChave"></a><code><b>TACBrEADGetChave</b> = procedure(var Chave: AnsiString) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CACBrEAD_Versao"></a><code><b>CACBrEAD_Versao</b> = '0.3.0' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cRFDRSAKey"></a><code><b>cRFDRSAKey</b> = '-----BEGIN RSA PRIVATE KEY-----' + <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'MIICXQIBAAKBgQCtpPqcoOX4rwgdoKi6zJwPX9PA2iX2KxgvyxjE+daI5ZmYxcg0'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'NScjX59nXRaLmtltVRfsRc1n4+mLSXiWMh3jIbw+TWn+GXKQhS2GitpLVhO3A6Ns'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'vO1+RuP77s+uGYhqVvbD0Pziq+I2r4oktsjTbpnC7Mof3BjJdIUFsTHKYwIDAQAB'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'AoGAXXqwU7umsi8ADnsb+pwF85zh8TM/NnvSpIAQkJHzNXVtL7ph4gEvVbK3rLyH'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'U5aEMICbxV16i9A9PPfLjAfk4CuPpZlTibgfBRIG3MXirum0tjcyzbPyiDrk0qwM'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'e83MyRkrnGlss6cRT3mZk67txEamqTVmDwz/Sfo1fVlCQAkCQQDW3N/EKyT+8tPW'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                '1EuPXafRONMel4xB1RiBmHYJP1bo/sDebLpocL6oiVlUX/k/zPRo1wMvlXJxPyiz'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'mnf37cZ9AkEAzuPcDvGxwawr7EPGmPQ0f7aWv87tS/rt9L3nKiz8HfrT6WT0R1Bh'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'I7lLGq4VFWE29I6hQ2lPNGX9IGFjiflKXwJBALgsO+J62QtwOgU7lEkfjmnYu57N'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'aHxFnOv5M7RZhrXRKKF/sYk0mzj8AoZAffYiSJ5VL3XqNF6+NLU/AvaR6kECQQCV'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'nY6sd/kWmA4DhFgAkMnOehq2h0xwH/0pepPLmlCQ1a2eIVXOpMA692rq1m2E0pLN'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'dMAGYgfXWtIdMpCrXM59AkB5npcELeGBv1K8B41fmrlA6rEq4aqmfwAFRKcQTj8a'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                'n09FVtccLVPJ42AM1/QXK6a8DGCtB9R+j5j3UO/iL0+3'+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                '-----END RSA PRIVATE KEY-----' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:24</em>
+</span>
+</body></html>

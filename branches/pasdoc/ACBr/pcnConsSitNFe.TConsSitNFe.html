@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: pcnConsSitNFe: Classe TConsSitNFe</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TConsSitNFe"></a><h1 class="cio">Classe TConsSitNFe</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="pcnConsSitNFe.html">pcnConsSitNFe</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TConsSitNFe = class(TPersistent)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+//////////////////////////////////////////////////////////////////////////// // E M D E S E N V O L V I M E N T O - N Ã O T E S T A D O // // ////////////////////////////////////////////////////////////////////////////</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TPersistent</li>
+<li class="thisitem">TConsSitNFe</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnConsSitNFe.TConsSitNFe.html#FGerador">FGerador</a></b>: <a   href="pcnGerador.TGerador.html">TGerador</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnConsSitNFe.TConsSitNFe.html#FSchema">FSchema</a></b>: <a   href="pcnConversao.html#TpcnSchema">TpcnSchema</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnConsSitNFe.TConsSitNFe.html#FtpAmb">FtpAmb</a></b>: <a   href="pcnConversao.html#TpcnTipoAmbiente">TpcnTipoAmbiente</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnConsSitNFe.TConsSitNFe.html#FchNFe">FchNFe</a></b>: string;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="pcnConsSitNFe.TConsSitNFe.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="pcnConsSitNFe.TConsSitNFe.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pcnConsSitNFe.TConsSitNFe.html#GerarXML">GerarXML</a></b>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pcnConsSitNFe.TConsSitNFe.html#ObterNomeArquivo">ObterNomeArquivo</a></b>: string;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnConsSitNFe.TConsSitNFe.html#Gerador">Gerador</a></b>: <a   href="pcnGerador.TGerador.html">TGerador</a> read <a   href="pcnConsSitNFe.TConsSitNFe.html#FGerador">FGerador</a> write <a   href="pcnConsSitNFe.TConsSitNFe.html#FGerador">FGerador</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnConsSitNFe.TConsSitNFe.html#schema">schema</a></b>: <a   href="pcnConversao.html#TpcnSchema">TpcnSchema</a> read <a   href="pcnConsSitNFe.TConsSitNFe.html#FSchema">Fschema</a> write <a   href="pcnConsSitNFe.TConsSitNFe.html#FSchema">Fschema</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnConsSitNFe.TConsSitNFe.html#tpAmb">tpAmb</a></b>: <a   href="pcnConversao.html#TpcnTipoAmbiente">TpcnTipoAmbiente</a> read <a   href="pcnConsSitNFe.TConsSitNFe.html#FtpAmb">FtpAmb</a> write <a   href="pcnConsSitNFe.TConsSitNFe.html#FtpAmb">FtpAmb</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnConsSitNFe.TConsSitNFe.html#chNFe">chNFe</a></b>: string read <a   href="pcnConsSitNFe.TConsSitNFe.html#FchNFe">FchNFe</a> write <a   href="pcnConsSitNFe.TConsSitNFe.html#FchNFe">FchNFe</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FGerador"></a><code><b>FGerador</b>: <a   href="pcnGerador.TGerador.html">TGerador</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FSchema"></a><code><b>FSchema</b>: <a   href="pcnConversao.html#TpcnSchema">TpcnSchema</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FtpAmb"></a><code><b>FtpAmb</b>: <a   href="pcnConversao.html#TpcnTipoAmbiente">TpcnTipoAmbiente</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FchNFe"></a><code><b>FchNFe</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GerarXML"></a><code>function <b>GerarXML</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ObterNomeArquivo"></a><code>function <b>ObterNomeArquivo</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Gerador"></a><code>property <b>Gerador</b>: <a   href="pcnGerador.TGerador.html">TGerador</a> read <a   href="pcnConsSitNFe.TConsSitNFe.html#FGerador">FGerador</a> write <a   href="pcnConsSitNFe.TConsSitNFe.html#FGerador">FGerador</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="schema"></a><code>property <b>schema</b>: <a   href="pcnConversao.html#TpcnSchema">TpcnSchema</a> read <a   href="pcnConsSitNFe.TConsSitNFe.html#FSchema">Fschema</a> write <a   href="pcnConsSitNFe.TConsSitNFe.html#FSchema">Fschema</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="tpAmb"></a><code>property <b>tpAmb</b>: <a   href="pcnConversao.html#TpcnTipoAmbiente">TpcnTipoAmbiente</a> read <a   href="pcnConsSitNFe.TConsSitNFe.html#FtpAmb">FtpAmb</a> write <a   href="pcnConsSitNFe.TConsSitNFe.html#FtpAmb">FtpAmb</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="chNFe"></a><code>property <b>chNFe</b>: string read <a   href="pcnConsSitNFe.TConsSitNFe.html#FchNFe">FchNFe</a> write <a   href="pcnConsSitNFe.TConsSitNFe.html#FchNFe">FchNFe</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:59</em>
+</span>
+</body></html>

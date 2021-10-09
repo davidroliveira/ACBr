@@ -1,0 +1,303 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: Gif1: record TGifZip</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TGifZip"></a><h1 class="cio">record TGifZip</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td>Hierarquia</td><td><a class="section"  href="#%40Fields">Campos</a></td><td>Métodos</td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="Gif1.html">Gif1</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TGifZip = record</code></p>
+<h2 class="description">Descrição</h2>
+&nbsp;<h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rID">rID</a></b>:                <a   href="Gif1.html#PGifImageDescriptor">PGifImageDescriptor</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rCT">rCT</a></b>:                <a   href="Gif1.html#PGifColorTable">PGifColorTable</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rPrefix">rPrefix</a></b>:            array[0..<a   href="Gif1.html#kGifCodeTableSize">kGifCodeTableSize</a>-1] of integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rSuffix">rSuffix</a></b>:            array[0..<a   href="Gif1.html#kGifCodeTableSize">kGifCodeTableSize</a>-1] of integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rCodeStack">rCodeStack</a></b>:         array[0..<a   href="Gif1.html#kGifCodeTableSize">kGifCodeTableSize</a>-1] of byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rSP">rSP</a></b>:                integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rClearCode">rClearCode</a></b>:         integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rEndCode">rEndCode</a></b>:           integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rHighCode">rHighCode</a></b>:          integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rCurSize">rCurSize</a></b>:           integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rBitString">rBitString</a></b>:         integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rBits">rBits</a></b>:              integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rCurSlot">rCurSlot</a></b>:           integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rTopSlot">rTopSlot</a></b>:           integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rMaxVal">rMaxVal</a></b>:            boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rCurX">rCurX</a></b>:              integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rCurY">rCurY</a></b>:              integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rCurPass">rCurPass</a></b>:           integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rFirstSlot">rFirstSlot</a></b>:         integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rNextSlot">rNextSlot</a></b>:          integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rCount">rCount</a></b>:             integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rLast">rLast</a></b>:              integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.TGifZip.html#rUnget">rUnget</a></b>:             boolean;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rID"></a><code><b>rID</b>:                <a   href="Gif1.html#PGifImageDescriptor">PGifImageDescriptor</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rCT"></a><code><b>rCT</b>:                <a   href="Gif1.html#PGifColorTable">PGifColorTable</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+image parameters to decode</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rPrefix"></a><code><b>rPrefix</b>:            array[0..<a   href="Gif1.html#kGifCodeTableSize">kGifCodeTableSize</a>-1] of integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+color table for this image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rSuffix"></a><code><b>rSuffix</b>:            array[0..<a   href="Gif1.html#kGifCodeTableSize">kGifCodeTableSize</a>-1] of integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+string prefixes</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rCodeStack"></a><code><b>rCodeStack</b>:         array[0..<a   href="Gif1.html#kGifCodeTableSize">kGifCodeTableSize</a>-1] of byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+string suffixes</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rSP"></a><code><b>rSP</b>:                integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+decode/encoded pixels</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rClearCode"></a><code><b>rClearCode</b>:         integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+pointer into CodeStack</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rEndCode"></a><code><b>rEndCode</b>:           integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+reset decode params</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rHighCode"></a><code><b>rHighCode</b>:          integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+last code in input stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rCurSize"></a><code><b>rCurSize</b>:           integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+highest LZW code possible</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rBitString"></a><code><b>rBitString</b>:         integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+current code size</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rBits"></a><code><b>rBits</b>:              integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+steady stream of bits to be decoded</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rCurSlot"></a><code><b>rCurSlot</b>:           integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+number of valid bits in BitString</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rTopSlot"></a><code><b>rTopSlot</b>:           integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+next stack index to <a class="normal"  href="ACBrCAPICOM_TLB.html#Store">store</a> a code</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rMaxVal"></a><code><b>rMaxVal</b>:            boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+highest slot used so far</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rCurX"></a><code><b>rCurX</b>:              integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+max code value found?</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rCurY"></a><code><b>rCurY</b>:              integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+position of next pixel</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rCurPass"></a><code><b>rCurPass</b>:           integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+position of next pixel</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rFirstSlot"></a><code><b>rFirstSlot</b>:         integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+pixel line pass 1..4</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rNextSlot"></a><code><b>rNextSlot</b>:          integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+for encoding an image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rCount"></a><code><b>rCount</b>:             integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+for encoding</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rLast"></a><code><b>rLast</b>:              integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+number of bytes read/written</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rUnget"></a><code><b>rUnget</b>:             boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+last byte read in</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:56</em>
+</span>
+</body></html>

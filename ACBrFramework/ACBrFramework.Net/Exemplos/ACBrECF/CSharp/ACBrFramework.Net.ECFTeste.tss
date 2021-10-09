@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>e:\programacao\acbr\acbrframework\acbrframework.net\exemplos\acbrecf\csharp\acbrframework.net.ecfteste\mainform.cs</string>
+      <string>e:\programacao\acbr\acbrframework\acbrframework.net\exemplos\acbrecf\csharp\acbrframework.net.ecfteste\mainform.cs</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>

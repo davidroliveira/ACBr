@@ -1,0 +1,305 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrMSXML2_TLB: Classe TDOMDocument</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TDOMDocument"></a><h1 class="cio">Classe TDOMDocument</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrMSXML2_TLB.html">ACBrMSXML2_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TDOMDocument = class(TOleServer)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// OLE Server Proxy class declaration Server Object : <code>TDOMDocument</code> Help String : W3C-DOM XML Document (Apartment) Default Interface: <a class="normal"  href="ACBrMSXML2_TLB.IXMLDOMDocument2.html">IXMLDOMDocument2</a> Def. Intf. DISP? : No Event Interface: <a class="normal"  href="ACBrMSXML2_TLB.XMLDOMDocumentEvents.html">XMLDOMDocumentEvents</a> TypeFlags : (2) CanCreate *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TOleServer</li>
+<li class="thisitem">TDOMDocument</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#FOnondataavailable">FOnondataavailable</a></b>: TNotifyEvent;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#FOnonreadystatechange">FOnonreadystatechange</a></b>: TNotifyEvent;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#FIntf">FIntf</a></b>:        <a   href="ACBrMSXML2_TLB.IXMLDOMDocument2.html">IXMLDOMDocument2</a>;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#GetDefaultInterface">GetDefaultInterface</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMDocument2.html">IXMLDOMDocument2</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#InitServerData">InitServerData</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#InvokeEvent">InvokeEvent</a></b>(DispID: TDispID; var Params: TVariantArray); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#Get_namespaces">Get_namespaces</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMSchemaCollection.html">IXMLDOMSchemaCollection</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#Get_schemas">Get_schemas</a></b>: OleVariant;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#_Set_schemas">_Set_schemas</a></b>(otherCollection: OleVariant);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#Connect">Connect</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#ConnectTo">ConnectTo</a></b>(svrIntf: <a   href="ACBrMSXML2_TLB.IXMLDOMDocument2.html">IXMLDOMDocument2</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#Disconnect">Disconnect</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#validate">validate</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMParseError.html">IXMLDOMParseError</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#setProperty">setProperty</a></b>(const name: WideString; value: OleVariant);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#getProperty">getProperty</a></b>(const name: WideString): OleVariant;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#DefaultInterface">DefaultInterface</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMDocument2.html">IXMLDOMDocument2</a> read <a   href="ACBrMSXML2_TLB.TDOMDocument.html#GetDefaultInterface">GetDefaultInterface</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#namespaces">namespaces</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMSchemaCollection.html">IXMLDOMSchemaCollection</a> read <a   href="ACBrMSXML2_TLB.TDOMDocument.html#Get_namespaces">Get_namespaces</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#schemas">schemas</a></b>: OleVariant read <a   href="ACBrMSXML2_TLB.TDOMDocument.html#Get_schemas">Get_schemas</a> write <a   href="ACBrMSXML2_TLB.TDOMDocument.html#_Set_schemas">_Set_schemas</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#Onondataavailable">Onondataavailable</a></b>: TNotifyEvent read <a   href="ACBrMSXML2_TLB.TDOMDocument.html#FOnondataavailable">FOnondataavailable</a> write <a   href="ACBrMSXML2_TLB.TDOMDocument.html#FOnondataavailable">FOnondataavailable</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TDOMDocument.html#Ononreadystatechange">Ononreadystatechange</a></b>: TNotifyEvent read <a   href="ACBrMSXML2_TLB.TDOMDocument.html#FOnonreadystatechange">FOnonreadystatechange</a> write <a   href="ACBrMSXML2_TLB.TDOMDocument.html#FOnonreadystatechange">FOnonreadystatechange</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FOnondataavailable"></a><code><b>FOnondataavailable</b>: TNotifyEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FOnonreadystatechange"></a><code><b>FOnonreadystatechange</b>: TNotifyEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FIntf"></a><code><b>FIntf</b>:        <a   href="ACBrMSXML2_TLB.IXMLDOMDocument2.html">IXMLDOMDocument2</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetDefaultInterface"></a><code>function <b>GetDefaultInterface</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMDocument2.html">IXMLDOMDocument2</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="InitServerData"></a><code>procedure <b>InitServerData</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="InvokeEvent"></a><code>procedure <b>InvokeEvent</b>(DispID: TDispID; var Params: TVariantArray); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_namespaces"></a><code>function <b>Get_namespaces</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMSchemaCollection.html">IXMLDOMSchemaCollection</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_schemas"></a><code>function <b>Get_schemas</b>: OleVariant;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="_Set_schemas"></a><code>procedure <b>_Set_schemas</b>(otherCollection: OleVariant);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Connect"></a><code>procedure <b>Connect</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ConnectTo"></a><code>procedure <b>ConnectTo</b>(svrIntf: <a   href="ACBrMSXML2_TLB.IXMLDOMDocument2.html">IXMLDOMDocument2</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Disconnect"></a><code>procedure <b>Disconnect</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="validate"></a><code>function <b>validate</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMParseError.html">IXMLDOMParseError</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="setProperty"></a><code>procedure <b>setProperty</b>(const name: WideString; value: OleVariant);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="getProperty"></a><code>function <b>getProperty</b>(const name: WideString): OleVariant;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DefaultInterface"></a><code>property <b>DefaultInterface</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMDocument2.html">IXMLDOMDocument2</a> read <a   href="ACBrMSXML2_TLB.TDOMDocument.html#GetDefaultInterface">GetDefaultInterface</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="namespaces"></a><code>property <b>namespaces</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMSchemaCollection.html">IXMLDOMSchemaCollection</a> read <a   href="ACBrMSXML2_TLB.TDOMDocument.html#Get_namespaces">Get_namespaces</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="schemas"></a><code>property <b>schemas</b>: OleVariant read <a   href="ACBrMSXML2_TLB.TDOMDocument.html#Get_schemas">Get_schemas</a> write <a   href="ACBrMSXML2_TLB.TDOMDocument.html#_Set_schemas">_Set_schemas</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Onondataavailable"></a><code>property <b>Onondataavailable</b>: TNotifyEvent read <a   href="ACBrMSXML2_TLB.TDOMDocument.html#FOnondataavailable">FOnondataavailable</a> write <a   href="ACBrMSXML2_TLB.TDOMDocument.html#FOnondataavailable">FOnondataavailable</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Ononreadystatechange"></a><code>property <b>Ononreadystatechange</b>: TNotifyEvent read <a   href="ACBrMSXML2_TLB.TDOMDocument.html#FOnonreadystatechange">FOnonreadystatechange</a> write <a   href="ACBrMSXML2_TLB.TDOMDocument.html#FOnonreadystatechange">FOnonreadystatechange</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:46</em>
+</span>
+</body></html>

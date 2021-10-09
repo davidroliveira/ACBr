@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrECFNaoFiscal</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrECFNaoFiscal</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td><a class="section"  href="#%40FuncsProcs">Funções e Procedimentos</a></td><td>Tipos</td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF}</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a   href="ACBrECFClass.html">ACBrECFClass</a></li><li><a   href="ACBrDevice.html">ACBrDevice</a></li><li><a   href="ACBrUtil.html">ACBrUtil</a></li><li><a   href="ACBrConsts.html">ACBrConsts</a></li><li>Classes</li><li>Contnrs</li><li>Math</li><li>SysUtils</li><li>IniFiles</li><li>DateUtils</li><li>StrUtils</li><li>Controls</li><li>Forms</li><li>Dialogs</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFNaoFiscal.TACBrECFNaoFiscalAliquota.html"><code>TACBrECFNaoFiscalAliquota</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFNaoFiscal.TACBrECFNaoFiscalFormaPagamento.html"><code>TACBrECFNaoFiscalFormaPagamento</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFNaoFiscal.TACBrECFNaoFiscalComprovanteNaoFiscal.html"><code>TACBrECFNaoFiscalComprovanteNaoFiscal</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFNaoFiscal.TACBrECFNaoFiscalItemCupom.html"><code>TACBrECFNaoFiscalItemCupom</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFNaoFiscal.TACBrECFNaoFiscalPagamentoCupom.html"><code>TACBrECFNaoFiscalPagamentoCupom</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFNaoFiscal.TACBrECFNaoFiscalCNFCupom.html"><code>TACBrECFNaoFiscalCNFCupom</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFNaoFiscal.TACBrECFNaoFiscal.html"><code>TACBrECFNaoFiscal</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40FuncsProcs"></a><h3 class="summary">Funções e Procedimentos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>Function <b><a   href="ACBrECFNaoFiscal.html#StuffMascaraItem">StuffMascaraItem</a></b>( Linha, MascaraItem : AnsiString; Letra : AnsiChar; TextoInserir : AnsiString; Fim:Boolean = False) : AnsiString ;</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFNaoFiscal.html#CRLF">CRLF</a></b> = #13+#10 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFNaoFiscal.html#cCmdImpCondensado">cCmdImpCondensado</a></b> = #15 ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFNaoFiscal.html#cCmdImpExpandidoUmaLinha">cCmdImpExpandidoUmaLinha</a></b> = #14 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFNaoFiscal.html#cCmdImpFimExpandido">cCmdImpFimExpandido</a></b> = '';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFNaoFiscal.html#cCmdImpZera">cCmdImpZera</a></b> = #27+'@' ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Funções e Procedimentos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StuffMascaraItem"></a><code>Function <b>StuffMascaraItem</b>( Linha, MascaraItem : AnsiString; Letra : AnsiChar; TextoInserir : AnsiString; Fim:Boolean = False) : AnsiString ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CRLF"></a><code><b>CRLF</b> = #13+#10 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cCmdImpCondensado"></a><code><b>cCmdImpCondensado</b> = #15 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cCmdImpExpandidoUmaLinha"></a><code><b>cCmdImpExpandidoUmaLinha</b> = #14 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cCmdImpFimExpandido"></a><code><b>cCmdImpFimExpandido</b> = '';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cCmdImpZera"></a><code><b>cCmdImpZera</b> = #27+'@' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:28</em>
+</span>
+</body></html>

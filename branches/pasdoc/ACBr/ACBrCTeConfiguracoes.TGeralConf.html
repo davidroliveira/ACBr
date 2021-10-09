@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrCTeConfiguracoes: Classe TGeralConf</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TGeralConf"></a><h1 class="cio">Classe TGeralConf</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrCTeConfiguracoes.html">ACBrCTeConfiguracoes</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TGeralConf = class(TComponent)</code></p>
+<h2 class="description">Descrição</h2>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="thisitem">TGeralConf</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#FFormaEmissao">FFormaEmissao</a></b>: <a   href="pcnConversao.html#TpcnTipoEmissao">TpcnTipoEmissao</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#FFormaEmissaoCodigo">FFormaEmissaoCodigo</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#FSalvar">FSalvar</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#FAtualizarXMLCancelado">FAtualizarXMLCancelado</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#FPathSalvar">FPathSalvar</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#FPathSchemas">FPathSchemas</a></b>: String;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#SetFormaEmissao">SetFormaEmissao</a></b>(AValue: <a   href="pcnConversao.html#TpcnTipoEmissao">TpcnTipoEmissao</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#GetPathSalvar">GetPathSalvar</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#Save">Save</a></b>(AXMLName: String; AXMLFile: WideString; aPath: String = ''): Boolean;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#FormaEmissao">FormaEmissao</a></b>: <a   href="pcnConversao.html#TpcnTipoEmissao">TpcnTipoEmissao</a> read <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FFormaEmissao">FFormaEmissao</a>
+      write <a   href="ACBrCTeConfiguracoes.TGeralConf.html#SetFormaEmissao">SetFormaEmissao</a> default teNormal ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#FormaEmissaoCodigo">FormaEmissaoCodigo</a></b>: Integer read <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FFormaEmissaoCodigo">FFormaEmissaoCodigo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#Salvar">Salvar</a></b>: Boolean read <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FSalvar">FSalvar</a> write <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FSalvar">FSalvar</a> default False;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#AtualizarXMLCancelado">AtualizarXMLCancelado</a></b>: Boolean read <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FAtualizarXMLCancelado">FAtualizarXMLCancelado</a> write <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FAtualizarXMLCancelado">FAtualizarXMLCancelado</a> default True ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#PathSalvar">PathSalvar</a></b>: String read <a   href="ACBrCTeConfiguracoes.TGeralConf.html#GetPathSalvar">GetPathSalvar</a> write <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FPathSalvar">FPathSalvar</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCTeConfiguracoes.TGeralConf.html#PathSchemas">PathSchemas</a></b>: String read <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FPathSchemas">FPathSchemas</a> write <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FPathSchemas">FPathSchemas</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FFormaEmissao"></a><code><b>FFormaEmissao</b>: <a   href="pcnConversao.html#TpcnTipoEmissao">TpcnTipoEmissao</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FFormaEmissaoCodigo"></a><code><b>FFormaEmissaoCodigo</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FSalvar"></a><code><b>FSalvar</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FAtualizarXMLCancelado"></a><code><b>FAtualizarXMLCancelado</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FPathSalvar"></a><code><b>FPathSalvar</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FPathSchemas"></a><code><b>FPathSchemas</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetFormaEmissao"></a><code>procedure <b>SetFormaEmissao</b>(AValue: <a   href="pcnConversao.html#TpcnTipoEmissao">TpcnTipoEmissao</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetPathSalvar"></a><code>function <b>GetPathSalvar</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Save"></a><code>function <b>Save</b>(AXMLName: String; AXMLFile: WideString; aPath: String = ''): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FormaEmissao"></a><code>property <b>FormaEmissao</b>: <a   href="pcnConversao.html#TpcnTipoEmissao">TpcnTipoEmissao</a> read <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FFormaEmissao">FFormaEmissao</a>
+      write <a   href="ACBrCTeConfiguracoes.TGeralConf.html#SetFormaEmissao">SetFormaEmissao</a> default teNormal ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FormaEmissaoCodigo"></a><code>property <b>FormaEmissaoCodigo</b>: Integer read <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FFormaEmissaoCodigo">FFormaEmissaoCodigo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Salvar"></a><code>property <b>Salvar</b>: Boolean read <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FSalvar">FSalvar</a> write <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FSalvar">FSalvar</a> default False;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AtualizarXMLCancelado"></a><code>property <b>AtualizarXMLCancelado</b>: Boolean read <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FAtualizarXMLCancelado">FAtualizarXMLCancelado</a> write <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FAtualizarXMLCancelado">FAtualizarXMLCancelado</a> default True ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="PathSalvar"></a><code>property <b>PathSalvar</b>: String read <a   href="ACBrCTeConfiguracoes.TGeralConf.html#GetPathSalvar">GetPathSalvar</a> write <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FPathSalvar">FPathSalvar</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="PathSchemas"></a><code>property <b>PathSchemas</b>: String read <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FPathSchemas">FPathSchemas</a> write <a   href="ACBrCTeConfiguracoes.TGeralConf.html#FPathSchemas">FPathSchemas</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:22</em>
+</span>
+</body></html>

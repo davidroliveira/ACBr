@@ -1,0 +1,568 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrD5</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrD5</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td>Classes, Interfaces, Objetos e Registros</td><td><a class="section"  href="#%40FuncsProcs">Funções e Procedimentos</a></td><td><a class="section"  href="#%40Types">Tipos</a></td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF}</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>Math</li><li>Consts</li><li>Classes</li><li>Windows</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40FuncsProcs"></a><h3 class="summary">Funções e Procedimentos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#StrToFloatDef">StrToFloatDef</a></b>(const S: string; const Default: Extended): Extended;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#StuffString">StuffString</a></b>(const AText: string; AStart, ALength: Cardinal; const ASubText: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#LeftStr">LeftStr</a></b>(const AText: AnsiString; const ACount: Integer): AnsiString; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#RightStr">RightStr</a></b>(const AText: AnsiString; const ACount: Integer): AnsiString; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#BoolToStr">BoolToStr</a></b>(B: Boolean; UseBoolStrs: Boolean = False): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#IncDay">IncDay</a></b>(const AValue: TDateTime; const ANumberOfDays: Integer = 1): TDateTime;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#IncHour">IncHour</a></b>(const AValue: TDateTime; const ANumberOfHours: Int64 = 1): TDateTime;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#IncSecond">IncSecond</a></b>(const AValue: TDateTime; const ANumberOfSeconds: Int64 = 1): TDateTime;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#IncMilliSecond">IncMilliSecond</a></b>(const AValue: TDateTime; const ANumberOfMilliSeconds: Int64 = 1): TDateTime;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#TryEncodeDate">TryEncodeDate</a></b>(Year, Month, Day: Word; out Date: TDateTime): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#TryEncodeTime">TryEncodeTime</a></b>(Hour, Min, Sec, MSec: Word; out Time: TDateTime): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#EncodeDateTime">EncodeDateTime</a></b>(const AYear, AMonth, ADay, AHour, AMinute, ASecond, AMilliSecond: Word): TDateTime;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a   href="ACBrD5.html#DecodeDateTime">DecodeDateTime</a></b>(const AValue: TDateTime; out AYear, AMonth, ADay, AHour, AMinute, ASecond, AMilliSecond: Word);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#TryEncodeDateTime">TryEncodeDateTime</a></b>(const AYear, AMonth, ADay, AHour, AMinute, ASecond, AMilliSecond: Word; out AValue: TDateTime): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#RecodeHour">RecodeHour</a></b>(const AValue: TDateTime; const AHour: Word): TDateTime;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#RecodeMinute">RecodeMinute</a></b>(const AValue: TDateTime; const AMinute: Word): TDateTime;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#RecodeSecond">RecodeSecond</a></b>(const AValue: TDateTime; const ASecond: Word): TDateTime;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#RecodeDateTime">RecodeDateTime</a></b>(const AValue: TDateTime; const AYear, AMonth, ADay, AHour, AMinute, ASecond, AMilliSecond: Word): TDateTime;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#TryRecodeDateTime">TryRecodeDateTime</a></b>(const AValue: TDateTime; const AYear, AMonth, ADay, AHour, AMinute, ASecond, AMilliSecond: Word; out AResult: TDateTime): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#CompareDate">CompareDate</a></b>(const A, B: TDateTime): <a   href="ACBrD5.html#TValueRelationship">TValueRelationship</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a   href="ACBrD5.html#InvalidDateTimeError">InvalidDateTimeError</a></b>(const AYear, AMonth, ADay, AHour, AMinute, ASecond, AMilliSecond: Word; const ABaseDate: TDateTime = 0);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#YearOf">YearOf</a></b>(const AValue: TDateTime): Word;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#MonthOf">MonthOf</a></b>(const AValue: TDateTime): Word;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#DayOf">DayOf</a></b>(const AValue: TDateTime): Word;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#DaySpan">DaySpan</a></b>(const ANow, AThen: TDateTime): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#SecondSpan">SecondSpan</a></b>(const ANow, AThen: TDateTime): Double;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#MilliSecondSpan">MilliSecondSpan</a></b>(const ANow, AThen: TDateTime): Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#DateOf">DateOf</a></b>(const AValue: TDateTime): TDateTime;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#TimeOf">TimeOf</a></b>(const AValue: TDateTime): TDateTime;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#DaysBetween">DaysBetween</a></b>(const ANow, AThen: TDateTime): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#SecondsBetween">SecondsBetween</a></b>(const ANow, AThen: TDateTime): Int64;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrD5.html#MilliSecondsBetween">MilliSecondsBetween</a></b>(const ANow, AThen: TDateTime): Int64;</code></td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#TValueRelationship">TValueRelationship</a></b> = -1..1;</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#PathDelim">PathDelim</a></b>  =  '\';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#DriveDelim">DriveDelim</a></b> =  ':';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#PathSep">PathSep</a></b>    =  ';';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#sLineBreak">sLineBreak</a></b> =  #13#10 ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#RecodeLeaveFieldAsIs">RecodeLeaveFieldAsIs</a></b> = High(Word);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#HoursPerDay">HoursPerDay</a></b>   = 24;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#MinsPerHour">MinsPerHour</a></b>   = 60;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#SecsPerMin">SecsPerMin</a></b>    = 60;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#MSecsPerSec">MSecsPerSec</a></b>   = 1000;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#MinsPerDay">MinsPerDay</a></b>    = <a   href="ACBrD5.html#HoursPerDay">HoursPerDay</a> * <a   href="ACBrD5.html#MinsPerHour">MinsPerHour</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#SecsPerDay">SecsPerDay</a></b>    = <a   href="ACBrD5.html#MinsPerDay">MinsPerDay</a> * <a   href="ACBrD5.html#SecsPerMin">SecsPerMin</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#MSecsPerDay">MSecsPerDay</a></b>   = <a   href="ACBrD5.html#SecsPerDay">SecsPerDay</a> * <a   href="ACBrD5.html#MSecsPerSec">MSecsPerSec</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#SMissingDateTimeField">SMissingDateTimeField</a></b> = '?';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#SInvalidDateTime">SInvalidDateTime</a></b>	= '''Data e Hora inválidos:'' yyyy/mm/dd hh:nn:ss';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#LessThanValue">LessThanValue</a></b> = Low(<a   href="ACBrD5.html#TValueRelationship">TValueRelationship</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#EqualsValue">EqualsValue</a></b> = 0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrD5.html#GreaterThanValue">GreaterThanValue</a></b> = High(<a   href="ACBrD5.html#TValueRelationship">TValueRelationship</a>);</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Funções e Procedimentos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrToFloatDef"></a><code>function <b>StrToFloatDef</b>(const S: string; const Default: Extended): Extended;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; *** As funçoes abaixo foram inseridas para compatibilizar o ACBr com o D5 todas foram retirada do diretorio de fontes do Borland Delphi 7 *** &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StuffString"></a><code>function <b>StuffString</b>(const AText: string; AStart, ALength: Cardinal; const ASubText: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<code>StuffString</code> replaces a segment of a string with another one</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="LeftStr"></a><code>function <b>LeftStr</b>(const AText: AnsiString; const ACount: Integer): AnsiString; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Basic-like functions / Left, Right, Mid</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RightStr"></a><code>function <b>RightStr</b>(const AText: AnsiString; const ACount: Integer): AnsiString; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="BoolToStr"></a><code>function <b>BoolToStr</b>(B: Boolean; UseBoolStrs: Boolean = False): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IncDay"></a><code>function <b>IncDay</b>(const AValue: TDateTime; const ANumberOfDays: Integer = 1): TDateTime;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Increment/decrement datetime fields</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IncHour"></a><code>function <b>IncHour</b>(const AValue: TDateTime; const ANumberOfHours: Int64 = 1): TDateTime;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IncSecond"></a><code>function <b>IncSecond</b>(const AValue: TDateTime; const ANumberOfSeconds: Int64 = 1): TDateTime;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IncMilliSecond"></a><code>function <b>IncMilliSecond</b>(const AValue: TDateTime; const ANumberOfMilliSeconds: Int64 = 1): TDateTime;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TryEncodeDate"></a><code>function <b>TryEncodeDate</b>(Year, Month, Day: Word; out Date: TDateTime): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Instead of generating errors the following variations of EncodeDate and EncodeTime simply return False if the parameters given are not valid. Other than that, these functions are functionally the same as the above functions.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TryEncodeTime"></a><code>function <b>TryEncodeTime</b>(Hour, Min, Sec, MSec: Word; out Time: TDateTime): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="EncodeDateTime"></a><code>function <b>EncodeDateTime</b>(const AYear, AMonth, ADay, AHour, AMinute, ASecond, AMilliSecond: Word): TDateTime;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Unified encode/decode functions that deal with all datetime fields at once</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DecodeDateTime"></a><code>procedure <b>DecodeDateTime</b>(const AValue: TDateTime; out AYear, AMonth, ADay, AHour, AMinute, ASecond, AMilliSecond: Word);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TryEncodeDateTime"></a><code>function <b>TryEncodeDateTime</b>(const AYear, AMonth, ADay, AHour, AMinute, ASecond, AMilliSecond: Word; out AValue: TDateTime): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The following functions are similar to the above ones except these don't generated exceptions on failure, they return false instead</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RecodeHour"></a><code>function <b>RecodeHour</b>(const AValue: TDateTime; const AHour: Word): TDateTime;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Recode functions for datetime fields</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RecodeMinute"></a><code>function <b>RecodeMinute</b>(const AValue: TDateTime; const AMinute: Word): TDateTime;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RecodeSecond"></a><code>function <b>RecodeSecond</b>(const AValue: TDateTime; const ASecond: Word): TDateTime;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RecodeDateTime"></a><code>function <b>RecodeDateTime</b>(const AValue: TDateTime; const AYear, AMonth, ADay, AHour, AMinute, ASecond, AMilliSecond: Word): TDateTime;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TryRecodeDateTime"></a><code>function <b>TryRecodeDateTime</b>(const AValue: TDateTime; const AYear, AMonth, ADay, AHour, AMinute, ASecond, AMilliSecond: Word; out AResult: TDateTime): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The following function is similar to the above one except it doesn't generated an exception on failure, it return false instead</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CompareDate"></a><code>function <b>CompareDate</b>(const A, B: TDateTime): <a   href="ACBrD5.html#TValueRelationship">TValueRelationship</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="InvalidDateTimeError"></a><code>procedure <b>InvalidDateTimeError</b>(const AYear, AMonth, ADay, AHour, AMinute, ASecond, AMilliSecond: Word; const ABaseDate: TDateTime = 0);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Error reporting</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="YearOf"></a><code>function <b>YearOf</b>(const AValue: TDateTime): Word;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pick-a-field functions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MonthOf"></a><code>function <b>MonthOf</b>(const AValue: TDateTime): Word;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DayOf"></a><code>function <b>DayOf</b>(const AValue: TDateTime): Word;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DaySpan"></a><code>function <b>DaySpan</b>(const ANow, AThen: TDateTime): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+YearSpan and MonthSpan are approximates, not exact but pretty darn close</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SecondSpan"></a><code>function <b>SecondSpan</b>(const ANow, AThen: TDateTime): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MilliSecondSpan"></a><code>function <b>MilliSecondSpan</b>(const ANow, AThen: TDateTime): Double;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DateOf"></a><code>function <b>DateOf</b>(const AValue: TDateTime): TDateTime;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Simple trimming functions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TimeOf"></a><code>function <b>TimeOf</b>(const AValue: TDateTime): TDateTime;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DaysBetween"></a><code>function <b>DaysBetween</b>(const ANow, AThen: TDateTime): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Range query functions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SecondsBetween"></a><code>function <b>SecondsBetween</b>(const ANow, AThen: TDateTime): Int64;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MilliSecondsBetween"></a><code>function <b>MilliSecondsBetween</b>(const ANow, AThen: TDateTime): Int64;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TValueRelationship"></a><code><b>TValueRelationship</b> = -1..1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fuzzy comparison</p>
+</td></tr>
+</table>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PathDelim"></a><code><b>PathDelim</b>  =  '\';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DriveDelim"></a><code><b>DriveDelim</b> =  ':';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PathSep"></a><code><b>PathSep</b>    =  ';';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="sLineBreak"></a><code><b>sLineBreak</b> =  #13#10 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RecodeLeaveFieldAsIs"></a><code><b>RecodeLeaveFieldAsIs</b> = High(Word);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+fields you want to leave alone</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="HoursPerDay"></a><code><b>HoursPerDay</b>   = 24;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Units of time</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MinsPerHour"></a><code><b>MinsPerHour</b>   = 60;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SecsPerMin"></a><code><b>SecsPerMin</b>    = 60;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MSecsPerSec"></a><code><b>MSecsPerSec</b>   = 1000;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MinsPerDay"></a><code><b>MinsPerDay</b>    = <a   href="ACBrD5.html#HoursPerDay">HoursPerDay</a> * <a   href="ACBrD5.html#MinsPerHour">MinsPerHour</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SecsPerDay"></a><code><b>SecsPerDay</b>    = <a   href="ACBrD5.html#MinsPerDay">MinsPerDay</a> * <a   href="ACBrD5.html#SecsPerMin">SecsPerMin</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MSecsPerDay"></a><code><b>MSecsPerDay</b>   = <a   href="ACBrD5.html#SecsPerDay">SecsPerDay</a> * <a   href="ACBrD5.html#MSecsPerSec">MSecsPerSec</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SMissingDateTimeField"></a><code><b>SMissingDateTimeField</b> = '?';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SInvalidDateTime"></a><code><b>SInvalidDateTime</b>	= '''Data e Hora inválidos:'' yyyy/mm/dd hh:nn:ss';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="LessThanValue"></a><code><b>LessThanValue</b> = Low(<a   href="ACBrD5.html#TValueRelationship">TValueRelationship</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="EqualsValue"></a><code><b>EqualsValue</b> = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GreaterThanValue"></a><code><b>GreaterThanValue</b> = High(<a   href="ACBrD5.html#TValueRelationship">TValueRelationship</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:23</em>
+</span>
+</body></html>

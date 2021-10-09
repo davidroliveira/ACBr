@@ -1,0 +1,537 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrEAD: Classe TACBrEAD</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrEAD"></a><h1 class="cio">Classe TACBrEAD</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrEAD.html">ACBrEAD</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrEAD = class(TComponent)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+<code>TACBrEAD</code></p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="thisitem">TACBrEAD</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEAD.TACBrEAD.html#fsOnGetChavePrivada">fsOnGetChavePrivada</a></b>: <a   href="ACBrEAD.html#TACBrEADGetChave">TACBrEADGetChave</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEAD.TACBrEAD.html#fsOnGetChavePublica">fsOnGetChavePublica</a></b>: <a   href="ACBrEAD.html#TACBrEADGetChave">TACBrEADGetChave</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEAD.TACBrEAD.html#fsInicializado">fsInicializado</a></b>: Boolean ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEAD.TACBrEAD.html#fsKey">fsKey</a></b>: <a   href="libeay32.html#pEVP_PKEY">pEVP_PKEY</a> ;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#GetOpenSSL_Version">GetOpenSSL_Version</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrEAD.TACBrEAD.html#InitOpenSSL">InitOpenSSL</a></b> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrEAD.TACBrEAD.html#FreeOpenSSL">FreeOpenSSL</a></b> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrEAD.TACBrEAD.html#LerChavePrivada">LerChavePrivada</a></b> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrEAD.TACBrEAD.html#LerChavePublica">LerChavePublica</a></b> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrEAD.TACBrEAD.html#LerChave">LerChave</a></b>(Chave : AnsiString; Privada: Boolean) ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrEAD.TACBrEAD.html#LiberarChave">LiberarChave</a></b> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#CriarMemBIO">CriarMemBIO</a></b>: <a   href="libeay32.html#pBIO">pBIO</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrEAD.TACBrEAD.html#LiberarBIO">LiberarBIO</a></b>( Bio : <a   href="libeay32.html#pBIO">pBIO</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#BioToStr">BioToStr</a></b>( ABio : <a   href="libeay32.html#pBIO">pBIO</a>) : String ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#GetAbout">GetAbout</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrEAD.TACBrEAD.html#VerificaNomeArquivo">VerificaNomeArquivo</a></b>( NomeArquivo : String ) ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrEAD.TACBrEAD.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Destructor <b><a   href="ACBrEAD.TACBrEAD.html#Destroy">Destroy</a></b> ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrEAD.TACBrEAD.html#GerarChaves">GerarChaves</a></b>( var AChavePublica : AnsiString; var AChavePrivada : AnsiString ) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#AssinarArquivoComEAD">AssinarArquivoComEAD</a></b>( const NomeArquivo: String) : AnsiString ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#VerificarEADArquivo">VerificarEADArquivo</a></b>( const NomeArquivo: String): Boolean ; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#VerificarEAD">VerificarEAD</a></b>( const AString : AnsiString): Boolean ; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#VerificarEAD">VerificarEAD</a></b>( const AStringList : TStringList): Boolean ; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#VerificarEAD">VerificarEAD</a></b>( const MS : TMemoryStream; EAD: AnsiString): Boolean ; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Function <b><a   href="ACBrEAD.TACBrEAD.html#GerarXMLeECFc">GerarXMLeECFc</a></b>( const NomeSwHouse, Diretorio : String ) : Boolean ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrEAD.TACBrEAD.html#CalcularModuloeExpoente">CalcularModuloeExpoente</a></b>( var Modulo, Expoente : AnsiString );</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Function <b><a   href="ACBrEAD.TACBrEAD.html#CalcularChavePublica">CalcularChavePublica</a></b> : AnsiString ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#CalcularHashArquivo">CalcularHashArquivo</a></b>( const NomeArquivo: String; const Digest: <a   href="ACBrEAD.html#TACBrEADDgst">TACBrEADDgst</a> ): AnsiString ; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#CalcularHash">CalcularHash</a></b>( const AString : AnsiString; const Digest: <a   href="ACBrEAD.html#TACBrEADDgst">TACBrEADDgst</a> ): AnsiString ; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#CalcularHash">CalcularHash</a></b>( const AStringList : TStringList; const Digest: <a   href="ACBrEAD.html#TACBrEADDgst">TACBrEADDgst</a> ): AnsiString ; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#CalcularHash">CalcularHash</a></b>( const MS : TMemoryStream; const Digest: <a   href="ACBrEAD.html#TACBrEADDgst">TACBrEADDgst</a> ): AnsiString ; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#CalcularEADArquivo">CalcularEADArquivo</a></b>( const NomeArquivo: String): AnsiString ; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#CalcularEAD">CalcularEAD</a></b>( const AString : AnsiString): AnsiString ; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#CalcularEAD">CalcularEAD</a></b>( const AStringList : TStringList): AnsiString ; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#CalcularEAD">CalcularEAD</a></b>( const MS : TMemoryStream): AnsiString ; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#MD5FromFile">MD5FromFile</a></b>(const APathArquivo: String): String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrEAD.TACBrEAD.html#MD5FromString">MD5FromString</a></b>(const AString: String): String;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEAD.TACBrEAD.html#OpenSSL_Version">OpenSSL_Version</a></b> : String read <a   href="ACBrEAD.TACBrEAD.html#GetOpenSSL_Version">GetOpenSSL_Version</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEAD.TACBrEAD.html#About">About</a></b>: String read <a   href="ACBrEAD.TACBrEAD.html#GetAbout">GetAbout</a> stored False;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEAD.TACBrEAD.html#OnGetChavePrivada">OnGetChavePrivada</a></b>: <a   href="ACBrEAD.html#TACBrEADGetChave">TACBrEADGetChave</a> read <a   href="ACBrEAD.TACBrEAD.html#fsOnGetChavePrivada">fsOnGetChavePrivada</a>
+       write <a   href="ACBrEAD.TACBrEAD.html#fsOnGetChavePrivada">fsOnGetChavePrivada</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEAD.TACBrEAD.html#OnGetChavePublica">OnGetChavePublica</a></b>: <a   href="ACBrEAD.html#TACBrEADGetChave">TACBrEADGetChave</a> read <a   href="ACBrEAD.TACBrEAD.html#fsOnGetChavePublica">fsOnGetChavePublica</a>
+       write <a   href="ACBrEAD.TACBrEAD.html#fsOnGetChavePublica">fsOnGetChavePublica</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsOnGetChavePrivada"></a><code><b>fsOnGetChavePrivada</b>: <a   href="ACBrEAD.html#TACBrEADGetChave">TACBrEADGetChave</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsOnGetChavePublica"></a><code><b>fsOnGetChavePublica</b>: <a   href="ACBrEAD.html#TACBrEADGetChave">TACBrEADGetChave</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsInicializado"></a><code><b>fsInicializado</b>: Boolean ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsKey"></a><code><b>fsKey</b>: <a   href="libeay32.html#pEVP_PKEY">pEVP_PKEY</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetOpenSSL_Version"></a><code>function <b>GetOpenSSL_Version</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="InitOpenSSL"></a><code>procedure <b>InitOpenSSL</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FreeOpenSSL"></a><code>procedure <b>FreeOpenSSL</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LerChavePrivada"></a><code>procedure <b>LerChavePrivada</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LerChavePublica"></a><code>procedure <b>LerChavePublica</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LerChave"></a><code>procedure <b>LerChave</b>(Chave : AnsiString; Privada: Boolean) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LiberarChave"></a><code>procedure <b>LiberarChave</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CriarMemBIO"></a><code>function <b>CriarMemBIO</b>: <a   href="libeay32.html#pBIO">pBIO</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LiberarBIO"></a><code>procedure <b>LiberarBIO</b>( Bio : <a   href="libeay32.html#pBIO">pBIO</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="BioToStr"></a><code>function <b>BioToStr</b>( ABio : <a   href="libeay32.html#pBIO">pBIO</a>) : String ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetAbout"></a><code>function <b>GetAbout</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="VerificaNomeArquivo"></a><code>procedure <b>VerificaNomeArquivo</b>( NomeArquivo : String ) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>Destructor <b>Destroy</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GerarChaves"></a><code>Procedure <b>GerarChaves</b>( var AChavePublica : AnsiString; var AChavePrivada : AnsiString ) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AssinarArquivoComEAD"></a><code>function <b>AssinarArquivoComEAD</b>( const NomeArquivo: String) : AnsiString ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VerificarEADArquivo"></a><code>function <b>VerificarEADArquivo</b>( const NomeArquivo: String): Boolean ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VerificarEAD"></a><code>function <b>VerificarEAD</b>( const AString : AnsiString): Boolean ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VerificarEAD"></a><code>function <b>VerificarEAD</b>( const AStringList : TStringList): Boolean ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VerificarEAD"></a><code>function <b>VerificarEAD</b>( const MS : TMemoryStream; EAD: AnsiString): Boolean ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GerarXMLeECFc"></a><code>Function <b>GerarXMLeECFc</b>( const NomeSwHouse, Diretorio : String ) : Boolean ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalcularModuloeExpoente"></a><code>Procedure <b>CalcularModuloeExpoente</b>( var Modulo, Expoente : AnsiString );</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalcularChavePublica"></a><code>Function <b>CalcularChavePublica</b> : AnsiString ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalcularHashArquivo"></a><code>function <b>CalcularHashArquivo</b>( const NomeArquivo: String; const Digest: <a   href="ACBrEAD.html#TACBrEADDgst">TACBrEADDgst</a> ): AnsiString ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalcularHash"></a><code>function <b>CalcularHash</b>( const AString : AnsiString; const Digest: <a   href="ACBrEAD.html#TACBrEADDgst">TACBrEADDgst</a> ): AnsiString ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalcularHash"></a><code>function <b>CalcularHash</b>( const AStringList : TStringList; const Digest: <a   href="ACBrEAD.html#TACBrEADDgst">TACBrEADDgst</a> ): AnsiString ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalcularHash"></a><code>function <b>CalcularHash</b>( const MS : TMemoryStream; const Digest: <a   href="ACBrEAD.html#TACBrEADDgst">TACBrEADDgst</a> ): AnsiString ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalcularEADArquivo"></a><code>function <b>CalcularEADArquivo</b>( const NomeArquivo: String): AnsiString ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalcularEAD"></a><code>function <b>CalcularEAD</b>( const AString : AnsiString): AnsiString ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalcularEAD"></a><code>function <b>CalcularEAD</b>( const AStringList : TStringList): AnsiString ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalcularEAD"></a><code>function <b>CalcularEAD</b>( const MS : TMemoryStream): AnsiString ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MD5FromFile"></a><code>function <b>MD5FromFile</b>(const APathArquivo: String): String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MD5FromString"></a><code>function <b>MD5FromString</b>(const AString: String): String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OpenSSL_Version"></a><code>property <b>OpenSSL_Version</b> : String read <a   href="ACBrEAD.TACBrEAD.html#GetOpenSSL_Version">GetOpenSSL_Version</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="About"></a><code>property <b>About</b>: String read <a   href="ACBrEAD.TACBrEAD.html#GetAbout">GetAbout</a> stored False;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnGetChavePrivada"></a><code>property <b>OnGetChavePrivada</b>: <a   href="ACBrEAD.html#TACBrEADGetChave">TACBrEADGetChave</a> read <a   href="ACBrEAD.TACBrEAD.html#fsOnGetChavePrivada">fsOnGetChavePrivada</a>
+       write <a   href="ACBrEAD.TACBrEAD.html#fsOnGetChavePrivada">fsOnGetChavePrivada</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnGetChavePublica"></a><code>property <b>OnGetChavePublica</b>: <a   href="ACBrEAD.html#TACBrEADGetChave">TACBrEADGetChave</a> read <a   href="ACBrEAD.TACBrEAD.html#fsOnGetChavePublica">fsOnGetChavePublica</a>
+       write <a   href="ACBrEAD.TACBrEAD.html#fsOnGetChavePublica">fsOnGetChavePublica</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:24</em>
+</span>
+</body></html>

@@ -1,0 +1,486 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrSocket: Classe TACBrTCPServer</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrTCPServer"></a><h1 class="cio">Classe TACBrTCPServer</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrSocket.html">ACBrSocket</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrTCPServer = class(<a class="normal"  href="ACBrBase.TACBrComponent.html">TACBrComponent</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+<code>TACBrTCPServer</code></p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="ancestor"><a class="normal"  href="ACBrBase.TACBrComponent.html">TACBrComponent</a></li>
+<li class="thisitem">TACBrTCPServer</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSocket.TACBrTCPServer.html#fsACBrTCPServerDaemon">fsACBrTCPServerDaemon</a></b>: <a   href="ACBrSocket.TACBrTCPServerDaemon.html">TACBrTCPServerDaemon</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSocket.TACBrTCPServer.html#fsTimeOut">fsTimeOut</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSocket.TACBrTCPServer.html#fsIP">fsIP</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSocket.TACBrTCPServer.html#fsPort">fsPort</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSocket.TACBrTCPServer.html#fsThreadList">fsThreadList</a></b>: TThreadList ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSocket.TACBrTCPServer.html#fsOnConecta">fsOnConecta</a></b>: <a   href="ACBrSocket.html#TACBrTCPServerConecta">TACBrTCPServerConecta</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSocket.TACBrTCPServer.html#fsOnRecebeDados">fsOnRecebeDados</a></b>: <a   href="ACBrSocket.html#TACBrTCPServerRecive">TACBrTCPServerRecive</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSocket.TACBrTCPServer.html#fsOnDesConecta">fsOnDesConecta</a></b>: <a   href="ACBrSocket.html#TACBrTCPServerDesConecta">TACBrTCPServerDesConecta</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSocket.TACBrTCPServer.html#fsTerminador">fsTerminador</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSocket.TACBrTCPServer.html#fs_Terminador">fs_Terminador</a></b>: AnsiString;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSocket.TACBrTCPServer.html#GetTCPBlockSocket">GetTCPBlockSocket</a></b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrTCPServer.html#SetAtivo">SetAtivo</a></b>(const Value: Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrTCPServer.html#SetIP">SetIP</a></b>(const Value: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrTCPServer.html#SetPort">SetPort</a></b>(const Value: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrTCPServer.html#SetTerminador">SetTerminador</a></b>( const AValue: String) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrTCPServer.html#SetTimeOut">SetTimeOut</a></b>(const Value: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrTCPServer.html#VerificaAtivo">VerificaAtivo</a></b> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSocket.TACBrTCPServer.html#GetAtivo">GetAtivo</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrSocket.TACBrTCPServer.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Destructor <b><a   href="ACBrSocket.TACBrTCPServer.html#Destroy">Destroy</a></b> ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrTCPServer.html#Ativar">Ativar</a></b> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrTCPServer.html#Desativar">Desativar</a></b> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrTCPServer.html#EnviarString">EnviarString</a></b>(const AString : AnsiString; NumConexao : Integer = -1 ) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSocket.TACBrTCPServer.html#Terminar">Terminar</a></b>(NumConexao : Integer = -1 ) ;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrTCPServer.html#Ativo">Ativo</a></b> : Boolean read <a   href="ACBrSocket.TACBrTCPServer.html#GetAtivo">GetAtivo</a> write <a   href="ACBrSocket.TACBrTCPServer.html#SetAtivo">SetAtivo</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrTCPServer.html#ThreadList">ThreadList</a></b> : TThreadList read <a   href="ACBrSocket.TACBrTCPServer.html#fsThreadList">fsThreadList</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrTCPServer.html#StrTerminador">StrTerminador</a></b> : AnsiString  read <a   href="ACBrSocket.TACBrTCPServer.html#fs_Terminador">fs_Terminador</a>  ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrTCPServer.html#ACBrTCPServerDaemon">ACBrTCPServerDaemon</a></b> : <a   href="ACBrSocket.TACBrTCPServerDaemon.html">TACBrTCPServerDaemon</a> read <a   href="ACBrSocket.TACBrTCPServer.html#fsACBrTCPServerDaemon">fsACBrTCPServerDaemon</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrTCPServer.html#TCPBlockSocket">TCPBlockSocket</a></b> : <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a> read <a   href="ACBrSocket.TACBrTCPServer.html#GetTCPBlockSocket">GetTCPBlockSocket</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrTCPServer.html#IP">IP</a></b>         : String  read <a   href="ACBrSocket.TACBrTCPServer.html#fsIP">fsIP</a>         write <a   href="ACBrSocket.TACBrTCPServer.html#SetIP">SetIP</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrTCPServer.html#Port">Port</a></b>       : String  read <a   href="ACBrSocket.TACBrTCPServer.html#fsPort">fsPort</a>       write <a   href="ACBrSocket.TACBrTCPServer.html#SetPort">SetPort</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrTCPServer.html#TimeOut">TimeOut</a></b>    : Integer read <a   href="ACBrSocket.TACBrTCPServer.html#fsTimeOut">fsTimeOut</a>    write <a   href="ACBrSocket.TACBrTCPServer.html#SetTimeOut">SetTimeOut</a>
+       default 5000 ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrTCPServer.html#Terminador">Terminador</a></b> : String  read <a   href="ACBrSocket.TACBrTCPServer.html#fsTerminador">fsTerminador</a> write <a   href="ACBrSocket.TACBrTCPServer.html#SetTerminador">SetTerminador</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrTCPServer.html#OnConecta">OnConecta</a></b>     : <a   href="ACBrSocket.html#TACBrTCPServerConecta">TACBrTCPServerConecta</a>    read  <a   href="ACBrSocket.TACBrTCPServer.html#fsOnConecta">fsOnConecta</a>
+                                                      write <a   href="ACBrSocket.TACBrTCPServer.html#fsOnConecta">fsOnConecta</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrTCPServer.html#OnDesConecta">OnDesConecta</a></b>  : <a   href="ACBrSocket.html#TACBrTCPServerDesConecta">TACBrTCPServerDesConecta</a> read  <a   href="ACBrSocket.TACBrTCPServer.html#fsOnDesConecta">fsOnDesConecta</a>
+                                                      write <a   href="ACBrSocket.TACBrTCPServer.html#fsOnDesConecta">fsOnDesConecta</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSocket.TACBrTCPServer.html#OnRecebeDados">OnRecebeDados</a></b> : <a   href="ACBrSocket.html#TACBrTCPServerRecive">TACBrTCPServerRecive</a>     read  <a   href="ACBrSocket.TACBrTCPServer.html#fsOnRecebeDados">fsOnRecebeDados</a>
+                                                      write <a   href="ACBrSocket.TACBrTCPServer.html#fsOnRecebeDados">fsOnRecebeDados</a> ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsACBrTCPServerDaemon"></a><code><b>fsACBrTCPServerDaemon</b>: <a   href="ACBrSocket.TACBrTCPServerDaemon.html">TACBrTCPServerDaemon</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Propriedades do Componente ACBrTCPServer</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsTimeOut"></a><code><b>fsTimeOut</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsIP"></a><code><b>fsIP</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsPort"></a><code><b>fsPort</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsThreadList"></a><code><b>fsThreadList</b>: TThreadList ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsOnConecta"></a><code><b>fsOnConecta</b>: <a   href="ACBrSocket.html#TACBrTCPServerConecta">TACBrTCPServerConecta</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsOnRecebeDados"></a><code><b>fsOnRecebeDados</b>: <a   href="ACBrSocket.html#TACBrTCPServerRecive">TACBrTCPServerRecive</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsOnDesConecta"></a><code><b>fsOnDesConecta</b>: <a   href="ACBrSocket.html#TACBrTCPServerDesConecta">TACBrTCPServerDesConecta</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsTerminador"></a><code><b>fsTerminador</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fs_Terminador"></a><code><b>fs_Terminador</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetTCPBlockSocket"></a><code>function <b>GetTCPBlockSocket</b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetAtivo"></a><code>procedure <b>SetAtivo</b>(const Value: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetIP"></a><code>procedure <b>SetIP</b>(const Value: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetPort"></a><code>procedure <b>SetPort</b>(const Value: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetTerminador"></a><code>procedure <b>SetTerminador</b>( const AValue: String) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetTimeOut"></a><code>procedure <b>SetTimeOut</b>(const Value: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="VerificaAtivo"></a><code>procedure <b>VerificaAtivo</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetAtivo"></a><code>function <b>GetAtivo</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>Destructor <b>Destroy</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Ativar"></a><code>procedure <b>Ativar</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Desativar"></a><code>procedure <b>Desativar</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EnviarString"></a><code>procedure <b>EnviarString</b>(const AString : AnsiString; NumConexao : Integer = -1 ) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Terminar"></a><code>procedure <b>Terminar</b>(NumConexao : Integer = -1 ) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Ativo"></a><code>property <b>Ativo</b> : Boolean read <a   href="ACBrSocket.TACBrTCPServer.html#GetAtivo">GetAtivo</a> write <a   href="ACBrSocket.TACBrTCPServer.html#SetAtivo">SetAtivo</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ThreadList"></a><code>property <b>ThreadList</b> : TThreadList read <a   href="ACBrSocket.TACBrTCPServer.html#fsThreadList">fsThreadList</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StrTerminador"></a><code>property <b>StrTerminador</b> : AnsiString  read <a   href="ACBrSocket.TACBrTCPServer.html#fs_Terminador">fs_Terminador</a>  ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ACBrTCPServerDaemon"></a><code>property <b>ACBrTCPServerDaemon</b> : <a   href="ACBrSocket.TACBrTCPServerDaemon.html">TACBrTCPServerDaemon</a> read <a   href="ACBrSocket.TACBrTCPServer.html#fsACBrTCPServerDaemon">fsACBrTCPServerDaemon</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Instancia do Componente <a class="normal"  href="ACBrSocket.TACBrTCPServerDaemon.html">TACBrTCPServerDaemon</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TCPBlockSocket"></a><code>property <b>TCPBlockSocket</b> : <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a> read <a   href="ACBrSocket.TACBrTCPServer.html#GetTCPBlockSocket">GetTCPBlockSocket</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="IP"></a><code>property <b>IP</b>         : String  read <a   href="ACBrSocket.TACBrTCPServer.html#fsIP">fsIP</a>         write <a   href="ACBrSocket.TACBrTCPServer.html#SetIP">SetIP</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Port"></a><code>property <b>Port</b>       : String  read <a   href="ACBrSocket.TACBrTCPServer.html#fsPort">fsPort</a>       write <a   href="ACBrSocket.TACBrTCPServer.html#SetPort">SetPort</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="TimeOut"></a><code>property <b>TimeOut</b>    : Integer read <a   href="ACBrSocket.TACBrTCPServer.html#fsTimeOut">fsTimeOut</a>    write <a   href="ACBrSocket.TACBrTCPServer.html#SetTimeOut">SetTimeOut</a>
+       default 5000 ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Terminador"></a><code>property <b>Terminador</b> : String  read <a   href="ACBrSocket.TACBrTCPServer.html#fsTerminador">fsTerminador</a> write <a   href="ACBrSocket.TACBrTCPServer.html#SetTerminador">SetTerminador</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnConecta"></a><code>property <b>OnConecta</b>     : <a   href="ACBrSocket.html#TACBrTCPServerConecta">TACBrTCPServerConecta</a>    read  <a   href="ACBrSocket.TACBrTCPServer.html#fsOnConecta">fsOnConecta</a>
+                                                      write <a   href="ACBrSocket.TACBrTCPServer.html#fsOnConecta">fsOnConecta</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnDesConecta"></a><code>property <b>OnDesConecta</b>  : <a   href="ACBrSocket.html#TACBrTCPServerDesConecta">TACBrTCPServerDesConecta</a> read  <a   href="ACBrSocket.TACBrTCPServer.html#fsOnDesConecta">fsOnDesConecta</a>
+                                                      write <a   href="ACBrSocket.TACBrTCPServer.html#fsOnDesConecta">fsOnDesConecta</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnRecebeDados"></a><code>property <b>OnRecebeDados</b> : <a   href="ACBrSocket.html#TACBrTCPServerRecive">TACBrTCPServerRecive</a>     read  <a   href="ACBrSocket.TACBrTCPServer.html#fsOnRecebeDados">fsOnRecebeDados</a>
+                                                      write <a   href="ACBrSocket.TACBrTCPServer.html#fsOnRecebeDados">fsOnRecebeDados</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:53</em>
+</span>
+</body></html>

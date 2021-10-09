@@ -1,0 +1,1137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrSpedPisCofins: Classe TACBrSPEDPisCofins</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrSPEDPisCofins"></a><h1 class="cio">Classe TACBrSPEDPisCofins</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrSpedPisCofins.html">ACBrSpedPisCofins</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrSPEDPisCofins = class(TComponent)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+<code>TACBrSPEDPisCofins</code></p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="thisitem">TACBrSPEDPisCofins</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FACBrTXT">FACBrTXT</a></b>: <a   href="ACBrTXTClass.TACBrTXTClass.html">TACBrTXTClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FArquivo">FArquivo</a></b>: ansistring;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FInicializado">FInicializado</a></b>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FOnError">FOnError</a></b>: <a   href="ACBrTXTClass.html#TErrorEvent">TErrorEvent</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FDT_INI">FDT_INI</a></b>: TDateTime;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FDT_FIN">FDT_FIN</a></b>: TDateTime;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FPath">FPath</a></b>: ansistring;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FDelimitador">FDelimitador</a></b>: ansistring;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FTrimString">FTrimString</a></b>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FCurMascara">FCurMascara</a></b>: ansistring;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_0">FBloco_0</a></b>: <a   href="ACBrEPCBloco_0_Class.TBloco_0.html">TBloco_0</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_1">FBloco_1</a></b>: <a   href="ACBrEPCBloco_1_Class.TBloco_1.html">TBloco_1</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_9">FBloco_9</a></b>: <a   href="ACBrEPCBloco_9_Class.TBloco_9.html">TBloco_9</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_A">FBloco_A</a></b>: <a   href="ACBrEPCBloco_A_Class.TBloco_A.html">TBloco_A</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_C">FBloco_C</a></b>: <a   href="ACBrEPCBloco_C_Class.TBloco_C.html">TBloco_C</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_D">FBloco_D</a></b>: <a   href="ACBrEPCBloco_D_Class.TBloco_D.html">TBloco_D</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_F">FBloco_F</a></b>: <a   href="ACBrEPCBloco_F_Class.TBloco_F.html">TBloco_F</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_M">FBloco_M</a></b>: <a   href="ACBrEPCBloco_M_Class.TBloco_M.html">TBloco_M</a>;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetAbout">GetAbout</a></b>: ansistring;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetConteudo">GetConteudo</a></b>: TStringList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetDelimitador">GetDelimitador</a></b>: ansistring;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetLinhasBuffer">GetLinhasBuffer</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetTrimString">GetTrimString</a></b>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetCurMascara">GetCurMascara</a></b>: ansistring;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetDT_FIN">GetDT_FIN</a></b>: TDateTime;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetDT_INI">GetDT_INI</a></b>: TDateTime;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#InicializaBloco">InicializaBloco</a></b>(Bloco: <a   href="ACBrSped.TACBrSPED.html">TACBrSPED</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetArquivo">SetArquivo</a></b>(const AValue: ansistring);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetDelimitador">SetDelimitador</a></b>(const Value: ansistring);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetLinhasBuffer">SetLinhasBuffer</a></b>(const AValue: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetPath">SetPath</a></b>(const AValue: ansistring);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetTrimString">SetTrimString</a></b>(const Value: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetCurMascara">SetCurMascara</a></b>(const Value: ansistring);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetDT_FIN">SetDT_FIN</a></b>(const Value: TDateTime);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetDT_INI">SetDT_INI</a></b>(const Value: TDateTime);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetOnError">GetOnError</a></b>: <a   href="ACBrTXTClass.html#TErrorEvent">TErrorEvent</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetOnError">SetOnError</a></b>(const Value: <a   href="ACBrTXTClass.html#TErrorEvent">TErrorEvent</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#LimpaRegistros">LimpaRegistros</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistro0000">WriteRegistro0000</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistro0001">WriteRegistro0001</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistro0990">WriteRegistro0990</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistro1001">WriteRegistro1001</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistro1990">WriteRegistro1990</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistroA001">WriteRegistroA001</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistroA990">WriteRegistroA990</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistroC001">WriteRegistroC001</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistroC990">WriteRegistroC990</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistroD001">WriteRegistroD001</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistroD990">WriteRegistroD990</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistroF001">WriteRegistroF001</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistroF990">WriteRegistroF990</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistroM001">WriteRegistroM001</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistroM990">WriteRegistroM990</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistro9001">WriteRegistro9001</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistro9900">WriteRegistro9900</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistro9990">WriteRegistro9990</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteRegistro9999">WriteRegistro9999</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SaveFileTXT">SaveFileTXT</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#IniciaGeracao">IniciaGeracao</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteBloco_0">WriteBloco_0</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteBloco_1">WriteBloco_1</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteBloco_9">WriteBloco_9</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteBloco_A">WriteBloco_A</a></b>( FechaBloco: Boolean );</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteBloco_C">WriteBloco_C</a></b>( FechaBloco: Boolean );</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteBloco_D">WriteBloco_D</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteBloco_F">WriteBloco_F</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#WriteBloco_M">WriteBloco_M</a></b>;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Conteudo">Conteudo</a></b>: TStringList read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetConteudo">GetConteudo</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#DT_INI">DT_INI</a></b>: TDateTime read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetDT_INI">GetDT_INI</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetDT_INI">SetDT_INI</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#DT_FIN">DT_FIN</a></b>: TDateTime read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetDT_FIN">GetDT_FIN</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetDT_FIN">SetDT_FIN</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Bloco_0">Bloco_0</a></b>: <a   href="ACBrEPCBloco_0_Class.TBloco_0.html">TBloco_0</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_0">FBloco_0</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_0">FBloco_0</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Bloco_1">Bloco_1</a></b>: <a   href="ACBrEPCBloco_1_Class.TBloco_1.html">TBloco_1</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_1">FBloco_1</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_1">FBloco_1</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Bloco_9">Bloco_9</a></b>: <a   href="ACBrEPCBloco_9_Class.TBloco_9.html">TBloco_9</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_9">FBloco_9</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_9">FBloco_9</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Bloco_A">Bloco_A</a></b>: <a   href="ACBrEPCBloco_A_Class.TBloco_A.html">TBloco_A</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_A">FBloco_A</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_A">FBloco_A</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Bloco_C">Bloco_C</a></b>: <a   href="ACBrEPCBloco_C_Class.TBloco_C.html">TBloco_C</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_C">FBloco_C</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_C">FBloco_C</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Bloco_D">Bloco_D</a></b>: <a   href="ACBrEPCBloco_D_Class.TBloco_D.html">TBloco_D</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_D">FBloco_D</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_D">FBloco_D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Bloco_F">Bloco_F</a></b>: <a   href="ACBrEPCBloco_F_Class.TBloco_F.html">TBloco_F</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_F">FBloco_F</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_F">FBloco_F</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Bloco_M">Bloco_M</a></b>: <a   href="ACBrEPCBloco_M_Class.TBloco_M.html">TBloco_M</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_M">FBloco_M</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_M">FBloco_M</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#About">About</a></b>: ansistring read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetAbout">GetAbout</a> stored False;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Path">Path</a></b>: ansistring read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FPath">FPath</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetPath">SetPath</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Arquivo">Arquivo</a></b>: ansistring read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FArquivo">FArquivo</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetArquivo">SetArquivo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#LinhasBuffer">LinhasBuffer</a></b> : Integer read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetLinhasBuffer">GetLinhasBuffer</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetLinhasBuffer">SetLinhasBuffer</a>
+      default 1000 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Delimitador">Delimitador</a></b>: ansistring read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetDelimitador">GetDelimitador</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetDelimitador">SetDelimitador</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#TrimString">TrimString</a></b>: boolean read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetTrimString">GetTrimString</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetTrimString">SetTrimString</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#CurMascara">CurMascara</a></b>: ansistring read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetCurMascara">GetCurMascara</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetCurMascara">SetCurMascara</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#OnError">OnError</a></b>: <a   href="ACBrTXTClass.html#TErrorEvent">TErrorEvent</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetOnError">GetOnError</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetOnError">SetOnError</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FACBrTXT"></a><code><b>FACBrTXT</b>: <a   href="ACBrTXTClass.TACBrTXTClass.html">TACBrTXTClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FArquivo"></a><code><b>FArquivo</b>: ansistring;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FInicializado"></a><code><b>FInicializado</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FOnError"></a><code><b>FOnError</b>: <a   href="ACBrTXTClass.html#TErrorEvent">TErrorEvent</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FDT_INI"></a><code><b>FDT_INI</b>: TDateTime;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FDT_FIN"></a><code><b>FDT_FIN</b>: TDateTime;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Data inicial das informações contidas no <a class="normal"  href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Arquivo">arquivo</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FPath"></a><code><b>FPath</b>: ansistring;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Data final das informações contidas no <a class="normal"  href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Arquivo">arquivo</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FDelimitador"></a><code><b>FDelimitador</b>: ansistring;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ <a class="normal"  href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Path">Path</a> do <a class="normal"  href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Arquivo">arquivo</a> a ser gerado</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FTrimString"></a><code><b>FTrimString</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Caracter <a class="normal"  href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Delimitador">delimitador</a> de campos</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCurMascara"></a><code><b>FCurMascara</b>: ansistring;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Retorna a string sem espaços em branco iniciais e finais</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FBloco_0"></a><code><b>FBloco_0</b>: <a   href="ACBrEPCBloco_0_Class.TBloco_0.html">TBloco_0</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Mascara para valores tipo currency</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FBloco_1"></a><code><b>FBloco_1</b>: <a   href="ACBrEPCBloco_1_Class.TBloco_1.html">TBloco_1</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FBloco_9"></a><code><b>FBloco_9</b>: <a   href="ACBrEPCBloco_9_Class.TBloco_9.html">TBloco_9</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FBloco_A"></a><code><b>FBloco_A</b>: <a   href="ACBrEPCBloco_A_Class.TBloco_A.html">TBloco_A</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FBloco_C"></a><code><b>FBloco_C</b>: <a   href="ACBrEPCBloco_C_Class.TBloco_C.html">TBloco_C</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FBloco_D"></a><code><b>FBloco_D</b>: <a   href="ACBrEPCBloco_D_Class.TBloco_D.html">TBloco_D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FBloco_F"></a><code><b>FBloco_F</b>: <a   href="ACBrEPCBloco_F_Class.TBloco_F.html">TBloco_F</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FBloco_M"></a><code><b>FBloco_M</b>: <a   href="ACBrEPCBloco_M_Class.TBloco_M.html">TBloco_M</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetAbout"></a><code>function <b>GetAbout</b>: ansistring;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetConteudo"></a><code>function <b>GetConteudo</b>: TStringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetDelimitador"></a><code>function <b>GetDelimitador</b>: ansistring;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetLinhasBuffer"></a><code>function <b>GetLinhasBuffer</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetTrimString"></a><code>function <b>GetTrimString</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetCurMascara"></a><code>function <b>GetCurMascara</b>: ansistring;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetDT_FIN"></a><code>function <b>GetDT_FIN</b>: TDateTime;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetDT_INI"></a><code>function <b>GetDT_INI</b>: TDateTime;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="InicializaBloco"></a><code>procedure <b>InicializaBloco</b>(Bloco: <a   href="ACBrSped.TACBrSPED.html">TACBrSPED</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetArquivo"></a><code>procedure <b>SetArquivo</b>(const AValue: ansistring);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetDelimitador"></a><code>procedure <b>SetDelimitador</b>(const Value: ansistring);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetLinhasBuffer"></a><code>procedure <b>SetLinhasBuffer</b>(const AValue: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetPath"></a><code>procedure <b>SetPath</b>(const AValue: ansistring);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetTrimString"></a><code>procedure <b>SetTrimString</b>(const Value: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetCurMascara"></a><code>procedure <b>SetCurMascara</b>(const Value: ansistring);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetDT_FIN"></a><code>procedure <b>SetDT_FIN</b>(const Value: TDateTime);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetDT_INI"></a><code>procedure <b>SetDT_INI</b>(const Value: TDateTime);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetOnError"></a><code>function <b>GetOnError</b>: <a   href="ACBrTXTClass.html#TErrorEvent">TErrorEvent</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetOnError"></a><code>procedure <b>SetOnError</b>(const Value: <a   href="ACBrTXTClass.html#TErrorEvent">TErrorEvent</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Método do evento <a class="normal"  href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#OnError">OnError</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LimpaRegistros"></a><code>procedure <b>LimpaRegistros</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Método SetError</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistro0000"></a><code>procedure <b>WriteRegistro0000</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ BLOCO 0</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistro0001"></a><code>procedure <b>WriteRegistro0001</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistro0990"></a><code>procedure <b>WriteRegistro0990</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistro1001"></a><code>procedure <b>WriteRegistro1001</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ BLOCO 1</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistro1990"></a><code>procedure <b>WriteRegistro1990</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistroA001"></a><code>procedure <b>WriteRegistroA001</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ BLOCO A</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistroA990"></a><code>procedure <b>WriteRegistroA990</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistroC001"></a><code>procedure <b>WriteRegistroC001</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ BLOCO C</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistroC990"></a><code>procedure <b>WriteRegistroC990</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistroD001"></a><code>procedure <b>WriteRegistroD001</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ BLOCO D</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistroD990"></a><code>procedure <b>WriteRegistroD990</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistroF001"></a><code>procedure <b>WriteRegistroF001</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ BLOCO F</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistroF990"></a><code>procedure <b>WriteRegistroF990</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistroM001"></a><code>procedure <b>WriteRegistroM001</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ BLOCO M</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistroM990"></a><code>procedure <b>WriteRegistroM990</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistro9001"></a><code>procedure <b>WriteRegistro9001</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ BLOCO 9</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistro9900"></a><code>procedure <b>WriteRegistro9900</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistro9990"></a><code>procedure <b>WriteRegistro9990</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="WriteRegistro9999"></a><code>procedure <b>WriteRegistro9999</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ <a class="normal"  href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Create">Create</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveFileTXT"></a><code>procedure <b>SaveFileTXT</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ <a class="normal"  href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#Destroy">Destroy</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IniciaGeracao"></a><code>procedure <b>IniciaGeracao</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteBloco_0"></a><code>procedure <b>WriteBloco_0</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteBloco_1"></a><code>procedure <b>WriteBloco_1</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteBloco_9"></a><code>procedure <b>WriteBloco_9</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteBloco_A"></a><code>procedure <b>WriteBloco_A</b>( FechaBloco: Boolean );</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteBloco_C"></a><code>procedure <b>WriteBloco_C</b>( FechaBloco: Boolean );</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteBloco_D"></a><code>procedure <b>WriteBloco_D</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteBloco_F"></a><code>procedure <b>WriteBloco_F</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteBloco_M"></a><code>procedure <b>WriteBloco_M</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Conteudo"></a><code>property <b>Conteudo</b>: TStringList read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetConteudo">GetConteudo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DT_INI"></a><code>property <b>DT_INI</b>: TDateTime read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetDT_INI">GetDT_INI</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetDT_INI">SetDT_INI</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DT_FIN"></a><code>property <b>DT_FIN</b>: TDateTime read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetDT_FIN">GetDT_FIN</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetDT_FIN">SetDT_FIN</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Bloco_0"></a><code>property <b>Bloco_0</b>: <a   href="ACBrEPCBloco_0_Class.TBloco_0.html">TBloco_0</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_0">FBloco_0</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_0">FBloco_0</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Bloco_1"></a><code>property <b>Bloco_1</b>: <a   href="ACBrEPCBloco_1_Class.TBloco_1.html">TBloco_1</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_1">FBloco_1</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_1">FBloco_1</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Bloco_9"></a><code>property <b>Bloco_9</b>: <a   href="ACBrEPCBloco_9_Class.TBloco_9.html">TBloco_9</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_9">FBloco_9</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_9">FBloco_9</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Bloco_A"></a><code>property <b>Bloco_A</b>: <a   href="ACBrEPCBloco_A_Class.TBloco_A.html">TBloco_A</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_A">FBloco_A</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_A">FBloco_A</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Bloco_C"></a><code>property <b>Bloco_C</b>: <a   href="ACBrEPCBloco_C_Class.TBloco_C.html">TBloco_C</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_C">FBloco_C</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_C">FBloco_C</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Bloco_D"></a><code>property <b>Bloco_D</b>: <a   href="ACBrEPCBloco_D_Class.TBloco_D.html">TBloco_D</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_D">FBloco_D</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_D">FBloco_D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Bloco_F"></a><code>property <b>Bloco_F</b>: <a   href="ACBrEPCBloco_F_Class.TBloco_F.html">TBloco_F</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_F">FBloco_F</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_F">FBloco_F</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Bloco_M"></a><code>property <b>Bloco_M</b>: <a   href="ACBrEPCBloco_M_Class.TBloco_M.html">TBloco_M</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_M">FBloco_M</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FBloco_M">FBloco_M</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="About"></a><code>property <b>About</b>: ansistring read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetAbout">GetAbout</a> stored False;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Path"></a><code>property <b>Path</b>: ansistring read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FPath">FPath</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetPath">SetPath</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Arquivo"></a><code>property <b>Arquivo</b>: ansistring read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#FArquivo">FArquivo</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetArquivo">SetArquivo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LinhasBuffer"></a><code>property <b>LinhasBuffer</b> : Integer read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetLinhasBuffer">GetLinhasBuffer</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetLinhasBuffer">SetLinhasBuffer</a>
+      default 1000 ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Delimitador"></a><code>property <b>Delimitador</b>: ansistring read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetDelimitador">GetDelimitador</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetDelimitador">SetDelimitador</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="TrimString"></a><code>property <b>TrimString</b>: boolean read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetTrimString">GetTrimString</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetTrimString">SetTrimString</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CurMascara"></a><code>property <b>CurMascara</b>: ansistring read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetCurMascara">GetCurMascara</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetCurMascara">SetCurMascara</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnError"></a><code>property <b>OnError</b>: <a   href="ACBrTXTClass.html#TErrorEvent">TErrorEvent</a> read <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#GetOnError">GetOnError</a> write <a   href="ACBrSpedPisCofins.TACBrSPEDPisCofins.html#SetOnError">SetOnError</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:53</em>
+</span>
+</body></html>

@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrDANFeCBRave</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrDANFeCBRave</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td><a class="section"  href="#%40FuncsProcs">Funções e Procedimentos</a></td><td><a class="section"  href="#%40Types">Tipos</a></td><td><a class="section"  href="#%40Constants">Constantes</a></td><td><a class="section"  href="#%40Variables">Variáveis</a></td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF}</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Graphics</li><li>Forms</li><li>Windows</li><li>SysUtils</li><li>Classes</li><li>Variants</li><li>DBClient</li><li>Math</li><li>StdCtrls</li><li>DB</li><li>Dialogs</li><li>Controls</li><li>ExtCtrls</li><li>Mask</li><li>jpeg</li><li>MaskUtils</li><li>RpDefine</li><li>RpBase</li><li>RpSystem</li><li>RpBars</li><li>RpMemo</li><li>RpRenderText</li><li>RpRenderRTF</li><li>RpRenderHTML</li><li>RpRender</li><li>RpRenderPDF</li><li><a   href="ACBrNFe.html">ACBrNFe</a></li><li><a   href="ACBrNFeUtil.html">ACBrNFeUtil</a></li><li><a   href="pcnConversao.html">pcnConversao</a></li><li><a   href="pcnNFe.html">pcnNFe</a></li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrDANFeCBRave.TDANFeRave.html"><code>TDANFeRave</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40FuncsProcs"></a><h3 class="summary">Funções e Procedimentos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a   href="ACBrDANFeCBRave.html#ImprimirDANFeRave">ImprimirDANFeRave</a></b>(aACBrNFe:<a   href="ACBrNFe.TACBrNFe.html">TACBrNFe</a>; aSite, aEmail, aFax, aNomeDoERP, aNomeDoUsuario:String; aProtocoloNFe:String; aLogoMarca:TJPEGImage; aOrientacaoPapel:TOrientation; aOpcaoDeSaida:<a   href="ACBrDANFeCBRave.html#TTipoSaida">TTipoSaida</a>=tsPreview; aMostrarStatus:boolean=true; aNumeroDeCopias:Integer=1; aNomeImpressora:string=''; aArquivoSaida:String=''; aMargemInferior:double=8; aMargemSuperior:double=8; aMargemEsquerda:double=6; aMargemDireita:double=5.1; aCasasDecimais_qCom:integer=2; aCasasDecimais_vUnCom:integer=2; aMask_qCom:String=''; aMask_vUnCom:String=''; aTamanhoCampoCodigo:integer=0; aTamanhoFonte_DemaisCampos:integer=10; aTamanhoFonte_ANTT:integer=10; aProdutosPorPagina:integer=0; aEspessuraBorda:integer=2; aExibirResumoCanhoto:boolean=false; aExibirResumoCanhoto_Texto:string=''; aImprimirDescPorc:boolean=false; aImprimirValorLiquido:boolean=false; aImprimirDetalhamentoEspecifico:boolean=true; aFormularioContinuo:boolean=false; aExpadirLogoMarca:boolean=false; aNFeCancelada:boolean=false; NFE : <a   href="pcnNFe.TNFe.html">TNFe</a> = nil);</code></td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrDANFeCBRave.html#TTipoSaida">TTipoSaida</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrDANFeCBRave.html#TFlagsShowLine">TFlagsShowLine</a></b>=Set of (fsTop,fsBottom,fsLeft,fsRigth);</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrDANFeCBRave.html#aHeigthPadrao">aHeigthPadrao</a></b>:Double=5.7;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrDANFeCBRave.html#FontSizeIdentDoc_DANFE">FontSizeIdentDoc_DANFE</a></b>:Integer=12;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrDANFeCBRave.html#FontSizeIdentDoc_TipoOperacao">FontSizeIdentDoc_TipoOperacao</a></b>:Integer=8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrDANFeCBRave.html#FontSizeEmit_Nome">FontSizeEmit_Nome</a></b>:Integer=12;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrDANFeCBRave.html#FontSizeEmit_Outros">FontSizeEmit_Outros</a></b>:Integer=8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrDANFeCBRave.html#FontSizeItens">FontSizeItens</a></b>:Integer=6;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrDANFeCBRave.html#FontSizeInfComplementares">FontSizeInfComplementares</a></b>:Integer=6;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrDANFeCBRave.html#ColsTitle">ColsTitle</a></b>:array[1..17] of String=('CÓDIGO','DESCRIÇÃO DO PRODUTO / SERVIÇO','NCM/SH','CST','CFOP','UNID','QUANT.','VALOR','VALOR','VALOR','B.CÁLC.','B.CÁLC.ICMS','VAL.ICMS','VALOR','VALOR','ALÍQ.','ALÍQ.');</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrDANFeCBRave.html#ColsTitleAux">ColsTitleAux</a></b>:array[1..17] of String=('','','','','','','','UNITÁRIO','TOTAL','DESC.','DO ICMS','SUBST.TRIB.','SUBST.TRIB.','ICMS','IPI','ICMS','IPI');</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrDANFeCBRave.html#ColsAlingment">ColsAlingment</a></b>:array[1..17] of TPrintJustify=(pjCenter,pjLeft,pjCenter,pjCenter,pjCenter,pjCenter,pjRight,pjRight,pjRight,pjRight,pjRight,pjRight,pjRight,pjRight,pjRight,pjCenter,pjCenter);</code></td>
+</tr>
+</table>
+<a name="%40Variables"></a><h3 class="summary">Variáveis</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrDANFeCBRave.html#DANFeRave">DANFeRave</a></b>:<a   href="ACBrDANFeCBRave.TDANFeRave.html">TDANFeRave</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Funções e Procedimentos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ImprimirDANFeRave"></a><code>procedure <b>ImprimirDANFeRave</b>(aACBrNFe:<a   href="ACBrNFe.TACBrNFe.html">TACBrNFe</a>; aSite, aEmail, aFax, aNomeDoERP, aNomeDoUsuario:String; aProtocoloNFe:String; aLogoMarca:TJPEGImage; aOrientacaoPapel:TOrientation; aOpcaoDeSaida:<a   href="ACBrDANFeCBRave.html#TTipoSaida">TTipoSaida</a>=tsPreview; aMostrarStatus:boolean=true; aNumeroDeCopias:Integer=1; aNomeImpressora:string=''; aArquivoSaida:String=''; aMargemInferior:double=8; aMargemSuperior:double=8; aMargemEsquerda:double=6; aMargemDireita:double=5.1; aCasasDecimais_qCom:integer=2; aCasasDecimais_vUnCom:integer=2; aMask_qCom:String=''; aMask_vUnCom:String=''; aTamanhoCampoCodigo:integer=0; aTamanhoFonte_DemaisCampos:integer=10; aTamanhoFonte_ANTT:integer=10; aProdutosPorPagina:integer=0; aEspessuraBorda:integer=2; aExibirResumoCanhoto:boolean=false; aExibirResumoCanhoto_Texto:string=''; aImprimirDescPorc:boolean=false; aImprimirValorLiquido:boolean=false; aImprimirDetalhamentoEspecifico:boolean=true; aFormularioContinuo:boolean=false; aExpadirLogoMarca:boolean=false; aNFeCancelada:boolean=false; NFE : <a   href="pcnNFe.TNFe.html">TNFe</a> = nil);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TTipoSaida"></a><code><b>TTipoSaida</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tsPrint: &nbsp;</li>
+<li>
+tsPreview: &nbsp;</li>
+<li>
+tsPDF: &nbsp;</li>
+<li>
+tsText: &nbsp;</li>
+<li>
+tsHTML: &nbsp;</li>
+<li>
+tsRTF: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TFlagsShowLine"></a><code><b>TFlagsShowLine</b>=Set of (fsTop,fsBottom,fsLeft,fsRigth);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="aHeigthPadrao"></a><code><b>aHeigthPadrao</b>:Double=5.7;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FontSizeIdentDoc_DANFE"></a><code><b>FontSizeIdentDoc_DANFE</b>:Integer=12;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FontSizeIdentDoc_TipoOperacao"></a><code><b>FontSizeIdentDoc_TipoOperacao</b>:Integer=8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FontSizeEmit_Nome"></a><code><b>FontSizeEmit_Nome</b>:Integer=12;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FontSizeEmit_Outros"></a><code><b>FontSizeEmit_Outros</b>:Integer=8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FontSizeItens"></a><code><b>FontSizeItens</b>:Integer=6;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FontSizeInfComplementares"></a><code><b>FontSizeInfComplementares</b>:Integer=6;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ColsTitle"></a><code><b>ColsTitle</b>:array[1..17] of String=('CÓDIGO','DESCRIÇÃO DO PRODUTO / SERVIÇO','NCM/SH','CST','CFOP','UNID','QUANT.','VALOR','VALOR','VALOR','B.CÁLC.','B.CÁLC.ICMS','VAL.ICMS','VALOR','VALOR','ALÍQ.','ALÍQ.');</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ColsTitleAux"></a><code><b>ColsTitleAux</b>:array[1..17] of String=('','','','','','','','UNITÁRIO','TOTAL','DESC.','DO ICMS','SUBST.TRIB.','SUBST.TRIB.','ICMS','IPI','ICMS','IPI');</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ColsAlingment"></a><code><b>ColsAlingment</b>:array[1..17] of TPrintJustify=(pjCenter,pjLeft,pjCenter,pjCenter,pjCenter,pjCenter,pjRight,pjRight,pjRight,pjRight,pjRight,pjRight,pjRight,pjRight,pjRight,pjCenter,pjCenter);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Variáveis</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DANFeRave"></a><code><b>DANFeRave</b>:<a   href="ACBrDANFeCBRave.TDANFeRave.html">TDANFeRave</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:24</em>
+</span>
+</body></html>

@@ -1,0 +1,238 @@
+object frRelatorio: TfrRelatorio
+  Left = 580
+  Height = 343
+  Top = 212
+  Width = 342
+  HorzScrollBar.Page = 341
+  HorzScrollBar.Range = 298
+  VertScrollBar.Page = 342
+  VertScrollBar.Range = 329
+  ActiveControl = mRelat
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Relatório Gerencial'
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object sbFPG: TSpeedButton
+    Left = 144
+    Height = 22
+    Top = 26
+    Width = 23
+    Color = clBtnFace
+    Glyph.Data = {
+      C90200002F2A2058504D202A2F0A7374617469632063686172202A6772617068
+      69635B5D203D207B0A22333220313620362031222C0A222E2063204E6F6E6522
+      2C0A222C20632023303030303030222C0A222D20632023413139304131222C0A
+      222A20632023303046434639222C0A226120632023463946434639222C0A2262
+      20632023463946433030222C0A222E2E2E2C2C2C2C2C2E2E2E2E2E2E2E2E2E2E
+      2E2E2D2D2D2E2E2E2E2E2E2E2E2E222C0A222E2E2C2A2A2A2A2A2C2E2E2E2E2E
+      2E2E2E2E2D2D2E61612D2D2E2E2E2E2E2E2E222C0A222E2C2A2A2A2A2A2A2A2C
+      2E2E2E2E2E2E2E2D2E61612E2E2E612D2E2E2E2E2E2E222C0A222C2A2A2A6161
+      2A2A2A2A2C2E2E2E2E2E2E2D612E2E2E2E2E2E2D612E2E2E2E2E222C0A222C2A
+      2A612A2A2A2A2A2A2C2E2E2E2E2E2D2E612E2E2E61612E2E2D2E2E2E2E2E222C
+      0A222C2A612A2A2A2A2A2A2A2C2E2E2E2E2E2D612E2E2E612E2E2E2E2D612E2E
+      2E2E222C0A222C2A612A2A2A2A2A2A2A2C2E2E2E2E2E2D612E2E612E2E2E2E2E
+      2D612E2E2E2E222C0A222C2A2A2A2A2A2A2A2A2A2C2E2E2E2E2E2E2D2E2E612E
+      2E2E2E2D2E612E2E2E2E222C0A222E2C2A2A2A2A2A2A2A2C2E2E2E2E2E2E2E2D
+      612E2E2E2E2E2E2D612E2E2E2E2E222C0A222E2E2C2A2A2A2A2A2C2C622E2E2E
+      2E2E2E2E2D2D2E2E2E2D2D2D2D2E2E2E2E2E222C0A222E2E2E2C2C2C2C2C2E62
+      2D2C2E2E2E2E2E2E2E612D2D2D2E612D2D2D2E2E2E2E222C0A222E2E2E2E2E2E
+      2E2E2E2E2C2C2C2E2E2E2E2E2E2E2E6161612E612D2D2D2E2E2E222C0A222E2E
+      2E2E2E2E2E2E2E2E2E2C2C2C2E2E2E2E2E2E2E2E2E2E2E2E612D2D2D2E2E222C
+      0A222E2E2E2E2E2E2E2E2E2E2E2E2C2C2C2E2E2E2E2E2E2E2E2E2E2E2E612D2D
+      2D2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2C2C2C2E2E2E2E2E2E2E2E2E2E
+      2E2E612D2D2D222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2C2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E612D61227D0A
+    }
+    NumGlyphs = 2
+    Visible = False
+    OnClick = sbFPGClick
+  end
+  object sbCNF: TSpeedButton
+    Left = 208
+    Height = 22
+    Top = 26
+    Width = 23
+    Color = clBtnFace
+    Glyph.Data = {
+      C90200002F2A2058504D202A2F0A7374617469632063686172202A6772617068
+      69635B5D203D207B0A22333220313620362031222C0A222E2063204E6F6E6522
+      2C0A222C20632023303030303030222C0A222D20632023413139304131222C0A
+      222A20632023303046434639222C0A226120632023463946434639222C0A2262
+      20632023463946433030222C0A222E2E2E2C2C2C2C2C2E2E2E2E2E2E2E2E2E2E
+      2E2E2D2D2D2E2E2E2E2E2E2E2E2E222C0A222E2E2C2A2A2A2A2A2C2E2E2E2E2E
+      2E2E2E2E2D2D2E61612D2D2E2E2E2E2E2E2E222C0A222E2C2A2A2A2A2A2A2A2C
+      2E2E2E2E2E2E2E2D2E61612E2E2E612D2E2E2E2E2E2E222C0A222C2A2A2A6161
+      2A2A2A2A2C2E2E2E2E2E2E2D612E2E2E2E2E2E2D612E2E2E2E2E222C0A222C2A
+      2A612A2A2A2A2A2A2C2E2E2E2E2E2D2E612E2E2E61612E2E2D2E2E2E2E2E222C
+      0A222C2A612A2A2A2A2A2A2A2C2E2E2E2E2E2D612E2E2E612E2E2E2E2D612E2E
+      2E2E222C0A222C2A612A2A2A2A2A2A2A2C2E2E2E2E2E2D612E2E612E2E2E2E2E
+      2D612E2E2E2E222C0A222C2A2A2A2A2A2A2A2A2A2C2E2E2E2E2E2E2D2E2E612E
+      2E2E2E2D2E612E2E2E2E222C0A222E2C2A2A2A2A2A2A2A2C2E2E2E2E2E2E2E2D
+      612E2E2E2E2E2E2D612E2E2E2E2E222C0A222E2E2C2A2A2A2A2A2C2C622E2E2E
+      2E2E2E2E2D2D2E2E2E2D2D2D2D2E2E2E2E2E222C0A222E2E2E2C2C2C2C2C2E62
+      2D2C2E2E2E2E2E2E2E612D2D2D2E612D2D2D2E2E2E2E222C0A222E2E2E2E2E2E
+      2E2E2E2E2C2C2C2E2E2E2E2E2E2E2E6161612E612D2D2D2E2E2E222C0A222E2E
+      2E2E2E2E2E2E2E2E2E2C2C2C2E2E2E2E2E2E2E2E2E2E2E2E612D2D2D2E2E222C
+      0A222E2E2E2E2E2E2E2E2E2E2E2E2C2C2C2E2E2E2E2E2E2E2E2E2E2E2E612D2D
+      2D2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2C2C2C2E2E2E2E2E2E2E2E2E2E
+      2E2E612D2D2D222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2C2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E612D61227D0A
+    }
+    NumGlyphs = 2
+    Visible = False
+    OnClick = sbCNFClick
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 14
+    Top = 5
+    Width = 24
+    Caption = '&Vias:'
+    Color = clNone
+    FocusControl = edVias
+    ParentColor = False
+  end
+  object lCodFPG: TLabel
+    Left = 112
+    Height = 14
+    Top = 5
+    Width = 57
+    Caption = '&Form.Pagto'
+    Color = clNone
+    FocusControl = lCodFPG
+    ParentColor = False
+    Visible = False
+  end
+  object lValor: TLabel
+    Left = 240
+    Height = 14
+    Top = 5
+    Width = 29
+    Caption = '&Valor:'
+    Color = clNone
+    FocusControl = edValor
+    ParentColor = False
+    Visible = False
+  end
+  object lCupom: TLabel
+    Left = 56
+    Height = 14
+    Top = 5
+    Width = 34
+    Caption = '&Cupom'
+    Color = clNone
+    FocusControl = edCupom
+    ParentColor = False
+  end
+  object lCodCNF: TLabel
+    Left = 176
+    Height = 14
+    Top = 5
+    Width = 21
+    Caption = 'C&NF'
+    Color = clNone
+    FocusControl = lCodCNF
+    ParentColor = False
+    Visible = False
+  end
+  object mRelat: TMemo
+    Left = 1
+    Height = 241
+    Top = 56
+    Width = 335
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Fixedsys'
+    Font.Pitch = fpFixed
+    Lines.Strings = (
+      '1...+....2....+....3....+....4....+...'
+      '      TESTE DE RELATORIO'
+      'O relatorio deve respeitar a '
+      'propriedade COLUNAS do componente '
+      'ACBrECF.'
+      'A maioria dos ECF''s trabalham com 40 '
+      'colunas, alguns com 48 colunas.'
+      'O Relatorio Gerencial e usado pelas '
+      'rotinas de TEF para imprirmir '
+      'comprovantes, quando a impressao do '
+      'Cupom NAO Fiscal vinculado falhar.'
+    )
+    ScrollBars = ssVertical
+    TabOrder = 4
+  end
+  object Button1: TButton
+    Left = 194
+    Height = 25
+    Top = 307
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = '&Ler TXT'
+    OnClick = Button1Click
+    TabOrder = 6
+  end
+  object Button2: TButton
+    Left = 74
+    Height = 25
+    Top = 307
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = '&Imprimir'
+    OnClick = Button2Click
+    TabOrder = 5
+  end
+  object edVias: TEdit
+    Left = 24
+    Height = 21
+    Top = 26
+    Width = 25
+    TabOrder = 0
+    Text = '3'
+  end
+  object edFPG: TEdit
+    Left = 112
+    Height = 21
+    Top = 26
+    Width = 33
+    TabOrder = 2
+    Text = '01'
+    Visible = False
+  end
+  object edValor: TEdit
+    Left = 240
+    Height = 21
+    Top = 26
+    Width = 65
+    OnKeyPress = edValorKeyPress
+    TabOrder = 3
+    Text = '1'
+    Visible = False
+  end
+  object edCupom: TEdit
+    Left = 56
+    Height = 21
+    Top = 26
+    Width = 49
+    TabOrder = 1
+  end
+  object edCNF: TEdit
+    Left = 176
+    Height = 21
+    Top = 26
+    Width = 33
+    TabOrder = 7
+    Visible = False
+  end
+  object OpenDialog1: TOpenDialog
+    Title = 'Open existing file'
+    Filter = 'Arquivos Texto|*.TXT'
+    FilterIndex = 0
+    left = 264
+    top = 56
+  end
+end

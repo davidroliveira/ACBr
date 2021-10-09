@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrMSXML2_TLB: Interface IXSLProcessor</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="IXSLProcessor"></a><h1 class="cio">Interface IXSLProcessor</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td>Campos</td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrMSXML2_TLB.html">ACBrMSXML2_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type IXSLProcessor = interface(IDispatch)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// Interface: <code>IXSLProcessor</code> Flags: (4544) Dual NonExtensible OleAutomation Dispatchable GUID: {2933BF92-7B36-11D2-B20E-00C04F983E60} *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">IDispatch</li>
+<li class="thisitem">IXSLProcessor</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Set_input">Set_input</a></b>(pVar: OleVariant); safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_input">Get_input</a></b>: OleVariant; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_ownerTemplate">Get_ownerTemplate</a></b>: <a   href="ACBrMSXML2_TLB.IXSLTemplate.html">IXSLTemplate</a>; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#setStartMode">setStartMode</a></b>(const mode: WideString; const namespaceURI: WideString); safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_startMode">Get_startMode</a></b>: WideString; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_startModeURI">Get_startModeURI</a></b>: WideString; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Set_output">Set_output</a></b>(pOutput: OleVariant); safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_output">Get_output</a></b>: OleVariant; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#transform">transform</a></b>: WordBool; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#reset">reset</a></b>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_readyState">Get_readyState</a></b>: Integer; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#addParameter">addParameter</a></b>(const baseName: WideString; parameter: OleVariant; const namespaceURI: WideString); safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#addObject">addObject</a></b>(const obj: IDispatch; const namespaceURI: WideString); safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_stylesheet">Get_stylesheet</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMNode.html">IXMLDOMNode</a>; safecall;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#input">input</a></b>: OleVariant read <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_input">Get_input</a> write <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Set_input">Set_input</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#ownerTemplate">ownerTemplate</a></b>: <a   href="ACBrMSXML2_TLB.IXSLTemplate.html">IXSLTemplate</a> read <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_ownerTemplate">Get_ownerTemplate</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#startMode">startMode</a></b>: WideString read <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_startMode">Get_startMode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#startModeURI">startModeURI</a></b>: WideString read <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_startModeURI">Get_startModeURI</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#output">output</a></b>: OleVariant read <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_output">Get_output</a> write <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Set_output">Set_output</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#readyState">readyState</a></b>: Integer read <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_readyState">Get_readyState</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXSLProcessor.html#stylesheet">stylesheet</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMNode.html">IXMLDOMNode</a> read <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_stylesheet">Get_stylesheet</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_input"></a><code>procedure <b>Set_input</b>(pVar: OleVariant); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_input"></a><code>function <b>Get_input</b>: OleVariant; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_ownerTemplate"></a><code>function <b>Get_ownerTemplate</b>: <a   href="ACBrMSXML2_TLB.IXSLTemplate.html">IXSLTemplate</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="setStartMode"></a><code>procedure <b>setStartMode</b>(const mode: WideString; const namespaceURI: WideString); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_startMode"></a><code>function <b>Get_startMode</b>: WideString; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_startModeURI"></a><code>function <b>Get_startModeURI</b>: WideString; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_output"></a><code>procedure <b>Set_output</b>(pOutput: OleVariant); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_output"></a><code>function <b>Get_output</b>: OleVariant; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="transform"></a><code>function <b>transform</b>: WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="reset"></a><code>procedure <b>reset</b>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_readyState"></a><code>function <b>Get_readyState</b>: Integer; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="addParameter"></a><code>procedure <b>addParameter</b>(const baseName: WideString; parameter: OleVariant; const namespaceURI: WideString); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="addObject"></a><code>procedure <b>addObject</b>(const obj: IDispatch; const namespaceURI: WideString); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_stylesheet"></a><code>function <b>Get_stylesheet</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMNode.html">IXMLDOMNode</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="input"></a><code>property <b>input</b>: OleVariant read <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_input">Get_input</a> write <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Set_input">Set_input</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ownerTemplate"></a><code>property <b>ownerTemplate</b>: <a   href="ACBrMSXML2_TLB.IXSLTemplate.html">IXSLTemplate</a> read <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_ownerTemplate">Get_ownerTemplate</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="startMode"></a><code>property <b>startMode</b>: WideString read <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_startMode">Get_startMode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="startModeURI"></a><code>property <b>startModeURI</b>: WideString read <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_startModeURI">Get_startModeURI</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="output"></a><code>property <b>output</b>: OleVariant read <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_output">Get_output</a> write <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Set_output">Set_output</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="readyState"></a><code>property <b>readyState</b>: Integer read <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_readyState">Get_readyState</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="stylesheet"></a><code>property <b>stylesheet</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMNode.html">IXMLDOMNode</a> read <a   href="ACBrMSXML2_TLB.IXSLProcessor.html#Get_stylesheet">Get_stylesheet</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:44</em>
+</span>
+</body></html>

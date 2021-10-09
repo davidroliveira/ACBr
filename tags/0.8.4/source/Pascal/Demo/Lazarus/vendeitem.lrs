@@ -1,0 +1,54 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrVendeItem','FORMDATA',[
+  'TPF0'#12'TfrVendeItem'#11'frVendeItem'#13'ActiveControl'#7#8'edCodigo'#11'Bo'
+  +'rderStyle'#7#8'bsSingle'#7'Caption'#6#10'Vende Item'#12'ClientHeight'#3#245
+  +#0#11'ClientWidth'#3'g'#1#11'Font.Height'#2#245#9'Font.Name'#6#13'MS Sans Se'
+  +'rif'#13'PixelsPerInch'#2'`'#8'Position'#7#16'poMainFormCenter'#10'TextHeigh'
+  +'t'#2#13#18'HorzScrollBar.Page'#3'f'#1#19'HorzScrollBar.Range'#3'I'#1#18'Ver'
+  +'tScrollBar.Page'#3#244#0#19'VertScrollBar.Range'#3#225#0#4'Left'#3'f'#1#6'H'
+  +'eight'#3#245#0#3'Top'#3#11#1#5'Width'#3'g'#1#0#6'TLabel'#6'Label1'#7'Captio'
+  +'n'#6#7'&C'#243'digo'#5'Color'#7#6'clNone'#12'FocusControl'#7#8'edCodigo'#11
+  +'ParentColor'#8#4'Left'#2#24#6'Height'#2#14#3'Top'#2#24#5'Width'#2')'#0#0#6
+  +'TLabel'#6'Label2'#7'Caption'#6#10'&Descri'#231#227'o'#5'Color'#7#6'clNone'
+  +#12'FocusControl'#7#11'edDescricao'#11'ParentColor'#8#4'Left'#2#9#6'Height'#2
+  +#14#3'Top'#2'8'#5'Width'#2'6'#0#0#6'TLabel'#6'Label3'#7'Caption'#6#4'&Qtd'#5
+  +'Color'#7#6'clNone'#11'ParentColor'#8#4'Left'#2'('#6'Height'#2#14#3'Top'#2'X'
+  +#5'Width'#2#26#0#0#6'TLabel'#6'Label4'#7'Caption'#6#15'&Pre'#231'o Unit'#225
+  +'rio'#5'Color'#7#6'clNone'#12'FocusControl'#7#12'edPrecoUnita'#11'ParentColo'
+  +'r'#8#4'Left'#3#168#0#6'Height'#2#14#3'Top'#2'X'#5'Width'#2'K'#0#0#6'TLabel'
+  +#6'Label5'#7'Caption'#6#17'&Valor Aliq. ICMS'#5'Color'#7#6'clNone'#12'FocusC'
+  +'ontrol'#7#6'edICMS'#11'ParentColor'#8#4'Left'#3#159#0#6'Height'#2#14#3'Top'
+  +#2'x'#5'Width'#2'T'#0#0#6'TLabel'#6'Label6'#7'Caption'#6#9'&Desc (%)'#5'Colo'
+  +'r'#7#6'clNone'#12'FocusControl'#7#10'edDesconto'#11'ParentColor'#8#4'Left'#2
+  +#15#6'Height'#2#14#3'Top'#3#152#0#5'Width'#2'5'#0#0#6'TLabel'#6'Label7'#7'Ca'
+  +'ption'#6#8'&Unidade'#5'Color'#7#6'clNone'#12'FocusControl'#7#4'edUN'#11'Par'
+  +'entColor'#8#4'Left'#2#17#6'Height'#2#14#3'Top'#2'x'#5'Width'#2'/'#0#0#6'TLa'
+  +'bel'#6'Label8'#7'Caption'#6#11'II = Isento'#5'Color'#7#6'clNone'#11'ParentC'
+  +'olor'#8#4'Left'#3#184#0#6'Height'#2#14#3'Top'#3#144#0#5'Width'#2'6'#0#0#6'T'
+  +'Label'#6'Label9'#7'Caption'#6#19'NN = Nao Incidencia'#5'Color'#7#6'clNone'
+  +#11'ParentColor'#8#4'Left'#3#184#0#6'Height'#2#14#3'Top'#3#160#0#5'Width'#2
+  +'c'#0#0#6'TLabel'#7'Label10'#7'Caption'#6#28'FF = Substitui'#231'ao Tribut'
+  +#225'ria'#5'Color'#7#6'clNone'#11'ParentColor'#8#4'Left'#3#184#0#6'Height'#2
+  +#14#3'Top'#3#176#0#5'Width'#3#134#0#0#0#5'TEdit'#8'edCodigo'#8'TabOrder'#2#0
+  +#4'Text'#6#9'111222333'#6'Cursor'#7#7'crIBeam'#4'Left'#2'H'#6'Height'#2#21#3
+  +'Top'#2#16#5'Width'#2'e'#0#0#5'TEdit'#11'edDescricao'#8'TabOrder'#2#1#4'Text'
+  +#6#16'TESTE DE PRODUTO'#6'Cursor'#7#7'crIBeam'#4'Left'#2'H'#6'Height'#2#21#3
+  +'Top'#2'0'#5'Width'#3#17#1#0#0#5'TEdit'#12'edPrecoUnita'#10'OnKeyPress'#7#13
+  +'edQtdKeyPress'#8'TabOrder'#2#3#4'Text'#6#1'1'#6'Cursor'#7#7'crIBeam'#4'Left'
+  +#3#0#1#6'Height'#2#21#3'Top'#2'P'#5'Width'#2'Y'#0#0#5'TEdit'#6'edICMS'#10'On'
+  +'KeyPress'#7#13'edQtdKeyPress'#8'TabOrder'#2#5#4'Text'#6#2'NN'#6'Cursor'#7#7
+  +'crIBeam'#4'Left'#3#0#1#6'Height'#2#21#3'Top'#2'p'#5'Width'#2'Y'#0#0#5'TEdit'
+  +#10'edDesconto'#10'OnKeyPress'#7#13'edQtdKeyPress'#8'TabOrder'#2#6#4'Text'#6
+  +#1'0'#6'Cursor'#7#7'crIBeam'#4'Left'#2'H'#6'Height'#2#21#3'Top'#3#144#0#5'Wi'
+  +'dth'#2'Q'#0#0#5'TEdit'#4'edUN'#8'TabOrder'#2#4#4'Text'#6#2'UN'#6'Cursor'#7#7
+  +'crIBeam'#4'Left'#2'H'#6'Height'#2#21#3'Top'#2'p'#5'Width'#2'Q'#0#0#7'TButto'
+  +'n'#7'Button1'#25'BorderSpacing.InnerBorder'#2#2#7'Caption'#6#9'&Imprimir'#7
+  +'Default'#9#7'OnClick'#7#12'Button1Click'#8'TabOrder'#2#7#4'Left'#2'@'#6'Hei'
+  +'ght'#2#25#3'Top'#3#208#0#5'Width'#2'K'#0#0#7'TButton'#7'Button2'#25'BorderS'
+  +'pacing.InnerBorder'#2#2#6'Cancel'#9#7'Caption'#6#6'Fechar'#11'ModalResult'#2
+  +#2#7'OnClick'#7#12'Button2Click'#8'TabOrder'#2#8#4'Left'#3#203#0#6'Height'#2
+  +#25#3'Top'#3#208#0#5'Width'#2'K'#0#0#5'TEdit'#5'edQtd'#10'OnKeyPress'#7#13'e'
+  +'dQtdKeyPress'#8'TabOrder'#2#2#4'Text'#6#1'1'#6'Cursor'#7#7'crIBeam'#4'Left'
+  +#2'H'#6'Height'#2#21#3'Top'#2'P'#5'Width'#2'Q'#0#0#0
+]);

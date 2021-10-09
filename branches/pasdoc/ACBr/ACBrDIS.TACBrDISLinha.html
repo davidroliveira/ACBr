@@ -1,0 +1,369 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrDIS: Classe TACBrDISLinha</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrDISLinha"></a><h1 class="cio">Classe TACBrDISLinha</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrDIS.html">ACBrDIS</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrDISLinha = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+Classe Linha</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TACBrDISLinha</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDIS.TACBrDISLinha.html#fsTexto">fsTexto</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDIS.TACBrDISLinha.html#fsTextoVisivel">fsTextoVisivel</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDIS.TACBrDISLinha.html#fsEfeitoExibir">fsEfeitoExibir</a></b>: <a   href="ACBrDIS.html#TACBrDISEfeitoExibir">TACBrDISEfeitoExibir</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDIS.TACBrDISLinha.html#fsExibindo">fsExibindo</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDIS.TACBrDISLinha.html#fsRolando">fsRolando</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDIS.TACBrDISLinha.html#fsEfeitoRolar">fsEfeitoRolar</a></b>: <a   href="ACBrDIS.html#TACBrDISEfeitoRolar">TACBrDISEfeitoRolar</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDIS.TACBrDISLinha.html#fsPosicao">fsPosicao</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDIS.TACBrDISLinha.html#fsColunas">fsColunas</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDIS.TACBrDISLinha.html#fsEnabled">fsEnabled</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDIS.TACBrDISLinha.html#fsParaEsquerda">fsParaEsquerda</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDIS.TACBrDISLinha.html#fsPausaVai_e_Volta">fsPausaVai_e_Volta</a></b>: Integer ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDIS.TACBrDISLinha.html#fsPausarVai_e_Volta">fsPausarVai_e_Volta</a></b>: Integer;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDIS.TACBrDISLinha.html#SetPosicao">SetPosicao</a></b>(const Value: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDIS.TACBrDISLinha.html#SetTexto">SetTexto</a></b>(const Value: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDIS.TACBrDISLinha.html#SetColunas">SetColunas</a></b>(const Value: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrDIS.TACBrDISLinha.html#Create">Create</a></b> ;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDIS.TACBrDISLinha.html#Posicao">Posicao</a></b>      : Integer read <a   href="ACBrDIS.TACBrDISLinha.html#fsPosicao">fsPosicao</a> write <a   href="ACBrDIS.TACBrDISLinha.html#SetPosicao">SetPosicao</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDIS.TACBrDISLinha.html#Texto">Texto</a></b>        : String read <a   href="ACBrDIS.TACBrDISLinha.html#fsTexto">fsTexto</a> write <a   href="ACBrDIS.TACBrDISLinha.html#SetTexto">SetTexto</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDIS.TACBrDISLinha.html#TextoVisivel">TextoVisivel</a></b> : String read <a   href="ACBrDIS.TACBrDISLinha.html#fsTextoVisivel">fsTextoVisivel</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDIS.TACBrDISLinha.html#Colunas">Colunas</a></b>      : Integer read <a   href="ACBrDIS.TACBrDISLinha.html#fsColunas">fsColunas</a> write <a   href="ACBrDIS.TACBrDISLinha.html#SetColunas">SetColunas</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDIS.TACBrDISLinha.html#EfeitoExibir">EfeitoExibir</a></b> : <a   href="ACBrDIS.html#TACBrDISEfeitoExibir">TACBrDISEfeitoExibir</a> read <a   href="ACBrDIS.TACBrDISLinha.html#fsEfeitoExibir">fsEfeitoExibir</a>
+        write <a   href="ACBrDIS.TACBrDISLinha.html#fsEfeitoExibir">fsEfeitoExibir</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDIS.TACBrDISLinha.html#EfeitoRolar">EfeitoRolar</a></b> : <a   href="ACBrDIS.html#TACBrDISEfeitoRolar">TACBrDISEfeitoRolar</a>   read <a   href="ACBrDIS.TACBrDISLinha.html#fsEfeitoRolar">fsEfeitoRolar</a>
+        write <a   href="ACBrDIS.TACBrDISLinha.html#fsEfeitoRolar">fsEfeitoRolar</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDIS.TACBrDISLinha.html#Exibindo">Exibindo</a></b> : Boolean read <a   href="ACBrDIS.TACBrDISLinha.html#fsExibindo">fsExibindo</a> write <a   href="ACBrDIS.TACBrDISLinha.html#fsExibindo">fsExibindo</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDIS.TACBrDISLinha.html#Rolando">Rolando</a></b>  : Boolean read <a   href="ACBrDIS.TACBrDISLinha.html#fsRolando">fsRolando</a>  write <a   href="ACBrDIS.TACBrDISLinha.html#fsRolando">fsRolando</a>  ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDIS.TACBrDISLinha.html#Enabled">Enabled</a></b>  : Boolean read <a   href="ACBrDIS.TACBrDISLinha.html#fsEnabled">fsEnabled</a>  write <a   href="ACBrDIS.TACBrDISLinha.html#fsEnabled">fsEnabled</a>  ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDIS.TACBrDISLinha.html#ParaEsquerda">ParaEsquerda</a></b> : Boolean read <a   href="ACBrDIS.TACBrDISLinha.html#fsParaEsquerda">fsParaEsquerda</a> write <a   href="ACBrDIS.TACBrDISLinha.html#fsParaEsquerda">fsParaEsquerda</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDIS.TACBrDISLinha.html#PausaVai_e_Volta">PausaVai_e_Volta</a></b>: Integer read <a   href="ACBrDIS.TACBrDISLinha.html#fsPausaVai_e_Volta">fsPausaVai_e_Volta</a> write <a   href="ACBrDIS.TACBrDISLinha.html#fsPausaVai_e_Volta">fsPausaVai_e_Volta</a> ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsTexto"></a><code><b>fsTexto</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsTextoVisivel"></a><code><b>fsTextoVisivel</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsEfeitoExibir"></a><code><b>fsEfeitoExibir</b>: <a   href="ACBrDIS.html#TACBrDISEfeitoExibir">TACBrDISEfeitoExibir</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsExibindo"></a><code><b>fsExibindo</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsRolando"></a><code><b>fsRolando</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsEfeitoRolar"></a><code><b>fsEfeitoRolar</b>: <a   href="ACBrDIS.html#TACBrDISEfeitoRolar">TACBrDISEfeitoRolar</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsPosicao"></a><code><b>fsPosicao</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsColunas"></a><code><b>fsColunas</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsEnabled"></a><code><b>fsEnabled</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsParaEsquerda"></a><code><b>fsParaEsquerda</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsPausaVai_e_Volta"></a><code><b>fsPausaVai_e_Volta</b>: Integer ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsPausarVai_e_Volta"></a><code><b>fsPausarVai_e_Volta</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetPosicao"></a><code>procedure <b>SetPosicao</b>(const Value: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetTexto"></a><code>procedure <b>SetTexto</b>(const Value: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetColunas"></a><code>procedure <b>SetColunas</b>(const Value: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Posicao"></a><code>property <b>Posicao</b>      : Integer read <a   href="ACBrDIS.TACBrDISLinha.html#fsPosicao">fsPosicao</a> write <a   href="ACBrDIS.TACBrDISLinha.html#SetPosicao">SetPosicao</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Texto"></a><code>property <b>Texto</b>        : String read <a   href="ACBrDIS.TACBrDISLinha.html#fsTexto">fsTexto</a> write <a   href="ACBrDIS.TACBrDISLinha.html#SetTexto">SetTexto</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TextoVisivel"></a><code>property <b>TextoVisivel</b> : String read <a   href="ACBrDIS.TACBrDISLinha.html#fsTextoVisivel">fsTextoVisivel</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Colunas"></a><code>property <b>Colunas</b>      : Integer read <a   href="ACBrDIS.TACBrDISLinha.html#fsColunas">fsColunas</a> write <a   href="ACBrDIS.TACBrDISLinha.html#SetColunas">SetColunas</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EfeitoExibir"></a><code>property <b>EfeitoExibir</b> : <a   href="ACBrDIS.html#TACBrDISEfeitoExibir">TACBrDISEfeitoExibir</a> read <a   href="ACBrDIS.TACBrDISLinha.html#fsEfeitoExibir">fsEfeitoExibir</a>
+        write <a   href="ACBrDIS.TACBrDISLinha.html#fsEfeitoExibir">fsEfeitoExibir</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EfeitoRolar"></a><code>property <b>EfeitoRolar</b> : <a   href="ACBrDIS.html#TACBrDISEfeitoRolar">TACBrDISEfeitoRolar</a>   read <a   href="ACBrDIS.TACBrDISLinha.html#fsEfeitoRolar">fsEfeitoRolar</a>
+        write <a   href="ACBrDIS.TACBrDISLinha.html#fsEfeitoRolar">fsEfeitoRolar</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Exibindo"></a><code>property <b>Exibindo</b> : Boolean read <a   href="ACBrDIS.TACBrDISLinha.html#fsExibindo">fsExibindo</a> write <a   href="ACBrDIS.TACBrDISLinha.html#fsExibindo">fsExibindo</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Rolando"></a><code>property <b>Rolando</b>  : Boolean read <a   href="ACBrDIS.TACBrDISLinha.html#fsRolando">fsRolando</a>  write <a   href="ACBrDIS.TACBrDISLinha.html#fsRolando">fsRolando</a>  ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Enabled"></a><code>property <b>Enabled</b>  : Boolean read <a   href="ACBrDIS.TACBrDISLinha.html#fsEnabled">fsEnabled</a>  write <a   href="ACBrDIS.TACBrDISLinha.html#fsEnabled">fsEnabled</a>  ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ParaEsquerda"></a><code>property <b>ParaEsquerda</b> : Boolean read <a   href="ACBrDIS.TACBrDISLinha.html#fsParaEsquerda">fsParaEsquerda</a> write <a   href="ACBrDIS.TACBrDISLinha.html#fsParaEsquerda">fsParaEsquerda</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PausaVai_e_Volta"></a><code>property <b>PausaVai_e_Volta</b>: Integer read <a   href="ACBrDIS.TACBrDISLinha.html#fsPausaVai_e_Volta">fsPausaVai_e_Volta</a> write <a   href="ACBrDIS.TACBrDISLinha.html#fsPausaVai_e_Volta">fsPausaVai_e_Volta</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:24</em>
+</span>
+</body></html>

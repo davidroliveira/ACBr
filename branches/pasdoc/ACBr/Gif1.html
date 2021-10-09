@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: Gif1</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit Gif1</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td><a class="section"  href="#%40Types">Tipos</a></td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF}</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>Classes</li><li>Windows</li><li>Messages</li><li>WinProcs</li><li>WinTypes</li><li>Graphics</li><li>Controls</li><li>Dialogs</li><li>StdCtrls</li><li>ExtCtrls</li><li>Forms</li><li>Types</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">packed record&nbsp;<a class="bold"  href="Gif1.TRGBQUAD.html"><code>TRGBQUAD</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold"  href="Gif1.TGifDataBlock.html"><code>TGifDataBlock</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold"  href="Gif1.TGifSignature.html"><code>TGifSignature</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold"  href="Gif1.TGifExtensionGraphic.html"><code>TGifExtensionGraphic</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold"  href="Gif1.TGifExtensionComment.html"><code>TGifExtensionComment</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold"  href="Gif1.TGifExtensionText.html"><code>TGifExtensionText</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold"  href="Gif1.TGifExtensionApplication.html"><code>TGifExtensionApplication</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold"  href="Gif1.TGifExtension.html"><code>TGifExtension</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold"  href="Gif1.TGifScreenDescriptor.html"><code>TGifScreenDescriptor</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold"  href="Gif1.TGifColorTable.html"><code>TGifColorTable</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold"  href="Gif1.TGifImageDescriptor.html"><code>TGifImageDescriptor</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold"  href="Gif1.TGifZip.html"><code>TGifZip</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="Gif1.TGif.html"><code>TGif</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.html#PGifDataBlock">PGifDataBlock</a></b>           = &circ;<a   href="Gif1.TGifDataBlock.html">TGifDataBlock</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.html#PGifSignature">PGifSignature</a></b>           = &circ;<a   href="Gif1.TGifSignature.html">TgifSignature</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.html#PGifExtensionGraphic">PGifExtensionGraphic</a></b>    = &circ;<a   href="Gif1.TGifExtensionGraphic.html">TgifExtensionGraphic</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.html#PGifExtensionComment">PGifExtensionComment</a></b>    = &circ;<a   href="Gif1.TGifExtensionComment.html">TgifExtensionComment</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.html#PGifExtensionText">PGifExtensionText</a></b>       = &circ;<a   href="Gif1.TGifExtensionText.html">TGifExtensionText</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.html#PGifExtensionApplication">PGifExtensionApplication</a></b>    = &circ;<a   href="Gif1.TGifExtensionApplication.html">TgifExtensionApplication</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.html#PGifExtension">PGifExtension</a></b>           = &circ;<a   href="Gif1.TGifExtension.html">TGifExtension</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.html#PGifScreenDescriptor">PGifScreenDescriptor</a></b>    = &circ;<a   href="Gif1.TGifScreenDescriptor.html">TGifScreenDescriptor</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.html#PGifColorTable">PGifColorTable</a></b>          = &circ;<a   href="Gif1.TGifColorTable.html">TGifColorTable</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="Gif1.html#PGifImageDescriptor">PGifImageDescriptor</a></b>     = &circ;<a   href="Gif1.TGifImageDescriptor.html">TGifImageDescriptor</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.html#PGifZip">PGifZip</a></b>                 = &circ;<a   href="Gif1.TGifZip.html">TGifZip</a>;</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="Gif1.html#kGifCodeTableSize">kGifCodeTableSize</a></b> = 4096;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PGifDataBlock"></a><code><b>PGifDataBlock</b>           = &circ;<a   href="Gif1.TGifDataBlock.html">TGifDataBlock</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PGifSignature"></a><code><b>PGifSignature</b>           = &circ;<a   href="Gif1.TGifSignature.html">TgifSignature</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PGifExtensionGraphic"></a><code><b>PGifExtensionGraphic</b>    = &circ;<a   href="Gif1.TGifExtensionGraphic.html">TgifExtensionGraphic</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PGifExtensionComment"></a><code><b>PGifExtensionComment</b>    = &circ;<a   href="Gif1.TGifExtensionComment.html">TgifExtensionComment</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+into color table</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PGifExtensionText"></a><code><b>PGifExtensionText</b>       = &circ;<a   href="Gif1.TGifExtensionText.html">TGifExtensionText</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+data blocks</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PGifExtensionApplication"></a><code><b>PGifExtensionApplication</b>    = &circ;<a   href="Gif1.TGifExtensionApplication.html">TgifExtensionApplication</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+data blocks</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PGifExtension"></a><code><b>PGifExtension</b>           = &circ;<a   href="Gif1.TGifExtension.html">TGifExtension</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+data blocks</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PGifScreenDescriptor"></a><code><b>PGifScreenDescriptor</b>    = &circ;<a   href="Gif1.TGifScreenDescriptor.html">TGifScreenDescriptor</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PGifColorTable"></a><code><b>PGifColorTable</b>          = &circ;<a   href="Gif1.TGifColorTable.html">TGifColorTable</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+default color table for all images</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PGifImageDescriptor"></a><code><b>PGifImageDescriptor</b>     = &circ;<a   href="Gif1.TGifImageDescriptor.html">TGifImageDescriptor</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+the colors</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PGifZip"></a><code><b>PGifZip</b>                 = &circ;<a   href="Gif1.TGifZip.html">TGifZip</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+the actual image</p>
+</td></tr>
+</table>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="kGifCodeTableSize"></a><code><b>kGifCodeTableSize</b> = 4096;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+LZW encode table sizes</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:56</em>
+</span>
+</body></html>

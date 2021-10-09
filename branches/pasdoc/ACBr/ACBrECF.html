@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrECF</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrECF</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td><a class="section"  href="#%40Types">Tipos</a></td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF}</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a   href="ACBrBase.html">ACBrBase</a></li><li><a   href="ACBrDevice.html">ACBrDevice</a></li><li><a   href="ACBrECFClass.html">ACBrECFClass</a></li><li><a   href="ACBrRFD.html">ACBrRFD</a></li><li><a   href="ACBrEAD.html">ACBrEAD</a></li><li>SysUtils</li><li><a   href="ACBrConsts.html">ACBrConsts</a></li><li>Classes</li><li>Controls</li><li>Forms</li><li>Dialogs</li><li>Graphics</li><li>StdCtrls</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECF.TACBrECF.html"><code>TACBrECF</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFModelo">TACBrECFModelo</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFEventoOnError">TACBrECFEventoOnError</a></b> = procedure( var Tratado : Boolean) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFOnAbreCupom">TACBrECFOnAbreCupom</a></b> = procedure(const CPF_CNPJ, Nome, Endereco : String ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFOnVendeItem">TACBrECFOnVendeItem</a></b> = procedure(const Codigo, Descricao, AliquotaICMS : String ; const Qtd, ValorUnitario, ValorDescontoAcrescimo : Double; const Unidade, TipoDescontoAcrescimo, DescontoAcrescimo : String ) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFOnSubtotalizaCupom">TACBrECFOnSubtotalizaCupom</a></b> = procedure( const DescontoAcrescimo: Double; const MensagemRodape : AnsiString ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFOnEfetuaPagamento">TACBrECFOnEfetuaPagamento</a></b> = procedure( const CodFormaPagto: String; const Valor: Double; const Observacao: AnsiString; const ImprimeVinculado: Boolean ) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFOnFechaCupom">TACBrECFOnFechaCupom</a></b> = procedure( const Observacao: AnsiString; const IndiceBMP : Integer) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFOnCancelaItemVendido">TACBrECFOnCancelaItemVendido</a></b> = procedure( const NumItem: Integer) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFOnAbreNaoFiscal">TACBrECFOnAbreNaoFiscal</a></b> = procedure( const CPF_CNPJ: String ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFOnSubtotalizaNaoFiscal">TACBrECFOnSubtotalizaNaoFiscal</a></b> = procedure( const DescontoAcrescimo: Double; const MensagemRodape: AnsiString ) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFOnEfetuaPagamentoNaoFiscal">TACBrECFOnEfetuaPagamentoNaoFiscal</a></b> = procedure(const CodFormaPagto: String; const Valor: Double; const Observacao: AnsiString; const ImprimeVinculado: Boolean ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFOnFechaNaoFiscal">TACBrECFOnFechaNaoFiscal</a></b> = procedure( const Observacao: AnsiString; const IndiceBMP : Integer ) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFOnSangria">TACBrECFOnSangria</a></b> = procedure(const Valor: Double; const Obs: AnsiString; const DescricaoCNF, DescricaoFPG: String ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFOnSuprimento">TACBrECFOnSuprimento</a></b> = procedure( const Valor: Double; const Obs: AnsiString; const DescricaoCNF, DescricaoFPG: String) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFOnRelatorioGerencial">TACBrECFOnRelatorioGerencial</a></b> = procedure( const Indice: Integer ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFOnErrorAbreRelatorioGerencial">TACBrECFOnErrorAbreRelatorioGerencial</a></b> = procedure(var Tratado: Boolean; const Indice: Integer ) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#TACBrECFOnChangeEstado">TACBrECFOnChangeEstado</a></b> = procedure( const EstadoAnterior, EstadoAtual : <a   href="ACBrDevice.html#TACBrECFEstado">TACBrECFEstado</a> ) of object ;</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECF.html#CACBrECF_Versao">CACBrECF_Versao</a></b> = '1.0.0' ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFModelo"></a><code><b>TACBrECFModelo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Modelos de ECF Suportados pelo Componente <a class="normal"  href="ACBrECF.TACBrECF.html">TACBrECF</a> atualmente Diveresos fabricantes usam o chipset da Mecaf como por exemplo: Elgin, Digiarte, Zanthus, Acr, Aoki, Chronos, Promcomp, TrendsSTS, Unigraph. Isso pode ser indentificado por alguma indicação no corpo do equipamento. Entretanto não há garantia de plena compatibilidade entre os diferentes equipamentos. (Favor reportar possiveis BUGS)</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ecfNenhum: &nbsp;</li>
+<li>
+ecfNaoFiscal: &nbsp;</li>
+<li>
+ecfBematech: &nbsp;</li>
+<li>
+ecfSweda: &nbsp;</li>
+<li>
+ecfDaruma: &nbsp;</li>
+<li>
+ecfSchalter: &nbsp;</li>
+<li>
+ecfMecaf: &nbsp;</li>
+<li>
+ecfYanco: &nbsp;</li>
+<li>
+ecfDataRegis: &nbsp;</li>
+<li>
+ecfUrano: &nbsp;</li>
+<li>
+ecfICash: &nbsp;</li>
+<li>
+ecfQuattro: &nbsp;</li>
+<li>
+ecfFiscNET: &nbsp;</li>
+<li>
+ecfEpson: &nbsp;</li>
+<li>
+ecfNCR: &nbsp;</li>
+<li>
+ecfSwedaSTX: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFEventoOnError"></a><code><b>TACBrECFEventoOnError</b> = procedure( var Tratado : Boolean) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+fhaut - Assinatura de métodos</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFOnAbreCupom"></a><code><b>TACBrECFOnAbreCupom</b> = procedure(const CPF_CNPJ, Nome, Endereco : String ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFOnVendeItem"></a><code><b>TACBrECFOnVendeItem</b> = procedure(const Codigo, Descricao, AliquotaICMS : String ; const Qtd, ValorUnitario, ValorDescontoAcrescimo : Double; const Unidade, TipoDescontoAcrescimo, DescontoAcrescimo : String ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFOnSubtotalizaCupom"></a><code><b>TACBrECFOnSubtotalizaCupom</b> = procedure( const DescontoAcrescimo: Double; const MensagemRodape : AnsiString ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFOnEfetuaPagamento"></a><code><b>TACBrECFOnEfetuaPagamento</b> = procedure( const CodFormaPagto: String; const Valor: Double; const Observacao: AnsiString; const ImprimeVinculado: Boolean ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFOnFechaCupom"></a><code><b>TACBrECFOnFechaCupom</b> = procedure( const Observacao: AnsiString; const IndiceBMP : Integer) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFOnCancelaItemVendido"></a><code><b>TACBrECFOnCancelaItemVendido</b> = procedure( const NumItem: Integer) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFOnAbreNaoFiscal"></a><code><b>TACBrECFOnAbreNaoFiscal</b> = procedure( const CPF_CNPJ: String ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFOnSubtotalizaNaoFiscal"></a><code><b>TACBrECFOnSubtotalizaNaoFiscal</b> = procedure( const DescontoAcrescimo: Double; const MensagemRodape: AnsiString ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFOnEfetuaPagamentoNaoFiscal"></a><code><b>TACBrECFOnEfetuaPagamentoNaoFiscal</b> = procedure(const CodFormaPagto: String; const Valor: Double; const Observacao: AnsiString; const ImprimeVinculado: Boolean ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFOnFechaNaoFiscal"></a><code><b>TACBrECFOnFechaNaoFiscal</b> = procedure( const Observacao: AnsiString; const IndiceBMP : Integer ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFOnSangria"></a><code><b>TACBrECFOnSangria</b> = procedure(const Valor: Double; const Obs: AnsiString; const DescricaoCNF, DescricaoFPG: String ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFOnSuprimento"></a><code><b>TACBrECFOnSuprimento</b> = procedure( const Valor: Double; const Obs: AnsiString; const DescricaoCNF, DescricaoFPG: String) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFOnRelatorioGerencial"></a><code><b>TACBrECFOnRelatorioGerencial</b> = procedure( const Indice: Integer ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFOnErrorAbreRelatorioGerencial"></a><code><b>TACBrECFOnErrorAbreRelatorioGerencial</b> = procedure(var Tratado: Boolean; const Indice: Integer ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFOnChangeEstado"></a><code><b>TACBrECFOnChangeEstado</b> = procedure( const EstadoAnterior, EstadoAtual : <a   href="ACBrDevice.html#TACBrECFEstado">TACBrECFEstado</a> ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CACBrECF_Versao"></a><code><b>CACBrECF_Versao</b> = '1.0.0' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Units da ACBr</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:25</em>
+</span>
+</body></html>

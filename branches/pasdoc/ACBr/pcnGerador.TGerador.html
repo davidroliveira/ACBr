@@ -1,0 +1,423 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: pcnGerador: Classe TGerador</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TGerador"></a><h1 class="cio">Classe TGerador</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="pcnGerador.html">pcnGerador</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TGerador = class(TPersistent)</code></p>
+<h2 class="description">Descrição</h2>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TPersistent</li>
+<li class="thisitem">TGerador</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnGerador.TGerador.html#FArquivoFormatoXML">FArquivoFormatoXML</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnGerador.TGerador.html#FArquivoFormatoTXT">FArquivoFormatoTXT</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnGerador.TGerador.html#FLayoutArquivoTXT">FLayoutArquivoTXT</a></b>: TstringList;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnGerador.TGerador.html#FListaDeAlertas">FListaDeAlertas</a></b>: TStringList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnGerador.TGerador.html#FTagNivel">FTagNivel</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnGerador.TGerador.html#FIDNivel">FIDNivel</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnGerador.TGerador.html#FOpcoes">FOpcoes</a></b>: <a   href="pcnGerador.TGeradorOpcoes.html">TGeradorOpcoes</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnGerador.TGerador.html#FPrefixo">FPrefixo</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="pcnGerador.TGerador.html#FIgnorarTagNivel">FIgnorarTagNivel</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="pcnGerador.TGerador.html#FIgnorarTagIdentacao">FIgnorarTagIdentacao</a></b>: string;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="pcnGerador.TGerador.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="pcnGerador.TGerador.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pcnGerador.TGerador.html#SalvarArquivo">SalvarArquivo</a></b>(const CaminhoArquivo: string; const FormatoGravacao: <a   href="pcnConversao.html#TpcnFormatoGravacao">TpcnFormatoGravacao</a> = fgXML): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="pcnGerador.TGerador.html#wGrupo">wGrupo</a></b>(const TAG: string; ID: string = ''; const Identar: Boolean = True);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="pcnGerador.TGerador.html#wCampo">wCampo</a></b>(const Tipo: <a   href="pcnConversao.html#TpcnTipoCampo">TpcnTipoCampo</a>; ID, TAG: string; const min, max, ocorrencias: smallint; const valor: variant; const Descricao: string = '');</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="pcnGerador.TGerador.html#wGrupoNFSe">wGrupoNFSe</a></b>(const TAG: string; ID: string = ''; const Identar: Boolean = True);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="pcnGerador.TGerador.html#wCampoNFSe">wCampoNFSe</a></b>(const Tipo: <a   href="pcnConversao.html#TpcnTipoCampo">TpcnTipoCampo</a>; ID, TAG: string; const min, max, ocorrencias: smallint; const valor: variant; const Descricao: string = '');</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="pcnGerador.TGerador.html#wCampoCNPJCPF">wCampoCNPJCPF</a></b>(const ID1, ID2: string; CNPJCPF: string; const cPais: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="pcnGerador.TGerador.html#wCampoCNPJ">wCampoCNPJ</a></b>(const ID: string; CNPJ: string; const cPais: Integer; obrigatorio: Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="pcnGerador.TGerador.html#wCampoCPF">wCampoCPF</a></b>(const ID: string; CPF: string; const cPais: Integer; obrigatorio: Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="pcnGerador.TGerador.html#wAlerta">wAlerta</a></b>(const ID, TAG, Descricao, Alerta: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="pcnGerador.TGerador.html#wTexto">wTexto</a></b>(const Texto: string);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="pcnGerador.TGerador.html#gtNivel">gtNivel</a></b>(ID: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="pcnGerador.TGerador.html#gtCampo">gtCampo</a></b>(const Tag, ConteudoProcessado: string);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="pcnGerador.TGerador.html#gtAjustarRegistros">gtAjustarRegistros</a></b>(const ID: string);</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnGerador.TGerador.html#ArquivoFormatoXML">ArquivoFormatoXML</a></b>: AnsiString read <a   href="pcnGerador.TGerador.html#FArquivoFormatoXML">FArquivoFormatoXML</a> write <a   href="pcnGerador.TGerador.html#FArquivoFormatoXML">FArquivoFormatoXML</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnGerador.TGerador.html#ArquivoFormatoTXT">ArquivoFormatoTXT</a></b>: AnsiString read <a   href="pcnGerador.TGerador.html#FArquivoFormatoTXT">FArquivoFormatoTXT</a> write <a   href="pcnGerador.TGerador.html#FArquivoFormatoTXT">FArquivoFormatoTXT</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnGerador.TGerador.html#IDNivel">IDNivel</a></b>: string read <a   href="pcnGerador.TGerador.html#FIDNivel">FIDNivel</a> write <a   href="pcnGerador.TGerador.html#FIDNivel">FIDNivel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnGerador.TGerador.html#ListaDeAlertas">ListaDeAlertas</a></b>: TStringList read <a   href="pcnGerador.TGerador.html#FListaDeAlertas">FListaDeAlertas</a> write <a   href="pcnGerador.TGerador.html#FListaDeAlertas">FListaDeAlertas</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnGerador.TGerador.html#LayoutArquivoTXT">LayoutArquivoTXT</a></b>: TStringList read <a   href="pcnGerador.TGerador.html#FLayoutArquivoTXT">FLayoutArquivoTXT</a> write <a   href="pcnGerador.TGerador.html#FLayoutArquivoTXT">FLayoutArquivoTXT</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnGerador.TGerador.html#Opcoes">Opcoes</a></b>: <a   href="pcnGerador.TGeradorOpcoes.html">TGeradorOpcoes</a> read <a   href="pcnGerador.TGerador.html#FOpcoes">FOpcoes</a> write <a   href="pcnGerador.TGerador.html#FOpcoes">FOpcoes</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnGerador.TGerador.html#Prefixo">Prefixo</a></b>: string read <a   href="pcnGerador.TGerador.html#FPrefixo">FPrefixo</a> write <a   href="pcnGerador.TGerador.html#FPrefixo">FPrefixo</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FArquivoFormatoXML"></a><code><b>FArquivoFormatoXML</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FArquivoFormatoTXT"></a><code><b>FArquivoFormatoTXT</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FLayoutArquivoTXT"></a><code><b>FLayoutArquivoTXT</b>: TstringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FListaDeAlertas"></a><code><b>FListaDeAlertas</b>: TStringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FTagNivel"></a><code><b>FTagNivel</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FIDNivel"></a><code><b>FIDNivel</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FOpcoes"></a><code><b>FOpcoes</b>: <a   href="pcnGerador.TGeradorOpcoes.html">TGeradorOpcoes</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FPrefixo"></a><code><b>FPrefixo</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FIgnorarTagNivel"></a><code><b>FIgnorarTagNivel</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FIgnorarTagIdentacao"></a><code><b>FIgnorarTagIdentacao</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SalvarArquivo"></a><code>function <b>SalvarArquivo</b>(const CaminhoArquivo: string; const FormatoGravacao: <a   href="pcnConversao.html#TpcnFormatoGravacao">TpcnFormatoGravacao</a> = fgXML): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="wGrupo"></a><code>procedure <b>wGrupo</b>(const TAG: string; ID: string = ''; const Identar: Boolean = True);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="wCampo"></a><code>procedure <b>wCampo</b>(const Tipo: <a   href="pcnConversao.html#TpcnTipoCampo">TpcnTipoCampo</a>; ID, TAG: string; const min, max, ocorrencias: smallint; const valor: variant; const Descricao: string = '');</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="wGrupoNFSe"></a><code>procedure <b>wGrupoNFSe</b>(const TAG: string; ID: string = ''; const Identar: Boolean = True);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="wCampoNFSe"></a><code>procedure <b>wCampoNFSe</b>(const Tipo: <a   href="pcnConversao.html#TpcnTipoCampo">TpcnTipoCampo</a>; ID, TAG: string; const min, max, ocorrencias: smallint; const valor: variant; const Descricao: string = '');</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="wCampoCNPJCPF"></a><code>procedure <b>wCampoCNPJCPF</b>(const ID1, ID2: string; CNPJCPF: string; const cPais: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="wCampoCNPJ"></a><code>procedure <b>wCampoCNPJ</b>(const ID: string; CNPJ: string; const cPais: Integer; obrigatorio: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="wCampoCPF"></a><code>procedure <b>wCampoCPF</b>(const ID: string; CPF: string; const cPais: Integer; obrigatorio: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="wAlerta"></a><code>procedure <b>wAlerta</b>(const ID, TAG, Descricao, Alerta: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="wTexto"></a><code>procedure <b>wTexto</b>(const Texto: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="gtNivel"></a><code>procedure <b>gtNivel</b>(ID: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="gtCampo"></a><code>procedure <b>gtCampo</b>(const Tag, ConteudoProcessado: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="gtAjustarRegistros"></a><code>procedure <b>gtAjustarRegistros</b>(const ID: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ArquivoFormatoXML"></a><code>property <b>ArquivoFormatoXML</b>: AnsiString read <a   href="pcnGerador.TGerador.html#FArquivoFormatoXML">FArquivoFormatoXML</a> write <a   href="pcnGerador.TGerador.html#FArquivoFormatoXML">FArquivoFormatoXML</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ArquivoFormatoTXT"></a><code>property <b>ArquivoFormatoTXT</b>: AnsiString read <a   href="pcnGerador.TGerador.html#FArquivoFormatoTXT">FArquivoFormatoTXT</a> write <a   href="pcnGerador.TGerador.html#FArquivoFormatoTXT">FArquivoFormatoTXT</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="IDNivel"></a><code>property <b>IDNivel</b>: string read <a   href="pcnGerador.TGerador.html#FIDNivel">FIDNivel</a> write <a   href="pcnGerador.TGerador.html#FIDNivel">FIDNivel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ListaDeAlertas"></a><code>property <b>ListaDeAlertas</b>: TStringList read <a   href="pcnGerador.TGerador.html#FListaDeAlertas">FListaDeAlertas</a> write <a   href="pcnGerador.TGerador.html#FListaDeAlertas">FListaDeAlertas</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LayoutArquivoTXT"></a><code>property <b>LayoutArquivoTXT</b>: TStringList read <a   href="pcnGerador.TGerador.html#FLayoutArquivoTXT">FLayoutArquivoTXT</a> write <a   href="pcnGerador.TGerador.html#FLayoutArquivoTXT">FLayoutArquivoTXT</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Opcoes"></a><code>property <b>Opcoes</b>: <a   href="pcnGerador.TGeradorOpcoes.html">TGeradorOpcoes</a> read <a   href="pcnGerador.TGerador.html#FOpcoes">FOpcoes</a> write <a   href="pcnGerador.TGerador.html#FOpcoes">FOpcoes</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Prefixo"></a><code>property <b>Prefixo</b>: string read <a   href="pcnGerador.TGerador.html#FPrefixo">FPrefixo</a> write <a   href="pcnGerador.TGerador.html#FPrefixo">FPrefixo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:59</em>
+</span>
+</body></html>

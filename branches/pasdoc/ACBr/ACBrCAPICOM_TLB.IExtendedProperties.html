@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrCAPICOM_TLB: Interface IExtendedProperties</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="IExtendedProperties"></a><h1 class="cio">Interface IExtendedProperties</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td>Campos</td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrCAPICOM_TLB.html">ACBrCAPICOM_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type IExtendedProperties = interface(IDispatch)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// Interface: <code>IExtendedProperties</code> Flags: (4416) Dual OleAutomation Dispatchable GUID: {3B096E87-6218-4A3B-A880-F6CB951E7805} *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">IDispatch</li>
+<li class="thisitem">IExtendedProperties</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.IExtendedProperties.html#Get_Item">Get_Item</a></b>(Index: Integer): OleVariant; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.IExtendedProperties.html#Get_Count">Get_Count</a></b>: Integer; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.IExtendedProperties.html#Get__NewEnum">Get__NewEnum</a></b>: IUnknown; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCAPICOM_TLB.IExtendedProperties.html#Add">Add</a></b>(const pVal: <a   href="ACBrCAPICOM_TLB.IExtendedProperty.html">IExtendedProperty</a>); safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCAPICOM_TLB.IExtendedProperties.html#Remove">Remove</a></b>(PropID: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_PROPID">CAPICOM_PROPID</a>); safecall;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.IExtendedProperties.html#Item">Item</a></b>[Index: Integer]: OleVariant read <a   href="ACBrCAPICOM_TLB.IExtendedProperties.html#Get_Item">Get_Item</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.IExtendedProperties.html#Count">Count</a></b>: Integer read <a   href="ACBrCAPICOM_TLB.IExtendedProperties.html#Get_Count">Get_Count</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.IExtendedProperties.html#_NewEnum">_NewEnum</a></b>: IUnknown read <a   href="ACBrCAPICOM_TLB.IExtendedProperties.html#Get__NewEnum">Get__NewEnum</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_Item"></a><code>function <b>Get_Item</b>(Index: Integer): OleVariant; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_Count"></a><code>function <b>Get_Count</b>: Integer; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get__NewEnum"></a><code>function <b>Get__NewEnum</b>: IUnknown; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>procedure <b>Add</b>(const pVal: <a   href="ACBrCAPICOM_TLB.IExtendedProperty.html">IExtendedProperty</a>); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Remove"></a><code>procedure <b>Remove</b>(PropID: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_PROPID">CAPICOM_PROPID</a>); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Item"></a><code>property <b>Item</b>[Index: Integer]: OleVariant read <a   href="ACBrCAPICOM_TLB.IExtendedProperties.html#Get_Item">Get_Item</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Count"></a><code>property <b>Count</b>: Integer read <a   href="ACBrCAPICOM_TLB.IExtendedProperties.html#Get_Count">Get_Count</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="_NewEnum"></a><code>property <b>_NewEnum</b>: IUnknown read <a   href="ACBrCAPICOM_TLB.IExtendedProperties.html#Get__NewEnum">Get__NewEnum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:20</em>
+</span>
+</body></html>

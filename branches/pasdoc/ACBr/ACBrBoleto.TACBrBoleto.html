@@ -1,0 +1,636 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrBoleto: Classe TACBrBoleto</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrBoleto"></a><h1 class="cio">Classe TACBrBoleto</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrBoleto.html">ACBrBoleto</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrBoleto = class(<a class="normal"  href="ACBrBase.TACBrComponent.html">TACBrComponent</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+<code>TACBrBoleto</code></p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="ancestor"><a class="normal"  href="ACBrBase.TACBrComponent.html">TACBrComponent</a></li>
+<li class="thisitem">TACBrBoleto</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBoleto.html#fBanco">fBanco</a></b>: <a   href="ACBrBoleto.TACBrBanco.html">TACBrBanco</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBoleto.html#fACBrBoletoFC">fACBrBoletoFC</a></b>: <a   href="ACBrBoleto.TACBrBoletoFCClass.html">TACBrBoletoFCClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBoleto.html#fDirArqRemessa">fDirArqRemessa</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBoleto.html#fDirArqRetorno">fDirArqRetorno</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBoleto.html#fLayoutRemessa">fLayoutRemessa</a></b>: <a   href="ACBrBoleto.html#TACBrLayoutRemessa">TACBrLayoutRemessa</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBoleto.html#fComprovanteEntrega">fComprovanteEntrega</a></b>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBoleto.html#fImprimirMensagemPadrao">fImprimirMensagemPadrao</a></b>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBoleto.html#fListadeBoletos">fListadeBoletos</a></b>: <a   href="ACBrBoleto.TListadeBoletos.html">TListadeBoletos</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBoleto.html#fCedente">fCedente</a></b>: <a   href="ACBrBoleto.TACBrCedente.html">TACBrCedente</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBoleto.html#fNomeArqRemessa">fNomeArqRemessa</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBoleto.html#fNomeArqRetorno">fNomeArqRetorno</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBoleto.html#fNumeroArquivo">fNumeroArquivo</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBoleto.html#fDataArquivo">fDataArquivo</a></b>: TDateTime;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBoleto.html#fDataCreditoLanc">fDataCreditoLanc</a></b>: TDateTime;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBoleto.html#fLeCedenteRetorno">fLeCedenteRetorno</a></b>: boolean;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBoleto.html#GetAbout">GetAbout</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBoleto.html#GetDirArqRemessa">GetDirArqRemessa</a></b> : String ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBoleto.html#GetDirArqRetorno">GetDirArqRetorno</a></b> : String ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBoleto.TACBrBoleto.html#SetAbout">SetAbout</a></b>(const AValue: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBoleto.TACBrBoleto.html#SetACBrBoletoFC">SetACBrBoletoFC</a></b>(const Value: <a   href="ACBrBoleto.TACBrBoletoFCClass.html">TACBrBoletoFCClass</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBoleto.TACBrBoleto.html#SetNomeArqRemessa">SetNomeArqRemessa</a></b>(const AValue: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBoleto.TACBrBoleto.html#SetNomeArqRetorno">SetNomeArqRetorno</a></b>(const AValue: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBoleto.TACBrBoleto.html#Notification">Notification</a></b>(AComponent: TComponent; Operation: TOperation); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrBoleto.TACBrBoleto.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrBoleto.TACBrBoleto.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBoleto.html#CriarTituloNaLista">CriarTituloNaLista</a></b>: <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBoleto.TACBrBoleto.html#Imprimir">Imprimir</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBoleto.TACBrBoleto.html#GerarPDF">GerarPDF</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBoleto.TACBrBoleto.html#GerarHTML">GerarHTML</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBoleto.TACBrBoleto.html#AdicionarMensagensPadroes">AdicionarMensagensPadroes</a></b>(Titulo : <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>; AStringList: TStrings);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBoleto.TACBrBoleto.html#GerarRemessa">GerarRemessa</a></b>(NumeroRemessa : Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBoleto.TACBrBoleto.html#LerRetorno">LerRetorno</a></b>();</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBoleto.TACBrBoleto.html#ChecarDadosObrigatorios">ChecarDadosObrigatorios</a></b>;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#ListadeBoletos">ListadeBoletos</a></b> : <a   href="ACBrBoleto.TListadeBoletos.html">TListadeBoletos</a> read <a   href="ACBrBoleto.TACBrBoleto.html#fListadeBoletos">fListadeBoletos</a> write <a   href="ACBrBoleto.TACBrBoleto.html#fListadeBoletos">fListadeBoletos</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#About">About</a></b> : String read <a   href="ACBrBoleto.TACBrBoleto.html#GetAbout">GetAbout</a> write <a   href="ACBrBoleto.TACBrBoleto.html#SetAbout">SetAbout</a> stored False ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#Cedente">Cedente</a></b>        : <a   href="ACBrBoleto.TACBrCedente.html">TACBrCedente</a>       read <a   href="ACBrBoleto.TACBrBoleto.html#fCedente">fCedente</a>                write <a   href="ACBrBoleto.TACBrBoleto.html#fCedente">fCedente</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#Banco">Banco</a></b>          : <a   href="ACBrBoleto.TACBrBanco.html">TACBrBanco</a>         read <a   href="ACBrBoleto.TACBrBoleto.html#fBanco">fBanco</a>                  write <a   href="ACBrBoleto.TACBrBoleto.html#fBanco">fBanco</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#NomeArqRemessa">NomeArqRemessa</a></b> : String             read <a   href="ACBrBoleto.TACBrBoleto.html#fNomeArqRemessa">fNomeArqRemessa</a>         write <a   href="ACBrBoleto.TACBrBoleto.html#SetNomeArqRemessa">SetNomeArqRemessa</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#DirArqRemessa">DirArqRemessa</a></b>  : String             read <a   href="ACBrBoleto.TACBrBoleto.html#GetDirArqRemessa">GetDirArqRemessa</a>        write <a   href="ACBrBoleto.TACBrBoleto.html#SetNomeArqRemessa">SetNomeArqRemessa</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#NomeArqRetorno">NomeArqRetorno</a></b> : String             read <a   href="ACBrBoleto.TACBrBoleto.html#fNomeArqRetorno">fNomeArqRetorno</a>         write <a   href="ACBrBoleto.TACBrBoleto.html#SetNomeArqRetorno">SetNomeArqRetorno</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#DirArqRetorno">DirArqRetorno</a></b>  : String             read <a   href="ACBrBoleto.TACBrBoleto.html#GetDirArqRetorno">GetDirArqRetorno</a>        write <a   href="ACBrBoleto.TACBrBoleto.html#SetNomeArqRetorno">SetNomeArqRetorno</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#NumeroArquivo">NumeroArquivo</a></b>  : integer            read <a   href="ACBrBoleto.TACBrBoleto.html#fNumeroArquivo">fNumeroArquivo</a>          write <a   href="ACBrBoleto.TACBrBoleto.html#fNumeroArquivo">fNumeroArquivo</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#DataArquivo">DataArquivo</a></b>    : TDateTime          read <a   href="ACBrBoleto.TACBrBoleto.html#fDataArquivo">fDataArquivo</a>            write <a   href="ACBrBoleto.TACBrBoleto.html#fDataArquivo">fDataArquivo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#DataCreditoLanc">DataCreditoLanc</a></b>: TDateTime          read <a   href="ACBrBoleto.TACBrBoleto.html#fDataCreditoLanc">fDataCreditoLanc</a>        write <a   href="ACBrBoleto.TACBrBoleto.html#fDataCreditoLanc">fDataCreditoLanc</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#LeCedenteRetorno">LeCedenteRetorno</a></b> : boolean           read <a   href="ACBrBoleto.TACBrBoleto.html#fLeCedenteRetorno">fLeCedenteRetorno</a>       write <a   href="ACBrBoleto.TACBrBoleto.html#fLeCedenteRetorno">fLeCedenteRetorno</a> default false;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#LayoutRemessa">LayoutRemessa</a></b>  : <a   href="ACBrBoleto.html#TACBrLayoutRemessa">TACBrLayoutRemessa</a> read <a   href="ACBrBoleto.TACBrBoleto.html#fLayoutRemessa">fLayoutRemessa</a>          write <a   href="ACBrBoleto.TACBrBoleto.html#fLayoutRemessa">fLayoutRemessa</a> default c400;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#ComprovanteEntrega">ComprovanteEntrega</a></b> : Boolean        read <a   href="ACBrBoleto.TACBrBoleto.html#fComprovanteEntrega">fComprovanteEntrega</a>     write <a   href="ACBrBoleto.TACBrBoleto.html#fComprovanteEntrega">fComprovanteEntrega</a> default False;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#ImprimirMensagemPadrao">ImprimirMensagemPadrao</a></b> : Boolean    read <a   href="ACBrBoleto.TACBrBoleto.html#fImprimirMensagemPadrao">fImprimirMensagemPadrao</a> write <a   href="ACBrBoleto.TACBrBoleto.html#fImprimirMensagemPadrao">fImprimirMensagemPadrao</a> default True;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBoleto.html#ACBrBoletoFC">ACBrBoletoFC</a></b> : <a   href="ACBrBoleto.TACBrBoletoFCClass.html">TACBrBoletoFCClass</a>   read <a   href="ACBrBoleto.TACBrBoleto.html#fACBrBoletoFC">fACBrBoletoFC</a>           write <a   href="ACBrBoleto.TACBrBoleto.html#SetACBrBoletoFC">SetACBrBoletoFC</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fBanco"></a><code><b>fBanco</b>: <a   href="ACBrBoleto.TACBrBanco.html">TACBrBanco</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fACBrBoletoFC"></a><code><b>fACBrBoletoFC</b>: <a   href="ACBrBoleto.TACBrBoletoFCClass.html">TACBrBoletoFCClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fDirArqRemessa"></a><code><b>fDirArqRemessa</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fDirArqRetorno"></a><code><b>fDirArqRetorno</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fLayoutRemessa"></a><code><b>fLayoutRemessa</b>: <a   href="ACBrBoleto.html#TACBrLayoutRemessa">TACBrLayoutRemessa</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fComprovanteEntrega"></a><code><b>fComprovanteEntrega</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fImprimirMensagemPadrao"></a><code><b>fImprimirMensagemPadrao</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fListadeBoletos"></a><code><b>fListadeBoletos</b>: <a   href="ACBrBoleto.TListadeBoletos.html">TListadeBoletos</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fCedente"></a><code><b>fCedente</b>: <a   href="ACBrBoleto.TACBrCedente.html">TACBrCedente</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fNomeArqRemessa"></a><code><b>fNomeArqRemessa</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fNomeArqRetorno"></a><code><b>fNomeArqRetorno</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fNumeroArquivo"></a><code><b>fNumeroArquivo</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fDataArquivo"></a><code><b>fDataArquivo</b>: TDateTime;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Implementado por Carlos Fitl - 27/12/2010</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fDataCreditoLanc"></a><code><b>fDataCreditoLanc</b>: TDateTime;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Implementado por Carlos Fitl - 27/12/2010</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fLeCedenteRetorno"></a><code><b>fLeCedenteRetorno</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Implementado por Carlos Fitl - 27/12/2010</p>
+</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetAbout"></a><code>function <b>GetAbout</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetDirArqRemessa"></a><code>function <b>GetDirArqRemessa</b> : String ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetDirArqRetorno"></a><code>function <b>GetDirArqRetorno</b> : String ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetAbout"></a><code>procedure <b>SetAbout</b>(const AValue: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetACBrBoletoFC"></a><code>procedure <b>SetACBrBoletoFC</b>(const Value: <a   href="ACBrBoleto.TACBrBoletoFCClass.html">TACBrBoletoFCClass</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetNomeArqRemessa"></a><code>procedure <b>SetNomeArqRemessa</b>(const AValue: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetNomeArqRetorno"></a><code>procedure <b>SetNomeArqRetorno</b>(const AValue: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Notification"></a><code>procedure <b>Notification</b>(AComponent: TComponent; Operation: TOperation); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CriarTituloNaLista"></a><code>function <b>CriarTituloNaLista</b>: <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Imprimir"></a><code>procedure <b>Imprimir</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GerarPDF"></a><code>procedure <b>GerarPDF</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GerarHTML"></a><code>procedure <b>GerarHTML</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AdicionarMensagensPadroes"></a><code>procedure <b>AdicionarMensagensPadroes</b>(Titulo : <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>; AStringList: TStrings);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GerarRemessa"></a><code>procedure <b>GerarRemessa</b>(NumeroRemessa : Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LerRetorno"></a><code>procedure <b>LerRetorno</b>();</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ChecarDadosObrigatorios"></a><code>procedure <b>ChecarDadosObrigatorios</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ListadeBoletos"></a><code>property <b>ListadeBoletos</b> : <a   href="ACBrBoleto.TListadeBoletos.html">TListadeBoletos</a> read <a   href="ACBrBoleto.TACBrBoleto.html#fListadeBoletos">fListadeBoletos</a> write <a   href="ACBrBoleto.TACBrBoleto.html#fListadeBoletos">fListadeBoletos</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="About"></a><code>property <b>About</b> : String read <a   href="ACBrBoleto.TACBrBoleto.html#GetAbout">GetAbout</a> write <a   href="ACBrBoleto.TACBrBoleto.html#SetAbout">SetAbout</a> stored False ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Cedente"></a><code>property <b>Cedente</b>        : <a   href="ACBrBoleto.TACBrCedente.html">TACBrCedente</a>       read <a   href="ACBrBoleto.TACBrBoleto.html#fCedente">fCedente</a>                write <a   href="ACBrBoleto.TACBrBoleto.html#fCedente">fCedente</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Banco"></a><code>property <b>Banco</b>          : <a   href="ACBrBoleto.TACBrBanco.html">TACBrBanco</a>         read <a   href="ACBrBoleto.TACBrBoleto.html#fBanco">fBanco</a>                  write <a   href="ACBrBoleto.TACBrBoleto.html#fBanco">fBanco</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="NomeArqRemessa"></a><code>property <b>NomeArqRemessa</b> : String             read <a   href="ACBrBoleto.TACBrBoleto.html#fNomeArqRemessa">fNomeArqRemessa</a>         write <a   href="ACBrBoleto.TACBrBoleto.html#SetNomeArqRemessa">SetNomeArqRemessa</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DirArqRemessa"></a><code>property <b>DirArqRemessa</b>  : String             read <a   href="ACBrBoleto.TACBrBoleto.html#GetDirArqRemessa">GetDirArqRemessa</a>        write <a   href="ACBrBoleto.TACBrBoleto.html#SetNomeArqRemessa">SetNomeArqRemessa</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="NomeArqRetorno"></a><code>property <b>NomeArqRetorno</b> : String             read <a   href="ACBrBoleto.TACBrBoleto.html#fNomeArqRetorno">fNomeArqRetorno</a>         write <a   href="ACBrBoleto.TACBrBoleto.html#SetNomeArqRetorno">SetNomeArqRetorno</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DirArqRetorno"></a><code>property <b>DirArqRetorno</b>  : String             read <a   href="ACBrBoleto.TACBrBoleto.html#GetDirArqRetorno">GetDirArqRetorno</a>        write <a   href="ACBrBoleto.TACBrBoleto.html#SetNomeArqRetorno">SetNomeArqRetorno</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="NumeroArquivo"></a><code>property <b>NumeroArquivo</b>  : integer            read <a   href="ACBrBoleto.TACBrBoleto.html#fNumeroArquivo">fNumeroArquivo</a>          write <a   href="ACBrBoleto.TACBrBoleto.html#fNumeroArquivo">fNumeroArquivo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DataArquivo"></a><code>property <b>DataArquivo</b>    : TDateTime          read <a   href="ACBrBoleto.TACBrBoleto.html#fDataArquivo">fDataArquivo</a>            write <a   href="ACBrBoleto.TACBrBoleto.html#fDataArquivo">fDataArquivo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DataCreditoLanc"></a><code>property <b>DataCreditoLanc</b>: TDateTime          read <a   href="ACBrBoleto.TACBrBoleto.html#fDataCreditoLanc">fDataCreditoLanc</a>        write <a   href="ACBrBoleto.TACBrBoleto.html#fDataCreditoLanc">fDataCreditoLanc</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LeCedenteRetorno"></a><code>property <b>LeCedenteRetorno</b> : boolean           read <a   href="ACBrBoleto.TACBrBoleto.html#fLeCedenteRetorno">fLeCedenteRetorno</a>       write <a   href="ACBrBoleto.TACBrBoleto.html#fLeCedenteRetorno">fLeCedenteRetorno</a> default false;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LayoutRemessa"></a><code>property <b>LayoutRemessa</b>  : <a   href="ACBrBoleto.html#TACBrLayoutRemessa">TACBrLayoutRemessa</a> read <a   href="ACBrBoleto.TACBrBoleto.html#fLayoutRemessa">fLayoutRemessa</a>          write <a   href="ACBrBoleto.TACBrBoleto.html#fLayoutRemessa">fLayoutRemessa</a> default c400;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ComprovanteEntrega"></a><code>property <b>ComprovanteEntrega</b> : Boolean        read <a   href="ACBrBoleto.TACBrBoleto.html#fComprovanteEntrega">fComprovanteEntrega</a>     write <a   href="ACBrBoleto.TACBrBoleto.html#fComprovanteEntrega">fComprovanteEntrega</a> default False;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ImprimirMensagemPadrao"></a><code>property <b>ImprimirMensagemPadrao</b> : Boolean    read <a   href="ACBrBoleto.TACBrBoleto.html#fImprimirMensagemPadrao">fImprimirMensagemPadrao</a> write <a   href="ACBrBoleto.TACBrBoleto.html#fImprimirMensagemPadrao">fImprimirMensagemPadrao</a> default True;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ACBrBoletoFC"></a><code>property <b>ACBrBoletoFC</b> : <a   href="ACBrBoleto.TACBrBoletoFCClass.html">TACBrBoletoFCClass</a>   read <a   href="ACBrBoleto.TACBrBoleto.html#fACBrBoletoFC">fACBrBoletoFC</a>           write <a   href="ACBrBoleto.TACBrBoleto.html#SetACBrBoletoFC">SetACBrBoletoFC</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:19</em>
+</span>
+</body></html>

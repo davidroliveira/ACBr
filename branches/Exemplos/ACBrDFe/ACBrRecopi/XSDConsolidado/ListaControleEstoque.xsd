@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" targetNamespace="http://www.fazenda.sp.gov.br/" xmlns:mstns="http://www.fazenda.sp.gov.br/" xmlns="http://www.fazenda.sp.gov.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="ListaControleEstoque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ControleEstoque" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CNPJ" type="xs:string" />
+              <xs:element name="CNPJUF" type="xs:string" />
+              <xs:element name="TipoInforme" type="xs:string" />
+              <xs:element name="DataReferencia" type="xs:string" />
+              <xs:element name="TipoDeclaracao" type="xs:string" />
+              <xs:element name="Justificativa" type="xs:string" minOccurs="0" />
+              <xs:element name="ListaItens">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ItemPapel" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CodigoPapel" type="xs:int" />
+                          <xs:element name="Quantidade" type="xs:decimal" />
+                          <xs:element name="CodigoPapelFinal" type="xs:int" minOccurs="0" />
+                          <xs:element name="TipoPublicacao" type="xs:string" minOccurs="0" />
+                          <xs:element name="ISBNISSNTitulo" type="xs:string" minOccurs="0" />
+                          <xs:element name="Tiragem" type="xs:int" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ErroStatus" type="xs:int" minOccurs="0" />
+              <xs:element name="ErroDescricao" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ErroGeralStatus" type="xs:int" minOccurs="0" />
+        <xs:element name="ErroGeralDescricao" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

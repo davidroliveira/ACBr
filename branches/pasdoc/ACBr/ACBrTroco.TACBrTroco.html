@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrTroco: Classe TACBrTroco</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrTroco"></a><h1 class="cio">Classe TACBrTroco</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrTroco.html">ACBrTroco</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrTroco = class(<a class="normal"  href="ACBrBase.TACBrComponent.html">TACBrComponent</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+Calsse que ira fazer toda a manutencao</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="ancestor"><a class="normal"  href="ACBrBase.TACBrComponent.html">TACBrComponent</a></li>
+<li class="thisitem">TACBrTroco</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTroco.TACBrTroco.html#fsValorTroco">fsValorTroco</a></b>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTroco.TACBrTroco.html#fsTrocoList">fsTrocoList</a></b>: <a   href="ACBrTroco.TTrocoList.html">TTrocoList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTroco.TACBrTroco.html#fsDinheiroList">fsDinheiroList</a></b>: <a   href="ACBrTroco.TDinheiroList.html">TDinheiroList</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTroco.TACBrTroco.html#fsStrCedula">fsStrCedula</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTroco.TACBrTroco.html#fsStrMoeda">fsStrMoeda</a></b>: String;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTroco.TACBrTroco.html#SetValorTroco">SetValorTroco</a></b>(const Value: Double);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTroco.TACBrTroco.html#CalculaTroco">CalculaTroco</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTroco.TACBrTroco.html#InserirTroco">InserirTroco</a></b>(Descricao, Tipo: String; Quantidade: Integer; Valor: Double);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTroco.TACBrTroco.html#RetornarLegenda">RetornarLegenda</a></b>(XTotalMoeda,XValorMoeda : double) : string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTroco.TACBrTroco.html#PosInsercaoDinheiro">PosInsercaoDinheiro</a></b>(Valor: Double): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrTroco.TACBrTroco.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Destructor <b><a   href="ACBrTroco.TACBrTroco.html#Destroy">Destroy</a></b> ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTroco.TACBrTroco.html#LimparDinheiro">LimparDinheiro</a></b>();</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTroco.TACBrTroco.html#InserirDinheiro">InserirDinheiro</a></b>(Descricao: String; Valor: Double);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTroco.TACBrTroco.html#RemoverDinheiro">RemoverDinheiro</a></b>(Valor: Double): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTroco.TACBrTroco.html#AchaDinheiroDescricao">AchaDinheiroDescricao</a></b>(Descricao: String): <a   href="ACBrTroco.TDinheiro.html">TDinheiro</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTroco.TACBrTroco.html#AchaDinheiroValor">AchaDinheiroValor</a></b>(Valor: Double): <a   href="ACBrTroco.TDinheiro.html">TDinheiro</a>;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTroco.TACBrTroco.html#TrocoList">TrocoList</a></b> : <a   href="ACBrTroco.TTrocoList.html">TTrocoList</a> read <a   href="ACBrTroco.TACBrTroco.html#fsTrocoList">fsTrocoList</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTroco.TACBrTroco.html#DinheiroList">DinheiroList</a></b> : <a   href="ACBrTroco.TDinheiroList.html">TDinheiroList</a> read <a   href="ACBrTroco.TACBrTroco.html#fsDinheiroList">fsDinheiroList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTroco.TACBrTroco.html#Troco">Troco</a></b> : Double read <a   href="ACBrTroco.TACBrTroco.html#fsValorTroco">fsValorTroco</a> write <a   href="ACBrTroco.TACBrTroco.html#SetValorTroco">SetValorTroco</a> stored false;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTroco.TACBrTroco.html#StrCedula">StrCedula</a></b> : String read <a   href="ACBrTroco.TACBrTroco.html#fsStrCedula">fsStrCedula</a> write <a   href="ACBrTroco.TACBrTroco.html#fsStrCedula">fsStrCedula</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTroco.TACBrTroco.html#StrMoeda">StrMoeda</a></b>  : String read <a   href="ACBrTroco.TACBrTroco.html#fsStrMoeda">fsStrMoeda</a>  write <a   href="ACBrTroco.TACBrTroco.html#fsStrMoeda">fsStrMoeda</a> ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsValorTroco"></a><code><b>fsValorTroco</b>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsTrocoList"></a><code><b>fsTrocoList</b>: <a   href="ACBrTroco.TTrocoList.html">TTrocoList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsDinheiroList"></a><code><b>fsDinheiroList</b>: <a   href="ACBrTroco.TDinheiroList.html">TDinheiroList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsStrCedula"></a><code><b>fsStrCedula</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsStrMoeda"></a><code><b>fsStrMoeda</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetValorTroco"></a><code>procedure <b>SetValorTroco</b>(const Value: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CalculaTroco"></a><code>procedure <b>CalculaTroco</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="InserirTroco"></a><code>procedure <b>InserirTroco</b>(Descricao, Tipo: String; Quantidade: Integer; Valor: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="RetornarLegenda"></a><code>function <b>RetornarLegenda</b>(XTotalMoeda,XValorMoeda : double) : string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="PosInsercaoDinheiro"></a><code>function <b>PosInsercaoDinheiro</b>(Valor: Double): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>Destructor <b>Destroy</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LimparDinheiro"></a><code>procedure <b>LimparDinheiro</b>();</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InserirDinheiro"></a><code>procedure <b>InserirDinheiro</b>(Descricao: String; Valor: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RemoverDinheiro"></a><code>function <b>RemoverDinheiro</b>(Valor: Double): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AchaDinheiroDescricao"></a><code>function <b>AchaDinheiroDescricao</b>(Descricao: String): <a   href="ACBrTroco.TDinheiro.html">TDinheiro</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AchaDinheiroValor"></a><code>function <b>AchaDinheiroValor</b>(Valor: Double): <a   href="ACBrTroco.TDinheiro.html">TDinheiro</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TrocoList"></a><code>property <b>TrocoList</b> : <a   href="ACBrTroco.TTrocoList.html">TTrocoList</a> read <a   href="ACBrTroco.TACBrTroco.html#fsTrocoList">fsTrocoList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DinheiroList"></a><code>property <b>DinheiroList</b> : <a   href="ACBrTroco.TDinheiroList.html">TDinheiroList</a> read <a   href="ACBrTroco.TACBrTroco.html#fsDinheiroList">fsDinheiroList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Troco"></a><code>property <b>Troco</b> : Double read <a   href="ACBrTroco.TACBrTroco.html#fsValorTroco">fsValorTroco</a> write <a   href="ACBrTroco.TACBrTroco.html#SetValorTroco">SetValorTroco</a> stored false;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="StrCedula"></a><code>property <b>StrCedula</b> : String read <a   href="ACBrTroco.TACBrTroco.html#fsStrCedula">fsStrCedula</a> write <a   href="ACBrTroco.TACBrTroco.html#fsStrCedula">fsStrCedula</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="StrMoeda"></a><code>property <b>StrMoeda</b>  : String read <a   href="ACBrTroco.TACBrTroco.html#fsStrMoeda">fsStrMoeda</a>  write <a   href="ACBrTroco.TACBrTroco.html#fsStrMoeda">fsStrMoeda</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:55</em>
+</span>
+</body></html>

@@ -1,0 +1,551 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: pcteCTe</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit pcteCTe</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td>Tipos</td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+////////////////////////////////////////////////////////////////////////////// // PCN - Projeto Cooperar CTe // // Descrição: Classes para geração/leitura dos arquivos xml da NFe // // site: www.projetocooperar.org/nfe // email: projetocooperar@zipmail.com.br // forum: <a  target="_parent" href="http://br.groups.yahoo.com/group/projeto_cooperar_nfe/">http://br.groups.yahoo.com/group/projeto_cooperar_nfe/</a> // projeto: <a  target="_parent" href="http://code.google.com/p/projetocooperar/">http://code.google.com/p/projetocooperar/</a> // svn: <a  target="_parent" href="http://projetocooperar.googlecode.com/svn/trunk/">http://projetocooperar.googlecode.com/svn/trunk/</a> // // Coordenação: (c) 2009 - Paulo Casagrande // // Equipe: Vide o arquivo leiame.txt na pasta raiz do projeto // // Desenvolvimento // de CTe: Wiliam Zacarias da Silva Rosa // // Versão: Vide o arquivo leiame.txt na pasta raiz do projeto // // Licença: GNU Lesser General Public License (GNU LGPL) // // - Este programa é software livre; você pode redistribuí-lo // e/ou modificá-lo sob os termos da Licença Pública Geral GNU, // conforme publicada pela Free Software Foundation; tanto a // versão 2 da Licença como (a seu critério) qualquer versão // mais nova. // // - Este programa é distribuído na expectativa de ser útil, // mas SEM QUALQUER GARANTIA; sem mesmo a garantia implícita de // COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO EM // PARTICULAR. Consulte a Licença Pública Geral GNU para obter // mais detalhes. Você deve ter recebido uma cópia da Licença // Pública Geral GNU junto com este programa; se não, escreva // para a Free Software Foundation, Inc., 59 Temple Place, // Suite 330, Boston, MA - 02111-1307, USA ou consulte a // licença oficial em <a  target="_parent" href="http://www.gnu.org/licenses/gpl.txt">http://www.gnu.org/licenses/gpl.txt</a> // // Nota (1): - Esta licença não concede o direito de uso do nome // &quot;PCN - Projeto Cooperar NFe&quot;, não podendo o mesmo ser // utilizado sem previa autorização. // // Nota (2): - O uso integral (ou parcial) das units do projeto esta // condicionado a manutenção deste cabeçalho junto ao código // // //////////////////////////////////////////////////////////////////////////////</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>Classes</li><li>Variants</li><li><a   href="pcnConversao.html">pcnConversao</a></li><li><a   href="pcteProcCTe.html">pcteProcCTe</a></li><li><a   href="pcnSignature.html">pcnSignature</a></li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TCTe.html"><code>TCTe</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TinfCTe.html"><code>TinfCTe</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TIde.html"><code>TIde</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TToma03.html"><code>TToma03</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TToma4.html"><code>TToma4</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TEnderToma.html"><code>TEnderToma</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TCompl.html"><code>TCompl</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TFluxo.html"><code>TFluxo</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TPassCollection.html"><code>TPassCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TPassCollectionItem.html"><code>TPassCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TEntrega.html"><code>TEntrega</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TSemData.html"><code>TSemData</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TComData.html"><code>TComData</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TNoPeriodo.html"><code>TNoPeriodo</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TSemHora.html"><code>TSemHora</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TComHora.html"><code>TComHora</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TNoInter.html"><code>TNoInter</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TObsContCollection.html"><code>TObsContCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TObsContCollectionItem.html"><code>TObsContCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TObsFiscoCollection.html"><code>TObsFiscoCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TObsFiscoCollectionItem.html"><code>TObsFiscoCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TEmit.html"><code>TEmit</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TEnderEmit.html"><code>TEnderEmit</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TRem.html"><code>TRem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TEnderReme.html"><code>TEnderReme</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfNFCollection.html"><code>TInfNFCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfNFCollectionItem.html"><code>TInfNFCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TLocRet.html"><code>TLocRet</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfNFECollection.html"><code>TInfNFECollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfNFECollectionItem.html"><code>TInfNFECollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfOutrosCollection.html"><code>TInfOutrosCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfOutrosCollectionItem.html"><code>TInfOutrosCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TExped.html"><code>TExped</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TEnderExped.html"><code>TEnderExped</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TReceb.html"><code>TReceb</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TEnderReceb.html"><code>TEnderReceb</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TDest.html"><code>TDest</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TEnderDest.html"><code>TEnderDest</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TLocEnt.html"><code>TLocEnt</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TvPrest.html"><code>TvPrest</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TCompCollection.html"><code>TCompCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TCompCollectionItem.html"><code>TCompCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TImp.html"><code>TImp</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TICMS.html"><code>TICMS</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TCST00.html"><code>TCST00</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TCST20.html"><code>TCST20</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TCST45.html"><code>TCST45</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TCST80.html"><code>TCST80</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TCST81.html"><code>TCST81</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TCST90.html"><code>TCST90</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfCarga.html"><code>TInfCarga</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfQCollection.html"><code>TInfQCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfQCollectionItem.html"><code>TInfQCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfCTeNorm.html"><code>TInfCTeNorm</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfcontQtCollection.html"><code>TInfcontQtCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfcontQtCollectionItem.html"><code>TInfcontQtCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TlacContQtCollection.html"><code>TlacContQtCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TlacContQtCollectionItem.html"><code>TlacContQtCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TemiDocAntCollection.html"><code>TemiDocAntCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TemiDocAntCollectionItem.html"><code>TemiDocAntCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TidDocAntCollection.html"><code>TidDocAntCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TidDocAntCollectionItem.html"><code>TidDocAntCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TidDocAntPapCollection.html"><code>TidDocAntPapCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TidDocAntPapCollectionItem.html"><code>TidDocAntPapCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TidDocAntEleCollection.html"><code>TidDocAntEleCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TidDocAntEleCollectionItem.html"><code>TidDocAntEleCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfSegCollection.html"><code>TInfSegCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfSegCollectionItem.html"><code>TInfSegCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TRodo.html"><code>TRodo</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TCTRB.html"><code>TCTRB</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TOccCollection.html"><code>TOccCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TOccCollectionItem.html"><code>TOccCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TEmiOCC.html"><code>TEmiOCC</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TValePed.html"><code>TValePed</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TDispCollection.html"><code>TDispCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TDispCollectionItem.html"><code>TDispCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TVeicCollection.html"><code>TVeicCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TVeicCollectionItem.html"><code>TVeicCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.Tprop.html"><code>Tprop</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TLacresCollection.html"><code>TLacresCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TLacresCollectionItem.html"><code>TLacresCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TMotoCollection.html"><code>TMotoCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TMotoCollectionItem.html"><code>TMotoCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.Taereo.html"><code>Taereo</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.Ttarifa.html"><code>Ttarifa</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.Taquav.html"><code>Taquav</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TLacreCollection.html"><code>TLacreCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TLacreCollectionItem.html"><code>TLacreCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.Tferrov.html"><code>Tferrov</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TferroSub.html"><code>TferroSub</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TEnderFerro.html"><code>TEnderFerro</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TDCLCollection.html"><code>TDCLCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TDCLCollectionItem.html"><code>TDCLCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TdetVagDCLCollection.html"><code>TdetVagDCLCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TdetVagDCLCollectionItem.html"><code>TdetVagDCLCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TlacDetVagDCLCollection.html"><code>TlacDetVagDCLCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TlacDetVagDCLCollectionItem.html"><code>TlacDetVagDCLCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TcontDCLCollection.html"><code>TcontDCLCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TcontDCLCollectionItem.html"><code>TcontDCLCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TdetVagCollection.html"><code>TdetVagCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TdetVagCollectionItem.html"><code>TdetVagCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TlacDetVagCollection.html"><code>TlacDetVagCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TlacDetVagCollectionItem.html"><code>TlacDetVagCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TcontVagCollection.html"><code>TcontVagCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TcontVagCollectionItem.html"><code>TcontVagCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.Tduto.html"><code>Tduto</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TperiCollection.html"><code>TperiCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TperiCollectionItem.html"><code>TperiCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TveicNovosCollection.html"><code>TveicNovosCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TveicNovosCollectionItem.html"><code>TveicNovosCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TrefNF.html"><code>TrefNF</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TtomaICMS.html"><code>TtomaICMS</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TtomaNaoICMS.html"><code>TtomaNaoICMS</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfCTeSub.html"><code>TInfCTeSub</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TinfCTeCompCollection.html"><code>TinfCTeCompCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TinfCTeCompCollectionItem.html"><code>TinfCTeCompCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TvPresComp.html"><code>TvPresComp</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TcompCompCollection.html"><code>TcompCompCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TcompCompCollectionItem.html"><code>TcompCompCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TImpComp.html"><code>TImpComp</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TICMSComp.html"><code>TICMSComp</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcteCTe.TInfCTeAnuEnt.html"><code>TInfCTeAnuEnt</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcteCTe.html#CMUN_EXTERIOR">CMUN_EXTERIOR</a></b>: integer = 9999999;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcteCTe.html#XMUN_EXTERIOR">XMUN_EXTERIOR</a></b>: string = 'EXTERIOR';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcteCTe.html#UF_EXTERIOR">UF_EXTERIOR</a></b>: string = 'EX';</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CMUN_EXTERIOR"></a><code><b>CMUN_EXTERIOR</b>: integer = 9999999;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XMUN_EXTERIOR"></a><code><b>XMUN_EXTERIOR</b>: string = 'EXTERIOR';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="UF_EXTERIOR"></a><code><b>UF_EXTERIOR</b>: string = 'EX';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:21:02</em>
+</span>
+</body></html>

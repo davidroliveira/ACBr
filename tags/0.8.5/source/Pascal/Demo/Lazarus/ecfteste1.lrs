@@ -1,0 +1,176 @@
+{ Isto é automaticamente gerado pelo arquivo de recurso lazarus }
+
+LazarusResources.Add('TForm1','FORMDATA',[
+  'TPF0'#6'TForm1'#5'Form1'#4'Left'#3'C'#1#6'Height'#3#192#1#3'Top'#3#160#0#5'W'
+  +'idth'#3#204#1#18'HorzScrollBar.Page'#3#203#1#19'HorzScrollBar.Range'#3#145#1
+  +#18'VertScrollBar.Page'#3#171#1#19'VertScrollBar.Range'#3#217#0#13'ActiveCon'
+  +'trol'#7#9'cbxModelo'#11'BorderStyle'#7#8'bsSingle'#7'Caption'#6#26'Teste de'
+  +' Impressora Fiscal'#12'ClientHeight'#3#172#1#11'ClientWidth'#3#204#1#4'Menu'
+  +#7#9'MainMenu1'#10'OnActivate'#7#12'FormActivate'#8'OnCreate'#7#10'FormCreat'
+  +'e'#10'ParentFont'#9#0#6'TLabel'#6'Label2'#4'Left'#2#8#6'Height'#2#14#3'Top'
+  +#3#152#0#5'Width'#2'W'#7'Caption'#6#15'Comando Enviado'#5'Color'#7#6'clNone'
+  +#11'ParentColor'#8#0#0#6'TLabel'#6'Label3'#4'Left'#2#8#6'Height'#2#14#3'Top'
+  +#3#208#0#5'Width'#2'3'#7'Caption'#6#9'Respostas'#5'Color'#7#6'clNone'#11'Par'
+  +'entColor'#8#0#0#6'TLabel'#6'Label1'#4'Left'#2#8#6'Height'#2#14#3'Top'#2#8#5
+  +'Width'#2''''#7'Caption'#6#7'Modelo:'#5'Color'#7#6'clNone'#11'ParentColor'#8
+  +#0#0#6'TLabel'#6'Label4'#4'Left'#2'p'#6'Height'#2#14#3'Top'#2#8#5'Width'#2#27
+  +#7'Caption'#6#5'Porta'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TLabel'#6
+  +'Label5'#4'Left'#3#207#0#6'Height'#2#14#3'Top'#2#8#5'Width'#2')'#7'Caption'#6
+  +#7'TimeOut'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TLabel'#6'Label6'#4
+  +'Left'#3#232#0#6'Height'#2#14#3'Top'#2'8'#5'Width'#2'l'#7'Caption'#6#19'Mens'
+  +'agem Aguarde...'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TLabel'#6'Lab'
+  +'el7'#4'Left'#3#8#1#6'Height'#2#14#3'Top'#2#8#5'Width'#2'-'#7'Caption'#6#9'I'
+  +'ntervalo'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#5'TMemo'#8'mEnviado'#4
+  +'Left'#2#8#6'Height'#2'('#3'Top'#3#168#0#5'Width'#3#193#1#7'Anchors'#11#5'ak'
+  +'Top'#6'akLeft'#7'akRight'#0#8'TabOrder'#2#9#0#0#5'TMemo'#5'mResp'#6'Height'
+  +#3#181#0#3'Top'#3#224#0#5'Width'#3#204#1#5'Align'#7#8'alBottom'#12'Font.Char'
+  +'Set'#7#12'ANSI_CHARSET'#10'Font.Color'#7#7'clBlack'#11'Font.Height'#2#245#9
+  +'Font.Name'#6#7'Courier'#10'Font.Pitch'#7#10'fpVariable'#10'ScrollBars'#7#6
+  +'ssBoth'#8'TabOrder'#2#10#0#0#10'TStatusBar'#10'StatusBar1'#6'Height'#2#23#3
+  +'Top'#3#149#1#5'Width'#3#204#1#6'Panels'#14#1#5'Width'#2'P'#0#1#5'Width'#2'2'
+  +#0#0#11'SimplePanel'#8#0#0#9'TComboBox'#9'cbxModelo'#4'Left'#2#8#6'Height'#2
+  +#21#3'Top'#2#24#5'Width'#2'a'#16'AutoCompleteText'#11#22'cbactEndOfLineCompl'
+  +'ete'#20'cbactSearchAscending'#0#5'Ctl3D'#9#10'ItemHeight'#2#13#13'Items.Str'
+  +'ings'#1#6#8'Procurar'#6#12'ecfNaoFiscal'#6#11'ecfBematech'#6#8'ecfSweda'#6#9
+  +'ecfDaruma'#6#11'ecfSchalter'#6#8'ecfMecaf'#6#8'ecfYanco'#6#12'ecfDataRegis'
+  +#6#8'ecfUrano'#6#8'ecfICash'#6#10'ecfQuattro'#0#9'ItemWidth'#3#150#0#9'MaxLe'
+  +'ngth'#2#0#8'OnChange'#7#15'cbxModeloChange'#5'Style'#7#14'csDropDownList'#8
+  +'TabOrder'#2#0#0#0#9'TComboBox'#8'cbxPorta'#4'Left'#2'p'#6'Height'#2#21#3'To'
+  +'p'#2#24#5'Width'#2'Q'#16'AutoCompleteText'#11#22'cbactEndOfLineComplete'#20
+  +'cbactSearchAscending'#0#5'Ctl3D'#9#10'ItemHeight'#2#19#13'Items.Strings'#1#6
+  +#8'Procurar'#6#4'COM1'#6#4'COM2'#6#4'COM3'#6#4'COM4'#6#4'LPT1'#6#4'LPT2'#6#4
+  +'LPT3'#6#10'/dev/ttyS0'#6#10'/dev/ttyS1'#6#12'/dev/ttyUSB0'#6#12'/dev/ttyUSB'
+  +'1'#0#9'ItemWidth'#3#130#0#9'MaxLength'#2#0#8'OnChange'#7#14'cbxPortaChange'
+  +#8'TabOrder'#2#1#4'Text'#6#8'Procurar'#0#0#5'TEdit'#9'edTimeout'#6'Cursor'#7
+  +#7'crIBeam'#4'Left'#3#208#0#6'Height'#2#21#3'Top'#2#24#5'Width'#2'%'#8'OnCha'
+  +'nge'#7#15'edTimeoutChange'#8'TabOrder'#2#2#4'Text'#6#1'3'#0#0#9'TCheckBox'#8
+  +'chTentar'#4'Left'#2#14#6'Height'#2#13#3'Top'#2'4'#5'Width'#2'm'#7'Caption'#6
+  +#16'Tentar Novamente'#7'Checked'#9#7'OnClick'#7#13'chTentarClick'#5'State'#7
+  +#9'cbChecked'#8'TabOrder'#2#4#0#0#9'TCheckBox'#10'chBloqueia'#4'Left'#2#14#6
+  +'Height'#2#13#3'Top'#2'F'#5'Width'#3#138#0#7'Caption'#6#22'Bloqueia Mouse Te'
+  +'clado'#7'Checked'#9#7'OnClick'#7#15'chBloqueiaClick'#5'State'#7#9'cbChecked'
+  +#8'TabOrder'#2#5#0#0#9'TCheckBox'#10'chExibeMsg'#4'Left'#2#14#6'Height'#2#13
+  +#3'Top'#2'Y'#5'Width'#2'y'#7'Caption'#6#20'Exibe Msg Aguarde...'#7'Checked'#9
+  +#7'OnClick'#7#15'chExibeMsgClick'#5'State'#7#9'cbChecked'#8'TabOrder'#2#6#0#0
+  +#5'TMemo'#4'mMsg'#4'Left'#3#232#0#6'Height'#2'A'#3'Top'#2'H'#5'Width'#3#224#0
+  +#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#13'Lines.Strings'#1#6#27'Agua'
+  +'rdando o retorno do ECF'#6#31'Faltam %d segundos para TimeOut'#0#8'OnChange'
+  +#7#10'mMsgChange'#10'ScrollBars'#7#10'ssVertical'#8'TabOrder'#2#8#0#0#7'TBut'
+  +'ton'#7'bAtivar'#4'Left'#3'H'#1#6'Height'#2#25#3'Top'#2#24#5'Width'#2'p'#25
+  +'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#6'Ativar'#7'OnClick'#7#12'bAtiv'
+  +'arClick'#8'TabOrder'#2#3#0#0#9'TCheckBox'#17'chArredondaPorQtd'#4'Left'#2#14
+  +#6'Height'#2#13#3'Top'#2'l'#5'Width'#3#174#0#7'Caption'#6#29'Arredondamento '
+  +'por Quantidade'#7'OnClick'#7#22'chArredondaPorQtdClick'#8'TabOrder'#2#7#0#0
+  +#9'TCheckBox'#22'chGavetaSinalInvertido'#4'Left'#2#14#6'Height'#2#13#3'Top'#3
+  +#128#0#5'Width'#2'}'#7'Caption'#6#22'Gaveta Sinal Invertido'#8'OnChange'#7#29
+  +'chGavetaSinalInvertido1Change'#8'TabOrder'#2#11#0#0#5'TEdit'#22'edIntervalo'
+  +'Aposcomando'#6'Cursor'#7#7'crIBeam'#4'Left'#3#9#1#6'Height'#2#21#3'Top'#2#24
+  ,#5'Width'#2'%'#8'OnChange'#7#28'edIntervaloAposcomandoChange'#8'TabOrder'#2
+  +#12#4'Text'#6#3'100'#0#0#9'TMainMenu'#9'MainMenu1'#4'left'#3#16#1#3'top'#3' '
+  +#1#0#9'TMenuItem'#10'Principal1'#7'Caption'#6#9'Principal'#0#9'TMenuItem'#8
+  +'Ativcar1'#7'Caption'#6#6'Ativar'#7'OnClick'#7#13'Ativcar1Click'#0#0#9'TMenu'
+  +'Item'#10'Desativar1'#7'Caption'#6#9'Desativar'#7'OnClick'#7#15'Desativar1Cl'
+  +'ick'#0#0#9'TMenuItem'#7'Testar1'#7'Caption'#6#6'Testar'#7'OnClick'#7#12'Tes'
+  +'tar1Click'#0#0#9'TMenuItem'#2'N2'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#6'Sobr'
+  +'e1'#7'Caption'#6#10'Sobre ACBr'#7'OnClick'#7#11'Sobre1Click'#0#0#9'TMenuIte'
+  +'m'#2'N1'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#5'Sair1'#7'Caption'#6#4'Sair'#7
+  +'OnClick'#7#10'Sair1Click'#0#0#0#9'TMenuItem'#10'Variaveis1'#7'Caption'#6#9
+  +'Variaveis'#0#9'TMenuItem'#9'DataHora1'#7'Caption'#6#9'Data Hora'#7'OnClick'
+  +#7#14'DataHora1Click'#0#0#9'TMenuItem'#7'NumECF1'#7'Caption'#6#7'Num ECF'#7
+  +'OnClick'#7#12'NumECF1Click'#0#0#9'TMenuItem'#8'NumLoja1'#7'Caption'#6#8'Num'
+  +' Loja'#7'OnClick'#7#13'NumLoja1Click'#0#0#9'TMenuItem'#6'NSrie1'#7'Caption'
+  +#6#9'Num S'#233'rie'#7'OnClick'#7#11'NSrie1Click'#0#0#9'TMenuItem'#7'NVerso1'
+  +#7'Caption'#6#10'Num Vers'#227'o'#7'OnClick'#7#12'NVerso1Click'#0#0#9'TMenuI'
+  +'tem'#7'NumCRO1'#7'Caption'#6#7'Num CRO'#7'OnClick'#7#12'NumCRO1Click'#0#0#9
+  +'TMenuItem'#2'N3'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#11'PoucoPapel1'#7'Capti'
+  +'on'#6#13'Pouco Papel ?'#7'OnClick'#7#16'PoucoPapel1Click'#0#0#9'TMenuItem'#7
+  +'Estado1'#7'Caption'#6#6'Estado'#7'OnClick'#7#12'Estado1Click'#0#0#9'TMenuIt'
+  +'em'#13'HorarioVerao2'#7'Caption'#6#15'Horario Verao ?'#7'OnClick'#7#18'Hora'
+  +'rioVerao2Click'#0#0#9'TMenuItem'#10'Arredonda1'#7'Caption'#6#11'Arredonda ?'
+  +#7'OnClick'#7#15'Arredonda1Click'#0#0#9'TMenuItem'#9'MenuItem3'#7'Caption'#6
+  +#5#201' MFD'#7'OnClick'#7#14'MenuItem3Click'#0#0#9'TMenuItem'#9'MenuItem4'#7
+  +'Caption'#6#9#201' Termica'#7'OnClick'#7#14'MenuItem4Click'#0#0#9'TMenuItem'
+  +#2'N4'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#14'AliquotasICMS1'#7'Caption'#6#24
+  +'Carrega Aliquotas (ICMS)'#7'OnClick'#7#19'AliquotasICMS1Click'#0#0#9'TMenuI'
+  +'tem'#18'FormasdePagamento1'#7'Caption'#6#24'Carrega Formas Pagamento'#7'OnC'
+  +'lick'#7#23'FormasdePagamento1Click'#0#0#9'TMenuItem'#30'CarregaComprovantes'
+  +'NAOFiscais1'#7'Caption'#6' Carrega Comprovantes NAO Fiscais'#7'OnClick'#7'#'
+  +'CarregaComprovantesNAOFiscais1Click'#0#0#9'TMenuItem'#24'CarregaUnidadesdeM'
+  +'edida1'#7'Caption'#6#26'Carrega Unidades de Medida'#7'OnClick'#7#29'Carrega'
+  +'UnidadesdeMedida1Click'#0#0#9'TMenuItem'#9'MenuItem1'#7'Caption'#6#1'-'#0#0
+  +#9'TMenuItem'#9'MenuItem2'#7'Caption'#6#22'Ler Todas as Variaveis'#7'OnClick'
+  +#7#14'MenuItem2Click'#0#0#0#9'TMenuItem'#10'Relatrios1'#7'Caption'#6#10'Rela'
+  +'t'#243'rios'#0#9'TMenuItem'#9'LeituraX1'#7'Caption'#6#9'Leitura X'#7'OnClic'
+  +'k'#7#14'LeituraX1Click'#0#0#9'TMenuItem'#7'ReduoZ1'#7'Caption'#6#9'Redu'#231
+  +#227'o Z'#7'OnClick'#7#12'ReduoZ1Click'#0#0#9'TMenuItem'#2'N9'#7'Caption'#6#1
+  +'-'#0#0#9'TMenuItem'#19'RelatorioGerencial1'#7'Caption'#6#19'Relatorio Geren'
+  +'cial'#7'OnClick'#7#24'RelatorioGerencial1Click'#0#0#9'TMenuItem'#15'CupomVi'
+  +'nculado1'#7'Caption'#6#15'Cupom Vinculado'#7'OnClick'#7#20'CupomVinculado1C'
+  +'lick'#0#0#9'TMenuItem'#14'FechaRelatrio1'#7'Caption'#6#15'Fecha Relat'#243
+  +'rio'#7'OnClick'#7#19'FechaRelatrio1Click'#0#0#9'TMenuItem'#3'N12'#7'Caption'
+  +#6#1'-'#0#0#9'TMenuItem'#23'LeituradeMemoriaFiscal1'#7'Caption'#6#25'Leitura'
+  +' de Memoria Fiscal'#0#9'TMenuItem'#19'CapturaporNReduaoZ1'#7'Caption'#6#22
+  +'Captura por N.Redu'#231'aoZ'#7'OnClick'#7#24'CapturaporNReduaoZ1Click'#0#0#9
+  +'TMenuItem'#18'CapturaporPeriodo1'#7'Caption'#6#19'Captura por Periodo'#7'On'
+  +'Click'#7#23'CapturaporPeriodo1Click'#0#0#9'TMenuItem'#19'ImprimeporNReduaoZ'
+  +'1'#7'Caption'#6#22'Imprime por N.Redu'#231'aoZ'#7'OnClick'#7#24'ImprimeporN'
+  +'ReduaoZ1Click'#0#0#9'TMenuItem'#18'ImprimeporPeriodo1'#7'Caption'#6#19'Impr'
+  +'ime por Periodo'#7'OnClick'#7#23'ImprimeporPeriodo1Click'#0#0#0#0#9'TMenuIt'
+  +'em'#12'CopumFiscal1'#7'Caption'#6#12'Cupom Fiscal'#0#9'TMenuItem'#20'TestaP'
+  +'odeAbrirCupom1'#7'Caption'#6#22'Testa Pode Abrir Cupom'#7'OnClick'#7#25'Tes'
+  +'taPodeAbrirCupom1Click'#0#0#9'TMenuItem'#11'AbrirCupom1'#7'Caption'#6#10'Ab'
+  +'re Cupom'#7'OnClick'#7#16'AbrirCupom1Click'#0#0#9'TMenuItem'#2'N5'#7'Captio'
+  +'n'#6#1'-'#0#0#9'TMenuItem'#11'VenderItem1'#7'Caption'#6#10'Vende Item'#7'On'
+  +'Click'#7#16'VenderItem1Click'#0#0#9'TMenuItem'#20'CancelarItemVendido1'#7'C'
+  +'aption'#6#20'Cancela Item Vendido'#7'OnClick'#7#25'CancelarItemVendido1Clic'
+  +'k'#0#0#9'TMenuItem'#2'N6'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#4'Sub1'#7'Capt'
+  +'ion'#6#17'SubTotaliza Cupom'#7'OnClick'#7#9'Sub1Click'#0#0#9'TMenuItem'#17
+  +'EfetuarPagamento1'#7'Caption'#6#16'Efetua Pagamento'#7'OnClick'#7#22'Efetua'
+  +'rPagamento1Click'#0#0#9'TMenuItem'#12'FecharCupom1'#7'Caption'#6#11'Fecha C'
+  +'upom'#7'OnClick'#7#17'FecharCupom1Click'#0#0#9'TMenuItem'#3'N10'#7'Caption'
+  +#6#1'-'#0#0#9'TMenuItem'#13'CancelaCupom1'#7'Caption'#6#13'Cancela Cupom'#7
+  ,'OnClick'#7#18'CancelaCupom1Click'#0#0#9'TMenuItem'#2'N8'#7'Caption'#6#1'-'#0
+  +#0#9'TMenuItem'#9'Variveis1'#7'Caption'#6#9'Vari'#225'veis'#0#9'TMenuItem'#13
+  +'NUltimoCupom1'#7'Caption'#6#9'Num Cupom'#7'OnClick'#7#18'NUltimoCupom1Click'
+  +#0#0#9'TMenuItem'#9'SubTotal1'#7'Caption'#6#8'SubTotal'#7'OnClick'#7#14'SubT'
+  +'otal1Click'#0#0#9'TMenuItem'#10'TotalPago1'#7'Caption'#6#10'Total Pago'#7'O'
+  +'nClick'#7#15'TotalPago1Click'#0#0#0#9'TMenuItem'#3'N11'#7'Caption'#6#1'-'#0
+  +#0#9'TMenuItem'#18'TestedeVelocidade1'#7'Caption'#6#19'Teste de Velocidade'#7
+  +'OnClick'#7#23'TestedeVelocidade1Click'#0#0#0#9'TMenuItem'#13'Dispositivos1'
+  +#7'Caption'#6#12'Dispositivos'#0#9'TMenuItem'#7'Gaveta1'#7'Caption'#6#7'&Gav'
+  +'eta'#0#9'TMenuItem'#11'AbreGaveta1'#7'Caption'#6#11'Abre Gaveta'#7'OnClick'
+  +#7#16'AbreGaveta1Click'#0#0#9'TMenuItem'#13'GavetaAberta1'#7'Caption'#6#15'G'
+  +'aveta Aberta ?'#7'OnClick'#7#18'GavetaAberta1Click'#0#0#0#9'TMenuItem'#7'Ch'
+  +'eque1'#7'Caption'#6#7'&Cheque'#0#9'TMenuItem'#13'ChequePronto1'#7'Caption'#6
+  +#15'Cheque Pronto ?'#7'OnClick'#7#18'ChequePronto1Click'#0#0#9'TMenuItem'#14
+  +'ImprimeCheque1'#7'Caption'#6#14'Imprime Cheque'#7'OnClick'#7#19'ImprimeCheq'
+  +'ue1Click'#0#0#9'TMenuItem'#22'CancelaImpressoCheque1'#7'Caption'#6#24'Cance'
+  +'la Impress'#227'o Cheque'#7'OnClick'#7#27'CancelaImpressoCheque1Click'#0#0#0
+  +#0#9'TMenuItem'#11'Utilitrios1'#7'Caption'#6#11'Utilit'#225'rios'#0#9'TMenuI'
+  +'tem'#17'ProgramaAliquota1'#7'Caption'#6#17'Programa Aliquota'#7'OnClick'#7
+  +#22'ProgramaAliquota1Click'#0#0#9'TMenuItem'#25'ProgramaFormadePagamento1'#7
+  +'Caption'#6#27'Programa Forma de Pagamento'#7'OnClick'#7#30'ProgramaFormadeP'
+  +'agamento1Click'#0#0#9'TMenuItem'#29'ProgramaComprovanteNAOFiscal1'#7'Captio'
+  +'n'#6#31'Programa Comprovante NAO Fiscal'#7'OnClick'#7'"ProgramaComprovanteN'
+  +'AOFiscal1Click'#0#0#9'TMenuItem'#22'ProgramaUnidadeMedida1'#7'Caption'#6#23
+  +'Programa Unidade Medida'#7'OnClick'#7#27'ProgramaUnidadeMedida1Click'#0#0#9
+  +'TMenuItem'#3'N13'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#13'HorarioVerao1'#7'Ca'
+  +'ption'#6#18'Muda Hor'#225'rio Ver'#227'o'#7'OnClick'#7#18'HorarioVerao1Clic'
+  +'k'#0#0#9'TMenuItem'#19'MudaArredondamento1'#7'Caption'#6#19'Muda Arredondam'
+  +'ento'#7'OnClick'#7#24'MudaArredondamento1Click'#0#0#9'TMenuItem'#15'Impacto'
+  +'Agulhas1'#7'Caption'#6#15'Impacto Agulhas'#7'OnClick'#7#20'ImpactoAgulhas1C'
+  +'lick'#0#0#9'TMenuItem'#2'N7'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#20'CorrigeE'
+  +'stadodeErro1'#7'Caption'#6#22'Corrige Estado de Erro'#7'OnClick'#7#25'Corri'
+  +'geEstadodeErro1Click'#0#0#9'TMenuItem'#3'N14'#7'Caption'#6#1'-'#0#0#9'TMenu'
+  +'Item'#13'EnviaComando1'#7'Caption'#6#13'Envia Comando'#7'OnClick'#7#18'Envi'
+  +'aComando1Click'#0#0#0#0#8'TACBrECF'#8'ACBrECF1'#5'Porta'#6#8'procurar'#15'D'
+  +'escricaoGrande'#9#10'MsgAguarde'#6'0Aguardando a resposta da Impressora: %d'
+  +' segundos'#12'MsgRelatorio'#6#23'Imprimindo %s  %d'#170' Via '#17'MsgPausaR'
+  +'elatorio'#6',Destaque a %d'#170' via, <ENTER> proxima, %d seg.'#18'FormMsgF'
+  +'onte.Color'#7#7'clWhite'#19'FormMsgFonte.Height'#2#245#17'FormMsgFonte.Name'
+  +#6#13'MS Sans Serif'#18'FormMsgFonte.Pitch'#7#10'fpVariable'#18'FormMsgFonte'
+  +'.Style'#11#6'fsBold'#0#12'FormMsgColor'#7#11'clHighlight'#12'OnMsgAguarde'#7
+  +#18'ACBrECF1MsgAguarde'#26'OnAguardandoRespostaChange'#7' ACBrECF1Aguardando'
+  +'RespostaChange'#15'OnMsgPoucoPapel'#7#21'ACBrECF1MsgPoucoPapel'#4'left'#3#16
+  +#1#3'top'#3#208#0#0#0#0
+]);

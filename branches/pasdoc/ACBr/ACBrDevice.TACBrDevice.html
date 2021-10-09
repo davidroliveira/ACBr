@@ -1,0 +1,829 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrDevice: Classe TACBrDevice</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrDevice"></a><h1 class="cio">Classe TACBrDevice</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrDevice.html">ACBrDevice</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrDevice = class(TComponent)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+<code>TACBrDevice</code></p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="thisitem">TACBrDevice</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDevice.TACBrDevice.html#fsHardFlow">fsHardFlow</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDevice.TACBrDevice.html#fsSoftFlow">fsSoftFlow</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDevice.TACBrDevice.html#fsParity">fsParity</a></b>: Char ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDevice.TACBrDevice.html#fsData">fsData</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDevice.TACBrDevice.html#fsBaud">fsBaud</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDevice.TACBrDevice.html#fsStop">fsStop</a></b>: Integer ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDevice.TACBrDevice.html#fsPorta">fsPorta</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDevice.TACBrDevice.html#fsTimeOut">fsTimeOut</a></b>: Integer ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDevice.TACBrDevice.html#fsAtivo">fsAtivo</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDevice.TACBrDevice.html#fsHandShake">fsHandShake</a></b>: <a   href="ACBrDevice.html#TACBrHandShake">TACBrHandShake</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDevice.TACBrDevice.html#fsSendBytesCount">fsSendBytesCount</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDevice.TACBrDevice.html#fsSendBytesInterval">fsSendBytesInterval</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDevice.TACBrDevice.html#fProcessMessages">fProcessMessages</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDevice.TACBrDevice.html#Serial">Serial</a></b>: <a   href="synaser.TBlockSerial.html">TBlockSerial</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrDevice.TACBrDevice.html#PosImp">PosImp</a></b>: TPoint;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#ConfiguraSerial">ConfiguraSerial</a></b> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#EnviaStringSerial">EnviaStringSerial</a></b>(const AString : AnsiString) ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#EnviaStringArquivo">EnviaStringArquivo</a></b>(const AString : AnsiString) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#SetBaud">SetBaud</a></b>(const Value: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#SetData">SetData</a></b>(const Value: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#SetHardFlow">SetHardFlow</a></b>(const Value: Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrDevice.TACBrDevice.html#GetParity">GetParity</a></b>: <a   href="ACBrDevice.html#TACBrSerialParity">TACBrSerialParity</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#SetParity">SetParity</a></b>(const Value: <a   href="ACBrDevice.html#TACBrSerialParity">TACBrSerialParity</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#SetSoftFlow">SetSoftFlow</a></b>(const Value: Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrDevice.TACBrDevice.html#GetStop">GetStop</a></b>: <a   href="ACBrDevice.html#TACBrSerialStop">TACBrSerialStop</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#SetStop">SetStop</a></b>(const Value: <a   href="ACBrDevice.html#TACBrSerialStop">TACBrSerialStop</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#SetPorta">SetPorta</a></b>(const Value: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#SetTimeOut">SetTimeOut</a></b>(const Value: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#SetOnStatus">SetOnStatus</a></b>(const Value: <a   href="synaser.html#THookSerialStatus">THookSerialStatus</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrDevice.TACBrDevice.html#GetOnStatus">GetOnStatus</a></b>: <a   href="synaser.html#THookSerialStatus">THookSerialStatus</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#SetAtivo">SetAtivo</a></b>(const Value: Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#SetHandShake">SetHandShake</a></b>(const Value: <a   href="ACBrDevice.html#TACBrHandShake">TACBrHandShake</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrDevice.TACBrDevice.html#GetParamsString">GetParamsString</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#SetParamsString">SetParamsString</a></b>(const Value: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrDevice.TACBrDevice.html#GetMaxBandwidth">GetMaxBandwidth</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#SetMaxBandwidth">SetMaxBandwidth</a></b>(const Value: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Function <b><a   href="ACBrDevice.TACBrDevice.html#EmLinha">EmLinha</a></b>( lTimeOut : Integer = 1) : Boolean ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrDevice.TACBrDevice.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrDevice.TACBrDevice.html#Destroy">Destroy</a></b> ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#Ativar">Ativar</a></b> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#Desativar">Desativar</a></b> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrDevice.TACBrDevice.html#EnviaString">EnviaString</a></b>( const AString : AnsiString ) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrDevice.TACBrDevice.html#ImprimePos">ImprimePos</a></b>(const Linha, Coluna : Integer; const AString: AnsiString) ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrDevice.TACBrDevice.html#Eject">Eject</a></b> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrDevice.TACBrDevice.html#SetDefaultValues">SetDefaultValues</a></b> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Function <b><a   href="ACBrDevice.TACBrDevice.html#IsSerialPort">IsSerialPort</a></b> : Boolean ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Function <b><a   href="ACBrDevice.TACBrDevice.html#IsTXTFilePort">IsTXTFilePort</a></b>: Boolean ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrDevice.TACBrDevice.html#AcharPortasSeriais">AcharPortasSeriais</a></b>( const AStringList : TStrings; UltimaPorta : Integer = 64 ) ;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#Ativo">Ativo</a></b> : Boolean read <a   href="ACBrDevice.TACBrDevice.html#fsAtivo">fsAtivo</a> write <a   href="ACBrDevice.TACBrDevice.html#SetAtivo">SetAtivo</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#Porta">Porta</a></b>   : String  read <a   href="ACBrDevice.TACBrDevice.html#fsPorta">fsPorta</a> write <a   href="ACBrDevice.TACBrDevice.html#SetPorta">SetPorta</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#TimeOut">TimeOut</a></b> : Integer read <a   href="ACBrDevice.TACBrDevice.html#fsTimeOut">fsTimeOut</a> write <a   href="ACBrDevice.TACBrDevice.html#SetTimeOut">SetTimeOut</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#ParamsString">ParamsString</a></b> : String read <a   href="ACBrDevice.TACBrDevice.html#GetParamsString">GetParamsString</a> write <a   href="ACBrDevice.TACBrDevice.html#SetParamsString">SetParamsString</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#Baud">Baud</a></b>     : Integer read <a   href="ACBrDevice.TACBrDevice.html#fsBaud">fsBaud</a> write <a   href="ACBrDevice.TACBrDevice.html#SetBaud">SetBaud</a> default 9600 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#Data">Data</a></b>     : Integer read <a   href="ACBrDevice.TACBrDevice.html#fsData">fsData</a> write <a   href="ACBrDevice.TACBrDevice.html#SetData">SetData</a> default 8 ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#Parity">Parity</a></b>   : <a   href="ACBrDevice.html#TACBrSerialParity">TACBrSerialParity</a> read <a   href="ACBrDevice.TACBrDevice.html#GetParity">GetParity</a> write <a   href="ACBrDevice.TACBrDevice.html#SetParity">SetParity</a>
+                         default pNone ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#Stop">Stop</a></b>     : <a   href="ACBrDevice.html#TACBrSerialStop">TACBrSerialStop</a> read <a   href="ACBrDevice.TACBrDevice.html#GetStop">GetStop</a> write <a   href="ACBrDevice.TACBrDevice.html#SetStop">SetStop</a>
+                         default s1 ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#MaxBandwidth">MaxBandwidth</a></b> : Integer read  <a   href="ACBrDevice.TACBrDevice.html#GetMaxBandwidth">GetMaxBandwidth</a>
+                                     write <a   href="ACBrDevice.TACBrDevice.html#SetMaxBandwidth">SetMaxBandwidth</a> default 0 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#SendBytesCount">SendBytesCount</a></b> : Integer read  <a   href="ACBrDevice.TACBrDevice.html#fsSendBytesCount">fsSendBytesCount</a>
+                                       write <a   href="ACBrDevice.TACBrDevice.html#fsSendBytesCount">fsSendBytesCount</a>  default 0 ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#SendBytesInterval">SendBytesInterval</a></b> : Integer read  <a   href="ACBrDevice.TACBrDevice.html#fsSendBytesInterval">fsSendBytesInterval</a>
+                                       write <a   href="ACBrDevice.TACBrDevice.html#fsSendBytesInterval">fsSendBytesInterval</a>  default 0 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#HandShake">HandShake</a></b> : <a   href="ACBrDevice.html#TACBrHandShake">TACBrHandShake</a> read <a   href="ACBrDevice.TACBrDevice.html#fsHandShake">fsHandShake</a> write <a   href="ACBrDevice.TACBrDevice.html#SetHandShake">SetHandShake</a>
+                         default hsNenhum ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#SoftFlow">SoftFlow</a></b> : Boolean read <a   href="ACBrDevice.TACBrDevice.html#fsSoftFlow">fsSoftFlow</a> write <a   href="ACBrDevice.TACBrDevice.html#SetSoftFlow">SetSoftFlow</a>
+                         default false ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#HardFlow">HardFlow</a></b> : Boolean read <a   href="ACBrDevice.TACBrDevice.html#fsHardFlow">fsHardFlow</a> write <a   href="ACBrDevice.TACBrDevice.html#SetHardFlow">SetHardFlow</a>
+                         default false ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#ProcessMessages">ProcessMessages</a></b> : Boolean read <a   href="ACBrDevice.TACBrDevice.html#fProcessMessages">fProcessMessages</a>
+        write <a   href="ACBrDevice.TACBrDevice.html#fProcessMessages">fProcessMessages</a> default True ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrDevice.TACBrDevice.html#OnStatus">OnStatus</a></b> : <a   href="synaser.html#THookSerialStatus">THookSerialStatus</a> read <a   href="ACBrDevice.TACBrDevice.html#GetOnStatus">GetOnStatus</a> write <a   href="ACBrDevice.TACBrDevice.html#SetOnStatus">SetOnStatus</a> ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsHardFlow"></a><code><b>fsHardFlow</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsSoftFlow"></a><code><b>fsSoftFlow</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsParity"></a><code><b>fsParity</b>: Char ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsData"></a><code><b>fsData</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsBaud"></a><code><b>fsBaud</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsStop"></a><code><b>fsStop</b>: Integer ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsPorta"></a><code><b>fsPorta</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsTimeOut"></a><code><b>fsTimeOut</b>: Integer ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsAtivo"></a><code><b>fsAtivo</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsHandShake"></a><code><b>fsHandShake</b>: <a   href="ACBrDevice.html#TACBrHandShake">TACBrHandShake</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsSendBytesCount"></a><code><b>fsSendBytesCount</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsSendBytesInterval"></a><code><b>fsSendBytesInterval</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fProcessMessages"></a><code><b>fProcessMessages</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Serial"></a><code><b>Serial</b>: <a   href="synaser.TBlockSerial.html">TBlockSerial</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PosImp"></a><code><b>PosImp</b>: TPoint;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="ConfiguraSerial"></a><code>procedure <b>ConfiguraSerial</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="EnviaStringSerial"></a><code>procedure <b>EnviaStringSerial</b>(const AString : AnsiString) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="EnviaStringArquivo"></a><code>procedure <b>EnviaStringArquivo</b>(const AString : AnsiString) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetBaud"></a><code>procedure <b>SetBaud</b>(const Value: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetData"></a><code>procedure <b>SetData</b>(const Value: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetHardFlow"></a><code>procedure <b>SetHardFlow</b>(const Value: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetParity"></a><code>function <b>GetParity</b>: <a   href="ACBrDevice.html#TACBrSerialParity">TACBrSerialParity</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetParity"></a><code>procedure <b>SetParity</b>(const Value: <a   href="ACBrDevice.html#TACBrSerialParity">TACBrSerialParity</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetSoftFlow"></a><code>procedure <b>SetSoftFlow</b>(const Value: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetStop"></a><code>function <b>GetStop</b>: <a   href="ACBrDevice.html#TACBrSerialStop">TACBrSerialStop</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetStop"></a><code>procedure <b>SetStop</b>(const Value: <a   href="ACBrDevice.html#TACBrSerialStop">TACBrSerialStop</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetPorta"></a><code>procedure <b>SetPorta</b>(const Value: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetTimeOut"></a><code>procedure <b>SetTimeOut</b>(const Value: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetOnStatus"></a><code>procedure <b>SetOnStatus</b>(const Value: <a   href="synaser.html#THookSerialStatus">THookSerialStatus</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetOnStatus"></a><code>function <b>GetOnStatus</b>: <a   href="synaser.html#THookSerialStatus">THookSerialStatus</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetAtivo"></a><code>procedure <b>SetAtivo</b>(const Value: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetHandShake"></a><code>procedure <b>SetHandShake</b>(const Value: <a   href="ACBrDevice.html#TACBrHandShake">TACBrHandShake</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetParamsString"></a><code>function <b>GetParamsString</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetParamsString"></a><code>procedure <b>SetParamsString</b>(const Value: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetMaxBandwidth"></a><code>function <b>GetMaxBandwidth</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetMaxBandwidth"></a><code>procedure <b>SetMaxBandwidth</b>(const Value: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EmLinha"></a><code>Function <b>EmLinha</b>( lTimeOut : Integer = 1) : Boolean ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Ativar"></a><code>procedure <b>Ativar</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Desativar"></a><code>procedure <b>Desativar</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EnviaString"></a><code>Procedure <b>EnviaString</b>( const AString : AnsiString ) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ImprimePos"></a><code>Procedure <b>ImprimePos</b>(const Linha, Coluna : Integer; const AString: AnsiString) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Eject"></a><code>Procedure <b>Eject</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetDefaultValues"></a><code>Procedure <b>SetDefaultValues</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsSerialPort"></a><code>Function <b>IsSerialPort</b> : Boolean ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsTXTFilePort"></a><code>Function <b>IsTXTFilePort</b>: Boolean ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AcharPortasSeriais"></a><code>procedure <b>AcharPortasSeriais</b>( const AStringList : TStrings; UltimaPorta : Integer = 64 ) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Ativo"></a><code>property <b>Ativo</b> : Boolean read <a   href="ACBrDevice.TACBrDevice.html#fsAtivo">fsAtivo</a> write <a   href="ACBrDevice.TACBrDevice.html#SetAtivo">SetAtivo</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Porta"></a><code>property <b>Porta</b>   : String  read <a   href="ACBrDevice.TACBrDevice.html#fsPorta">fsPorta</a> write <a   href="ACBrDevice.TACBrDevice.html#SetPorta">SetPorta</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TimeOut"></a><code>property <b>TimeOut</b> : Integer read <a   href="ACBrDevice.TACBrDevice.html#fsTimeOut">fsTimeOut</a> write <a   href="ACBrDevice.TACBrDevice.html#SetTimeOut">SetTimeOut</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ParamsString"></a><code>property <b>ParamsString</b> : String read <a   href="ACBrDevice.TACBrDevice.html#GetParamsString">GetParamsString</a> write <a   href="ACBrDevice.TACBrDevice.html#SetParamsString">SetParamsString</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Baud"></a><code>property <b>Baud</b>     : Integer read <a   href="ACBrDevice.TACBrDevice.html#fsBaud">fsBaud</a> write <a   href="ACBrDevice.TACBrDevice.html#SetBaud">SetBaud</a> default 9600 ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Data"></a><code>property <b>Data</b>     : Integer read <a   href="ACBrDevice.TACBrDevice.html#fsData">fsData</a> write <a   href="ACBrDevice.TACBrDevice.html#SetData">SetData</a> default 8 ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Parity"></a><code>property <b>Parity</b>   : <a   href="ACBrDevice.html#TACBrSerialParity">TACBrSerialParity</a> read <a   href="ACBrDevice.TACBrDevice.html#GetParity">GetParity</a> write <a   href="ACBrDevice.TACBrDevice.html#SetParity">SetParity</a>
+                         default pNone ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Stop"></a><code>property <b>Stop</b>     : <a   href="ACBrDevice.html#TACBrSerialStop">TACBrSerialStop</a> read <a   href="ACBrDevice.TACBrDevice.html#GetStop">GetStop</a> write <a   href="ACBrDevice.TACBrDevice.html#SetStop">SetStop</a>
+                         default s1 ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MaxBandwidth"></a><code>property <b>MaxBandwidth</b> : Integer read  <a   href="ACBrDevice.TACBrDevice.html#GetMaxBandwidth">GetMaxBandwidth</a>
+                                     write <a   href="ACBrDevice.TACBrDevice.html#SetMaxBandwidth">SetMaxBandwidth</a> default 0 ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="SendBytesCount"></a><code>property <b>SendBytesCount</b> : Integer read  <a   href="ACBrDevice.TACBrDevice.html#fsSendBytesCount">fsSendBytesCount</a>
+                                       write <a   href="ACBrDevice.TACBrDevice.html#fsSendBytesCount">fsSendBytesCount</a>  default 0 ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="SendBytesInterval"></a><code>property <b>SendBytesInterval</b> : Integer read  <a   href="ACBrDevice.TACBrDevice.html#fsSendBytesInterval">fsSendBytesInterval</a>
+                                       write <a   href="ACBrDevice.TACBrDevice.html#fsSendBytesInterval">fsSendBytesInterval</a>  default 0 ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="HandShake"></a><code>property <b>HandShake</b> : <a   href="ACBrDevice.html#TACBrHandShake">TACBrHandShake</a> read <a   href="ACBrDevice.TACBrDevice.html#fsHandShake">fsHandShake</a> write <a   href="ACBrDevice.TACBrDevice.html#SetHandShake">SetHandShake</a>
+                         default hsNenhum ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="SoftFlow"></a><code>property <b>SoftFlow</b> : Boolean read <a   href="ACBrDevice.TACBrDevice.html#fsSoftFlow">fsSoftFlow</a> write <a   href="ACBrDevice.TACBrDevice.html#SetSoftFlow">SetSoftFlow</a>
+                         default false ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="HardFlow"></a><code>property <b>HardFlow</b> : Boolean read <a   href="ACBrDevice.TACBrDevice.html#fsHardFlow">fsHardFlow</a> write <a   href="ACBrDevice.TACBrDevice.html#SetHardFlow">SetHardFlow</a>
+                         default false ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ProcessMessages"></a><code>property <b>ProcessMessages</b> : Boolean read <a   href="ACBrDevice.TACBrDevice.html#fProcessMessages">fProcessMessages</a>
+        write <a   href="ACBrDevice.TACBrDevice.html#fProcessMessages">fProcessMessages</a> default True ;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+propriedade que ativa/desativa o processamento de mensagens do windows</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnStatus"></a><code>property <b>OnStatus</b> : <a   href="synaser.html#THookSerialStatus">THookSerialStatus</a> read <a   href="ACBrDevice.TACBrDevice.html#GetOnStatus">GetOnStatus</a> write <a   href="ACBrDevice.TACBrDevice.html#SetOnStatus">SetOnStatus</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:24</em>
+</span>
+</body></html>

@@ -1,0 +1,397 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrMSXML2_TLB: DispInterface ISchemaComplexTypeDisp</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="ISchemaComplexTypeDisp"></a><h1 class="cio">DispInterface ISchemaComplexTypeDisp</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td>Campos</td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrMSXML2_TLB.html">ACBrMSXML2_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type ISchemaComplexTypeDisp = dispinterface(IDispInterface)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// DispIntf: <code>ISchemaComplexTypeDisp</code> Flags: (4544) Dual NonExtensible OleAutomation Dispatchable GUID: {50EA08B9-DD1B-4664-9A50-C2F40F4BD79A} *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">IDispInterface</li>
+<li class="thisitem">ISchemaComplexTypeDisp</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#isValid">isValid</a></b>(const data: WideString): WordBool; dispid 1445; </code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#writeAnnotation">writeAnnotation</a></b>(const annotationSink: IUnknown): WordBool; dispid 1483; </code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#isAbstract">isAbstract</a></b>: WordBool readonly dispid 1442;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#anyAttribute">anyAttribute</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaAny.html">ISchemaAny</a> readonly dispid 1425;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#attributes">attributes</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaItemCollection.html">ISchemaItemCollection</a> readonly dispid 1427;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#contentType">contentType</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMACONTENTTYPE">SCHEMACONTENTTYPE</a> readonly dispid 1430;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#contentModel">contentModel</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaModelGroup.html">ISchemaModelGroup</a> readonly dispid 1429;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#prohibitedSubstitutions">prohibitedSubstitutions</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a> readonly dispid 1464;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#baseTypes">baseTypes</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaItemCollection.html">ISchemaItemCollection</a> readonly dispid 1428;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#final">final</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a> readonly dispid 1437;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#variety">variety</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMATYPEVARIETY">SCHEMATYPEVARIETY</a> readonly dispid 1480;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#derivedBy">derivedBy</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a> readonly dispid 1432;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#minExclusive">minExclusive</a></b>: WideString readonly dispid 1452;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#minInclusive">minInclusive</a></b>: WideString readonly dispid 1453;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#maxExclusive">maxExclusive</a></b>: WideString readonly dispid 1448;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#maxInclusive">maxInclusive</a></b>: WideString readonly dispid 1449;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#totalDigits">totalDigits</a></b>: OleVariant readonly dispid 1475;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#fractionDigits">fractionDigits</a></b>: OleVariant readonly dispid 1439;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#length">length</a></b>: OleVariant readonly dispid 1447;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#minLength">minLength</a></b>: OleVariant readonly dispid 1454;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#maxLength">maxLength</a></b>: OleVariant readonly dispid 1450;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#enumeration">enumeration</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaStringCollection.html">ISchemaStringCollection</a> readonly dispid 1435;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#whitespace">whitespace</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMAWHITESPACE">SCHEMAWHITESPACE</a> readonly dispid 1482;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#patterns">patterns</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaStringCollection.html">ISchemaStringCollection</a> readonly dispid 1462;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#name">name</a></b>: WideString readonly dispid 1457;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#namespaceURI">namespaceURI</a></b>: WideString readonly dispid 1459;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#schema">schema</a></b>: <a   href="ACBrMSXML2_TLB.ISchema.html">ISchema</a> readonly dispid 1467;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#id">id</a></b>: WideString readonly dispid 1440;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#itemType">itemType</a></b>: <a   href="ACBrMSXML2_TLB.html#SOMITEMTYPE">SOMITEMTYPE</a> readonly dispid 1446;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaComplexTypeDisp.html#unhandledAttributes">unhandledAttributes</a></b>: <a   href="ACBrMSXML2_TLB.IVBSAXAttributes.html">IVBSAXAttributes</a> readonly dispid 1478;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="isValid"></a><code>function <b>isValid</b>(const data: WideString): WordBool; dispid 1445; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="writeAnnotation"></a><code>function <b>writeAnnotation</b>(const annotationSink: IUnknown): WordBool; dispid 1483; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="isAbstract"></a><code>property <b>isAbstract</b>: WordBool readonly dispid 1442;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="anyAttribute"></a><code>property <b>anyAttribute</b>: <a   href="ACBrMSXML2_TLB.ISchemaAny.html">ISchemaAny</a> readonly dispid 1425;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="attributes"></a><code>property <b>attributes</b>: <a   href="ACBrMSXML2_TLB.ISchemaItemCollection.html">ISchemaItemCollection</a> readonly dispid 1427;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="contentType"></a><code>property <b>contentType</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMACONTENTTYPE">SCHEMACONTENTTYPE</a> readonly dispid 1430;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="contentModel"></a><code>property <b>contentModel</b>: <a   href="ACBrMSXML2_TLB.ISchemaModelGroup.html">ISchemaModelGroup</a> readonly dispid 1429;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="prohibitedSubstitutions"></a><code>property <b>prohibitedSubstitutions</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a> readonly dispid 1464;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="baseTypes"></a><code>property <b>baseTypes</b>: <a   href="ACBrMSXML2_TLB.ISchemaItemCollection.html">ISchemaItemCollection</a> readonly dispid 1428;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="final"></a><code>property <b>final</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a> readonly dispid 1437;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="variety"></a><code>property <b>variety</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMATYPEVARIETY">SCHEMATYPEVARIETY</a> readonly dispid 1480;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="derivedBy"></a><code>property <b>derivedBy</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a> readonly dispid 1432;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="minExclusive"></a><code>property <b>minExclusive</b>: WideString readonly dispid 1452;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="minInclusive"></a><code>property <b>minInclusive</b>: WideString readonly dispid 1453;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="maxExclusive"></a><code>property <b>maxExclusive</b>: WideString readonly dispid 1448;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="maxInclusive"></a><code>property <b>maxInclusive</b>: WideString readonly dispid 1449;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="totalDigits"></a><code>property <b>totalDigits</b>: OleVariant readonly dispid 1475;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="fractionDigits"></a><code>property <b>fractionDigits</b>: OleVariant readonly dispid 1439;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="length"></a><code>property <b>length</b>: OleVariant readonly dispid 1447;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="minLength"></a><code>property <b>minLength</b>: OleVariant readonly dispid 1454;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="maxLength"></a><code>property <b>maxLength</b>: OleVariant readonly dispid 1450;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="enumeration"></a><code>property <b>enumeration</b>: <a   href="ACBrMSXML2_TLB.ISchemaStringCollection.html">ISchemaStringCollection</a> readonly dispid 1435;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="whitespace"></a><code>property <b>whitespace</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMAWHITESPACE">SCHEMAWHITESPACE</a> readonly dispid 1482;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="patterns"></a><code>property <b>patterns</b>: <a   href="ACBrMSXML2_TLB.ISchemaStringCollection.html">ISchemaStringCollection</a> readonly dispid 1462;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="name"></a><code>property <b>name</b>: WideString readonly dispid 1457;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="namespaceURI"></a><code>property <b>namespaceURI</b>: WideString readonly dispid 1459;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="schema"></a><code>property <b>schema</b>: <a   href="ACBrMSXML2_TLB.ISchema.html">ISchema</a> readonly dispid 1467;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="id"></a><code>property <b>id</b>: WideString readonly dispid 1440;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="itemType"></a><code>property <b>itemType</b>: <a   href="ACBrMSXML2_TLB.html#SOMITEMTYPE">SOMITEMTYPE</a> readonly dispid 1446;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="unhandledAttributes"></a><code>property <b>unhandledAttributes</b>: <a   href="ACBrMSXML2_TLB.IVBSAXAttributes.html">IVBSAXAttributes</a> readonly dispid 1478;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:45</em>
+</span>
+</body></html>

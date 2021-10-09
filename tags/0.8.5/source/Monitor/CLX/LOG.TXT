@@ -1,0 +1,8983 @@
+Exception: A impressora: Sweda requer
+Porta Serial:  (COM1, COM2, COM3, ...)
+Exception: A impressora: Sweda requer
+Porta Serial:  (COM1, COM2, COM3, ...)
+Exception: A impressora: Sweda requer
+Porta Serial:  (COM1, COM2, COM3, ...)
+
+ACBr Monitor Ver.ACBrMonitor 0.6a - ACBr: 0.8.5b
+Conectado em: 02/10/06 11:46:04
+Máquina: 127.0.0.1
+Esperando por comandos.
+Exception: Communication error 5: Acesso negado
+ECF.Ativar
+OK: .+C001G250515960002000204401.6                                                                                                 }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estDesconhecido
+ECF.Ativar
+OK: .+0042000E        19N000000000000000000000000!0610061125N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaRelatorio
+OK: .+0042000E        19N000000000000000000000000!0610061125N                                   001NN000000000000000000000000NNNN  }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("ULTRA CARD")
+ERRO: Forma de Pagamento: ULTRA CARD não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+ERRO: Forma de Pagamento: A PRAZO não encontrada
+ECF.Ativar
+OK: .+T001D                                                                                                                        }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estDesconhecido
+ECF.Ativar
+OK: .+0042000E        19N000000000000000000000000!0610061126N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaRelatorio
+OK: .+0042000E        19N000000000000000000000000!0610061126N                                   001NN000000000000000000000000NNNN  }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("ULTRA CARD")
+ERRO: Forma de Pagamento: ULTRA CARD não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+ERRO: Forma de Pagamento: A PRAZO não encontrada
+ECF.Ativar
+OK: .+C001G250515960002000204401.6                                                                                                 }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estDesconhecido
+ECF.Ativar
+OK: .+0042000E        19N000000000000000000000000!0610061130N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaRelatorio
+OK: .+0042000E        19N000000000000000000000000!0610061130N                                   001NN000000000000000000000000NNNN  }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("ULTRA CARD")
+ERRO: Forma de Pagamento: ULTRA CARD não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+ERRO: Forma de Pagamento: A PRAZO não encontrada
+ECF.Ativar
+OK: .+T001D                                                                                                                        }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estDesconhecido
+ECF.Ativar
+OK: .+0042000E        19N000000000000000000000000!0610061130N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaRelatorio
+OK: .+0042000E        19N000000000000000000000000!0610061130N                                   001NN000000000000000000000000NNNN  }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("ULTRA CARD")
+ERRO: Forma de Pagamento: ULTRA CARD não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+ERRO: Forma de Pagamento: A PRAZO não encontrada
+ECF.Ativar
+OK: .+T001D                                                                                                                        }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estDesconhecido
+ECF.Ativar
+OK: .+0042000E        19N000000000000000000000000!0610061131N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaRelatorio
+OK: .+0042000E        19N000000000000000000000000!0610061131N                                   001NN000000000000000000000000NNNN  }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.Ativar
+OK: .+T001D                                                                                                                        }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estDesconhecido
+ECF.Ativar
+OK: .+0042000E        19N000000000000000000000000!0610061133N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaRelatorio
+OK: .+0042000E        19N000000000000000000000000!0610061133N                                   001NN000000000000000000000000NNNN  }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("ULTRA CARD")
+ERRO: Forma de Pagamento: ULTRA CARD não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+ERRO: Forma de Pagamento: A PRAZO não encontrada
+ECF.TestaPodeAbrirCupom
+ERRO: Estado da impressora Sweda 7000-I / 9000-I (C) não é Livre
+ECF.NumCupom
+OK: 002519
+ECF.CancelaCupom
+ERRO: Erro retornado pela Impressora: Sweda 7000-I / 9000-I (C)
+
+ERRO-CANC: NAO HOUVE LANCAMENTO
+ECF.TestaPodeAbrirCupom
+ERRO: Estado da impressora Sweda 7000-I / 9000-I (C) não é Livre
+ECF.TestaPodeAbrirCupom
+ERRO: Impressora nao foi Inicializada (Ativo = false)
+ECF.Ativar
+OK: .+C001G250515960002000204401.6                                                                                                 }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estDesconhecido
+ECF.Ativar
+OK: .+0042000E        05N000000000000000000000000!0610061143N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaRelatorio
+OK: .+0042000E        05N000000000000000000000000!0610061143N                                   001NN000000000000000000000000NNNN  }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("ULTRA CARD")
+ERRO: Forma de Pagamento: ULTRA CARD não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+ERRO: Forma de Pagamento: A PRAZO não encontrada
+ECF.TestaPodeAbrirCupom
+ERRO: Estado da impressora Sweda 7000-I / 9000-I (C) é estDesconhecido (não é Livre)
+ECF.TestaPodeAbrirCupom
+ERRO: Impressora nao foi Inicializada (Ativo = false)
+ECF.Ativar
+OK: .+C001G250515960002000204401.6                                                                                                 }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estDesconhecido
+ECF.Ativar
+OK: .+0042000E        05N000000000000000000000000!0610061147N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaRelatorio
+OK: .+0042000E        05N000000000000000000000000!0610061147N                                   001NN000000000000000000000000NNNN  }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("ULTRA CARD")
+ERRO: Forma de Pagamento: ULTRA CARD não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+ERRO: Forma de Pagamento: A PRAZO não encontrada
+ECF.TestaPodeAbrirCupom
+ERRO: Estado da impressora Sweda 7000-I / 9000-I (C) é 
+estDesconhecido (não é Livre)
+ECF.TestaPodeAbrirCupom
+ERRO: Estado da impressora Sweda 7000-I / 9000-I (C) é 
+estDesconhecido (não é Livre)
+ECF.LeituraX
+OK: .+0001}
+ECF.TestaPodeAbrirCupom
+OK: .+0001000CLEIT. X 13N000000000000000000000000!0610061150N                                   001NN000000000000000000000000SNNN  }
+ECF.DataHora
+OK: 06/10/06 11:50:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002520
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002520
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002520
+ECF.Estado
+OK: estLivre
+ECF.TestaPodeAbrirCupom
+OK: .+0001000CLEIT. X 13N000000000000000000000000!0610061150N                                   001NN000000000000000000000000SNNN  }
+ECF.DataHora
+OK: 06/10/06 11:50:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002520
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002520
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002520
+ECF.Estado
+OK: estLivre
+ECF.TestaPodeAbrirCupom
+OK: .+0001000CLEIT. X 13N000000000000000000000000!0610061151N                                   001NN000000000000000000000000SNNN  }
+ECF.DataHora
+OK: 06/10/06 11:51:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002520
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002520
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002520
+ECF.Estado
+OK: estLivre
+ECF.TestaPodeAbrirCupom
+OK: .+0001000CLEIT. X 13N000000000000000000000000!0610061151N                                   001NN000000000000000000000000SNNN  }
+ECF.DataHora
+OK: 06/10/06 11:51:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002520
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002520
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002520
+ECF.Estado
+OK: estLivre
+ECF.TestaPodeAbrirCupom
+OK: .+0001000CLEIT. X 13N000000000000000000000000!0610061151N                                   001NN000000000000000000000000SNNN  }
+ECF.DataHora
+OK: 06/10/06 11:51:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002520
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002520
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002520
+ECF.Estado
+OK: estLivre
+ECF.CarregaAliquotas
+OK: T01 T2,44|T02 T3,00|T03 T3,11|T04 T2,16
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.Estado
+OK: estVenda
+ECF.VendeItem("02545454", "CHICLE (VAREJO)", 2.16, 1.000, 0.05, 0.00, "UN")
+OK: .+0002}
+ECF.SubTotalizaCupom(0.00)
+OK: .+0003}
+ECF.SubTotal
+OK: 0,05
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 0,05
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.NumCupom
+OK: 002521
+ECF.Estado
+OK: estPagamento
+ECF.EfetuaPagamento("07", 0.05, "", TRUE)
+OK: .+0004001P VENDAS 10N000000000005000000000005!0610061154N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaCupom("00000-VENDAS A VISTA                            |TESTE                                           |------------------------------------------------|*****D.J.SYSTEM INFORMATICA - (15)251-6020-*****|")
+OK: .+0005001C VENDAS 12N000000000005000000000005!0610061154N                                   001NN000000000000000000000000NNNN  }
+ECF.Ativar
+OK: .+0005001C VENDAS 12N000000000005000000000005!0610061154N                                   001NN000000000000000000000000NNNN  }
+ECF.AbreCupomVinculado("002521", "07", 0.05)
+OK: .+0001000PN.FISCAL19N000000000000000000000000!0610061154N                                   001NN000000000000000000000000NNNS  }
+ECF.LinhaCupomVinculado("          REDECARD||||TERMINAL No.          RD000000|ESTAB. No.     000000009999999|------------------------------|                      VENDA-CR|111111111111111|DATA/HORA             VALIDADE|06/10/06  11:38:16      11/11|AUTENT:|060002|C.V.:                 AUTORIZ.|2                      123456|------------------------------||###   OPERACAO SIMULADA    ###|###   NENHUM VALOR SERA    ###|### CREDITADO OU DEBITADO  ###||APROVADO||VALOR: 5||||ASSINATURA DO CLIENTE||RECONHECO E PAGAREI A|DIVIDA AQUI APRESENTADA||                      (SiTef)")
+OK: .+0034}
+ECF.FechaRelatorio
+OK: .+0034}
+ECF.CancelaCupom
+ERRO: Erro retornado pela Impressora: Sweda 7000-I / 9000-I (C)
+
+ERRO-CANC: NAO HOUVE LANCAMENTO
+ECF.Ativar
+OK: .-0034ERRO-CANC: NAO HOUVE LANCAMENTO}
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estRelatorio
+ECF.Ativar
+OK: .+0034000E        05N000000000000000000000000!0610061158N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaRelatorio
+OK: .+0034000E        05N000000000000000000000000!0610061158N                                   001NN000000000000000000000000NNNN  }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("ULTRA CARD")
+ERRO: Forma de Pagamento: ULTRA CARD não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+ERRO: Forma de Pagamento: A PRAZO não encontrada
+ECF.Ativar
+OK: .+T001D                                                                                                                        }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estRelatorio
+ECF.Ativar
+OK: .+0034000E        05N000000000000000000000000!0610061203N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaRelatorio
+OK: .+0034000E        05N000000000000000000000000!0610061203N                                   001NN000000000000000000000000NNNN  }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("ULTRA CARD")
+ERRO: Forma de Pagamento: ULTRA CARD não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+ERRO: Forma de Pagamento: A PRAZO não encontrada
+ECF.Ativar
+OK: .+T001D                                                                                                                        }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estRelatorio
+ECF.Ativar
+OK: .+0034000E        05N000000000000000000000000!0610061222N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaRelatorio
+OK: .+0034000E        05N000000000000000000000000!0610061222N                                   001NN000000000000000000000000NNNN  }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("ULTRA CARD")
+ERRO: Forma de Pagamento: ULTRA CARD não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+ERRO: Forma de Pagamento: A PRAZO não encontrada
+ECF.TestaPodeAbrirCupom
+ERRO: Estado da impressora Sweda 7000-I / 9000-I (C) é 
+estRelatorio (não é Livre)
+ECF.NumCupom
+OK: 002522
+ECF.CancelaCupom
+ERRO: Erro retornado pela Impressora: Sweda 7000-I / 9000-I (C)
+
+ERRO-CANC: NAO HOUVE LANCAMENTO
+ECF.TestaPodeAbrirCupom
+ERRO: Estado da impressora Sweda 7000-I / 9000-I (C) é 
+estRelatorio (não é Livre)
+ECF.Ativar
+OK: .+C001G250515960002000204471.6                                                                                                 }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estLivre
+ECF.Ativar
+OK: .+0030000CLEIT. X 08N000000000000000000000000!0610061305N                                   001NN000000000000000000000000SNNN  }
+ECF.FechaRelatorio
+OK: .+0030000CLEIT. X 08N000000000000000000000000!0610061305N                                   001NN000000000000000000000000SNNN  }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("ULTRA CARD")
+ERRO: Forma de Pagamento: ULTRA CARD não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+ERRO: Forma de Pagamento: A PRAZO não encontrada
+ECF.TestaPodeAbrirCupom
+OK: .+0030000CLEIT. X 08N000000000000000000000000!0610061306N                                   001NN000000000000000000000000SNNN  }
+ECF.DataHora
+OK: 06/10/06 13:06:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002528
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002528
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002528
+ECF.Estado
+OK: estLivre
+ECF.CarregaAliquotas
+OK: T01 T2,44|T02 T3,00|T03 T3,11|T04 T2,16
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.Estado
+OK: estVenda
+ECF.VendeItem("02545454", "CHICLE (VAREJO)", 2.16, 1.000, 0.05, 0.00, "UN")
+OK: .+0002}
+ECF.SubTotalizaCupom(0.00)
+OK: .+0003}
+ECF.SubTotal
+OK: 0,05
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 0,05
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.NumCupom
+OK: 002529
+ECF.Estado
+OK: estPagamento
+ECF.EfetuaPagamento("07", 0.05, "", TRUE)
+OK: .+0004001P VENDAS 10N000000000005000000000005!0610061308N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaCupom("00000-VENDAS A VISTA                            |teste TEF                                       |------------------------------------------------|*****D.J.SYSTEM INFORMATICA - (15)251-6020-*****|")
+OK: .+0005001C VENDAS 12N000000000005000000000005!0610061308N                                   001NN000000000000000000000000NNNN  }
+ECF.Ativar
+OK: .+0005001C VENDAS 12N000000000005000000000005!0610061308N                                   001NN000000000000000000000000NNNN  }
+ECF.AbreCupomVinculado("002529", "07", 0.05)
+OK: .+0001000PN.FISCAL19N000000000000000000000000!0610061308N                                   001NN000000000000000000000000NNNS  }
+ECF.LinhaCupomVinculado("          REDECARD||||TERMINAL No.          RD000000|ESTAB. No.     000000009999999|------------------------------|                      VENDA-CR|1111111111111111111|DATA/HORA             VALIDADE|06/10/06  12:52:08      11/11|AUTENT:|060004|C.V.:                 AUTORIZ.|4                      123456|------------------------------||###   OPERACAO SIMULADA    ###|###   NENHUM VALOR SERA    ###|### CREDITADO OU DEBITADO  ###||APROVADO||VALOR: 5||||ASSINATURA DO CLIENTE||RECONHECO E PAGAREI A|DIVIDA AQUI APRESENTADA||                      (SiTef)")
+OK: .+0034}
+ECF.LinhaCupomVinculado(" | | | | | |")
+OK: .+0040}
+ECF.LinhaCupomVinculado("          REDECARD||||TERMINAL No.          RD000000|ESTAB. No.     000000009999999|------------------------------|                      VENDA-CR|1111111111111111111|DATA/HORA             VALIDADE|06/10/06  12:52:08      11/11|AUTENT:|060004|C.V.:                 AUTORIZ.|4                      123456|------------------------------||###   OPERACAO SIMULADA    ###|###   NENHUM VALOR SERA    ###|### CREDITADO OU DEBITADO  ###||APROVADO||VALOR: 5||||ASSINATURA DO CLIENTE||RECONHECO E PAGAREI A|DIVIDA AQUI APRESENTADA||                      (SiTef)")
+OK: .+0073}
+ECF.FechaRelatorio
+OK: .+0073}
+ECF.CancelaCupom
+ERRO: Erro retornado pela Impressora: Sweda 7000-I / 9000-I (C)
+
+ERRO-CANC: NAO HOUVE LANCAMENTO
+ECF.TestaPodeAbrirCupom
+OK: .+0073000E        05N000000000000000000000000!0610061310N                                   001NN000000000000000000000000NNNN  }
+ECF.DataHora
+OK: 06/10/06 13:10:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002530
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002530
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002530
+ECF.Estado
+OK: estLivre
+ECF.TestaPodeAbrirCupom
+ERRO: Impressora nao foi Inicializada (Ativo = false)
+ECF.Ativar
+OK: .+C001G250515960002000204471.6                                                                                                 }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estLivre
+ECF.Ativar
+OK: .+0073000E        05N000000000000000000000000!0610061316N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaRelatorio
+OK: .+0073000E        05N000000000000000000000000!0610061316N                                   001NN000000000000000000000000NNNN  }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("ULTRA CARD")
+ERRO: Forma de Pagamento: ULTRA CARD não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+ERRO: Forma de Pagamento: A PRAZO não encontrada
+ECF.TestaPodeAbrirCupom
+OK: .+0073000E        05N000000000000000000000000!0610061316N                                   001NN000000000000000000000000NNNN  }
+ECF.DataHora
+OK: 06/10/06 13:16:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002530
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002530
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002530
+ECF.Estado
+OK: estLivre
+ECF.CarregaAliquotas
+OK: T01 T2,44|T02 T3,00|T03 T3,11|T04 T2,16
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.Estado
+OK: estVenda
+ECF.VendeItem("02545454", "CHICLE (VAREJO)", 2.16, 1.000, 0.05, 0.00, "UN")
+OK: .+0002}
+ECF.SubTotalizaCupom(0.00)
+OK: .+0003}
+ECF.SubTotal
+OK: 0,05
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 0,05
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.NumCupom
+OK: 002531
+ECF.Estado
+OK: estPagamento
+ECF.EfetuaPagamento("07", 0.05, "", TRUE)
+OK: .+0004001P VENDAS 10N000000000005000000000005!0610061317N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaCupom("00000-VENDAS A VISTA                            |------------------------------------------------|*****D.J.SYSTEM INFORMATICA - (15)251-6020-*****|")
+OK: 005000000000005!0610061318N                                   001NN000000000000000000000000NNNN  }
+ECF.Ativar
+OK: 005000000000005!0610061318N                                   001NN000000000000000000000000NNNN  }
+ECF.AbreCupomVinculado("002531", "07", 0.05)
+OK: .+0001000PN.FISCAL19N000000000000000000000000!0610061319N                                   001NN000000000000000000000000NNNS  }
+ECF.LinhaCupomVinculado("          REDECARD||||TERMINAL No.          RD000000|ESTAB. No.     000000009999999|------------------------------|                      VENDA-CR|1111111111111111|DATA/HORA             VALIDADE|06/10/06  13:01:54      11/11|AUTENT:|060006|C.V.:                 AUTORIZ.|6                      123456|------------------------------||###   OPERACAO SIMULADA    ###|###   NENHUM VALOR SERA    ###|### CREDITADO OU DEBITADO  ###||APROVADO||VALOR: 5||||ASSINATURA DO CLIENTE||RECONHECO E PAGAREI A|DIVIDA AQUI APRESENTADA||                      (SiTef)")
+OK: .+0034}
+ECF.LinhaCupomVinculado(" | | | | | |")
+OK: .+0040}
+ECF.LinhaCupomVinculado("          REDECARD||||TERMINAL No.          RD000000|ESTAB. No.     000000009999999|------------------------------|                      VENDA-CR|1111111111111111|DATA/HORA             VALIDADE|06/10/06  13:01:54      11/11|AUTENT:|060006|C.V.:                 AUTORIZ.|6                      123456|------------------------------||###   OPERACAO SIMULADA    ###|###   NENHUM VALOR SERA    ###|### CREDITADO OU DEBITADO  ###||APROVADO||VALOR: 5||||ASSINATURA DO CLIENTE||RECONHECO E PAGAREI A|DIVIDA AQUI APRESENTADA||                      (SiTef)")
+OK: .+0073}
+ECF.FechaRelatorio
+OK: .+0073}
+ECF.CancelaCupom
+ERRO: Erro retornado pela Impressora: Sweda 7000-I / 9000-I (C)
+
+ERRO-CANC: NAO HOUVE LANCAMENTO
+ECF.Ativar
+OK: .-0073ERRO-CANC: NAO HOUVE LANCAMENTO}
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estLivre
+ECF.Ativar
+OK: .+0073000E        05N000000000000000000000000!0610061320N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaRelatorio
+OK: .+0073000E        05N000000000000000000000000!0610061320N                                   001NN000000000000000000000000NNNN  }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("ULTRA CARD")
+ERRO: Forma de Pagamento: ULTRA CARD não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+ERRO: Forma de Pagamento: A PRAZO não encontrada
+ECF.Ativar
+OK: .+T001D                                                                                                                        }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estLivre
+ECF.Ativar
+OK: .+0073000E        05N000000000000000000000000!0610061322N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaRelatorio
+OK: .+0073000E        05N000000000000000000000000!0610061322N                                   001NN000000000000000000000000NNNN  }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("ULTRA CARD")
+ERRO: Forma de Pagamento: ULTRA CARD não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+ERRO: Forma de Pagamento: A PRAZO não encontrada
+ECF.TestaPodeAbrirCupom
+OK: .+0073000E        05N000000000000000000000000!0610061322N                                   001NN000000000000000000000000NNNN  }
+ECF.DataHora
+OK: 06/10/06 13:22:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002532
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002532
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002532
+ECF.Estado
+OK: estLivre
+ECF.CarregaAliquotas
+OK: T01 T2,44|T02 T3,00|T03 T3,11|T04 T2,16
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.Estado
+OK: estVenda
+ECF.VendeItem("02545454", "CHICLE (VAREJO)", 2.16, 1.000, 0.05, 0.00, "UN")
+OK: .+0002}
+ECF.SubTotalizaCupom(0.00)
+OK: .+0003}
+ECF.SubTotal
+OK: 0,05
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 0,05
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.EfetuaPagamento("01", 0.05, "", FALSE)
+OK: .+0004001P VENDAS 10N000000000005000000000005!0610061323N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaCupom("00000-VENDAS A VISTA                            |------------------------------------------------|*****D.J.SYSTEM INFORMATICA - (15)251-6020-*****|")
+OK: .+0005001C VENDAS 12N000000000005000000000005!0610061323N                                   001NN000000000000000000000000NNNN  }
+ECF.NumCupom
+OK:       
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002533
+ECF.Estado
+OK: estLivre
+ECF.TestaPodeAbrirCupom
+OK: .+0005001C VENDAS 12N000000000005000000000005!0610061324N                                   001NN000000000000000000000000NNNN  }
+ECF.DataHora
+OK: 06/10/06 13:24:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002533
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002533
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002533
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.Estado
+OK: estVenda
+ECF.VendeItem("02545454", "CHICLE (VAREJO)", 2.16, 1.000, 0.05, 0.00, "UN")
+OK: .+0002}
+ECF.SubTotalizaCupom(0.00)
+OK: .+0003}
+ECF.SubTotal
+OK: 0,05
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 0,05
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.EfetuaPagamento("01", 0.05, "", FALSE)
+OK: .+0004001P VENDAS 10N000000000005000000000005!0610061324N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaCupom("00000-VENDAS A VISTA                            |------------------------------------------------|*****D.J.SYSTEM INFORMATICA - (15)251-6020-*****|")
+OK: .+0005001C VENDAS 12N000000000005000000000005!0610061324N                                   001NN000000000000000000000000NNNN  }
+ECF.NumCupom
+OK:       
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK:       
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK:       
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.Estado
+OK: estVenda
+ECF.VendeItem("02545454", "CHICLE (VAREJO)", 2.16, 1.000, 0.05, 0.00, "UN")
+OK: .+0002}
+ECF.SubTotalizaCupom(0.00)
+OK: .+0003}
+ECF.SubTotal
+OK: 0,05
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 0,05
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.AchaFPGDescricao("CARTAO")
+OK: 07  VCARTAO                        
+ECF.NumCupom
+OK: 002535
+ECF.Estado
+OK: estPagamento
+ECF.EfetuaPagamento("07", 0.05, "", TRUE)
+OK: .+0004001P VENDAS 10N000000000005000000000005!0610061326N                                   001NN000000000000000000000000NNNN  }
+ECF.FechaCupom("00000-VENDAS A VISTA                            |TESTE TEF                                       |------------------------------------------------|*****D.J.SYSTEM INFORMATICA - (15)251-6020-*****|")
+OK: NDAS 12N000000000005000000000005!0610061326N                                   001NN000000000000000000000000NNNN  }
+ECF.Ativar
+OK: NDAS 12N000000000005000000000005!0610061326N                                   001NN000000000000000000000000NNNN  }
+ECF.AbreCupomVinculado("002535", "07", 0.05)
+OK: .+0001000PN.FISCAL19N000000000000000000000000!0610061326N                                   001NN000000000000000000000000NNNS  }
+ECF.LinhaCupomVinculado("          REDECARD||||TERMINAL No.          RD000000|ESTAB. No.     000000009999999|------------------------------|                      VENDA-CR|11111111111111111|DATA/HORA             VALIDADE|06/10/06  13:10:12      11/11|AUTENT:|060008|C.V.:                 AUTORIZ.|8                      123456|------------------------------||###   OPERACAO SIMULADA    ###|###   NENHUM VALOR SERA    ###|### CREDITADO OU DEBITADO  ###||APROVADO||VALOR: 5||||ASSINATURA DO CLIENTE||RECONHECO E PAGAREI A|DIVIDA AQUI APRESENTADA||                      (SiTef)")
+OK: .+0034}
+ECF.LinhaCupomVinculado(" | | | | | |")
+OK: .+0040}
+ECF.LinhaCupomVinculado("          REDECARD||||TERMINAL No.          RD000000|ESTAB. No.     000000009999999|------------------------------|                      VENDA-CR|11111111111111111|DATA/HORA             VALIDADE|06/10/06  13:10:12      11/11|AUTENT:|060008|C.V.:                 AUTORIZ.|8                      123456|------------------------------||###   OPERACAO SIMULADA    ###|###   NENHUM VALOR SERA    ###|### CREDITADO OU DEBITADO  ###||APROVADO||VALOR: 5||||ASSINATURA DO CLIENTE||RECONHECO E PAGAREI A|DIVIDA AQUI APRESENTADA||                      (SiTef)")
+OK: .+0073}
+ECF.FechaRelatorio
+OK: .+0073}
+ECF.NumCupom
+OK: 002536
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002536
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 002536
+ECF.Estado
+OK: estLivre
+
+ACBr Monitor Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:08:46
+Máquina: 127.0.0.1
+Esperando por comandos.
+ecf.atiuvar
+ERRO: Comando inválido (ecf.atiuvar)
+
+ACBr Monitor Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:11:16
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBr Monitor Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:13:33
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBr Monitor Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:13:46
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBr Monitor Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:13:59
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBr Monitor Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:13:59
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBr Monitor Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:14:34
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBr Monitor Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:14:35
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBr Monitor Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:15:55
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBr Monitor Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:16:08
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:20:56
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:22:16
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:26:30
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:27:28
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:28:01
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:32:02
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:32:46
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:33:10
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:33:31
+Máquina: 127.0.0.1
+Esperando por comandos.
+ECF.Ativar
+ERRO: Communication error 5: Erro de entrada/saída
+ECF.TestaPodeAbrirCupom
+ERRO: Impressora nao foi Inicializada (Ativo = false)
+ECF.FechaRelatorio
+ERRO: Componente ACBrECF não está Ativo
+ECF.NumECF
+ERRO: Componente ACBrECF não está Ativo
+ECF.NumSerie
+ERRO: Componente ACBrECF não está Ativo
+ECF.DataHora
+ERRO: Componente ACBrECF não está Ativo
+ECF.DataHora
+ERRO: Componente ACBrECF não está Ativo
+ECF.SubTotal
+ERRO: Componente ACBrECF não está Ativo
+ECF.CarregaAliquotas
+ERRO: Componente ACBrECF não está Ativo
+ECF.AchaFPGDescricao("DINHEIRO")
+ERRO: Componente ACBrECF não está Ativo
+ECF.AchaFPGDescricao("CHEQUE")
+ERRO: Forma de Pagamento: CHEQUE não encontrada
+ECF.AchaFPGDescricao("Get")
+ERRO: Forma de Pagamento: Get não encontrada
+ECF.AchaFPGDescricao("DADADA")
+ERRO: Forma de Pagamento: DADADA não encontrada
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:34:39
+Máquina: 127.0.0.1
+Esperando por comandos.
+ECF.Ativar
+ERRO: Communication error 5: Erro de entrada/saída
+ECF.TestaPodeAbrirCupom
+ERRO: Impressora nao foi Inicializada (Ativo = false)
+ECF.FechaRelatorio
+ERRO: Componente ACBrECF não está Ativo
+ECF.NumECF
+ERRO: Componente ACBrECF não está Ativo
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:34:53
+Máquina: 127.0.0.1
+Esperando por comandos.
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:35:19
+Máquina: 127.0.0.1
+Esperando por comandos.
+ECF.Ativar
+OK: 
+ECF.TestaPodeAbrirCupom
+ERRO: Redução Z de dia anterior não emitida.
+ Imprima uma Redução Z para poder vender
+ECF.FechaRelatorio
+OK: 
+ECF.NumECF
+OK: 001
+ECF.NumSerie
+OK: 210806121132
+ECF.DataHora
+OK: 08-10-06 17:35:23
+ECF.SubTotal
+OK: 11
+ECF.CarregaAliquotas
+OK: 01  T0,00|02  T0,00|03  T0,00|04  T18,00|05  T12,00|06  T2,16|07  S2,50
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:36:49
+Máquina: 127.0.0.1
+Esperando por comandos.
+ECF.Ativar
+OK: 
+ECF.TestaPodeAbrirCupom
+ERRO: Redução Z de dia anterior não emitida.
+ Imprima uma Redução Z para poder vender
+ECF.FechaRelatorio
+OK: 
+ECF.NumECF
+OK: 001
+ECF.NumSerie
+OK: 210806121132
+ECF.DataHora
+OK: 08-10-06 17:36:56
+ECF.SubTotal
+OK: 11
+ECF.CarregaAliquotas
+OK: 01  T0,00|02  T0,00|03  T0,00|04  T18,00|05  T12,00|06  T2,16|07  S2,50
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("CHEQUE")
+OK: 07  VCHEQUE                        
+ECF.AchaFPGDescricao("Get")
+OK: 03  VGET                           
+ECF.AchaFPGDescricao("DADADA")
+OK: 08  VDADADA                        
+ECF.NumCupom
+OK: 000040
+ECF.GavetaAberta
+OK: False
+ECF.AbreGaveta
+OK: 
+ECF.GavetaAberta
+OK: False
+ECF.TestaPodeAbrirCupom
+ERRO: Redução Z de dia anterior não emitida.
+ Imprima uma Redução Z para poder vender
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:38:58
+Máquina: 127.0.0.1
+Esperando por comandos.
+ECF.Ativar
+OK: 
+ECF.DataHora
+OK: 08-10-06 17:38:58
+ECF.DataHora
+OK: 08-10-06 17:38:58
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.NumECF
+OK: 001
+ECF.NumSerie
+OK: 210806121132
+ECF.NumVersao
+OK: 0.8.5b
+ECF.DataHora
+OK: 08-10-06 17:38:59
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:38:59
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:00
+ECF.DataHora
+OK: 08-10-06 17:39:00
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:01
+ECF.DataHora
+OK: 08-10-06 17:39:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:02
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:02
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:03
+ECF.DataHora
+OK: 08-10-06 17:39:03
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:03
+ECF.DataHora
+OK: 08-10-06 17:39:03
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:04
+ECF.DataHora
+OK: 08-10-06 17:39:04
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:05
+ECF.DataHora
+OK: 08-10-06 17:39:05
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:05
+ECF.DataHora
+OK: 08-10-06 17:39:05
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:06
+ECF.DataHora
+OK: 08-10-06 17:39:06
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:07
+ECF.DataHora
+OK: 08-10-06 17:39:07
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:07
+ECF.DataHora
+OK: 08-10-06 17:39:07
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:08
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:08
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:09
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:10
+ECF.DataHora
+OK: 08-10-06 17:39:10
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:10
+ECF.DataHora
+OK: 08-10-06 17:39:10
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:11
+ECF.DataHora
+OK: 08-10-06 17:39:11
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:11
+ECF.DataHora
+OK: 08-10-06 17:39:11
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:12
+ECF.DataHora
+OK: 08-10-06 17:39:12
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:13
+ECF.DataHora
+OK: 08-10-06 17:39:13
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:13
+ECF.DataHora
+OK: 08-10-06 17:39:13
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:14
+ECF.DataHora
+OK: 08-10-06 17:39:14
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:15
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:15
+ECF.DataHora
+OK: 08-10-06 17:39:15
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:16
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:16
+ECF.DataHora
+OK: 08-10-06 17:39:16
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:17
+ECF.DataHora
+OK: 08-10-06 17:39:17
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:18
+ECF.DataHora
+OK: 08-10-06 17:39:18
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:18
+ECF.DataHora
+OK: 08-10-06 17:39:18
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:19
+ECF.DataHora
+OK: 08-10-06 17:39:19
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:19
+ECF.DataHora
+OK: 08-10-06 17:39:19
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:39:38
+Máquina: 127.0.0.1
+Esperando por comandos.
+ECF.Ativar
+OK: 
+ECF.DataHora
+OK: 08-10-06 17:39:38
+ECF.DataHora
+OK: 08-10-06 17:39:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.NumECF
+OK: 001
+ECF.NumSerie
+OK: 210806121132
+ECF.NumVersao
+OK: 0.8.5b
+ECF.DataHora
+OK: 08-10-06 17:39:38
+ECF.DataHora
+OK: 08-10-06 17:39:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:38
+ECF.DataHora
+OK: 08-10-06 17:39:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:38
+ECF.DataHora
+OK: 08-10-06 17:39:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:39
+ECF.DataHora
+OK: 08-10-06 17:39:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:39
+ECF.DataHora
+OK: 08-10-06 17:39:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:39
+ECF.DataHora
+OK: 08-10-06 17:39:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:39
+ECF.DataHora
+OK: 08-10-06 17:39:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:39
+ECF.DataHora
+OK: 08-10-06 17:39:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:39
+ECF.DataHora
+OK: 08-10-06 17:39:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:40
+ECF.DataHora
+OK: 08-10-06 17:39:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:40
+ECF.DataHora
+OK: 08-10-06 17:39:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:40
+ECF.DataHora
+OK: 08-10-06 17:39:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:40
+ECF.DataHora
+OK: 08-10-06 17:39:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:40
+ECF.DataHora
+OK: 08-10-06 17:39:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:40
+ECF.DataHora
+OK: 08-10-06 17:39:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:41
+ECF.DataHora
+OK: 08-10-06 17:39:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:41
+ECF.DataHora
+OK: 08-10-06 17:39:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:41
+ECF.DataHora
+OK: 08-10-06 17:39:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:41
+ECF.DataHora
+OK: 08-10-06 17:39:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:41
+ECF.DataHora
+OK: 08-10-06 17:39:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:41
+ECF.DataHora
+OK: 08-10-06 17:39:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:42
+ECF.DataHora
+OK: 08-10-06 17:39:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:42
+ECF.DataHora
+OK: 08-10-06 17:39:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:42
+ECF.DataHora
+OK: 08-10-06 17:39:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:42
+ECF.DataHora
+OK: 08-10-06 17:39:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:43
+ECF.DataHora
+OK: 08-10-06 17:39:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:43
+ECF.DataHora
+OK: 08-10-06 17:39:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:43
+ECF.DataHora
+OK: 08-10-06 17:39:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:43
+ECF.DataHora
+OK: 08-10-06 17:39:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:44
+ECF.DataHora
+OK: 08-10-06 17:39:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:44
+ECF.DataHora
+OK: 08-10-06 17:39:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:44
+ECF.DataHora
+OK: 08-10-06 17:39:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:44
+ECF.DataHora
+OK: 08-10-06 17:39:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:44
+ECF.DataHora
+OK: 08-10-06 17:39:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:44
+ECF.DataHora
+OK: 08-10-06 17:39:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:45
+ECF.DataHora
+OK: 08-10-06 17:39:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:45
+ECF.DataHora
+OK: 08-10-06 17:39:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:45
+ECF.DataHora
+OK: 08-10-06 17:39:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:45
+ECF.DataHora
+OK: 08-10-06 17:39:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:45
+ECF.DataHora
+OK: 08-10-06 17:39:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:45
+ECF.DataHora
+OK: 08-10-06 17:39:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:46
+ECF.DataHora
+OK: 08-10-06 17:39:46
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:46
+ECF.DataHora
+OK: 08-10-06 17:39:46
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:46
+ECF.DataHora
+OK: 08-10-06 17:39:46
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:46
+ECF.DataHora
+OK: 08-10-06 17:39:46
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:46
+ECF.DataHora
+OK: 08-10-06 17:39:46
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:46
+ECF.DataHora
+OK: 08-10-06 17:39:47
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:47
+ECF.DataHora
+OK: 08-10-06 17:39:47
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:47
+ECF.DataHora
+OK: 08-10-06 17:39:47
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:47
+ECF.DataHora
+OK: 08-10-06 17:39:47
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:47
+ECF.DataHora
+OK: 08-10-06 17:39:47
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:47
+ECF.DataHora
+OK: 08-10-06 17:39:47
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:47
+ECF.DataHora
+OK: 08-10-06 17:39:48
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:48
+ECF.DataHora
+OK: 08-10-06 17:39:48
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:48
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:48
+ECF.DataHora
+OK: 08-10-06 17:39:48
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:48
+ECF.DataHora
+OK: 08-10-06 17:39:48
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:48
+ECF.DataHora
+OK: 08-10-06 17:39:48
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:49
+ECF.DataHora
+OK: 08-10-06 17:39:49
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:49
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:49
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:49
+ECF.DataHora
+OK: 08-10-06 17:39:49
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:49
+ECF.DataHora
+OK: 08-10-06 17:39:49
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:49
+ECF.DataHora
+OK: 08-10-06 17:39:49
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:49
+ECF.DataHora
+OK: 08-10-06 17:39:50
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:50
+ECF.DataHora
+OK: 08-10-06 17:39:50
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:50
+ECF.DataHora
+OK: 08-10-06 17:39:50
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:50
+ECF.DataHora
+OK: 08-10-06 17:39:50
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:50
+ECF.DataHora
+OK: 08-10-06 17:39:50
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:50
+ECF.DataHora
+OK: 08-10-06 17:39:50
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:51
+ECF.DataHora
+OK: 08-10-06 17:39:51
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:51
+ECF.DataHora
+OK: 08-10-06 17:39:51
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:51
+ECF.DataHora
+OK: 08-10-06 17:39:51
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:51
+ECF.DataHora
+OK: 08-10-06 17:39:51
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:51
+ECF.DataHora
+OK: 08-10-06 17:39:51
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:51
+ECF.DataHora
+OK: 08-10-06 17:39:51
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:52
+ECF.DataHora
+OK: 08-10-06 17:39:52
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:52
+ECF.DataHora
+OK: 08-10-06 17:39:52
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:52
+ECF.DataHora
+OK: 08-10-06 17:39:52
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:52
+ECF.DataHora
+OK: 08-10-06 17:39:52
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:52
+ECF.DataHora
+OK: 08-10-06 17:39:52
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:52
+ECF.DataHora
+OK: 08-10-06 17:39:52
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:53
+ECF.DataHora
+OK: 08-10-06 17:39:53
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:53
+ECF.DataHora
+OK: 08-10-06 17:39:53
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:53
+ECF.DataHora
+OK: 08-10-06 17:39:53
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:53
+ECF.DataHora
+OK: 08-10-06 17:39:53
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:53
+ECF.DataHora
+OK: 08-10-06 17:39:53
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:53
+ECF.DataHora
+OK: 08-10-06 17:39:53
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:54
+ECF.DataHora
+OK: 08-10-06 17:39:54
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:54
+ECF.DataHora
+OK: 08-10-06 17:39:54
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:54
+ECF.DataHora
+OK: 08-10-06 17:39:54
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:54
+ECF.DataHora
+OK: 08-10-06 17:39:54
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:54
+ECF.DataHora
+OK: 08-10-06 17:39:54
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:54
+ECF.DataHora
+OK: 08-10-06 17:39:54
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:55
+ECF.DataHora
+OK: 08-10-06 17:39:55
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:55
+ECF.DataHora
+OK: 08-10-06 17:39:55
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:55
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:55
+ECF.DataHora
+OK: 08-10-06 17:39:55
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:55
+ECF.DataHora
+OK: 08-10-06 17:39:55
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:55
+ECF.DataHora
+OK: 08-10-06 17:39:55
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:56
+ECF.DataHora
+OK: 08-10-06 17:39:56
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:56
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:56
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:56
+ECF.DataHora
+OK: 08-10-06 17:39:56
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:56
+ECF.DataHora
+OK: 08-10-06 17:39:56
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:56
+ECF.DataHora
+OK: 08-10-06 17:39:56
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:57
+ECF.DataHora
+OK: 08-10-06 17:39:57
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:57
+ECF.DataHora
+OK: 08-10-06 17:39:57
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:57
+ECF.DataHora
+OK: 08-10-06 17:39:57
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:57
+ECF.DataHora
+OK: 08-10-06 17:39:57
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:57
+ECF.DataHora
+OK: 08-10-06 17:39:57
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:57
+ECF.DataHora
+OK: 08-10-06 17:39:57
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:58
+ECF.DataHora
+OK: 08-10-06 17:39:58
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:58
+ECF.DataHora
+OK: 08-10-06 17:39:58
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:58
+ECF.DataHora
+OK: 08-10-06 17:39:58
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:58
+ECF.DataHora
+OK: 08-10-06 17:39:58
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:58
+ECF.DataHora
+OK: 08-10-06 17:39:58
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:58
+ECF.DataHora
+OK: 08-10-06 17:39:58
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:59
+ECF.DataHora
+OK: 08-10-06 17:39:59
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:59
+ECF.DataHora
+OK: 08-10-06 17:39:59
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:59
+ECF.DataHora
+OK: 08-10-06 17:39:59
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:59
+ECF.DataHora
+OK: 08-10-06 17:39:59
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:59
+ECF.DataHora
+OK: 08-10-06 17:39:59
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:39:59
+ECF.DataHora
+OK: 08-10-06 17:39:59
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:00
+ECF.DataHora
+OK: 08-10-06 17:40:00
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:00
+ECF.DataHora
+OK: 08-10-06 17:40:00
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:00
+ECF.DataHora
+OK: 08-10-06 17:40:00
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:00
+ECF.DataHora
+OK: 08-10-06 17:40:00
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:00
+ECF.DataHora
+OK: 08-10-06 17:40:00
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:00
+ECF.DataHora
+OK: 08-10-06 17:40:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:01
+ECF.DataHora
+OK: 08-10-06 17:40:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:01
+ECF.DataHora
+OK: 08-10-06 17:40:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:01
+ECF.DataHora
+OK: 08-10-06 17:40:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:01
+ECF.DataHora
+OK: 08-10-06 17:40:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:01
+ECF.DataHora
+OK: 08-10-06 17:40:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:01
+ECF.DataHora
+OK: 08-10-06 17:40:02
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:02
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:02
+ECF.DataHora
+OK: 08-10-06 17:40:02
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:02
+ECF.DataHora
+OK: 08-10-06 17:40:02
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:02
+ECF.DataHora
+OK: 08-10-06 17:40:02
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:02
+ECF.DataHora
+OK: 08-10-06 17:40:02
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:02
+ECF.DataHora
+OK: 08-10-06 17:40:03
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:03
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:03
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:03
+ECF.DataHora
+OK: 08-10-06 17:40:03
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:03
+ECF.DataHora
+OK: 08-10-06 17:40:03
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:03
+ECF.DataHora
+OK: 08-10-06 17:40:03
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:03
+ECF.DataHora
+OK: 08-10-06 17:40:03
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:04
+ECF.DataHora
+OK: 08-10-06 17:40:04
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:04
+ECF.DataHora
+OK: 08-10-06 17:40:04
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:04
+ECF.DataHora
+OK: 08-10-06 17:40:04
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:04
+ECF.DataHora
+OK: 08-10-06 17:40:04
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:04
+ECF.DataHora
+OK: 08-10-06 17:40:04
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:04
+ECF.DataHora
+OK: 08-10-06 17:40:04
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:05
+ECF.DataHora
+OK: 08-10-06 17:40:05
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:05
+ECF.DataHora
+OK: 08-10-06 17:40:05
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:05
+ECF.DataHora
+OK: 08-10-06 17:40:05
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:05
+ECF.DataHora
+OK: 08-10-06 17:40:05
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:05
+ECF.DataHora
+OK: 08-10-06 17:40:05
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:05
+ECF.DataHora
+OK: 08-10-06 17:40:06
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:06
+ECF.DataHora
+OK: 08-10-06 17:40:06
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:06
+ECF.DataHora
+OK: 08-10-06 17:40:06
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:06
+ECF.DataHora
+OK: 08-10-06 17:40:06
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:06
+ECF.DataHora
+OK: 08-10-06 17:40:06
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:06
+ECF.DataHora
+OK: 08-10-06 17:40:06
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:07
+ECF.DataHora
+OK: 08-10-06 17:40:07
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:07
+ECF.DataHora
+OK: 08-10-06 17:40:07
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:07
+ECF.DataHora
+OK: 08-10-06 17:40:07
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:07
+ECF.DataHora
+OK: 08-10-06 17:40:07
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:07
+ECF.DataHora
+OK: 08-10-06 17:40:07
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:07
+ECF.DataHora
+OK: 08-10-06 17:40:07
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:08
+ECF.DataHora
+OK: 08-10-06 17:40:08
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:08
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:08
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:08
+ECF.DataHora
+OK: 08-10-06 17:40:08
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:08
+ECF.DataHora
+OK: 08-10-06 17:40:08
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:08
+ECF.DataHora
+OK: 08-10-06 17:40:08
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:08
+ECF.DataHora
+OK: 08-10-06 17:40:09
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:09
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:09
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:09
+ECF.DataHora
+OK: 08-10-06 17:40:09
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:09
+ECF.DataHora
+OK: 08-10-06 17:40:09
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:09
+ECF.DataHora
+OK: 08-10-06 17:40:09
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:09
+ECF.DataHora
+OK: 08-10-06 17:40:09
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:10
+ECF.DataHora
+OK: 08-10-06 17:40:10
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:10
+ECF.DataHora
+OK: 08-10-06 17:40:10
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:10
+ECF.DataHora
+OK: 08-10-06 17:40:10
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:10
+ECF.DataHora
+OK: 08-10-06 17:40:10
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:10
+ECF.DataHora
+OK: 08-10-06 17:40:10
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:10
+ECF.DataHora
+OK: 08-10-06 17:40:11
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:11
+ECF.DataHora
+OK: 08-10-06 17:40:11
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:11
+ECF.DataHora
+OK: 08-10-06 17:40:11
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:11
+ECF.DataHora
+OK: 08-10-06 17:40:11
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:11
+ECF.DataHora
+OK: 08-10-06 17:40:11
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:11
+ECF.DataHora
+OK: 08-10-06 17:40:11
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:11
+ECF.DataHora
+OK: 08-10-06 17:40:12
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:12
+ECF.DataHora
+OK: 08-10-06 17:40:12
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:12
+ECF.DataHora
+OK: 08-10-06 17:40:12
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:12
+ECF.DataHora
+OK: 08-10-06 17:40:12
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:12
+ECF.DataHora
+OK: 08-10-06 17:40:12
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:12
+ECF.DataHora
+OK: 08-10-06 17:40:12
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:13
+ECF.DataHora
+OK: 08-10-06 17:40:13
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:13
+ECF.DataHora
+OK: 08-10-06 17:40:13
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:13
+ECF.DataHora
+OK: 08-10-06 17:40:13
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:13
+ECF.DataHora
+OK: 08-10-06 17:40:13
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:13
+ECF.DataHora
+OK: 08-10-06 17:40:13
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:13
+ECF.DataHora
+OK: 08-10-06 17:40:13
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:14
+ECF.DataHora
+OK: 08-10-06 17:40:14
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:14
+ECF.DataHora
+OK: 08-10-06 17:40:14
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:14
+ECF.DataHora
+OK: 08-10-06 17:40:14
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:14
+ECF.DataHora
+OK: 08-10-06 17:40:14
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:14
+ECF.DataHora
+OK: 08-10-06 17:40:14
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:14
+ECF.DataHora
+OK: 08-10-06 17:40:14
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:15
+ECF.DataHora
+OK: 08-10-06 17:40:15
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:15
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:15
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:15
+ECF.DataHora
+OK: 08-10-06 17:40:15
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:15
+ECF.DataHora
+OK: 08-10-06 17:40:15
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:15
+ECF.DataHora
+OK: 08-10-06 17:40:15
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:16
+ECF.DataHora
+OK: 08-10-06 17:40:16
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:16
+ECF.DataHora
+OK: 08-10-06 17:40:16
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:16
+ECF.DataHora
+OK: 08-10-06 17:40:16
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:16
+ECF.DataHora
+OK: 08-10-06 17:40:16
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:16
+ECF.DataHora
+OK: 08-10-06 17:40:16
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:16
+ECF.DataHora
+OK: 08-10-06 17:40:16
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:17
+ECF.DataHora
+OK: 08-10-06 17:40:17
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:17
+ECF.DataHora
+OK: 08-10-06 17:40:17
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:17
+ECF.DataHora
+OK: 08-10-06 17:40:17
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:17
+ECF.DataHora
+OK: 08-10-06 17:40:17
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:17
+ECF.DataHora
+OK: 08-10-06 17:40:17
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:17
+ECF.DataHora
+OK: 08-10-06 17:40:17
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:18
+ECF.DataHora
+OK: 08-10-06 17:40:18
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:18
+ECF.DataHora
+OK: 08-10-06 17:40:18
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:18
+ECF.DataHora
+OK: 08-10-06 17:40:18
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:18
+ECF.DataHora
+OK: 08-10-06 17:40:18
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:18
+ECF.DataHora
+OK: 08-10-06 17:40:18
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:18
+ECF.DataHora
+OK: 08-10-06 17:40:18
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:19
+ECF.DataHora
+OK: 08-10-06 17:40:19
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:19
+ECF.DataHora
+OK: 08-10-06 17:40:19
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:19
+ECF.DataHora
+OK: 08-10-06 17:40:19
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:19
+ECF.DataHora
+OK: 08-10-06 17:40:19
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:19
+ECF.DataHora
+OK: 08-10-06 17:40:19
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:19
+ECF.DataHora
+OK: 08-10-06 17:40:19
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:20
+ECF.DataHora
+OK: 08-10-06 17:40:20
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:20
+ECF.DataHora
+OK: 08-10-06 17:40:20
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:20
+ECF.DataHora
+OK: 08-10-06 17:40:20
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:20
+ECF.DataHora
+OK: 08-10-06 17:40:20
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:20
+ECF.DataHora
+OK: 08-10-06 17:40:20
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:20
+ECF.DataHora
+OK: 08-10-06 17:40:21
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:21
+ECF.DataHora
+OK: 08-10-06 17:40:21
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:21
+ECF.DataHora
+OK: 08-10-06 17:40:21
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:21
+ECF.DataHora
+OK: 08-10-06 17:40:21
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:21
+ECF.DataHora
+OK: 08-10-06 17:40:21
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:21
+ECF.DataHora
+OK: 08-10-06 17:40:21
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:21
+ECF.DataHora
+OK: 08-10-06 17:40:22
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:22
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:22
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:22
+ECF.DataHora
+OK: 08-10-06 17:40:22
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:22
+ECF.DataHora
+OK: 08-10-06 17:40:22
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:22
+ECF.DataHora
+OK: 08-10-06 17:40:22
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:22
+ECF.DataHora
+OK: 08-10-06 17:40:22
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:23
+ECF.DataHora
+OK: 08-10-06 17:40:23
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:23
+ECF.DataHora
+OK: 08-10-06 17:40:23
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:23
+ECF.DataHora
+OK: 08-10-06 17:40:23
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:23
+ECF.DataHora
+OK: 08-10-06 17:40:23
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:23
+ECF.DataHora
+OK: 08-10-06 17:40:23
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:23
+ECF.DataHora
+OK: 08-10-06 17:40:23
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:24
+ECF.DataHora
+OK: 08-10-06 17:40:24
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:24
+ECF.DataHora
+OK: 08-10-06 17:40:24
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:24
+ECF.DataHora
+OK: 08-10-06 17:40:24
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:24
+ECF.DataHora
+OK: 08-10-06 17:40:24
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:24
+ECF.DataHora
+OK: 08-10-06 17:40:24
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:24
+ECF.DataHora
+OK: 08-10-06 17:40:25
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:25
+ECF.DataHora
+OK: 08-10-06 17:40:25
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:25
+ECF.DataHora
+OK: 08-10-06 17:40:25
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:25
+ECF.DataHora
+OK: 08-10-06 17:40:25
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:25
+ECF.DataHora
+OK: 08-10-06 17:40:25
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:25
+ECF.DataHora
+OK: 08-10-06 17:40:25
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:26
+ECF.DataHora
+OK: 08-10-06 17:40:26
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:26
+ECF.DataHora
+OK: 08-10-06 17:40:26
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:26
+ECF.DataHora
+OK: 08-10-06 17:40:26
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:26
+ECF.DataHora
+OK: 08-10-06 17:40:26
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:26
+ECF.DataHora
+OK: 08-10-06 17:40:26
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:26
+ECF.DataHora
+OK: 08-10-06 17:40:26
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:27
+ECF.DataHora
+OK: 08-10-06 17:40:27
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:27
+ECF.DataHora
+OK: 08-10-06 17:40:27
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:27
+ECF.DataHora
+OK: 08-10-06 17:40:27
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:27
+ECF.DataHora
+OK: 08-10-06 17:40:27
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:27
+ECF.DataHora
+OK: 08-10-06 17:40:27
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:27
+ECF.DataHora
+OK: 08-10-06 17:40:27
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:28
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:28
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:28
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:28
+ECF.DataHora
+OK: 08-10-06 17:40:28
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:28
+ECF.DataHora
+OK: 08-10-06 17:40:28
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:28
+ECF.DataHora
+OK: 08-10-06 17:40:28
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:28
+ECF.DataHora
+OK: 08-10-06 17:40:28
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:29
+ECF.DataHora
+OK: 08-10-06 17:40:29
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:29
+ECF.DataHora
+OK: 08-10-06 17:40:29
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:29
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:29
+ECF.DataHora
+OK: 08-10-06 17:40:29
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:29
+ECF.DataHora
+OK: 08-10-06 17:40:29
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:29
+ECF.DataHora
+OK: 08-10-06 17:40:29
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:30
+ECF.DataHora
+OK: 08-10-06 17:40:30
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:30
+ECF.DataHora
+OK: 08-10-06 17:40:30
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:30
+ECF.DataHora
+OK: 08-10-06 17:40:30
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:30
+ECF.DataHora
+OK: 08-10-06 17:40:30
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:30
+ECF.DataHora
+OK: 08-10-06 17:40:30
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:30
+ECF.DataHora
+OK: 08-10-06 17:40:31
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:31
+ECF.DataHora
+OK: 08-10-06 17:40:31
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:31
+ECF.DataHora
+OK: 08-10-06 17:40:31
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:31
+ECF.DataHora
+OK: 08-10-06 17:40:31
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:31
+ECF.DataHora
+OK: 08-10-06 17:40:31
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:31
+ECF.DataHora
+OK: 08-10-06 17:40:31
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:31
+ECF.DataHora
+OK: 08-10-06 17:40:32
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:32
+ECF.DataHora
+OK: 08-10-06 17:40:32
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:32
+ECF.DataHora
+OK: 08-10-06 17:40:32
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:32
+ECF.DataHora
+OK: 08-10-06 17:40:32
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:32
+ECF.DataHora
+OK: 08-10-06 17:40:32
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:32
+ECF.DataHora
+OK: 08-10-06 17:40:32
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:33
+ECF.DataHora
+OK: 08-10-06 17:40:33
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:33
+ECF.DataHora
+OK: 08-10-06 17:40:33
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:33
+ECF.DataHora
+OK: 08-10-06 17:40:33
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:33
+ECF.DataHora
+OK: 08-10-06 17:40:33
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:33
+ECF.DataHora
+OK: 08-10-06 17:40:33
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:33
+ECF.DataHora
+OK: 08-10-06 17:40:33
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:34
+ECF.DataHora
+OK: 08-10-06 17:40:34
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:34
+ECF.DataHora
+OK: 08-10-06 17:40:34
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:34
+ECF.DataHora
+OK: 08-10-06 17:40:34
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:34
+ECF.DataHora
+OK: 08-10-06 17:40:34
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:34
+ECF.DataHora
+OK: 08-10-06 17:40:34
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:34
+ECF.DataHora
+OK: 08-10-06 17:40:34
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:35
+ECF.DataHora
+OK: 08-10-06 17:40:35
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:35
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:35
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:35
+ECF.DataHora
+OK: 08-10-06 17:40:35
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:35
+ECF.DataHora
+OK: 08-10-06 17:40:35
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:35
+ECF.DataHora
+OK: 08-10-06 17:40:35
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:36
+ECF.DataHora
+OK: 08-10-06 17:40:36
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:36
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:36
+ECF.DataHora
+OK: 08-10-06 17:40:36
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:36
+ECF.DataHora
+OK: 08-10-06 17:40:36
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:36
+ECF.DataHora
+OK: 08-10-06 17:40:36
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:36
+ECF.DataHora
+OK: 08-10-06 17:40:36
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:36
+ECF.DataHora
+OK: 08-10-06 17:40:37
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:37
+ECF.DataHora
+OK: 08-10-06 17:40:37
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:37
+ECF.DataHora
+OK: 08-10-06 17:40:37
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:37
+ECF.DataHora
+OK: 08-10-06 17:40:37
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:37
+ECF.DataHora
+OK: 08-10-06 17:40:37
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:37
+ECF.DataHora
+OK: 08-10-06 17:40:37
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:38
+ECF.DataHora
+OK: 08-10-06 17:40:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:38
+ECF.DataHora
+OK: 08-10-06 17:40:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:38
+ECF.DataHora
+OK: 08-10-06 17:40:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:38
+ECF.DataHora
+OK: 08-10-06 17:40:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:38
+ECF.DataHora
+OK: 08-10-06 17:40:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:38
+ECF.DataHora
+OK: 08-10-06 17:40:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:39
+ECF.DataHora
+OK: 08-10-06 17:40:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:39
+ECF.DataHora
+OK: 08-10-06 17:40:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:39
+ECF.DataHora
+OK: 08-10-06 17:40:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:39
+ECF.DataHora
+OK: 08-10-06 17:40:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:39
+ECF.DataHora
+OK: 08-10-06 17:40:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:39
+ECF.DataHora
+OK: 08-10-06 17:40:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:40
+ECF.DataHora
+OK: 08-10-06 17:40:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:40
+ECF.DataHora
+OK: 08-10-06 17:40:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:40
+ECF.DataHora
+OK: 08-10-06 17:40:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:40
+ECF.DataHora
+OK: 08-10-06 17:40:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:40
+ECF.DataHora
+OK: 08-10-06 17:40:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:40
+ECF.DataHora
+OK: 08-10-06 17:40:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:41
+ECF.DataHora
+OK: 08-10-06 17:40:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:41
+ECF.DataHora
+OK: 08-10-06 17:40:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:41
+ECF.DataHora
+OK: 08-10-06 17:40:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:41
+ECF.DataHora
+OK: 08-10-06 17:40:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:41
+ECF.DataHora
+OK: 08-10-06 17:40:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:42
+ECF.DataHora
+OK: 08-10-06 17:40:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:42
+ECF.DataHora
+OK: 08-10-06 17:40:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:42
+ECF.DataHora
+OK: 08-10-06 17:40:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:42
+ECF.DataHora
+OK: 08-10-06 17:40:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:43
+ECF.DataHora
+OK: 08-10-06 17:40:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:43
+ECF.DataHora
+OK: 08-10-06 17:40:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:43
+ECF.DataHora
+OK: 08-10-06 17:40:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:43
+ECF.DataHora
+OK: 08-10-06 17:40:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:43
+ECF.DataHora
+OK: 08-10-06 17:40:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:43
+ECF.DataHora
+OK: 08-10-06 17:40:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:44
+ECF.DataHora
+OK: 08-10-06 17:40:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:44
+ECF.DataHora
+OK: 08-10-06 17:40:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:44
+ECF.DataHora
+OK: 08-10-06 17:40:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:44
+ECF.DataHora
+OK: 08-10-06 17:40:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:44
+ECF.DataHora
+OK: 08-10-06 17:40:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:44
+ECF.DataHora
+OK: 08-10-06 17:40:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:45
+ECF.DataHora
+OK: 08-10-06 17:40:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:45
+ECF.DataHora
+OK: 08-10-06 17:40:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:45
+ECF.DataHora
+OK: 08-10-06 17:40:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:45
+ECF.DataHora
+OK: 08-10-06 17:40:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:45
+ECF.DataHora
+OK: 08-10-06 17:40:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:45
+ECF.DataHora
+OK: 08-10-06 17:40:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:46
+ECF.DataHora
+OK: 08-10-06 17:40:46
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:46
+ECF.DataHora
+OK: 08-10-06 17:40:46
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:46
+ECF.DataHora
+OK: 08-10-06 17:40:46
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:46
+ECF.DataHora
+OK: 08-10-06 17:40:46
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:46
+ECF.DataHora
+OK: 08-10-06 17:40:46
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:46
+ECF.DataHora
+OK: 08-10-06 17:40:47
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:47
+ECF.DataHora
+OK: 08-10-06 17:40:47
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:47
+ECF.DataHora
+OK: 08-10-06 17:40:47
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:47
+ECF.DataHora
+OK: 08-10-06 17:40:47
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:47
+ECF.DataHora
+OK: 08-10-06 17:40:47
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:47
+ECF.DataHora
+OK: 08-10-06 17:40:47
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:47
+ECF.DataHora
+OK: 08-10-06 17:40:48
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:48
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:48
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:48
+ECF.DataHora
+OK: 08-10-06 17:40:48
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:48
+ECF.DataHora
+OK: 08-10-06 17:40:48
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:48
+ECF.DataHora
+OK: 08-10-06 17:40:48
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:48
+ECF.DataHora
+OK: 08-10-06 17:40:48
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:49
+ECF.DataHora
+OK: 08-10-06 17:40:49
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:49
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:49
+ECF.DataHora
+OK: 08-10-06 17:40:49
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:49
+ECF.DataHora
+OK: 08-10-06 17:40:49
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:49
+ECF.DataHora
+OK: 08-10-06 17:40:49
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:49
+ECF.DataHora
+OK: 08-10-06 17:40:49
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:50
+ECF.DataHora
+OK: 08-10-06 17:40:50
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:50
+ECF.DataHora
+OK: 08-10-06 17:40:50
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:50
+ECF.DataHora
+OK: 08-10-06 17:40:50
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:50
+ECF.DataHora
+OK: 08-10-06 17:40:50
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:50
+ECF.DataHora
+OK: 08-10-06 17:40:50
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:50
+ECF.DataHora
+OK: 08-10-06 17:40:51
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:51
+ECF.DataHora
+OK: 08-10-06 17:40:51
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:51
+ECF.DataHora
+OK: 08-10-06 17:40:51
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:51
+ECF.DataHora
+OK: 08-10-06 17:40:51
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:51
+ECF.DataHora
+OK: 08-10-06 17:40:51
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:51
+ECF.DataHora
+OK: 08-10-06 17:40:51
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:51
+ECF.DataHora
+OK: 08-10-06 17:40:52
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:52
+ECF.DataHora
+OK: 08-10-06 17:40:52
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:52
+ECF.DataHora
+OK: 08-10-06 17:40:52
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:52
+ECF.DataHora
+OK: 08-10-06 17:40:52
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:52
+ECF.DataHora
+OK: 08-10-06 17:40:52
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:52
+ECF.DataHora
+OK: 08-10-06 17:40:52
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:53
+ECF.DataHora
+OK: 08-10-06 17:40:53
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:53
+ECF.DataHora
+OK: 08-10-06 17:40:53
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:53
+ECF.DataHora
+OK: 08-10-06 17:40:53
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:53
+ECF.DataHora
+OK: 08-10-06 17:40:53
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:53
+ECF.DataHora
+OK: 08-10-06 17:40:53
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:53
+ECF.DataHora
+OK: 08-10-06 17:40:53
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:54
+ECF.DataHora
+OK: 08-10-06 17:40:54
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:54
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:54
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:54
+ECF.DataHora
+OK: 08-10-06 17:40:54
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:54
+ECF.DataHora
+OK: 08-10-06 17:40:54
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:54
+ECF.DataHora
+OK: 08-10-06 17:40:54
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:54
+ECF.DataHora
+OK: 08-10-06 17:40:55
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:55
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:55
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:55
+ECF.DataHora
+OK: 08-10-06 17:40:55
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:55
+ECF.DataHora
+OK: 08-10-06 17:40:55
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:55
+ECF.DataHora
+OK: 08-10-06 17:40:55
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:55
+ECF.DataHora
+OK: 08-10-06 17:40:55
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:56
+ECF.DataHora
+OK: 08-10-06 17:40:56
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:56
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:56
+ECF.DataHora
+OK: 08-10-06 17:40:56
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:56
+ECF.DataHora
+OK: 08-10-06 17:40:56
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:56
+ECF.DataHora
+OK: 08-10-06 17:40:56
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:56
+ECF.DataHora
+OK: 08-10-06 17:40:56
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:57
+ECF.DataHora
+OK: 08-10-06 17:40:57
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:57
+ECF.DataHora
+OK: 08-10-06 17:40:57
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:57
+ECF.DataHora
+OK: 08-10-06 17:40:57
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:57
+ECF.DataHora
+OK: 08-10-06 17:40:57
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:57
+ECF.DataHora
+OK: 08-10-06 17:40:57
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:57
+ECF.DataHora
+OK: 08-10-06 17:40:57
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:58
+ECF.DataHora
+OK: 08-10-06 17:40:58
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:58
+ECF.DataHora
+OK: 08-10-06 17:40:58
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:58
+ECF.DataHora
+OK: 08-10-06 17:40:58
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:58
+ECF.DataHora
+OK: 08-10-06 17:40:58
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:58
+ECF.DataHora
+OK: 08-10-06 17:40:58
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:58
+ECF.DataHora
+OK: 08-10-06 17:40:59
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:59
+ECF.DataHora
+OK: 08-10-06 17:40:59
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:59
+ECF.DataHora
+OK: 08-10-06 17:40:59
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:59
+ECF.DataHora
+OK: 08-10-06 17:40:59
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:59
+ECF.DataHora
+OK: 08-10-06 17:40:59
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:59
+ECF.DataHora
+OK: 08-10-06 17:40:59
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:40:59
+ECF.DataHora
+OK: 08-10-06 17:41:00
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:41:00
+ECF.DataHora
+OK: 08-10-06 17:41:00
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:41:00
+ECF.DataHora
+OK: 08-10-06 17:41:00
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:41:00
+ECF.DataHora
+OK: 08-10-06 17:41:00
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:41:00
+ECF.DataHora
+OK: 08-10-06 17:41:00
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:41:00
+ECF.DataHora
+OK: 08-10-06 17:41:00
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:41:01
+ECF.DataHora
+OK: 08-10-06 17:41:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:41:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:41:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:41:01
+ECF.DataHora
+OK: 08-10-06 17:41:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:41:01
+ECF.DataHora
+OK: 08-10-06 17:41:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:41:01
+ECF.DataHora
+OK: 08-10-06 17:41:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:41:01
+ECF.DataHora
+OK: 08-10-06 17:41:02
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ACBR.RUN("www.djsystem.com.br")
+ERRO: Comandos Remotos não são permitidos
+ECF.TestaPodeAbrirCupom
+ERRO: Redução Z de dia anterior não emitida.
+ Imprima uma Redução Z para poder vender
+ECF.FechaRelatorio
+OK: 
+ECF.DataHora
+OK: 08-10-06 17:41:24
+ECF.DataHora
+OK: 08-10-06 17:41:24
+ECF.SubTotal
+OK: 11
+ECF.CarregaAliquotas
+OK: 01  T0,00|02  T0,00|03  T0,00|04  T18,00|05  T12,00|06  T2,16|07  S2,50
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:45:22
+Máquina: 127.0.0.1
+Esperando por comandos.
+ECF.Ativar
+OK: 
+ECF.DataHora
+OK: 08-10-06 17:45:22
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.NumECF
+OK: 001
+ECF.NumSerie
+OK: 210806121132
+ECF.NumVersao
+OK: 0.8.5b
+ECF.DataHora
+OK: 08-10-06 17:45:22
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:22
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:22
+ECF.DataHora
+OK: 08-10-06 17:45:22
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:23
+ECF.DataHora
+OK: 08-10-06 17:45:23
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:23
+ECF.DataHora
+OK: 08-10-06 17:45:23
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:23
+ECF.DataHora
+OK: 08-10-06 17:45:23
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:23
+ECF.DataHora
+OK: 08-10-06 17:45:23
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:23
+ECF.DataHora
+OK: 08-10-06 17:45:23
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:23
+ECF.DataHora
+OK: 08-10-06 17:45:23
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:24
+ECF.DataHora
+OK: 08-10-06 17:45:24
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:24
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:24
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:24
+ECF.DataHora
+OK: 08-10-06 17:45:24
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:24
+ECF.DataHora
+OK: 08-10-06 17:45:24
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:24
+ECF.DataHora
+OK: 08-10-06 17:45:24
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:25
+ECF.DataHora
+OK: 08-10-06 17:45:25
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:25
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:25
+ECF.DataHora
+OK: 08-10-06 17:45:25
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:25
+ECF.DataHora
+OK: 08-10-06 17:45:25
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:25
+ECF.DataHora
+OK: 08-10-06 17:45:25
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:25
+ECF.DataHora
+OK: 08-10-06 17:45:25
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:26
+ECF.DataHora
+OK: 08-10-06 17:45:26
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:26
+ECF.DataHora
+OK: 08-10-06 17:45:26
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:26
+ECF.DataHora
+OK: 08-10-06 17:45:26
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:26
+ECF.DataHora
+OK: 08-10-06 17:45:26
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:26
+ECF.DataHora
+OK: 08-10-06 17:45:26
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:26
+ECF.DataHora
+OK: 08-10-06 17:45:26
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:27
+ECF.DataHora
+OK: 08-10-06 17:45:27
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:27
+ECF.DataHora
+OK: 08-10-06 17:45:27
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:27
+ECF.DataHora
+OK: 08-10-06 17:45:27
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:27
+ECF.DataHora
+OK: 08-10-06 17:45:27
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:27
+ECF.DataHora
+OK: 08-10-06 17:45:27
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:27
+ECF.DataHora
+OK: 08-10-06 17:45:27
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:28
+ECF.DataHora
+OK: 08-10-06 17:45:28
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:28
+ECF.DataHora
+OK: 08-10-06 17:45:28
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:28
+ECF.DataHora
+OK: 08-10-06 17:45:28
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:28
+ECF.DataHora
+OK: 08-10-06 17:45:28
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:28
+ECF.DataHora
+OK: 08-10-06 17:45:28
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:28
+ECF.DataHora
+OK: 08-10-06 17:45:29
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:29
+ECF.DataHora
+OK: 08-10-06 17:45:29
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:29
+ECF.DataHora
+OK: 08-10-06 17:45:29
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:29
+ECF.DataHora
+OK: 08-10-06 17:45:29
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:45:29
+ECF.DataHora
+OK: 08-10-06 17:45:29
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:46:00
+Máquina: 127.0.0.1
+Esperando por comandos.
+ECF.Ativar
+OK: 
+ECF.DataHora
+OK: 08-10-06 17:46:00
+ECF.DataHora
+OK: 08-10-06 17:46:00
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.NumECF
+OK: 001
+ECF.NumSerie
+OK: 210806121132
+ECF.NumVersao
+OK: 0.8.5b
+ECF.DataHora
+OK: 08-10-06 17:46:00
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:01
+ECF.DataHora
+OK: 08-10-06 17:46:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:01
+ECF.DataHora
+OK: 08-10-06 17:46:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:01
+ECF.DataHora
+OK: 08-10-06 17:46:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:01
+ECF.DataHora
+OK: 08-10-06 17:46:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:01
+ECF.DataHora
+OK: 08-10-06 17:46:01
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:02
+ECF.DataHora
+OK: 08-10-06 17:46:02
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:02
+ECF.DataHora
+OK: 08-10-06 17:46:02
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:02
+ECF.DataHora
+OK: 08-10-06 17:46:02
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:02
+ECF.DataHora
+OK: 08-10-06 17:46:02
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:02
+ECF.DataHora
+OK: 08-10-06 17:46:02
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:02
+ECF.DataHora
+OK: 08-10-06 17:46:02
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:03
+ECF.DataHora
+OK: 08-10-06 17:46:03
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:03
+ECF.DataHora
+OK: 08-10-06 17:46:03
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:03
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:03
+ECF.DataHora
+OK: 08-10-06 17:46:03
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:03
+ECF.DataHora
+OK: 08-10-06 17:46:03
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:03
+ECF.DataHora
+OK: 08-10-06 17:46:03
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:04
+ECF.DataHora
+OK: 08-10-06 17:46:04
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:04
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:04
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:04
+ECF.DataHora
+OK: 08-10-06 17:46:04
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:04
+ECF.DataHora
+OK: 08-10-06 17:46:04
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:04
+ECF.DataHora
+OK: 08-10-06 17:46:04
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:05
+ECF.DataHora
+OK: 08-10-06 17:46:05
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:05
+ECF.DataHora
+OK: 08-10-06 17:46:05
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:05
+ECF.DataHora
+OK: 08-10-06 17:46:05
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:05
+ECF.DataHora
+OK: 08-10-06 17:46:05
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:05
+ECF.DataHora
+OK: 08-10-06 17:46:05
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:05
+ECF.DataHora
+OK: 08-10-06 17:46:05
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:06
+ECF.DataHora
+OK: 08-10-06 17:46:06
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:06
+ECF.DataHora
+OK: 08-10-06 17:46:06
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:06
+ECF.DataHora
+OK: 08-10-06 17:46:06
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:06
+ECF.DataHora
+OK: 08-10-06 17:46:06
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:06
+ECF.DataHora
+OK: 08-10-06 17:46:06
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:06
+ECF.DataHora
+OK: 08-10-06 17:46:06
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:07
+ECF.DataHora
+OK: 08-10-06 17:46:07
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:07
+ECF.DataHora
+OK: 08-10-06 17:46:07
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:07
+ECF.DataHora
+OK: 08-10-06 17:46:07
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:07
+ECF.DataHora
+OK: 08-10-06 17:46:07
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:07
+ECF.DataHora
+OK: 08-10-06 17:46:07
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:07
+ECF.DataHora
+OK: 08-10-06 17:46:07
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:08
+ECF.DataHora
+OK: 08-10-06 17:46:08
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:08
+ECF.DataHora
+OK: 08-10-06 17:46:08
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:08
+ECF.DataHora
+OK: 08-10-06 17:46:08
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:08
+ECF.DataHora
+OK: 08-10-06 17:46:08
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:08
+ECF.DataHora
+OK: 08-10-06 17:46:08
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:46:09
+ECF.DataHora
+OK: 08-10-06 17:46:09
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ACBR.RUN("www.djsystem.com.br")
+OK: 
+ECF.TestaPodeAbrirCupom
+ERRO: Redução Z de dia anterior não emitida.
+ Imprima uma Redução Z para poder vender
+ECF.FechaRelatorio
+OK: 
+ECF.DataHora
+OK: 08-10-06 17:46:18
+ECF.DataHora
+OK: 08-10-06 17:46:18
+ECF.SubTotal
+OK: 11
+ECF.CarregaAliquotas
+OK: 01  T0,00|02  T0,00|03  T0,00|04  T18,00|05  T12,00|06  T2,16|07  S2,50
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:47:31
+Máquina: 127.0.0.1
+Esperando por comandos.
+ECF.Ativar
+OK: 
+ECF.DataHora
+OK: 08-10-06 17:47:31
+ECF.DataHora
+OK: 08-10-06 17:47:31
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.NumECF
+OK: 001
+ECF.NumSerie
+OK: 210806121132
+ECF.NumVersao
+OK: 0.8.5b
+ECF.DataHora
+OK: 08-10-06 17:47:31
+ECF.DataHora
+OK: 08-10-06 17:47:31
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:31
+ECF.DataHora
+OK: 08-10-06 17:47:31
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:31
+ECF.DataHora
+OK: 08-10-06 17:47:31
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:31
+ECF.DataHora
+OK: 08-10-06 17:47:31
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:32
+ECF.DataHora
+OK: 08-10-06 17:47:32
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:32
+ECF.DataHora
+OK: 08-10-06 17:47:32
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:32
+ECF.DataHora
+OK: 08-10-06 17:47:32
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:32
+ECF.DataHora
+OK: 08-10-06 17:47:32
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:32
+ECF.DataHora
+OK: 08-10-06 17:47:32
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:32
+ECF.DataHora
+OK: 08-10-06 17:47:32
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:33
+ECF.DataHora
+OK: 08-10-06 17:47:33
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:33
+ECF.DataHora
+OK: 08-10-06 17:47:33
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:33
+ECF.DataHora
+OK: 08-10-06 17:47:33
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:33
+ECF.DataHora
+OK: 08-10-06 17:47:33
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:33
+ECF.DataHora
+OK: 08-10-06 17:47:33
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:33
+ECF.DataHora
+OK: 08-10-06 17:47:33
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:34
+ECF.DataHora
+OK: 08-10-06 17:47:34
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:34
+ECF.DataHora
+OK: 08-10-06 17:47:34
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:34
+ECF.DataHora
+OK: 08-10-06 17:47:34
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:34
+ECF.DataHora
+OK: 08-10-06 17:47:34
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:34
+ECF.DataHora
+OK: 08-10-06 17:47:34
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:34
+ECF.DataHora
+OK: 08-10-06 17:47:35
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:35
+ECF.DataHora
+OK: 08-10-06 17:47:35
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:35
+ECF.DataHora
+OK: 08-10-06 17:47:35
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:35
+ECF.DataHora
+OK: 08-10-06 17:47:35
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:35
+ECF.DataHora
+OK: 08-10-06 17:47:35
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:35
+ECF.DataHora
+OK: 08-10-06 17:47:35
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:35
+ECF.DataHora
+OK: 08-10-06 17:47:36
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:36
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:36
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:36
+ECF.DataHora
+OK: 08-10-06 17:47:36
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:36
+ECF.DataHora
+OK: 08-10-06 17:47:36
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:36
+ECF.DataHora
+OK: 08-10-06 17:47:36
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:36
+ECF.DataHora
+OK: 08-10-06 17:47:36
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:37
+ECF.DataHora
+OK: 08-10-06 17:47:37
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:37
+ECF.DataHora
+OK: 08-10-06 17:47:37
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:37
+ECF.DataHora
+OK: 08-10-06 17:47:37
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:37
+ECF.DataHora
+OK: 08-10-06 17:47:37
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:37
+ECF.DataHora
+OK: 08-10-06 17:47:37
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:37
+ECF.DataHora
+OK: 08-10-06 17:47:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:38
+ECF.DataHora
+OK: 08-10-06 17:47:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:38
+ECF.DataHora
+OK: 08-10-06 17:47:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:38
+ECF.DataHora
+OK: 08-10-06 17:47:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:38
+ECF.DataHora
+OK: 08-10-06 17:47:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:38
+ECF.DataHora
+OK: 08-10-06 17:47:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:38
+ECF.DataHora
+OK: 08-10-06 17:47:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:39
+ECF.DataHora
+OK: 08-10-06 17:47:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:39
+ECF.DataHora
+OK: 08-10-06 17:47:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:47:39
+ECF.DataHora
+OK: 08-10-06 17:47:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 08-10-06 17:48:38
+Máquina: 127.0.0.1
+Esperando por comandos.
+ECF.Ativar
+OK: 
+ECF.DataHora
+OK: 08-10-06 17:48:38
+ECF.DataHora
+OK: 08-10-06 17:48:38
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.NumECF
+OK: 001
+ECF.NumSerie
+OK: 210806121132
+ECF.NumVersao
+OK: 0.8.5b
+ECF.DataHora
+OK: 08-10-06 17:48:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:39
+ECF.DataHora
+OK: 08-10-06 17:48:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:39
+ECF.DataHora
+OK: 08-10-06 17:48:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:39
+ECF.DataHora
+OK: 08-10-06 17:48:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:39
+ECF.DataHora
+OK: 08-10-06 17:48:39
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:40
+ECF.DataHora
+OK: 08-10-06 17:48:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:40
+ECF.DataHora
+OK: 08-10-06 17:48:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:40
+ECF.DataHora
+OK: 08-10-06 17:48:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:40
+ECF.DataHora
+OK: 08-10-06 17:48:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:40
+ECF.DataHora
+OK: 08-10-06 17:48:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:40
+ECF.DataHora
+OK: 08-10-06 17:48:40
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:41
+ECF.DataHora
+OK: 08-10-06 17:48:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:41
+ECF.DataHora
+OK: 08-10-06 17:48:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:41
+ECF.DataHora
+OK: 08-10-06 17:48:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:41
+ECF.DataHora
+OK: 08-10-06 17:48:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:41
+ECF.DataHora
+OK: 08-10-06 17:48:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:41
+ECF.DataHora
+OK: 08-10-06 17:48:41
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:42
+ECF.DataHora
+OK: 08-10-06 17:48:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:42
+ECF.DataHora
+OK: 08-10-06 17:48:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:42
+ECF.DataHora
+OK: 08-10-06 17:48:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:42
+ECF.DataHora
+OK: 08-10-06 17:48:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:42
+ECF.DataHora
+OK: 08-10-06 17:48:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:42
+ECF.DataHora
+OK: 08-10-06 17:48:42
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:43
+ECF.DataHora
+OK: 08-10-06 17:48:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:43
+ECF.DataHora
+OK: 08-10-06 17:48:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:43
+ECF.DataHora
+OK: 08-10-06 17:48:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:43
+ECF.DataHora
+OK: 08-10-06 17:48:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:43
+ECF.DataHora
+OK: 08-10-06 17:48:43
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:44
+ECF.DataHora
+OK: 08-10-06 17:48:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:44
+ECF.DataHora
+OK: 08-10-06 17:48:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:44
+ECF.DataHora
+OK: 08-10-06 17:48:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:44
+ECF.DataHora
+OK: 08-10-06 17:48:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:44
+ECF.DataHora
+OK: 08-10-06 17:48:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:44
+ECF.DataHora
+OK: 08-10-06 17:48:44
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:45
+ECF.DataHora
+OK: 08-10-06 17:48:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:45
+ECF.DataHora
+OK: 08-10-06 17:48:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:45
+ECF.DataHora
+OK: 08-10-06 17:48:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:45
+ECF.DataHora
+OK: 08-10-06 17:48:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:45
+ECF.DataHora
+OK: 08-10-06 17:48:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:45
+ECF.DataHora
+OK: 08-10-06 17:48:45
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:46
+ECF.DataHora
+OK: 08-10-06 17:48:46
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:46
+ECF.DataHora
+OK: 08-10-06 17:48:46
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:46
+ECF.DataHora
+OK: 08-10-06 17:48:46
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:46
+ECF.DataHora
+OK: 08-10-06 17:48:46
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:46
+ECF.DataHora
+OK: 08-10-06 17:48:46
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:46
+ECF.DataHora
+OK: 08-10-06 17:48:47
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ECF.DataHora
+OK: 08-10-06 17:48:47
+ECF.DataHora
+OK: 08-10-06 17:48:47
+ECF.SubTotal
+OK: 11
+ECF.GavetaAberta
+OK: False
+ACBR.RUN("www.djsystem.com.br")
+OK: 
+ECF.TestaPodeAbrirCupom
+ERRO: Redução Z de dia anterior não emitida.
+ Imprima uma Redução Z para poder vender
+ECF.FechaRelatorio
+OK: 
+ECF.DataHora
+OK: 08-10-06 17:49:08
+ECF.SubTotal
+OK: 11
+ECF.CarregaAliquotas
+OK: 01  T0,00|02  T0,00|03  T0,00|04  T18,00|05  T12,00|06  T2,16|07  S2,50
+
+ACBrMonitor Ver. 1.0 - ACBr: 0.8.5b
+Conectado em: 09/10/06 10:21:08
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: .+C001G000000000001000100001.000000000000389834000000000000000000000000000000000000000000000000000000000000                    }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estRequerZ
+ECF.Ativar
+OK: .+0031000CLEIT. X 08F000000000000000000000000!0910061032N                                   001NN000000000000000000000000SFNN0 }
+ECF.FechaRelatorio
+OK: .+0031000CLEIT. X 08F000000000000000000000000!0910061032N                                   001NN000000000000000000000000SFNN0 }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTAO")
+ERRO: Forma de Pagamento: CARTAO não encontrada
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.AchaFPGDescricao("GET")
+ERRO: Forma de Pagamento: GET não encontrada
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 09  VA PRAZO                       
+ECF.TestaPodeAbrirCupom
+ERRO: Redução Z de dia anterior não emitida.
+ Imprima uma Redução Z para poder vender
+ECF.ReducaoZ("09/10/06 10:21:36")
+OK: .+0001}
+
+ACBrMonitor Ver. 1.0 - ACBr: 0.8.5b
+Conectado em: 09/10/06 10:25:11
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: .+0001}
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estLivre
+ECF.Ativar
+OK: .+0001000CREDUCAO 14S000000000000000000000000!0910061036N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaRelatorio
+OK: .+0001000CREDUCAO 14S000000000000000000000000!0910061036N                                   001NN000000000000000000000000SNNN0 }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTãO")
+OK: 04  VCartão                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.AchaFPGDescricao("GET")
+ERRO: Forma de Pagamento: GET não encontrada
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 09  VA PRAZO                       
+
+ACBrMonitor Ver. 1.0 - ACBr: 0.8.5b
+Conectado em: 09/10/06 10:26:18
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: .+T001D                                                                                                                        }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estLivre
+ECF.Ativar
+OK: .+0001000CREDUCAO 14S000000000000000000000000!0910061037N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaRelatorio
+OK: .+0001000CREDUCAO 14S000000000000000000000000!0910061037N                                   001NN000000000000000000000000SNNN0 }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTãO")
+OK: 04  VCartão                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.AchaFPGDescricao("GET")
+ERRO: Forma de Pagamento: GET não encontrada
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 09  VA PRAZO                       
+
+ACBrMonitor Ver. 1.0 - ACBr: 0.8.5b
+Conectado em: 09/10/06 10:26:40
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: .+T001D                                                                                                                        }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estLivre
+ECF.Ativar
+OK: .+0001000CREDUCAO 14S000000000000000000000000!0910061037N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaRelatorio
+OK: .+0001000CREDUCAO 14S000000000000000000000000!0910061037N                                   001NN000000000000000000000000SNNN0 }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTãO")
+OK: 04  VCartão                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.AchaFPGDescricao("GET")
+ERRO: Forma de Pagamento: GET não encontrada
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 09  VA PRAZO                       
+
+ACBrMonitor Ver. 1.0 - ACBr: 0.8.5b
+Conectado em: 09/10/06 10:29:22
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: .+T001D                                                                                                                        }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estLivre
+ECF.Ativar
+OK: .+0001000CREDUCAO 14S000000000000000000000000!0910061040N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaRelatorio
+OK: .+0001000CREDUCAO 14S000000000000000000000000!0910061040N                                   001NN000000000000000000000000SNNN0 }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTãO")
+OK: 04  VCartão                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.AchaFPGDescricao("GET")
+ERRO: Forma de Pagamento: GET não encontrada
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 09  VA PRAZO                       
+
+ACBrMonitor Ver. 1.0 - ACBr: 0.8.5b
+Conectado em: 09/10/06 10:31:51
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: .+T001D                                                                                                                        }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estLivre
+ECF.Ativar
+OK: .+0001000CREDUCAO 14S000000000000000000000000!0910061043N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaRelatorio
+OK: .+0001000CREDUCAO 14S000000000000000000000000!0910061043N                                   001NN000000000000000000000000SNNN0 }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTãO")
+OK: 04  VCartão                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.AchaFPGDescricao("GET")
+ERRO: Forma de Pagamento: GET não encontrada
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 09  VA PRAZO                       
+
+ACBrMonitor Ver. 1.0 - ACBr: 0.8.5b
+Conectado em: 09/10/06 10:35:36
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: .+T001D                                                                                                                        }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estLivre
+ECF.Ativar
+OK: .+0001000CREDUCAO 14S000000000000000000000000!0910061046N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaRelatorio
+OK: .+0001000CREDUCAO 14S000000000000000000000000!0910061046N                                   001NN000000000000000000000000SNNN0 }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTãO")
+OK: 04  VCartão                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.AchaFPGDescricao("GET")
+ERRO: Forma de Pagamento: GET não encontrada
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 09  VA PRAZO                       
+ECF.TestaPodeAbrirCupom
+OK: .+0001000CREDUCAO 14S000000000000000000000000!0910061050N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 10:50:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000249
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000249
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000249
+ECF.Estado
+OK: estLivre
+ECF.CarregaAliquotas
+OK: T01 T18,00|T02 T14,00|T03 T8,40|T04 T7,00|T05 T12,00|S01 S2,50
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.NumCupom
+OK: 000250
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000250
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000250
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0004}
+ECF.SubTotal
+OK: 1
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 1
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000250
+ECF.Estado
+OK: estPagamento
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.EfetuaPagamento("01", 1.00, "", FALSE)
+OK: .+0005001P VENDAS 10N000000000100000000000100!0910061053N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("Vendedor: 01-JOSE MARIA                 |00000-VENDAS A VISTA                    |.                                       |                ________________________|                Assinatura")
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061053N                                   001NN000000000000000000000000SNNN0 }
+ECF.TestaPodeAbrirCupom
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061053N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 10:53:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000250
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000250
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000250
+ECF.Estado
+OK: estLivre
+ECF.TestaPodeAbrirCupom
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061054N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 10:54:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000250
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000250
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000250
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.NumCupom
+OK: 000251
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000251
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000251
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0004}
+ECF.SubTotal
+OK: 1
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 1
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000251
+ECF.Estado
+OK: estPagamento
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.EfetuaPagamento("01", 1.00, "", FALSE)
+OK: .+0005001P VENDAS 10N000000000100000000000100!0910061057N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("Vendedor: 01-JOSE MARIA                 |00000-VENDAS A VISTA                    |.                                       |                ________________________|                Assinatura")
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061057N                                   001NN000000000000000000000000SNNN0 }
+ECF.TestaPodeAbrirCupom
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061057N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 10:57:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000251
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000251
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000251
+ECF.Estado
+OK: estLivre
+ECF.TestaPodeAbrirCupom
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061059N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 10:59:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000251
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000251
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000251
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.NumCupom
+OK: 000252
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000252
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000252
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0004}
+ECF.SubTotal
+OK: 1
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 1
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000252
+ECF.Estado
+OK: estPagamento
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.EfetuaPagamento("01", 1.00, "", FALSE)
+OK: .+0005001P VENDAS 10N000000000100000000000100!0910061100N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("----------------------------------------|00000-VENDAS A VISTA                    |Vendedor: 01-JOSE MARIA                 |----------------------------------------|")
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061100N                                   001NN000000000000000000000000SNNN0 }
+ECF.TestaPodeAbrirCupom
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061100N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 11:00:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000252
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000252
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000252
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.NumCupom
+OK: 000253
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000253
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000253
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0004}
+ECF.SubTotal
+OK: 1
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 1
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000253
+ECF.Estado
+OK: estPagamento
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.EfetuaPagamento("01", 1.00, "", FALSE)
+OK: .+0005001P VENDAS 10N000000000100000000000100!0910061102N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("----------------------------------------|00000-VENDAS A VISTA                    |Vendedor: 01-JOSE MARIA                 |----------------------------------------|")
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061102N                                   001NN000000000000000000000000SNNN0 }
+ECF.TestaPodeAbrirCupom
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061102N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 11:02:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000253
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000253
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000253
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 15.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.NumCupom
+OK: 000254
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000254
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000254
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0004}
+ECF.SubTotal
+OK: 15
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 15
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000254
+ECF.Estado
+OK: estPagamento
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.EfetuaPagamento("01", 15.00, "", FALSE)
+OK: .+0005001P VENDAS 10N000000001500000000001500!0910061104N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("----------------------------------------|00000-VENDAS A VISTA                    |TESTE 06 ULTRAPASSADO LIMITE CREDITO    |Vendedor: 01-JOSE MARIA                 |----------------------------------------|")
+OK: .+0006001C VENDAS 12N000000001500000000001500!0910061104N                                   001NN000000000000000000000000SNNN0 }
+ECF.TestaPodeAbrirCupom
+OK: .+0006001C VENDAS 12N000000001500000000001500!0910061104N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 11:04:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000254
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000254
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000254
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 14.000, 1.00, 0.00, "UN")
+OK: .+0003}
+ECF.NumCupom
+OK: 000255
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000255
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000255
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0005}
+ECF.SubTotal
+OK: 15
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 15
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000255
+ECF.Estado
+OK: estPagamento
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.EfetuaPagamento("01", 15.00, "", FALSE)
+OK: .+0006002P VENDAS 10N000000001500000000001500!0910061106N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("----------------------------------------|00000-VENDAS A VISTA                    |TESTE 07 - JOSE DA SILVA - LIMIT.CREDITO|Vendedor: 01-JOSE MARIA                 |----------------------------------------|")
+OK: .+0007002C VENDAS 12N000000001500000000001500!0910061106N                                   001NN000000000000000000000000SNNN0 }
+ECF.TestaPodeAbrirCupom
+OK: .+0007002C VENDAS 12N000000001500000000001500!0910061106N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 11:06:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000255
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000255
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000255
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.NumCupom
+OK: 000256
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000256
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000256
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0004}
+ECF.SubTotal
+OK: 1
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 1
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000256
+ECF.Estado
+OK: estPagamento
+ECF.EfetuaPagamento("10", 1.00, "", TRUE)
+OK: .+0005001P VENDAS 10N000000000100000000000100!0910061108N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("----------------------------------------|00000-VENDAS A VISTA                    |TESTE 08 - 100001 - APROVADO            |Vendedor: 01-JOSE MARIA                 |----------------------------------------|")
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061108N                                   001NN000000000000000000000000SNNN0 }
+ECF.Ativar
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061108N                                   001NN000000000000000000000000SNNN0 }
+ECF.AbreCupomVinculado("000256", "10", 1.00)
+OK: .+0001001PN.FISCAL19N000000000100000000000100!0910061108N                                   001NN000000000000000000000000SNNS3 }
+ECF.LinhaCupomVinculado("        AUTORIZACAO DE CONVENIO|      UltraLink|Estab.: FARMACIA TESTE LTDA|2-MARIA OLIVEIRA|Empresa: EMPRESA TESTE|Valor: 1,00|Autorizacao: 1379-3|__________________________________|AUTORIZO DESCONTO EM FOLHA DE PGTO")
+OK: .+0010}
+ECF.LinhaCupomVinculado(" | | | | | |")
+OK: .+0016}
+ECF.LinhaCupomVinculado("        AUTORIZACAO DE CONVENIO|      UltraLink|Estab.: FARMACIA TESTE LTDA|2-MARIA OLIVEIRA|Empresa: EMPRESA TESTE|Valor: 1,00|Autorizacao: 1379-3|__________________________________|AUTORIZO DESCONTO EM FOLHA DE PGTO")
+OK: .+0025}
+ECF.FechaRelatorio
+OK: .+0026}
+ECF.TestaPodeAbrirCupom
+OK: .+0026001CN.FISCAL12N000000000100000000000100!0910061108N                                   001NN000000000000000000000000SNNS3 }
+ECF.DataHora
+OK: 09/10/06 11:08:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000257
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000257
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000257
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 9.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.NumCupom
+OK: 000258
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000258
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000258
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0004}
+ECF.SubTotal
+OK: 9
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 9
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000258
+ECF.Estado
+OK: estPagamento
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.EfetuaPagamento("01", 9.00, "", FALSE)
+OK: .+0005001P VENDAS 10N000000000900000000000900!0910061115N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("----------------------------------------|00000-VENDAS A VISTA                    |TESTE 09 - MARIA OLIVEIRA - APROVADO    |Vendedor: 01-JOSE MARIA                 |----------------------------------------|")
+OK: .+0006001C VENDAS 12N000000000900000000000900!0910061115N                                   001NN000000000000000000000000SNNN0 }
+ECF.TestaPodeAbrirCupom
+OK: .+0006001C VENDAS 12N000000000900000000000900!0910061115N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 11:15:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000258
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000258
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000258
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.NumCupom
+OK: 000259
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000259
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000259
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0004}
+ECF.SubTotal
+OK: 1
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 1
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000259
+ECF.Estado
+OK: estPagamento
+ECF.EfetuaPagamento("10", 1.00, "", TRUE)
+OK: .+0005001P VENDAS 10N000000000100000000000100!0910061117N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("----------------------------------------|00000-VENDAS A VISTA                    |TESTE 09 - MARIA OLIVEIRA - APROVADO    |Vendedor: 01-JOSE MARIA                 |----------------------------------------|")
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061117N                                   001NN000000000000000000000000SNNN0 }
+ECF.Ativar
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061117N                                   001NN000000000000000000000000SNNN0 }
+ECF.AbreCupomVinculado("000259", "10", 1.00)
+OK: .+0001001PN.FISCAL19N000000000100000000000100!0910061117N                                   001NN000000000000000000000000SNNS3 }
+ECF.LinhaCupomVinculado("        AUTORIZACAO DE CONVENIO|      UltraLink|Estab.: FARMACIA TESTE LTDA|2-MARIA OLIVEIRA|Empresa: EMPRESA TESTE|Valor: 1,00|Autorizacao: 1380-7|__________________________________|AUTORIZO DESCONTO EM FOLHA DE PGTO")
+OK: .+0010}
+ECF.LinhaCupomVinculado(" | | | | | |")
+OK: .+0016}
+ECF.LinhaCupomVinculado("        AUTORIZACAO DE CONVENIO|      UltraLink|Estab.: FARMACIA TESTE LTDA|2-MARIA OLIVEIRA|Empresa: EMPRESA TESTE|Valor: 1,00|Autorizacao: 1380-7|__________________________________|AUTORIZO DESCONTO EM FOLHA DE PGTO")
+OK: .+0025}
+ECF.FechaRelatorio
+OK: .+0026}
+ECF.TestaPodeAbrirCupom
+OK: .+0026001CN.FISCAL12N000000000100000000000100!0910061117N                                   001NN000000000000000000000000SNNS3 }
+ECF.DataHora
+OK: 09/10/06 11:17:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000260
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000260
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000260
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 30.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.NumCupom
+OK: 000261
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000261
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000261
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0004}
+ECF.SubTotal
+OK: 30
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 30
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000261
+ECF.Estado
+OK: estPagamento
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.EfetuaPagamento("01", 30.00, "", FALSE)
+OK: .+0005001P VENDAS 10N000000003000000000003000!0910061122N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("----------------------------------------|00000-VENDAS A VISTA                    |TESTE 10 - 100005 - 3X - APROVADO       |Vendedor: 01-JOSE MARIA                 |----------------------------------------|")
+OK: .+0006001C VENDAS 12N000000003000000000003000!0910061122N                                   001NN000000000000000000000000SNNN0 }
+ECF.TestaPodeAbrirCupom
+OK: .+0006001C VENDAS 12N000000003000000000003000!0910061122N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 11:22:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000261
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000261
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000261
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 60.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.NumCupom
+OK: 000262
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000262
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000262
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0004}
+ECF.SubTotal
+OK: 60
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 60
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.EfetuaPagamento("01", 60.00, "", FALSE)
+OK: .+0005001P VENDAS 10N000000006000000000006000!0910061122N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("----------------------------------------|00000-VENDAS A VISTA                    |Vendedor: 01-JOSE MARIA                 |----------------------------------------|")
+OK: .+0006001C VENDAS 12N000000006000000000006000!0910061122N                                   001NN000000000000000000000000SNNN0 }
+ECF.TestaPodeAbrirCupom
+OK: .+0006001C VENDAS 12N000000006000000000006000!0910061122N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 11:22:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000262
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000262
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000262
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 60.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.NumCupom
+OK: 000263
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000263
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000263
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0004}
+ECF.SubTotal
+OK: 60
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 60
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000263
+ECF.Estado
+OK: estPagamento
+ECF.EfetuaPagamento("10", 60.00, "", TRUE)
+OK: .+0005001P VENDAS 10N000000006000000000006000!0910061124N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("----------------------------------------|00000-VENDAS A VISTA                    |TESTE 10 - 100005 - 3X - APROVADO       |Vendedor: 01-JOSE MARIA                 |----------------------------------------|")
+OK: .+0006001C VENDAS 12N000000006000000000006000!0910061125N                                   001NN000000000000000000000000SNNN0 }
+ECF.Ativar
+OK: .+0006001C VENDAS 12N000000006000000000006000!0910061125N                                   001NN000000000000000000000000SNNN0 }
+ECF.AbreCupomVinculado("000263", "10", 60.00)
+OK: .+0001001PN.FISCAL19N000000006000000000006000!0910061125N                                   001NN000000000000000000000000SNNS3 }
+ECF.LinhaCupomVinculado("        AUTORIZACAO DE CONVENIO|      UltraLink|Estab.: FARMACIA TESTE LTDA|5-ROSANA DA SILVA|Empresa: EMPRESA TESTE|Valor: 60,00|-- Parcelamento --|Parc. 1         : 13/11/2006|    Valor       : 20,00|    Autorizacao : 1381-0|Parc. 2         : 13/12/2006|    Valor       : 20,00|    Autorizacao : 1382-9|Parc. 3         : 13/01/2007|    Valor       : 20,00|    Autorizacao : 1383-7|__________________________________|AUTORIZO DESCONTO EM FOLHA DE PGTO")
+OK: .+0019}
+ECF.LinhaCupomVinculado(" | | | | | |")
+OK: .+0025}
+ECF.LinhaCupomVinculado("        AUTORIZACAO DE CONVENIO|      UltraLink|Estab.: FARMACIA TESTE LTDA|5-ROSANA DA SILVA|Empresa: EMPRESA TESTE|Valor: 60,00|-- Parcelamento --|Parc. 1         : 13/11/2006|    Valor       : 20,00|    Autorizacao : 1381-0|Parc. 2         : 13/12/2006|    Valor       : 20,00|    Autorizacao : 1382-9|Parc. 3         : 13/01/2007|    Valor       : 20,00|    Autorizacao : 1383-7|__________________________________|AUTORIZO DESCONTO EM FOLHA DE PGTO")
+OK: .+0043}
+ECF.FechaRelatorio
+OK: .+0044}
+ECF.TestaPodeAbrirCupom
+OK: .+0044001CN.FISCAL12N000000006000000000006000!0910061125N                                   001NN000000000000000000000000SNNS3 }
+ECF.DataHora
+OK: 09/10/06 11:25:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000264
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000264
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000264
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 60.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.NumCupom
+OK: 000265
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000265
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000265
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0004}
+ECF.SubTotal
+OK: 60
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 60
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000265
+ECF.Estado
+OK: estPagamento
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.EfetuaPagamento("01", 60.00, "", FALSE)
+OK: .+0005001P VENDAS 10N000000006000000000006000!0910061127N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("----------------------------------------|00000-VENDAS A VISTA                    |TESTE 11 - 100005 - VENDAS 10X - NEGADO |Vendedor: 01-JOSE MARIA                 |----------------------------------------|")
+OK: .+0006001C VENDAS 12N000000006000000000006000!0910061127N                                   001NN000000000000000000000000SNNN0 }
+ECF.TestaPodeAbrirCupom
+OK: .+0006001C VENDAS 12N000000006000000000006000!0910061127N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 11:27:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000265
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000265
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000265
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.CancelaCupom
+OK: .+0003001CCANCELOU05N000000000000000000000000!0910061129N                                   001NN000000000000000000000000SNNN0 }
+ECF.TestaPodeAbrirCupom
+ERRO: Impressora Sweda ST100 (ST) não está em linha
+ECF.TestaPodeAbrirCupom
+OK: .+0003001CCANCELOU05N000000000000000000000000!0910061245N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 12:45:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000266
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000266
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000266
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.VendeItem("00002", "PRODUTO 2", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0003}
+ECF.VendeItem("00003", "PRODUTO 3", "II", 1.000, 1.00, 0.00, "UN")
+OK: .+0004}
+ECF.NumCupom
+OK: 000267
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000267
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000267
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0006}
+ECF.SubTotal
+OK: 3
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 3
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000267
+ECF.Estado
+OK: estPagamento
+ECF.EfetuaPagamento("10", 3.00, "", TRUE)
+OK: .+0007003P VENDAS 10N000000000300000000000300!0910061246N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("----------------------------------------|00000-VENDAS A VISTA                    |TESTE 13 - DESLIGAR ECF IMPRESSAO       |Vendedor: 01-JOSE MARIA                 |----------------------------------------|")
+OK: .+0008003C VENDAS 12N000000000300000000000300!0910061246N                                   001NN000000000000000000000000SNNN0 }
+ECF.Ativar
+OK: .+0008003C VENDAS 12N000000000300000000000300!0910061246N                                   001NN000000000000000000000000SNNN0 }
+ECF.AbreCupomVinculado("000267", "10", 3.00)
+OK: .+0001003PN.FISCAL19N000000000300000000000300!0910061246N                                   001NN000000000000000000000000SNNS3 }
+ECF.LinhaCupomVinculado("        AUTORIZACAO DE CONVENIO|      UltraLink|Estab.: FARMACIA TESTE LTDA|2-MARIA OLIVEIRA|Empresa: EMPRESA TESTE|Valor: 3,00|Autorizacao: 1384-0|__________________________________|AUTORIZO DESCONTO EM FOLHA DE PGTO")
+ERRO: Impressora Sweda ST100 (ST) não está respondendo
+ECF.FechaRelatorio
+ERRO: Impressora Sweda ST100 (ST) não está em linha
+ECF.FechaRelatorio
+ERRO: Impressora Sweda ST100 (ST) não está respondendo
+ECF.FechaRelatorio
+OK: .+0007}
+ECF.AbreRelatorioGerencial
+OK: .+0001}
+ECF.LinhaRelatorioGerencial("        AUTORIZACAO DE CONVENIO|      UltraLink|Estab.: FARMACIA TESTE LTDA|2-MARIA OLIVEIRA|Empresa: EMPRESA TESTE|Valor: 3,00|Autorizacao: 1384-0|__________________________________|AUTORIZO DESCONTO EM FOLHA DE PGTO")
+OK: .+0010}
+ECF.LinhaRelatorioGerencial(" | | | | | |")
+OK: .+0016}
+ECF.LinhaRelatorioGerencial("        AUTORIZACAO DE CONVENIO|      UltraLink|Estab.: FARMACIA TESTE LTDA|2-MARIA OLIVEIRA|Empresa: EMPRESA TESTE|Valor: 3,00|Autorizacao: 1384-0|__________________________________|AUTORIZO DESCONTO EM FOLHA DE PGTO")
+OK: .+0025}
+ECF.FechaRelatorio
+OK: .+0026000CLEIT. X 08N000000000000000000000000!0910061247N                                   001NN000000000000000000000000SNNS1 }
+ECF.TestaPodeAbrirCupom
+OK: .+0026000CLEIT. X 08N000000000000000000000000!0910061247N                                   001NN000000000000000000000000SNNS1 }
+ECF.DataHora
+OK: 09/10/06 12:47:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000269
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000269
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000269
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.VendeItem("00002", "PRODUTO 2", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0003}
+ECF.NumCupom
+OK: 000270
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000270
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000270
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0005}
+ECF.SubTotal
+OK: 2
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 2
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000270
+ECF.Estado
+OK: estPagamento
+
+ACBrMonitor Ver. 1.0 - ACBr: 0.8.5b
+Conectado em: 09/10/06 12:45:28
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: .+C001G000000000001000100001.000000000000399889000000000000000000000000000000000000000000000000000000000000                    }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estLivre
+ECF.Ativar
+OK: .+0008002CN.FISCAL08N000000000200000000000200!0910061256N                                   001NN000000000000000000000000SNNS3 }
+ECF.FechaRelatorio
+OK: .+0008002CN.FISCAL08N000000000200000000000200!0910061256N                                   001NN000000000000000000000000SNNS3 }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTãO")
+OK: 04  VCartão                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.AchaFPGDescricao("GET")
+ERRO: Forma de Pagamento: GET não encontrada
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 09  VA PRAZO                       
+
+ACBrMonitor Ver. 1.0 - ACBr: 0.8.5b
+Conectado em: 09/10/06 12:45:43
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: .+T001D                                                                                                                        }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estLivre
+ECF.Ativar
+OK: .+0008002CN.FISCAL08N000000000200000000000200!0910061257N                                   001NN000000000000000000000000SNNS3 }
+ECF.FechaRelatorio
+OK: .+0008002CN.FISCAL08N000000000200000000000200!0910061257N                                   001NN000000000000000000000000SNNS3 }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTãO")
+OK: 04  VCartão                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.AchaFPGDescricao("GET")
+ERRO: Forma de Pagamento: GET não encontrada
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 09  VA PRAZO                       
+
+ACBrMonitor Ver. 1.0 - ACBr: 0.8.5b
+Conectado em: 09/10/06 12:47:29
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: .+T001D                                                                                                                        }
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estLivre
+ECF.Ativar
+OK: .+0008002CN.FISCAL08N000000000200000000000200!0910061258N                                   001NN000000000000000000000000SNNS3 }
+ECF.FechaRelatorio
+OK: .+0008002CN.FISCAL08N000000000200000000000200!0910061258N                                   001NN000000000000000000000000SNNS3 }
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTãO")
+OK: 04  VCartão                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.AchaFPGDescricao("GET")
+ERRO: Forma de Pagamento: GET não encontrada
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 09  VA PRAZO                       
+ECF.TestaPodeAbrirCupom
+OK: .+0008002CN.FISCAL08N000000000200000000000200!0910061300N                                   001NN000000000000000000000000SNNS3 }
+ECF.DataHora
+OK: 09/10/06 13:00:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000271
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000271
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000271
+ECF.Estado
+OK: estLivre
+ECF.CarregaAliquotas
+OK: T01 T18,00|T02 T14,00|T03 T8,40|T04 T7,00|T05 T12,00|S01 S2,50
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.CancelaCupom
+OK: .+0003001CCANCELOU05N000000000000000000000000!0910061301N                                   001NN000000000000000000000000SNNN0 }
+ECF.TestaPodeAbrirCupom
+OK: .+0003001CCANCELOU05N000000000000000000000000!0910061301N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 13:01:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000272
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000272
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000272
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00003", "PRODUTO 3", "II", 1.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.VendeItem("00002", "PRODUTO 2", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0003}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0004}
+ECF.NumCupom
+OK: 000273
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000273
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000273
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0006}
+ECF.SubTotal
+OK: 3
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 3
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000273
+ECF.Estado
+OK: estPagamento
+ECF.EfetuaPagamento("10", 3.00, "", TRUE)
+OK: .+0007003P VENDAS 10N000000000300000000000300!0910061303N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("----------------------------------------|00000-VENDAS A VISTA                    |TESTE 14                                |Vendedor: 01-JOSE MARIA                 |----------------------------------------|")
+OK: .+0008003C VENDAS 12N000000000300000000000300!0910061303N                                   001NN000000000000000000000000SNNN0 }
+ECF.Ativar
+OK: .+0008003C VENDAS 12N000000000300000000000300!0910061303N                                   001NN000000000000000000000000SNNN0 }
+ECF.AbreCupomVinculado("000273", "10", 3.00)
+OK: .+0001003PN.FISCAL19N000000000300000000000300!0910061303N                                   001NN000000000000000000000000SNNS3 }
+ECF.LinhaCupomVinculado("        AUTORIZACAO DE CONVENIO|      UltraLink|Estab.: FARMACIA TESTE LTDA|2-MARIA OLIVEIRA|Empresa: EMPRESA TESTE|Valor: 3,00|Autorizacao: 1386-6|__________________________________|AUTORIZO DESCONTO EM FOLHA DE PGTO")
+OK: .+0010}
+ECF.LinhaCupomVinculado(" | | | | | |")
+OK: .+0016}
+
+ACBrMonitor Ver. 1.0 - ACBr: 0.8.5b
+Conectado em: 09/10/06 12:53:23
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: .+0016}
+ECF.NumECF
+OK: 0001
+ECF.Estado
+OK: estRelatorio
+ECF.Ativar
+OK: .+0016003PN.FISCAL08N000000000300000000000300!0910061304N                                   001NN000000000000000000000000SNNS3 }
+ECF.FechaRelatorio
+OK: .+0017}
+ECF.PreparaTEF
+OK: .+T001D                                                                                                                        }
+ECF.AchaFPGDescricao("CARTãO")
+OK: 04  VCartão                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.AchaFPGDescricao("GET")
+ERRO: Forma de Pagamento: GET não encontrada
+ECF.AchaFPGDescricao("SOROCRED")
+ERRO: Forma de Pagamento: SOROCRED não encontrada
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.AchaFPGDescricao("VALE FRETE")
+ERRO: Forma de Pagamento: VALE FRETE não encontrada
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 09  VA PRAZO                       
+ECF.TestaPodeAbrirCupom
+OK: .+0017003CN.FISCAL12N000000000300000000000300!0910061308N                                   001NN000000000000000000000000SNNS3 }
+ECF.DataHora
+OK: 09/10/06 13:08:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000274
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000274
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000274
+ECF.Estado
+OK: estLivre
+ECF.CarregaAliquotas
+OK: T01 T18,00|T02 T14,00|T03 T8,40|T04 T7,00|T05 T12,00|S01 S2,50
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.VendeItem("00002", "PRODUTO 2", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0003}
+ECF.VendeItem("00003", "PRODUTO 3", "II", 1.000, 1.00, 0.00, "UN")
+OK: .+0004}
+ECF.NumCupom
+OK: 000275
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000275
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000275
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0006}
+ECF.SubTotal
+OK: 3
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 3
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000275
+ECF.Estado
+OK: estPagamento
+ECF.EfetuaPagamento("10", 3.00, "", TRUE)
+OK: .+0007003P VENDAS 10N000000000300000000000300!0910061309N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("----------------------------------------|00000-VENDAS A VISTA                    |Vendedor: 01-JOSE MARIA                 |----------------------------------------|")
+OK: .+0008003C VENDAS 12N000000000300000000000300!0910061309N                                   001NN000000000000000000000000SNNN0 }
+ECF.Ativar
+OK: .+0008003C VENDAS 12N000000000300000000000300!0910061309N                                   001NN000000000000000000000000SNNN0 }
+ECF.AbreCupomVinculado("000275", "10", 3.00)
+OK: .+0001003PN.FISCAL19N000000000300000000000300!0910061309N                                   001NN000000000000000000000000SNNS3 }
+ECF.LinhaCupomVinculado("        AUTORIZACAO DE CONVENIO|      UltraLink|Estab.: FARMACIA TESTE LTDA|2-MARIA OLIVEIRA|Empresa: EMPRESA TESTE|Valor: 3,00|Autorizacao: 1387-4|__________________________________|AUTORIZO DESCONTO EM FOLHA DE PGTO")
+ERRO: Impressora Sweda ST100 (ST) não está respondendo
+ECF.FechaRelatorio
+OK: .+0008}
+ECF.FechaRelatorio
+ERRO: Impressora Sweda ST100 (ST) não está respondendo
+ECF.CancelaCupom
+ERRO: Erro retornado pela Impressora: Sweda ST100 (ST)
+
+ERRO-COMANDO NAO PERMITIDO
+ECF.CancelaCupom
+ERRO: Erro retornado pela Impressora: Sweda ST100 (ST)
+
+ERRO-COMANDO NAO PERMITIDO
+ECF.TestaPodeAbrirCupom
+OK: .+0008003EN.FISCAL05N000000000300000000000300!0910061311N                                   001NN000000000000000000000000SNNS3 }
+ECF.DataHora
+OK: 09/10/06 13:11:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000276
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000276
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000276
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000276
+ECF.CancelaCupom
+ERRO: Erro retornado pela Impressora: Sweda ST100 (ST)
+
+**ERRO-ESTORNAR CCD ANTES DE CANC CUPOM
+ECF.TestaPodeAbrirCupom
+OK: .+0000003E        05N000000000300000000000300!0910061321N                                   001NN000000000000000000000000SNNS3 }
+ECF.DataHora
+OK: 09/10/06 13:21:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000276
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000276
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000276
+ECF.Estado
+OK: estLivre
+ECF.TestaPodeAbrirCupom
+OK: .+0000003E        05N000000000300000000000300!0910061321N                                   001NN000000000000000000000000SNNS3 }
+ECF.DataHora
+OK: 09/10/06 13:21:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000276
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000276
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000276
+ECF.Estado
+OK: estLivre
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: .+0001}
+ECF.VendeItem("00001", "PRODUTO 1", 12.00, 1.000, 1.00, 0.00, "UN")
+OK: .+0002}
+ECF.NumCupom
+OK: 000277
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000277
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000277
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: .+0004}
+ECF.SubTotal
+OK: 1
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 1
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.NumCupom
+OK: 000277
+ECF.Estado
+OK: estPagamento
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01   Dinheiro                      
+ECF.EfetuaPagamento("01", 1.00, "", FALSE)
+OK: .+0005001P VENDAS 10N000000000100000000000100!0910061322N                                   001NN000000000000000000000000SNNN0 }
+ECF.FechaCupom("----------------------------------------|00000-VENDAS A VISTA                    |TESTE 11 B - VENDA PARCELADA 1,00       |Vendedor: 01-JOSE MARIA                 |----------------------------------------|")
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061323N                                   001NN000000000000000000000000SNNN0 }
+ECF.TestaPodeAbrirCupom
+OK: .+0006001C VENDAS 12N000000000100000000000100!0910061323N                                   001NN000000000000000000000000SNNN0 }
+ECF.DataHora
+OK: 09/10/06 13:23:00
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000277
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000277
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000277
+ECF.Estado
+OK: estLivre
+Exception: Communication error 5: Erro de entrada/saída
+Exception: Communication error 5: Erro de entrada/saída
+
+ACBrMonitor Ver. 0.6b - ACBr: 0.8.5b
+Conectado em: 12/11/06 17:48:44
+Máquina: 200.161.142.79
+Esperando por comandos.
+DIS.Ativar
+OK: 
+DIS.LimparDisplay
+OK: 
+ECF.Ativar
+OK: 
+ECF.NumECF
+OK: 001
+ECF.Estado
+OK: estRequerZ
+ECF.AchaFPGDescricao("CARTãO")
+OK: 09  VCARTãO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("GET")
+OK: 03  VGET                           
+ECF.AchaFPGDescricao("SOROCRED")
+OK: 04  VSOROCRED                      
+ECF.AchaFPGDescricao("VALE FRETE")
+OK: 05  VVALE FRETE                    
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 06  VA PRAZO                       
+GAV.AbreGaveta
+ERRO: Modelo não definido
+GAV.AbreGaveta
+ERRO: Modelo não definido
+DIS.Colunas
+OK: 20
+DIS.LinhasCount
+OK: 2
+DIS.ExibirLinha(1, " OBRIGADO POR USAR")
+OK: 
+DIS.ExibirLinha(2, "UM PROGRAMA DJSYSTEM")
+OK: 
+DIS.Desativar
+OK: 
+
+ACBrMonitor Ver. 0.6b - ACBr: 0.8.5b
+Conectado em: 12/11/06 17:50:03
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: 
+ECF.NumECF
+OK: 001
+ECF.Estado
+OK: estRequerZ
+ECF.AchaFPGDescricao("CARTãO")
+OK: 09  VCARTãO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("GET")
+OK: 03  VGET                           
+ECF.AchaFPGDescricao("SOROCRED")
+OK: 04  VSOROCRED                      
+ECF.AchaFPGDescricao("VALE FRETE")
+OK: 05  VVALE FRETE                    
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 06  VA PRAZO                       
+ECF.TestaPodeAbrirCupom
+ERRO: Redução Z de dia anterior não emitida.
+ Imprima uma Redução Z para poder vender
+ECF.ReducaoZ("12/11/06 18:50:28")
+OK: 
+ECF.TestaPodeAbrirCupom
+OK: 
+ECF.DataHora
+OK: 12/11/06 17:50:32
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000041
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000041
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000041
+ECF.Estado
+OK: estLivre
+ECF.CarregaAliquotas
+OK: 01  T0,00|02  T0,00|03  T0,00|04  T18,00|05  T12,00|06  T2,16|07  S2,50
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: 
+ECF.Estado
+OK: estVenda
+ECF.VendeItem("2222222222222", "PRODUTO 2", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: 
+ECF.VendeItem("00009", "PRODUTO 5", 18.00, 1.000, 1.00, 0.00, "")
+OK: 
+ECF.VendeItem("00346", "TESTE DE SERVICO COM ICMS", 18.00, 1.000, 100.00, 0.00, "")
+OK: 
+ECF.SubTotalizaCupom(0.00)
+OK: 
+ECF.SubTotal
+OK: 102
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 102
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.EfetuaPagamento("01", 102.00, "", FALSE)
+OK: 
+ECF.AbreGaveta
+OK: 
+ECF.GavetaAberta
+OK: False
+ECF.FechaCupom("------------------------------------------------|00000-VENDAS A VISTA                            |Vendedor: 01-JOSE MARIA                         |------------------------------------------------|")
+OK: 
+ECF.NumCupom
+OK: 000042
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000042
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000042
+ECF.Estado
+OK: estLivre
+Exception: I/O error 103
+Exception: I/O error 103
+Exception: I/O error 103
+Exception: I/O error 103
+Exception: I/O error 103
+Exception: I/O error 103
+Exception: I/O error 103
+Exception: I/O error 103
+Exception: I/O error 103
+Exception: I/O error 103
+Exception: I/O error 103
+Exception: I/O error 103
+Exception: I/O error 103
+Exception: I/O error 103
+Exception: Communication error 2: O sistema não pode encontrar o arquivo especificado
+
+ACBrMonitor Ver. 0.6b - ACBr: 0.8.5b
+Conectado em: 12/11/06 18:02:16
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: 
+ECF.NumECF
+OK: 001
+ECF.Estado
+OK: estLivre
+ECF.AchaFPGDescricao("CARTãO")
+OK: 09  VCARTãO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("GET")
+OK: 03  VGET                           
+ECF.AchaFPGDescricao("SOROCRED")
+OK: 04  VSOROCRED                      
+ECF.AchaFPGDescricao("VALE FRETE")
+OK: 05  VVALE FRETE                    
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 06  VA PRAZO                       
+ECF.TestaPodeAbrirCupom
+OK: 
+ECF.DataHora
+OK: 12/11/06 18:02:28
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000043
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000043
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000043
+ECF.Estado
+OK: estLivre
+
+ACBrMonitor Ver. 0.6b - ACBr: 0.8.5b
+Conectado em: 30/11/06 09:57:09
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: 
+ECF.NumECF
+OK: 001
+ECF.Estado
+OK: estRequerZ
+ECF.Ativar
+OK: 
+ECF.FechaRelatorio
+OK: 
+ECF.PreparaTEF
+OK: 
+ECF.AchaFPGDescricao("CARTAO")
+OK: 02  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("GET")
+OK: 03  VGET                           
+ECF.AchaFPGDescricao("SOROCRED")
+OK: 04  VSOROCRED                      
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.AchaFPGDescricao("VALE FRETE")
+OK: 05  VVALE FRETE                    
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 06  VA PRAZO                       
+
+ACBrMonitor Ver. 0.6b - ACBr: 0.8.5b
+Conectado em: 30/11/06 09:58:07
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: 
+ECF.NumECF
+OK: 001
+ECF.Estado
+OK: estRequerZ
+ECF.Ativar
+OK: 
+ECF.FechaRelatorio
+OK: 
+ECF.PreparaTEF
+OK: 
+ECF.AchaFPGDescricao("CARTAO")
+OK: 02  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("GET")
+OK: 03  VGET                           
+ECF.AchaFPGDescricao("SOROCRED")
+OK: 04  VSOROCRED                      
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.AchaFPGDescricao("VALE FRETE")
+OK: 05  VVALE FRETE                    
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 06  VA PRAZO                       
+ECF.TestaPodeAbrirCupom
+ERRO: Redução Z de dia anterior não emitida.
+ Imprima uma Redução Z para poder vender
+ECF.ReducaoZ("30/11/06 10:02:39")
+OK: 
+ECF.TestaPodeAbrirCupom
+OK: 
+ECF.DataHora
+OK: 30/11/06 10:02:22
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000044
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000044
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000044
+ECF.Estado
+OK: estLivre
+ECF.CarregaAliquotas
+OK: 01  T0,00|02  T0,00|03  T0,00|04  T18,00|05  T12,00|06  T2,16|07  S2,50
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: 
+ECF.VendeItem("1111111111111", "PRODUTO 1", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: 
+ECF.VendeItem("1111111111111", "PRODUTO 1", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: 
+ECF.VendeItem("2222222222222", "PRODUTO 2", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: 
+ECF.VendeItem("2222222222222", "PRODUTO 2", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: 
+ECF.VendeItem("2222222222222", "PRODUTO 2", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: 
+ECF.NumCupom
+OK: 000045
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000045
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000045
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: 
+ECF.SubTotal
+OK: 5
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 5
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("CARTAO")
+OK: 02  VCARTAO                        
+ECF.AchaFPGDescricao("CARTAO")
+OK: 02  VCARTAO                        
+ECF.NumCupom
+OK: 000045
+ECF.Estado
+OK: estPagamento
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.EfetuaPagamento("01", 5.00, "", FALSE)
+OK: 
+ECF.FechaCupom("------------------------------------------------|00000-VENDAS A VISTA                            |Vendedor: 01-JOSE MARIA                         |------------------------------------------------|")
+OK: 
+ECF.TestaPodeAbrirCupom
+OK: 
+ECF.DataHora
+OK: 30/11/06 10:04:24
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000045
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000045
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000045
+ECF.Estado
+OK: estLivre
+
+ACBrMonitor Ver. 0.6b - ACBr: 0.8.5b
+Conectado em: 30/11/06 10:05:46
+Máquina: 200.161.142.79
+Esperando por comandos.
+ECF.Ativar
+OK: 
+ECF.NumECF
+OK: 001
+ECF.Estado
+OK: estLivre
+ECF.Ativar
+OK: 
+ECF.FechaRelatorio
+OK: 
+ECF.PreparaTEF
+OK: 
+ECF.AchaFPGDescricao("CARTAO")
+OK: 02  VCARTAO                        
+ECF.AchaFPGDescricao("DINHEIRO")
+OK: 01  VDINHEIRO                      
+ECF.AchaFPGDescricao("GET")
+OK: 03  VGET                           
+ECF.AchaFPGDescricao("SOROCRED")
+OK: 04  VSOROCRED                      
+ECF.AchaFPGDescricao("TEF")
+OK: 10  VTEF                           
+ECF.AchaFPGDescricao("VALE FRETE")
+OK: 05  VVALE FRETE                    
+ECF.AchaFPGDescricao("A PRAZO")
+OK: 06  VA PRAZO                       
+ECF.TestaPodeAbrirCupom
+OK: 
+ECF.DataHora
+OK: 30/11/06 10:05:54
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000045
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000045
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000045
+ECF.Estado
+OK: estLivre
+ECF.CarregaAliquotas
+OK: 01  T0,00|02  T0,00|03  T0,00|04  T18,00|05  T12,00|06  T2,16|07  S2,50
+ECF.Estado
+OK: estLivre
+ECF.AbreCupom("")
+OK: 
+ECF.VendeItem("1111111111111", "PRODUTO 1", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: 
+ECF.VendeItem("1111111111111", "PRODUTO 1", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: 
+ECF.VendeItem("1111111111111", "PRODUTO 1", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: 
+ECF.VendeItem("1111111111111", "PRODUTO 1", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: 
+ECF.VendeItem("1111111111111", "PRODUTO 1", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: 
+ECF.VendeItem("1111111111111", "PRODUTO 1", 18.00, 1.000, 1.00, 0.00, "UN")
+OK: 
+ECF.NumCupom
+OK: 000046
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000046
+ECF.Estado
+OK: estVenda
+ECF.NumCupom
+OK: 000046
+ECF.Estado
+OK: estVenda
+ECF.SubTotalizaCupom(0.00)
+OK: 
+ECF.SubTotal
+OK: 6
+ECF.Estado
+OK: estPagamento
+ECF.SubTotal
+OK: 6
+ECF.TotalPago
+OK: 0
+ECF.AchaFPGDescricao("GET")
+OK: 03  VGET                           
+ECF.AchaFPGDescricao("CARTAO")
+OK: 02  VCARTAO                        
+ECF.AchaFPGDescricao("CARTAO")
+OK: 02  VCARTAO                        
+ECF.NumCupom
+OK: 000046
+ECF.Estado
+OK: estPagamento
+ECF.EfetuaPagamento("02", 6.00, "", TRUE)
+OK: 
+ECF.FechaCupom("------------------------------------------------|00000-VENDAS A VISTA                            |Vendedor: 01-JOSE MARIA                         |------------------------------------------------|")
+OK: 
+ECF.Ativar
+OK: 
+ECF.AbreCupomVinculado("000046", "02", 6.00)
+OK: 
+ECF.LinhaCupomVinculado("          REDECARD||||TERMINAL No.          RD000000|ESTAB. No.     000000009999999|------------------------------|                      VENDA-CR|11111111111|DATA/HORA             VALIDADE|30/11/06  10:07:49      11/11|AUTENT:|300002|C.V.:                 AUTORIZ.|2                      123456|------------------------------||###   OPERACAO SIMULADA    ###|###   NENHUM VALOR SERA    ###|### CREDITADO OU DEBITADO  ###||APROVADO||VALOR: 600||||ASSINATURA DO CLIENTE||RECONHECO E PAGAREI A|DIVIDA AQUI APRESENTADA||                      (SiTef)")
+OK: 
+ECF.LinhaCupomVinculado(" | | | | | |")
+OK: 
+ECF.LinhaCupomVinculado("          REDECARD||||TERMINAL No.          RD000000|ESTAB. No.     000000009999999|------------------------------|                      VENDA-CR|11111111111|DATA/HORA             VALIDADE|30/11/06  10:07:49      11/11|AUTENT:|300002|C.V.:                 AUTORIZ.|2                      123456|------------------------------||###   OPERACAO SIMULADA    ###|###   NENHUM VALOR SERA    ###|### CREDITADO OU DEBITADO  ###||APROVADO||VALOR: 600||||ASSINATURA DO CLIENTE||RECONHECO E PAGAREI A|DIVIDA AQUI APRESENTADA||                      (SiTef)")
+OK: 
+ECF.FechaRelatorio
+OK: 
+ECF.TestaPodeAbrirCupom
+OK: 
+ECF.DataHora
+OK: 30/11/06 10:10:07
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000047
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000047
+ECF.Estado
+OK: estLivre
+ECF.NumCupom
+OK: 000047
+ECF.Estado
+OK: estLivre
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 02-12-06 14:20:00
+Máquina: 200.161.142.79
+Esperando por comandos.
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 02-12-06 14:22:11
+Máquina: 200.161.142.79
+Esperando por comandos.
+
+ACBrMonitorConsole Ver. 0.1a - ACBr: 0.8.5b
+Conectado em: 02-12-06 14:23:28
+Máquina: 200.161.142.79
+Esperando por comandos.

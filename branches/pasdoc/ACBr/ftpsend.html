@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ftpsend</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ftpsend</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td><a class="section"  href="#%40FuncsProcs">Funções e Procedimentos</a></td><td><a class="section"  href="#%40Types">Tipos</a></td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+FTP client protocol</p>
+<p>
+: 
+
+<p>Used RFC: RFC-959, RFC-2228, RFC-2428</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>Classes</li><li><a   href="blcksock.html">blcksock</a></li><li><a   href="synautil.html">synautil</a></li><li><a   href="synaip.html">synaip</a></li><li>synsock</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ftpsend.TFTPListRec.html"><code>TFTPListRec</code></a></td>
+<td class="itemdesc">Object for holding file information</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ftpsend.TFTPList.html"><code>TFTPList</code></a></td>
+<td class="itemdesc">This is TList of <a class="normal"  href="ftpsend.TFTPListRec.html">TFTPListRec</a> objects.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ftpsend.TFTPSend.html"><code>TFTPSend</code></a></td>
+<td class="itemdesc">Implementation of FTP protocol.</td>
+</tr>
+</table>
+<a name="%40FuncsProcs"></a><h3 class="summary">Funções e Procedimentos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ftpsend.html#FtpGetFile">FtpGetFile</a></b>(const IP, Port, FileName, LocalFile, User, Pass: string): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ftpsend.html#FtpPutFile">FtpPutFile</a></b>(const IP, Port, FileName, LocalFile, User, Pass: string): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ftpsend.html#FtpInterServerTransfer">FtpInterServerTransfer</a></b>( const FromIP, FromPort, FromFile, FromUser, FromPass: string; const ToIP, ToPort, ToFile, ToUser, ToPass: string): Boolean;</code></td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ftpsend.html#TLogonActions">TLogonActions</a></b> = array [0..17] of byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ftpsend.html#TFTPStatus">TFTPStatus</a></b> = procedure(Sender: TObject; Response: Boolean; const Value: string) of object;</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ftpsend.html#cFtpProtocol">cFtpProtocol</a></b> = '21';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ftpsend.html#cFtpDataProtocol">cFtpDataProtocol</a></b> = '20';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ftpsend.html#FTP_OK">FTP_OK</a></b> = 255;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ftpsend.html#FTP_ERR">FTP_ERR</a></b> = 254;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Funções e Procedimentos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FtpGetFile"></a><code>function <b>FtpGetFile</b>(const IP, Port, FileName, LocalFile, User, Pass: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:A very useful function, and example of use <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be found in the <a class="normal"  href="ftpsend.TFTPSend.html">TFtpSend</a> object. Dowload specified file from FTP server to LocalFile.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FtpPutFile"></a><code>function <b>FtpPutFile</b>(const IP, Port, FileName, LocalFile, User, Pass: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:A very useful function, and example of use <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be found in the <a class="normal"  href="ftpsend.TFTPSend.html">TFtpSend</a> object. Upload specified LocalFile to FTP server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FtpInterServerTransfer"></a><code>function <b>FtpInterServerTransfer</b>( const FromIP, FromPort, FromFile, FromUser, FromPass: string; const ToIP, ToPort, ToFile, ToUser, ToPass: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:A very useful function, and example of use <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be found in the <a class="normal"  href="ftpsend.TFTPSend.html">TFtpSend</a> object. Initiate transfer of file between two FTP servers.</p>
+</td></tr>
+</table>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TLogonActions"></a><code><b>TLogonActions</b> = array [0..17] of byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Array for holding definition of logon sequence.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TFTPStatus"></a><code><b>TFTPStatus</b> = procedure(Sender: TObject; Response: Boolean; const Value: string) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Procedural type for OnStatus event. Sender is calling <a class="normal"  href="ftpsend.TFTPSend.html">TFTPSend</a> object. Value is FTP command or reply to this comand. (if it is reply, Response is <code>True</code>).</p>
+</td></tr>
+</table>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cFtpProtocol"></a><code><b>cFtpProtocol</b> = '21';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cFtpDataProtocol"></a><code><b>cFtpDataProtocol</b> = '20';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FTP_OK"></a><code><b>FTP_OK</b> = 255;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Terminating value for <a class="normal"  href="ftpsend.html#TLogonActions">TLogonActions</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FTP_ERR"></a><code><b>FTP_ERR</b> = 254;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Terminating value for <a class="normal"  href="ftpsend.html#TLogonActions">TLogonActions</a></p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:56</em>
+</span>
+</body></html>

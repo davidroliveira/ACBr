@@ -1,0 +1,366 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: pcnAuxiliar</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit pcnAuxiliar</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td>Classes, Interfaces, Objetos e Registros</td><td><a class="section"  href="#%40FuncsProcs">Funções e Procedimentos</a></td><td>Tipos</td><td>Constantes</td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+////////////////////////////////////////////////////////////////////////////// // PCN - Projeto Cooperar NFe // // Descrição: Classes para geração/leitura dos arquivos xml da NFe // // site: www.projetocooperar.org/nfe // email: projetocooperar@zipmail.com.br // forum: <a  target="_parent" href="http://br.groups.yahoo.com/group/projeto_cooperar_nfe/">http://br.groups.yahoo.com/group/projeto_cooperar_nfe/</a> // projeto: <a  target="_parent" href="http://code.google.com/p/projetocooperar/">http://code.google.com/p/projetocooperar/</a> // svn: <a  target="_parent" href="http://projetocooperar.googlecode.com/svn/trunk/">http://projetocooperar.googlecode.com/svn/trunk/</a> // // Coordenação: (c) 2009 - Paulo Casagrande // // Equipe: Vide o arquivo leiame.txt na pasta raiz do projeto // // Versão: Vide o arquivo leiame.txt na pasta raiz do projeto // // Licença: GNU Lesser General Public License (GNU LGPL) // // - Este programa é software livre; você pode redistribuí-lo // e/ou modificá-lo sob os termos da Licença Pública Geral GNU, // conforme publicada pela Free Software Foundation; tanto a // versão 2 da Licença como (a seu critério) qualquer versão // mais nova. // // - Este programa é distribuído na expectativa de ser útil, // mas SEM QUALQUER GARANTIA; sem mesmo a garantia implícita de // COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO EM // PARTICULAR. Consulte a Licença Pública Geral GNU para obter // mais detalhes. Você deve ter recebido uma cópia da Licença // Pública Geral GNU junto com este programa; se não, escreva // para a Free Software Foundation, Inc., 59 Temple Place, // Suite 330, Boston, MA - 02111-1307, USA ou consulte a // licença oficial em <a  target="_parent" href="http://www.gnu.org/licenses/gpl.txt">http://www.gnu.org/licenses/gpl.txt</a> // // Nota (1): - Esta licença não concede o direito de uso do nome // &quot;PCN - Projeto Cooperar NFe&quot;, não podendo o mesmo ser // utilizado sem previa autorização. // // Nota (2): - O uso integral (ou parcial) das units do projeto esta // condicionado a manutenção deste cabeçalho junto ao código // // //////////////////////////////////////////////////////////////////////////////</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>Classes</li><li>Variants</li><li><a   href="pcnConversao.html">pcnConversao</a></li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40FuncsProcs"></a><h3 class="summary">Funções e Procedimentos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#CodigoParaUF">CodigoParaUF</a></b>(const codigo: integer): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#DateTimeTodh">DateTimeTodh</a></b>(DataHora: TDateTime): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#ExecutarAjusteTagNro">ExecutarAjusteTagNro</a></b>(Corrigir: boolean; Nro: string): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#FiltrarTextoXML">FiltrarTextoXML</a></b>(const RetirarEspacos: boolean; aTexto: AnsiString; RetirarAcentos: boolean = True): AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#IIf">IIf</a></b>(const condicao: Boolean; const Verdadeiro, Falso: Variant): Variant;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#IntToStrZero">IntToStrZero</a></b>(const Numero: integer; const tamanho: integer): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#GerarCodigoNumerico">GerarCodigoNumerico</a></b>(numero: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#GerarChave">GerarChave</a></b>(var chave: AnsiString; const codigoUF: integer; codigoNumerico: integer; const modelo, serie, numero, tpemi: integer; const emissao: TDateTime; const CNPJ: string): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#GerarChaveCTe">GerarChaveCTe</a></b>(var chave: AnsiString; const codigoUF: integer; codigoNumerico: integer; const modelo, serie, numero: integer; const emissao: TDateTime; const CNPJ: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#GerarDigito">GerarDigito</a></b>(var Digito: integer; chave: string): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#SomenteNumeros">SomenteNumeros</a></b>(const s: string): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#RetornarCodigoNumerico">RetornarCodigoNumerico</a></b>(Chave: string; Versao : real): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#RetornarCodigoNumericoCTe">RetornarCodigoNumericoCTe</a></b>(Chave: string): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#RetornarConteudoEntre">RetornarConteudoEntre</a></b>(const Frase, Inicio, Fim: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#RetornarDigito">RetornarDigito</a></b>(const chave: string): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#RetornarVersaoLayout">RetornarVersaoLayout</a></b>(const schema: <a   href="pcnConversao.html#TpcnSchema">TpcnSchema</a>; const Layout: <a   href="pcnConversao.html#TpcnTipoLayout">TpcnTipoLayout</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#ReverterFiltroTextoXML">ReverterFiltroTextoXML</a></b>(aTexto: AnsiString): AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#UFparaCodigo">UFparaCodigo</a></b>(const UF: string): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#ValidarAAMM">ValidarAAMM</a></b>(const AAMM: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#ValidarCListServ">ValidarCListServ</a></b>(const cListServ: integer): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#ValidarChave">ValidarChave</a></b>(const chave: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#ValidarCodigoPais">ValidarCodigoPais</a></b>(const iPais: integer): smallint;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#ValidarCodigoUF">ValidarCodigoUF</a></b>(const Codigo: integer): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#ValidarCNPJ">ValidarCNPJ</a></b>(const numero: string): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#ValidarCPF">ValidarCPF</a></b>(const numero: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#ValidarMod">ValidarMod</a></b>(const modelo: integer): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#ValidarMunicipio">ValidarMunicipio</a></b>(const Municipio: integer): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#ValidarNumeros">ValidarNumeros</a></b>(const s: string): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#ValidarUF">ValidarUF</a></b>(const UF: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#ValidarIE">ValidarIE</a></b>(IE, UF: string; ApenasDigitos: Boolean = True): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#ValidarISUF">ValidarISUF</a></b>(const ISUF: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#SubStrEmSubStr">SubStrEmSubStr</a></b>(const SubStr1: string; SubStr2: string): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#xml4line">xml4line</a></b>(texto: AnsiString): AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="pcnAuxiliar.html#RetornarPosEx">RetornarPosEx</a></b>(const SubStr, S: AnsiString; Offset: Cardinal = 1): Integer;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Funções e Procedimentos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CodigoParaUF"></a><code>function <b>CodigoParaUF</b>(const codigo: integer): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DateTimeTodh"></a><code>function <b>DateTimeTodh</b>(DataHora: TDateTime): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ExecutarAjusteTagNro"></a><code>function <b>ExecutarAjusteTagNro</b>(Corrigir: boolean; Nro: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FiltrarTextoXML"></a><code>function <b>FiltrarTextoXML</b>(const RetirarEspacos: boolean; aTexto: AnsiString; RetirarAcentos: boolean = True): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IIf"></a><code>function <b>IIf</b>(const condicao: Boolean; const Verdadeiro, Falso: Variant): Variant;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IntToStrZero"></a><code>function <b>IntToStrZero</b>(const Numero: integer; const tamanho: integer): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GerarCodigoNumerico"></a><code>function <b>GerarCodigoNumerico</b>(numero: integer): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GerarChave"></a><code>function <b>GerarChave</b>(var chave: AnsiString; const codigoUF: integer; codigoNumerico: integer; const modelo, serie, numero, tpemi: integer; const emissao: TDateTime; const CNPJ: string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GerarChaveCTe"></a><code>function <b>GerarChaveCTe</b>(var chave: AnsiString; const codigoUF: integer; codigoNumerico: integer; const modelo, serie, numero: integer; const emissao: TDateTime; const CNPJ: string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GerarDigito"></a><code>function <b>GerarDigito</b>(var Digito: integer; chave: string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SomenteNumeros"></a><code>function <b>SomenteNumeros</b>(const s: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RetornarCodigoNumerico"></a><code>function <b>RetornarCodigoNumerico</b>(Chave: string; Versao : real): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RetornarCodigoNumericoCTe"></a><code>function <b>RetornarCodigoNumericoCTe</b>(Chave: string): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RetornarConteudoEntre"></a><code>function <b>RetornarConteudoEntre</b>(const Frase, Inicio, Fim: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RetornarDigito"></a><code>function <b>RetornarDigito</b>(const chave: string): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RetornarVersaoLayout"></a><code>function <b>RetornarVersaoLayout</b>(const schema: <a   href="pcnConversao.html#TpcnSchema">TpcnSchema</a>; const Layout: <a   href="pcnConversao.html#TpcnTipoLayout">TpcnTipoLayout</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ReverterFiltroTextoXML"></a><code>function <b>ReverterFiltroTextoXML</b>(aTexto: AnsiString): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="UFparaCodigo"></a><code>function <b>UFparaCodigo</b>(const UF: string): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ValidarAAMM"></a><code>function <b>ValidarAAMM</b>(const AAMM: string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ValidarCListServ"></a><code>function <b>ValidarCListServ</b>(const cListServ: integer): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ValidarChave"></a><code>function <b>ValidarChave</b>(const chave: string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ValidarCodigoPais"></a><code>function <b>ValidarCodigoPais</b>(const iPais: integer): smallint;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ValidarCodigoUF"></a><code>function <b>ValidarCodigoUF</b>(const Codigo: integer): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ValidarCNPJ"></a><code>function <b>ValidarCNPJ</b>(const numero: string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ValidarCPF"></a><code>function <b>ValidarCPF</b>(const numero: string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ValidarMod"></a><code>function <b>ValidarMod</b>(const modelo: integer): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ValidarMunicipio"></a><code>function <b>ValidarMunicipio</b>(const Municipio: integer): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ValidarNumeros"></a><code>function <b>ValidarNumeros</b>(const s: string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ValidarUF"></a><code>function <b>ValidarUF</b>(const UF: string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ValidarIE"></a><code>function <b>ValidarIE</b>(IE, UF: string; ApenasDigitos: Boolean = True): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ValidarISUF"></a><code>function <b>ValidarISUF</b>(const ISUF: string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SubStrEmSubStr"></a><code>function <b>SubStrEmSubStr</b>(const SubStr1: string; SubStr2: string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="xml4line"></a><code>function <b>xml4line</b>(texto: AnsiString): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RetornarPosEx"></a><code>function <b>RetornarPosEx</b>(const SubStr, S: AnsiString; Offset: Cardinal = 1): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:59</em>
+</span>
+</body></html>

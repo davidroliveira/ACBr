@@ -1,0 +1,434 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrMSXML2_TLB: Interface ISchemaType</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="ISchemaType"></a><h1 class="cio">Interface ISchemaType</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td>Campos</td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrMSXML2_TLB.html">ACBrMSXML2_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type ISchemaType = interface(<a class="normal"  href="ACBrMSXML2_TLB.ISchemaItem.html">ISchemaItem</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// Interface: <code>ISchemaType</code> Flags: (4544) Dual NonExtensible OleAutomation Dispatchable GUID: {50EA08B8-DD1B-4664-9A50-C2F40F4BD79A} *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">IDispatch</li>
+<li class="ancestor"><a class="normal"  href="ACBrMSXML2_TLB.ISchemaItem.html">ISchemaItem</a></li>
+<li class="thisitem">ISchemaType</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_baseTypes">Get_baseTypes</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaItemCollection.html">ISchemaItemCollection</a>; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_final">Get_final</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_variety">Get_variety</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMATYPEVARIETY">SCHEMATYPEVARIETY</a>; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_derivedBy">Get_derivedBy</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#isValid">isValid</a></b>(const data: WideString): WordBool; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_minExclusive">Get_minExclusive</a></b>: WideString; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_minInclusive">Get_minInclusive</a></b>: WideString; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_maxExclusive">Get_maxExclusive</a></b>: WideString; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_maxInclusive">Get_maxInclusive</a></b>: WideString; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_totalDigits">Get_totalDigits</a></b>: OleVariant; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_fractionDigits">Get_fractionDigits</a></b>: OleVariant; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_length">Get_length</a></b>: OleVariant; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_minLength">Get_minLength</a></b>: OleVariant; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_maxLength">Get_maxLength</a></b>: OleVariant; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_enumeration">Get_enumeration</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaStringCollection.html">ISchemaStringCollection</a>; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_whitespace">Get_whitespace</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMAWHITESPACE">SCHEMAWHITESPACE</a>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_patterns">Get_patterns</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaStringCollection.html">ISchemaStringCollection</a>; safecall;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#baseTypes">baseTypes</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaItemCollection.html">ISchemaItemCollection</a> read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_baseTypes">Get_baseTypes</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#final">final</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a> read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_final">Get_final</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#variety">variety</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMATYPEVARIETY">SCHEMATYPEVARIETY</a> read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_variety">Get_variety</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#derivedBy">derivedBy</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a> read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_derivedBy">Get_derivedBy</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#minExclusive">minExclusive</a></b>: WideString read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_minExclusive">Get_minExclusive</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#minInclusive">minInclusive</a></b>: WideString read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_minInclusive">Get_minInclusive</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#maxExclusive">maxExclusive</a></b>: WideString read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_maxExclusive">Get_maxExclusive</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#maxInclusive">maxInclusive</a></b>: WideString read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_maxInclusive">Get_maxInclusive</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#totalDigits">totalDigits</a></b>: OleVariant read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_totalDigits">Get_totalDigits</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#fractionDigits">fractionDigits</a></b>: OleVariant read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_fractionDigits">Get_fractionDigits</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#length">length</a></b>: OleVariant read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_length">Get_length</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#minLength">minLength</a></b>: OleVariant read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_minLength">Get_minLength</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#maxLength">maxLength</a></b>: OleVariant read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_maxLength">Get_maxLength</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#enumeration">enumeration</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaStringCollection.html">ISchemaStringCollection</a> read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_enumeration">Get_enumeration</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#whitespace">whitespace</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMAWHITESPACE">SCHEMAWHITESPACE</a> read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_whitespace">Get_whitespace</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaType.html#patterns">patterns</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaStringCollection.html">ISchemaStringCollection</a> read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_patterns">Get_patterns</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_baseTypes"></a><code>function <b>Get_baseTypes</b>: <a   href="ACBrMSXML2_TLB.ISchemaItemCollection.html">ISchemaItemCollection</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_final"></a><code>function <b>Get_final</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_variety"></a><code>function <b>Get_variety</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMATYPEVARIETY">SCHEMATYPEVARIETY</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_derivedBy"></a><code>function <b>Get_derivedBy</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="isValid"></a><code>function <b>isValid</b>(const data: WideString): WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_minExclusive"></a><code>function <b>Get_minExclusive</b>: WideString; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_minInclusive"></a><code>function <b>Get_minInclusive</b>: WideString; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_maxExclusive"></a><code>function <b>Get_maxExclusive</b>: WideString; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_maxInclusive"></a><code>function <b>Get_maxInclusive</b>: WideString; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_totalDigits"></a><code>function <b>Get_totalDigits</b>: OleVariant; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_fractionDigits"></a><code>function <b>Get_fractionDigits</b>: OleVariant; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_length"></a><code>function <b>Get_length</b>: OleVariant; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_minLength"></a><code>function <b>Get_minLength</b>: OleVariant; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_maxLength"></a><code>function <b>Get_maxLength</b>: OleVariant; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_enumeration"></a><code>function <b>Get_enumeration</b>: <a   href="ACBrMSXML2_TLB.ISchemaStringCollection.html">ISchemaStringCollection</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_whitespace"></a><code>function <b>Get_whitespace</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMAWHITESPACE">SCHEMAWHITESPACE</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_patterns"></a><code>function <b>Get_patterns</b>: <a   href="ACBrMSXML2_TLB.ISchemaStringCollection.html">ISchemaStringCollection</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="baseTypes"></a><code>property <b>baseTypes</b>: <a   href="ACBrMSXML2_TLB.ISchemaItemCollection.html">ISchemaItemCollection</a> read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_baseTypes">Get_baseTypes</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="final"></a><code>property <b>final</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a> read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_final">Get_final</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="variety"></a><code>property <b>variety</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMATYPEVARIETY">SCHEMATYPEVARIETY</a> read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_variety">Get_variety</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="derivedBy"></a><code>property <b>derivedBy</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a> read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_derivedBy">Get_derivedBy</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="minExclusive"></a><code>property <b>minExclusive</b>: WideString read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_minExclusive">Get_minExclusive</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="minInclusive"></a><code>property <b>minInclusive</b>: WideString read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_minInclusive">Get_minInclusive</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="maxExclusive"></a><code>property <b>maxExclusive</b>: WideString read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_maxExclusive">Get_maxExclusive</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="maxInclusive"></a><code>property <b>maxInclusive</b>: WideString read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_maxInclusive">Get_maxInclusive</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="totalDigits"></a><code>property <b>totalDigits</b>: OleVariant read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_totalDigits">Get_totalDigits</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="fractionDigits"></a><code>property <b>fractionDigits</b>: OleVariant read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_fractionDigits">Get_fractionDigits</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="length"></a><code>property <b>length</b>: OleVariant read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_length">Get_length</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="minLength"></a><code>property <b>minLength</b>: OleVariant read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_minLength">Get_minLength</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="maxLength"></a><code>property <b>maxLength</b>: OleVariant read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_maxLength">Get_maxLength</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="enumeration"></a><code>property <b>enumeration</b>: <a   href="ACBrMSXML2_TLB.ISchemaStringCollection.html">ISchemaStringCollection</a> read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_enumeration">Get_enumeration</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="whitespace"></a><code>property <b>whitespace</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMAWHITESPACE">SCHEMAWHITESPACE</a> read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_whitespace">Get_whitespace</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="patterns"></a><code>property <b>patterns</b>: <a   href="ACBrMSXML2_TLB.ISchemaStringCollection.html">ISchemaStringCollection</a> read <a   href="ACBrMSXML2_TLB.ISchemaType.html#Get_patterns">Get_patterns</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:45</em>
+</span>
+</body></html>

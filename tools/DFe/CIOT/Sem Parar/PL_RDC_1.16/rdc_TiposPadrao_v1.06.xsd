@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by mazuki (darksiderg) -->
+<xs:schema xmlns:rdc="https://ws.rodocred.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://ws.rodocred.com.br/" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xs:include schemaLocation="rdc_TiposPadrao_v1.05.xsd"/>
+	<xs:element name="ListaCentroCusto">
+		<xs:annotation>
+			<xs:documentation>Lista de Percentuais Centro de Custos</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="PercentualCentroCusto" type="rdc:PercentualCentroCustoType" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Percentual" type="rdc:ValorType">
+		<xs:annotation>
+			<xs:documentation>Percetual</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="PercentualCentroCustoType">
+		<xs:annotation>
+			<xs:documentation>Tipo para Percentual de Centro de Custo</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rdc:CodigoCentroCusto"/>
+			<xs:element ref="rdc:Percentual"/>
+		</xs:sequence>
+	</xs:complexType>
+  <xs:complexType name="CaminhoneiroType">
+    <xs:annotation>
+      <xs:documentation> Tipo de Caminhoneiro</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Nome" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Nome do Motorista</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="60"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Relacao" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Relação comercial
+            EMP - Empregado
+            CON - Contratado
+            AUT - Autônomo</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="EMP"/>
+            <xs:enumeration value="CON"/>
+            <xs:enumeration value="AUT"/>
+            <xs:enumeration value="AUX"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element ref="rdc:CPFCaminhoneiro"/>
+      <xs:element ref="rdc:RNTRC" minOccurs="0"/>
+      <xs:element name="CNH" type="rdc:CNHType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Dados do CNH do Motorista</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element ref="rdc:Contato" minOccurs="0"/>
+      <xs:element ref="rdc:Endereco" minOccurs="0"/>
+      <xs:element name="DataNascimento" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Data de Nascimento do Motorista</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Identidade" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Número da carteira de Identidade do motorista</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="OrgaoExpedidor" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Orgão Expedidor da carteira de identidade</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="20"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element ref="rdc:Sexo" minOccurs="0"/>
+      <xs:element ref="rdc:NumeroCartao" minOccurs="0"/>
+      <xs:element ref="rdc:NomeMae" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NumeroPedido" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Identificação do Pedido de Abastecimento</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="DadosPedidoAbastecimentoType">
+    <xs:annotation>
+      <xs:documentation> Tipo de Dados do Pedido de Abastecimento</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element ref="rdc:NumeroPedido" minOccurs="0"/>
+      <xs:element ref="rdc:DocumentoRef" minOccurs="0"/>
+      <xs:element name="CentrodeCusto" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Código do Centro de Custo da viagem.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Observacao" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Observação da viagem.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="255"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ValorTotalPedido" type="rdc:ValorType">
+    <xs:annotation>
+      <xs:documentation>Valor Total do Pedido</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ValorOperacao" type="rdc:ValorType">
+    <xs:annotation>
+      <xs:documentation>Valor da Operação</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="CombustivelCartaoCaminhoneiro">
+    <xs:annotation>
+      <xs:documentation>Nome do Combustivel  para Abastecimento</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="DIESEL"/>
+        <xs:enumeration value="S10"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="RecargaCartao">
+    <xs:annotation>
+      <xs:documentation>Lista de Operações de Recarga de Cartão</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="rdc:CondicaoLiberacao"/>
+        <xs:element ref="rdc:DataAgendamento" minOccurs="0"/>
+        <xs:element ref="rdc:CombustivelCartaoCaminhoneiro"/>
+        <xs:element ref="rdc:TipoRecargaCartao">
+					<xs:annotation>
+						<xs:documentation>Tipo da Recarga do Cartão
+L - Litros
+N - Litros Não Resgatáveis
+D-Dinheiro</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+        <xs:element ref="rdc:Validade"/>
+        <xs:element ref="rdc:OperacaoRecarga" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RecargaCartaoViagem">
+    <xs:annotation>
+      <xs:documentation>Lista de Operações de Recarga de Cartão na Viagem</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="rdc:CondicaoLiberacao"/>
+        <xs:element ref="rdc:DataAgendamento" minOccurs="0"/>
+        <xs:element ref="rdc:CombustivelCartaoCaminhoneiro"/>
+        <xs:element ref="rdc:TipoRecargaCartao"/>
+        <xs:element ref="rdc:Validade"/>
+        <xs:element ref="rdc:ValorOperacao"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DadosPedidoAbastecimento" type="rdc:DadosPedidoAbastecimentoType">
+    <xs:annotation>
+      <xs:documentation>Dados do cabeçalho do pedido de abastecimento</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ListaCaminhoneiros">
+    <xs:annotation>
+      <xs:documentation>Lista de Caminhoneiros Cadastrados</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Caminhoneiro">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="rdc:CPFCaminhoneiro"/>
+              <xs:element ref="rdc:StatusRetorno"/>
+              <xs:element ref="rdc:Excecao" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Caminhoneiro" type="rdc:CaminhoneiroType">
+    <xs:annotation>
+      <xs:documentation>Dados do Caminhoneiro</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="CPFCaminhoneiro" type="rdc:CPFType">
+    <xs:annotation>
+      <xs:documentation>CPF do Caminhoneiro</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="PeriodoProgramacao" type="rdc:PeriodoDataType">
+    <xs:annotation>
+      <xs:documentation>Período de Datas da Programação do Pedido</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="OperacaoRecargaType">
+    <xs:annotation>
+      <xs:documentation>Tipo da Operação de Recarga de Cartão</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element ref="rdc:CPFCaminhoneiro"/>
+      <xs:element ref="rdc:ValorOperacao"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperacaoRecarga" type="rdc:OperacaoRecargaType">
+    <xs:annotation>
+      <xs:documentation>Operação da Recarga de Cartão</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="CondicaoLiberacao">
+    <xs:annotation>
+      <xs:documentation>Condição de Liberação da Operação</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="LIB"/>
+        <xs:enumeration value="DAD"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="ValorLitroUF" type="rdc:ValorType">
+    <xs:annotation>
+      <xs:documentation>Valor por Litro por UF</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="ValorUnitarioLitroUF" type="rdc:ValorType">
+    <xs:annotation>
+      <xs:documentation>Valor por Litro por UF</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="Validade">
+    <xs:annotation>
+      <xs:documentation>Validade da Recarga</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:int">
+        <xs:enumeration value="30"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="TipoRecargaCartao">
+    <xs:annotation>
+      <xs:documentation>Tipo da Recarga do Cartão
+        L - Litros
+		N - Litros Não Resgatáveis
+        D-Dinheiro</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="L"/>
+        <xs:enumeration value="D"/>
+		<xs:enumeration value="N"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="ListaRecargaCartao">
+    <xs:annotation>
+      <xs:documentation>Lista de Recarga de Cartão</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="rdc:RecargaCartao" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SituacaoPedido">
+    <xs:annotation>
+      <xs:documentation>Situação do pedido</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="EmAberto" type="xs:boolean" default="true" minOccurs="0"/>
+        <xs:element name="Agendada" type="xs:boolean" default="true" minOccurs="0"/>
+        <xs:element name="Programada" type="xs:boolean" default="true" minOccurs="0"/>
+        <xs:element name="EmAndamento" type="xs:boolean" default="true" minOccurs="0"/>
+        <xs:element name="Cancelada" type="xs:boolean" default="true" minOccurs="0"/>
+        <xs:element name="Encerrada" type="xs:boolean" default="true" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListaPedidoAbastecimento">
+    <xs:annotation>
+      <xs:documentation>Lista de Pedidos de Abastecimento</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PedidoAbastecimento" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="rdc:NumeroPedido"/>
+              <xs:element ref="rdc:DataCadastro"/>
+              <xs:element ref="rdc:DataProgramacao" minOccurs="0"/>
+              <xs:element ref="rdc:DocumentoRef" minOccurs="0"/>
+              <xs:element ref="rdc:CentroCusto" minOccurs="0"/>
+              <xs:element ref="rdc:CondicaoLiberacao"/>
+              <xs:element ref="rdc:SituacaoPedido"/>
+              <xs:element ref="rdc:DataSituacao"/>
+              <xs:element ref="rdc:ValorAbastecimento"/>
+              <xs:element ref="rdc:ValorTotalTaxas"/>
+              <xs:element ref="rdc:ValorPedido"/>
+              <xs:element ref="rdc:Validade"/>
+              <xs:element ref="rdc:TipoRecargaCartao"/>
+              <xs:element ref="rdc:CombustivelCartaoCaminhoneiro">
+                <xs:annotation>
+                  <xs:documentation> Combustivel  para Abastecimento</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element ref="rdc:Validade"/>
+              <xs:element ref="rdc:OperacaoRecarga" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DataProgramacao" type="xs:dateTime">
+    <xs:annotation>
+      <xs:documentation>Data da Programação do Pedido</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+</xs:schema>

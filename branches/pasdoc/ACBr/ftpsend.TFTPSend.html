@@ -1,0 +1,1234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ftpsend: Classe TFTPSend</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TFTPSend"></a><h1 class="cio">Classe TFTPSend</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ftpsend.html">ftpsend</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TFTPSend = class(<a class="normal"  href="blcksock.TSynaClient.html">TSynaClient</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+Implementation of FTP protocol.</p>
+<p>
+: Note: Are you missing properties for setting <a class="normal"  href="blcksock.TSynaClient.html#UserName">Username</a> and <a class="normal"  href="blcksock.TSynaClient.html#Password">Password</a>? Look to parent <a class="normal"  href="blcksock.TSynaClient.html">TSynaClient</a> object! (<a class="normal"  href="blcksock.TSynaClient.html#UserName">Username</a> and <a class="normal"  href="blcksock.TSynaClient.html#Password">Password</a> have default values for &quot;anonymous&quot; FTP <a class="normal"  href="ftpsend.TFTPSend.html#Login">login</a>)
+
+<p>Are you missing properties for specify server address and port? Look to parent <a class="normal"  href="blcksock.TSynaClient.html">TSynaClient</a> too!</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal"  href="blcksock.TSynaClient.html">TSynaClient</a></li>
+<li class="thisitem">TFTPSend</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FOnStatus">FOnStatus</a></b>: <a   href="ftpsend.html#TFTPStatus">TFTPStatus</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FSock">FSock</a></b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FDSock">FDSock</a></b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FResultCode">FResultCode</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FResultString">FResultString</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FFullResult">FFullResult</a></b>: TStringList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FAccount">FAccount</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FFWHost">FFWHost</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FFWPort">FFWPort</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FFWUsername">FFWUsername</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FFWPassword">FFWPassword</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FFWMode">FFWMode</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FDataStream">FDataStream</a></b>: TMemoryStream;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FDataIP">FDataIP</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FDataPort">FDataPort</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FDirectFile">FDirectFile</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FDirectFileName">FDirectFileName</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FCanResume">FCanResume</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FPassiveMode">FPassiveMode</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FForceDefaultPort">FForceDefaultPort</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FForceOldPort">FForceOldPort</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FFtpList">FFtpList</a></b>: <a   href="ftpsend.TFTPList.html">TFTPList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FBinaryMode">FBinaryMode</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FAutoTLS">FAutoTLS</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FIsTLS">FIsTLS</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FIsDataTLS">FIsDataTLS</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FTLSonData">FTLSonData</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#FFullSSL">FFullSSL</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ftpsend.TFTPSend.html#CustomLogon">CustomLogon</a></b>: <a   href="ftpsend.html#TLogonActions">TLogonActions</a>;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#Auth">Auth</a></b>(Mode: integer): Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#Connect">Connect</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#InternalStor">InternalStor</a></b>(const Command: string; RestoreAt: integer): Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#DataSocket">DataSocket</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#AcceptDataSocket">AcceptDataSocket</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ftpsend.TFTPSend.html#DoStatus">DoStatus</a></b>(Response: Boolean; const Value: string); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ftpsend.TFTPSend.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ftpsend.TFTPSend.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#ReadResult">ReadResult</a></b>: Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ftpsend.TFTPSend.html#ParseRemote">ParseRemote</a></b>(Value: string); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ftpsend.TFTPSend.html#ParseRemoteEPSV">ParseRemoteEPSV</a></b>(Value: string); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#FTPCommand">FTPCommand</a></b>(const Value: string): integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#Login">Login</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#Logout">Logout</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ftpsend.TFTPSend.html#Abort">Abort</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ftpsend.TFTPSend.html#TelnetAbort">TelnetAbort</a></b>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#List">List</a></b>(Directory: string; NameList: Boolean): Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#RetrieveFile">RetrieveFile</a></b>(const FileName: string; Restore: Boolean): Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#StoreFile">StoreFile</a></b>(const FileName: string; Restore: Boolean): Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#StoreUniqueFile">StoreUniqueFile</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#AppendFile">AppendFile</a></b>(const FileName: string): Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#RenameFile">RenameFile</a></b>(const OldName, NewName: string): Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#DeleteFile">DeleteFile</a></b>(const FileName: string): Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#FileSize">FileSize</a></b>(const FileName: string): integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#NoOp">NoOp</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#ChangeWorkingDir">ChangeWorkingDir</a></b>(const Directory: string): Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#ChangeToParentDir">ChangeToParentDir</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#ChangeToRootDir">ChangeToRootDir</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#DeleteDir">DeleteDir</a></b>(const Directory: string): Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#CreateDir">CreateDir</a></b>(const Directory: string): Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#GetCurrentDir">GetCurrentDir</a></b>: String; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#DataRead">DataRead</a></b>(const DestStream: TStream): Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ftpsend.TFTPSend.html#DataWrite">DataWrite</a></b>(const SourceStream: TStream): Boolean; virtual;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#ResultCode">ResultCode</a></b>: Integer read <a   href="ftpsend.TFTPSend.html#FResultCode">FResultCode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#ResultString">ResultString</a></b>: string read <a   href="ftpsend.TFTPSend.html#FResultString">FResultString</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#FullResult">FullResult</a></b>: TStringList read <a   href="ftpsend.TFTPSend.html#FFullResult">FFullResult</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#Account">Account</a></b>: string read <a   href="ftpsend.TFTPSend.html#FAccount">FAccount</a> Write <a   href="ftpsend.TFTPSend.html#FAccount">FAccount</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#FWHost">FWHost</a></b>: string read <a   href="ftpsend.TFTPSend.html#FFWHost">FFWHost</a> Write <a   href="ftpsend.TFTPSend.html#FFWHost">FFWHost</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#FWPort">FWPort</a></b>: string read <a   href="ftpsend.TFTPSend.html#FFWPort">FFWPort</a> Write <a   href="ftpsend.TFTPSend.html#FFWPort">FFWPort</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#FWUsername">FWUsername</a></b>: string read <a   href="ftpsend.TFTPSend.html#FFWUsername">FFWUsername</a> Write <a   href="ftpsend.TFTPSend.html#FFWUsername">FFWUsername</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#FWPassword">FWPassword</a></b>: string read <a   href="ftpsend.TFTPSend.html#FFWPassword">FFWPassword</a> Write <a   href="ftpsend.TFTPSend.html#FFWPassword">FFWPassword</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#FWMode">FWMode</a></b>: integer read <a   href="ftpsend.TFTPSend.html#FFWMode">FFWMode</a> Write <a   href="ftpsend.TFTPSend.html#FFWMode">FFWMode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#Sock">Sock</a></b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a> read <a   href="ftpsend.TFTPSend.html#FSock">FSock</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#DSock">DSock</a></b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a> read <a   href="ftpsend.TFTPSend.html#FDSock">FDSock</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#DataStream">DataStream</a></b>: TMemoryStream read <a   href="ftpsend.TFTPSend.html#FDataStream">FDataStream</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#DataIP">DataIP</a></b>: string read <a   href="ftpsend.TFTPSend.html#FDataIP">FDataIP</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#DataPort">DataPort</a></b>: string read <a   href="ftpsend.TFTPSend.html#FDataPort">FDataPort</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#DirectFile">DirectFile</a></b>: Boolean read <a   href="ftpsend.TFTPSend.html#FDirectFile">FDirectFile</a> Write <a   href="ftpsend.TFTPSend.html#FDirectFile">FDirectFile</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#DirectFileName">DirectFileName</a></b>: string read <a   href="ftpsend.TFTPSend.html#FDirectFileName">FDirectFileName</a> Write <a   href="ftpsend.TFTPSend.html#FDirectFileName">FDirectFileName</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#CanResume">CanResume</a></b>: Boolean read <a   href="ftpsend.TFTPSend.html#FCanResume">FCanResume</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#PassiveMode">PassiveMode</a></b>: Boolean read <a   href="ftpsend.TFTPSend.html#FPassiveMode">FPassiveMode</a> Write <a   href="ftpsend.TFTPSend.html#FPassiveMode">FPassiveMode</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#ForceDefaultPort">ForceDefaultPort</a></b>: Boolean read <a   href="ftpsend.TFTPSend.html#FForceDefaultPort">FForceDefaultPort</a> Write <a   href="ftpsend.TFTPSend.html#FForceDefaultPort">FForceDefaultPort</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#ForceOldPort">ForceOldPort</a></b>: Boolean read <a   href="ftpsend.TFTPSend.html#FForceOldPort">FForceOldPort</a> Write <a   href="ftpsend.TFTPSend.html#FForceOldPort">FForceOldPort</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#OnStatus">OnStatus</a></b>: <a   href="ftpsend.html#TFTPStatus">TFTPStatus</a> read <a   href="ftpsend.TFTPSend.html#FOnStatus">FOnStatus</a> write <a   href="ftpsend.TFTPSend.html#FOnStatus">FOnStatus</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#FtpList">FtpList</a></b>: <a   href="ftpsend.TFTPList.html">TFTPList</a> read <a   href="ftpsend.TFTPSend.html#FFtpList">FFtpList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#BinaryMode">BinaryMode</a></b>: Boolean read <a   href="ftpsend.TFTPSend.html#FBinaryMode">FBinaryMode</a> Write <a   href="ftpsend.TFTPSend.html#FBinaryMode">FBinaryMode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#AutoTLS">AutoTLS</a></b>: Boolean read <a   href="ftpsend.TFTPSend.html#FAutoTLS">FAutoTLS</a> Write <a   href="ftpsend.TFTPSend.html#FAutoTLS">FAutoTLS</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#FullSSL">FullSSL</a></b>: Boolean read <a   href="ftpsend.TFTPSend.html#FFullSSL">FFullSSL</a> Write <a   href="ftpsend.TFTPSend.html#FFullSSL">FFullSSL</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#IsTLS">IsTLS</a></b>: Boolean read <a   href="ftpsend.TFTPSend.html#FIsTLS">FIsTLS</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#IsDataTLS">IsDataTLS</a></b>: Boolean read <a   href="ftpsend.TFTPSend.html#FIsDataTLS">FIsDataTLS</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ftpsend.TFTPSend.html#TLSonData">TLSonData</a></b>: Boolean read <a   href="ftpsend.TFTPSend.html#FTLSonData">FTLSonData</a> write <a   href="ftpsend.TFTPSend.html#FTLSonData">FTLSonData</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FOnStatus"></a><code><b>FOnStatus</b>: <a   href="ftpsend.html#TFTPStatus">TFTPStatus</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FSock"></a><code><b>FSock</b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FDSock"></a><code><b>FDSock</b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FResultCode"></a><code><b>FResultCode</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FResultString"></a><code><b>FResultString</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FFullResult"></a><code><b>FFullResult</b>: TStringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FAccount"></a><code><b>FAccount</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FFWHost"></a><code><b>FFWHost</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FFWPort"></a><code><b>FFWPort</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FFWUsername"></a><code><b>FFWUsername</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FFWPassword"></a><code><b>FFWPassword</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FFWMode"></a><code><b>FFWMode</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FDataStream"></a><code><b>FDataStream</b>: TMemoryStream;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FDataIP"></a><code><b>FDataIP</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FDataPort"></a><code><b>FDataPort</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FDirectFile"></a><code><b>FDirectFile</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FDirectFileName"></a><code><b>FDirectFileName</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FCanResume"></a><code><b>FCanResume</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FPassiveMode"></a><code><b>FPassiveMode</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FForceDefaultPort"></a><code><b>FForceDefaultPort</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FForceOldPort"></a><code><b>FForceOldPort</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FFtpList"></a><code><b>FFtpList</b>: <a   href="ftpsend.TFTPList.html">TFTPList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FBinaryMode"></a><code><b>FBinaryMode</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FAutoTLS"></a><code><b>FAutoTLS</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FIsTLS"></a><code><b>FIsTLS</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FIsDataTLS"></a><code><b>FIsDataTLS</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FTLSonData"></a><code><b>FTLSonData</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FFullSSL"></a><code><b>FFullSSL</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CustomLogon"></a><code><b>CustomLogon</b>: <a   href="ftpsend.html#TLogonActions">TLogonActions</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Custom definition of <a class="normal"  href="ftpsend.TFTPSend.html#Login">login</a> sequence. You <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> use this when you set <a class="normal"  href="ftpsend.TFTPSend.html#FWMode">FWMode</a> to value -1.</p>
+</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Auth"></a><code>function <b>Auth</b>(Mode: integer): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Connect"></a><code>function <b>Connect</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="InternalStor"></a><code>function <b>InternalStor</b>(const Command: string; RestoreAt: integer): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="DataSocket"></a><code>function <b>DataSocket</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="AcceptDataSocket"></a><code>function <b>AcceptDataSocket</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="DoStatus"></a><code>procedure <b>DoStatus</b>(Response: Boolean; const Value: string); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ReadResult"></a><code>function <b>ReadResult</b>: Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Waits and read FTP server response. You need this only in special cases!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ParseRemote"></a><code>procedure <b>ParseRemote</b>(Value: string); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Parse remote side information of data channel from value string (returned by PASV command). This function you need only in special cases!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ParseRemoteEPSV"></a><code>procedure <b>ParseRemoteEPSV</b>(Value: string); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Parse remote side information of data channel from value string (returned by EPSV command). This function you need only in special cases!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FTPCommand"></a><code>function <b>FTPCommand</b>(const Value: string): integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send Value as FTP command to FTP server. Returned result code is result of this function. This command is good for sending site specific command, or non-standard commands.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Login"></a><code>function <b>Login</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<a class="normal"  href="ftpsend.TFTPSend.html#Connect">Connect</a> and logon to FTP server. If you specify any FireWall, <a class="normal"  href="ftpsend.TFTPSend.html#Connect">connect</a> to firewall and throw them <a class="normal"  href="ftpsend.TFTPSend.html#Connect">connect</a> to FTP server. <code>Login</code> sequence depending on <a class="normal"  href="ftpsend.TFTPSend.html#FWMode">FWMode</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Logout"></a><code>function <b>Logout</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Logoff and disconnect from FTP server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Abort"></a><code>procedure <b>Abort</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Break current transmission of data. (You <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> call this method from Sock.OnStatus event, or from another thread.)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TelnetAbort"></a><code>procedure <b>TelnetAbort</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Break current transmission of data. It is same as <a class="normal"  href="ftpsend.TFTPSend.html#Abort">Abort</a>, but it send <a class="normal"  href="ftpsend.TFTPSend.html#Abort">abort</a> telnet commands prior ABOR FTP command. Some servers need it. (You <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> call this method from Sock.OnStatus event, or from another thread.)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="List"></a><code>function <b>List</b>(Directory: string; NameList: Boolean): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Download directory listing of Directory on FTP server. If Directory is empty string, download listing of current working directory. If NameList is <code>True</code>, download only names of files in directory. (internally use NLST command instead <code>LIST</code> command) If NameList is <code>False</code>, returned <code>list</code> is also parsed to <a class="normal"  href="ftpsend.TFTPSend.html#FtpList">FTPList</a> property.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RetrieveFile"></a><code>function <b>RetrieveFile</b>(const FileName: string; Restore: Boolean): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Read data from FileName on FTP server. If Restore is <code>True</code> and server supports resume dowloads, download is resumed. (received is only rest of file)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StoreFile"></a><code>function <b>StoreFile</b>(const FileName: string; Restore: Boolean): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send data to FileName on FTP server. If Restore is <code>True</code> and server supports resume upload, upload is resumed. (send only rest of file) In this case if remote file is same length as local file, nothing will be done. If remote file is larger then local, resume is disabled and file is transfered from begin!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StoreUniqueFile"></a><code>function <b>StoreUniqueFile</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send data to FTP server and assing unique name for this file.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AppendFile"></a><code>function <b>AppendFile</b>(const FileName: string): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Append data to FileName on FTP server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RenameFile"></a><code>function <b>RenameFile</b>(const OldName, NewName: string): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Rename on FTP server file with OldName to NewName.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DeleteFile"></a><code>function <b>DeleteFile</b>(const FileName: string): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Delete file FileName on FTP server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FileSize"></a><code>function <b>FileSize</b>(const FileName: string): integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Return size of Filename file on FTP server. If command failed (i.e. not implemented), return -1.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NoOp"></a><code>function <b>NoOp</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send <code>NOOP</code> command to FTP server for preserve of disconnect by inactivity <a class="normal"  href="blcksock.TSynaClient.html#Timeout">timeout</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ChangeWorkingDir"></a><code>function <b>ChangeWorkingDir</b>(const Directory: string): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Change currect working directory to Directory on FTP server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ChangeToParentDir"></a><code>function <b>ChangeToParentDir</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:walk to upper directory on FTP server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ChangeToRootDir"></a><code>function <b>ChangeToRootDir</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:walk to root directory on FTP server. (May not work with all servers properly!)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DeleteDir"></a><code>function <b>DeleteDir</b>(const Directory: string): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Delete Directory on FTP server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CreateDir"></a><code>function <b>CreateDir</b>(const Directory: string): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<a class="normal"  href="ftpsend.TFTPSend.html#Create">Create</a> Directory on FTP server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetCurrentDir"></a><code>function <b>GetCurrentDir</b>: String; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Return current working directory on FTP server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DataRead"></a><code>function <b>DataRead</b>(const DestStream: TStream): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Establish data channel to FTP server and retrieve data. This function you need only in special cases, i.e. when you need to implement some special unsupported FTP command!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DataWrite"></a><code>function <b>DataWrite</b>(const SourceStream: TStream): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Establish data channel to FTP server and send data. This function you need only in special cases, i.e. when you need to implement some special unsupported FTP command.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ResultCode"></a><code>property <b>ResultCode</b>: Integer read <a   href="ftpsend.TFTPSend.html#FResultCode">FResultCode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:After FTP command contains result number of this operation.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ResultString"></a><code>property <b>ResultString</b>: string read <a   href="ftpsend.TFTPSend.html#FResultString">FResultString</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:After FTP command contains main line of result.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FullResult"></a><code>property <b>FullResult</b>: TStringList read <a   href="ftpsend.TFTPSend.html#FFullResult">FFullResult</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:After any FTP command it contains all lines of FTP server reply.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Account"></a><code>property <b>Account</b>: string read <a   href="ftpsend.TFTPSend.html#FAccount">FAccount</a> Write <a   href="ftpsend.TFTPSend.html#FAccount">FAccount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<code>Account</code> information used in some cases inside <a class="normal"  href="ftpsend.TFTPSend.html#Login">login</a> sequence.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FWHost"></a><code>property <b>FWHost</b>: string read <a   href="ftpsend.TFTPSend.html#FFWHost">FFWHost</a> Write <a   href="ftpsend.TFTPSend.html#FFWHost">FFWHost</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Address of firewall. If empty string (default), firewall not used.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FWPort"></a><code>property <b>FWPort</b>: string read <a   href="ftpsend.TFTPSend.html#FFWPort">FFWPort</a> Write <a   href="ftpsend.TFTPSend.html#FFWPort">FFWPort</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:port of firewall. standard value is same port as ftp server used. (21)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FWUsername"></a><code>property <b>FWUsername</b>: string read <a   href="ftpsend.TFTPSend.html#FFWUsername">FFWUsername</a> Write <a   href="ftpsend.TFTPSend.html#FFWUsername">FFWUsername</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<a class="normal"  href="blcksock.TSynaClient.html#UserName">Username</a> for <a class="normal"  href="ftpsend.TFTPSend.html#Login">login</a> to firewall. (if needed)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FWPassword"></a><code>property <b>FWPassword</b>: string read <a   href="ftpsend.TFTPSend.html#FFWPassword">FFWPassword</a> Write <a   href="ftpsend.TFTPSend.html#FFWPassword">FFWPassword</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<a class="normal"  href="blcksock.TSynaClient.html#Password">password</a> for <a class="normal"  href="ftpsend.TFTPSend.html#Login">login</a> to firewall. (if needed)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FWMode"></a><code>property <b>FWMode</b>: integer read <a   href="ftpsend.TFTPSend.html#FFWMode">FFWMode</a> Write <a   href="ftpsend.TFTPSend.html#FFWMode">FFWMode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Type of Firewall. Used only if you set some firewall address. Supported predefined firewall <a class="normal"  href="ftpsend.TFTPSend.html#Login">login</a> sequences are described by comments in source file where you <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> see pseudocode decribing each sequence.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Sock"></a><code>property <b>Sock</b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a> read <a   href="ftpsend.TFTPSend.html#FSock">FSock</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Socket object used for TCP/IP operation on control channel. Good for seting <a class="normal"  href="ftpsend.TFTPSend.html#OnStatus">OnStatus</a> hook, etc.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DSock"></a><code>property <b>DSock</b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a> read <a   href="ftpsend.TFTPSend.html#FDSock">FDSock</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Socket object used for TCP/IP operation on data channel. Good for seting <a class="normal"  href="ftpsend.TFTPSend.html#OnStatus">OnStatus</a> hook, etc.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DataStream"></a><code>property <b>DataStream</b>: TMemoryStream read <a   href="ftpsend.TFTPSend.html#FDataStream">FDataStream</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:If you not use <a class="normal"  href="ftpsend.TFTPSend.html#DirectFile">DirectFile</a> mode, all data transfers is made to or from this stream.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DataIP"></a><code>property <b>DataIP</b>: string read <a   href="ftpsend.TFTPSend.html#FDataIP">FDataIP</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:After data connection is established, contains remote side IP of this connection.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DataPort"></a><code>property <b>DataPort</b>: string read <a   href="ftpsend.TFTPSend.html#FDataPort">FDataPort</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:After data connection is established, contains remote side port of this connection.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DirectFile"></a><code>property <b>DirectFile</b>: Boolean read <a   href="ftpsend.TFTPSend.html#FDirectFile">FDirectFile</a> Write <a   href="ftpsend.TFTPSend.html#FDirectFile">FDirectFile</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Mode of data handling by data connection. If <code>False</code>, all data operations are made to or from <a class="normal"  href="ftpsend.TFTPSend.html#DataStream">DataStream</a> TMemoryStream. If <code>True</code>, data operations is made directly to file in your disk. (filename is specified by <a class="normal"  href="ftpsend.TFTPSend.html#DirectFileName">DirectFileName</a> property.) Dafault is <code>False</code>!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DirectFileName"></a><code>property <b>DirectFileName</b>: string read <a   href="ftpsend.TFTPSend.html#FDirectFileName">FDirectFileName</a> Write <a   href="ftpsend.TFTPSend.html#FDirectFileName">FDirectFileName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Filename for direct disk data operations.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CanResume"></a><code>property <b>CanResume</b>: Boolean read <a   href="ftpsend.TFTPSend.html#FCanResume">FCanResume</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Indicate after <a class="normal"  href="ftpsend.TFTPSend.html#Login">Login</a> if remote server support resume downloads and uploads.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="PassiveMode"></a><code>property <b>PassiveMode</b>: Boolean read <a   href="ftpsend.TFTPSend.html#FPassiveMode">FPassiveMode</a> Write <a   href="ftpsend.TFTPSend.html#FPassiveMode">FPassiveMode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:If true (default value), all transfers is made by passive method. It is safer method for various firewalls.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ForceDefaultPort"></a><code>property <b>ForceDefaultPort</b>: Boolean read <a   href="ftpsend.TFTPSend.html#FForceDefaultPort">FForceDefaultPort</a> Write <a   href="ftpsend.TFTPSend.html#FForceDefaultPort">FForceDefaultPort</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Force to listen for dataconnection on standard port (20). Default is <code>False</code>, dataconnections will be made to any non-standard port reported by PORT FTP command. This setting is not used, if you use passive mode.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ForceOldPort"></a><code>property <b>ForceOldPort</b>: Boolean read <a   href="ftpsend.TFTPSend.html#FForceOldPort">FForceOldPort</a> Write <a   href="ftpsend.TFTPSend.html#FForceOldPort">FForceOldPort</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:When is <code>True</code>, then is disabled EPSV and EPRT support. However without this commands you cannot use IPv6! (Disabling of this commands is needed only when you are behind some crap firewall/NAT.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnStatus"></a><code>property <b>OnStatus</b>: <a   href="ftpsend.html#TFTPStatus">TFTPStatus</a> read <a   href="ftpsend.TFTPSend.html#FOnStatus">FOnStatus</a> write <a   href="ftpsend.TFTPSend.html#FOnStatus">FOnStatus</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:You may set this hook for monitoring FTP commands and replies.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FtpList"></a><code>property <b>FtpList</b>: <a   href="ftpsend.TFTPList.html">TFTPList</a> read <a   href="ftpsend.TFTPSend.html#FFtpList">FFtpList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:After <a class="normal"  href="ftpsend.TFTPSend.html#List">LIST</a> command is here parsed <a class="normal"  href="ftpsend.TFTPSend.html#List">list</a> of files in given directory.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="BinaryMode"></a><code>property <b>BinaryMode</b>: Boolean read <a   href="ftpsend.TFTPSend.html#FBinaryMode">FBinaryMode</a> Write <a   href="ftpsend.TFTPSend.html#FBinaryMode">FBinaryMode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:if <code>True</code> (default), then data transfers is in binary mode. If this is set to <code>False</code>, then ASCII mode is used.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AutoTLS"></a><code>property <b>AutoTLS</b>: Boolean read <a   href="ftpsend.TFTPSend.html#FAutoTLS">FAutoTLS</a> Write <a   href="ftpsend.TFTPSend.html#FAutoTLS">FAutoTLS</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:if is true, then if server support upgrade to SSL/TLS mode, then use them.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FullSSL"></a><code>property <b>FullSSL</b>: Boolean read <a   href="ftpsend.TFTPSend.html#FFullSSL">FFullSSL</a> Write <a   href="ftpsend.TFTPSend.html#FFullSSL">FFullSSL</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:if server listen on SSL/TLS port, then you set this to true.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="IsTLS"></a><code>property <b>IsTLS</b>: Boolean read <a   href="ftpsend.TFTPSend.html#FIsTLS">FIsTLS</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Signalise, if control channel is in SSL/TLS mode.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="IsDataTLS"></a><code>property <b>IsDataTLS</b>: Boolean read <a   href="ftpsend.TFTPSend.html#FIsDataTLS">FIsDataTLS</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Signalise, if data transfers is in SSL/TLS mode.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="TLSonData"></a><code>property <b>TLSonData</b>: Boolean read <a   href="ftpsend.TFTPSend.html#FTLSonData">FTLSonData</a> write <a   href="ftpsend.TFTPSend.html#FTLSonData">FTLSonData</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:If <code>True</code> (default), then try to use SSL/TLS on data transfers too. If <code>False</code>, then SSL/TLS is used only for control connection.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:56</em>
+</span>
+</body></html>

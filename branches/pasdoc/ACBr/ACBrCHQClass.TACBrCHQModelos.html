@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrCHQClass: Classe TACBrCHQModelos</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrCHQModelos"></a><h1 class="cio">Classe TACBrCHQModelos</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrCHQClass.html">ACBrCHQClass</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrCHQModelos = class(TObjectList)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+Lista de Objetos do tipo <a class="normal"  href="ACBrCHQClass.TACBrCHQModelo.html">TACBrCHQModelo</a> A Procedure <a class="normal"  href="ACBrCHQClass.TACBrCHQModelos.html#CarregaBemaFiINI">CarregaBemaFiINI</a>, consegue carregar a definicição de Cheques de um arquivo no formato do Arquivo INI usado pela Bematech. Caso nenhum arquivo seja especificado, ou o arquivo nao exista, os valores Defaults serao utilizados (Mais explicações no Implementação da <a class="normal"  href="ACBrCHQClass.TACBrCHQModelos.html#CarregaBemaFiINI">CarregaBemaFiINI</a> abaixo)</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObjectList</li>
+<li class="thisitem">TACBrCHQModelos</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCHQClass.TACBrCHQModelos.html#fsArquivoBemaFiINI">fsArquivoBemaFiINI</a></b>: String;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCHQClass.TACBrCHQModelos.html#SetArquivoBemaFiINI">SetArquivoBemaFiINI</a></b>(const Value: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCHQClass.TACBrCHQModelos.html#CarregaBemaFiINI">CarregaBemaFiINI</a></b> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCHQClass.TACBrCHQModelos.html#SetObject">SetObject</a></b> (Index: Integer; Item: <a   href="ACBrCHQClass.TACBrCHQModelo.html">TACBrCHQModelo</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCHQClass.TACBrCHQModelos.html#GetObject">GetObject</a></b> (Index: Integer): <a   href="ACBrCHQClass.TACBrCHQModelo.html">TACBrCHQModelo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrCHQClass.TACBrCHQModelos.html#Create">Create</a></b>( AOwnsObjects : Boolean ) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCHQClass.TACBrCHQModelos.html#AchaModeloBanco">AchaModeloBanco</a></b>( Banco : String ) : <a   href="ACBrCHQClass.TACBrCHQModelo.html">TACBrCHQModelo</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCHQClass.TACBrCHQModelos.html#Add">Add</a></b> (Obj: <a   href="ACBrCHQClass.TACBrCHQModelo.html">TACBrCHQModelo</a>): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCHQClass.TACBrCHQModelos.html#Insert">Insert</a></b> (Index: Integer; Obj: <a   href="ACBrCHQClass.TACBrCHQModelo.html">TACBrCHQModelo</a>);</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCHQClass.TACBrCHQModelos.html#ArquivoBemaFiINI">ArquivoBemaFiINI</a></b> : String read <a   href="ACBrCHQClass.TACBrCHQModelos.html#fsArquivoBemaFiINI">fsArquivoBemaFiINI</a>
+       write <a   href="ACBrCHQClass.TACBrCHQModelos.html#SetArquivoBemaFiINI">SetArquivoBemaFiINI</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCHQClass.TACBrCHQModelos.html#Objects">Objects</a></b> [Index: Integer]: <a   href="ACBrCHQClass.TACBrCHQModelo.html">TACBrCHQModelo</a>
+      read <a   href="ACBrCHQClass.TACBrCHQModelos.html#GetObject">GetObject</a> write <a   href="ACBrCHQClass.TACBrCHQModelos.html#SetObject">SetObject</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsArquivoBemaFiINI"></a><code><b>fsArquivoBemaFiINI</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetArquivoBemaFiINI"></a><code>procedure <b>SetArquivoBemaFiINI</b>(const Value: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaBemaFiINI"></a><code>procedure <b>CarregaBemaFiINI</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="SetObject"></a><code>procedure <b>SetObject</b> (Index: Integer; Item: <a   href="ACBrCHQClass.TACBrCHQModelo.html">TACBrCHQModelo</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetObject"></a><code>function <b>GetObject</b> (Index: Integer): <a   href="ACBrCHQClass.TACBrCHQModelo.html">TACBrCHQModelo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>( AOwnsObjects : Boolean ) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AchaModeloBanco"></a><code>function <b>AchaModeloBanco</b>( Banco : String ) : <a   href="ACBrCHQClass.TACBrCHQModelo.html">TACBrCHQModelo</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b> (Obj: <a   href="ACBrCHQClass.TACBrCHQModelo.html">TACBrCHQModelo</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Insert"></a><code>procedure <b>Insert</b> (Index: Integer; Obj: <a   href="ACBrCHQClass.TACBrCHQModelo.html">TACBrCHQModelo</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ArquivoBemaFiINI"></a><code>property <b>ArquivoBemaFiINI</b> : String read <a   href="ACBrCHQClass.TACBrCHQModelos.html#fsArquivoBemaFiINI">fsArquivoBemaFiINI</a>
+       write <a   href="ACBrCHQClass.TACBrCHQModelos.html#SetArquivoBemaFiINI">SetArquivoBemaFiINI</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Objects"></a><code>property <b>Objects</b> [Index: Integer]: <a   href="ACBrCHQClass.TACBrCHQModelo.html">TACBrCHQModelo</a>
+      read <a   href="ACBrCHQClass.TACBrCHQModelos.html#GetObject">GetObject</a> write <a   href="ACBrCHQClass.TACBrCHQModelos.html#SetObject">SetObject</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:22</em>
+</span>
+</body></html>

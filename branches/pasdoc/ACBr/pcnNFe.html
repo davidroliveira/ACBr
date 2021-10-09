@@ -1,0 +1,355 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: pcnNFe</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit pcnNFe</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td>Tipos</td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+////////////////////////////////////////////////////////////////////////////// // PCN - Projeto Cooperar NFe // // Descrição: Classes para geração/leitura dos arquivos xml da NFe // // site: www.projetocooperar.org // email: projetocooperar@zipmail.com.br // forum: <a  target="_parent" href="http://br.groups.yahoo.com/group/projeto_cooperar_nfe/">http://br.groups.yahoo.com/group/projeto_cooperar_nfe/</a> // projeto: <a  target="_parent" href="http://code.google.com/p/projetocooperar/">http://code.google.com/p/projetocooperar/</a> // svn: <a  target="_parent" href="http://projetocooperar.googlecode.com/svn/trunk/">http://projetocooperar.googlecode.com/svn/trunk/</a> // // Coordenação: (c) 2009 - Paulo Casagrande // // Equipe: Vide o arquivo leiame.txt na pasta raiz do projeto // // Versão: Vide o arquivo leiame.txt na pasta raiz do projeto // // Licença: GNU Lesser General Public License (GNU LGPL) // // - Este programa é software livre; você pode redistribuí-lo // e/ou modificá-lo sob os termos da Licença Pública Geral GNU, // conforme publicada pela Free Software Foundation; tanto a // versão 2 da Licença como (a seu critério) qualquer versão // mais nova. // // - Este programa é distribuído na expectativa de ser útil, // mas SEM QUALQUER GARANTIA; sem mesmo a garantia implícita de // COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO EM // PARTICULAR. Consulte a Licença Pública Geral GNU para obter // mais detalhes. Você deve ter recebido uma cópia da Licença // Pública Geral GNU junto com este programa; se não, escreva // para a Free Software Foundation, Inc., 59 Temple Place, // Suite 330, Boston, MA - 02111-1307, USA ou consulte a // licença oficial em <a  target="_parent" href="http://www.gnu.org/licenses/gpl.txt">http://www.gnu.org/licenses/gpl.txt</a> // // Nota (1): - Esta licença não concede o direito de uso do nome // &quot;PCN - Projeto Cooperar NFe&quot;, não podendo o mesmo ser // utilizado sem previa autorização. // // Nota (2): - O uso integral (ou parcial) das units do projeto esta // condicionado a manutenção deste cabeçalho junto ao código // // //////////////////////////////////////////////////////////////////////////////</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>Classes</li><li>Dialogs</li><li>Variants</li><li><a   href="pcnConversao.html">pcnConversao</a></li><li><a   href="pcnSignature.html">pcnSignature</a></li><li><a   href="pcnProcNFe.html">pcnProcNFe</a></li><li><a   href="pcnGerador.html">pcnGerador</a></li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TNFe.html"><code>TNFe</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TinfNFe.html"><code>TinfNFe</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TIde.html"><code>TIde</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TNFrefCollection.html"><code>TNFrefCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TNFrefCollectionItem.html"><code>TNFrefCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TRefNF.html"><code>TRefNF</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TRefNFP.html"><code>TRefNFP</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TRefECF.html"><code>TRefECF</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TEmit.html"><code>TEmit</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TenderEmit.html"><code>TenderEmit</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TAvulsa.html"><code>TAvulsa</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TDest.html"><code>TDest</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TEnderDest.html"><code>TEnderDest</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TRetirada.html"><code>TRetirada</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TEntrega.html"><code>TEntrega</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TDetCollection.html"><code>TDetCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TDetCollectionItem.html"><code>TDetCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TProd.html"><code>TProd</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TveicProd.html"><code>TveicProd</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TMedCollection.html"><code>TMedCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TMedCollectionItem.html"><code>TMedCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TArmaCollection.html"><code>TArmaCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TArmaCollectionItem.html"><code>TArmaCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.Tcomb.html"><code>Tcomb</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TCIDE.html"><code>TCIDE</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TICMSComb.html"><code>TICMSComb</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TICMSInter.html"><code>TICMSInter</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TICMSCons.html"><code>TICMSCons</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TDICollection.html"><code>TDICollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TDICollectionItem.html"><code>TDICollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TAdiCollection.html"><code>TAdiCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TAdiCollectionItem.html"><code>TAdiCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TImposto.html"><code>TImposto</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TICMS.html"><code>TICMS</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TIPI.html"><code>TIPI</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TII.html"><code>TII</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TPIS.html"><code>TPIS</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TPISST.html"><code>TPISST</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TCOFINS.html"><code>TCOFINS</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TTotal.html"><code>TTotal</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TICMSTot.html"><code>TICMSTot</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TISSQNtot.html"><code>TISSQNtot</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TretTrib.html"><code>TretTrib</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TCOFINSST.html"><code>TCOFINSST</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TISSQN.html"><code>TISSQN</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TTransp.html"><code>TTransp</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TTransporta.html"><code>TTransporta</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TretTransp.html"><code>TretTransp</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TveicTransp.html"><code>TveicTransp</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TReboqueCollection.html"><code>TReboqueCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TReboqueCollectionItem.html"><code>TReboqueCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TVolCollection.html"><code>TVolCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TVolCollectionItem.html"><code>TVolCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TLacresCollection.html"><code>TLacresCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TLacresCollectionItem.html"><code>TLacresCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TCobr.html"><code>TCobr</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TFat.html"><code>TFat</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TDupCollection.html"><code>TDupCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TDupCollectionItem.html"><code>TDupCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TInfAdic.html"><code>TInfAdic</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TobsContCollection.html"><code>TobsContCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TobsContCollectionItem.html"><code>TobsContCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TobsFiscoCollection.html"><code>TobsFiscoCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TobsFiscoCollectionItem.html"><code>TobsFiscoCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TprocRefCollection.html"><code>TprocRefCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TprocRefCollectionItem.html"><code>TprocRefCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TExporta.html"><code>TExporta</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TCompra.html"><code>TCompra</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TCana.html"><code>TCana</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TForDiaCollection.html"><code>TForDiaCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TForDiaCollectionItem.html"><code>TForDiaCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TDeducCollection.html"><code>TDeducCollection</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnNFe.TDeducCollectionItem.html"><code>TDeducCollectionItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnNFe.html#CMUN_EXTERIOR">CMUN_EXTERIOR</a></b>: integer = 9999999;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnNFe.html#XMUN_EXTERIOR">XMUN_EXTERIOR</a></b>: string = 'EXTERIOR';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnNFe.html#UF_EXTERIOR">UF_EXTERIOR</a></b>: string = 'EX';</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CMUN_EXTERIOR"></a><code><b>CMUN_EXTERIOR</b>: integer = 9999999;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="XMUN_EXTERIOR"></a><code><b>XMUN_EXTERIOR</b>: string = 'EXTERIOR';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="UF_EXTERIOR"></a><code><b>UF_EXTERIOR</b>: string = 'EX';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:59</em>
+</span>
+</body></html>

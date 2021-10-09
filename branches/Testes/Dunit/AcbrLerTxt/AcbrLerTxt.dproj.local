@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/03/12 00:54:09.000.781,=C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\TestAcBrLerTxt.pas</Transaction>
+    <Transaction>2016/03/12 00:54:55.000.731,C:\Lazarus Files\Acbr\Testes\AcbrLerTxt\AcbrLerTxt.dproj=C:\Lazarus Files\Acbr\Testes\AcbrLerTxt\AcbrLerTxt.dproj</Transaction>
+    <Transaction>2016/03/12 01:27:29.000.752,=C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\Fontes\IniPersist.pas</Transaction>
+    <Transaction>2016/03/12 01:27:29.000.713,=C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\Fontes\AcbrLerTxtIni.pas</Transaction>
+    <Transaction>2016/03/12 01:31:59.000.790,=C:\Lazarus Files\Acbr\Testes\AcbrLerTxt\Patch\pcnLayoutTXT.pas</Transaction>
+    <Transaction>2016/03/12 01:31:59.000.481,=C:\Lazarus Files\Acbr\Testes\AcbrLerTxt\Patch\pcnConversaoNFe.pas</Transaction>
+    <Transaction>2016/03/12 01:32:00.000.102,=C:\Lazarus Files\Acbr\Testes\AcbrLerTxt\Patch\pcnNFeRTXT.pas</Transaction>
+    <Transaction>2016/03/24 23:08:00.000.718,C:\Lazarus Files\Acbr\Testes\AcbrLerTxt\Patch\pcnLayoutTXT.pas=</Transaction>
+    <Transaction>2016/03/24 23:08:13.000.284,=C:\Lazarus Files\Acbr\Testes\AcbrLerTxt\Patch\pcnLayoutTXT.pas</Transaction>
+    <Transaction>2016/03/24 23:12:12.000.914,C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\TestAcBrLerTxt.pas=</Transaction>
+    <Transaction>2016/03/24 23:12:23.000.542,=C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\TestAcBrLerTxt.pas</Transaction>
+    <Transaction>2016/03/24 23:13:38.000.851,C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\Fontes\IniPersist.pas=</Transaction>
+    <Transaction>2016/03/24 23:13:38.000.829,C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\Fontes\AcbrLerTxtIni.pas=</Transaction>
+    <Transaction>2016/03/24 23:13:44.000.444,C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\TestAcBrLerTxt.pas=</Transaction>
+    <Transaction>2016/03/24 23:13:53.000.152,=C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\TestAcBrLerTxt.pas</Transaction>
+    <Transaction>2016/03/24 23:15:09.000.840,C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\TestAcBrLerTxt.pas=</Transaction>
+    <Transaction>2016/03/24 23:15:35.000.639,=C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\TestAcBrLerTxt.pas</Transaction>
+    <Transaction>2016/03/24 23:16:31.000.105,=C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\Fontes\AcbrLerTxtIni.pas</Transaction>
+    <Transaction>2016/03/24 23:16:31.000.143,=C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\Fontes\IniPersist.pas</Transaction>
+    <Transaction>2016/03/24 23:41:16.000.015,C:\Lazarus Files\Acbr\Testes\AcbrLerTxt\Patch\pcnLayoutTXT.pas=</Transaction>
+    <Transaction>2016/03/24 23:44:09.000.482,=C:\Lazarus Files\Acbr\Testes\AcbrLerTxt\Patch\pcnLayoutTXT.pas</Transaction>
+    <Transaction>2016/03/31 23:21:25.000.595,=C:\Lazarus Files\Acbr\Fontes\ACBrDFe\ACBrNFe\PCNNFe\pcnNFeW.pas</Transaction>
+    <Transaction>2016/03/31 23:36:24.000.231,C:\Lazarus Files\Acbr\Testes\AcbrLerTxt\Patch\pcnNFeW.pas=C:\Lazarus Files\Acbr\Fontes\ACBrDFe\ACBrNFe\PCNNFe\pcnNFeW.pas</Transaction>
+    <Transaction>2016/04/19 16:29:39.106,=C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\TestAcBrLerTxt.pas</Transaction>
+    <Transaction>2016/04/19 16:30:47.405,=C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\Fontes\AcbrLerTxtIni.pas</Transaction>
+    <Transaction>2016/04/19 16:31:16.827,=C:\Lazarus Files\Acbr\Testes\Dunit\AcbrLerTxt\Fontes\IniPersist.pas</Transaction>
+    <Transaction>2016/04/19 16:32:57.376,=C:\Lazarus Files\Acbr\Fontes\PCNComum\pcnConversao.pas</Transaction>
+    <Transaction>2016/04/19 16:34:21.179,=C:\Lazarus Files\Acbr\Fontes\PCNComum\pcnAuxiliar.pas</Transaction>
+    <Transaction>2016/04/19 16:35:02.324,=C:\Lazarus Files\Acbr\Fontes\ACBrDiversos\ACBrValidador.pas</Transaction>
+    <Transaction>2016/04/19 16:35:45.336,=C:\Lazarus Files\Acbr\Fontes\ACBrComum\ACBrUtil.pas</Transaction>
+    <Transaction>2016/04/19 16:36:58.134,C:\Lazarus Files\AcbrBrances\Testes\Dunit\AcbrLerTxt\Patch\pcnConversao.pas=C:\Lazarus Files\Acbr\Fontes\PCNComum\pcnConversao.pas</Transaction>
+  </Transactions>
+</BorlandProject>

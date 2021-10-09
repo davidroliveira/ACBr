@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrCAPICOM_TLB: Classe TSignedData</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TSignedData"></a><h1 class="cio">Classe TSignedData</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrCAPICOM_TLB.html">ACBrCAPICOM_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TSignedData = class(TOleServer)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// OLE Server Proxy class declaration Server Object : <code>TSignedData</code> Help String : <a class="normal"  href="ACBrCAPICOM_TLB.html#SignedData">SignedData</a> Class Default Interface: <a class="normal"  href="ACBrCAPICOM_TLB.ISignedData.html">ISignedData</a> Def. Intf. DISP? : No Event Interface: TypeFlags : (2) CanCreate *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TOleServer</li>
+<li class="thisitem">TSignedData</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCAPICOM_TLB.TSignedData.html#FIntf">FIntf</a></b>:        <a   href="ACBrCAPICOM_TLB.ISignedData.html">ISignedData</a>;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#GetDefaultInterface">GetDefaultInterface</a></b>: <a   href="ACBrCAPICOM_TLB.ISignedData.html">ISignedData</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#InitServerData">InitServerData</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#Set_Content">Set_Content</a></b>(const pVal: WideString);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#Get_Content">Get_Content</a></b>: WideString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#Get_Signers">Get_Signers</a></b>: <a   href="ACBrCAPICOM_TLB.ISigners.html">ISigners</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#Get_Certificates">Get_Certificates</a></b>: <a   href="ACBrCAPICOM_TLB.ICertificates.html">ICertificates</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#Connect">Connect</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#ConnectTo">ConnectTo</a></b>(svrIntf: <a   href="ACBrCAPICOM_TLB.ISignedData.html">ISignedData</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#Disconnect">Disconnect</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#Sign">Sign</a></b>(const pSigner: <a   href="ACBrCAPICOM_TLB.ISigner.html">ISigner</a>; bDetached: WordBool; EncodingType: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_ENCODING_TYPE">CAPICOM_ENCODING_TYPE</a>): WideString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#CoSign">CoSign</a></b>(const pSigner: <a   href="ACBrCAPICOM_TLB.ISigner.html">ISigner</a>; EncodingType: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_ENCODING_TYPE">CAPICOM_ENCODING_TYPE</a>): WideString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#Verify">Verify</a></b>(const SignedMessage: WideString; bDetached: WordBool; VerifyFlag: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_SIGNED_DATA_VERIFY_FLAG">CAPICOM_SIGNED_DATA_VERIFY_FLAG</a>);</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#DefaultInterface">DefaultInterface</a></b>: <a   href="ACBrCAPICOM_TLB.ISignedData.html">ISignedData</a> read <a   href="ACBrCAPICOM_TLB.TSignedData.html#GetDefaultInterface">GetDefaultInterface</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#Signers">Signers</a></b>: <a   href="ACBrCAPICOM_TLB.ISigners.html">ISigners</a> read <a   href="ACBrCAPICOM_TLB.TSignedData.html#Get_Signers">Get_Signers</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#Certificates">Certificates</a></b>: <a   href="ACBrCAPICOM_TLB.ICertificates.html">ICertificates</a> read <a   href="ACBrCAPICOM_TLB.TSignedData.html#Get_Certificates">Get_Certificates</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.TSignedData.html#Content">Content</a></b>: WideString read <a   href="ACBrCAPICOM_TLB.TSignedData.html#Get_Content">Get_Content</a> write <a   href="ACBrCAPICOM_TLB.TSignedData.html#Set_Content">Set_Content</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FIntf"></a><code><b>FIntf</b>:        <a   href="ACBrCAPICOM_TLB.ISignedData.html">ISignedData</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetDefaultInterface"></a><code>function <b>GetDefaultInterface</b>: <a   href="ACBrCAPICOM_TLB.ISignedData.html">ISignedData</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="InitServerData"></a><code>procedure <b>InitServerData</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Set_Content"></a><code>procedure <b>Set_Content</b>(const pVal: WideString);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_Content"></a><code>function <b>Get_Content</b>: WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_Signers"></a><code>function <b>Get_Signers</b>: <a   href="ACBrCAPICOM_TLB.ISigners.html">ISigners</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_Certificates"></a><code>function <b>Get_Certificates</b>: <a   href="ACBrCAPICOM_TLB.ICertificates.html">ICertificates</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Connect"></a><code>procedure <b>Connect</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ConnectTo"></a><code>procedure <b>ConnectTo</b>(svrIntf: <a   href="ACBrCAPICOM_TLB.ISignedData.html">ISignedData</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Disconnect"></a><code>procedure <b>Disconnect</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Sign"></a><code>function <b>Sign</b>(const pSigner: <a   href="ACBrCAPICOM_TLB.ISigner.html">ISigner</a>; bDetached: WordBool; EncodingType: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_ENCODING_TYPE">CAPICOM_ENCODING_TYPE</a>): WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CoSign"></a><code>function <b>CoSign</b>(const pSigner: <a   href="ACBrCAPICOM_TLB.ISigner.html">ISigner</a>; EncodingType: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_ENCODING_TYPE">CAPICOM_ENCODING_TYPE</a>): WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Verify"></a><code>procedure <b>Verify</b>(const SignedMessage: WideString; bDetached: WordBool; VerifyFlag: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_SIGNED_DATA_VERIFY_FLAG">CAPICOM_SIGNED_DATA_VERIFY_FLAG</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DefaultInterface"></a><code>property <b>DefaultInterface</b>: <a   href="ACBrCAPICOM_TLB.ISignedData.html">ISignedData</a> read <a   href="ACBrCAPICOM_TLB.TSignedData.html#GetDefaultInterface">GetDefaultInterface</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Signers"></a><code>property <b>Signers</b>: <a   href="ACBrCAPICOM_TLB.ISigners.html">ISigners</a> read <a   href="ACBrCAPICOM_TLB.TSignedData.html#Get_Signers">Get_Signers</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Certificates"></a><code>property <b>Certificates</b>: <a   href="ACBrCAPICOM_TLB.ICertificates.html">ICertificates</a> read <a   href="ACBrCAPICOM_TLB.TSignedData.html#Get_Certificates">Get_Certificates</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Content"></a><code>property <b>Content</b>: WideString read <a   href="ACBrCAPICOM_TLB.TSignedData.html#Get_Content">Get_Content</a> write <a   href="ACBrCAPICOM_TLB.TSignedData.html#Set_Content">Set_Content</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:21</em>
+</span>
+</body></html>

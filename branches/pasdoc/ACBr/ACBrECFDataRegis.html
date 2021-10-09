@@ -1,0 +1,521 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrECFDataRegis</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrECFDataRegis</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td>Tipos</td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF}</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a   href="ACBrECFClass.html">ACBrECFClass</a></li><li><a   href="ACBrDevice.html">ACBrDevice</a></li><li><a   href="ACBrUtil.html">ACBrUtil</a></li><li>Classes</li><li>Contnrs</li><li>Dialogs</li><li>Controls</li><li>Forms</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFDataRegis.TACBrECFDataRegis.html"><code>TACBrECFDataRegis</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#STX">STX</a></b>   = #02 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#ETX">ETX</a></b>   = #03 ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#_START">_START</a></b> = #254 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#_ACKN">_ACKN</a></b>  = #004 ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#_NAKN">_NAKN</a></b>  = #006 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#_ACKC">_ACKC</a></b>  = #008 ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#_EOM">_EOM</a></b>	  = #026 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#_END">_END</a></b>	  = #013 ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#MEMORIAFISCALTROCADA">MEMORIAFISCALTROCADA</a></b>                  = 'A';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#SEMNUMEROFABRICACAO">SEMNUMEROFABRICACAO</a></b>                   = 'a';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#BUFFERIMPRESSAOCHEIA">BUFFERIMPRESSAOCHEIA</a></b>                  = 'B';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#ITEMCANCELAMENTONAOENCONTRADO">ITEMCANCELAMENTONAOENCONTRADO</a></b>         = 'b';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#COMANDONAOEXECUTADO">COMANDONAOEXECUTADO</a></b>                   = 'C';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#CANCELAMENTOACIMALIMITE">CANCELAMENTOACIMALIMITE</a></b>               = 'c';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#DESCONTOACIMATOTAL">DESCONTOACIMATOTAL</a></b>                    = 'D';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#DATAINVALIDA">DATAINVALIDA</a></b>                          = 'd';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#EPROMFISCALDESCONECTADA">EPROMFISCALDESCONECTADA</a></b>               = 'E';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#VERSAOINCORRETA">VERSAOINCORRETA</a></b>                       = 'e';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#ERROFISCAL">ERROFISCAL</a></b>                            = 'F';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#SEMCLICHE">SEMCLICHE</a></b>                             = 'f';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#SEMCNPJIECCM">SEMCNPJIECCM</a></b>                          = 'G';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#NUMEROCOMPROVANTESINVALIDO">NUMEROCOMPROVANTESINVALIDO</a></b>            = 'g';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#NUMERORELATORIOGERENCIALINVALIDO">NUMERORELATORIOGERENCIALINVALIDO</a></b>      = 'H';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#ESGOTADONUMEROVIASVINCULADO">ESGOTADONUMEROVIASVINCULADO</a></b>           = 'h';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#COMANDOINVALIDO">COMANDOINVALIDO</a></b>                       = 'I';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#DADOSCOMANDOINVALIDO">DADOSCOMANDOINVALIDO</a></b>                  = 'i';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#VENDASUJEITAICMSSEMIE">VENDASUJEITAICMSSEMIE</a></b>                 = 'J';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#IMPRESSORAOK">IMPRESSORAOK</a></b>                          = 'K';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#MFSEMLOGOTIPO">MFSEMLOGOTIPO</a></b>                         = 'M';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#ERROGRAVACAOMF">ERROGRAVACAOMF</a></b>                        = 'm';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#ESTADOINVALIDO">ESTADOINVALIDO</a></b>                        = 'N';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#NUMEROFINALIZADORAINVALIDO">NUMEROFINALIZADORAINVALIDO</a></b>            = 'n';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#FIMPAPEL">FIMPAPEL</a></b>                              = 'P';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#FALHAIMPRESSORA">FALHAIMPRESSORA</a></b>                       = 'p';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#REDUCAOZOBRIGATORIA">REDUCAOZOBRIGATORIA</a></b>                   = 'R';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#VENDASUJEITAISSQNSEMIM">VENDASUJEITAISSQNSEMIM</a></b>                = 'S';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#DESCONTOSUBTOTALICMSISSQNNAOPERMITIDO">DESCONTOSUBTOTALICMSISSQNNAOPERMITIDO</a></b> = 's';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#INDICETRIBUTOINVALIDO">INDICETRIBUTOINVALIDO</a></b>                 = 'T';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#ENCONTRADOPALAVRATOTAL">ENCONTRADOPALAVRATOTAL</a></b>                = 't';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#UNIDADEMEDIDAINVALIDA">UNIDADEMEDIDAINVALIDA</a></b>                 = 'U';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#VALORITEMACIMAPERMITIDO">VALORITEMACIMAPERMITIDO</a></b>               = 'V';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#CANCELAMENTOCUPOMTOTALIZADOEMZERO">CANCELAMENTOCUPOMTOTALIZADOEMZERO</a></b>     = 'v';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#FALTASENHA">FALTASENHA</a></b>                            = 'W';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#LEITURAXOBRIGATORIAABERTURACAIXA">LEITURAXOBRIGATORIAABERTURACAIXA</a></b>      = 'X';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#DATAREDUCAOZRETROATIVA">DATAREDUCAOZRETROATIVA</a></b>                = 'Y';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#AJUSTERETROATIVORELOGIO">AJUSTERETROATIVORELOGIO</a></b>               = 'y';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#REDUCAOZREALIZADA">REDUCAOZREALIZADA</a></b>                     = 'Z';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFDataRegis.html#ESGOTAMENTOMEMORIAFISCAL">ESGOTAMENTOMEMORIAFISCAL</a></b>              = 'z';</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="STX"></a><code><b>STX</b>   = #02 ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+CONFORME MANUAL PARA VERSOES X.03</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ETX"></a><code><b>ETX</b>   = #03 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="_START"></a><code><b>_START</b> = #254 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="_ACKN"></a><code><b>_ACKN</b>  = #004 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="_NAKN"></a><code><b>_NAKN</b>  = #006 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="_ACKC"></a><code><b>_ACKC</b>  = #008 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="_EOM"></a><code><b>_EOM</b>	  = #026 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="_END"></a><code><b>_END</b>	  = #013 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MEMORIAFISCALTROCADA"></a><code><b>MEMORIAFISCALTROCADA</b>                  = 'A';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+******************************************************** Lista de mensagem de aviso ********************************************************</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SEMNUMEROFABRICACAO"></a><code><b>SEMNUMEROFABRICACAO</b>                   = 'a';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="BUFFERIMPRESSAOCHEIA"></a><code><b>BUFFERIMPRESSAOCHEIA</b>                  = 'B';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ITEMCANCELAMENTONAOENCONTRADO"></a><code><b>ITEMCANCELAMENTONAOENCONTRADO</b>         = 'b';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="COMANDONAOEXECUTADO"></a><code><b>COMANDONAOEXECUTADO</b>                   = 'C';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CANCELAMENTOACIMALIMITE"></a><code><b>CANCELAMENTOACIMALIMITE</b>               = 'c';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DESCONTOACIMATOTAL"></a><code><b>DESCONTOACIMATOTAL</b>                    = 'D';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DATAINVALIDA"></a><code><b>DATAINVALIDA</b>                          = 'd';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="EPROMFISCALDESCONECTADA"></a><code><b>EPROMFISCALDESCONECTADA</b>               = 'E';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VERSAOINCORRETA"></a><code><b>VERSAOINCORRETA</b>                       = 'e';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ERROFISCAL"></a><code><b>ERROFISCAL</b>                            = 'F';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SEMCLICHE"></a><code><b>SEMCLICHE</b>                             = 'f';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SEMCNPJIECCM"></a><code><b>SEMCNPJIECCM</b>                          = 'G';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NUMEROCOMPROVANTESINVALIDO"></a><code><b>NUMEROCOMPROVANTESINVALIDO</b>            = 'g';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NUMERORELATORIOGERENCIALINVALIDO"></a><code><b>NUMERORELATORIOGERENCIALINVALIDO</b>      = 'H';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ESGOTADONUMEROVIASVINCULADO"></a><code><b>ESGOTADONUMEROVIASVINCULADO</b>           = 'h';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="COMANDOINVALIDO"></a><code><b>COMANDOINVALIDO</b>                       = 'I';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DADOSCOMANDOINVALIDO"></a><code><b>DADOSCOMANDOINVALIDO</b>                  = 'i';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VENDASUJEITAICMSSEMIE"></a><code><b>VENDASUJEITAICMSSEMIE</b>                 = 'J';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IMPRESSORAOK"></a><code><b>IMPRESSORAOK</b>                          = 'K';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MFSEMLOGOTIPO"></a><code><b>MFSEMLOGOTIPO</b>                         = 'M';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ERROGRAVACAOMF"></a><code><b>ERROGRAVACAOMF</b>                        = 'm';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ESTADOINVALIDO"></a><code><b>ESTADOINVALIDO</b>                        = 'N';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NUMEROFINALIZADORAINVALIDO"></a><code><b>NUMEROFINALIZADORAINVALIDO</b>            = 'n';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FIMPAPEL"></a><code><b>FIMPAPEL</b>                              = 'P';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FALHAIMPRESSORA"></a><code><b>FALHAIMPRESSORA</b>                       = 'p';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="REDUCAOZOBRIGATORIA"></a><code><b>REDUCAOZOBRIGATORIA</b>                   = 'R';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VENDASUJEITAISSQNSEMIM"></a><code><b>VENDASUJEITAISSQNSEMIM</b>                = 'S';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DESCONTOSUBTOTALICMSISSQNNAOPERMITIDO"></a><code><b>DESCONTOSUBTOTALICMSISSQNNAOPERMITIDO</b> = 's';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="INDICETRIBUTOINVALIDO"></a><code><b>INDICETRIBUTOINVALIDO</b>                 = 'T';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ENCONTRADOPALAVRATOTAL"></a><code><b>ENCONTRADOPALAVRATOTAL</b>                = 't';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="UNIDADEMEDIDAINVALIDA"></a><code><b>UNIDADEMEDIDAINVALIDA</b>                 = 'U';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="VALORITEMACIMAPERMITIDO"></a><code><b>VALORITEMACIMAPERMITIDO</b>               = 'V';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CANCELAMENTOCUPOMTOTALIZADOEMZERO"></a><code><b>CANCELAMENTOCUPOMTOTALIZADOEMZERO</b>     = 'v';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FALTASENHA"></a><code><b>FALTASENHA</b>                            = 'W';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="LEITURAXOBRIGATORIAABERTURACAIXA"></a><code><b>LEITURAXOBRIGATORIAABERTURACAIXA</b>      = 'X';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DATAREDUCAOZRETROATIVA"></a><code><b>DATAREDUCAOZRETROATIVA</b>                = 'Y';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AJUSTERETROATIVORELOGIO"></a><code><b>AJUSTERETROATIVORELOGIO</b>               = 'y';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="REDUCAOZREALIZADA"></a><code><b>REDUCAOZREALIZADA</b>                     = 'Z';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ESGOTAMENTOMEMORIAFISCAL"></a><code><b>ESGOTAMENTOMEMORIAFISCAL</b>              = 'z';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:27</em>
+</span>
+</body></html>

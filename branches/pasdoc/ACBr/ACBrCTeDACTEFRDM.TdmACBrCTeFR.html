@@ -1,0 +1,691 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrCTeDACTEFRDM: Classe TdmACBrCTeFR</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TdmACBrCTeFR"></a><h1 class="cio">Classe TdmACBrCTeFR</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrCTeDACTEFRDM.html">ACBrCTeDACTEFRDM</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TdmACBrCTeFR = class(TDataModule)</code></p>
+<h2 class="description">Descrição</h2>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TDataModule</li>
+<li class="thisitem">TdmACBrCTeFR</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxPDFExport">frxPDFExport</a></b>: TfrxPDFExport;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#cdsIdentificacao">cdsIdentificacao</a></b>: TClientDataSet;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#cdsEmitente">cdsEmitente</a></b>: TClientDataSet;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#cdsDestinatario">cdsDestinatario</a></b>: TClientDataSet;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#cdsDadosNotasFiscais">cdsDadosNotasFiscais</a></b>: TClientDataSet;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#cdsParametros">cdsParametros</a></b>: TClientDataSet;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#cdsInformacoesAdicionais">cdsInformacoesAdicionais</a></b>: TClientDataSet;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#cdsVolumes">cdsVolumes</a></b>: TClientDataSet;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxIdentificacao">frxIdentificacao</a></b>: TfrxDBDataset;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxEmitente">frxEmitente</a></b>: TfrxDBDataset;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxDestinatario">frxDestinatario</a></b>: TfrxDBDataset;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxDadosNotasFiscais">frxDadosNotasFiscais</a></b>: TfrxDBDataset;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxParametros">frxParametros</a></b>: TfrxDBDataset;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxVolumes">frxVolumes</a></b>: TfrxDBDataset;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxInformacoesAdicionais">frxInformacoesAdicionais</a></b>: TfrxDBDataset;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxBarCodeObject">frxBarCodeObject</a></b>: TfrxBarCodeObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxReport">frxReport</a></b>: TfrxReport;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#cdsTomador">cdsTomador</a></b>: TClientDataSet;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxTomador">frxTomador</a></b>: TfrxDBDataset;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#cdsExpedidor">cdsExpedidor</a></b>: TClientDataSet;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxExpedidor">frxExpedidor</a></b>: TfrxDBDataset;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#cdsRecebedor">cdsRecebedor</a></b>: TClientDataSet;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxRecebedor">frxRecebedor</a></b>: TfrxDBDataset;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#cdsRemetente">cdsRemetente</a></b>: TClientDataSet;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxRemetente">frxRemetente</a></b>: TfrxDBDataset;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#cdsCalculoImposto">cdsCalculoImposto</a></b>: TClientDataSet;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxCalculoImposto">frxCalculoImposto</a></b>: TfrxDBDataset;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#cdsComponentesPrestacao">cdsComponentesPrestacao</a></b>: TClientDataSet;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxComponentesPrestacao">frxComponentesPrestacao</a></b>: TfrxDBDataset;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#cdsSeguro">cdsSeguro</a></b>: TClientDataSet;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxSeguro">frxSeguro</a></b>: TfrxDBDataset;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#cdsModalRodoviario">cdsModalRodoviario</a></b>: TClientDataSet;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#frxModalRodoviario">frxModalRodoviario</a></b>: TfrxDBDataset;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#FDACTEClassOwner">FDACTEClassOwner</a></b>: <a   href="ACBrCTeDACTEClass.TACBrCteDACTEClass.html">TACBrCTeDACTEClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#FCTe">FCTe</a></b>: <a   href="pcteCTe.TCTe.html">TCTe</a>;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaIdentificacao">CarregaIdentificacao</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaTomador">CarregaTomador</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaEmitente">CarregaEmitente</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaRemetente">CarregaRemetente</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaDestinatario">CarregaDestinatario</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaExpedidor">CarregaExpedidor</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaRecebedor">CarregaRecebedor</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaDadosNotasFiscais">CarregaDadosNotasFiscais</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaCalculoImposto">CarregaCalculoImposto</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaParametros">CarregaParametros</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaVolumes">CarregaVolumes</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaComponentesPrestacao">CarregaComponentesPrestacao</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaSeguro">CarregaSeguro</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaModalRodoviario">CarregaModalRodoviario</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaInformacoesAdicionais">CarregaInformacoesAdicionais</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CarregaDados">CarregaDados</a></b>;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#CTe">CTe</a></b>: <a   href="pcteCTe.TCTe.html">TCTe</a> read <a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#FCTe">FCTe</a> write <a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#FCTe">FCTe</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#DACTEClassOwner">DACTEClassOwner</a></b>: <a   href="ACBrCTeDACTEClass.TACBrCteDACTEClass.html">TACBrCTeDACTEClass</a> read <a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#FDACTEClassOwner">FDACTEClassOwner</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxPDFExport"></a><code><b>frxPDFExport</b>: TfrxPDFExport;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="cdsIdentificacao"></a><code><b>cdsIdentificacao</b>: TClientDataSet;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="cdsEmitente"></a><code><b>cdsEmitente</b>: TClientDataSet;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="cdsDestinatario"></a><code><b>cdsDestinatario</b>: TClientDataSet;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="cdsDadosNotasFiscais"></a><code><b>cdsDadosNotasFiscais</b>: TClientDataSet;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="cdsParametros"></a><code><b>cdsParametros</b>: TClientDataSet;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="cdsInformacoesAdicionais"></a><code><b>cdsInformacoesAdicionais</b>: TClientDataSet;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="cdsVolumes"></a><code><b>cdsVolumes</b>: TClientDataSet;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxIdentificacao"></a><code><b>frxIdentificacao</b>: TfrxDBDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxEmitente"></a><code><b>frxEmitente</b>: TfrxDBDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxDestinatario"></a><code><b>frxDestinatario</b>: TfrxDBDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxDadosNotasFiscais"></a><code><b>frxDadosNotasFiscais</b>: TfrxDBDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxParametros"></a><code><b>frxParametros</b>: TfrxDBDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxVolumes"></a><code><b>frxVolumes</b>: TfrxDBDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxInformacoesAdicionais"></a><code><b>frxInformacoesAdicionais</b>: TfrxDBDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxBarCodeObject"></a><code><b>frxBarCodeObject</b>: TfrxBarCodeObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxReport"></a><code><b>frxReport</b>: TfrxReport;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="cdsTomador"></a><code><b>cdsTomador</b>: TClientDataSet;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxTomador"></a><code><b>frxTomador</b>: TfrxDBDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="cdsExpedidor"></a><code><b>cdsExpedidor</b>: TClientDataSet;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxExpedidor"></a><code><b>frxExpedidor</b>: TfrxDBDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="cdsRecebedor"></a><code><b>cdsRecebedor</b>: TClientDataSet;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxRecebedor"></a><code><b>frxRecebedor</b>: TfrxDBDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="cdsRemetente"></a><code><b>cdsRemetente</b>: TClientDataSet;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxRemetente"></a><code><b>frxRemetente</b>: TfrxDBDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="cdsCalculoImposto"></a><code><b>cdsCalculoImposto</b>: TClientDataSet;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxCalculoImposto"></a><code><b>frxCalculoImposto</b>: TfrxDBDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="cdsComponentesPrestacao"></a><code><b>cdsComponentesPrestacao</b>: TClientDataSet;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxComponentesPrestacao"></a><code><b>frxComponentesPrestacao</b>: TfrxDBDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="cdsSeguro"></a><code><b>cdsSeguro</b>: TClientDataSet;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxSeguro"></a><code><b>frxSeguro</b>: TfrxDBDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="cdsModalRodoviario"></a><code><b>cdsModalRodoviario</b>: TClientDataSet;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="frxModalRodoviario"></a><code><b>frxModalRodoviario</b>: TfrxDBDataset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FDACTEClassOwner"></a><code><b>FDACTEClassOwner</b>: <a   href="ACBrCTeDACTEClass.TACBrCteDACTEClass.html">TACBrCTeDACTEClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Private declarations</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCTe"></a><code><b>FCTe</b>: <a   href="pcteCTe.TCTe.html">TCTe</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaIdentificacao"></a><code>procedure <b>CarregaIdentificacao</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaTomador"></a><code>procedure <b>CarregaTomador</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaEmitente"></a><code>procedure <b>CarregaEmitente</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaRemetente"></a><code>procedure <b>CarregaRemetente</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaDestinatario"></a><code>procedure <b>CarregaDestinatario</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaExpedidor"></a><code>procedure <b>CarregaExpedidor</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaRecebedor"></a><code>procedure <b>CarregaRecebedor</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaDadosNotasFiscais"></a><code>procedure <b>CarregaDadosNotasFiscais</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaCalculoImposto"></a><code>procedure <b>CarregaCalculoImposto</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaParametros"></a><code>procedure <b>CarregaParametros</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaVolumes"></a><code>procedure <b>CarregaVolumes</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaComponentesPrestacao"></a><code>procedure <b>CarregaComponentesPrestacao</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaSeguro"></a><code>procedure <b>CarregaSeguro</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaModalRodoviario"></a><code>procedure <b>CarregaModalRodoviario</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CarregaInformacoesAdicionais"></a><code>procedure <b>CarregaInformacoesAdicionais</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CarregaDados"></a><code>procedure <b>CarregaDados</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CTe"></a><code>property <b>CTe</b>: <a   href="pcteCTe.TCTe.html">TCTe</a> read <a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#FCTe">FCTe</a> write <a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#FCTe">FCTe</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Public declarations</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DACTEClassOwner"></a><code>property <b>DACTEClassOwner</b>: <a   href="ACBrCTeDACTEClass.TACBrCteDACTEClass.html">TACBrCTeDACTEClass</a> read <a   href="ACBrCTeDACTEFRDM.TdmACBrCTeFR.html#FDACTEClassOwner">FDACTEClassOwner</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:22</em>
+</span>
+</body></html>

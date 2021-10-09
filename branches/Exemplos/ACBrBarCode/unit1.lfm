@@ -1,0 +1,115 @@
+object Form1: TForm1
+  Left = 462
+  Height = 513
+  Top = 139
+  Width = 636
+  Caption = 'Exemplo AcbrCodBar'
+  ClientHeight = 486
+  ClientWidth = 636
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '1.0.10.0'
+  object ACBrBarCode1: TACBrBarCode
+    Left = 0
+    Height = 274
+    Top = 212
+    Width = 636
+    Modul = 6
+    Ratio = 2
+    Typ = bcCodeEAN13
+    Angle = 0
+    ShowText = bcoTyp
+    Align = alBottom
+  end
+  object ComboBox1: TComboBox
+    Left = 16
+    Height = 33
+    Top = 119
+    Width = 616
+    ItemHeight = 0
+    ItemIndex = 0
+    Items.Strings = (
+      'bcCode_2_5_interleaved'
+      'bcCode_2_5_industrial'
+      'bcCode_2_5_matrix'
+      'bcCode39'
+      'bcCode39Extended'
+      'bcCode128A'
+      'bcCode128B'
+      'bcCode128C'
+      'bcCode93'
+      'bcCode93Extended'
+      'bcCodeMSI'
+      'bcCodePostNet'
+      'bcCodeCodabar'
+      'bcCodeEAN8'
+      'bcCodeEAN13'
+      'bcCodeUPC_A'
+      'bcCodeUPC_E0'
+      'bcCodeUPC_E1'
+      'bcCodeUPC_Supp2'
+      'bcCodeUPC_Supp5'
+      'bcCodeEAN128A'
+      'bcCodeEAN128B'
+      'bcCodeEAN128C'
+    )
+    OnChange = ComboBox1Change
+    TabOrder = 0
+    Text = 'bcCode_2_5_interleaved'
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 22
+    Top = 87
+    Width = 44
+    Caption = 'Label1'
+    ParentColor = False
+  end
+  object edtNumeracao: TEdit
+    Left = 16
+    Height = 33
+    Top = 183
+    Width = 616
+    OnChange = edtNumeracaoChange
+    TabOrder = 1
+    Text = '0066666666'
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 22
+    Top = 160
+    Width = 143
+    Caption = 'Númeração ou Texto:'
+    ParentColor = False
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 26
+    Top = 0
+    Width = 636
+    Caption = 'ToolBar1'
+    ShowCaptions = True
+    TabOrder = 2
+    object ToolButton1: TToolButton
+      Left = 1
+      Top = 2
+      Caption = 'Salvar'
+      OnClick = ToolButton1Click
+    end
+  end
+  object MainMenu1: TMainMenu
+    left = 229
+    top = 42
+    object MenuItem1: TMenuItem
+      Caption = 'Arquivo'
+      object MenuItem2: TMenuItem
+        Caption = 'Sair'
+        OnClick = MenuItem2Click
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Sobre...'
+      OnClick = MenuItem3Click
+    end
+  end
+end

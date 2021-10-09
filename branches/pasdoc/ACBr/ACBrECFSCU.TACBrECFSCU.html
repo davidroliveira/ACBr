@@ -1,0 +1,992 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrECFSCU: Classe TACBrECFSCU</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrECFSCU"></a><h1 class="cio">Classe TACBrECFSCU</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrECFSCU.html">ACBrECFSCU</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrECFSCU = class(<a class="normal"  href="ACBrECFClass.TACBrECFClass.html">TACBrECFClass</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+Classe filha de <a class="normal"  href="ACBrECFClass.TACBrECFClass.html">TACBrECFClass</a> com implementaçao para SCU</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal"  href="ACBrECFClass.TACBrECFClass.html">TACBrECFClass</a></li>
+<li class="thisitem">TACBrECFSCU</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrECFSCU.TACBrECFSCU.html#fsNumVersao">fsNumVersao</a></b>: String ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrECFSCU.TACBrECFSCU.html#fsNumECF">fsNumECF</a></b>: String ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrECFSCU.TACBrECFSCU.html#fsNumCRO">fsNumCRO</a></b>: String ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrECFSCU.TACBrECFSCU.html#fsSCUComando">fsSCUComando</a></b>: <a   href="ACBrECFSCU.TACBrECFSCUComando.html">TACBrECFSCUComando</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrECFSCU.TACBrECFSCU.html#fsSCUResposta">fsSCUResposta</a></b>: <a   href="ACBrECFSCU.TACBrECFSCUResposta.html">TACBrECFSCUResposta</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrECFSCU.TACBrECFSCU.html#fsDecimaisPreco">fsDecimaisPreco</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrECFSCU.TACBrECFSCU.html#fsDecimaisQtd">fsDecimaisQtd</a></b>: Integer;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#PreparaCmd">PreparaCmd</a></b>(CmdExtBcd: AnsiString): AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetDataHora">GetDataHora</a></b>: TDateTime; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetNumCupom">GetNumCupom</a></b>: String; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetNumECF">GetNumECF</a></b>: String; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetNumCRO">GetNumCRO</a></b>: String; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetNumSerie">GetNumSerie</a></b>: String; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetNumVersao">GetNumVersao</a></b>: String; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetSubTotal">GetSubTotal</a></b>: Double; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetTotalPago">GetTotalPago</a></b>: Double; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetEstado">GetEstado</a></b>: <a   href="ACBrDevice.html#TACBrECFEstado">TACBrECFEstado</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetGavetaAberta">GetGavetaAberta</a></b>: Boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetPoucoPapel">GetPoucoPapel</a></b> : Boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetHorarioVerao">GetHorarioVerao</a></b>: Boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetCNPJ">GetCNPJ</a></b>: String; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetDataMovimento">GetDataMovimento</a></b>: TDateTime; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetNumCRZ">GetNumCRZ</a></b>: String; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetGrandeTotal">GetGrandeTotal</a></b>: Double; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetVendaBruta">GetVendaBruta</a></b>: Double; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetTotalAcrescimos">GetTotalAcrescimos</a></b>: Double; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetTotalCancelamentos">GetTotalCancelamentos</a></b>: Double; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetTotalDescontos">GetTotalDescontos</a></b>: Double; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetTotalSubstituicaoTributaria">GetTotalSubstituicaoTributaria</a></b>: Double; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetTotalNaoTributado">GetTotalNaoTributado</a></b>: Double; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetTotalIsencao">GetTotalIsencao</a></b>: Double; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetNumCOOInicial">GetNumCOOInicial</a></b>: String; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#GetNumUltimoItem">GetNumUltimoItem</a></b>: Integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>Function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#VerificaFimLeitura">VerificaFimLeitura</a></b>(Retorno: AnsiString) : Boolean ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#VerificaFimImpressao">VerificaFimImpressao</a></b> : Boolean ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Constructor <b><a   href="ACBrECFSCU.TACBrECFSCU.html#create">create</a></b>( AOwner : TComponent ) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Destructor <b><a   href="ACBrECFSCU.TACBrECFSCU.html#Destroy">Destroy</a></b> ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#Ativar">Ativar</a></b> ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Function <b><a   href="ACBrECFSCU.TACBrECFSCU.html#EnviaComando_ECF">EnviaComando_ECF</a></b>( cmd : AnsiString = '' ) : AnsiString ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#AbreCupom">AbreCupom</a></b> ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#VendeItem">VendeItem</a></b>( Codigo, Descricao : String; AliquotaECF : String; Qtd : Double ; ValorUnitario : Double; DescontoPorc : Double = 0; Unidade : String = ''; TipoDescontoAcrescimo: String = '%') ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#SubtotalizaCupom">SubtotalizaCupom</a></b>( DescontoAcrescimo : Double = 0; MensagemRodape : AnsiString = '' ) ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#EfetuaPagamento">EfetuaPagamento</a></b>( CodFormaPagto : String; Valor : Double; Observacao : AnsiString = ''; ImprimeVinculado : Boolean = false) ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#FechaCupom">FechaCupom</a></b>( Observacao : AnsiString = '') ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#CancelaCupom">CancelaCupom</a></b> ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#CancelaItemVendido">CancelaItemVendido</a></b>( NumItem : Integer ) ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#LeituraX">LeituraX</a></b> ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#ReducaoZ">ReducaoZ</a></b>(DataHora : TDateTime = 0 ) ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#AbreRelatorioGerencial">AbreRelatorioGerencial</a></b> ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#LinhaRelatorioGerencial">LinhaRelatorioGerencial</a></b>( Linha : AnsiString ) ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#AbreCupomVinculado">AbreCupomVinculado</a></b>(COO, CodFormaPagto, CodComprovanteNaoFiscal : String; Valor : Double) ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#LinhaCupomVinculado">LinhaCupomVinculado</a></b>( Linha : AnsiString ) ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#FechaRelatorio">FechaRelatorio</a></b> ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#MudaHorarioVerao">MudaHorarioVerao</a></b> ; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#MudaHorarioVerao">MudaHorarioVerao</a></b>( EHorarioVerao : Boolean ) ; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#LeituraMemoriaFiscal">LeituraMemoriaFiscal</a></b>( DataInicial, DataFinal : TDateTime ) ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#LeituraMemoriaFiscal">LeituraMemoriaFiscal</a></b>( ReducaoInicial, ReducaoFinal : Integer); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#LeituraMemoriaFiscalSerial">LeituraMemoriaFiscalSerial</a></b>( DataInicial, DataFinal : TDateTime; var Linhas : TStringList ) ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#LeituraMemoriaFiscalSerial">LeituraMemoriaFiscalSerial</a></b>( ReducaoInicial, ReducaoFinal : Integer; var Linhas : TStringList ) ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#LeituraMFDSerial">LeituraMFDSerial</a></b>( DataInicial, DataFinal : TDateTime; var Linhas : TStringList ) ; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#LeituraMFDSerial">LeituraMFDSerial</a></b>( COOInicial, COOFinal : Integer; var Linhas : TStringList ) ; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#AbreNaoFiscal">AbreNaoFiscal</a></b>( CPF_CNPJ : String = '') ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#RegistraItemNaoFiscal">RegistraItemNaoFiscal</a></b>( CodCNF : String; Valor : Double; Obs : AnsiString = '') ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#SubtotalizaNaoFiscal">SubtotalizaNaoFiscal</a></b>( DescontoAcrescimo : Double = 0) ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#EfetuaPagamentoNaoFiscal">EfetuaPagamentoNaoFiscal</a></b>( CodFormaPagto : String; Valor : Double; Observacao : AnsiString = ''; ImprimeVinculado : Boolean = false) ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#FechaNaoFiscal">FechaNaoFiscal</a></b>( Observacao : AnsiString = '') ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#CancelaNaoFiscal">CancelaNaoFiscal</a></b> ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#AbreGaveta">AbreGaveta</a></b> ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#CarregaAliquotas">CarregaAliquotas</a></b> ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#LerTotaisAliquota">LerTotaisAliquota</a></b> ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#ProgramaAliquota">ProgramaAliquota</a></b>( Aliquota : Double; Tipo : Char = 'T'; Posicao : String = '') ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#CarregaFormasPagamento">CarregaFormasPagamento</a></b> ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#ProgramaFormaPagamento">ProgramaFormaPagamento</a></b>( var Descricao: String; PermiteVinculado : Boolean = true; Posicao : String = '' ) ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#CarregaComprovantesNaoFiscais">CarregaComprovantesNaoFiscais</a></b> ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrECFSCU.TACBrECFSCU.html#ProgramaComprovanteNaoFiscal">ProgramaComprovanteNaoFiscal</a></b>( var Descricao: String; Tipo : String = ''; Posicao : String = '') ; override;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrECFSCU.TACBrECFSCU.html#SCUComando">SCUComando</a></b> : <a   href="ACBrECFSCU.TACBrECFSCUComando.html">TACBrECFSCUComando</a>  read <a   href="ACBrECFSCU.TACBrECFSCU.html#fsSCUComando">fsSCUComando</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrECFSCU.TACBrECFSCU.html#SCUResposta">SCUResposta</a></b>: <a   href="ACBrECFSCU.TACBrECFSCUResposta.html">TACBrECFSCUResposta</a> read <a   href="ACBrECFSCU.TACBrECFSCU.html#fsSCUResposta">fsSCUResposta</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrECFSCU.TACBrECFSCU.html#DecimaisPreco">DecimaisPreco</a></b> : Integer read <a   href="ACBrECFSCU.TACBrECFSCU.html#fsDecimaisPreco">fsDecimaisPreco</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrECFSCU.TACBrECFSCU.html#DecimaisQtd">DecimaisQtd</a></b>   : Integer read <a   href="ACBrECFSCU.TACBrECFSCU.html#fsDecimaisQtd">fsDecimaisQtd</a>   ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsNumVersao"></a><code><b>fsNumVersao</b>: String ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsNumECF"></a><code><b>fsNumECF</b>: String ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsNumCRO"></a><code><b>fsNumCRO</b>: String ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsSCUComando"></a><code><b>fsSCUComando</b>: <a   href="ACBrECFSCU.TACBrECFSCUComando.html">TACBrECFSCUComando</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsSCUResposta"></a><code><b>fsSCUResposta</b>: <a   href="ACBrECFSCU.TACBrECFSCUResposta.html">TACBrECFSCUResposta</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsDecimaisPreco"></a><code><b>fsDecimaisPreco</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsDecimaisQtd"></a><code><b>fsDecimaisQtd</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="PreparaCmd"></a><code>function <b>PreparaCmd</b>(CmdExtBcd: AnsiString): AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetDataHora"></a><code>function <b>GetDataHora</b>: TDateTime; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetNumCupom"></a><code>function <b>GetNumCupom</b>: String; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetNumECF"></a><code>function <b>GetNumECF</b>: String; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetNumCRO"></a><code>function <b>GetNumCRO</b>: String; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetNumSerie"></a><code>function <b>GetNumSerie</b>: String; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetNumVersao"></a><code>function <b>GetNumVersao</b>: String; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetSubTotal"></a><code>function <b>GetSubTotal</b>: Double; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetTotalPago"></a><code>function <b>GetTotalPago</b>: Double; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetEstado"></a><code>function <b>GetEstado</b>: <a   href="ACBrDevice.html#TACBrECFEstado">TACBrECFEstado</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetGavetaAberta"></a><code>function <b>GetGavetaAberta</b>: Boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetPoucoPapel"></a><code>function <b>GetPoucoPapel</b> : Boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetHorarioVerao"></a><code>function <b>GetHorarioVerao</b>: Boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetCNPJ"></a><code>function <b>GetCNPJ</b>: String; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetDataMovimento"></a><code>function <b>GetDataMovimento</b>: TDateTime; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetNumCRZ"></a><code>function <b>GetNumCRZ</b>: String; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetGrandeTotal"></a><code>function <b>GetGrandeTotal</b>: Double; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetVendaBruta"></a><code>function <b>GetVendaBruta</b>: Double; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetTotalAcrescimos"></a><code>function <b>GetTotalAcrescimos</b>: Double; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetTotalCancelamentos"></a><code>function <b>GetTotalCancelamentos</b>: Double; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetTotalDescontos"></a><code>function <b>GetTotalDescontos</b>: Double; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetTotalSubstituicaoTributaria"></a><code>function <b>GetTotalSubstituicaoTributaria</b>: Double; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetTotalNaoTributado"></a><code>function <b>GetTotalNaoTributado</b>: Double; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetTotalIsencao"></a><code>function <b>GetTotalIsencao</b>: Double; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetNumCOOInicial"></a><code>function <b>GetNumCOOInicial</b>: String; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetNumUltimoItem"></a><code>function <b>GetNumUltimoItem</b>: Integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="VerificaFimLeitura"></a><code>Function <b>VerificaFimLeitura</b>(Retorno: AnsiString) : Boolean ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="VerificaFimImpressao"></a><code>function <b>VerificaFimImpressao</b> : Boolean ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="create"></a><code>Constructor <b>create</b>( AOwner : TComponent ) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>Destructor <b>Destroy</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Ativar"></a><code>procedure <b>Ativar</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EnviaComando_ECF"></a><code>Function <b>EnviaComando_ECF</b>( cmd : AnsiString = '' ) : AnsiString ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AbreCupom"></a><code>Procedure <b>AbreCupom</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VendeItem"></a><code>Procedure <b>VendeItem</b>( Codigo, Descricao : String; AliquotaECF : String; Qtd : Double ; ValorUnitario : Double; DescontoPorc : Double = 0; Unidade : String = ''; TipoDescontoAcrescimo: String = '%') ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SubtotalizaCupom"></a><code>Procedure <b>SubtotalizaCupom</b>( DescontoAcrescimo : Double = 0; MensagemRodape : AnsiString = '' ) ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EfetuaPagamento"></a><code>Procedure <b>EfetuaPagamento</b>( CodFormaPagto : String; Valor : Double; Observacao : AnsiString = ''; ImprimeVinculado : Boolean = false) ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FechaCupom"></a><code>Procedure <b>FechaCupom</b>( Observacao : AnsiString = '') ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CancelaCupom"></a><code>Procedure <b>CancelaCupom</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CancelaItemVendido"></a><code>Procedure <b>CancelaItemVendido</b>( NumItem : Integer ) ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LeituraX"></a><code>Procedure <b>LeituraX</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ReducaoZ"></a><code>Procedure <b>ReducaoZ</b>(DataHora : TDateTime = 0 ) ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AbreRelatorioGerencial"></a><code>Procedure <b>AbreRelatorioGerencial</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LinhaRelatorioGerencial"></a><code>Procedure <b>LinhaRelatorioGerencial</b>( Linha : AnsiString ) ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AbreCupomVinculado"></a><code>Procedure <b>AbreCupomVinculado</b>(COO, CodFormaPagto, CodComprovanteNaoFiscal : String; Valor : Double) ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LinhaCupomVinculado"></a><code>Procedure <b>LinhaCupomVinculado</b>( Linha : AnsiString ) ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FechaRelatorio"></a><code>Procedure <b>FechaRelatorio</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MudaHorarioVerao"></a><code>Procedure <b>MudaHorarioVerao</b> ; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MudaHorarioVerao"></a><code>Procedure <b>MudaHorarioVerao</b>( EHorarioVerao : Boolean ) ; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LeituraMemoriaFiscal"></a><code>Procedure <b>LeituraMemoriaFiscal</b>( DataInicial, DataFinal : TDateTime ) ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LeituraMemoriaFiscal"></a><code>Procedure <b>LeituraMemoriaFiscal</b>( ReducaoInicial, ReducaoFinal : Integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LeituraMemoriaFiscalSerial"></a><code>Procedure <b>LeituraMemoriaFiscalSerial</b>( DataInicial, DataFinal : TDateTime; var Linhas : TStringList ) ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LeituraMemoriaFiscalSerial"></a><code>Procedure <b>LeituraMemoriaFiscalSerial</b>( ReducaoInicial, ReducaoFinal : Integer; var Linhas : TStringList ) ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LeituraMFDSerial"></a><code>Procedure <b>LeituraMFDSerial</b>( DataInicial, DataFinal : TDateTime; var Linhas : TStringList ) ; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LeituraMFDSerial"></a><code>Procedure <b>LeituraMFDSerial</b>( COOInicial, COOFinal : Integer; var Linhas : TStringList ) ; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AbreNaoFiscal"></a><code>Procedure <b>AbreNaoFiscal</b>( CPF_CNPJ : String = '') ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Procedimentos de Cupom Não Fiscal</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RegistraItemNaoFiscal"></a><code>Procedure <b>RegistraItemNaoFiscal</b>( CodCNF : String; Valor : Double; Obs : AnsiString = '') ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SubtotalizaNaoFiscal"></a><code>Procedure <b>SubtotalizaNaoFiscal</b>( DescontoAcrescimo : Double = 0) ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EfetuaPagamentoNaoFiscal"></a><code>Procedure <b>EfetuaPagamentoNaoFiscal</b>( CodFormaPagto : String; Valor : Double; Observacao : AnsiString = ''; ImprimeVinculado : Boolean = false) ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FechaNaoFiscal"></a><code>Procedure <b>FechaNaoFiscal</b>( Observacao : AnsiString = '') ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CancelaNaoFiscal"></a><code>Procedure <b>CancelaNaoFiscal</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AbreGaveta"></a><code>Procedure <b>AbreGaveta</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CarregaAliquotas"></a><code>procedure <b>CarregaAliquotas</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LerTotaisAliquota"></a><code>procedure <b>LerTotaisAliquota</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ProgramaAliquota"></a><code>Procedure <b>ProgramaAliquota</b>( Aliquota : Double; Tipo : Char = 'T'; Posicao : String = '') ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CarregaFormasPagamento"></a><code>procedure <b>CarregaFormasPagamento</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ProgramaFormaPagamento"></a><code>Procedure <b>ProgramaFormaPagamento</b>( var Descricao: String; PermiteVinculado : Boolean = true; Posicao : String = '' ) ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CarregaComprovantesNaoFiscais"></a><code>procedure <b>CarregaComprovantesNaoFiscais</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ProgramaComprovanteNaoFiscal"></a><code>Procedure <b>ProgramaComprovanteNaoFiscal</b>( var Descricao: String; Tipo : String = ''; Posicao : String = '') ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SCUComando"></a><code>property <b>SCUComando</b> : <a   href="ACBrECFSCU.TACBrECFSCUComando.html">TACBrECFSCUComando</a>  read <a   href="ACBrECFSCU.TACBrECFSCU.html#fsSCUComando">fsSCUComando</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SCUResposta"></a><code>property <b>SCUResposta</b>: <a   href="ACBrECFSCU.TACBrECFSCUResposta.html">TACBrECFSCUResposta</a> read <a   href="ACBrECFSCU.TACBrECFSCU.html#fsSCUResposta">fsSCUResposta</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DecimaisPreco"></a><code>property <b>DecimaisPreco</b> : Integer read <a   href="ACBrECFSCU.TACBrECFSCU.html#fsDecimaisPreco">fsDecimaisPreco</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DecimaisQtd"></a><code>property <b>DecimaisQtd</b>   : Integer read <a   href="ACBrECFSCU.TACBrECFSCU.html#fsDecimaisQtd">fsDecimaisQtd</a>   ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:29</em>
+</span>
+</body></html>

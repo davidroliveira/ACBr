@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrCAPICOM_TLB: Interface IStore3</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="IStore3"></a><h1 class="cio">Interface IStore3</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td>Campos</td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrCAPICOM_TLB.html">ACBrCAPICOM_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type IStore3 = interface(<a class="normal"  href="ACBrCAPICOM_TLB.IStore2.html">IStore2</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// Interface: <code>IStore3</code> Flags: (4416) Dual OleAutomation Dispatchable GUID: {F701F8EC-31C7-48FB-B621-5DE417C3A607} *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">IDispatch</li>
+<li class="ancestor"><a class="normal"  href="ACBrCAPICOM_TLB.IStore.html">IStore</a></li>
+<li class="ancestor"><a class="normal"  href="ACBrCAPICOM_TLB.IStore2.html">IStore2</a></li>
+<li class="thisitem">IStore3</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.IStore3.html#Get_Name">Get_Name</a></b>: WideString; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.IStore3.html#Get_Location">Get_Location</a></b>: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_STORE_LOCATION">CAPICOM_STORE_LOCATION</a>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.IStore3.html#Delete">Delete</a></b>: WordBool; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCAPICOM_TLB.IStore3.html#Close">Close</a></b>; safecall;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.IStore3.html#Name">Name</a></b>: WideString read <a   href="ACBrCAPICOM_TLB.IStore3.html#Get_Name">Get_Name</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.IStore3.html#Location">Location</a></b>: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_STORE_LOCATION">CAPICOM_STORE_LOCATION</a> read <a   href="ACBrCAPICOM_TLB.IStore3.html#Get_Location">Get_Location</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_Name"></a><code>function <b>Get_Name</b>: WideString; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_Location"></a><code>function <b>Get_Location</b>: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_STORE_LOCATION">CAPICOM_STORE_LOCATION</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Delete"></a><code>function <b>Delete</b>: WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Close"></a><code>procedure <b>Close</b>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Name"></a><code>property <b>Name</b>: WideString read <a   href="ACBrCAPICOM_TLB.IStore3.html#Get_Name">Get_Name</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Location"></a><code>property <b>Location</b>: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_STORE_LOCATION">CAPICOM_STORE_LOCATION</a> read <a   href="ACBrCAPICOM_TLB.IStore3.html#Get_Location">Get_Location</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:20</em>
+</span>
+</body></html>

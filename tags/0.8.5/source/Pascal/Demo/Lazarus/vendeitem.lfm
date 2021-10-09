@@ -1,0 +1,206 @@
+object frVendeItem: TfrVendeItem
+  ActiveControl = edCodigo
+  BorderStyle = bsSingle
+  Caption = 'Vende Item'
+  ClientHeight = 245
+  ClientWidth = 359
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  PixelsPerInch = 96
+  Position = poMainFormCenter
+  TextHeight = 13
+  HorzScrollBar.Page = 358
+  HorzScrollBar.Range = 329
+  VertScrollBar.Page = 244
+  VertScrollBar.Range = 225
+  Left = 358
+  Height = 245
+  Top = 267
+  Width = 359
+  object Label1: TLabel
+    Caption = '&Código'
+    Color = clNone
+    FocusControl = edCodigo
+    ParentColor = False
+    Left = 24
+    Height = 14
+    Top = 24
+    Width = 41
+  end
+  object Label2: TLabel
+    Caption = '&Descrição'
+    Color = clNone
+    FocusControl = edDescricao
+    ParentColor = False
+    Left = 9
+    Height = 14
+    Top = 56
+    Width = 54
+  end
+  object Label3: TLabel
+    Caption = '&Qtd'
+    Color = clNone
+    ParentColor = False
+    Left = 40
+    Height = 14
+    Top = 88
+    Width = 26
+  end
+  object Label4: TLabel
+    Caption = '&Preço Unitário'
+    Color = clNone
+    FocusControl = edPrecoUnita
+    ParentColor = False
+    Left = 168
+    Height = 14
+    Top = 88
+    Width = 75
+  end
+  object Label5: TLabel
+    Caption = '&Valor Aliq. ICMS'
+    Color = clNone
+    FocusControl = edICMS
+    ParentColor = False
+    Left = 159
+    Height = 14
+    Top = 120
+    Width = 84
+  end
+  object Label6: TLabel
+    Caption = '&Desc (%)'
+    Color = clNone
+    FocusControl = edDesconto
+    ParentColor = False
+    Left = 15
+    Height = 14
+    Top = 152
+    Width = 53
+  end
+  object Label7: TLabel
+    Caption = '&Unidade'
+    Color = clNone
+    FocusControl = edUN
+    ParentColor = False
+    Left = 17
+    Height = 14
+    Top = 120
+    Width = 47
+  end
+  object Label8: TLabel
+    Caption = 'II = Isento'
+    Color = clNone
+    ParentColor = False
+    Left = 184
+    Height = 14
+    Top = 144
+    Width = 54
+  end
+  object Label9: TLabel
+    Caption = 'NN = Nao Incidencia'
+    Color = clNone
+    ParentColor = False
+    Left = 184
+    Height = 14
+    Top = 160
+    Width = 99
+  end
+  object Label10: TLabel
+    Caption = 'FF = Substituiçao Tributária'
+    Color = clNone
+    ParentColor = False
+    Left = 184
+    Height = 14
+    Top = 176
+    Width = 134
+  end
+  object edCodigo: TEdit
+    TabOrder = 0
+    Text = '111222333'
+    Cursor = crIBeam
+    Left = 72
+    Height = 21
+    Top = 16
+    Width = 101
+  end
+  object edDescricao: TEdit
+    TabOrder = 1
+    Text = 'TESTE DE PRODUTO'
+    Cursor = crIBeam
+    Left = 72
+    Height = 21
+    Top = 48
+    Width = 273
+  end
+  object edPrecoUnita: TEdit
+    OnKeyPress = edQtdKeyPress
+    TabOrder = 3
+    Text = '1'
+    Cursor = crIBeam
+    Left = 256
+    Height = 21
+    Top = 80
+    Width = 89
+  end
+  object edICMS: TEdit
+    OnKeyPress = edQtdKeyPress
+    TabOrder = 5
+    Text = 'NN'
+    Cursor = crIBeam
+    Left = 256
+    Height = 21
+    Top = 112
+    Width = 89
+  end
+  object edDesconto: TEdit
+    OnKeyPress = edQtdKeyPress
+    TabOrder = 6
+    Text = '0'
+    Cursor = crIBeam
+    Left = 72
+    Height = 21
+    Top = 144
+    Width = 81
+  end
+  object edUN: TEdit
+    TabOrder = 4
+    Text = 'UN'
+    Cursor = crIBeam
+    Left = 72
+    Height = 21
+    Top = 112
+    Width = 81
+  end
+  object Button1: TButton
+    BorderSpacing.InnerBorder = 2
+    Caption = '&Imprimir'
+    Default = True
+    OnClick = Button1Click
+    TabOrder = 7
+    Left = 64
+    Height = 25
+    Top = 208
+    Width = 75
+  end
+  object Button2: TButton
+    BorderSpacing.InnerBorder = 2
+    Cancel = True
+    Caption = 'Fechar'
+    ModalResult = 2
+    OnClick = Button2Click
+    TabOrder = 8
+    Left = 203
+    Height = 25
+    Top = 208
+    Width = 75
+  end
+  object edQtd: TEdit
+    OnKeyPress = edQtdKeyPress
+    TabOrder = 2
+    Text = '1'
+    Cursor = crIBeam
+    Left = 72
+    Height = 21
+    Top = 80
+    Width = 81
+  end
+end

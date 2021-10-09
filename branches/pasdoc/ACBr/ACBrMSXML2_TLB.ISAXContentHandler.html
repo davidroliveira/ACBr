@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrMSXML2_TLB: Interface ISAXContentHandler</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="ISAXContentHandler"></a><h1 class="cio">Interface ISAXContentHandler</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td>Campos</td><td><a class="section"  href="#%40Methods">Métodos</a></td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrMSXML2_TLB.html">ACBrMSXML2_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type ISAXContentHandler = interface(IUnknown)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// Interface: <code>ISAXContentHandler</code> Flags: (16) Hidden GUID: {1545CDFA-9E4E-4497-A8A4-2BF7D0112C44} *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">IUnknown</li>
+<li class="thisitem">ISAXContentHandler</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISAXContentHandler.html#putDocumentLocator">putDocumentLocator</a></b>(const pLocator: <a   href="ACBrMSXML2_TLB.ISAXLocator.html">ISAXLocator</a>): HResult; stdcall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISAXContentHandler.html#startDocument">startDocument</a></b>: HResult; stdcall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISAXContentHandler.html#endDocument">endDocument</a></b>: HResult; stdcall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISAXContentHandler.html#startPrefixMapping">startPrefixMapping</a></b>(var pwchPrefix: Word; cchPrefix: SYSINT; var pwchUri: Word; cchUri: SYSINT): HResult; stdcall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISAXContentHandler.html#endPrefixMapping">endPrefixMapping</a></b>(var pwchPrefix: Word; cchPrefix: SYSINT): HResult; stdcall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISAXContentHandler.html#startElement">startElement</a></b>(var pwchNamespaceUri: Word; cchNamespaceUri: SYSINT; var pwchLocalName: Word; cchLocalName: SYSINT; var pwchQName: Word; cchQName: SYSINT; const pAttributes: <a   href="ACBrMSXML2_TLB.ISAXAttributes.html">ISAXAttributes</a>): HResult; stdcall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISAXContentHandler.html#endElement">endElement</a></b>(var pwchNamespaceUri: Word; cchNamespaceUri: SYSINT; var pwchLocalName: Word; cchLocalName: SYSINT; var pwchQName: Word; cchQName: SYSINT): HResult; stdcall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISAXContentHandler.html#characters">characters</a></b>(var pwchChars: Word; cchChars: SYSINT): HResult; stdcall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISAXContentHandler.html#ignorableWhitespace">ignorableWhitespace</a></b>(var pwchChars: Word; cchChars: SYSINT): HResult; stdcall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISAXContentHandler.html#processingInstruction">processingInstruction</a></b>(var pwchTarget: Word; cchTarget: SYSINT; var pwchData: Word; cchData: SYSINT): HResult; stdcall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISAXContentHandler.html#skippedEntity">skippedEntity</a></b>(var pwchName: Word; cchName: SYSINT): HResult; stdcall;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="putDocumentLocator"></a><code>function <b>putDocumentLocator</b>(const pLocator: <a   href="ACBrMSXML2_TLB.ISAXLocator.html">ISAXLocator</a>): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="startDocument"></a><code>function <b>startDocument</b>: HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="endDocument"></a><code>function <b>endDocument</b>: HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="startPrefixMapping"></a><code>function <b>startPrefixMapping</b>(var pwchPrefix: Word; cchPrefix: SYSINT; var pwchUri: Word; cchUri: SYSINT): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="endPrefixMapping"></a><code>function <b>endPrefixMapping</b>(var pwchPrefix: Word; cchPrefix: SYSINT): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="startElement"></a><code>function <b>startElement</b>(var pwchNamespaceUri: Word; cchNamespaceUri: SYSINT; var pwchLocalName: Word; cchLocalName: SYSINT; var pwchQName: Word; cchQName: SYSINT; const pAttributes: <a   href="ACBrMSXML2_TLB.ISAXAttributes.html">ISAXAttributes</a>): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="endElement"></a><code>function <b>endElement</b>(var pwchNamespaceUri: Word; cchNamespaceUri: SYSINT; var pwchLocalName: Word; cchLocalName: SYSINT; var pwchQName: Word; cchQName: SYSINT): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="characters"></a><code>function <b>characters</b>(var pwchChars: Word; cchChars: SYSINT): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ignorableWhitespace"></a><code>function <b>ignorableWhitespace</b>(var pwchChars: Word; cchChars: SYSINT): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="processingInstruction"></a><code>function <b>processingInstruction</b>(var pwchTarget: Word; cchTarget: SYSINT; var pwchData: Word; cchData: SYSINT): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="skippedEntity"></a><code>function <b>skippedEntity</b>(var pwchName: Word; cchName: SYSINT): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:44</em>
+</span>
+</body></html>

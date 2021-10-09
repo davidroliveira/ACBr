@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrValidador: Classe TACBrCalcDigito</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrCalcDigito"></a><h1 class="cio">Classe TACBrCalcDigito</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrValidador.html">ACBrValidador</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrCalcDigito = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TACBrCalcDigito</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrValidador.TACBrCalcDigito.html#fsMultIni">fsMultIni</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrValidador.TACBrCalcDigito.html#fsMultFim">fsMultFim</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrValidador.TACBrCalcDigito.html#fsMultAtu">fsMultAtu</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrValidador.TACBrCalcDigito.html#fsFormulaDigito">fsFormulaDigito</a></b>: <a   href="ACBrValidador.html#TACBrCalcDigFormula">TACBrCalcDigFormula</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrValidador.TACBrCalcDigito.html#fsDocto">fsDocto</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrValidador.TACBrCalcDigito.html#fsDigitoFinal">fsDigitoFinal</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrValidador.TACBrCalcDigito.html#fsSomaDigitos">fsSomaDigitos</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrValidador.TACBrCalcDigito.html#fsModuloFinal">fsModuloFinal</a></b>: Integer;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrValidador.TACBrCalcDigito.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrValidador.TACBrCalcDigito.html#Calcular">Calcular</a></b> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrValidador.TACBrCalcDigito.html#CalculoPadrao">CalculoPadrao</a></b> ;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrValidador.TACBrCalcDigito.html#Documento">Documento</a></b> : AnsiString read <a   href="ACBrValidador.TACBrCalcDigito.html#fsDocto">fsDocto</a> write <a   href="ACBrValidador.TACBrCalcDigito.html#fsDocto">fsDocto</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrValidador.TACBrCalcDigito.html#MultiplicadorInicial">MultiplicadorInicial</a></b> : Integer read <a   href="ACBrValidador.TACBrCalcDigito.html#fsMultIni">fsMultIni</a> write <a   href="ACBrValidador.TACBrCalcDigito.html#fsMultIni">fsMultIni</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrValidador.TACBrCalcDigito.html#MultiplicadorFinal">MultiplicadorFinal</a></b>   : Integer read <a   href="ACBrValidador.TACBrCalcDigito.html#fsMultFim">fsMultFim</a> write <a   href="ACBrValidador.TACBrCalcDigito.html#fsMultFim">fsMultFim</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrValidador.TACBrCalcDigito.html#MultiplicadorAtual">MultiplicadorAtual</a></b>   : Integer read <a   href="ACBrValidador.TACBrCalcDigito.html#fsMultAtu">fsMultAtu</a> write <a   href="ACBrValidador.TACBrCalcDigito.html#fsMultAtu">fsMultAtu</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrValidador.TACBrCalcDigito.html#DigitoFinal">DigitoFinal</a></b> : Integer read <a   href="ACBrValidador.TACBrCalcDigito.html#fsDigitoFinal">fsDigitoFinal</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrValidador.TACBrCalcDigito.html#ModuloFinal">ModuloFinal</a></b> : Integer read <a   href="ACBrValidador.TACBrCalcDigito.html#fsModuloFinal">fsModuloFinal</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrValidador.TACBrCalcDigito.html#SomaDigitos">SomaDigitos</a></b> : Integer read <a   href="ACBrValidador.TACBrCalcDigito.html#fsSomaDigitos">fsSomaDigitos</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrValidador.TACBrCalcDigito.html#FormulaDigito">FormulaDigito</a></b> : <a   href="ACBrValidador.html#TACBrCalcDigFormula">TACBrCalcDigFormula</a> read <a   href="ACBrValidador.TACBrCalcDigito.html#fsFormulaDigito">fsFormulaDigito</a>
+         write <a   href="ACBrValidador.TACBrCalcDigito.html#fsFormulaDigito">fsFormulaDigito</a> ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsMultIni"></a><code><b>fsMultIni</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsMultFim"></a><code><b>fsMultFim</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsMultAtu"></a><code><b>fsMultAtu</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsFormulaDigito"></a><code><b>fsFormulaDigito</b>: <a   href="ACBrValidador.html#TACBrCalcDigFormula">TACBrCalcDigFormula</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsDocto"></a><code><b>fsDocto</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsDigitoFinal"></a><code><b>fsDigitoFinal</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsSomaDigitos"></a><code><b>fsSomaDigitos</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsModuloFinal"></a><code><b>fsModuloFinal</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Calcular"></a><code>Procedure <b>Calcular</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalculoPadrao"></a><code>Procedure <b>CalculoPadrao</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Documento"></a><code>property <b>Documento</b> : AnsiString read <a   href="ACBrValidador.TACBrCalcDigito.html#fsDocto">fsDocto</a> write <a   href="ACBrValidador.TACBrCalcDigito.html#fsDocto">fsDocto</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MultiplicadorInicial"></a><code>property <b>MultiplicadorInicial</b> : Integer read <a   href="ACBrValidador.TACBrCalcDigito.html#fsMultIni">fsMultIni</a> write <a   href="ACBrValidador.TACBrCalcDigito.html#fsMultIni">fsMultIni</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MultiplicadorFinal"></a><code>property <b>MultiplicadorFinal</b>   : Integer read <a   href="ACBrValidador.TACBrCalcDigito.html#fsMultFim">fsMultFim</a> write <a   href="ACBrValidador.TACBrCalcDigito.html#fsMultFim">fsMultFim</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MultiplicadorAtual"></a><code>property <b>MultiplicadorAtual</b>   : Integer read <a   href="ACBrValidador.TACBrCalcDigito.html#fsMultAtu">fsMultAtu</a> write <a   href="ACBrValidador.TACBrCalcDigito.html#fsMultAtu">fsMultAtu</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DigitoFinal"></a><code>property <b>DigitoFinal</b> : Integer read <a   href="ACBrValidador.TACBrCalcDigito.html#fsDigitoFinal">fsDigitoFinal</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ModuloFinal"></a><code>property <b>ModuloFinal</b> : Integer read <a   href="ACBrValidador.TACBrCalcDigito.html#fsModuloFinal">fsModuloFinal</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SomaDigitos"></a><code>property <b>SomaDigitos</b> : Integer read <a   href="ACBrValidador.TACBrCalcDigito.html#fsSomaDigitos">fsSomaDigitos</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FormulaDigito"></a><code>property <b>FormulaDigito</b> : <a   href="ACBrValidador.html#TACBrCalcDigFormula">TACBrCalcDigFormula</a> read <a   href="ACBrValidador.TACBrCalcDigito.html#fsFormulaDigito">fsFormulaDigito</a>
+         write <a   href="ACBrValidador.TACBrCalcDigito.html#fsFormulaDigito">fsFormulaDigito</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:55</em>
+</span>
+</body></html>

@@ -1,0 +1,508 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: pingsend: Classe TPINGSend</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TPINGSend"></a><h1 class="cio">Classe TPINGSend</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="pingsend.html">pingsend</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TPINGSend = class(<a class="normal"  href="blcksock.TSynaClient.html">TSynaClient</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+Implementation of ICMP <a class="normal"  href="pingsend.TPINGSend.html#Ping">PING</a> and ICMPv6 <a class="normal"  href="pingsend.TPINGSend.html#Ping">PING</a>.</p>
+<p>
+:</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal"  href="blcksock.TSynaClient.html">TSynaClient</a></li>
+<li class="thisitem">TPINGSend</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#FSock">FSock</a></b>: <a   href="blcksock.TICMPBlockSocket.html">TICMPBlockSocket</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#FBuffer">FBuffer</a></b>: Ansistring;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#FSeq">FSeq</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#FId">FId</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#FPacketSize">FPacketSize</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#FPingTime">FPingTime</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#FIcmpEcho">FIcmpEcho</a></b>: Byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#FIcmpEchoReply">FIcmpEchoReply</a></b>: Byte;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#FIcmpUnreach">FIcmpUnreach</a></b>: Byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#FReplyFrom">FReplyFrom</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#FReplyType">FReplyType</a></b>: byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#FReplyCode">FReplyCode</a></b>: byte;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#FReplyError">FReplyError</a></b>: <a   href="pingsend.html#TICMPError">TICMPError</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#FReplyErrorDesc">FReplyErrorDesc</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#FTTL">FTTL</a></b>: Byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pingsend.TPINGSend.html#Fsin">Fsin</a></b>: TVarSin;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="pingsend.TPINGSend.html#Checksum">Checksum</a></b>(Value: AnsiString): Word;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="pingsend.TPINGSend.html#Checksum6">Checksum6</a></b>(Value: AnsiString): Word;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="pingsend.TPINGSend.html#ReadPacket">ReadPacket</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="pingsend.TPINGSend.html#TranslateError">TranslateError</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="pingsend.TPINGSend.html#TranslateErrorIpHlp">TranslateErrorIpHlp</a></b>(value: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="pingsend.TPINGSend.html#InternalPing">InternalPing</a></b>(const Host: string): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="pingsend.TPINGSend.html#InternalPingIpHlp">InternalPingIpHlp</a></b>(const Host: string): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="pingsend.TPINGSend.html#IsHostIP6">IsHostIP6</a></b>(const Host: string): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="pingsend.TPINGSend.html#GenErrorDesc">GenErrorDesc</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pingsend.TPINGSend.html#Ping">Ping</a></b>(const Host: string): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="pingsend.TPINGSend.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="pingsend.TPINGSend.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pingsend.TPINGSend.html#PacketSize">PacketSize</a></b>: Integer read <a   href="pingsend.TPINGSend.html#FPacketSize">FPacketSize</a> Write <a   href="pingsend.TPINGSend.html#FPacketSize">FPacketSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pingsend.TPINGSend.html#PingTime">PingTime</a></b>: Integer read <a   href="pingsend.TPINGSend.html#FPingTime">FPingTime</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pingsend.TPINGSend.html#ReplyFrom">ReplyFrom</a></b>: string read <a   href="pingsend.TPINGSend.html#FReplyFrom">FReplyFrom</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pingsend.TPINGSend.html#ReplyType">ReplyType</a></b>: byte read <a   href="pingsend.TPINGSend.html#FReplyType">FReplyType</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pingsend.TPINGSend.html#ReplyCode">ReplyCode</a></b>: byte read <a   href="pingsend.TPINGSend.html#FReplyCode">FReplyCode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pingsend.TPINGSend.html#ReplyError">ReplyError</a></b>: <a   href="pingsend.html#TICMPError">TICMPError</a> read <a   href="pingsend.TPINGSend.html#FReplyError">FReplyError</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pingsend.TPINGSend.html#ReplyErrorDesc">ReplyErrorDesc</a></b>: string read <a   href="pingsend.TPINGSend.html#FReplyErrorDesc">FReplyErrorDesc</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pingsend.TPINGSend.html#Sock">Sock</a></b>: <a   href="blcksock.TICMPBlockSocket.html">TICMPBlockSocket</a> read <a   href="pingsend.TPINGSend.html#FSock">FSock</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pingsend.TPINGSend.html#TTL">TTL</a></b>: byte read <a   href="pingsend.TPINGSend.html#FTTL">FTTL</a> write <a   href="pingsend.TPINGSend.html#FTTL">FTTL</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FSock"></a><code><b>FSock</b>: <a   href="blcksock.TICMPBlockSocket.html">TICMPBlockSocket</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FBuffer"></a><code><b>FBuffer</b>: Ansistring;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FSeq"></a><code><b>FSeq</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FId"></a><code><b>FId</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FPacketSize"></a><code><b>FPacketSize</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FPingTime"></a><code><b>FPingTime</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FIcmpEcho"></a><code><b>FIcmpEcho</b>: Byte;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FIcmpEchoReply"></a><code><b>FIcmpEchoReply</b>: Byte;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FIcmpUnreach"></a><code><b>FIcmpUnreach</b>: Byte;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FReplyFrom"></a><code><b>FReplyFrom</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FReplyType"></a><code><b>FReplyType</b>: byte;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FReplyCode"></a><code><b>FReplyCode</b>: byte;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FReplyError"></a><code><b>FReplyError</b>: <a   href="pingsend.html#TICMPError">TICMPError</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FReplyErrorDesc"></a><code><b>FReplyErrorDesc</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FTTL"></a><code><b>FTTL</b>: Byte;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Fsin"></a><code><b>Fsin</b>: TVarSin;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Checksum"></a><code>function <b>Checksum</b>(Value: AnsiString): Word;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Checksum6"></a><code>function <b>Checksum6</b>(Value: AnsiString): Word;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="ReadPacket"></a><code>function <b>ReadPacket</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="TranslateError"></a><code>procedure <b>TranslateError</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="TranslateErrorIpHlp"></a><code>procedure <b>TranslateErrorIpHlp</b>(value: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="InternalPing"></a><code>function <b>InternalPing</b>(const Host: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="InternalPingIpHlp"></a><code>function <b>InternalPingIpHlp</b>(const Host: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="IsHostIP6"></a><code>function <b>IsHostIP6</b>(const Host: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GenErrorDesc"></a><code>procedure <b>GenErrorDesc</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Ping"></a><code>function <b>Ping</b>(const Host: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send ICMP <code>ping</code> to host and count <a class="normal"  href="pingsend.TPINGSend.html#PingTime">pingtime</a>. If <code>ping</code> OK, result is <code>True</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="PacketSize"></a><code>property <b>PacketSize</b>: Integer read <a   href="pingsend.TPINGSend.html#FPacketSize">FPacketSize</a> Write <a   href="pingsend.TPINGSend.html#FPacketSize">FPacketSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Size of <a class="normal"  href="pingsend.TPINGSend.html#Ping">PING</a> packet. Default size is 32 bytes.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="PingTime"></a><code>property <b>PingTime</b>: Integer read <a   href="pingsend.TPINGSend.html#FPingTime">FPingTime</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Time between request and reply.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ReplyFrom"></a><code>property <b>ReplyFrom</b>: string read <a   href="pingsend.TPINGSend.html#FReplyFrom">FReplyFrom</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:From this address is sended reply for your <a class="normal"  href="pingsend.TPINGSend.html#Ping">PING</a> request. It maybe not your requested destination, when some error occured!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ReplyType"></a><code>property <b>ReplyType</b>: byte read <a   href="pingsend.TPINGSend.html#FReplyType">FReplyType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:ICMP type of <a class="normal"  href="pingsend.TPINGSend.html#Ping">PING</a> reply. Each protocol using another values! For IPv4 and IPv6 are used different values!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ReplyCode"></a><code>property <b>ReplyCode</b>: byte read <a   href="pingsend.TPINGSend.html#FReplyCode">FReplyCode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:ICMP code of <a class="normal"  href="pingsend.TPINGSend.html#Ping">PING</a> reply. Each protocol using another values! For IPv4 and IPv6 are used different values! For protocol independent value look to <a class="normal"  href="pingsend.TPINGSend.html#ReplyError">ReplyError</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ReplyError"></a><code>property <b>ReplyError</b>: <a   href="pingsend.html#TICMPError">TICMPError</a> read <a   href="pingsend.TPINGSend.html#FReplyError">FReplyError</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Return type of returned ICMP message. This value is independent on used protocol!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ReplyErrorDesc"></a><code>property <b>ReplyErrorDesc</b>: string read <a   href="pingsend.TPINGSend.html#FReplyErrorDesc">FReplyErrorDesc</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Return human readable description of returned packet type.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Sock"></a><code>property <b>Sock</b>: <a   href="blcksock.TICMPBlockSocket.html">TICMPBlockSocket</a> read <a   href="pingsend.TPINGSend.html#FSock">FSock</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Socket object used for TCP/IP operation. Good for seting OnStatus hook, etc.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="TTL"></a><code>property <b>TTL</b>: byte read <a   href="pingsend.TPINGSend.html#FTTL">FTTL</a> write <a   href="pingsend.TPINGSend.html#FTTL">FTTL</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<code>TTL</code> value for ICMP query</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:21:05</em>
+</span>
+</body></html>

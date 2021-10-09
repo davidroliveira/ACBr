@@ -1,0 +1,1724 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: synaser: Classe TBlockSerial</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TBlockSerial"></a><h1 class="cio">Classe TBlockSerial</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="synaser.html">synaser</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TBlockSerial = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+Main class implementing all communication routines</p>
+<p>
+:</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TBlockSerial</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FOnStatus">FOnStatus</a></b>: <a   href="synaser.html#THookSerialStatus">THookSerialStatus</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#Fhandle">Fhandle</a></b>: THandle;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FTag">FTag</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FDevice">FDevice</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FLastError">FLastError</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FLastErrorDesc">FLastErrorDesc</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FBuffer">FBuffer</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FRaiseExcept">FRaiseExcept</a></b>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FRecvBuffer">FRecvBuffer</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FSendBuffer">FSendBuffer</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FModemWord">FModemWord</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FRTSToggle">FRTSToggle</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FDeadlockTimeout">FDeadlockTimeout</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FInstanceActive">FInstanceActive</a></b>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FTestDSR">FTestDSR</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FTestCTS">FTestCTS</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FLastCR">FLastCR</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FLastLF">FLastLF</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FMaxLineLength">FMaxLineLength</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FLinuxLock">FLinuxLock</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FMaxSendBandwidth">FMaxSendBandwidth</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FNextSend">FNextSend</a></b>: LongWord;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FMaxRecvBandwidth">FMaxRecvBandwidth</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FNextRecv">FNextRecv</a></b>: LongWord;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FConvertLineEnd">FConvertLineEnd</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FATResult">FATResult</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FAtTimeout">FAtTimeout</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FInterPacketTimeout">FInterPacketTimeout</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FComNr">FComNr</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#FPortAddr">FPortAddr</a></b>: Word;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><b><a   href="synaser.TBlockSerial.html#DCB">DCB</a></b>: Tdcb;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#CanEvent">CanEvent</a></b>(Event: dword; Timeout: integer): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#DecodeCommError">DecodeCommError</a></b>(Error: DWord); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#GetPortAddr">GetPortAddr</a></b>: Word; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#ReadTxEmpty">ReadTxEmpty</a></b>(PortAddr: Word): Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#SetSizeRecvBuffer">SetSizeRecvBuffer</a></b>(size: integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#GetDSR">GetDSR</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#SetDTRF">SetDTRF</a></b>(Value: Boolean); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#GetCTS">GetCTS</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#SetRTSF">SetRTSF</a></b>(Value: Boolean); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#GetCarrier">GetCarrier</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#GetRing">GetRing</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#DoStatus">DoStatus</a></b>(Reason: <a   href="synaser.html#THookSerialReason">THookSerialReason</a>; const Value: string); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#GetComNr">GetComNr</a></b>(Value: string); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#PreTestFailing">PreTestFailing</a></b>: boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#TestCtrlLine">TestCtrlLine</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#LimitBandwidth">LimitBandwidth</a></b>(Length: Integer; MaxB: integer; var Next: LongWord); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#SetBandwidth">SetBandwidth</a></b>(Value: Integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="synaser.TBlockSerial.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="synaser.TBlockSerial.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="synaser.TBlockSerial.html#GetVersion">GetVersion</a></b>: string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#CloseSocket">CloseSocket</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#Config">Config</a></b>(baud, bits: integer; parity: char; stop: integer; softflow, hardflow: boolean); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#Connect">Connect</a></b>(comport: string); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#SetCommState">SetCommState</a></b>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#GetCommState">GetCommState</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#SendBuffer">SendBuffer</a></b>(buffer: pointer; length: integer): integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#SendByte">SendByte</a></b>(data: byte); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#SendString">SendString</a></b>(data: AnsiString); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#SendInteger">SendInteger</a></b>(Data: integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#SendBlock">SendBlock</a></b>(const Data: AnsiString); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#SendStreamRaw">SendStreamRaw</a></b>(const Stream: TStream); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#SendStream">SendStream</a></b>(const Stream: TStream); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#SendStreamIndy">SendStreamIndy</a></b>(const Stream: TStream); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#RecvBuffer">RecvBuffer</a></b>(buffer: pointer; length: integer): integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#RecvBufferEx">RecvBufferEx</a></b>(buffer: pointer; length: integer; timeout: integer): integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#RecvBufferStr">RecvBufferStr</a></b>(Length: Integer; Timeout: Integer): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#RecvPacket">RecvPacket</a></b>(Timeout: Integer): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#RecvByte">RecvByte</a></b>(timeout: integer): byte; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#RecvTerminated">RecvTerminated</a></b>(Timeout: Integer; const Terminator: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#Recvstring">Recvstring</a></b>(timeout: integer): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#RecvInteger">RecvInteger</a></b>(Timeout: Integer): Integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#RecvBlock">RecvBlock</a></b>(Timeout: Integer): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#RecvStreamRaw">RecvStreamRaw</a></b>(const Stream: TStream; Timeout: Integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#RecvStreamSize">RecvStreamSize</a></b>(const Stream: TStream; Timeout: Integer; Size: Integer); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#RecvStream">RecvStream</a></b>(const Stream: TStream; Timeout: Integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#RecvStreamIndy">RecvStreamIndy</a></b>(const Stream: TStream; Timeout: Integer); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#WaitingData">WaitingData</a></b>: integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#WaitingDataEx">WaitingDataEx</a></b>: integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#SendingData">SendingData</a></b>: integer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#EnableRTSToggle">EnableRTSToggle</a></b>(value: boolean); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#Flush">Flush</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#Purge">Purge</a></b>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#CanRead">CanRead</a></b>(Timeout: integer): boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#CanWrite">CanWrite</a></b>(Timeout: integer): boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#CanReadEx">CanReadEx</a></b>(Timeout: integer): boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#ModemStatus">ModemStatus</a></b>: integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#SetBreak">SetBreak</a></b>(Duration: integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#ATCommand">ATCommand</a></b>(value: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#ATConnect">ATConnect</a></b>(value: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="synaser.TBlockSerial.html#SerialCheck">SerialCheck</a></b>(SerialResult: integer): integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#ExceptCheck">ExceptCheck</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#SetSynaError">SetSynaError</a></b>(ErrNumber: integer); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="synaser.TBlockSerial.html#RaiseSynaError">RaiseSynaError</a></b>(ErrNumber: integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>class function <b><a   href="synaser.TBlockSerial.html#GetErrorDesc">GetErrorDesc</a></b>(ErrorCode: integer): string;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#Device">Device</a></b>: string read <a   href="synaser.TBlockSerial.html#FDevice">FDevice</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#LastError">LastError</a></b>: integer read <a   href="synaser.TBlockSerial.html#FLastError">FLastError</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#LastErrorDesc">LastErrorDesc</a></b>: string read <a   href="synaser.TBlockSerial.html#FLastErrorDesc">FLastErrorDesc</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#ATResult">ATResult</a></b>: Boolean read <a   href="synaser.TBlockSerial.html#FATResult">FATResult</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#RTS">RTS</a></b>: Boolean write <a   href="synaser.TBlockSerial.html#SetRTSF">SetRTSF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#CTS">CTS</a></b>: boolean read <a   href="synaser.TBlockSerial.html#GetCTS">GetCTS</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#DTR">DTR</a></b>: Boolean write <a   href="synaser.TBlockSerial.html#SetDTRF">SetDTRF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#DSR">DSR</a></b>: boolean read <a   href="synaser.TBlockSerial.html#GetDSR">GetDSR</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#Carrier">Carrier</a></b>: boolean read <a   href="synaser.TBlockSerial.html#GetCarrier">GetCarrier</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#Ring">Ring</a></b>: boolean read <a   href="synaser.TBlockSerial.html#GetRing">GetRing</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#InstanceActive">InstanceActive</a></b>: boolean read <a   href="synaser.TBlockSerial.html#FInstanceActive">FInstanceActive</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#MaxSendBandwidth">MaxSendBandwidth</a></b>: Integer read <a   href="synaser.TBlockSerial.html#FMaxSendBandwidth">FMaxSendBandwidth</a> Write <a   href="synaser.TBlockSerial.html#FMaxSendBandwidth">FMaxSendBandwidth</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#MaxRecvBandwidth">MaxRecvBandwidth</a></b>: Integer read <a   href="synaser.TBlockSerial.html#FMaxRecvBandwidth">FMaxRecvBandwidth</a> Write <a   href="synaser.TBlockSerial.html#FMaxRecvBandwidth">FMaxRecvBandwidth</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#MaxBandwidth">MaxBandwidth</a></b>: Integer Write <a   href="synaser.TBlockSerial.html#SetBandwidth">SetBandwidth</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#SizeRecvBuffer">SizeRecvBuffer</a></b>: integer read <a   href="synaser.TBlockSerial.html#FRecvBuffer">FRecvBuffer</a> write <a   href="synaser.TBlockSerial.html#SetSizeRecvBuffer">SetSizeRecvBuffer</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#Tag">Tag</a></b>: integer read <a   href="synaser.TBlockSerial.html#FTag">FTag</a> write <a   href="synaser.TBlockSerial.html#FTag">FTag</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#Handle">Handle</a></b>: THandle read <a   href="synaser.TBlockSerial.html#Fhandle">Fhandle</a> write <a   href="synaser.TBlockSerial.html#Fhandle">FHandle</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#LineBuffer">LineBuffer</a></b>: AnsiString read <a   href="synaser.TBlockSerial.html#FBuffer">FBuffer</a> write <a   href="synaser.TBlockSerial.html#FBuffer">FBuffer</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#RaiseExcept">RaiseExcept</a></b>: boolean read <a   href="synaser.TBlockSerial.html#FRaiseExcept">FRaiseExcept</a> write <a   href="synaser.TBlockSerial.html#FRaiseExcept">FRaiseExcept</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#OnStatus">OnStatus</a></b>: <a   href="synaser.html#THookSerialStatus">THookSerialStatus</a> read <a   href="synaser.TBlockSerial.html#FOnStatus">FOnStatus</a> write <a   href="synaser.TBlockSerial.html#FOnStatus">FOnStatus</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#TestDSR">TestDSR</a></b>: boolean read <a   href="synaser.TBlockSerial.html#FTestDSR">FTestDSR</a> write <a   href="synaser.TBlockSerial.html#FTestDSR">FTestDSR</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#TestCTS">TestCTS</a></b>: boolean read <a   href="synaser.TBlockSerial.html#FTestCTS">FTestCTS</a> write <a   href="synaser.TBlockSerial.html#FTestCTS">FTestCTS</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#MaxLineLength">MaxLineLength</a></b>: Integer read <a   href="synaser.TBlockSerial.html#FMaxLineLength">FMaxLineLength</a> Write <a   href="synaser.TBlockSerial.html#FMaxLineLength">FMaxLineLength</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#DeadlockTimeout">DeadlockTimeout</a></b>: Integer read <a   href="synaser.TBlockSerial.html#FDeadlockTimeout">FDeadlockTimeout</a> Write <a   href="synaser.TBlockSerial.html#FDeadlockTimeout">FDeadlockTimeout</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#LinuxLock">LinuxLock</a></b>: Boolean read <a   href="synaser.TBlockSerial.html#FLinuxLock">FLinuxLock</a> write <a   href="synaser.TBlockSerial.html#FLinuxLock">FLinuxLock</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#ConvertLineEnd">ConvertLineEnd</a></b>: Boolean read <a   href="synaser.TBlockSerial.html#FConvertLineEnd">FConvertLineEnd</a> Write <a   href="synaser.TBlockSerial.html#FConvertLineEnd">FConvertLineEnd</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#AtTimeout">AtTimeout</a></b>: integer read <a   href="synaser.TBlockSerial.html#FAtTimeout">FAtTimeout</a> Write <a   href="synaser.TBlockSerial.html#FAtTimeout">FAtTimeout</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="synaser.TBlockSerial.html#InterPacketTimeout">InterPacketTimeout</a></b>: Boolean read <a   href="synaser.TBlockSerial.html#FInterPacketTimeout">FInterPacketTimeout</a> Write <a   href="synaser.TBlockSerial.html#FInterPacketTimeout">FInterPacketTimeout</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FOnStatus"></a><code><b>FOnStatus</b>: <a   href="synaser.html#THookSerialStatus">THookSerialStatus</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Fhandle"></a><code><b>Fhandle</b>: THandle;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FTag"></a><code><b>FTag</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FDevice"></a><code><b>FDevice</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FLastError"></a><code><b>FLastError</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FLastErrorDesc"></a><code><b>FLastErrorDesc</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FBuffer"></a><code><b>FBuffer</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FRaiseExcept"></a><code><b>FRaiseExcept</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FRecvBuffer"></a><code><b>FRecvBuffer</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FSendBuffer"></a><code><b>FSendBuffer</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FModemWord"></a><code><b>FModemWord</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FRTSToggle"></a><code><b>FRTSToggle</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FDeadlockTimeout"></a><code><b>FDeadlockTimeout</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FInstanceActive"></a><code><b>FInstanceActive</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FTestDSR"></a><code><b>FTestDSR</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+HGJ</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FTestCTS"></a><code><b>FTestCTS</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FLastCR"></a><code><b>FLastCR</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FLastLF"></a><code><b>FLastLF</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FMaxLineLength"></a><code><b>FMaxLineLength</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FLinuxLock"></a><code><b>FLinuxLock</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FMaxSendBandwidth"></a><code><b>FMaxSendBandwidth</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FNextSend"></a><code><b>FNextSend</b>: LongWord;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FMaxRecvBandwidth"></a><code><b>FMaxRecvBandwidth</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FNextRecv"></a><code><b>FNextRecv</b>: LongWord;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FConvertLineEnd"></a><code><b>FConvertLineEnd</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FATResult"></a><code><b>FATResult</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FAtTimeout"></a><code><b>FAtTimeout</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FInterPacketTimeout"></a><code><b>FInterPacketTimeout</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FComNr"></a><code><b>FComNr</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FPortAddr"></a><code><b>FPortAddr</b>: Word;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DCB"></a><code><b>DCB</b>: Tdcb;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+: data Control Block with communication parameters. Usable only when you need to call API directly.</p>
+</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="CanEvent"></a><code>function <b>CanEvent</b>(Event: dword; Timeout: integer): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="DecodeCommError"></a><code>procedure <b>DecodeCommError</b>(Error: DWord); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetPortAddr"></a><code>function <b>GetPortAddr</b>: Word; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="ReadTxEmpty"></a><code>function <b>ReadTxEmpty</b>(PortAddr: Word): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="SetSizeRecvBuffer"></a><code>procedure <b>SetSizeRecvBuffer</b>(size: integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetDSR"></a><code>function <b>GetDSR</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="SetDTRF"></a><code>procedure <b>SetDTRF</b>(Value: Boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetCTS"></a><code>function <b>GetCTS</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="SetRTSF"></a><code>procedure <b>SetRTSF</b>(Value: Boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetCarrier"></a><code>function <b>GetCarrier</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetRing"></a><code>function <b>GetRing</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="DoStatus"></a><code>procedure <b>DoStatus</b>(Reason: <a   href="synaser.html#THookSerialReason">THookSerialReason</a>; const Value: string); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetComNr"></a><code>procedure <b>GetComNr</b>(Value: string); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="PreTestFailing"></a><code>function <b>PreTestFailing</b>: boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="TestCtrlLine"></a><code>function <b>TestCtrlLine</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+HGJ</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="LimitBandwidth"></a><code>procedure <b>LimitBandwidth</b>(Length: Integer; MaxB: integer; var Next: LongWord); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="SetBandwidth"></a><code>procedure <b>SetBandwidth</b>(Value: Integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Object constructor.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Object destructor.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetVersion"></a><code>class function <b>GetVersion</b>: string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Returns a string containing the version number of the library.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CloseSocket"></a><code>procedure <b>CloseSocket</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<a class="normal"  href="synaser.TBlockSerial.html#Destroy">Destroy</a> <a class="normal"  href="synaser.TBlockSerial.html#Handle">handle</a> in use. It close connection to serial port.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Config"></a><code>procedure <b>Config</b>(baud, bits: integer; parity: char; stop: integer; softflow, hardflow: boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Reconfigure communication parameters on the fly. You must be connected to port before!      </p>
+<h6 class="description_section">Parâmetros</h6>
+<dl class="parameters">
+<dt>baud</dt>
+<dd>Define connection speed. Baud rate <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be from 50 to 4000000 bits per second. (it depends on your hardware!)</dd>
+<dt>bits</dt>
+<dd>Number of bits in communication.</dd>
+<dt>parity</dt>
+<dd>Define communication parity (N - None, O - Odd, E - Even, M - Mark or S - <a class="normal"  href="ACBrUtil.html#Space">Space</a>).</dd>
+<dt>stop</dt>
+<dd>Define number of stopbits. Use constants <a class="normal"  href="synaser.html#SB1">SB1</a>, <a class="normal"  href="synaser.html#SB1andHalf">SB1andHalf</a> and <a class="normal"  href="synaser.html#SB2">SB2</a>.</dd>
+<dt>softflow</dt>
+<dd>Enable XON/XOFF handshake.</dd>
+<dt>hardflow</dt>
+<dd>Enable <a class="normal"  href="synaser.TBlockSerial.html#CTS">CTS</a>/<a class="normal"  href="synaser.TBlockSerial.html#RTS">RTS</a> handshake.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Connect"></a><code>procedure <b>Connect</b>(comport: string); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Connects to the port indicated by comport. Comport <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be used in Windows style (COM2), or in Linux style (/dev/ttyS1). When you use windows style in Linux, then it will be converted to Linux name. And vice versa! However you <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> specify any <a class="normal"  href="synaser.TBlockSerial.html#Device">device</a> name! (other <a class="normal"  href="synaser.TBlockSerial.html#Device">device</a> names then standart is not converted!)
+
+<p>After successfull connection the <a class="normal"  href="synaser.TBlockSerial.html#DTR">DTR</a> signal is set (if you not set hardware handshake, then the <a class="normal"  href="synaser.TBlockSerial.html#RTS">RTS</a> signal is set, too!)
+
+<p>Connection parameters is predefined by your system configuration. If you need use another parameters, then you <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> use <a class="normal"  href="synaser.TBlockSerial.html#Config">Config</a> method after. Notes:
+
+<p>- Remember, the commonly used serial Laplink cable does not support hardware handshake.
+
+<p>- Before setting any handshake you must be sure that it is supported by your hardware.
+
+<p>- Some serial devices are slow. In some cases you must wait up to a few seconds after connection for the <a class="normal"  href="synaser.TBlockSerial.html#Device">device</a> to respond.
+
+<p>- when you <code>connect</code> to a modem <a class="normal"  href="synaser.TBlockSerial.html#Device">device</a>, then is best to test it by an empty AT command. (call <a class="normal"  href="synaser.TBlockSerial.html#ATCommand">ATCommand</a>('AT'))</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetCommState"></a><code>procedure <b>SetCommState</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Set communication parameters from the <a class="normal"  href="synaser.TBlockSerial.html#DCB">DCB</a> structure (the <a class="normal"  href="synaser.TBlockSerial.html#DCB">DCB</a> structure is simulated under Linux).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetCommState"></a><code>procedure <b>GetCommState</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Read communication parameters into the <a class="normal"  href="synaser.TBlockSerial.html#DCB">DCB</a> structure (<a class="normal"  href="synaser.TBlockSerial.html#DCB">DCB</a> structure is simulated under Linux).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SendBuffer"></a><code>function <b>SendBuffer</b>(buffer: pointer; length: integer): integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Sends Length bytes of data from Buffer through the connected port.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SendByte"></a><code>procedure <b>SendByte</b>(data: byte); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:One data BYTE is sent.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SendString"></a><code>procedure <b>SendString</b>(data: AnsiString); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send the string in the data parameter. No terminator is appended by this method. If you need to send a string with <a class="normal"  href="synaser.html#CR">CR</a>/<a class="normal"  href="synaser.html#LF">LF</a> terminator, you must append the <a class="normal"  href="synaser.html#CR">CR</a>/<a class="normal"  href="synaser.html#LF">LF</a> characters to the data string!
+
+<p>Since no terminator is appended, you <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> use this function for sending binary data too.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SendInteger"></a><code>procedure <b>SendInteger</b>(Data: integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:send four bytes as integer.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SendBlock"></a><code>procedure <b>SendBlock</b>(const Data: AnsiString); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:send data as one block. Each block begins with integer value with Length of block.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SendStreamRaw"></a><code>procedure <b>SendStreamRaw</b>(const Stream: TStream); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:send content of stream from current position</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SendStream"></a><code>procedure <b>SendStream</b>(const Stream: TStream); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:send content of stream as block. see <a class="normal"  href="synaser.TBlockSerial.html#SendBlock">SendBlock</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SendStreamIndy"></a><code>procedure <b>SendStreamIndy</b>(const Stream: TStream); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:send content of stream as block, but this is compatioble with Indy library. (it have swapped lenght of block). See <a class="normal"  href="synaser.TBlockSerial.html#SendStream">SendStream</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RecvBuffer"></a><code>function <b>RecvBuffer</b>(buffer: pointer; length: integer): integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Waits until the allocated buffer is filled by received data. Returns number of data bytes received, which equals to the Length value under normal operation. If it is not equal, the communication channel is possibly broken.
+
+<p>This method not using any internal buffering, like all others receiving methods. You cannot freely combine this method with all others receiving methods!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RecvBufferEx"></a><code>function <b>RecvBufferEx</b>(buffer: pointer; length: integer; timeout: integer): integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Method waits until data is received. If no data is received within the Timeout (in milliseconds) period, <a class="normal"  href="synaser.TBlockSerial.html#LastError">LastError</a> is set to <a class="normal"  href="synaser.html#ErrTimeout">ErrTimeout</a>. This method is used to read any amount of data (e. g. 1MB), and may be freely combined with all receviving methods what have Timeout parameter, like the <a class="normal"  href="synaser.TBlockSerial.html#Recvstring">RecvString</a>, <a class="normal"  href="synaser.TBlockSerial.html#RecvByte">RecvByte</a> or <a class="normal"  href="synaser.TBlockSerial.html#RecvTerminated">RecvTerminated</a> methods.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RecvBufferStr"></a><code>function <b>RecvBufferStr</b>(Length: Integer; Timeout: Integer): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:It is like <a class="normal"  href="synaser.TBlockSerial.html#RecvBufferEx">recvBufferEx</a>, but data is readed to dynamicly allocated binary string.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RecvPacket"></a><code>function <b>RecvPacket</b>(Timeout: Integer): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Read all available data and return it in the function result string. This function may be combined with <a class="normal"  href="synaser.TBlockSerial.html#Recvstring">RecvString</a>, <a class="normal"  href="synaser.TBlockSerial.html#RecvByte">RecvByte</a> or related methods.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RecvByte"></a><code>function <b>RecvByte</b>(timeout: integer): byte; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Waits until one data byte is received which is returned as the function result. If no data is received within the Timeout (in milliseconds) period, <a class="normal"  href="synaser.TBlockSerial.html#LastError">LastError</a> is set to <a class="normal"  href="synaser.html#ErrTimeout">ErrTimeout</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RecvTerminated"></a><code>function <b>RecvTerminated</b>(Timeout: Integer; const Terminator: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:This method waits until a terminated data string is received. This string is terminated by the Terminator string. The resulting string is returned without this termination string! If no data is received within the Timeout (in milliseconds) period, <a class="normal"  href="synaser.TBlockSerial.html#LastError">LastError</a> is set to <a class="normal"  href="synaser.html#ErrTimeout">ErrTimeout</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Recvstring"></a><code>function <b>Recvstring</b>(timeout: integer): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:This method waits until a terminated data string is received. The string is terminated by a <a class="normal"  href="synaser.html#CR">CR</a>/<a class="normal"  href="synaser.html#LF">LF</a> sequence. The resulting string is returned without the terminator (<a class="normal"  href="synaser.html#CR">CR</a>/<a class="normal"  href="synaser.html#LF">LF</a>)! If no data is received within the Timeout (in milliseconds) period, <a class="normal"  href="synaser.TBlockSerial.html#LastError">LastError</a> is set to <a class="normal"  href="synaser.html#ErrTimeout">ErrTimeout</a>.
+
+<p>If <a class="normal"  href="synaser.TBlockSerial.html#ConvertLineEnd">ConvertLineEnd</a> is used, then the <a class="normal"  href="synaser.html#CR">CR</a>/<a class="normal"  href="synaser.html#LF">LF</a> sequence may not be exactly <a class="normal"  href="synaser.html#CR">CR</a>/<a class="normal"  href="synaser.html#LF">LF</a>. See the description of <a class="normal"  href="synaser.TBlockSerial.html#ConvertLineEnd">ConvertLineEnd</a>.
+
+<p>This method serves for line protocol implementation and uses its own buffers to maximize performance. Therefore do NOT use this method with the <a class="normal"  href="synaser.TBlockSerial.html#RecvBuffer">RecvBuffer</a> method to receive data as it may cause data loss.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RecvInteger"></a><code>function <b>RecvInteger</b>(Timeout: Integer): Integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Waits until four data bytes are received which is returned as the function integer result. If no data is received within the Timeout (in milliseconds) period, <a class="normal"  href="synaser.TBlockSerial.html#LastError">LastError</a> is set to <a class="normal"  href="synaser.html#ErrTimeout">ErrTimeout</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RecvBlock"></a><code>function <b>RecvBlock</b>(Timeout: Integer): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Waits until one data block is received. See <a class="normal"  href="synaser.TBlockSerial.html#SendBlock">sendblock</a>. If no data is received within the Timeout (in milliseconds) period, <a class="normal"  href="synaser.TBlockSerial.html#LastError">LastError</a> is set to <a class="normal"  href="synaser.html#ErrTimeout">ErrTimeout</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RecvStreamRaw"></a><code>procedure <b>RecvStreamRaw</b>(const Stream: TStream; Timeout: Integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Receive all data to stream, until some error occured. (for example timeout)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RecvStreamSize"></a><code>procedure <b>RecvStreamSize</b>(const Stream: TStream; Timeout: Integer; Size: Integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:receive requested count of bytes to stream</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RecvStream"></a><code>procedure <b>RecvStream</b>(const Stream: TStream; Timeout: Integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:receive block of data to stream. (Data <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be sended by <a class="normal"  href="synaser.TBlockSerial.html#SendStream">sendstream</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RecvStreamIndy"></a><code>procedure <b>RecvStreamIndy</b>(const Stream: TStream; Timeout: Integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:receive block of data to stream. (Data <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be sended by <a class="normal"  href="synaser.TBlockSerial.html#SendStreamIndy">sendstreamIndy</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WaitingData"></a><code>function <b>WaitingData</b>: integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Returns the number of received bytes waiting for reading. 0 is returned when there is no data waiting.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WaitingDataEx"></a><code>function <b>WaitingDataEx</b>: integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Same as <a class="normal"  href="synaser.TBlockSerial.html#WaitingData">WaitingData</a>, but in respect to data in the internal <a class="normal"  href="synaser.TBlockSerial.html#LineBuffer">LineBuffer</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SendingData"></a><code>function <b>SendingData</b>: integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Returns the number of bytes waiting to be sent in the output buffer. 0 is returned when the output buffer is empty.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EnableRTSToggle"></a><code>procedure <b>EnableRTSToggle</b>(value: boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Enable or disable <a class="normal"  href="synaser.TBlockSerial.html#RTS">RTS</a> driven communication (half-duplex). It <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be used to communicate with RS485 converters, or other special equipment. If you enable this feature, the system automatically controls the <a class="normal"  href="synaser.TBlockSerial.html#RTS">RTS</a> signal.
+
+<p>Notes:
+
+<p>- On Windows NT (or higher) ir <a class="normal"  href="synaser.TBlockSerial.html#RTS">RTS</a> signal driven by system driver.
+
+<p>- On Win9x family is used special code for waiting until last byte is sended from your UART.
+
+<p>- On Linux you must have kernel 2.1 or higher!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Flush"></a><code>procedure <b>Flush</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Waits until all data to is sent and buffers are emptied. Warning: On Windows systems is this method returns when all buffers are flushed to the serial port controller, before the last byte is sent!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Purge"></a><code>procedure <b>Purge</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Unconditionally empty all buffers. It is good when you need to interrupt communication and for cleanups.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CanRead"></a><code>function <b>CanRead</b>(Timeout: integer): boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Returns <code>True</code>, if you <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> from read any data from the port. Status is tested for a period of time given by the Timeout parameter (in milliseconds). If the value of the Timeout parameter is 0, the status is tested only once and the function returns immediately. If the value of the Timeout parameter is set to -1, the function returns only after it detects data on the port (this may cause the process to hang).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CanWrite"></a><code>function <b>CanWrite</b>(Timeout: integer): boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Returns <code>True</code>, if you <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> write any data to the port (this function is not sending the contents of the buffer). Status is tested for a period of time given by the Timeout parameter (in milliseconds). If the value of the Timeout parameter is 0, the status is tested only once and the function returns immediately. If the value of the Timeout parameter is set to -1, the function returns only after it detects that it <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> write data to the port (this may cause the process to hang).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CanReadEx"></a><code>function <b>CanReadEx</b>(Timeout: integer): boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Same as <a class="normal"  href="synaser.TBlockSerial.html#CanRead">CanRead</a>, but the test is against data in the internal <a class="normal"  href="synaser.TBlockSerial.html#LineBuffer">LineBuffer</a> too.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ModemStatus"></a><code>function <b>ModemStatus</b>: integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Returns the status word of the modem. Decoding the status word could yield the status of <a class="normal"  href="synaser.TBlockSerial.html#Carrier">carrier</a> detect signaland other signals. This method is used internally by the modem status reading properties. You usually do not need to call this method directly.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetBreak"></a><code>procedure <b>SetBreak</b>(Duration: integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send a break signal to the communication <a class="normal"  href="synaser.TBlockSerial.html#Device">device</a> for Duration milliseconds.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ATCommand"></a><code>function <b>ATCommand</b>(value: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:This function is designed to send AT commands to the modem. The AT command is sent in the Value parameter and the response is returned in the function return value (may contain multiple lines!). If the AT command is processed successfully (modem returns OK), then the <a class="normal"  href="synaser.TBlockSerial.html#ATResult">ATResult</a> property is set to True.
+
+<p>This function is designed only for AT commands that return OK or ERROR response! To call connection commands the <a class="normal"  href="synaser.TBlockSerial.html#ATConnect">ATConnect</a> method. Remember, when you <a class="normal"  href="synaser.TBlockSerial.html#Connect">connect</a> to a modem <a class="normal"  href="synaser.TBlockSerial.html#Device">device</a>, it is in AT command mode. Now you <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> send AT commands to the modem. If you need to transfer data to the modem on the other side of the line, you must first switch to data mode using the <a class="normal"  href="synaser.TBlockSerial.html#ATConnect">ATConnect</a> method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ATConnect"></a><code>function <b>ATConnect</b>(value: AnsiString): AnsiString; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:This function is used to send <a class="normal"  href="synaser.TBlockSerial.html#Connect">connect</a> type AT commands to the modem. It is for commands to switch to connected state. (ATD, ATA, ATO,...) It sends the AT command in the Value parameter and returns the modem's response (may be multiple lines - usually with connection parameters info). If the AT command is processed successfully (the modem returns <a class="normal"  href="synaser.TBlockSerial.html#Connect">CONNECT</a>), then the <a class="normal"  href="synaser.TBlockSerial.html#ATResult">ATResult</a> property is set to <code>True</code>.
+
+<p>This function is designed only for AT commands which respond by <a class="normal"  href="synaser.TBlockSerial.html#Connect">CONNECT</a>, BUSY, NO DIALTONE NO <a class="normal"  href="synaser.TBlockSerial.html#Carrier">CARRIER</a> or ERROR. For other AT commands use the <a class="normal"  href="synaser.TBlockSerial.html#ATCommand">ATCommand</a> method.
+
+<p>The <a class="normal"  href="synaser.TBlockSerial.html#Connect">connect</a> timeout is 90*<a class="normal"  href="synaser.TBlockSerial.html#AtTimeout">ATTimeout</a>. If this command is successful (<a class="normal"  href="synaser.TBlockSerial.html#ATResult">ATresult</a> is <code>True</code>), then the modem is in data state. When you now send or receive some data, it is not to or from your modem, but from the modem on other side of the line. Now you <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> transfer your data. If the connection attempt failed (<a class="normal"  href="synaser.TBlockSerial.html#ATResult">ATResult</a> is <code>False</code>), then the modem is still in AT command mode.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SerialCheck"></a><code>function <b>SerialCheck</b>(SerialResult: integer): integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:If you &quot;manually&quot; call API functions, forward their return code in the SerialResult parameter to this function, which evaluates it and sets <a class="normal"  href="synaser.TBlockSerial.html#LastError">LastError</a> and <a class="normal"  href="synaser.TBlockSerial.html#LastErrorDesc">LastErrorDesc</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ExceptCheck"></a><code>procedure <b>ExceptCheck</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:If <a class="normal"  href="synaser.TBlockSerial.html#LastError">Lasterror</a> is not 0 and exceptions are enabled, then this procedure raises an exception. This method is used internally. You may need it only in special cases.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetSynaError"></a><code>procedure <b>SetSynaError</b>(ErrNumber: integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Set <a class="normal"  href="synaser.html">Synaser</a> to error state with ErrNumber code. Usually used by internal routines.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RaiseSynaError"></a><code>procedure <b>RaiseSynaError</b>(ErrNumber: integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Raise <a class="normal"  href="synaser.html">Synaser</a> error with ErrNumber code. Usually used by internal routines.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="GetErrorDesc"></a><code>class function <b>GetErrorDesc</b>(ErrorCode: integer): string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Returns the descriptive text associated with ErrorCode. You need this method only in special cases. Description of <a class="normal"  href="synaser.TBlockSerial.html#LastError">LastError</a> is now accessible through the <a class="normal"  href="synaser.TBlockSerial.html#LastErrorDesc">LastErrorDesc</a> property.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Device"></a><code>property <b>Device</b>: string read <a   href="synaser.TBlockSerial.html#FDevice">FDevice</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:True <code>device</code> name of currently used port</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LastError"></a><code>property <b>LastError</b>: integer read <a   href="synaser.TBlockSerial.html#FLastError">FLastError</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Error code of last operation. Value is defined by the host operating system, but value 0 is always OK.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LastErrorDesc"></a><code>property <b>LastErrorDesc</b>: string read <a   href="synaser.TBlockSerial.html#FLastErrorDesc">FLastErrorDesc</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Human readable description of <a class="normal"  href="synaser.TBlockSerial.html#LastError">LastError</a> code.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ATResult"></a><code>property <b>ATResult</b>: Boolean read <a   href="synaser.TBlockSerial.html#FATResult">FATResult</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Indicates if the last <a class="normal"  href="synaser.TBlockSerial.html#ATCommand">ATCommand</a> or <a class="normal"  href="synaser.TBlockSerial.html#ATConnect">ATConnect</a> method was successful</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RTS"></a><code>property <b>RTS</b>: Boolean write <a   href="synaser.TBlockSerial.html#SetRTSF">SetRTSF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Read the value of the <code>RTS</code> signal.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CTS"></a><code>property <b>CTS</b>: boolean read <a   href="synaser.TBlockSerial.html#GetCTS">GetCTS</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Indicates the presence of the <code>CTS</code> signal</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DTR"></a><code>property <b>DTR</b>: Boolean write <a   href="synaser.TBlockSerial.html#SetDTRF">SetDTRF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Use this property to set the value of the <code>DTR</code> signal.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DSR"></a><code>property <b>DSR</b>: boolean read <a   href="synaser.TBlockSerial.html#GetDSR">GetDSR</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Exposes the status of the <code>DSR</code> signal.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Carrier"></a><code>property <b>Carrier</b>: boolean read <a   href="synaser.TBlockSerial.html#GetCarrier">GetCarrier</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Indicates the presence of the <code>Carrier</code> signal</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Ring"></a><code>property <b>Ring</b>: boolean read <a   href="synaser.TBlockSerial.html#GetRing">GetRing</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Reflects the status of the <code>Ring</code> signal.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InstanceActive"></a><code>property <b>InstanceActive</b>: boolean read <a   href="synaser.TBlockSerial.html#FInstanceActive">FInstanceActive</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:indicates if this instance of <a class="normal"  href="synaser.html">SynaSer</a> is active. (Connected to some port)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MaxSendBandwidth"></a><code>property <b>MaxSendBandwidth</b>: Integer read <a   href="synaser.TBlockSerial.html#FMaxSendBandwidth">FMaxSendBandwidth</a> Write <a   href="synaser.TBlockSerial.html#FMaxSendBandwidth">FMaxSendBandwidth</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Defines maximum bandwidth for all sending operations in bytes per second. If this value is set to 0 (default), bandwidth limitation is not used.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MaxRecvBandwidth"></a><code>property <b>MaxRecvBandwidth</b>: Integer read <a   href="synaser.TBlockSerial.html#FMaxRecvBandwidth">FMaxRecvBandwidth</a> Write <a   href="synaser.TBlockSerial.html#FMaxRecvBandwidth">FMaxRecvBandwidth</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Defines maximum bandwidth for all receiving operations in bytes per second. If this value is set to 0 (default), bandwidth limitation is not used.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MaxBandwidth"></a><code>property <b>MaxBandwidth</b>: Integer Write <a   href="synaser.TBlockSerial.html#SetBandwidth">SetBandwidth</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Defines maximum bandwidth for all sending and receiving operations in bytes per second. If this value is set to 0 (default), bandwidth limitation is not used.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SizeRecvBuffer"></a><code>property <b>SizeRecvBuffer</b>: integer read <a   href="synaser.TBlockSerial.html#FRecvBuffer">FRecvBuffer</a> write <a   href="synaser.TBlockSerial.html#SetSizeRecvBuffer">SetSizeRecvBuffer</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Size of the Windows internal receive buffer. Default value is usually 4096 bytes. Note: Valid only in Windows versions!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Tag"></a><code>property <b>Tag</b>: integer read <a   href="synaser.TBlockSerial.html#FTag">FTag</a> write <a   href="synaser.TBlockSerial.html#FTag">FTag</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Freely usable property</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Handle"></a><code>property <b>Handle</b>: THandle read <a   href="synaser.TBlockSerial.html#Fhandle">Fhandle</a> write <a   href="synaser.TBlockSerial.html#Fhandle">FHandle</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Contains the <code>handle</code> of the open communication port. You may need this value to directly call communication functions outside <a class="normal"  href="synaser.html">SynaSer</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LineBuffer"></a><code>property <b>LineBuffer</b>: AnsiString read <a   href="synaser.TBlockSerial.html#FBuffer">FBuffer</a> write <a   href="synaser.TBlockSerial.html#FBuffer">FBuffer</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Internally used read buffer.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="RaiseExcept"></a><code>property <b>RaiseExcept</b>: boolean read <a   href="synaser.TBlockSerial.html#FRaiseExcept">FRaiseExcept</a> write <a   href="synaser.TBlockSerial.html#FRaiseExcept">FRaiseExcept</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:If <code>True</code>, communication errors raise exceptions. If <code>False</code> (default), only the <a class="normal"  href="synaser.TBlockSerial.html#LastError">LastError</a> value is set.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnStatus"></a><code>property <b>OnStatus</b>: <a   href="synaser.html#THookSerialStatus">THookSerialStatus</a> read <a   href="synaser.TBlockSerial.html#FOnStatus">FOnStatus</a> write <a   href="synaser.TBlockSerial.html#FOnStatus">FOnStatus</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:This event is triggered when the communication status changes. It <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be used to monitor communication status.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="TestDSR"></a><code>property <b>TestDSR</b>: boolean read <a   href="synaser.TBlockSerial.html#FTestDSR">FTestDSR</a> write <a   href="synaser.TBlockSerial.html#FTestDSR">FTestDSR</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:If you set this property to <code>True</code>, then the value of the <a class="normal"  href="synaser.TBlockSerial.html#DSR">DSR</a> signal is tested before every data transfer. It <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be used to detect the presence of a communications <a class="normal"  href="synaser.TBlockSerial.html#Device">device</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="TestCTS"></a><code>property <b>TestCTS</b>: boolean read <a   href="synaser.TBlockSerial.html#FTestCTS">FTestCTS</a> write <a   href="synaser.TBlockSerial.html#FTestCTS">FTestCTS</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:If you set this property to <code>True</code>, then the value of the <a class="normal"  href="synaser.TBlockSerial.html#CTS">CTS</a> signal is tested before every data transfer. It <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be used to detect the presence of a communications <a class="normal"  href="synaser.TBlockSerial.html#Device">device</a>. Warning: This property cannot be used if you need hardware handshake!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MaxLineLength"></a><code>property <b>MaxLineLength</b>: Integer read <a   href="synaser.TBlockSerial.html#FMaxLineLength">FMaxLineLength</a> Write <a   href="synaser.TBlockSerial.html#FMaxLineLength">FMaxLineLength</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Use this property you to limit the maximum size of <a class="normal"  href="synaser.TBlockSerial.html#LineBuffer">LineBuffer</a> (as a protection against unlimited memory allocation for <a class="normal"  href="synaser.TBlockSerial.html#LineBuffer">LineBuffer</a>). Default value is 0 - no limit.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DeadlockTimeout"></a><code>property <b>DeadlockTimeout</b>: Integer read <a   href="synaser.TBlockSerial.html#FDeadlockTimeout">FDeadlockTimeout</a> Write <a   href="synaser.TBlockSerial.html#FDeadlockTimeout">FDeadlockTimeout</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:This timeout value is used as deadlock protection when trying to send data to (or receive data from) a <a class="normal"  href="synaser.TBlockSerial.html#Device">device</a> that stopped communicating during data transmission (e.g. by physically disconnecting the <a class="normal"  href="synaser.TBlockSerial.html#Device">device</a>). The timeout value is in milliseconds. The default value is 30,000 (30 seconds).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="LinuxLock"></a><code>property <b>LinuxLock</b>: Boolean read <a   href="synaser.TBlockSerial.html#FLinuxLock">FLinuxLock</a> write <a   href="synaser.TBlockSerial.html#FLinuxLock">FLinuxLock</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:If set to <code>True</code> (default value), port locking is enabled (under Linux only). WARNING: To use this feature, the application must run by a user with full permission to the /var/lock directory!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ConvertLineEnd"></a><code>property <b>ConvertLineEnd</b>: Boolean read <a   href="synaser.TBlockSerial.html#FConvertLineEnd">FConvertLineEnd</a> Write <a   href="synaser.TBlockSerial.html#FConvertLineEnd">FConvertLineEnd</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Indicates if non-standard line terminators should be converted to a <a class="normal"  href="synaser.html#CR">CR</a>/<a class="normal"  href="synaser.html#LF">LF</a> pair (standard DOS line terminator). If <code>True</code>, line terminators <a class="normal"  href="synaser.html#CR">CR</a>, single <a class="normal"  href="synaser.html#LF">LF</a> or <a class="normal"  href="synaser.html#LF">LF</a>/<a class="normal"  href="synaser.html#CR">CR</a> are converted to <a class="normal"  href="synaser.html#CR">CR</a>/<a class="normal"  href="synaser.html#LF">LF</a>. Defaults to <code>False</code>. This property has effect only on the behavior of the <a class="normal"  href="synaser.TBlockSerial.html#Recvstring">RecvString</a> method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AtTimeout"></a><code>property <b>AtTimeout</b>: integer read <a   href="synaser.TBlockSerial.html#FAtTimeout">FAtTimeout</a> Write <a   href="synaser.TBlockSerial.html#FAtTimeout">FAtTimeout</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Timeout for AT modem based operations</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="InterPacketTimeout"></a><code>property <b>InterPacketTimeout</b>: Boolean read <a   href="synaser.TBlockSerial.html#FInterPacketTimeout">FInterPacketTimeout</a> Write <a   href="synaser.TBlockSerial.html#FInterPacketTimeout">FInterPacketTimeout</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:If <code>True</code> (default), then all timeouts is timeout between two characters. If <code>False</code>, then timeout is overall for whoole reading operation.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:21:06</em>
+</span>
+</body></html>

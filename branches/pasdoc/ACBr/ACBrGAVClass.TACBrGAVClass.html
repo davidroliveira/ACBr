@@ -1,0 +1,321 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrGAVClass: Classe TACBrGAVClass</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrGAVClass"></a><h1 class="cio">Classe TACBrGAVClass</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrGAVClass.html">ACBrGAVClass</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrGAVClass = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+Classe generica de Gaveta, nao implementa nenhum modelo especifico, apenas declara a Classe. NAO DEVE SER INSTANCIADA. Usada apenas como base para as demais Classes de Gavetas como por exemplo a classe TACBrGAVMenno</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TACBrGAVClass</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrGAVClass.TACBrGAVClass.html#fpDevice">fpDevice</a></b>: <a   href="ACBrDevice.TACBrDevice.html">TACBrDevice</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrGAVClass.TACBrGAVClass.html#fpECF">fpECF</a></b>: <a   href="ACBrECF.TACBrECF.html">TACBrECF</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrGAVClass.TACBrGAVClass.html#fpAtivo">fpAtivo</a></b>: Boolean ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrGAVClass.TACBrGAVClass.html#fpProximaAbertura">fpProximaAbertura</a></b>: TDateTime ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrGAVClass.TACBrGAVClass.html#fsStrComando">fsStrComando</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrGAVClass.TACBrGAVClass.html#fpModeloStr">fpModeloStr</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrGAVClass.TACBrGAVClass.html#fpAberturaIntervalo">fpAberturaIntervalo</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrGAVClass.TACBrGAVClass.html#fpAberturaAntecipada">fpAberturaAntecipada</a></b>: <a   href="ACBrDevice.html#TACBrGAVAberturaAntecipada">TACBrGAVAberturaAntecipada</a> ;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrGAVClass.TACBrGAVClass.html#SetAtivo">SetAtivo</a></b>(const Value: Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrGAVClass.TACBrGAVClass.html#GetGavetaAberta">GetGavetaAberta</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrGAVClass.TACBrGAVClass.html#CalculaProximaAbertura">CalculaProximaAbertura</a></b> ; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrGAVClass.TACBrGAVClass.html#Create">Create</a></b>(AOwner: TComponent);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Destructor <b><a   href="ACBrGAVClass.TACBrGAVClass.html#Destroy">Destroy</a></b> ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrGAVClass.TACBrGAVClass.html#Ativar">Ativar</a></b> ; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrGAVClass.TACBrGAVClass.html#Desativar">Desativar</a></b> ; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrGAVClass.TACBrGAVClass.html#AbreGaveta">AbreGaveta</a></b> ; virtual;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrGAVClass.TACBrGAVClass.html#Ativo">Ativo</a></b>  : Boolean read <a   href="ACBrGAVClass.TACBrGAVClass.html#fpAtivo">fpAtivo</a> write <a   href="ACBrGAVClass.TACBrGAVClass.html#SetAtivo">SetAtivo</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrGAVClass.TACBrGAVClass.html#GavetaAberta">GavetaAberta</a></b> : Boolean read <a   href="ACBrGAVClass.TACBrGAVClass.html#GetGavetaAberta">GetGavetaAberta</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrGAVClass.TACBrGAVClass.html#ECF">ECF</a></b> : <a   href="ACBrECF.TACBrECF.html">TACBrECF</a> read <a   href="ACBrGAVClass.TACBrGAVClass.html#fpECF">fpECF</a> write <a   href="ACBrGAVClass.TACBrGAVClass.html#fpECF">fpECF</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrGAVClass.TACBrGAVClass.html#ModeloStr">ModeloStr</a></b>: String  read <a   href="ACBrGAVClass.TACBrGAVClass.html#fpModeloStr">fpModeloStr</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrGAVClass.TACBrGAVClass.html#StrComando">StrComando</a></b> : String  read <a   href="ACBrGAVClass.TACBrGAVClass.html#fsStrComando">fsStrComando</a> write <a   href="ACBrGAVClass.TACBrGAVClass.html#fsStrComando">fsStrComando</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrGAVClass.TACBrGAVClass.html#AberturaIntervalo">AberturaIntervalo</a></b> : Integer read <a   href="ACBrGAVClass.TACBrGAVClass.html#fpAberturaIntervalo">fpAberturaIntervalo</a>
+       write <a   href="ACBrGAVClass.TACBrGAVClass.html#fpAberturaIntervalo">fpAberturaIntervalo</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrGAVClass.TACBrGAVClass.html#AberturaAntecipada">AberturaAntecipada</a></b> : <a   href="ACBrDevice.html#TACBrGAVAberturaAntecipada">TACBrGAVAberturaAntecipada</a>
+       read <a   href="ACBrGAVClass.TACBrGAVClass.html#fpAberturaAntecipada">fpAberturaAntecipada</a>  write <a   href="ACBrGAVClass.TACBrGAVClass.html#fpAberturaAntecipada">fpAberturaAntecipada</a> ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpDevice"></a><code><b>fpDevice</b>: <a   href="ACBrDevice.TACBrDevice.html">TACBrDevice</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpECF"></a><code><b>fpECF</b>: <a   href="ACBrECF.TACBrECF.html">TACBrECF</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpAtivo"></a><code><b>fpAtivo</b>: Boolean ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpProximaAbertura"></a><code><b>fpProximaAbertura</b>: TDateTime ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fsStrComando"></a><code><b>fsStrComando</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpModeloStr"></a><code><b>fpModeloStr</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpAberturaIntervalo"></a><code><b>fpAberturaIntervalo</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpAberturaAntecipada"></a><code><b>fpAberturaAntecipada</b>: <a   href="ACBrDevice.html#TACBrGAVAberturaAntecipada">TACBrGAVAberturaAntecipada</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetAtivo"></a><code>procedure <b>SetAtivo</b>(const Value: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetGavetaAberta"></a><code>function <b>GetGavetaAberta</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="CalculaProximaAbertura"></a><code>Procedure <b>CalculaProximaAbertura</b> ; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>Destructor <b>Destroy</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Ativar"></a><code>procedure <b>Ativar</b> ; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Desativar"></a><code>procedure <b>Desativar</b> ; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AbreGaveta"></a><code>Procedure <b>AbreGaveta</b> ; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Ativo"></a><code>property <b>Ativo</b>  : Boolean read <a   href="ACBrGAVClass.TACBrGAVClass.html#fpAtivo">fpAtivo</a> write <a   href="ACBrGAVClass.TACBrGAVClass.html#SetAtivo">SetAtivo</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GavetaAberta"></a><code>property <b>GavetaAberta</b> : Boolean read <a   href="ACBrGAVClass.TACBrGAVClass.html#GetGavetaAberta">GetGavetaAberta</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ECF"></a><code>property <b>ECF</b> : <a   href="ACBrECF.TACBrECF.html">TACBrECF</a> read <a   href="ACBrGAVClass.TACBrGAVClass.html#fpECF">fpECF</a> write <a   href="ACBrGAVClass.TACBrGAVClass.html#fpECF">fpECF</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ModeloStr"></a><code>property <b>ModeloStr</b>: String  read <a   href="ACBrGAVClass.TACBrGAVClass.html#fpModeloStr">fpModeloStr</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StrComando"></a><code>property <b>StrComando</b> : String  read <a   href="ACBrGAVClass.TACBrGAVClass.html#fsStrComando">fsStrComando</a> write <a   href="ACBrGAVClass.TACBrGAVClass.html#fsStrComando">fsStrComando</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AberturaIntervalo"></a><code>property <b>AberturaIntervalo</b> : Integer read <a   href="ACBrGAVClass.TACBrGAVClass.html#fpAberturaIntervalo">fpAberturaIntervalo</a>
+       write <a   href="ACBrGAVClass.TACBrGAVClass.html#fpAberturaIntervalo">fpAberturaIntervalo</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AberturaAntecipada"></a><code>property <b>AberturaAntecipada</b> : <a   href="ACBrDevice.html#TACBrGAVAberturaAntecipada">TACBrGAVAberturaAntecipada</a>
+       read <a   href="ACBrGAVClass.TACBrGAVClass.html#fpAberturaAntecipada">fpAberturaAntecipada</a>  write <a   href="ACBrGAVClass.TACBrGAVClass.html#fpAberturaAntecipada">fpAberturaAntecipada</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:42</em>
+</span>
+</body></html>

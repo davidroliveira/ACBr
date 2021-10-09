@@ -1,0 +1,12 @@
+   Este aplicativo Demo foi desenvolvido apenas para fins educativos, 
+demontrando como realizar uma integração simples via troca de arquivos com o ACBrMonitorPLUS
+   Para gerar o .exe é necessário compilar o executável utilizando o Lazarus.
+   Para funcionalidade do mesmo é necessário que o ACBrMonitor esteja em execussão e devidamente configurado,
+de acordo com os componentes que se deseja integrar.
+   As configurações para integração deste demo devem ser realizados no arquivo Configuracao.ini, que acompanham os fontes
+   Inicialmente este aplicativo está configurado apenas para emissão de NFCe utilizando o ambiente Teste do Amazonas.
+Nenhuma informação é armazenada em Banco de Dados, trabalhando os dados apenas em memória, pois a intenção é apenas demonstrar 
+o processo de integração e não uma aplicação comercial completa com todos os recursos necessários.
+   Este Aplicativo foi disponibilizado para análise do código e demonstração das melhores práticas para se integrar com o ACBrMonitorPLUS
+via troca de arquivos. 
+   

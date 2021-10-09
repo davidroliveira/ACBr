@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: OpenSSL: record RSA_METHOD</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="RSA_METHOD"></a><h1 class="cio">record RSA_METHOD</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td>Hierarquia</td><td><a class="section"  href="#%40Fields">Campos</a></td><td>Métodos</td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="OpenSSL.html">OpenSSL</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type RSA_METHOD = record</code></p>
+<h2 class="description">Descrição</h2>
+&nbsp;<h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.RSA_METHOD.html#name">name</a></b>: PChar;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.RSA_METHOD.html#rsa_pub_enc">rsa_pub_enc</a></b>: <a   href="OpenSSL.html#Trsa_pub_enc">Trsa_pub_enc</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.RSA_METHOD.html#rsa_pub_dec">rsa_pub_dec</a></b>: <a   href="OpenSSL.html#Trsa_pub_dec">Trsa_pub_dec</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.RSA_METHOD.html#rsa_priv_enc">rsa_priv_enc</a></b>: <a   href="OpenSSL.html#Trsa_priv_enc">Trsa_priv_enc</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.RSA_METHOD.html#rsa_priv_dec">rsa_priv_dec</a></b>: <a   href="OpenSSL.html#Trsa_priv_dec">Trsa_priv_dec</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.RSA_METHOD.html#rsa_mod_exp">rsa_mod_exp</a></b>: <a   href="OpenSSL.html#Trsa_mod_exp">Trsa_mod_exp</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.RSA_METHOD.html#bn_mod_exp">bn_mod_exp</a></b>: <a   href="OpenSSL.html#Tbn_mod_exp">Tbn_mod_exp</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.RSA_METHOD.html#init">init</a></b>: <a   href="OpenSSL.html#Tinit">Tinit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.RSA_METHOD.html#finish">finish</a></b>: <a   href="OpenSSL.html#Tfinish">Tfinish</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.RSA_METHOD.html#flags">flags</a></b>: cint;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.RSA_METHOD.html#app_data">app_data</a></b>: PChar;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.RSA_METHOD.html#rsa_sign">rsa_sign</a></b>: <a   href="OpenSSL.html#Trsa_sign">Trsa_sign</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.RSA_METHOD.html#rsa_verify">rsa_verify</a></b>: <a   href="OpenSSL.html#Trsa_verify">Trsa_verify</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.RSA_METHOD.html#rsa_keygen">rsa_keygen</a></b>: <a   href="OpenSSL.html#Trsa_keygen">Trsa_keygen</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="name"></a><code><b>name</b>: PChar;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rsa_pub_enc"></a><code><b>rsa_pub_enc</b>: <a   href="OpenSSL.html#Trsa_pub_enc">Trsa_pub_enc</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rsa_pub_dec"></a><code><b>rsa_pub_dec</b>: <a   href="OpenSSL.html#Trsa_pub_dec">Trsa_pub_dec</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rsa_priv_enc"></a><code><b>rsa_priv_enc</b>: <a   href="OpenSSL.html#Trsa_priv_enc">Trsa_priv_enc</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rsa_priv_dec"></a><code><b>rsa_priv_dec</b>: <a   href="OpenSSL.html#Trsa_priv_dec">Trsa_priv_dec</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rsa_mod_exp"></a><code><b>rsa_mod_exp</b>: <a   href="OpenSSL.html#Trsa_mod_exp">Trsa_mod_exp</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="bn_mod_exp"></a><code><b>bn_mod_exp</b>: <a   href="OpenSSL.html#Tbn_mod_exp">Tbn_mod_exp</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<a class="normal"  href="ACBrECFNCR.html#CAN">Can</a> be null</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="init"></a><code><b>init</b>: <a   href="OpenSSL.html#Tinit">Tinit</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<a class="normal"  href="ACBrECFNCR.html#CAN">Can</a> be null</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="finish"></a><code><b>finish</b>: <a   href="OpenSSL.html#Tfinish">Tfinish</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+called at new</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="flags"></a><code><b>flags</b>: cint;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+called at free</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="app_data"></a><code><b>app_data</b>: PChar;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+RSA_METHOD_FLAG_* things</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rsa_sign"></a><code><b>rsa_sign</b>: <a   href="OpenSSL.html#Trsa_sign">Trsa_sign</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+New sign and verify functions: some libraries don't allow arbitrary data * to be signed/verified: this allows them to be used. Note: for this to work * the <a class="normal"  href="OpenSSL.html#RSA_public_decrypt">RSA_public_decrypt</a>() and <a class="normal"  href="OpenSSL.html#RSA_private_encrypt">RSA_private_encrypt</a>() should *NOT* be used * <code>RSA_sign</code>(), <a class="normal"  href="OpenSSL.RSA_METHOD.html#rsa_verify">RSA_verify</a>() should be used instead. Note: for backwards * compatibility this functionality is only enabled if the RSA_FLAG_SIGN_VER * option is set in '<a class="normal"  href="OpenSSL.RSA_METHOD.html#flags">flags</a>'.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rsa_verify"></a><code><b>rsa_verify</b>: <a   href="OpenSSL.html#Trsa_verify">Trsa_verify</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="rsa_keygen"></a><code><b>rsa_keygen</b>: <a   href="OpenSSL.html#Trsa_keygen">Trsa_keygen</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+If this callback is NULL, the builtin software <a class="normal"  href="OpenSSL.RSA.html">RSA</a> key-gen will be used. This * is for behavioural compatibility whilst the code gets rewired, but one day * it would be nice to assume there are no such things as &quot;builtin software&quot; * implementations.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:58</em>
+</span>
+</body></html>

@@ -1,0 +1,22 @@
+Banco do Brasil
+ ACBrBoleto1.Cedente.CedenteWS.ClientID:= 'eyJpZCI6IjgwNDNiNTMtZjQ5Mi00YyIsImNvZGlnb1B1YmxpY2Fkb3IiOjEwOSwiY29kaWdvU29mdHdhcmUiOjEsInNlcXVlbmNpYWxJbnN0YWxhY2FvIjoxfQ';
+ ACBrBoleto1.Cedente.CedenteWS.ClientSecret:= 'eyJpZCI6IjBjZDFlMGQtN2UyNC00MGQyLWI0YSIsImNvZGlnb1B1YmxpY2Fkb3IiOjEwOSwiY29kaWdvU29mdHdhcmUiOjEsInNlcXVlbmNpYWxJbnN0YWxhY2FvIjoxLCJzZXF1ZW5jaWFsQ3JlZGVuY2lhbCI6MX0';
+ ACBrBoleto1.Cedente.CedenteWS.Scope:= 'cobranca.registro-boletos'; 
+ 
+ Carteira          := '17'; 
+ CodigoCedente     := '4863177'
+ Convenio		   := '1014051'
+ Modalidade		   := '19'
+ 
+ 
+ 
+Caixa Econômica
+  ACBrBoleto1.Cedente.CedenteWS.ClientID:=  SGCBS02P
+  versao:= 1.2
+  
+  QtdePagamentoParcial:= 1;
+  TipoPagamento:= tpNao_Aceita_Valor_Divergente;
+  PercentualMinPagamento:= 0;
+  PercentualMaxPagamento:= 0;
+  ValorMinPagamento:=0;
+  ValorMaxPagamento:=0;

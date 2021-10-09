@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ssl_openssl</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ssl_openssl</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td>Tipos</td><td>Constantes</td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+SSL plugin for <a class="normal"  href="OpenSSL.html">OpenSSL</a></p>
+<p>
+:
+
+<p>You need <a class="normal"  href="OpenSSL.html">OpenSSL</a> libraries version 0.9.7. It <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> work with 0.9.6 too, but application mysteriously crashing when you are using freePascal on Linux. Use Kylix on Linux is OK! If you have version 0.9.7 on Linux, then I not see any problems with FreePascal.
+
+<p><a class="normal"  href="OpenSSL.html">OpenSSL</a> libraries are loaded dynamicly - you not need <a class="normal"  href="OpenSSL.html">OpenSSl</a> librares even you compile your application with this unit. SSL just not working when you not have <a class="normal"  href="OpenSSL.html">OpenSSL</a> libraries.
+
+<p>This plugin have limited support for .NET too! Because is not possible to use callbacks with CDECL calling convention under .NET, is not supported key/<a class="normal"  href="ACBrCAPICOM_TLB.html#Certificate">certificate</a> passwords and multithread locking. :-(
+
+<p>For handling keys and <a class="normal"  href="ACBrCAPICOM_TLB.html#Certificates">certificates</a> you <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> use this properties:
+
+<p><a class="normal"  href="blcksock.TCustomSSL.html#CertificateFile">TCustomSSL.CertificateFile</a> for PEM or ASN1 DER (cer) format. <br> <a class="normal"  href="blcksock.TCustomSSL.html#Certificate">TCustomSSL.Certificate</a> for ASN1 DER format only. <br> <a class="normal"  href="blcksock.TCustomSSL.html#PrivateKeyFile">TCustomSSL.PrivateKeyFile</a> for PEM or ASN1 DER (key) format. <br> <a class="normal"  href="blcksock.TCustomSSL.html#PrivateKey">TCustomSSL.PrivateKey</a> for ASN1 DER format only. <br> <a class="normal"  href="blcksock.TCustomSSL.html#CertCAFile">TCustomSSL.CertCAFile</a> for PEM CA <a class="normal"  href="ACBrCAPICOM_TLB.html#Certificate">certificate</a> bundle. <br> <a class="normal"  href="blcksock.TCustomSSL.html#PFXfile">TCustomSSL.PFXFile</a> for PFX format. <br> <a class="normal"  href="blcksock.TCustomSSL.html#PFX">TCustomSSL.PFX</a> for PFX format from binary string. <br>
+
+<p>This plugin is capable to create Ad-Hoc <a class="normal"  href="ACBrCAPICOM_TLB.html#Certificates">certificates</a>. When you start SSL/TLS server without explicitly assigned key and <a class="normal"  href="ACBrCAPICOM_TLB.html#Certificate">certificate</a>, then this plugin create Ad-Hoc key and <a class="normal"  href="ACBrCAPICOM_TLB.html#Certificate">certificate</a> for each incomming connection by self. It slowdown accepting of new connections!</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>Classes</li><li><a   href="blcksock.html">blcksock</a></li><li>synsock</li><li><a   href="synautil.html">synautil</a></li><li><a   href="ssl_openssl_lib.html">ssl_openssl_lib</a></li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ssl_openssl.TSSLOpenSSL.html"><code>TSSLOpenSSL</code></a></td>
+<td class="itemdesc">class implementing <a class="normal"  href="OpenSSL.html">OpenSSL</a> SSL plugin.</td>
+</tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:21:05</em>
+</span>
+</body></html>

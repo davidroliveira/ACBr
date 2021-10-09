@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrTEFDBanese</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrTEFDBanese</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td><a class="section"  href="#%40Types">Tipos</a></td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF}</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Classes</li><li>SysUtils</li><li><a   href="ACBrTEFDClass.html">ACBrTEFDClass</a></li><li>contnrs</li><li>Controls</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDBanese.TACBrTEFDRespBanese.html"><code>TACBrTEFDRespBanese</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDBanese.TACBrTEFDBanese.html"><code>TACBrTEFDBanese</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDBanese.html#TACBrTEFDBaneseObtemInformacao">TACBrTEFDBaneseObtemInformacao</a></b> = procedure( var ItemSelecionado : Integer ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDBanese.html#TOperacaoTEFBanese">TOperacaoTEFBanese</a></b> = (...);</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDBanese.html#CACBrTEFDBanese_ArqTemp">CACBrTEFDBanese_ArqTemp</a></b>    = 'C:\bcard\req\pergunta.tmp' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDBanese.html#CACBrTEFDBanese_ArqReq">CACBrTEFDBanese_ArqReq</a></b>     = 'C:\bcard\req\pergunta.txt' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDBanese.html#CACBrTEFDBanese_ArqResp">CACBrTEFDBanese_ArqResp</a></b>    = 'C:\bcard\resp\resposta.txt' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDBanese.html#CACBrTEFDBanese_ArqRespBkp">CACBrTEFDBanese_ArqRespBkp</a></b> = 'C:\bcard\resposta.txt' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDBanese.html#CACBrTEFDBanese_ArqSTS">CACBrTEFDBanese_ArqSTS</a></b>     = 'C:\bcard\resp\status.txt' ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDBaneseObtemInformacao"></a><code><b>TACBrTEFDBaneseObtemInformacao</b> = procedure( var ItemSelecionado : Integer ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Evento para obter informações sobre o tipo de transação ADM</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOperacaoTEFBanese"></a><code><b>TOperacaoTEFBanese</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Tipos de operação</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+operCRT: &nbsp;</li>
+<li>
+operReimpressao: &nbsp;</li>
+<li>
+operCancelamento: &nbsp;</li>
+<li>
+operFechamento: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CACBrTEFDBanese_ArqTemp"></a><code><b>CACBrTEFDBanese_ArqTemp</b>    = 'C:\bcard\req\pergunta.tmp' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Caminho <a class="normal"  href="ACBrUtil.html#padR">padr</a>ão dos arquivos de requisição e resposta</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CACBrTEFDBanese_ArqReq"></a><code><b>CACBrTEFDBanese_ArqReq</b>     = 'C:\bcard\req\pergunta.txt' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CACBrTEFDBanese_ArqResp"></a><code><b>CACBrTEFDBanese_ArqResp</b>    = 'C:\bcard\resp\resposta.txt' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CACBrTEFDBanese_ArqRespBkp"></a><code><b>CACBrTEFDBanese_ArqRespBkp</b> = 'C:\bcard\resposta.txt' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CACBrTEFDBanese_ArqSTS"></a><code><b>CACBrTEFDBanese_ArqSTS</b>     = 'C:\bcard\resp\status.txt' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:53</em>
+</span>
+</body></html>

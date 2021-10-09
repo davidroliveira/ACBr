@@ -1,0 +1,831 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: pcteCTe: Classe TIde</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TIde"></a><h1 class="cio">Classe TIde</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="pcteCTe.html">pcteCTe</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TIde = class(TPersistent)</code></p>
+<h2 class="description">Descrição</h2>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TPersistent</li>
+<li class="thisitem">TIde</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FcUF">FcUF</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FcCT">FcCT</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FCFOP">FCFOP</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FnatOp">FnatOp</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FforPag">FforPag</a></b>: <a   href="pcnConversao.html#TpcteFormaPagamento">TpCTeFormaPagamento</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#Fmod">Fmod</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#Fserie">Fserie</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FnCT">FnCT</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FdhEmi">FdhEmi</a></b>: TDateTime;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FtpImp">FtpImp</a></b>: <a   href="pcnConversao.html#TpcnTipoImpressao">TpcnTipoImpressao</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FtpEmis">FtpEmis</a></b>: <a   href="pcnConversao.html#TpcnTipoEmissao">TpcnTipoEmissao</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FcDV">FcDV</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FtpAmb">FtpAmb</a></b>: <a   href="pcnConversao.html#TpcnTipoAmbiente">TpcnTipoAmbiente</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FtpCTe">FtpCTe</a></b>: <a   href="pcnConversao.html#TpcteTipoCTe">TpcteTipoCTe</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FprocEmi">FprocEmi</a></b>: <a   href="pcnConversao.html#TpcnProcessoEmissao">TpcnProcessoEmissao</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FverProc">FverProc</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FrefCTe">FrefCTe</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FcMunEmi">FcMunEmi</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FxMunEmi">FxMunEmi</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FUFEmi">FUFEmi</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#Fmodal">Fmodal</a></b>: <a   href="pcnConversao.html#TpcteModal">TpcteModal</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FtpServ">FtpServ</a></b>: <a   href="pcnConversao.html#TpcteTipoServico">TpcteTipoServico</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FcMunIni">FcMunIni</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FxMunIni">FxMunIni</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FUFIni">FUFIni</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FcMunFim">FcMunFim</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FxMunFim">FxMunFim</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FUFFim">FUFFim</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#Fretira">Fretira</a></b>: <a   href="pcnConversao.html#TpcteRetira">TpcteRetira</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#Fxdetretira">Fxdetretira</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FToma03">FToma03</a></b>: <a   href="pcteCTe.TToma03.html">TToma03</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcteCTe.TIde.html#FToma4">FToma4</a></b>: <a   href="pcteCTe.TToma4.html">TToma4</a>;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="pcteCTe.TIde.html#Create">Create</a></b>(AOwner: <a   href="pcteCTe.TCTe.html">TCTe</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="pcteCTe.TIde.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#cUF">cUF</a></b>: integer read <a   href="pcteCTe.TIde.html#FcUF">FcUF</a> write <a   href="pcteCTe.TIde.html#FcUF">FcUF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#cCT">cCT</a></b>: integer read <a   href="pcteCTe.TIde.html#FcCT">FcCT</a> write <a   href="pcteCTe.TIde.html#FcCT">FcCT</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#CFOP">CFOP</a></b>: integer read <a   href="pcteCTe.TIde.html#FCFOP">FCFOP</a> write <a   href="pcteCTe.TIde.html#FCFOP">FCFOP</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#natOp">natOp</a></b> : String read <a   href="pcteCTe.TIde.html#FnatOp">FnatOp</a> write <a   href="pcteCTe.TIde.html#FnatOp">FnatOp</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#forPag">forPag</a></b> : <a   href="pcnConversao.html#TpcteFormaPagamento">TpcteFormaPagamento</a> read <a   href="pcteCTe.TIde.html#FforPag">FforPag</a> write <a   href="pcteCTe.TIde.html#FforPag">FforPag</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#modelo">modelo</a></b>: String read <a   href="pcteCTe.TIde.html#Fmod">Fmod</a> write <a   href="pcteCTe.TIde.html#Fmod">Fmod</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#serie">serie</a></b>: integer read <a   href="pcteCTe.TIde.html#Fserie">Fserie</a> write <a   href="pcteCTe.TIde.html#Fserie">Fserie</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#nCT">nCT</a></b>: integer read <a   href="pcteCTe.TIde.html#FnCT">FnCT</a> write <a   href="pcteCTe.TIde.html#FnCT">FnCT</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#dhEmi">dhEmi</a></b>: TDateTime read <a   href="pcteCTe.TIde.html#FdhEmi">FdhEmi</a> write <a   href="pcteCTe.TIde.html#FdhEmi">FdhEmi</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#tpImp">tpImp</a></b>: <a   href="pcnConversao.html#TpcnTipoImpressao">TpcnTipoImpressao</a> read <a   href="pcteCTe.TIde.html#FtpImp">FtpImp</a> write <a   href="pcteCTe.TIde.html#FtpImp">FtpImp</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#tpEmis">tpEmis</a></b>: <a   href="pcnConversao.html#TpcnTipoEmissao">TpcnTipoEmissao</a> read <a   href="pcteCTe.TIde.html#FtpEmis">FtpEmis</a> write <a   href="pcteCTe.TIde.html#FtpEmis">FtpEmis</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#cDV">cDV</a></b>: integer read <a   href="pcteCTe.TIde.html#FcDV">FcDV</a> write <a   href="pcteCTe.TIde.html#FcDV">FcDV</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#tpAmb">tpAmb</a></b>: <a   href="pcnConversao.html#TpcnTipoAmbiente">TpcnTipoAmbiente</a> read <a   href="pcteCTe.TIde.html#FtpAmb">FtpAmb</a> write <a   href="pcteCTe.TIde.html#FtpAmb">FtpAmb</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#tpCTe">tpCTe</a></b>: <a   href="pcnConversao.html#TpcteTipoCTe">TpcteTipoCTe</a> read <a   href="pcteCTe.TIde.html#FtpCTe">FtpCTe</a> write <a   href="pcteCTe.TIde.html#FtpCTe">FtpCTe</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#procEmi">procEmi</a></b>: <a   href="pcnConversao.html#TpcnProcessoEmissao">TpcnProcessoEmissao</a> read <a   href="pcteCTe.TIde.html#FprocEmi">FprocEmi</a> write <a   href="pcteCTe.TIde.html#FprocEmi">FprocEmi</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#verProc">verProc</a></b>: String read <a   href="pcteCTe.TIde.html#FverProc">FverProc</a> write <a   href="pcteCTe.TIde.html#FverProc">FverProc</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#refCTe">refCTe</a></b>: String read <a   href="pcteCTe.TIde.html#FrefCTe">FrefCTe</a> write <a   href="pcteCTe.TIde.html#FrefCTe">FrefCTe</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#cMunEmi">cMunEmi</a></b>: integer read <a   href="pcteCTe.TIde.html#FcMunEmi">FcMunEmi</a> write <a   href="pcteCTe.TIde.html#FcMunEmi">FcMunEmi</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#xMunEmi">xMunEmi</a></b>: String read <a   href="pcteCTe.TIde.html#FxMunEmi">FxMunEmi</a> write <a   href="pcteCTe.TIde.html#FxMunEmi">FxMunEmi</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#UFEmi">UFEmi</a></b>: String read <a   href="pcteCTe.TIde.html#FUFEmi">FUFEmi</a> write <a   href="pcteCTe.TIde.html#FUFEmi">FUFEmi</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#modal">modal</a></b>: <a   href="pcnConversao.html#TpcteModal">TpcteModal</a> read <a   href="pcteCTe.TIde.html#Fmodal">Fmodal</a> write <a   href="pcteCTe.TIde.html#Fmodal">Fmodal</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#tpServ">tpServ</a></b>: <a   href="pcnConversao.html#TpcteTipoServico">TpcteTipoServico</a> read <a   href="pcteCTe.TIde.html#FtpServ">FtpServ</a> write <a   href="pcteCTe.TIde.html#FtpServ">FtpServ</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#cMunIni">cMunIni</a></b>: integer read <a   href="pcteCTe.TIde.html#FcMunIni">FcMunIni</a> write <a   href="pcteCTe.TIde.html#FcMunIni">FcMunIni</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#xMunIni">xMunIni</a></b>: String read <a   href="pcteCTe.TIde.html#FxMunIni">FxMunIni</a> write <a   href="pcteCTe.TIde.html#FxMunIni">FxMunIni</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#UFIni">UFIni</a></b>: String read <a   href="pcteCTe.TIde.html#FUFIni">FUFIni</a> write <a   href="pcteCTe.TIde.html#FUFIni">FUFIni</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#cMunFim">cMunFim</a></b>: integer read <a   href="pcteCTe.TIde.html#FcMunFim">FcMunFim</a> write <a   href="pcteCTe.TIde.html#FcMunFim">FcMunFim</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#xMunFim">xMunFim</a></b>: String read <a   href="pcteCTe.TIde.html#FxMunFim">FxMunFim</a> write <a   href="pcteCTe.TIde.html#FxMunFim">FxMunFim</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#UFFim">UFFim</a></b>: String read <a   href="pcteCTe.TIde.html#FUFFim">FUFFim</a> write <a   href="pcteCTe.TIde.html#FUFFim">FUFFim</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#retira">retira</a></b>: <a   href="pcnConversao.html#TpcteRetira">TpcteRetira</a> read <a   href="pcteCTe.TIde.html#Fretira">Fretira</a> write <a   href="pcteCTe.TIde.html#Fretira">Fretira</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#xdetretira">xdetretira</a></b>: String read <a   href="pcteCTe.TIde.html#Fxdetretira">Fxdetretira</a> write <a   href="pcteCTe.TIde.html#Fxdetretira">Fxdetretira</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#Toma03">Toma03</a></b>: <a   href="pcteCTe.TToma03.html">TToma03</a> read <a   href="pcteCTe.TIde.html#FToma03">FToma03</a> write <a   href="pcteCTe.TIde.html#FToma03">FToma03</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcteCTe.TIde.html#Toma4">Toma4</a></b>: <a   href="pcteCTe.TToma4.html">TToma4</a> read <a   href="pcteCTe.TIde.html#FToma4">FToma4</a> write <a   href="pcteCTe.TIde.html#FToma4">FToma4</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FcUF"></a><code><b>FcUF</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FcCT"></a><code><b>FcCT</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCFOP"></a><code><b>FCFOP</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FnatOp"></a><code><b>FnatOp</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FforPag"></a><code><b>FforPag</b>: <a   href="pcnConversao.html#TpcteFormaPagamento">TpCTeFormaPagamento</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Fmod"></a><code><b>Fmod</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Fserie"></a><code><b>Fserie</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FnCT"></a><code><b>FnCT</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FdhEmi"></a><code><b>FdhEmi</b>: TDateTime;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FtpImp"></a><code><b>FtpImp</b>: <a   href="pcnConversao.html#TpcnTipoImpressao">TpcnTipoImpressao</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FtpEmis"></a><code><b>FtpEmis</b>: <a   href="pcnConversao.html#TpcnTipoEmissao">TpcnTipoEmissao</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FcDV"></a><code><b>FcDV</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FtpAmb"></a><code><b>FtpAmb</b>: <a   href="pcnConversao.html#TpcnTipoAmbiente">TpcnTipoAmbiente</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FtpCTe"></a><code><b>FtpCTe</b>: <a   href="pcnConversao.html#TpcteTipoCTe">TpcteTipoCTe</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FprocEmi"></a><code><b>FprocEmi</b>: <a   href="pcnConversao.html#TpcnProcessoEmissao">TpcnProcessoEmissao</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FverProc"></a><code><b>FverProc</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FrefCTe"></a><code><b>FrefCTe</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FcMunEmi"></a><code><b>FcMunEmi</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FxMunEmi"></a><code><b>FxMunEmi</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FUFEmi"></a><code><b>FUFEmi</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Fmodal"></a><code><b>Fmodal</b>: <a   href="pcnConversao.html#TpcteModal">TpcteModal</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FtpServ"></a><code><b>FtpServ</b>: <a   href="pcnConversao.html#TpcteTipoServico">TpcteTipoServico</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FcMunIni"></a><code><b>FcMunIni</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FxMunIni"></a><code><b>FxMunIni</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FUFIni"></a><code><b>FUFIni</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FcMunFim"></a><code><b>FcMunFim</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FxMunFim"></a><code><b>FxMunFim</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FUFFim"></a><code><b>FUFFim</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Fretira"></a><code><b>Fretira</b>: <a   href="pcnConversao.html#TpcteRetira">TpcteRetira</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Fxdetretira"></a><code><b>Fxdetretira</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FToma03"></a><code><b>FToma03</b>: <a   href="pcteCTe.TToma03.html">TToma03</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FToma4"></a><code><b>FToma4</b>: <a   href="pcteCTe.TToma4.html">TToma4</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: <a   href="pcteCTe.TCTe.html">TCTe</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="cUF"></a><code>property <b>cUF</b>: integer read <a   href="pcteCTe.TIde.html#FcUF">FcUF</a> write <a   href="pcteCTe.TIde.html#FcUF">FcUF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="cCT"></a><code>property <b>cCT</b>: integer read <a   href="pcteCTe.TIde.html#FcCT">FcCT</a> write <a   href="pcteCTe.TIde.html#FcCT">FcCT</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CFOP"></a><code>property <b>CFOP</b>: integer read <a   href="pcteCTe.TIde.html#FCFOP">FCFOP</a> write <a   href="pcteCTe.TIde.html#FCFOP">FCFOP</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="natOp"></a><code>property <b>natOp</b> : String read <a   href="pcteCTe.TIde.html#FnatOp">FnatOp</a> write <a   href="pcteCTe.TIde.html#FnatOp">FnatOp</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="forPag"></a><code>property <b>forPag</b> : <a   href="pcnConversao.html#TpcteFormaPagamento">TpcteFormaPagamento</a> read <a   href="pcteCTe.TIde.html#FforPag">FforPag</a> write <a   href="pcteCTe.TIde.html#FforPag">FforPag</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="modelo"></a><code>property <b>modelo</b>: String read <a   href="pcteCTe.TIde.html#Fmod">Fmod</a> write <a   href="pcteCTe.TIde.html#Fmod">Fmod</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="serie"></a><code>property <b>serie</b>: integer read <a   href="pcteCTe.TIde.html#Fserie">Fserie</a> write <a   href="pcteCTe.TIde.html#Fserie">Fserie</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="nCT"></a><code>property <b>nCT</b>: integer read <a   href="pcteCTe.TIde.html#FnCT">FnCT</a> write <a   href="pcteCTe.TIde.html#FnCT">FnCT</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="dhEmi"></a><code>property <b>dhEmi</b>: TDateTime read <a   href="pcteCTe.TIde.html#FdhEmi">FdhEmi</a> write <a   href="pcteCTe.TIde.html#FdhEmi">FdhEmi</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="tpImp"></a><code>property <b>tpImp</b>: <a   href="pcnConversao.html#TpcnTipoImpressao">TpcnTipoImpressao</a> read <a   href="pcteCTe.TIde.html#FtpImp">FtpImp</a> write <a   href="pcteCTe.TIde.html#FtpImp">FtpImp</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="tpEmis"></a><code>property <b>tpEmis</b>: <a   href="pcnConversao.html#TpcnTipoEmissao">TpcnTipoEmissao</a> read <a   href="pcteCTe.TIde.html#FtpEmis">FtpEmis</a> write <a   href="pcteCTe.TIde.html#FtpEmis">FtpEmis</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="cDV"></a><code>property <b>cDV</b>: integer read <a   href="pcteCTe.TIde.html#FcDV">FcDV</a> write <a   href="pcteCTe.TIde.html#FcDV">FcDV</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="tpAmb"></a><code>property <b>tpAmb</b>: <a   href="pcnConversao.html#TpcnTipoAmbiente">TpcnTipoAmbiente</a> read <a   href="pcteCTe.TIde.html#FtpAmb">FtpAmb</a> write <a   href="pcteCTe.TIde.html#FtpAmb">FtpAmb</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="tpCTe"></a><code>property <b>tpCTe</b>: <a   href="pcnConversao.html#TpcteTipoCTe">TpcteTipoCTe</a> read <a   href="pcteCTe.TIde.html#FtpCTe">FtpCTe</a> write <a   href="pcteCTe.TIde.html#FtpCTe">FtpCTe</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="procEmi"></a><code>property <b>procEmi</b>: <a   href="pcnConversao.html#TpcnProcessoEmissao">TpcnProcessoEmissao</a> read <a   href="pcteCTe.TIde.html#FprocEmi">FprocEmi</a> write <a   href="pcteCTe.TIde.html#FprocEmi">FprocEmi</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="verProc"></a><code>property <b>verProc</b>: String read <a   href="pcteCTe.TIde.html#FverProc">FverProc</a> write <a   href="pcteCTe.TIde.html#FverProc">FverProc</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="refCTe"></a><code>property <b>refCTe</b>: String read <a   href="pcteCTe.TIde.html#FrefCTe">FrefCTe</a> write <a   href="pcteCTe.TIde.html#FrefCTe">FrefCTe</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="cMunEmi"></a><code>property <b>cMunEmi</b>: integer read <a   href="pcteCTe.TIde.html#FcMunEmi">FcMunEmi</a> write <a   href="pcteCTe.TIde.html#FcMunEmi">FcMunEmi</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="xMunEmi"></a><code>property <b>xMunEmi</b>: String read <a   href="pcteCTe.TIde.html#FxMunEmi">FxMunEmi</a> write <a   href="pcteCTe.TIde.html#FxMunEmi">FxMunEmi</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="UFEmi"></a><code>property <b>UFEmi</b>: String read <a   href="pcteCTe.TIde.html#FUFEmi">FUFEmi</a> write <a   href="pcteCTe.TIde.html#FUFEmi">FUFEmi</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="modal"></a><code>property <b>modal</b>: <a   href="pcnConversao.html#TpcteModal">TpcteModal</a> read <a   href="pcteCTe.TIde.html#Fmodal">Fmodal</a> write <a   href="pcteCTe.TIde.html#Fmodal">Fmodal</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="tpServ"></a><code>property <b>tpServ</b>: <a   href="pcnConversao.html#TpcteTipoServico">TpcteTipoServico</a> read <a   href="pcteCTe.TIde.html#FtpServ">FtpServ</a> write <a   href="pcteCTe.TIde.html#FtpServ">FtpServ</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="cMunIni"></a><code>property <b>cMunIni</b>: integer read <a   href="pcteCTe.TIde.html#FcMunIni">FcMunIni</a> write <a   href="pcteCTe.TIde.html#FcMunIni">FcMunIni</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="xMunIni"></a><code>property <b>xMunIni</b>: String read <a   href="pcteCTe.TIde.html#FxMunIni">FxMunIni</a> write <a   href="pcteCTe.TIde.html#FxMunIni">FxMunIni</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="UFIni"></a><code>property <b>UFIni</b>: String read <a   href="pcteCTe.TIde.html#FUFIni">FUFIni</a> write <a   href="pcteCTe.TIde.html#FUFIni">FUFIni</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="cMunFim"></a><code>property <b>cMunFim</b>: integer read <a   href="pcteCTe.TIde.html#FcMunFim">FcMunFim</a> write <a   href="pcteCTe.TIde.html#FcMunFim">FcMunFim</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="xMunFim"></a><code>property <b>xMunFim</b>: String read <a   href="pcteCTe.TIde.html#FxMunFim">FxMunFim</a> write <a   href="pcteCTe.TIde.html#FxMunFim">FxMunFim</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="UFFim"></a><code>property <b>UFFim</b>: String read <a   href="pcteCTe.TIde.html#FUFFim">FUFFim</a> write <a   href="pcteCTe.TIde.html#FUFFim">FUFFim</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="retira"></a><code>property <b>retira</b>: <a   href="pcnConversao.html#TpcteRetira">TpcteRetira</a> read <a   href="pcteCTe.TIde.html#Fretira">Fretira</a> write <a   href="pcteCTe.TIde.html#Fretira">Fretira</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="xdetretira"></a><code>property <b>xdetretira</b>: String read <a   href="pcteCTe.TIde.html#Fxdetretira">Fxdetretira</a> write <a   href="pcteCTe.TIde.html#Fxdetretira">Fxdetretira</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Toma03"></a><code>property <b>Toma03</b>: <a   href="pcteCTe.TToma03.html">TToma03</a> read <a   href="pcteCTe.TIde.html#FToma03">FToma03</a> write <a   href="pcteCTe.TIde.html#FToma03">FToma03</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Toma4"></a><code>property <b>Toma4</b>: <a   href="pcteCTe.TToma4.html">TToma4</a> read <a   href="pcteCTe.TIde.html#FToma4">FToma4</a> write <a   href="pcteCTe.TIde.html#FToma4">FToma4</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:21:02</em>
+</span>
+</body></html>

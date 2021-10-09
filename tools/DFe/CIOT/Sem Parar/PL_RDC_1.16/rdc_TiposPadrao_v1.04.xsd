@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 sp1 (http://www.altova.com) by End User (free.org) -->
+<xs:schema xmlns:rdc="https://ws.rodocred.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://ws.rodocred.com.br/" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xs:include schemaLocation="rdc_TiposPadrao_v1.03.xsd"/>
+	<xs:complexType name="VeiculoFrotaType">
+		<xs:annotation>
+			<xs:documentation> Tipo de veículo de Frota Própria</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rdc:Veiculo"/>
+			<xs:element ref="rdc:DetalhesVeiculoFrota" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DetalhesVeiculoFrotaType">
+		<xs:annotation>
+			<xs:documentation> Tipo do detalhe de veículo de frota</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rdc:CapacidadeTanqueGNV" minOccurs="0"/>
+			<xs:element ref="rdc:Odometro" minOccurs="0"/>
+			<xs:element ref="rdc:QuantidadeDigitosOdometro" minOccurs="0"/>
+			<xs:element ref="rdc:ResponsavelVeiculo" minOccurs="0"/>
+			<xs:element ref="rdc:CodigoCentroCusto" minOccurs="0"/>
+			<xs:element ref="rdc:Endereco" minOccurs="0"/>
+			<xs:element ref="rdc:NumeroCartao" minOccurs="0"/>
+			<xs:element ref="rdc:CodigoRegraAutorizacao" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Código do Conjunto de Regras de Autorização de Operações Rodocred. Ex.: 01 (Código da Regras de Limite Máximo de Abastecimento)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="rdc:ListaClassificacaoCombustivel" minOccurs="0"/>
+			<xs:element ref="rdc:EmpresaResponsavelConsumidor" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TipoRegraAutorizacaoType">
+		<xs:annotation>
+			<xs:documentation> Tipo de do Tipo de Regra de Autorização</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rdc:CodigoTipoRegraAutorizacao">
+				<xs:annotation>
+					<xs:documentation>Códiigo do tipo de regra de abastecimento
+RAB-Restrição de Abastecimento
+RHO-Restrição de Dia e Horário
+IEO-Intervalo de Operação
+RLP-Restrição de Rede
+TVM-Tolerância de Variação de Média</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="rdc:DescricaoTipoRegraAutorizacao" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Descrição do Tipo de Regra de Autorização
+Restrição de Abastecimento
+Restrição de Dia e Horário
+Intervalo de Operação
+Restrição de Rede
+Tolerância de Variação de Média</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RegraAutorizacaoType">
+		<xs:annotation>
+			<xs:documentation>Tipo da Regra de Autorização</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rdc:CodigoRegraAutorizacao"/>
+			<xs:element ref="rdc:NomeRegraAutorizacao"/>
+			<xs:element ref="rdc:ListaTipoRegraAutorizacao"/>
+			<xs:element ref="rdc:DataCadastro">
+				<xs:annotation>
+					<xs:documentation>Data do Cadastro da Regra de Autorização</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ListaTipoRegraAutorizacaoType">
+		<xs:annotation>
+			<xs:documentation>Tipo de Lista de Regras de Autorização</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rdc:TipoRegraAutorizacao" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CentroCustoType">
+		<xs:annotation>
+			<xs:documentation>Tipo do Centro de Custo</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rdc:CodigoCentroCusto"/>
+			<xs:element ref="rdc:NomeCentroCusto" minOccurs="0"/>
+			<xs:element ref="rdc:Situacao"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ConsumidorType">
+		<xs:annotation>
+			<xs:documentation> Tipo do Consumidor</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rdc:PlacaVeiculo" minOccurs="0"/>
+			<xs:element ref="rdc:Equipamento" minOccurs="0"/>
+			<xs:element ref="rdc:CPFMotoristaOperador" minOccurs="0"/>
+			<xs:element ref="rdc:NomeConsumidor" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nome do Consumidor</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PeriodoType">
+		<xs:annotation>
+			<xs:documentation>Tipo de periodo.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rdc:DataInicio"/>
+			<xs:element ref="rdc:DataFinal"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ContestacoesType">
+		<xs:annotation>
+			<xs:documentation>Dados da Contestação de Abastecimento. </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rdc:NumeroAutorizacao"/>
+			<xs:element ref="rdc:CodigoContestacao"/>
+			<xs:element ref="rdc:DataAbastecimento"/>
+			<xs:element ref="rdc:Estabelecimento"/>
+			<xs:element ref="rdc:AlegacaoContestacao" maxOccurs="3"/>
+			<xs:element ref="rdc:SituacaoContestacao"/>
+			<xs:element ref="rdc:DataContestacao"/>
+			<xs:element ref="rdc:CriadoPor"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DadosContestacaoType">
+		<xs:annotation>
+			<xs:documentation>Tipo de dados da Contestação de Abastecimento</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rdc:CombustivelContestacao"/>
+			<xs:element ref="rdc:LitrosAbastecimento"/>
+			<xs:element ref="rdc:ValorLitroAbastecimento"/>
+			<xs:element ref="rdc:ValorAbastecimento"/>
+			<xs:element ref="rdc:MotivoContestacao"/>
+			<xs:element ref="rdc:RespostaContestacao" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DadosConsumidorType">
+		<xs:annotation>
+			<xs:documentation>Tipo de dados Consumidor.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rdc:CPFConsumidor"/>
+			<xs:element ref="rdc:NomeConsumidor"/>
+			<xs:element ref="rdc:Identidade" minOccurs="0"/>
+			<xs:element ref="rdc:OrgaoExpedidor" minOccurs="0"/>
+			<xs:element name="Telefone" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Telefone do Consumidor</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Celular">
+				<xs:annotation>
+					<xs:documentation>Celular do Consudimor</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Fax" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Fax do Consumidor</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Email" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Email do Consumidor</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element ref="rdc:DataNascimento" minOccurs="0"/>
+			<xs:element ref="rdc:Sexo" minOccurs="0"/>
+			<xs:element ref="rdc:EstadoCivil" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EquipamentoType">
+		<xs:annotation>
+			<xs:documentation>Tipo de dados de Equipamento. </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rdc:CodigoConsumidor"/>
+			<xs:element ref="rdc:Equipamento"/>
+			<xs:element ref="rdc:CodigoEquipamento" minOccurs="0"/>
+			<xs:element ref="rdc:DescricaoEquipamento" minOccurs="0"/>
+			<xs:element ref="rdc:PlacaVeiculo" minOccurs="0"/>
+			<xs:element ref="rdc:CapacidadeTanqueVeiculo" minOccurs="0"/>
+			<xs:element ref="rdc:MediaConsumoVeiculo" minOccurs="0"/>
+			<xs:element ref="rdc:CodigoCentroCusto" minOccurs="0"/>
+			<xs:element ref="rdc:Situacao"/>
+			<xs:element ref="rdc:EmpresaResponsavelConsumidor" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TipoLocalidadeType">
+		<xs:annotation>
+			<xs:documentation>Tipo de Localidade</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Cidades" type="xs:boolean"/>
+			<xs:element name="Vila" type="xs:boolean"/>
+			<xs:element name="PontoReferencia" type="xs:boolean"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LocalidadesType">
+		<xs:annotation>
+			<xs:documentation> Tipo de Lista de Localidade</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rdc:CodigoLocalidade"/>
+			<xs:element ref="rdc:Localidade"/>
+			<xs:element ref="rdc:UF"/>
+			<xs:element ref="rdc:Latitude"/>
+			<xs:element ref="rdc:Longitude"/>
+			<xs:element name="CodigoIBGELocalidade" type="rdc:CodigoIBGEType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Codigo do IBGE da Localidade.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ConsumidoresType">
+		<xs:annotation>
+			<xs:documentation>Tipo de Consumidores. </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="rdc:CodigoConsumidor"/>
+			<xs:element ref="rdc:TipoPessoa"/>
+			<xs:element ref="rdc:NomeConsumidor"/>
+			<xs:element ref="rdc:CPFConsumidor"/>
+			<xs:element name="Telefone" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Telefone do Consumidor</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Celular">
+				<xs:annotation>
+					<xs:documentation>Celular do Consumidor</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Email" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Email do Consumidor</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element ref="rdc:CodigoCentroCusto" minOccurs="0"/>
+			<xs:element ref="rdc:Situacao"/>
+			<xs:element ref="rdc:EmpresaResponsavelConsumidor" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="SituacaoType">
+		<xs:annotation>
+			<xs:documentation>Tipo da Situação</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="I"/>
+			<xs:enumeration value="A"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TipoLancamentoAbastecimentoType">
+		<xs:annotation>
+			<xs:documentation>Tipo do tipo de lançamento de abastecimento</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="T"/>
+			<xs:enumeration value="N"/>
+			<xs:enumeration value="M"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LitrosType">
+		<xs:annotation>
+			<xs:documentation>Tipo de Litros</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="13"/>
+			<xs:fractionDigits value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CriadoPorType">
+		<xs:annotation>
+			<xs:documentation>Tipo de abertura de contestação de Abastecimento.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="C"/>
+			<xs:enumeration value="P"/>
+			<xs:enumeration value="T"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AlegacaoType">
+		<xs:annotation>
+			<xs:documentation>Tipos de Alegações.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="T"/>
+			<xs:enumeration value="C"/>
+			<xs:enumeration value="L"/>
+			<xs:enumeration value="V"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SituacaoContestacaoType">
+		<xs:annotation>
+			<xs:documentation>Tipos de situações da contestação. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="T"/>
+			<xs:enumeration value="A"/>
+			<xs:enumeration value="P"/>
+			<xs:enumeration value="R"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="VeiculoFrota" type="rdc:VeiculoFrotaType">
+		<xs:annotation>
+			<xs:documentation> Véiculo de Frota Própria</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="UFPlaca" type="rdc:SiglaUFType">
+		<xs:annotation>
+			<xs:documentation> UF da Placa do Veículo</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Odometro" type="xs:int">
+		<xs:annotation>
+			<xs:documentation>Odometro do Veículo </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CentroCusto" type="rdc:CentroCustoType">
+		<xs:annotation>
+			<xs:documentation>Centro de Custo da Empresa</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="NomeRegraAutorizacao" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Nome da Regra de Autorizacao</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="QuantidadeDigitosOdometro" type="xs:int">
+		<xs:annotation>
+			<xs:documentation>Quanidade de Dígitos no Odometro</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ResponsavelVeiculo" type="rdc:CPFType">
+		<xs:annotation>
+			<xs:documentation>CPF do responsável pelo veículo</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CPFConsumidor" type="rdc:CPFType">
+		<xs:annotation>
+			<xs:documentation>CPF do Consumidor Pessoa.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ResponsavelConsumidor" type="rdc:CPFType">
+		<xs:annotation>
+			<xs:documentation>CPF do responsável pelo consumidor</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="NomeCentroCusto" type="xs:string">
+		<xs:annotation>
+			<xs:documentation> Nome do Centro de Custo da Empresa</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="MediaConsumoVeiculo">
+		<xs:annotation>
+			<xs:documentation>Média em KM/Litro do Consumo  do Veículo</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:decimal">
+				<xs:minInclusive value="0"/>
+				<xs:maxInclusive value="9999.99"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="CapacidadeTanqueVeiculo">
+		<xs:annotation>
+			<xs:documentation>Capacidade do Tanque do Veículo</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:decimal">
+				<xs:minInclusive value="0"/>
+				<xs:maxInclusive value="9999.99"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="NumeroFrotaVeiculo" type="xs:string">
+		<xs:annotation>
+			<xs:documentation> Identificação do Número do Veículo na Frota</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="DetalhesVeiculoFrota" type="rdc:DetalhesVeiculoFrotaType">
+		<xs:annotation>
+			<xs:documentation> Detalhes do Veículo de Viagem Frota</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CodigoTipoRegraAutorizacao">
+		<xs:annotation>
+			<xs:documentation>Códiigo do tipo de regra de abastecimento
+RAB-Restrição de Abastecimento
+RHO-Restrição de Dia e Horário
+IEO-Intervalo de Operação
+RLP-Restrição de Rede
+TVM-Tolerância de Variação de Média</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="TVM"/>
+				<xs:enumeration value="RLP"/>
+				<xs:enumeration value="IEO"/>
+				<xs:enumeration value="RHO"/>
+				<xs:enumeration value="RAB"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="DescricaoTipoRegraAutorizacao" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Descrição do Tipo de Regra de Autorização
+Restrição de Abastecimento
+Restrição de Dia e Horário
+Intervalo de Operação
+Restrição de Rede
+Tolerância de Variação de Média</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ListaTipoRegraAutorizacao" type="rdc:ListaTipoRegraAutorizacaoType">
+		<xs:annotation>
+			<xs:documentation>Lista de Tipo de Regras de Autorizacao</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ListaCodigoTipoRegraAutorizacao">
+		<xs:annotation>
+			<xs:documentation>Lista de Tipo de Regras de Autorizacao</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="rdc:CodigoTipoRegraAutorizacao" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TipoRegraAutorizacao" type="rdc:TipoRegraAutorizacaoType">
+		<xs:annotation>
+			<xs:documentation>Tipo de Regra de Abastecimento</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="RegraAutorizacao" type="rdc:RegraAutorizacaoType">
+		<xs:annotation>
+			<xs:documentation>Regra de Autorizacao</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="DataContestacao" type="xs:dateTime">
+		<xs:annotation>
+			<xs:documentation>Data da Contestação de Abastecimento. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="DataAbastecimento" type="xs:dateTime">
+		<xs:annotation>
+			<xs:documentation>Data do Abastecimento.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="DataCadastro" type="xs:date">
+		<xs:annotation>
+			<xs:documentation>Data do cadastro</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Situacao" type="rdc:SituacaoType">
+		<xs:annotation>
+			<xs:documentation>Situação
+A - Ativo
+I - Inativo</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="TipoLancamentoAbastecimento">
+		<xs:annotation>
+			<xs:documentation>Tipo do lançamento de abastecimento
+N - Abastecimento Normal
+M- Abastecimento Manual (Acerto de Abastecimento)
+T-Todos os Abastecimentos</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="rdc:TipoLancamentoAbastecimentoType"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="NumeroAutorizacao" type="xs:string">
+		<xs:annotation>
+			<xs:documentation> Número da Autorização da Operação</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CPFMotoristaOperador">
+		<xs:annotation>
+			<xs:documentation>Campo armazena o CPF do Motorita, Frentista ou Operador</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="rdc:CPFType"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Consumidor" type="rdc:ConsumidorType">
+		<xs:annotation>
+			<xs:documentation> Consumidor de Frota</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="NomeConsumidor" type="xs:string">
+		<xs:annotation>
+			<xs:documentation> Nome do Consumidor</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ValorAbastecimento" type="rdc:ValorType">
+		<xs:annotation>
+			<xs:documentation>Valor do Abastecimento</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="NomeMotoristaOperador" type="xs:string">
+		<xs:annotation>
+			<xs:documentation> Nome do Motorista ou Operador Responsável pelo Abastecimento.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CodigoContestacao" type="xs:int">
+		<xs:annotation>
+			<xs:documentation>Código da Contestação de Abastecimento </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="MotivoContestacao" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Motivo da Contestação de Abastecimento.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="RespostaContestacao" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Resposta da Contestação de Abastecimento.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="LitrosAbastecimento" type="rdc:LitrosType">
+		<xs:annotation>
+			<xs:documentation>Quantidade de Litros Abastecimento</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ValorLitroAbastecimento" type="rdc:ValorType">
+		<xs:annotation>
+			<xs:documentation>Valor por Litro no Abastecimento.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CombustivelContestacao" type="rdc:ClassificacaoCombustivelType">
+		<xs:annotation>
+			<xs:documentation>Combustivel da Contestação de Abastecimento.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="AprovarContestacao" type="xs:boolean">
+		<xs:annotation>
+			<xs:documentation>Aprovação ou não da Contestação aberta pelo Posto</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="PeriodoContestacao" type="rdc:PeriodoType">
+		<xs:annotation>
+			<xs:documentation>Periodo da Constestação de Abastecimento.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CriadoPor" type="rdc:CriadoPorType">
+		<xs:annotation>
+			<xs:documentation>Criada contestação por Posto ou Cliente:
+T - Todos
+C - Cliente
+P - Posto</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="SituacaoContestacao" type="rdc:SituacaoContestacaoType">
+		<xs:annotation>
+			<xs:documentation>Situação da Contestação de Abastecimento:
+A - Aprovada
+P - Pendente
+R - Rejeitada
+T - Todas</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Contestacoes" type="rdc:ContestacoesType">
+		<xs:annotation>
+			<xs:documentation>Dados da Contestação de Abastecimento. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ListaContestacao">
+		<xs:annotation>
+			<xs:documentation>Lista de Contestações de Abastecimento. </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="rdc:Contestacoes" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DadosContestacao" type="rdc:DadosContestacaoType">
+		<xs:annotation>
+			<xs:documentation>Dados da Contestação de Abastecimento.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="AlegacaoContestacao" type="rdc:AlegacaoType">
+		<xs:annotation>
+			<xs:documentation>Alegação da Contestação de Abastecimento.
+C - Combustível
+L - Litragem
+V - Valor
+T - Todas</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="AbastecimentoCompleto" type="xs:boolean">
+		<xs:annotation>
+			<xs:documentation>Abastecimento com tanque completo. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CodigoAbastecimento" type="xs:int">
+		<xs:annotation>
+			<xs:documentation>Código do Abastecimento no Rodocred. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CodigoEquipamento" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Código do Equipamento. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="DescricaoEquipamento" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Descrição do Equipamento. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="NumeroSerie" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Número de Série do Equipamento.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Horimetro">
+		<xs:annotation>
+			<xs:documentation>Horimetro do veiculo ou equipamento.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:int">
+				<xs:totalDigits value="10"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="DigitosHorimetro">
+		<xs:annotation>
+			<xs:documentation>Quantidad de Dígidos do Horimetro. </xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:int">
+				<xs:totalDigits value="2"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="EstadoCivil">
+		<xs:annotation>
+			<xs:documentation>Estado Civel:
+SOL - Solteiro(a)
+CAS - Casado(a)
+DIV - Divorciado(a)
+SEP - Separado(a)
+VIU - Viúvo(a)
+OUT - Outros</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="SOL"/>
+				<xs:enumeration value="CAS"/>
+				<xs:enumeration value="DIV"/>
+				<xs:enumeration value="SEP"/>
+				<xs:enumeration value="VIU"/>
+				<xs:enumeration value="OUT"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="TipoPessoa">
+		<xs:annotation>
+			<xs:documentation>Tipo de Pessoa:
+P - Pessoa
+F - Frentista</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="F"/>
+				<xs:enumeration value="P"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="ListaEquipamento">
+		<xs:annotation>
+			<xs:documentation> Lista de Equipamentos.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="rdc:Equipamentos" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Equipamentos" type="rdc:EquipamentoType">
+		<xs:annotation>
+			<xs:documentation> Dados do Equipamento. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ListaPessoa">
+		<xs:annotation>
+			<xs:documentation> Lista de Pessoas.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Consumidores" type="rdc:ConsumidoresType">
+		<xs:annotation>
+			<xs:documentation>Dados dos Consumidores. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ListaConsumidor">
+		<xs:annotation>
+			<xs:documentation>Lista de Consumidores. </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="rdc:Consumidores" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DadosConsumidor" type="rdc:DadosConsumidorType">
+		<xs:annotation>
+			<xs:documentation>Dados do Consumidor do tipo Pessoa.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Localidade" type="rdc:LocalidadeType">
+		<xs:annotation>
+			<xs:documentation>Descrição Localidade</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="TipoLocalidade" type="rdc:TipoLocalidadeType">
+		<xs:annotation>
+			<xs:documentation>Tipo de Localidade </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Localidades" type="rdc:LocalidadesType">
+		<xs:annotation>
+			<xs:documentation>Lista de Localidades</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="NomeRota">
+		<xs:annotation>
+			<xs:documentation>Armazena o nome ou parte do nome da rota que se deseja cadastrar ou consultar.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="100"/>
+				<xs:minLength value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="DescricaoRota" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Armazena a descrição da rota. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="CodigoConsumidor" type="xs:int">
+		<xs:annotation>
+			<xs:documentation>Código do Consumidor</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+</xs:schema>

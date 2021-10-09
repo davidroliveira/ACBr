@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: libeay32: record PKCS7</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="PKCS7"></a><h1 class="cio">record PKCS7</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td>Hierarquia</td><td><a class="section"  href="#%40Fields">Campos</a></td><td>Métodos</td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="libeay32.html">libeay32</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type PKCS7 = record</code></p>
+<h2 class="description">Descrição</h2>
+&nbsp;<h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7.html#asn1">asn1</a></b>: <a   href="libeay32.html#PCharacter">PCharacter</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7.html#length">length</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7.html#state">state</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7.html#detached">detached</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7.html#asn1_type">asn1_type</a></b>: pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7.html#ptr">ptr</a></b>: <a   href="libeay32.html#pASN1_OCTET_STRING">pASN1_OCTET_STRING</a></code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7.html#data">data</a></b>: pointer</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7.html#sign">sign</a></b>: <a   href="libeay32.html#pPKCS7_signed">pPKCS7_signed</a></code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7.html#enveloped">enveloped</a></b>: pointer</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7.html#signed_and_enveloped">signed_and_enveloped</a></b>: <a   href="libeay32.html#pPKCS7_signedandenveloped">pPKCS7_signedandenveloped</a></code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7.html#digest">digest</a></b>: pointer</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7.html#encrypted">encrypted</a></b>: pointer</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7.html#other">other</a></b>: pointer</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="asn1"></a><code><b>asn1</b>: <a   href="libeay32.html#PCharacter">PCharacter</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="length"></a><code><b>length</b>: integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="state"></a><code><b>state</b>: integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="detached"></a><code><b>detached</b>: integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="asn1_type"></a><code><b>asn1_type</b>: pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ptr"></a><code><b>ptr</b>: <a   href="libeay32.html#pASN1_OCTET_STRING">pASN1_OCTET_STRING</a></code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&circ;ASN1_OBJECT</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="data"></a><code><b>data</b>: pointer</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="sign"></a><code><b>sign</b>: <a   href="libeay32.html#pPKCS7_signed">pPKCS7_signed</a></code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&circ;<a class="normal"  href="libeay32.PKCS7_signed.html">PKCS7_SIGNED</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="enveloped"></a><code><b>enveloped</b>: pointer</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&circ;<a class="normal"  href="libeay32.PKCS7_signed.html">PKCS7_SIGNED</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="signed_and_enveloped"></a><code><b>signed_and_enveloped</b>: <a   href="libeay32.html#pPKCS7_signedandenveloped">pPKCS7_signedandenveloped</a></code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&circ;PKCS7_ENVELOPE</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="digest"></a><code><b>digest</b>: pointer</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="encrypted"></a><code><b>encrypted</b>: pointer</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&circ;PKCS7_DIGEST</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="other"></a><code><b>other</b>: pointer</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&circ;<a class="normal"  href="libeay32.html#PKCS7_encrypt">PKCS7_ENCRYPT</a></p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:58</em>
+</span>
+</body></html>

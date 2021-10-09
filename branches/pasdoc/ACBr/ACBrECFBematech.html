@@ -1,0 +1,579 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrECFBematech</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrECFBematech</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td>Tipos</td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF}</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a   href="ACBrECFClass.html">ACBrECFClass</a></li><li><a   href="ACBrDevice.html">ACBrDevice</a></li><li><a   href="ACBrUtil.html">ACBrUtil</a></li><li><a   href="ACBrCHQClass.html">ACBrCHQClass</a></li><li>Classes</li><li>Windows</li><li>Forms</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFBematech.TACBrECFBematech.html"><code>TACBrECFBematech</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFBematech.html#ErrosST1">ErrosST1</a></b> : array[0..7] of string =
+      ('Número de parâmetros de CMD inválido',
+       'Cupom aberto',
+       'Comando inexistente',
+       'Primeiro dado de CMD não foi ESC (27d)',
+       'Impressora em erro',
+       'Erro no relógio',
+       'Pouco papel',
+       'Fim de papel') ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFBematech.html#ErrosST2">ErrosST2</a></b> : array[0..7] of string =
+      ('Comando não executado',
+       'CGC/IE do proprietário não programados',
+       'Cancelamento não permitido',
+       'Capacidade de alíquotas programáveis lotada',
+       'Alíquota não programada',
+       'Erro na Memória RAM CMOS não volátil',
+       'Memória fiscal lotada',
+       'Tipo de parâmetro de CMD inválido') ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFBematech.html#ErrosST3">ErrosST3</a></b>: array [0 .. 218] of string = (
+     'Comando ok',
+     'Comando inválido',
+     'Erro desconhecido',
+     'Número de parâmetro inválido',
+     'Tipo de parâmetro inválido',
+     'Todas alíquotas já programadas',
+     'Totalizador não fiscal já programado',
+     'Cupom fiscal aberto',
+     'Cupom fiscal fechado',
+     'ECF ocupado',
+     'Impressora em erro',
+     'Impressora sem papel',
+     'Impressora com cabeça levantada',
+     'Impressora off line',
+     'Alíquota não programada',
+     'Terminador de string faltando',
+     'Acréscimo ou desconto maior que o total do cupom fiscal',
+     'Cupom fiscal sem item vendido',
+     'Comando não efetivado',
+     'Sem espaço para novas formas de pagamento',
+     'Forma de pagamento não programada',
+     'Índice maior que número de forma de pagamento',
+     'Formas de pagamento encerradas',
+     'Cupom não totalizado',
+     'Comando maior que 7f',
+     'Cupom fiscal aberto e sem item',
+     'Cancelamento não imediatamente após',
+     'Cancelamento já efetuado',
+     'Comprovante de crédito ou débito não permitido ou já emitido',
+     'Meio de pagamento não permite tef',
+     'Sem comprovante não fiscal aberto',
+     'Comprovante de crédito ou débito já aberto',
+     'Reimpressão não permitida',
+     'Comprovante não fiscal já aberto',
+     'Totalizador não fiscal não programado',
+     'Cupom não fiscal sem item vendido',
+     'Acréscimo e desconto maior que total cnf',
+     'Meio de pagamento não indicado',
+     'Meio de pagamento diferente do total de recebimento',
+     'Não permitido mais de uma sangria ou suprimento',
+     'Relatório já programado',
+     'Relatório gerencial não programado',
+     'Relatório gerencial não permitido',
+     'Mfd não inicializada',
+     'Mfd ausente',
+     'Mfd sem número de série',
+     'Mfd já inicializada',
+     'Mfd lotada',
+     'Cupom não fiscal aberto',
+     'Memória fiscal desconectada',
+     'Memória fiscal sem número de série da mfd',
+     'Memória fiscal lotada',
+     'Data inicial inválida',
+     'Data final inválida',
+     'Contador de redução z inicial inválido',
+     'Contador de redução z final inválido',
+     'Erro de alocação',
+     'Dados do RTC incorretos',
+     'Data anterior ao último documento emitido',
+     'Fora de intervenção técnica',
+     'Em intervenção técnica',
+     'Erro na memória de trabalho',
+     'Já houve movimento no dia',
+     'Bloqueio por RZ',
+     'Forma de pagamento aberta',
+     'Aguardando primeiro proprietário',
+     'Aguardando RZ',
+     'Ecf ou loja igual a zero',
+     'Cupom adicional não permitido',
+     'Desconto maior que total vendido em ICMS',
+     'Recebimento não fiscal nulo não permitido',
+     'Acréscimo ou desconto maior que total não fiscal',
+     'Memória fiscal lotada para novo cartucho',
+     'Erro de gravação na MF',
+     'Erro de gravação na MFD',
+     'Dados do RTC anteriores ao último documento armazenado',
+     'Memória fiscal sem espaço para gravar leituras da MFD',
+     'Memória fiscal sem espaço para gravar versão do SB',
+     'Descrição igual a default não permitido',
+     'Extrapolado número de repetições permitidas',
+     'Segunda via do comprovante de crédito ou débito não permitido',
+     'Parcelamento fora da sequência',
+     'Comprovante de crédito ou débito aberto',
+     'Texto com sequência de ESC inválida',
+     'Texto com sequência de ESC incompleta',
+     'Venda com valor nulo',
+     'Estorno de valor nulo',
+     'Forma de pagamento diferente do total da sangria',
+     'Redução não permitida em intervenção técnica',
+     'Aguardando RZ para entrada em intervenção técnica',
+     'Forma de pagamento com valor nulo não permitido',
+     'Acréscimo e desconto maior que valor do item',
+     'Autenticação não permitida',
+     'Timeout na validação',
+     'Comando não executado em impressora bilhete de passagem',
+     'Comando não executado em impressora de Cupom Fiscal',
+     'Cupom Não Fiscal fechado',
+     'Parâmetro não ASCII em campo ASCII',
+     'Parâmetro não ASCII num em campo ASCII num',
+     'Tipo de transporte inválido',
+     'Data e hora inválida',
+     'Sem relatório gerencial',
+     'Número do totalizador não fiscal inválido',
+     'Parâmetro de acréscimo ou desconto inválido',
+     'Acréscimo ou desconto em sangria ou suprimento não permitido',
+     'Número do relatório gerencial inválido',
+     'Forma de pagamento fonte não programada',
+     'Forma de pagamento destino não programada',
+     'Estorno maior que forma pagamento',
+     'Caracter numérico na codificação GT não permitido',
+     'Erro na inicialização da MF',
+     'Nome do totalizador em branco não permitido',
+     'Data e hora anteriores ao último doc armazenado',
+     'Parâmetro de acréscimo ou desconto inválido',
+     'Item anterior aos trezentos últimos',
+     'Item não existe ou já cancelado',
+     'Código com espaços não permitido',
+     'Descrição sem caracter alfabético não permitido',
+     'Acréscimo maior que valor do item',
+     'Desconto maior que valor do item',
+     'Desconto em iss não permitido',
+     'Acréscimo em item já efetuado',
+     'Desconto em item já efetuado',
+     'Erro na Memória Fiscal chamar credenciado',
+     'Aguardando gravação na Memória Fiscal',
+     'Caracter repetido na codificação do GT',
+     'Versão já gravada na memória fiscal',
+     'Estouro de capacidade no cheque',
+     'Timeout na leitura do cheque',
+     'Mês inválido',
+     'Coordenada inválida',
+     'Sobreposição de texto',
+     'Sobreposição de texto no valor',
+     'Sobreposição de texto no extenso',
+     'Sobreposição de texto no favorecido',
+     'Sobreposição de texto na localidade',
+     'Sobreposição de texto no opcional',
+     'Sobreposição de texto no dia',
+     'Sobreposição de texto no mês',
+     'Sobreposição de texto no ano',
+     'Usando MFD de outro ECF',
+     'Primeiro dado diferente de ESC ou 1C',
+     'Não permitido alterar sem intervenção técnica',
+     'Dados da última RZ corrompidos',
+     'Comando não permitido no modo inicialização',
+     'Aguardando acerto de relógio',
+     'MFD já inicializada para outra memória fiscal',
+     'Aguardando acerto do relógio ou desbloqueio pelo teclado',
+     'Valor forma de pagamento maior que máximo permitido',
+     'Razão social em branco',
+     'Nome de fantasia em branco',
+     'Endereço em branco',
+     'Estorno de CDC não permitido',
+     'Dados do proprietário iguais ao atual',
+     'Estorno de forma de pagamento não permitido',
+     'Descrição forma de pagamento igual já programada',
+     'Acerto de horário de verão só imediatamente após Redução Z',
+     'Intervenção técnica não permitida MF reservada para Redução Z',
+     'Senha CNPJ inválida',
+     'Timeout na inicialização de nova MF',
+     'Dados da MFD não encontrados',
+     'Sangria ou Suprimento devem ser únicos no comprovante não fiscal',
+     'Índice da forma de pagamento nulo não permitido',
+     'UF de destino inválida',
+     'Tipo de transporte incompatível com a UF de destino',
+     'Descrição do primeiro item do Bilhete de passagem diferente de “TARIFA”',
+     'Aguardando impressão de cheque ou autenticação166  Aguardando impressão de cheque ou autenticação',
+     'Programação de CNPJ e IE preenchido com espaços em branco não permitido',
+     'Número de impressões da fita detalhe nesta intervenção técnica esgotado',
+     'Cupom fiscal já sub-totalizado',
+     'Cupom não sub-totalizado',
+     'Acréscimo em sub-total já efetuado',
+     'Desconto em sub-total já efetuado',
+     'Acréscimo com valor nulo não permitido',
+     'Desconto com valor nulo não permitido',
+     'Cancelamento de acréscimo ou desconto em sub-total não permitido',
+     'Data inválida',
+     'Valor do cheque nulo não permitido',
+     'Valor do cheque inválido',
+     'Cheque sem a informação da localidade não permitido',
+     'Cancelamento de acréscimo em item não permitido',
+     'Cancelamento de desconto em item não permitido',
+     'Número máximo de itens atingido',
+     'Número do item nulo não permitido',
+     'Mais que duas alíquotas diferentes no Bilhete de Passagem não permitido',
+     'Acréscimo ou Desconto em item não permitido',
+     'Cancelamento de acréscimo ou desconto em item não permitido',
+     'Clichê já impresso',
+     'Texto opcional do cheque excedeu o máximo de linhas permitido',
+     'Impressão automática no verso não disponível neste equipamento',
+     'Timeout na inserção do cheque',
+     'Overflow na capacidade de texto do comprovante de débito ou crédito',
+     'Programação de espaços entre cupons menor que o mínimo permitido',
+     'Equipamento não possui leitor de cheque',
+     'Programação de alíquota com valor nulo não permitido',
+     'Erro nao documentado',
+     'Parâmetro Baud Rate inválido',
+     'Configuração permitida somente pela porta do fisco',
+     'Valor total do item excede 11 dígitos',
+     'Programação da moeda com espaços em branco não permitido',
+     'Casa decimais devem ser programadas com 2 ou 3',
+     'Erro não documento',
+     'Identificação do consumidor não permitido para sangria ou suprimento',
+     'Casas decimais em quantidade maior que permitida',
+     'Casas decimais do unitário maior que a permitida',
+     'Posição reservada para ICMS',
+     'Posição reservada para ISSQN',
+     'Todas as alíquotas com a mesma vinculação não permitida',
+     'Data de embarque anterior à data de emissão',
+     'Alíquota para ISSQN não permitida sem inicialização da Inscrição Municipal',
+     'Pacote do clichê gráfico fora da seqüência',
+     'Espaço para armazenamento do clichê gráfico esgotado',
+     'Clichê gráfico não disponível para confirmação',
+     'CRC do clichê gráfico diferente do informado',
+     'Intervalo inválido',
+     'Usuário já programado',
+     'Troca de MFD não danificada não permitida',
+     'Detectada abertura do equipamento',
+     'Cancelamento de Acréscimo/Desconto não permitido');</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFBematech.html#ETX">ETX</a></b> = #03 ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFBematech.html#cLIB_Bema">cLIB_Bema</a></b> = 'Bemafi32.dll';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFBematech.html#cLIB_MFD2">cLIB_MFD2</a></b>  = 'BemaMFD2.dll';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFBematech.html#cLIB_MFD">cLIB_MFD</a></b>  = 'BemaMFD.dll';</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ErrosST1"></a><code><b>ErrosST1</b> : array[0..7] of string =
+      ('Número de parâmetros de CMD inválido',
+       'Cupom aberto',
+       'Comando inexistente',
+       'Primeiro dado de CMD não foi ESC (27d)',
+       'Impressora em erro',
+       'Erro no relógio',
+       'Pouco papel',
+       'Fim de papel') ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ErrosST2"></a><code><b>ErrosST2</b> : array[0..7] of string =
+      ('Comando não executado',
+       'CGC/IE do proprietário não programados',
+       'Cancelamento não permitido',
+       'Capacidade de alíquotas programáveis lotada',
+       'Alíquota não programada',
+       'Erro na Memória RAM CMOS não volátil',
+       'Memória fiscal lotada',
+       'Tipo de parâmetro de CMD inválido') ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ErrosST3"></a><code><b>ErrosST3</b>: array [0 .. 218] of string = (
+     'Comando ok',
+     'Comando inválido',
+     'Erro desconhecido',
+     'Número de parâmetro inválido',
+     'Tipo de parâmetro inválido',
+     'Todas alíquotas já programadas',
+     'Totalizador não fiscal já programado',
+     'Cupom fiscal aberto',
+     'Cupom fiscal fechado',
+     'ECF ocupado',
+     'Impressora em erro',
+     'Impressora sem papel',
+     'Impressora com cabeça levantada',
+     'Impressora off line',
+     'Alíquota não programada',
+     'Terminador de string faltando',
+     'Acréscimo ou desconto maior que o total do cupom fiscal',
+     'Cupom fiscal sem item vendido',
+     'Comando não efetivado',
+     'Sem espaço para novas formas de pagamento',
+     'Forma de pagamento não programada',
+     'Índice maior que número de forma de pagamento',
+     'Formas de pagamento encerradas',
+     'Cupom não totalizado',
+     'Comando maior que 7f',
+     'Cupom fiscal aberto e sem item',
+     'Cancelamento não imediatamente após',
+     'Cancelamento já efetuado',
+     'Comprovante de crédito ou débito não permitido ou já emitido',
+     'Meio de pagamento não permite tef',
+     'Sem comprovante não fiscal aberto',
+     'Comprovante de crédito ou débito já aberto',
+     'Reimpressão não permitida',
+     'Comprovante não fiscal já aberto',
+     'Totalizador não fiscal não programado',
+     'Cupom não fiscal sem item vendido',
+     'Acréscimo e desconto maior que total cnf',
+     'Meio de pagamento não indicado',
+     'Meio de pagamento diferente do total de recebimento',
+     'Não permitido mais de uma sangria ou suprimento',
+     'Relatório já programado',
+     'Relatório gerencial não programado',
+     'Relatório gerencial não permitido',
+     'Mfd não inicializada',
+     'Mfd ausente',
+     'Mfd sem número de série',
+     'Mfd já inicializada',
+     'Mfd lotada',
+     'Cupom não fiscal aberto',
+     'Memória fiscal desconectada',
+     'Memória fiscal sem número de série da mfd',
+     'Memória fiscal lotada',
+     'Data inicial inválida',
+     'Data final inválida',
+     'Contador de redução z inicial inválido',
+     'Contador de redução z final inválido',
+     'Erro de alocação',
+     'Dados do RTC incorretos',
+     'Data anterior ao último documento emitido',
+     'Fora de intervenção técnica',
+     'Em intervenção técnica',
+     'Erro na memória de trabalho',
+     'Já houve movimento no dia',
+     'Bloqueio por RZ',
+     'Forma de pagamento aberta',
+     'Aguardando primeiro proprietário',
+     'Aguardando RZ',
+     'Ecf ou loja igual a zero',
+     'Cupom adicional não permitido',
+     'Desconto maior que total vendido em ICMS',
+     'Recebimento não fiscal nulo não permitido',
+     'Acréscimo ou desconto maior que total não fiscal',
+     'Memória fiscal lotada para novo cartucho',
+     'Erro de gravação na MF',
+     'Erro de gravação na MFD',
+     'Dados do RTC anteriores ao último documento armazenado',
+     'Memória fiscal sem espaço para gravar leituras da MFD',
+     'Memória fiscal sem espaço para gravar versão do SB',
+     'Descrição igual a default não permitido',
+     'Extrapolado número de repetições permitidas',
+     'Segunda via do comprovante de crédito ou débito não permitido',
+     'Parcelamento fora da sequência',
+     'Comprovante de crédito ou débito aberto',
+     'Texto com sequência de ESC inválida',
+     'Texto com sequência de ESC incompleta',
+     'Venda com valor nulo',
+     'Estorno de valor nulo',
+     'Forma de pagamento diferente do total da sangria',
+     'Redução não permitida em intervenção técnica',
+     'Aguardando RZ para entrada em intervenção técnica',
+     'Forma de pagamento com valor nulo não permitido',
+     'Acréscimo e desconto maior que valor do item',
+     'Autenticação não permitida',
+     'Timeout na validação',
+     'Comando não executado em impressora bilhete de passagem',
+     'Comando não executado em impressora de Cupom Fiscal',
+     'Cupom Não Fiscal fechado',
+     'Parâmetro não ASCII em campo ASCII',
+     'Parâmetro não ASCII num em campo ASCII num',
+     'Tipo de transporte inválido',
+     'Data e hora inválida',
+     'Sem relatório gerencial',
+     'Número do totalizador não fiscal inválido',
+     'Parâmetro de acréscimo ou desconto inválido',
+     'Acréscimo ou desconto em sangria ou suprimento não permitido',
+     'Número do relatório gerencial inválido',
+     'Forma de pagamento fonte não programada',
+     'Forma de pagamento destino não programada',
+     'Estorno maior que forma pagamento',
+     'Caracter numérico na codificação GT não permitido',
+     'Erro na inicialização da MF',
+     'Nome do totalizador em branco não permitido',
+     'Data e hora anteriores ao último doc armazenado',
+     'Parâmetro de acréscimo ou desconto inválido',
+     'Item anterior aos trezentos últimos',
+     'Item não existe ou já cancelado',
+     'Código com espaços não permitido',
+     'Descrição sem caracter alfabético não permitido',
+     'Acréscimo maior que valor do item',
+     'Desconto maior que valor do item',
+     'Desconto em iss não permitido',
+     'Acréscimo em item já efetuado',
+     'Desconto em item já efetuado',
+     'Erro na Memória Fiscal chamar credenciado',
+     'Aguardando gravação na Memória Fiscal',
+     'Caracter repetido na codificação do GT',
+     'Versão já gravada na memória fiscal',
+     'Estouro de capacidade no cheque',
+     'Timeout na leitura do cheque',
+     'Mês inválido',
+     'Coordenada inválida',
+     'Sobreposição de texto',
+     'Sobreposição de texto no valor',
+     'Sobreposição de texto no extenso',
+     'Sobreposição de texto no favorecido',
+     'Sobreposição de texto na localidade',
+     'Sobreposição de texto no opcional',
+     'Sobreposição de texto no dia',
+     'Sobreposição de texto no mês',
+     'Sobreposição de texto no ano',
+     'Usando MFD de outro ECF',
+     'Primeiro dado diferente de ESC ou 1C',
+     'Não permitido alterar sem intervenção técnica',
+     'Dados da última RZ corrompidos',
+     'Comando não permitido no modo inicialização',
+     'Aguardando acerto de relógio',
+     'MFD já inicializada para outra memória fiscal',
+     'Aguardando acerto do relógio ou desbloqueio pelo teclado',
+     'Valor forma de pagamento maior que máximo permitido',
+     'Razão social em branco',
+     'Nome de fantasia em branco',
+     'Endereço em branco',
+     'Estorno de CDC não permitido',
+     'Dados do proprietário iguais ao atual',
+     'Estorno de forma de pagamento não permitido',
+     'Descrição forma de pagamento igual já programada',
+     'Acerto de horário de verão só imediatamente após Redução Z',
+     'Intervenção técnica não permitida MF reservada para Redução Z',
+     'Senha CNPJ inválida',
+     'Timeout na inicialização de nova MF',
+     'Dados da MFD não encontrados',
+     'Sangria ou Suprimento devem ser únicos no comprovante não fiscal',
+     'Índice da forma de pagamento nulo não permitido',
+     'UF de destino inválida',
+     'Tipo de transporte incompatível com a UF de destino',
+     'Descrição do primeiro item do Bilhete de passagem diferente de “TARIFA”',
+     'Aguardando impressão de cheque ou autenticação166  Aguardando impressão de cheque ou autenticação',
+     'Programação de CNPJ e IE preenchido com espaços em branco não permitido',
+     'Número de impressões da fita detalhe nesta intervenção técnica esgotado',
+     'Cupom fiscal já sub-totalizado',
+     'Cupom não sub-totalizado',
+     'Acréscimo em sub-total já efetuado',
+     'Desconto em sub-total já efetuado',
+     'Acréscimo com valor nulo não permitido',
+     'Desconto com valor nulo não permitido',
+     'Cancelamento de acréscimo ou desconto em sub-total não permitido',
+     'Data inválida',
+     'Valor do cheque nulo não permitido',
+     'Valor do cheque inválido',
+     'Cheque sem a informação da localidade não permitido',
+     'Cancelamento de acréscimo em item não permitido',
+     'Cancelamento de desconto em item não permitido',
+     'Número máximo de itens atingido',
+     'Número do item nulo não permitido',
+     'Mais que duas alíquotas diferentes no Bilhete de Passagem não permitido',
+     'Acréscimo ou Desconto em item não permitido',
+     'Cancelamento de acréscimo ou desconto em item não permitido',
+     'Clichê já impresso',
+     'Texto opcional do cheque excedeu o máximo de linhas permitido',
+     'Impressão automática no verso não disponível neste equipamento',
+     'Timeout na inserção do cheque',
+     'Overflow na capacidade de texto do comprovante de débito ou crédito',
+     'Programação de espaços entre cupons menor que o mínimo permitido',
+     'Equipamento não possui leitor de cheque',
+     'Programação de alíquota com valor nulo não permitido',
+     'Erro nao documentado',
+     'Parâmetro Baud Rate inválido',
+     'Configuração permitida somente pela porta do fisco',
+     'Valor total do item excede 11 dígitos',
+     'Programação da moeda com espaços em branco não permitido',
+     'Casa decimais devem ser programadas com 2 ou 3',
+     'Erro não documento',
+     'Identificação do consumidor não permitido para sangria ou suprimento',
+     'Casas decimais em quantidade maior que permitida',
+     'Casas decimais do unitário maior que a permitida',
+     'Posição reservada para ICMS',
+     'Posição reservada para ISSQN',
+     'Todas as alíquotas com a mesma vinculação não permitida',
+     'Data de embarque anterior à data de emissão',
+     'Alíquota para ISSQN não permitida sem inicialização da Inscrição Municipal',
+     'Pacote do clichê gráfico fora da seqüência',
+     'Espaço para armazenamento do clichê gráfico esgotado',
+     'Clichê gráfico não disponível para confirmação',
+     'CRC do clichê gráfico diferente do informado',
+     'Intervalo inválido',
+     'Usuário já programado',
+     'Troca de MFD não danificada não permitida',
+     'Detectada abertura do equipamento',
+     'Cancelamento de Acréscimo/Desconto não permitido');</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ETX"></a><code><b>ETX</b> = #03 ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+218</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cLIB_Bema"></a><code><b>cLIB_Bema</b> = 'Bemafi32.dll';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cLIB_MFD2"></a><code><b>cLIB_MFD2</b>  = 'BemaMFD2.dll';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cLIB_MFD"></a><code><b>cLIB_MFD</b>  = 'BemaMFD.dll';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:26</em>
+</span>
+</body></html>

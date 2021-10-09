@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: AJBarcode</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit AJBarcode</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td><a class="section"  href="#%40FuncsProcs">Funções e Procedimentos</a></td><td><a class="section"  href="#%40Types">Tipos</a></td><td>Constantes</td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+&nbsp;<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Classes</li><li>Types</li><li>Graphics</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="AJBarcode.TAsBarcode.html"><code>TAsBarcode</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40FuncsProcs"></a><h3 class="summary">Funções e Procedimentos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="AJBarcode.html#CheckSumModulo10">CheckSumModulo10</a></b>(const data:string):string;</code></td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="AJBarcode.html#TBarcodeType">TBarcodeType</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="AJBarcode.html#TBarLineType">TBarLineType</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="AJBarcode.html#TBarcodeOption">TBarcodeOption</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="AJBarcode.html#TShowTextPosition">TShowTextPosition</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="AJBarcode.html#TCheckSumMethod">TCheckSumMethod</a></b> = (...);</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Funções e Procedimentos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CheckSumModulo10"></a><code>function <b>CheckSumModulo10</b>(const data:string):string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+used for EAN 8/13</p>
+</td></tr>
+</table>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TBarcodeType"></a><code><b>TBarcodeType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+bcCode_2_5_interleaved: &nbsp;</li>
+<li>
+bcCode_2_5_industrial: &nbsp;</li>
+<li>
+bcCode_2_5_matrix: &nbsp;</li>
+<li>
+bcCode39: &nbsp;</li>
+<li>
+bcCode39Extended: &nbsp;</li>
+<li>
+bcCode128A: &nbsp;</li>
+<li>
+bcCode128B: &nbsp;</li>
+<li>
+bcCode128C: &nbsp;</li>
+<li>
+bcCode93: &nbsp;</li>
+<li>
+bcCode93Extended: &nbsp;</li>
+<li>
+bcCodeMSI: &nbsp;</li>
+<li>
+bcCodePostNet: &nbsp;</li>
+<li>
+bcCodeCodabar: &nbsp;</li>
+<li>
+bcCodeEAN8: &nbsp;</li>
+<li>
+bcCodeEAN13: &nbsp;</li>
+<li>
+bcCodeUPC_A: &nbsp;</li>
+<li>
+bcCodeUPC_E0: &nbsp;</li>
+<li>
+bcCodeUPC_E1: &nbsp;</li>
+<li>
+bcCodeUPC_Supp2: &nbsp;</li>
+<li>
+bcCodeUPC_Supp5: UPC 2 digit supplemental</li>
+<li>
+bcCodeEAN128A: UPC 5 digit supplemental</li>
+<li>
+bcCodeEAN128B: &nbsp;</li>
+<li>
+bcCodeEAN128C: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TBarLineType"></a><code><b>TBarLineType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+white: &nbsp;</li>
+<li>
+black: &nbsp;</li>
+<li>
+black_half: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TBarcodeOption"></a><code><b>TBarcodeOption</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+black_half means a black line with 2/5 height (used for PostNet)</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+bcoNone: &nbsp;</li>
+<li>
+bcoCode: &nbsp;</li>
+<li>
+bcoTyp: &nbsp;</li>
+<li>
+bcoBoth: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TShowTextPosition"></a><code><b>TShowTextPosition</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Additions from Roberto Parola to improve the text output</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+stpTopLeft: &nbsp;</li>
+<li>
+stpTopRight: &nbsp;</li>
+<li>
+stpTopCenter: &nbsp;</li>
+<li>
+stpBottomLeft: &nbsp;</li>
+<li>
+stpBottomRight: &nbsp;</li>
+<li>
+stpBottomCenter: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TCheckSumMethod"></a><code><b>TCheckSumMethod</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+csmNone: &nbsp;</li>
+<li>
+csmModulo10: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:55</em>
+</span>
+</body></html>

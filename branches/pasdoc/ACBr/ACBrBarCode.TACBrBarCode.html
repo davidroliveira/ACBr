@@ -1,0 +1,875 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrBarCode: Classe TACBrBarCode</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrBarCode"></a><h1 class="cio">Classe TACBrBarCode</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrBarCode.html">ACBrBarCode</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrBarCode = class(TGraphicControl)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+<a class="normal"  href="ACBrBase.html">ACBrBase</a>,</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TGraphicControl</li>
+<li class="thisitem">TACBrBarCode</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBarCode.TACBrBarCode.html#fsBarCode">fsBarCode</a></b>: <a   href="AJBarcode.TAsBarcode.html">TAsBarcode</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBarCode.TACBrBarCode.html#fsTransparent">fsTransparent</a></b>: Boolean;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#SetTransparent">SetTransparent</a></b>(const Value: Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBarCode.TACBrBarCode.html#GetAngle">GetAngle</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBarCode.TACBrBarCode.html#GetCheckSum">GetCheckSum</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBarCode.TACBrBarCode.html#GetCheckSumMethod">GetCheckSumMethod</a></b>: <a   href="AJBarcode.html#TCheckSumMethod">TCheckSumMethod</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBarCode.TACBrBarCode.html#GetColor">GetColor</a></b>: TColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBarCode.TACBrBarCode.html#GetColorBar">GetColorBar</a></b>: TColor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBarCode.TACBrBarCode.html#GetFShowTextPosition">GetFShowTextPosition</a></b>: <a   href="AJBarcode.html#TShowTextPosition">TShowTextPosition</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBarCode.TACBrBarCode.html#GetModul">GetModul</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBarCode.TACBrBarCode.html#GetRatio">GetRatio</a></b>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBarCode.TACBrBarCode.html#GetShowText">GetShowText</a></b>: <a   href="AJBarcode.html#TBarcodeOption">TBarcodeOption</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBarCode.TACBrBarCode.html#GetShowTextFont">GetShowTextFont</a></b>: <a   href="ACBrNFeDANFERaveCB.html#TFont">TFont</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBarCode.TACBrBarCode.html#GetBarCodeText">GetBarCodeText</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBarCode.TACBrBarCode.html#GetTyp">GetTyp</a></b>: <a   href="AJBarcode.html#TBarcodeType">TBarcodeType</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#SetAngle">SetAngle</a></b>(const Value: Double);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#SetCheckSum">SetCheckSum</a></b>(const Value: Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#SetCheckSumMethod">SetCheckSumMethod</a></b>(const Value: <a   href="AJBarcode.html#TCheckSumMethod">TCheckSumMethod</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#SetColor">SetColor</a></b>(const Value: TColor);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#SetColorBar">SetColorBar</a></b>(const Value: TColor);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#SetModul">SetModul</a></b>(const Value: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#SetRatio">SetRatio</a></b>(const Value: Double);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#SetShowText">SetShowText</a></b>(const Value: <a   href="AJBarcode.html#TBarcodeOption">TBarcodeOption</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#SetShowTextFont">SetShowTextFont</a></b>(const Value: <a   href="ACBrNFeDANFERaveCB.html#TFont">TFont</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#SetShowTextPosition">SetShowTextPosition</a></b>(const Value: <a   href="AJBarcode.html#TShowTextPosition">TShowTextPosition</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#SetBarCodeText">SetBarCodeText</a></b>(const Value: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#SetTyp">SetTyp</a></b>(const Value: <a   href="AJBarcode.html#TBarcodeType">TBarcodeType</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#BarcodeChange">BarcodeChange</a></b>(Sender: TObject);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#Paint">Paint</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#Resize">Resize</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrBarCode.TACBrBarCode.html#Create">Create</a></b>(AOwner: TComponent ); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrBarCode.TACBrBarCode.html#Destroy">Destroy</a></b> ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#DrawBarcode">DrawBarcode</a></b>(Canvas:TCanvas);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrBarCode.TACBrBarCode.html#DrawText">DrawText</a></b>(Canvas:TCanvas);</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#BarCode">BarCode</a></b> : <a   href="AJBarcode.TAsBarcode.html">TAsBarcode</a> read <a   href="ACBrBarCode.TACBrBarCode.html#fsBarCode">fsBarCode</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#Canvas">Canvas</a></b> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#Text">Text</a></b> : String  read <a   href="ACBrBarCode.TACBrBarCode.html#GetBarCodeText">GetBarCodeText</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetBarCodeText">SetBarCodeText</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#Modul">Modul</a></b>  : Integer      read <a   href="ACBrBarCode.TACBrBarCode.html#GetModul">GetModul</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetModul">SetModul</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#Ratio">Ratio</a></b>  : Double       read <a   href="ACBrBarCode.TACBrBarCode.html#GetRatio">GetRatio</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetRatio">SetRatio</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#Typ">Typ</a></b>    : <a   href="AJBarcode.html#TBarcodeType">TBarcodeType</a> read <a   href="ACBrBarCode.TACBrBarCode.html#GetTyp">GetTyp</a>   write <a   href="ACBrBarCode.TACBrBarCode.html#SetTyp">SetTyp</a>
+      default bcCode_2_5_interleaved;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#Checksum">Checksum</a></b>       : Boolean read <a   href="ACBrBarCode.TACBrBarCode.html#GetCheckSum">GetCheckSum</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetCheckSum">SetCheckSum</a>
+       default FALSE;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#CheckSumMethod">CheckSumMethod</a></b> : <a   href="AJBarcode.html#TCheckSumMethod">TCheckSumMethod</a> read <a   href="ACBrBarCode.TACBrBarCode.html#GetCheckSumMethod">GetCheckSumMethod</a>
+       write <a   href="ACBrBarCode.TACBrBarCode.html#SetCheckSumMethod">SetCheckSumMethod</a> default csmModulo10;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#Angle">Angle</a></b> : Double read <a   href="ACBrBarCode.TACBrBarCode.html#GetAngle">GetAngle</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetAngle">SetAngle</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#ShowText">ShowText</a></b> : <a   href="AJBarcode.html#TBarcodeOption">TBarcodeOption</a> read <a   href="ACBrBarCode.TACBrBarCode.html#GetShowText">GetShowText</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetShowText">SetShowText</a>
+       default bcoNone;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#ShowTextFont">ShowTextFont</a></b>: <a   href="ACBrNFeDANFERaveCB.html#TFont">TFont</a> read <a   href="ACBrBarCode.TACBrBarCode.html#GetShowTextFont">GetShowTextFont</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetShowTextFont">SetShowTextFont</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#ShowTextPosition">ShowTextPosition</a></b>: <a   href="AJBarcode.html#TShowTextPosition">TShowTextPosition</a> read <a   href="ACBrBarCode.TACBrBarCode.html#GetFShowTextPosition">GetFShowTextPosition</a>
+       write <a   href="ACBrBarCode.TACBrBarCode.html#SetShowTextPosition">SetShowTextPosition</a> default stpTopLeft;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#Color">Color</a></b>    : TColor read <a   href="ACBrBarCode.TACBrBarCode.html#GetColor">GetColor</a>    write <a   href="ACBrBarCode.TACBrBarCode.html#SetColor">SetColor</a>    default clWhite;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#ColorBar">ColorBar</a></b> : TColor read <a   href="ACBrBarCode.TACBrBarCode.html#GetColorBar">GetColorBar</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetColorBar">SetColorBar</a> default clBlack;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#Align">Align</a></b> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#Anchors">Anchors</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#Transparent">Transparent</a></b>: Boolean read <a   href="ACBrBarCode.TACBrBarCode.html#fsTransparent">fsTransparent</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetTransparent">SetTransparent</a> default False;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#Constraints">Constraints</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#DragMode">DragMode</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#Enabled">Enabled</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#ParentShowHint">ParentShowHint</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#PopupMenu">PopupMenu</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#ShowHint">ShowHint</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#Visible">Visible</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#OnClick">OnClick</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#OnContextPopup">OnContextPopup</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#OnDblClick">OnDblClick</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#OnDragDrop">OnDragDrop</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#OnDragOver">OnDragOver</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#OnEndDrag">OnEndDrag</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#OnMouseDown">OnMouseDown</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#OnMouseMove">OnMouseMove</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#OnMouseUp">OnMouseUp</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBarCode.TACBrBarCode.html#OnStartDrag">OnStartDrag</a></b>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsBarCode"></a><code><b>fsBarCode</b>: <a   href="AJBarcode.TAsBarcode.html">TAsBarcode</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+fsAbout: <a class="normal"  href="ACBrBase.html#TACBrAboutInfo">TACBrAboutInfo</a>;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsTransparent"></a><code><b>fsTransparent</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetTransparent"></a><code>procedure <b>SetTransparent</b>(const Value: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetAngle"></a><code>function <b>GetAngle</b>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetCheckSum"></a><code>function <b>GetCheckSum</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetCheckSumMethod"></a><code>function <b>GetCheckSumMethod</b>: <a   href="AJBarcode.html#TCheckSumMethod">TCheckSumMethod</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetColor"></a><code>function <b>GetColor</b>: TColor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetColorBar"></a><code>function <b>GetColorBar</b>: TColor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetFShowTextPosition"></a><code>function <b>GetFShowTextPosition</b>: <a   href="AJBarcode.html#TShowTextPosition">TShowTextPosition</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetModul"></a><code>function <b>GetModul</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetRatio"></a><code>function <b>GetRatio</b>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetShowText"></a><code>function <b>GetShowText</b>: <a   href="AJBarcode.html#TBarcodeOption">TBarcodeOption</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetShowTextFont"></a><code>function <b>GetShowTextFont</b>: <a   href="ACBrNFeDANFERaveCB.html#TFont">TFont</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetBarCodeText"></a><code>function <b>GetBarCodeText</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetTyp"></a><code>function <b>GetTyp</b>: <a   href="AJBarcode.html#TBarcodeType">TBarcodeType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetAngle"></a><code>procedure <b>SetAngle</b>(const Value: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetCheckSum"></a><code>procedure <b>SetCheckSum</b>(const Value: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetCheckSumMethod"></a><code>procedure <b>SetCheckSumMethod</b>(const Value: <a   href="AJBarcode.html#TCheckSumMethod">TCheckSumMethod</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetColor"></a><code>procedure <b>SetColor</b>(const Value: TColor);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetColorBar"></a><code>procedure <b>SetColorBar</b>(const Value: TColor);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetModul"></a><code>procedure <b>SetModul</b>(const Value: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetRatio"></a><code>procedure <b>SetRatio</b>(const Value: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetShowText"></a><code>procedure <b>SetShowText</b>(const Value: <a   href="AJBarcode.html#TBarcodeOption">TBarcodeOption</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetShowTextFont"></a><code>procedure <b>SetShowTextFont</b>(const Value: <a   href="ACBrNFeDANFERaveCB.html#TFont">TFont</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetShowTextPosition"></a><code>procedure <b>SetShowTextPosition</b>(const Value: <a   href="AJBarcode.html#TShowTextPosition">TShowTextPosition</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetBarCodeText"></a><code>procedure <b>SetBarCodeText</b>(const Value: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetTyp"></a><code>procedure <b>SetTyp</b>(const Value: <a   href="AJBarcode.html#TBarcodeType">TBarcodeType</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="BarcodeChange"></a><code>procedure <b>BarcodeChange</b>(Sender: TObject);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Paint"></a><code>procedure <b>Paint</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Resize"></a><code>procedure <b>Resize</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent ); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawBarcode"></a><code>procedure <b>DrawBarcode</b>(Canvas:TCanvas);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawText"></a><code>procedure <b>DrawText</b>(Canvas:TCanvas);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BarCode"></a><code>property <b>BarCode</b> : <a   href="AJBarcode.TAsBarcode.html">TAsBarcode</a> read <a   href="ACBrBarCode.TACBrBarCode.html#fsBarCode">fsBarCode</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Canvas"></a><code>property <b>Canvas</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Text"></a><code>property <b>Text</b> : String  read <a   href="ACBrBarCode.TACBrBarCode.html#GetBarCodeText">GetBarCodeText</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetBarCodeText">SetBarCodeText</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Modul"></a><code>property <b>Modul</b>  : Integer      read <a   href="ACBrBarCode.TACBrBarCode.html#GetModul">GetModul</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetModul">SetModul</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Width of the smallest line in a <a class="normal"  href="ACBrBarCode.TACBrBarCode.html#BarCode">Barcode</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Ratio"></a><code>property <b>Ratio</b>  : Double       read <a   href="ACBrBarCode.TACBrBarCode.html#GetRatio">GetRatio</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetRatio">SetRatio</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Typ"></a><code>property <b>Typ</b>    : <a   href="AJBarcode.html#TBarcodeType">TBarcodeType</a> read <a   href="ACBrBarCode.TACBrBarCode.html#GetTyp">GetTyp</a>   write <a   href="ACBrBarCode.TACBrBarCode.html#SetTyp">SetTyp</a>
+      default bcCode_2_5_interleaved;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Checksum"></a><code>property <b>Checksum</b>       : Boolean read <a   href="ACBrBarCode.TACBrBarCode.html#GetCheckSum">GetCheckSum</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetCheckSum">SetCheckSum</a>
+       default FALSE;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+build <code>CheckSum</code> ?</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CheckSumMethod"></a><code>property <b>CheckSumMethod</b> : <a   href="AJBarcode.html#TCheckSumMethod">TCheckSumMethod</a> read <a   href="ACBrBarCode.TACBrBarCode.html#GetCheckSumMethod">GetCheckSumMethod</a>
+       write <a   href="ACBrBarCode.TACBrBarCode.html#SetCheckSumMethod">SetCheckSumMethod</a> default csmModulo10;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Angle"></a><code>property <b>Angle</b> : Double read <a   href="ACBrBarCode.TACBrBarCode.html#GetAngle">GetAngle</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetAngle">SetAngle</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+0 - 360 degree</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ShowText"></a><code>property <b>ShowText</b> : <a   href="AJBarcode.html#TBarcodeOption">TBarcodeOption</a> read <a   href="ACBrBarCode.TACBrBarCode.html#GetShowText">GetShowText</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetShowText">SetShowText</a>
+       default bcoNone;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ShowTextFont"></a><code>property <b>ShowTextFont</b>: <a   href="ACBrNFeDANFERaveCB.html#TFont">TFont</a> read <a   href="ACBrBarCode.TACBrBarCode.html#GetShowTextFont">GetShowTextFont</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetShowTextFont">SetShowTextFont</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ShowTextPosition"></a><code>property <b>ShowTextPosition</b>: <a   href="AJBarcode.html#TShowTextPosition">TShowTextPosition</a> read <a   href="ACBrBarCode.TACBrBarCode.html#GetFShowTextPosition">GetFShowTextPosition</a>
+       write <a   href="ACBrBarCode.TACBrBarCode.html#SetShowTextPosition">SetShowTextPosition</a> default stpTopLeft;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Color"></a><code>property <b>Color</b>    : TColor read <a   href="ACBrBarCode.TACBrBarCode.html#GetColor">GetColor</a>    write <a   href="ACBrBarCode.TACBrBarCode.html#SetColor">SetColor</a>    default clWhite;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ColorBar"></a><code>property <b>ColorBar</b> : TColor read <a   href="ACBrBarCode.TACBrBarCode.html#GetColorBar">GetColorBar</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetColorBar">SetColorBar</a> default clBlack;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Align"></a><code>property <b>Align</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Anchors"></a><code>property <b>Anchors</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Transparent"></a><code>property <b>Transparent</b>: Boolean read <a   href="ACBrBarCode.TACBrBarCode.html#fsTransparent">fsTransparent</a> write <a   href="ACBrBarCode.TACBrBarCode.html#SetTransparent">SetTransparent</a> default False;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Constraints"></a><code>property <b>Constraints</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DragMode"></a><code>property <b>DragMode</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Enabled"></a><code>property <b>Enabled</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ParentShowHint"></a><code>property <b>ParentShowHint</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="PopupMenu"></a><code>property <b>PopupMenu</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ShowHint"></a><code>property <b>ShowHint</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Visible"></a><code>property <b>Visible</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnClick"></a><code>property <b>OnClick</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnContextPopup"></a><code>property <b>OnContextPopup</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnDblClick"></a><code>property <b>OnDblClick</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnDragDrop"></a><code>property <b>OnDragDrop</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnDragOver"></a><code>property <b>OnDragOver</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnEndDrag"></a><code>property <b>OnEndDrag</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnMouseDown"></a><code>property <b>OnMouseDown</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnMouseMove"></a><code>property <b>OnMouseMove</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnMouseUp"></a><code>property <b>OnMouseUp</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnStartDrag"></a><code>property <b>OnStartDrag</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:19</em>
+</span>
+</body></html>

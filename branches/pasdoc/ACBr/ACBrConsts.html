@@ -1,0 +1,753 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrConsts</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrConsts</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td>Uses</td><td>Classes, Interfaces, Objetos e Registros</td><td>Funções e Procedimentos</td><td>Tipos</td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF}</p>
+<a name="%40Uses"></a><h2 class="overview">Visão Geral</h2>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#ACBR_VERSAO">ACBR_VERSAO</a></b> = '0.9.0a';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#CR">CR</a></b> = #13 ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#LF">LF</a></b> = #10 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#FF">FF</a></b> = #12 ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cTimeout">cTimeout</a></b> = 3 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrDeviceAtivarPortaException">cACBrDeviceAtivarPortaException</a></b>    = 'Porta não definida' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrDeviceAtivarException">cACBrDeviceAtivarException</a></b>         = 'Erro abrindo: %s ' + <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +' %s ' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrDeviceSetBaudException">cACBrDeviceSetBaudException</a></b>        = 'Valor deve estar na faixa de 50 a 4000000.'+#10+
+                                       'Normalmente os equipamentos Seriais utilizam: 9600' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrDeviceSetDataException">cACBrDeviceSetDataException</a></b>        = 'Valor deve estar na faixa de 5 a 8.'+#10+
+                                       'Normalmente os equipamentos Seriais utilizam: 7 ou 8' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrDeviceSetPortaException">cACBrDeviceSetPortaException</a></b>       = 'Não é possível mudar a Porta com o Dispositivo Ativo' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrDeviceEnviaStrThreadException">cACBrDeviceEnviaStrThreadException</a></b> = 'Erro gravando em: %s ' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrTempoInicioMsg">cACBrTempoInicioMsg</a></b>                  = 3 ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrMsgAguardando">cACBrMsgAguardando</a></b>                   = 'Aguardando a resposta da Impressora: %d segundos' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrMsgTrabalhando">cACBrMsgTrabalhando</a></b>                  = 'Impressora está trabalhando' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrMsgPoucoPapel">cACBrMsgPoucoPapel</a></b>                   = 30 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrMsgRelatorio">cACBrMsgRelatorio</a></b>                    = 'Imprimindo %s  %dª Via ' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrPausaRelatorio">cACBrPausaRelatorio</a></b>                  = 5 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrMsgPausaRelatorio">cACBrMsgPausaRelatorio</a></b>               = 'Destaque a %dª via, &lt;ENTER&gt; proxima, %d seg.';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrLinhasEntreCupons">cACBrLinhasEntreCupons</a></b>               = 7 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrMaxLinhasBuffer">cACBrMaxLinhasBuffer</a></b>                 = 0 ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrIntervaloAposComando">cACBrIntervaloAposComando</a></b>            = 100 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFAliquotaSetTipoException">cACBrECFAliquotaSetTipoException</a></b>     = 'Valores válidos para TACBrECFAliquota.Tipo: &quot;T&quot; - ICMS ou &quot;S&quot; - ISS' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFConsumidorCPFCNPJException">cACBrECFConsumidorCPFCNPJException</a></b>   = 'CPF/CNPJ Não informado' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFConsumidorNomeException">cACBrECFConsumidorNomeException</a></b>      = 'Para informar o Endereço é necessário informar o Nome' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFClassCreateException">cACBrECFClassCreateException</a></b>         = 'Essa Classe deve ser instanciada por TACBrECF' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFNaoInicializadoException">cACBrECFNaoInicializadoException</a></b>     = 'Componente ACBrECF não está Ativo' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFOcupadoException">cACBrECFOcupadoException</a></b>             = 'Componente ACBrECF ocupado' + <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                                         'Aguardando resposta do comando anterior' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFSemRespostaException">cACBrECFSemRespostaException</a></b>         = 'Impressora %s não está respondendo' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFCmdSemRespostaException">cACBrECFCmdSemRespostaException</a></b>      = 'Comandos não estão sendo enviados para Impressora %s ' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFEnviaCmdSemRespostaException">cACBrECFEnviaCmdSemRespostaException</a></b> = 'Erro ao enviar comandos para a Impressora %s ' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFDoOnMsgSemRespostaRetentar">cACBrECFDoOnMsgSemRespostaRetentar</a></b>   = 'A impressora %s não está repondendo.' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFVerificaFimLeituraException">cACBrECFVerificaFimLeituraException</a></b>  = 'Erro Function VerificaFimLeitura não implementada em %s ' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFVerificaEmLinhaMsgRetentar">cACBrECFVerificaEmLinhaMsgRetentar</a></b>   = 'A impressora %s não está pronta.' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFVerificaEmLinhaException">cACBrECFVerificaEmLinhaException</a></b>     = 'Impressora %s não está em linha' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFPodeAbrirCupomRequerX">cACBrECFPodeAbrirCupomRequerX</a></b>        = 'A impressora %s requer Leitura X todo inicio de dia.'+#10+
+                                         ' Imprima uma Leitura X para poder vender' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFPodeAbrirCupomRequerZ">cACBrECFPodeAbrirCupomRequerZ</a></b>        = 'Redução Z de dia anterior não emitida.'+#10+
+                                         ' Imprima uma Redução Z para poder vender' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFPodeAbrirCupomBloqueada">cACBrECFPodeAbrirCupomBloqueada</a></b>      = 'Reduçao Z de hoje já emitida, ECF bloqueado até as 00:00' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFPodeAbrirCupomCFAberto">cACBrECFPodeAbrirCupomCFAberto</a></b>       = 'Cupom Fiscal aberto' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFPodeAbrirCupomNaoAtivada">cACBrECFPodeAbrirCupomNaoAtivada</a></b>     = 'Impressora nao foi Inicializada (Ativo = false)' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFPodeAbrirCupomEstado">cACBrECFPodeAbrirCupomEstado</a></b>         = 'Estado da impressora %s  é '+<a   href="ACBrD5.html#sLineBreak">sLineBreak</a>+' %s (não é Livre) ' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFAbreGavetaException">cACBrECFAbreGavetaException</a></b>          = 'A Impressora %s não manipula Gavetas' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFImpactoAgulhasException">cACBrECFImpactoAgulhasException</a></b>      = 'A Impressora %s não permite ajustar o Impacto das Agulhas' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFImprimeChequeException">cACBrECFImprimeChequeException</a></b>       = 'Rotina de Impressão de Cheques não implementada para '+
+                                         'Impressora %s ';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFLeituraCMC7Exception">cACBrECFLeituraCMC7Exception</a></b>         = 'Rotina de Leitura de CMC7 de Cheques não implementada para '+
+                                         'Impressora %s ';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFAchaCNFException">cACBrECFAchaCNFException</a></b>             = 'Não existe nenhum Comprovante Não Fiscal '+
+                                         'cadastrado como: &quot;%s&quot; ' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFAchaFPGException">cACBrECFAchaFPGException</a></b>             = 'Não existe nenhuma Forma de Pagamento '+
+                                         'cadastrada como: &quot;%s&quot; ' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFCMDInvalidoException">cACBrECFCMDInvalidoException</a></b>         = 'Procedure: %s '+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                                         ' não implementada para a Impressora: %s'+<a   href="ACBrD5.html#sLineBreak">sLineBreak</a> + <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                                         'Ajude no desenvolvimento do ACBrECF. '+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a>+
+                                         'Acesse nosso Forum em: http://acbr.sf.net/' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFDoOnMsgPoucoPapel">cACBrECFDoOnMsgPoucoPapel</a></b>            = 'Detectado pouco papel' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFDoOnMsgRetentar">cACBrECFDoOnMsgRetentar</a></b>              = 'Deseja tentar novamente ?' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFAchaICMSAliquotaInvalida">cACBrECFAchaICMSAliquotaInvalida</a></b>     = 'Aliquota inválida: ' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFAchaICMSCMDInvalido">cACBrECFAchaICMSCMDInvalido</a></b>          = 'Aliquota não encontrada: ' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFAbrindoRelatorioGerencial">cACBrECFAbrindoRelatorioGerencial</a></b>    = 'Abrindo Relatório Gerencial, aguarde %d seg' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFFechandoRelatorioGerencial">cACBrECFFechandoRelatorioGerencial</a></b>   = 'Fechando Relatório Gerencial' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFFormMsgDoProcedureException">cACBrECFFormMsgDoProcedureException</a></b>  = 'Erro. Chamada recurssiva de FormMsgDoProcedure' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFSetModeloException">cACBrECFSetModeloException</a></b>             = 'Não é possível mudar o Modelo com o ECF Ativo' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFModeloNaoDefinidoException">cACBrECFModeloNaoDefinidoException</a></b>     = 'Modelo não definido' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFModeloBuscaPortaException">cACBrECFModeloBuscaPortaException</a></b>      = 'Modelo: %s não consegue efetuar busca automática de Porta'+<a   href="ACBrD5.html#sLineBreak">sLineBreak</a>+
+                                           'Favor definir a Porta Ex: (COM1, LPT1, /dev/lp0, etc)' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFMsgDoAcharPorta">cACBrECFMsgDoAcharPorta</a></b>                = 'Procurando por ECF: %s na porta: %s ' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFSetDecimaisPrecoException">cACBrECFSetDecimaisPrecoException</a></b>      = 'Valor de DecimaisPreco deve estar entre 0-3' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFSetDecimaisQtdException">cACBrECFSetDecimaisQtdException</a></b>        = 'Valor de DecimaisQtd deve estar entre 0-4' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFVendeItemQtdeException">cACBrECFVendeItemQtdeException</a></b>         = 'Quantidade deve ser superior a 0.' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFVendeItemValorUnitException">cACBrECFVendeItemValorUnitException</a></b>    = 'Valor Unitario deve ser superior a 0.' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFVendeItemDescAcreException">cACBrECFVendeItemDescAcreException</a></b>     = 'ValorDescontoAcrescimo não pode ser negativo' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFVendeItemAliqICMSException">cACBrECFVendeItemAliqICMSException</a></b>     = 'Aliquota de ICMS não pode ser vazia.' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFAchaFPGIndiceException">cACBrECFAchaFPGIndiceException</a></b>         = 'Forma de Pagamento: %s inválida' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFFPGPermiteVinculadoException">cACBrECFFPGPermiteVinculadoException</a></b>   = 'Forma de Pagamento: %s '+#10+
+                                           'não permite Cupom Vinculado' ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFRegistraItemNaoFiscalException">cACBrECFRegistraItemNaoFiscalException</a></b> = 'Comprovante não fiscal: %s inválido' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrConsts.html#cACBrECFSetRFDException">cACBrECFSetRFDException</a></b>                = 'Não é possível mudar ACBrECF.RFD com o componente ativo' ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ACBR_VERSAO"></a><code><b>ACBR_VERSAO</b> = '0.9.0a';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* Unit <a class="normal"  href="ACBrBase.html">ACBrBase</a> *</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CR"></a><code><b>CR</b> = #13 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="LF"></a><code><b>LF</b> = #10 ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Carriage Return, retorno de carro</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FF"></a><code><b>FF</b> = #12 ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Line Feed, Pulo de Linha</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cTimeout"></a><code><b>cTimeout</b> = 3 ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Form Feed, Pulo de Pagina</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrDeviceAtivarPortaException"></a><code><b>cACBrDeviceAtivarPortaException</b>    = 'Porta não definida' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Tempo PADRAO para msg de falha de comunicacao</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrDeviceAtivarException"></a><code><b>cACBrDeviceAtivarException</b>         = 'Erro abrindo: %s ' + <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +' %s ' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrDeviceSetBaudException"></a><code><b>cACBrDeviceSetBaudException</b>        = 'Valor deve estar na faixa de 50 a 4000000.'+#10+
+                                       'Normalmente os equipamentos Seriais utilizam: 9600' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrDeviceSetDataException"></a><code><b>cACBrDeviceSetDataException</b>        = 'Valor deve estar na faixa de 5 a 8.'+#10+
+                                       'Normalmente os equipamentos Seriais utilizam: 7 ou 8' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrDeviceSetPortaException"></a><code><b>cACBrDeviceSetPortaException</b>       = 'Não é possível mudar a Porta com o Dispositivo Ativo' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrDeviceEnviaStrThreadException"></a><code><b>cACBrDeviceEnviaStrThreadException</b> = 'Erro gravando em: %s ' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrTempoInicioMsg"></a><code><b>cACBrTempoInicioMsg</b>                  = 3 ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* Unit <a class="normal"  href="ACBrECFClass.html">ACBrECFClass</a> *</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrMsgAguardando"></a><code><b>cACBrMsgAguardando</b>                   = 'Aguardando a resposta da Impressora: %d segundos' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Tempo para iniciar a exibiçao da mensagem Aguardando a Resposta da Impressora'</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrMsgTrabalhando"></a><code><b>cACBrMsgTrabalhando</b>                  = 'Impressora está trabalhando' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrMsgPoucoPapel"></a><code><b>cACBrMsgPoucoPapel</b>                   = 30 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrMsgRelatorio"></a><code><b>cACBrMsgRelatorio</b>                    = 'Imprimindo %s  %dª Via ' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Exibe alerta de Pouco Papel somente a cada 30 segundos</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrPausaRelatorio"></a><code><b>cACBrPausaRelatorio</b>                  = 5 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrMsgPausaRelatorio"></a><code><b>cACBrMsgPausaRelatorio</b>               = 'Destaque a %dª via, &lt;ENTER&gt; proxima, %d seg.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrLinhasEntreCupons"></a><code><b>cACBrLinhasEntreCupons</b>               = 7 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrMaxLinhasBuffer"></a><code><b>cACBrMaxLinhasBuffer</b>                 = 0 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrIntervaloAposComando"></a><code><b>cACBrIntervaloAposComando</b>            = 100 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFAliquotaSetTipoException"></a><code><b>cACBrECFAliquotaSetTipoException</b>     = 'Valores válidos para TACBrECFAliquota.Tipo: &quot;T&quot; - ICMS ou &quot;S&quot; - ISS' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Tempo em milisegundos a esperar apos o termino de EnviaComando</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFConsumidorCPFCNPJException"></a><code><b>cACBrECFConsumidorCPFCNPJException</b>   = 'CPF/CNPJ Não informado' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFConsumidorNomeException"></a><code><b>cACBrECFConsumidorNomeException</b>      = 'Para informar o Endereço é necessário informar o Nome' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFClassCreateException"></a><code><b>cACBrECFClassCreateException</b>         = 'Essa Classe deve ser instanciada por TACBrECF' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFNaoInicializadoException"></a><code><b>cACBrECFNaoInicializadoException</b>     = 'Componente ACBrECF não está Ativo' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFOcupadoException"></a><code><b>cACBrECFOcupadoException</b>             = 'Componente ACBrECF ocupado' + <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                                         'Aguardando resposta do comando anterior' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFSemRespostaException"></a><code><b>cACBrECFSemRespostaException</b>         = 'Impressora %s não está respondendo' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFCmdSemRespostaException"></a><code><b>cACBrECFCmdSemRespostaException</b>      = 'Comandos não estão sendo enviados para Impressora %s ' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFEnviaCmdSemRespostaException"></a><code><b>cACBrECFEnviaCmdSemRespostaException</b> = 'Erro ao enviar comandos para a Impressora %s ' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFDoOnMsgSemRespostaRetentar"></a><code><b>cACBrECFDoOnMsgSemRespostaRetentar</b>   = 'A impressora %s não está repondendo.' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFVerificaFimLeituraException"></a><code><b>cACBrECFVerificaFimLeituraException</b>  = 'Erro Function VerificaFimLeitura não implementada em %s ' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFVerificaEmLinhaMsgRetentar"></a><code><b>cACBrECFVerificaEmLinhaMsgRetentar</b>   = 'A impressora %s não está pronta.' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFVerificaEmLinhaException"></a><code><b>cACBrECFVerificaEmLinhaException</b>     = 'Impressora %s não está em linha' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFPodeAbrirCupomRequerX"></a><code><b>cACBrECFPodeAbrirCupomRequerX</b>        = 'A impressora %s requer Leitura X todo inicio de dia.'+#10+
+                                         ' Imprima uma Leitura X para poder vender' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFPodeAbrirCupomRequerZ"></a><code><b>cACBrECFPodeAbrirCupomRequerZ</b>        = 'Redução Z de dia anterior não emitida.'+#10+
+                                         ' Imprima uma Redução Z para poder vender' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFPodeAbrirCupomBloqueada"></a><code><b>cACBrECFPodeAbrirCupomBloqueada</b>      = 'Reduçao Z de hoje já emitida, ECF bloqueado até as 00:00' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFPodeAbrirCupomCFAberto"></a><code><b>cACBrECFPodeAbrirCupomCFAberto</b>       = 'Cupom Fiscal aberto' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFPodeAbrirCupomNaoAtivada"></a><code><b>cACBrECFPodeAbrirCupomNaoAtivada</b>     = 'Impressora nao foi Inicializada (Ativo = false)' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFPodeAbrirCupomEstado"></a><code><b>cACBrECFPodeAbrirCupomEstado</b>         = 'Estado da impressora %s  é '+<a   href="ACBrD5.html#sLineBreak">sLineBreak</a>+' %s (não é Livre) ' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFAbreGavetaException"></a><code><b>cACBrECFAbreGavetaException</b>          = 'A Impressora %s não manipula Gavetas' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFImpactoAgulhasException"></a><code><b>cACBrECFImpactoAgulhasException</b>      = 'A Impressora %s não permite ajustar o Impacto das Agulhas' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFImprimeChequeException"></a><code><b>cACBrECFImprimeChequeException</b>       = 'Rotina de Impressão de Cheques não implementada para '+
+                                         'Impressora %s ';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFLeituraCMC7Exception"></a><code><b>cACBrECFLeituraCMC7Exception</b>         = 'Rotina de Leitura de CMC7 de Cheques não implementada para '+
+                                         'Impressora %s ';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFAchaCNFException"></a><code><b>cACBrECFAchaCNFException</b>             = 'Não existe nenhum Comprovante Não Fiscal '+
+                                         'cadastrado como: &quot;%s&quot; ' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFAchaFPGException"></a><code><b>cACBrECFAchaFPGException</b>             = 'Não existe nenhuma Forma de Pagamento '+
+                                         'cadastrada como: &quot;%s&quot; ' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFCMDInvalidoException"></a><code><b>cACBrECFCMDInvalidoException</b>         = 'Procedure: %s '+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                                         ' não implementada para a Impressora: %s'+<a   href="ACBrD5.html#sLineBreak">sLineBreak</a> + <a   href="ACBrD5.html#sLineBreak">sLineBreak</a> +
+                                         'Ajude no desenvolvimento do ACBrECF. '+ <a   href="ACBrD5.html#sLineBreak">sLineBreak</a>+
+                                         'Acesse nosso Forum em: http://acbr.sf.net/' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFDoOnMsgPoucoPapel"></a><code><b>cACBrECFDoOnMsgPoucoPapel</b>            = 'Detectado pouco papel' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFDoOnMsgRetentar"></a><code><b>cACBrECFDoOnMsgRetentar</b>              = 'Deseja tentar novamente ?' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFAchaICMSAliquotaInvalida"></a><code><b>cACBrECFAchaICMSAliquotaInvalida</b>     = 'Aliquota inválida: ' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFAchaICMSCMDInvalido"></a><code><b>cACBrECFAchaICMSCMDInvalido</b>          = 'Aliquota não encontrada: ' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFAbrindoRelatorioGerencial"></a><code><b>cACBrECFAbrindoRelatorioGerencial</b>    = 'Abrindo Relatório Gerencial, aguarde %d seg' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFFechandoRelatorioGerencial"></a><code><b>cACBrECFFechandoRelatorioGerencial</b>   = 'Fechando Relatório Gerencial' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFFormMsgDoProcedureException"></a><code><b>cACBrECFFormMsgDoProcedureException</b>  = 'Erro. Chamada recurssiva de FormMsgDoProcedure' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFSetModeloException"></a><code><b>cACBrECFSetModeloException</b>             = 'Não é possível mudar o Modelo com o ECF Ativo' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* Unit <a class="normal"  href="ACBrECF.html">ACBrECF</a> *</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFModeloNaoDefinidoException"></a><code><b>cACBrECFModeloNaoDefinidoException</b>     = 'Modelo não definido' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFModeloBuscaPortaException"></a><code><b>cACBrECFModeloBuscaPortaException</b>      = 'Modelo: %s não consegue efetuar busca automática de Porta'+<a   href="ACBrD5.html#sLineBreak">sLineBreak</a>+
+                                           'Favor definir a Porta Ex: (COM1, LPT1, /dev/lp0, etc)' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFMsgDoAcharPorta"></a><code><b>cACBrECFMsgDoAcharPorta</b>                = 'Procurando por ECF: %s na porta: %s ' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFSetDecimaisPrecoException"></a><code><b>cACBrECFSetDecimaisPrecoException</b>      = 'Valor de DecimaisPreco deve estar entre 0-3' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFSetDecimaisQtdException"></a><code><b>cACBrECFSetDecimaisQtdException</b>        = 'Valor de DecimaisQtd deve estar entre 0-4' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFVendeItemQtdeException"></a><code><b>cACBrECFVendeItemQtdeException</b>         = 'Quantidade deve ser superior a 0.' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFVendeItemValorUnitException"></a><code><b>cACBrECFVendeItemValorUnitException</b>    = 'Valor Unitario deve ser superior a 0.' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFVendeItemDescAcreException"></a><code><b>cACBrECFVendeItemDescAcreException</b>     = 'ValorDescontoAcrescimo não pode ser negativo' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFVendeItemAliqICMSException"></a><code><b>cACBrECFVendeItemAliqICMSException</b>     = 'Aliquota de ICMS não pode ser vazia.' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFAchaFPGIndiceException"></a><code><b>cACBrECFAchaFPGIndiceException</b>         = 'Forma de Pagamento: %s inválida' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFFPGPermiteVinculadoException"></a><code><b>cACBrECFFPGPermiteVinculadoException</b>   = 'Forma de Pagamento: %s '+#10+
+                                           'não permite Cupom Vinculado' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFRegistraItemNaoFiscalException"></a><code><b>cACBrECFRegistraItemNaoFiscalException</b> = 'Comprovante não fiscal: %s inválido' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cACBrECFSetRFDException"></a><code><b>cACBrECFSetRFDException</b>                = 'Não é possível mudar ACBrECF.RFD com o componente ativo' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:22</em>
+</span>
+</body></html>

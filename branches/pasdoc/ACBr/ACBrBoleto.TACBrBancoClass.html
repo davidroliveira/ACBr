@@ -1,0 +1,521 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrBoleto: Classe TACBrBancoClass</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrBancoClass"></a><h1 class="cio">Classe TACBrBancoClass</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrBoleto.html">ACBrBoleto</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrBancoClass = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+<code>TACBrBancoClass</code></p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TACBrBancoClass</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBancoClass.html#fpDigito">fpDigito</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBancoClass.html#fpNome">fpNome</a></b>:   String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBancoClass.html#fpModulo">fpModulo</a></b>: <a   href="ACBrValidador.TACBrCalcDigito.html">TACBrCalcDigito</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBancoClass.html#fpTamanhoAgencia">fpTamanhoAgencia</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBancoClass.html#fpTamanhoCarteira">fpTamanhoCarteira</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBancoClass.html#fpTamanhoConta">fpTamanhoConta</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBancoClass.html#fpAOwner">fpAOwner</a></b>: <a   href="ACBrBoleto.TACBrBanco.html">TACBrBanco</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrBoleto.TACBrBancoClass.html#fpTamanhoMaximoNossoNum">fpTamanhoMaximoNossoNum</a></b>: Integer;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#GetNumero">GetNumero</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#CalcularFatorVencimento">CalcularFatorVencimento</a></b>(const DataVencimento: TDateTime): String; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#CalcularDigitoCodigoBarras">CalcularDigitoCodigoBarras</a></b>(const CodigoBarras: String): String; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Constructor <b><a   href="ACBrBoleto.TACBrBancoClass.html#create">create</a></b>(AOwner: <a   href="ACBrBoleto.TACBrBanco.html">TACBrBanco</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Destructor <b><a   href="ACBrBoleto.TACBrBancoClass.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#CalcularDigitoVerificador">CalcularDigitoVerificador</a></b>(const ACBrTitulo : <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>): String; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#TipoOcorrenciaToDescricao">TipoOcorrenciaToDescricao</a></b>(const TipoOcorrencia: <a   href="ACBrBoleto.html#TACBrTipoOcorrencia">TACBrTipoOcorrencia</a>): String; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#CodOcorrenciaToTipo">CodOcorrenciaToTipo</a></b>(const CodOcorrencia:Integer): <a   href="ACBrBoleto.html#TACBrTipoOcorrencia">TACBrTipoOcorrencia</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#TipoOCorrenciaToCod">TipoOCorrenciaToCod</a></b>(const TipoOcorrencia: <a   href="ACBrBoleto.html#TACBrTipoOcorrencia">TACBrTipoOcorrencia</a>): String; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#CodMotivoRejeicaoToDescricao">CodMotivoRejeicaoToDescricao</a></b>(const TipoOcorrencia: <a   href="ACBrBoleto.html#TACBrTipoOcorrencia">TACBrTipoOcorrencia</a>;CodMotivo:Integer): String; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#MontarCodigoBarras">MontarCodigoBarras</a></b>(const ACBrTitulo : <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>): String; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#MontarCampoNossoNumero">MontarCampoNossoNumero</a></b>(const ACBrTitulo : <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>): String; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#MontarLinhaDigitavel">MontarLinhaDigitavel</a></b>(const CodigoBarras: String): String; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#MontarCampoCodigoCedente">MontarCampoCodigoCedente</a></b>(const ACBrTitulo: <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>): String; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#GerarRegistroHeader400">GerarRegistroHeader400</a></b>(NumeroRemessa : Integer): String; Virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#GerarRegistroHeader240">GerarRegistroHeader240</a></b>(NumeroRemessa : Integer): String; Virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#GerarRegistroTransacao400">GerarRegistroTransacao400</a></b>(ACBrTitulo : <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>): String; Virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#GerarRegistroTransacao240">GerarRegistroTransacao240</a></b>(ACBrTitulo : <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>): String; Virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#GerarRegistroTrailler400">GerarRegistroTrailler400</a></b>(ARemessa:TStringList): String; Virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#GerarRegistroTrailler240">GerarRegistroTrailler240</a></b>(ARemessa:TStringList): String; Virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrBoleto.TACBrBancoClass.html#LerRetorno400">LerRetorno400</a></b>(ARetorno:TStringList); Virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrBoleto.TACBrBancoClass.html#LerRetorno240">LerRetorno240</a></b>(ARetorno:TStringList); Virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrBoleto.TACBrBancoClass.html#CalcularNomeArquivoRemessa">CalcularNomeArquivoRemessa</a></b> : String; Virtual;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBancoClass.html#ACBrBanco">ACBrBanco</a></b> : <a   href="ACBrBoleto.TACBrBanco.html">TACBrBanco</a>      read <a   href="ACBrBoleto.TACBrBancoClass.html#fpAOwner">fpAOwner</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBancoClass.html#Numero">Numero</a></b>    : Integer         read <a   href="ACBrBoleto.TACBrBancoClass.html#GetNumero">GetNumero</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBancoClass.html#Digito">Digito</a></b>    : Integer         read <a   href="ACBrBoleto.TACBrBancoClass.html#fpDigito">fpDigito</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBancoClass.html#Nome">Nome</a></b>      : String          read <a   href="ACBrBoleto.TACBrBancoClass.html#fpNome">fpNome</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBancoClass.html#Modulo">Modulo</a></b>    : <a   href="ACBrValidador.TACBrCalcDigito.html">TACBrCalcDigito</a> read <a   href="ACBrBoleto.TACBrBancoClass.html#fpModulo">fpModulo</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBancoClass.html#TamanhoMaximoNossoNum">TamanhoMaximoNossoNum</a></b>: Integer    read <a   href="ACBrBoleto.TACBrBancoClass.html#fpTamanhoMaximoNossoNum">fpTamanhoMaximoNossoNum</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBancoClass.html#TamanhoAgencia">TamanhoAgencia</a></b>  : Integer read <a   href="ACBrBoleto.TACBrBancoClass.html#fpTamanhoAgencia">fpTamanhoAgencia</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBancoClass.html#TamanhoConta">TamanhoConta</a></b>    : Integer read <a   href="ACBrBoleto.TACBrBancoClass.html#fpTamanhoConta">fpTamanhoConta</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrBoleto.TACBrBancoClass.html#TamanhoCarteira">TamanhoCarteira</a></b> : Integer read <a   href="ACBrBoleto.TACBrBancoClass.html#fpTamanhoCarteira">fpTamanhoCarteira</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpDigito"></a><code><b>fpDigito</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpNome"></a><code><b>fpNome</b>:   String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpModulo"></a><code><b>fpModulo</b>: <a   href="ACBrValidador.TACBrCalcDigito.html">TACBrCalcDigito</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpTamanhoAgencia"></a><code><b>fpTamanhoAgencia</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpTamanhoCarteira"></a><code><b>fpTamanhoCarteira</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpTamanhoConta"></a><code><b>fpTamanhoConta</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpAOwner"></a><code><b>fpAOwner</b>: <a   href="ACBrBoleto.TACBrBanco.html">TACBrBanco</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="fpTamanhoMaximoNossoNum"></a><code><b>fpTamanhoMaximoNossoNum</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetNumero"></a><code>function <b>GetNumero</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="CalcularFatorVencimento"></a><code>function <b>CalcularFatorVencimento</b>(const DataVencimento: TDateTime): String; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="CalcularDigitoCodigoBarras"></a><code>function <b>CalcularDigitoCodigoBarras</b>(const CodigoBarras: String): String; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="create"></a><code>Constructor <b>create</b>(AOwner: <a   href="ACBrBoleto.TACBrBanco.html">TACBrBanco</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>Destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalcularDigitoVerificador"></a><code>function <b>CalcularDigitoVerificador</b>(const ACBrTitulo : <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>): String; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TipoOcorrenciaToDescricao"></a><code>function <b>TipoOcorrenciaToDescricao</b>(const TipoOcorrencia: <a   href="ACBrBoleto.html#TACBrTipoOcorrencia">TACBrTipoOcorrencia</a>): String; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CodOcorrenciaToTipo"></a><code>function <b>CodOcorrenciaToTipo</b>(const CodOcorrencia:Integer): <a   href="ACBrBoleto.html#TACBrTipoOcorrencia">TACBrTipoOcorrencia</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TipoOCorrenciaToCod"></a><code>function <b>TipoOCorrenciaToCod</b>(const TipoOcorrencia: <a   href="ACBrBoleto.html#TACBrTipoOcorrencia">TACBrTipoOcorrencia</a>): String; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CodMotivoRejeicaoToDescricao"></a><code>function <b>CodMotivoRejeicaoToDescricao</b>(const TipoOcorrencia: <a   href="ACBrBoleto.html#TACBrTipoOcorrencia">TACBrTipoOcorrencia</a>;CodMotivo:Integer): String; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MontarCodigoBarras"></a><code>function <b>MontarCodigoBarras</b>(const ACBrTitulo : <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>): String; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MontarCampoNossoNumero"></a><code>function <b>MontarCampoNossoNumero</b>(const ACBrTitulo : <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>): String; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MontarLinhaDigitavel"></a><code>function <b>MontarLinhaDigitavel</b>(const CodigoBarras: String): String; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MontarCampoCodigoCedente"></a><code>function <b>MontarCampoCodigoCedente</b>(const ACBrTitulo: <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>): String; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GerarRegistroHeader400"></a><code>function <b>GerarRegistroHeader400</b>(NumeroRemessa : Integer): String; Virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GerarRegistroHeader240"></a><code>function <b>GerarRegistroHeader240</b>(NumeroRemessa : Integer): String; Virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GerarRegistroTransacao400"></a><code>function <b>GerarRegistroTransacao400</b>(ACBrTitulo : <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>): String; Virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GerarRegistroTransacao240"></a><code>function <b>GerarRegistroTransacao240</b>(ACBrTitulo : <a   href="ACBrBoleto.TACBrTitulo.html">TACBrTitulo</a>): String; Virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GerarRegistroTrailler400"></a><code>function <b>GerarRegistroTrailler400</b>(ARemessa:TStringList): String; Virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GerarRegistroTrailler240"></a><code>function <b>GerarRegistroTrailler240</b>(ARemessa:TStringList): String; Virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LerRetorno400"></a><code>Procedure <b>LerRetorno400</b>(ARetorno:TStringList); Virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LerRetorno240"></a><code>Procedure <b>LerRetorno240</b>(ARetorno:TStringList); Virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CalcularNomeArquivoRemessa"></a><code>function <b>CalcularNomeArquivoRemessa</b> : String; Virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ACBrBanco"></a><code>property <b>ACBrBanco</b> : <a   href="ACBrBoleto.TACBrBanco.html">TACBrBanco</a>      read <a   href="ACBrBoleto.TACBrBancoClass.html#fpAOwner">fpAOwner</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Numero"></a><code>property <b>Numero</b>    : Integer         read <a   href="ACBrBoleto.TACBrBancoClass.html#GetNumero">GetNumero</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Digito"></a><code>property <b>Digito</b>    : Integer         read <a   href="ACBrBoleto.TACBrBancoClass.html#fpDigito">fpDigito</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Nome"></a><code>property <b>Nome</b>      : String          read <a   href="ACBrBoleto.TACBrBancoClass.html#fpNome">fpNome</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Modulo"></a><code>property <b>Modulo</b>    : <a   href="ACBrValidador.TACBrCalcDigito.html">TACBrCalcDigito</a> read <a   href="ACBrBoleto.TACBrBancoClass.html#fpModulo">fpModulo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TamanhoMaximoNossoNum"></a><code>property <b>TamanhoMaximoNossoNum</b>: Integer    read <a   href="ACBrBoleto.TACBrBancoClass.html#fpTamanhoMaximoNossoNum">fpTamanhoMaximoNossoNum</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TamanhoAgencia"></a><code>property <b>TamanhoAgencia</b>  : Integer read <a   href="ACBrBoleto.TACBrBancoClass.html#fpTamanhoAgencia">fpTamanhoAgencia</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TamanhoConta"></a><code>property <b>TamanhoConta</b>    : Integer read <a   href="ACBrBoleto.TACBrBancoClass.html#fpTamanhoConta">fpTamanhoConta</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TamanhoCarteira"></a><code>property <b>TamanhoCarteira</b> : Integer read <a   href="ACBrBoleto.TACBrBancoClass.html#fpTamanhoCarteira">fpTamanhoCarteira</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:19</em>
+</span>
+</body></html>

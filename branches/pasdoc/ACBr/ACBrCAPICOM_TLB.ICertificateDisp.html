@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrCAPICOM_TLB: DispInterface ICertificateDisp</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="ICertificateDisp"></a><h1 class="cio">DispInterface ICertificateDisp</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td>Campos</td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrCAPICOM_TLB.html">ACBrCAPICOM_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type ICertificateDisp = dispinterface(IDispInterface)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// DispIntf: <code>ICertificateDisp</code> Flags: (4416) Dual OleAutomation Dispatchable GUID: {0BBA0B86-766C-4755-A443-243FF2BD8D29} *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">IDispInterface</li>
+<li class="thisitem">ICertificateDisp</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#HasPrivateKey">HasPrivateKey</a></b>: WordBool; dispid 10; </code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#GetInfo">GetInfo</a></b>(InfoType: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_CERT_INFO_TYPE">CAPICOM_CERT_INFO_TYPE</a>): WideString; dispid 11; </code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#IsValid">IsValid</a></b>: <a   href="ACBrCAPICOM_TLB.ICertificateStatus.html">ICertificateStatus</a>; dispid 12; </code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#KeyUsage">KeyUsage</a></b>: <a   href="ACBrCAPICOM_TLB.IKeyUsage.html">IKeyUsage</a>; dispid 13; </code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#ExtendedKeyUsage">ExtendedKeyUsage</a></b>: <a   href="ACBrCAPICOM_TLB.IExtendedKeyUsage.html">IExtendedKeyUsage</a>; dispid 14; </code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#BasicConstraints">BasicConstraints</a></b>: <a   href="ACBrCAPICOM_TLB.IBasicConstraints.html">IBasicConstraints</a>; dispid 15; </code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#Export">Export</a></b>(EncodingType: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_ENCODING_TYPE">CAPICOM_ENCODING_TYPE</a>): WideString; dispid 16; </code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#Import">Import</a></b>(const EncodedCertificate: WideString); dispid 17; </code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#Display">Display</a></b>; dispid 18; </code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#Version">Version</a></b>: Integer readonly dispid 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#SerialNumber">SerialNumber</a></b>: WideString readonly dispid 2;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#SubjectName">SubjectName</a></b>: WideString readonly dispid 3;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#IssuerName">IssuerName</a></b>: WideString readonly dispid 4;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#ValidFromDate">ValidFromDate</a></b>: TDateTime readonly dispid 5;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#ValidToDate">ValidToDate</a></b>: TDateTime readonly dispid 6;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCAPICOM_TLB.ICertificateDisp.html#Thumbprint">Thumbprint</a></b>: WideString readonly dispid 7;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HasPrivateKey"></a><code>function <b>HasPrivateKey</b>: WordBool; dispid 10; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetInfo"></a><code>function <b>GetInfo</b>(InfoType: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_CERT_INFO_TYPE">CAPICOM_CERT_INFO_TYPE</a>): WideString; dispid 11; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsValid"></a><code>function <b>IsValid</b>: <a   href="ACBrCAPICOM_TLB.ICertificateStatus.html">ICertificateStatus</a>; dispid 12; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="KeyUsage"></a><code>function <b>KeyUsage</b>: <a   href="ACBrCAPICOM_TLB.IKeyUsage.html">IKeyUsage</a>; dispid 13; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ExtendedKeyUsage"></a><code>function <b>ExtendedKeyUsage</b>: <a   href="ACBrCAPICOM_TLB.IExtendedKeyUsage.html">IExtendedKeyUsage</a>; dispid 14; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BasicConstraints"></a><code>function <b>BasicConstraints</b>: <a   href="ACBrCAPICOM_TLB.IBasicConstraints.html">IBasicConstraints</a>; dispid 15; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Export"></a><code>function <b>Export</b>(EncodingType: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_ENCODING_TYPE">CAPICOM_ENCODING_TYPE</a>): WideString; dispid 16; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Import"></a><code>procedure <b>Import</b>(const EncodedCertificate: WideString); dispid 17; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Display"></a><code>procedure <b>Display</b>; dispid 18; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Version"></a><code>property <b>Version</b>: Integer readonly dispid 1;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SerialNumber"></a><code>property <b>SerialNumber</b>: WideString readonly dispid 2;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SubjectName"></a><code>property <b>SubjectName</b>: WideString readonly dispid 3;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IssuerName"></a><code>property <b>IssuerName</b>: WideString readonly dispid 4;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ValidFromDate"></a><code>property <b>ValidFromDate</b>: TDateTime readonly dispid 5;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ValidToDate"></a><code>property <b>ValidToDate</b>: TDateTime readonly dispid 6;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Thumbprint"></a><code>property <b>Thumbprint</b>: WideString readonly dispid 7;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:20</em>
+</span>
+</body></html>

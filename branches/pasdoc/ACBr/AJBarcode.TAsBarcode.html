@@ -1,0 +1,1051 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: AJBarcode: Classe TAsBarcode</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TAsBarcode"></a><h1 class="cio">Classe TAsBarcode</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="AJBarcode.html">AJBarcode</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TAsBarcode = class(TComponent)</code></p>
+<h2 class="description">Descrição</h2>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="thisitem">TAsBarcode</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FHeight">FHeight</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FText">FText</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FTop">FTop</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FLeft">FLeft</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FModul">FModul</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FRatio">FRatio</a></b>: double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FTyp">FTyp</a></b>: <a   href="AJBarcode.html#TBarcodeType">TBarcodeType</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FCheckSum">FCheckSum</a></b>:boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FShowText">FShowText</a></b>:<a   href="AJBarcode.html#TBarcodeOption">TBarcodeOption</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FAngle">FAngle</a></b>: double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FColor">FColor</a></b>: TColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FColorBar">FColorBar</a></b>:TColor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FCheckSumMethod">FCheckSumMethod</a></b>: <a   href="AJBarcode.html#TCheckSumMethod">TCheckSumMethod</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FOnChange">FOnChange</a></b>: TNotifyEvent;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#modules">modules</a></b>:array[0..3] of shortint;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FShowTextFont">FShowTextFont</a></b>: <a   href="ACBrNFeDANFERaveCB.html#TFont">TFont</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="AJBarcode.TAsBarcode.html#FShowTextPosition">FShowTextPosition</a></b>: <a   href="AJBarcode.html#TShowTextPosition">TShowTextPosition</a>;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#OneBarProps">OneBarProps</a></b>(code:char; var Width:integer; var lt:<a   href="AJBarcode.html#TBarLineType">TBarLineType</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#DoLines">DoLines</a></b>(data:string; Canvas:TCanvas);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#SetLen">SetLen</a></b>(pI:byte):string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_2_5_interleaved">Code_2_5_interleaved</a></b>:string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_2_5_industrial">Code_2_5_industrial</a></b>:string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_2_5_matrix">Code_2_5_matrix</a></b>:string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_39">Code_39</a></b>:string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_39Extended">Code_39Extended</a></b>:string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_128">Code_128</a></b>:string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_93">Code_93</a></b>:string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_93Extended">Code_93Extended</a></b>:string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_MSI">Code_MSI</a></b>:string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_PostNet">Code_PostNet</a></b>:string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_Codabar">Code_Codabar</a></b>:string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_EAN8">Code_EAN8</a></b>:string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_EAN13">Code_EAN13</a></b>:string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_UPC_A">Code_UPC_A</a></b>:string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_UPC_E0">Code_UPC_E0</a></b>:string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_UPC_E1">Code_UPC_E1</a></b>:string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_Supp5">Code_Supp5</a></b>:string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#Code_Supp2">Code_Supp2</a></b>:string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#GetTypText">GetTypText</a></b>:string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#MakeModules">MakeModules</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#SetModul">SetModul</a></b>(v:integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#GetWidth">GetWidth</a></b> : integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#SetWidth">SetWidth</a></b>(Value :integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#SetRatio">SetRatio</a></b>(const Value: Double);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#SetTyp">SetTyp</a></b>(const Value: <a   href="AJBarcode.html#TBarcodeType">TBarcodeType</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#SetAngle">SetAngle</a></b>(const Value: Double);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#SetText">SetText</a></b>(const Value: string);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#SetShowText">SetShowText</a></b>(const Value: <a   href="AJBarcode.html#TBarcodeOption">TBarcodeOption</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#SetTop">SetTop</a></b>(const Value: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#SetLeft">SetLeft</a></b>(const Value: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#SetCheckSum">SetCheckSum</a></b>(const Value: Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#SetHeight">SetHeight</a></b>(const Value: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#GetCanvasHeight">GetCanvasHeight</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#GetCanvasWidth">GetCanvasWidth</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#SetShowTextFont">SetShowTextFont</a></b>(const Value: <a   href="ACBrNFeDANFERaveCB.html#TFont">TFont</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#SetShowTextPosition">SetShowTextPosition</a></b>(const Value: <a   href="AJBarcode.html#TShowTextPosition">TShowTextPosition</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#MakeData">MakeData</a></b> : string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#DoChange">DoChange</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="AJBarcode.TAsBarcode.html#Create">Create</a></b>(Owner:TComponent); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="AJBarcode.TAsBarcode.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#Assign">Assign</a></b>(Source: TPersistent); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="AJBarcode.TAsBarcode.html#DoCheckSumming">DoCheckSumming</a></b>(const data : string):string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#DrawBarcode">DrawBarcode</a></b>(Canvas:TCanvas);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="AJBarcode.TAsBarcode.html#DrawText">DrawText</a></b>(Canvas:TCanvas);</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#CanvasHeight">CanvasHeight</a></b> : Integer read <a   href="AJBarcode.TAsBarcode.html#GetCanvasHeight">GetCanvasHeight</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#CanvasWidth">CanvasWidth</a></b> : Integer read <a   href="AJBarcode.TAsBarcode.html#GetCanvasWidth">GetCanvasWidth</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#Height">Height</a></b> : integer read <a   href="AJBarcode.TAsBarcode.html#FHeight">FHeight</a> write <a   href="AJBarcode.TAsBarcode.html#SetHeight">SetHeight</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#Text">Text</a></b>   : string read <a   href="AJBarcode.TAsBarcode.html#FText">FText</a> write <a   href="AJBarcode.TAsBarcode.html#SetText">SetText</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#Top">Top</a></b>    : Integer read <a   href="AJBarcode.TAsBarcode.html#FTop">FTop</a> write <a   href="AJBarcode.TAsBarcode.html#SetTop">SetTop</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#Left">Left</a></b>   : Integer read <a   href="AJBarcode.TAsBarcode.html#FLeft">FLeft</a> write <a   href="AJBarcode.TAsBarcode.html#SetLeft">SetLeft</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#Modul">Modul</a></b>  : integer read <a   href="AJBarcode.TAsBarcode.html#FModul">FModul</a>  write <a   href="AJBarcode.TAsBarcode.html#SetModul">SetModul</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#Ratio">Ratio</a></b>  : Double read <a   href="AJBarcode.TAsBarcode.html#FRatio">FRatio</a> write <a   href="AJBarcode.TAsBarcode.html#SetRatio">SetRatio</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#Typ">Typ</a></b>    : <a   href="AJBarcode.html#TBarcodeType">TBarcodeType</a> read <a   href="AJBarcode.TAsBarcode.html#FTyp">FTyp</a> write <a   href="AJBarcode.TAsBarcode.html#SetTyp">SetTyp</a> default bcCode_2_5_interleaved;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#Checksum">Checksum</a></b>: boolean read <a   href="AJBarcode.TAsBarcode.html#FCheckSum">FCheckSum</a> write <a   href="AJBarcode.TAsBarcode.html#SetCheckSum">SetCheckSum</a> default FALSE;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#CheckSumMethod">CheckSumMethod</a></b>: <a   href="AJBarcode.html#TCheckSumMethod">TCheckSumMethod</a> read <a   href="AJBarcode.TAsBarcode.html#FCheckSumMethod">FCheckSumMethod</a> write <a   href="AJBarcode.TAsBarcode.html#FCheckSumMethod">FCheckSumMethod</a> default csmModulo10;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#Angle">Angle</a></b>  : double read <a   href="AJBarcode.TAsBarcode.html#FAngle">FAngle</a> write <a   href="AJBarcode.TAsBarcode.html#SetAngle">SetAngle</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#ShowText">ShowText</a></b>: <a   href="AJBarcode.html#TBarcodeOption">TBarcodeOption</a> read <a   href="AJBarcode.TAsBarcode.html#FShowText">FShowText</a> write <a   href="AJBarcode.TAsBarcode.html#SetShowText">SetShowText</a> default bcoNone;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#ShowTextFont">ShowTextFont</a></b>: <a   href="ACBrNFeDANFERaveCB.html#TFont">TFont</a> read <a   href="AJBarcode.TAsBarcode.html#FShowTextFont">FShowTextFont</a> write <a   href="AJBarcode.TAsBarcode.html#SetShowTextFont">SetShowTextFont</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#ShowTextPosition">ShowTextPosition</a></b>: <a   href="AJBarcode.html#TShowTextPosition">TShowTextPosition</a> read <a   href="AJBarcode.TAsBarcode.html#FShowTextPosition">FShowTextPosition</a> write <a   href="AJBarcode.TAsBarcode.html#SetShowTextPosition">SetShowTextPosition</a> default stpTopLeft;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#Width">Width</a></b> : integer read <a   href="AJBarcode.TAsBarcode.html#GetWidth">GetWidth</a> write <a   href="AJBarcode.TAsBarcode.html#SetWidth">SetWidth</a> stored False;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#Color">Color</a></b>: TColor read <a   href="AJBarcode.TAsBarcode.html#FColor">FColor</a> write <a   href="AJBarcode.TAsBarcode.html#FColor">FColor</a> default clWhite;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#ColorBar">ColorBar</a></b>: TColor read <a   href="AJBarcode.TAsBarcode.html#FColorBar">FColorBar</a> write <a   href="AJBarcode.TAsBarcode.html#FColorBar">FColorBar</a> default clBlack;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="AJBarcode.TAsBarcode.html#OnChange">OnChange</a></b>: TNotifyEvent read <a   href="AJBarcode.TAsBarcode.html#FOnChange">FOnChange</a> write <a   href="AJBarcode.TAsBarcode.html#FOnChange">FOnChange</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FHeight"></a><code><b>FHeight</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Private-Deklarationen</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FText"></a><code><b>FText</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FTop"></a><code><b>FTop</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FLeft"></a><code><b>FLeft</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FModul"></a><code><b>FModul</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FRatio"></a><code><b>FRatio</b>: double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FTyp"></a><code><b>FTyp</b>: <a   href="AJBarcode.html#TBarcodeType">TBarcodeType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCheckSum"></a><code><b>FCheckSum</b>:boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FShowText"></a><code><b>FShowText</b>:<a   href="AJBarcode.html#TBarcodeOption">TBarcodeOption</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FAngle"></a><code><b>FAngle</b>: double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FColor"></a><code><b>FColor</b>: TColor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FColorBar"></a><code><b>FColorBar</b>:TColor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCheckSumMethod"></a><code><b>FCheckSumMethod</b>: <a   href="AJBarcode.html#TCheckSumMethod">TCheckSumMethod</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FOnChange"></a><code><b>FOnChange</b>: TNotifyEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="modules"></a><code><b>modules</b>:array[0..3] of shortint;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FShowTextFont"></a><code><b>FShowTextFont</b>: <a   href="ACBrNFeDANFERaveCB.html#TFont">TFont</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FShowTextPosition"></a><code><b>FShowTextPosition</b>: <a   href="AJBarcode.html#TShowTextPosition">TShowTextPosition</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="OneBarProps"></a><code>procedure <b>OneBarProps</b>(code:char; var Width:integer; var lt:<a   href="AJBarcode.html#TBarLineType">TBarLineType</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="DoLines"></a><code>procedure <b>DoLines</b>(data:string; Canvas:TCanvas);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetLen"></a><code>function <b>SetLen</b>(pI:byte):string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_2_5_interleaved"></a><code>function <b>Code_2_5_interleaved</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_2_5_industrial"></a><code>function <b>Code_2_5_industrial</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_2_5_matrix"></a><code>function <b>Code_2_5_matrix</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_39"></a><code>function <b>Code_39</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_39Extended"></a><code>function <b>Code_39Extended</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_128"></a><code>function <b>Code_128</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_93"></a><code>function <b>Code_93</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_93Extended"></a><code>function <b>Code_93Extended</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_MSI"></a><code>function <b>Code_MSI</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_PostNet"></a><code>function <b>Code_PostNet</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_Codabar"></a><code>function <b>Code_Codabar</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_EAN8"></a><code>function <b>Code_EAN8</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_EAN13"></a><code>function <b>Code_EAN13</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_UPC_A"></a><code>function <b>Code_UPC_A</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_UPC_E0"></a><code>function <b>Code_UPC_E0</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_UPC_E1"></a><code>function <b>Code_UPC_E1</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_Supp5"></a><code>function <b>Code_Supp5</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Code_Supp2"></a><code>function <b>Code_Supp2</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetTypText"></a><code>function <b>GetTypText</b>:string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="MakeModules"></a><code>procedure <b>MakeModules</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetModul"></a><code>procedure <b>SetModul</b>(v:integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetWidth"></a><code>function <b>GetWidth</b> : integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetWidth"></a><code>procedure <b>SetWidth</b>(Value :integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetRatio"></a><code>procedure <b>SetRatio</b>(const Value: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetTyp"></a><code>procedure <b>SetTyp</b>(const Value: <a   href="AJBarcode.html#TBarcodeType">TBarcodeType</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetAngle"></a><code>procedure <b>SetAngle</b>(const Value: Double);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetText"></a><code>procedure <b>SetText</b>(const Value: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetShowText"></a><code>procedure <b>SetShowText</b>(const Value: <a   href="AJBarcode.html#TBarcodeOption">TBarcodeOption</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetTop"></a><code>procedure <b>SetTop</b>(const Value: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetLeft"></a><code>procedure <b>SetLeft</b>(const Value: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetCheckSum"></a><code>procedure <b>SetCheckSum</b>(const Value: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetHeight"></a><code>procedure <b>SetHeight</b>(const Value: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetCanvasHeight"></a><code>function <b>GetCanvasHeight</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetCanvasWidth"></a><code>function <b>GetCanvasWidth</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetShowTextFont"></a><code>procedure <b>SetShowTextFont</b>(const Value: <a   href="ACBrNFeDANFERaveCB.html#TFont">TFont</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Additions from Roberto Parola to improve the <a class="normal"  href="AJBarcode.TAsBarcode.html#Text">text</a> output</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetShowTextPosition"></a><code>procedure <b>SetShowTextPosition</b>(const Value: <a   href="AJBarcode.html#TShowTextPosition">TShowTextPosition</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="MakeData"></a><code>function <b>MakeData</b> : string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Protected-Deklarationen</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="DoChange"></a><code>procedure <b>DoChange</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(Owner:TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Public-Deklarationen</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Assign"></a><code>procedure <b>Assign</b>(Source: TPersistent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DoCheckSumming"></a><code>function <b>DoCheckSumming</b>(const data : string):string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawBarcode"></a><code>procedure <b>DrawBarcode</b>(Canvas:TCanvas);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawText"></a><code>procedure <b>DrawText</b>(Canvas:TCanvas);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CanvasHeight"></a><code>property <b>CanvasHeight</b> : Integer read <a   href="AJBarcode.TAsBarcode.html#GetCanvasHeight">GetCanvasHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CanvasWidth"></a><code>property <b>CanvasWidth</b> : Integer read <a   href="AJBarcode.TAsBarcode.html#GetCanvasWidth">GetCanvasWidth</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Height"></a><code>property <b>Height</b> : integer read <a   href="AJBarcode.TAsBarcode.html#FHeight">FHeight</a> write <a   href="AJBarcode.TAsBarcode.html#SetHeight">SetHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>Height</code> of Barcode (Pixel)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Text"></a><code>property <b>Text</b>   : string read <a   href="AJBarcode.TAsBarcode.html#FText">FText</a> write <a   href="AJBarcode.TAsBarcode.html#SetText">SetText</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Top"></a><code>property <b>Top</b>    : Integer read <a   href="AJBarcode.TAsBarcode.html#FTop">FTop</a> write <a   href="AJBarcode.TAsBarcode.html#SetTop">SetTop</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Left"></a><code>property <b>Left</b>   : Integer read <a   href="AJBarcode.TAsBarcode.html#FLeft">FLeft</a> write <a   href="AJBarcode.TAsBarcode.html#SetLeft">SetLeft</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Modul"></a><code>property <b>Modul</b>  : integer read <a   href="AJBarcode.TAsBarcode.html#FModul">FModul</a>  write <a   href="AJBarcode.TAsBarcode.html#SetModul">SetModul</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<a class="normal"  href="AJBarcode.TAsBarcode.html#Width">Width</a> of the smallest line in a Barcode</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Ratio"></a><code>property <b>Ratio</b>  : Double read <a   href="AJBarcode.TAsBarcode.html#FRatio">FRatio</a> write <a   href="AJBarcode.TAsBarcode.html#SetRatio">SetRatio</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Typ"></a><code>property <b>Typ</b>    : <a   href="AJBarcode.html#TBarcodeType">TBarcodeType</a> read <a   href="AJBarcode.TAsBarcode.html#FTyp">FTyp</a> write <a   href="AJBarcode.TAsBarcode.html#SetTyp">SetTyp</a> default bcCode_2_5_interleaved;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Checksum"></a><code>property <b>Checksum</b>: boolean read <a   href="AJBarcode.TAsBarcode.html#FCheckSum">FCheckSum</a> write <a   href="AJBarcode.TAsBarcode.html#SetCheckSum">SetCheckSum</a> default FALSE;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+build <code>CheckSum</code> ?</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CheckSumMethod"></a><code>property <b>CheckSumMethod</b>: <a   href="AJBarcode.html#TCheckSumMethod">TCheckSumMethod</a> read <a   href="AJBarcode.TAsBarcode.html#FCheckSumMethod">FCheckSumMethod</a> write <a   href="AJBarcode.TAsBarcode.html#FCheckSumMethod">FCheckSumMethod</a> default csmModulo10;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Angle"></a><code>property <b>Angle</b>  : double read <a   href="AJBarcode.TAsBarcode.html#FAngle">FAngle</a> write <a   href="AJBarcode.TAsBarcode.html#SetAngle">SetAngle</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+0 - 360 degree</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ShowText"></a><code>property <b>ShowText</b>: <a   href="AJBarcode.html#TBarcodeOption">TBarcodeOption</a> read <a   href="AJBarcode.TAsBarcode.html#FShowText">FShowText</a> write <a   href="AJBarcode.TAsBarcode.html#SetShowText">SetShowText</a> default bcoNone;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ShowTextFont"></a><code>property <b>ShowTextFont</b>: <a   href="ACBrNFeDANFERaveCB.html#TFont">TFont</a> read <a   href="AJBarcode.TAsBarcode.html#FShowTextFont">FShowTextFont</a> write <a   href="AJBarcode.TAsBarcode.html#SetShowTextFont">SetShowTextFont</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ShowTextPosition"></a><code>property <b>ShowTextPosition</b>: <a   href="AJBarcode.html#TShowTextPosition">TShowTextPosition</a> read <a   href="AJBarcode.TAsBarcode.html#FShowTextPosition">FShowTextPosition</a> write <a   href="AJBarcode.TAsBarcode.html#SetShowTextPosition">SetShowTextPosition</a> default stpTopLeft;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Width"></a><code>property <b>Width</b> : integer read <a   href="AJBarcode.TAsBarcode.html#GetWidth">GetWidth</a> write <a   href="AJBarcode.TAsBarcode.html#SetWidth">SetWidth</a> stored False;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Color"></a><code>property <b>Color</b>: TColor read <a   href="AJBarcode.TAsBarcode.html#FColor">FColor</a> write <a   href="AJBarcode.TAsBarcode.html#FColor">FColor</a> default clWhite;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ColorBar"></a><code>property <b>ColorBar</b>: TColor read <a   href="AJBarcode.TAsBarcode.html#FColorBar">FColorBar</a> write <a   href="AJBarcode.TAsBarcode.html#FColorBar">FColorBar</a> default clBlack;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnChange"></a><code>property <b>OnChange</b>: TNotifyEvent read <a   href="AJBarcode.TAsBarcode.html#FOnChange">FOnChange</a> write <a   href="AJBarcode.TAsBarcode.html#FOnChange">FOnChange</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:55</em>
+</span>
+</body></html>

@@ -1,0 +1,388 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrCalculadora: Classe TACBrCalculadora</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrCalculadora"></a><h1 class="cio">Classe TACBrCalculadora</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrCalculadora.html">ACBrCalculadora</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrCalculadora = class(<a class="normal"  href="ACBrBase.TACBrComponent.html">TACBrComponent</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+<code>TACBrCalculadora</code></p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="ancestor"><a class="normal"  href="ACBrBase.TACBrComponent.html">TACBrComponent</a></li>
+<li class="thisitem">TACBrCalculadora</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCalculadora.TACBrCalculadora.html#FBorderStyle">FBorderStyle</a></b>: TFormBorderStyle;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCalculadora.TACBrCalculadora.html#FTitulo">FTitulo</a></b>: String ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCalculadora.TACBrCalculadora.html#FValor">FValor</a></b>: Double ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCalculadora.TACBrCalculadora.html#FTexto">FTexto</a></b>: String ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCalculadora.TACBrCalculadora.html#FPrecisao">FPrecisao</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCalculadora.TACBrCalculadora.html#FSaiComEsc">FSaiComEsc</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCalculadora.TACBrCalculadora.html#FCalcLeft">FCalcLeft</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCalculadora.TACBrCalculadora.html#FCalcTop">FCalcTop</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCalculadora.TACBrCalculadora.html#FCor">FCor</a></b>: TColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCalculadora.TACBrCalculadora.html#FCorForm">FCorForm</a></b>: TColor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCalculadora.TACBrCalculadora.html#FCentraliza">FCentraliza</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCalculadora.TACBrCalculadora.html#FOnCalcKey">FOnCalcKey</a></b>: TKeyPressEvent;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCalculadora.TACBrCalculadora.html#FOnDisplayChange">FOnDisplayChange</a></b>: <a   href="ACBrCalculadora.html#TACBrCalculadoraDisplayChange">TACBrCalculadoraDisplayChange</a>;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrCalculadora.TACBrCalculadora.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCalculadora.TACBrCalculadora.html#Execute">Execute</a></b>: Boolean;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCalculadora.TACBrCalculadora.html#Texto">Texto</a></b>  : String read <a   href="ACBrCalculadora.TACBrCalculadora.html#FTexto">FTexto</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCalculadora.TACBrCalculadora.html#Valor">Valor</a></b>  : Double read <a   href="ACBrCalculadora.TACBrCalculadora.html#FValor">FValor</a>  write <a   href="ACBrCalculadora.TACBrCalculadora.html#FValor">FValor</a> stored false ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCalculadora.TACBrCalculadora.html#Titulo">Titulo</a></b> : String read <a   href="ACBrCalculadora.TACBrCalculadora.html#FTitulo">FTitulo</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FTitulo">FTitulo</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCalculadora.TACBrCalculadora.html#Precisao">Precisao</a></b> : Integer read <a   href="ACBrCalculadora.TACBrCalculadora.html#FPrecisao">FPrecisao</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FPrecisao">FPrecisao</a> default 4 ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCalculadora.TACBrCalculadora.html#SaiComEsc">SaiComEsc</a></b> : Boolean read <a   href="ACBrCalculadora.TACBrCalculadora.html#FSaiComEsc">FSaiComEsc</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FSaiComEsc">FSaiComEsc</a>
+                       default true ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCalculadora.TACBrCalculadora.html#Centraliza">Centraliza</a></b> : Boolean read <a   href="ACBrCalculadora.TACBrCalculadora.html#FCentraliza">FCentraliza</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FCentraliza">FCentraliza</a>
+                       default false ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCalculadora.TACBrCalculadora.html#CalcTop">CalcTop</a></b>  : Integer read <a   href="ACBrCalculadora.TACBrCalculadora.html#FCalcTop">FCalcTop</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FCalcTop">FCalcTop</a> default 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCalculadora.TACBrCalculadora.html#CalcLeft">CalcLeft</a></b> : Integer read <a   href="ACBrCalculadora.TACBrCalculadora.html#FCalcLeft">FCalcLeft</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FCalcLeft">FCalcLeft</a> default 0;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCalculadora.TACBrCalculadora.html#CorDisplay">CorDisplay</a></b> : TColor read <a   href="ACBrCalculadora.TACBrCalculadora.html#FCor">FCor</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FCor">FCor</a> default clLime ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCalculadora.TACBrCalculadora.html#CorForm">CorForm</a></b> : TColor read <a   href="ACBrCalculadora.TACBrCalculadora.html#FCorForm">FCorForm</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FCorForm">FCorForm</a>
+        default clBtnFace ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCalculadora.TACBrCalculadora.html#OnCalcKey">OnCalcKey</a></b> : TKeyPressEvent read <a   href="ACBrCalculadora.TACBrCalculadora.html#FOnCalcKey">FOnCalcKey</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FOnCalcKey">FOnCalcKey</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCalculadora.TACBrCalculadora.html#OnDisplayChange">OnDisplayChange</a></b>: <a   href="ACBrCalculadora.html#TACBrCalculadoraDisplayChange">TACBrCalculadoraDisplayChange</a>
+                      read <a   href="ACBrCalculadora.TACBrCalculadora.html#FOnDisplayChange">FOnDisplayChange</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FOnDisplayChange">FOnDisplayChange</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCalculadora.TACBrCalculadora.html#BorderStyle">BorderStyle</a></b> : TFormBorderStyle read <a   href="ACBrCalculadora.TACBrCalculadora.html#FBorderStyle">FBorderStyle</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FBorderStyle">FBorderStyle</a> ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FBorderStyle"></a><code><b>FBorderStyle</b>: TFormBorderStyle;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FTitulo"></a><code><b>FTitulo</b>: String ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FValor"></a><code><b>FValor</b>: Double ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FTexto"></a><code><b>FTexto</b>: String ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FPrecisao"></a><code><b>FPrecisao</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FSaiComEsc"></a><code><b>FSaiComEsc</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCalcLeft"></a><code><b>FCalcLeft</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCalcTop"></a><code><b>FCalcTop</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCor"></a><code><b>FCor</b>: TColor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCorForm"></a><code><b>FCorForm</b>: TColor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCentraliza"></a><code><b>FCentraliza</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FOnCalcKey"></a><code><b>FOnCalcKey</b>: TKeyPressEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FOnDisplayChange"></a><code><b>FOnDisplayChange</b>: <a   href="ACBrCalculadora.html#TACBrCalculadoraDisplayChange">TACBrCalculadoraDisplayChange</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Execute"></a><code>function <b>Execute</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Texto"></a><code>property <b>Texto</b>  : String read <a   href="ACBrCalculadora.TACBrCalculadora.html#FTexto">FTexto</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Valor"></a><code>property <b>Valor</b>  : Double read <a   href="ACBrCalculadora.TACBrCalculadora.html#FValor">FValor</a>  write <a   href="ACBrCalculadora.TACBrCalculadora.html#FValor">FValor</a> stored false ;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+TODO : Adicionar evento OnMudaValor</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Titulo"></a><code>property <b>Titulo</b> : String read <a   href="ACBrCalculadora.TACBrCalculadora.html#FTitulo">FTitulo</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FTitulo">FTitulo</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Precisao"></a><code>property <b>Precisao</b> : Integer read <a   href="ACBrCalculadora.TACBrCalculadora.html#FPrecisao">FPrecisao</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FPrecisao">FPrecisao</a> default 4 ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="SaiComEsc"></a><code>property <b>SaiComEsc</b> : Boolean read <a   href="ACBrCalculadora.TACBrCalculadora.html#FSaiComEsc">FSaiComEsc</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FSaiComEsc">FSaiComEsc</a>
+                       default true ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Centraliza"></a><code>property <b>Centraliza</b> : Boolean read <a   href="ACBrCalculadora.TACBrCalculadora.html#FCentraliza">FCentraliza</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FCentraliza">FCentraliza</a>
+                       default false ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CalcTop"></a><code>property <b>CalcTop</b>  : Integer read <a   href="ACBrCalculadora.TACBrCalculadora.html#FCalcTop">FCalcTop</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FCalcTop">FCalcTop</a> default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CalcLeft"></a><code>property <b>CalcLeft</b> : Integer read <a   href="ACBrCalculadora.TACBrCalculadora.html#FCalcLeft">FCalcLeft</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FCalcLeft">FCalcLeft</a> default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CorDisplay"></a><code>property <b>CorDisplay</b> : TColor read <a   href="ACBrCalculadora.TACBrCalculadora.html#FCor">FCor</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FCor">FCor</a> default clLime ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CorForm"></a><code>property <b>CorForm</b> : TColor read <a   href="ACBrCalculadora.TACBrCalculadora.html#FCorForm">FCorForm</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FCorForm">FCorForm</a>
+        default clBtnFace ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnCalcKey"></a><code>property <b>OnCalcKey</b> : TKeyPressEvent read <a   href="ACBrCalculadora.TACBrCalculadora.html#FOnCalcKey">FOnCalcKey</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FOnCalcKey">FOnCalcKey</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnDisplayChange"></a><code>property <b>OnDisplayChange</b>: <a   href="ACBrCalculadora.html#TACBrCalculadoraDisplayChange">TACBrCalculadoraDisplayChange</a>
+                      read <a   href="ACBrCalculadora.TACBrCalculadora.html#FOnDisplayChange">FOnDisplayChange</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FOnDisplayChange">FOnDisplayChange</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="BorderStyle"></a><code>property <b>BorderStyle</b> : TFormBorderStyle read <a   href="ACBrCalculadora.TACBrCalculadora.html#FBorderStyle">FBorderStyle</a> write <a   href="ACBrCalculadora.TACBrCalculadora.html#FBorderStyle">FBorderStyle</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:20</em>
+</span>
+</body></html>

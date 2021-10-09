@@ -1,0 +1,188 @@
+object frValidador: TfrValidador
+  Caption = 'Validador de Documentos'
+  ClientHeight = 259
+  ClientWidth = 340
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  HorzScrollBar.Page = 339
+  HorzScrollBar.Range = 329
+  VertScrollBar.Page = 258
+  VertScrollBar.Range = 243
+  Left = 419
+  Height = 259
+  Top = 172
+  Width = 340
+  object Label1: TLabel
+    BorderSpacing.OnChange = nil
+    Caption = 'Documento'
+    Color = clNone
+    Left = 8
+    Height = 13
+    Top = 8
+    Width = 55
+  end
+  object Label2: TLabel
+    BorderSpacing.OnChange = nil
+    Caption = 'Tipo'
+    Color = clNone
+    Left = 232
+    Height = 13
+    Top = 8
+    Width = 21
+  end
+  object Label3: TLabel
+    BorderSpacing.OnChange = nil
+    Caption = 'Mensagem de Erro'
+    Color = clNone
+    Left = 8
+    Height = 13
+    Top = 144
+    Width = 89
+  end
+  object Label4: TLabel
+    BorderSpacing.OnChange = nil
+    Caption = 'Complemento'
+    Color = clNone
+    Left = 144
+    Height = 13
+    Top = 8
+    Width = 64
+  end
+  object Label5: TLabel
+    BorderSpacing.OnChange = nil
+    Caption = 'Ignorar Char'
+    Color = clNone
+    Left = 8
+    Height = 13
+    Top = 56
+    Width = 58
+  end
+  object mMsgErro: TMemo
+    BorderSpacing.OnChange = nil
+    ReadOnly = True
+    TabOrder = 8
+    Left = 8
+    Height = 49
+    Top = 160
+    Width = 321
+  end
+  object bValidar: TButton
+    BorderSpacing.OnChange = nil
+    Caption = '&Validar'
+    Default = True
+    OnClick = bValidarClick
+    TabOrder = 9
+    Left = 72
+    Height = 25
+    Top = 218
+    Width = 75
+  end
+  object edIgnorar: TEdit
+    BorderSpacing.OnChange = nil
+    TabOrder = 3
+    Cursor = crIBeam
+    Left = 9
+    Height = 21
+    Top = 72
+    Width = 57
+  end
+  object cbPermiteVazio: TCheckBox
+    BorderSpacing.OnChange = nil
+    Caption = 'Permite Vazio'
+    OnClick = cbPermiteVazioClick
+    TabOrder = 4
+    Left = 144
+    Height = 17
+    Top = 56
+    Width = 153
+  end
+  object cbAjustarTam: TCheckBox
+    BorderSpacing.OnChange = nil
+    Caption = 'Ajustar Tamanho'
+    OnClick = cbAjustarTamClick
+    TabOrder = 5
+    Left = 144
+    Height = 17
+    Top = 80
+    Width = 153
+  end
+  object bFormatar: TButton
+    BorderSpacing.OnChange = nil
+    Caption = 'Formatar'
+    OnClick = bFormatarClick
+    TabOrder = 10
+    Left = 192
+    Height = 25
+    Top = 218
+    Width = 75
+  end
+  object cbException: TCheckBox
+    BorderSpacing.OnChange = nil
+    Caption = 'Gerar Exceção'
+    OnClick = cbExceptionClick
+    TabOrder = 7
+    Left = 144
+    Height = 17
+    Top = 128
+    Width = 153
+  end
+  object cbExibeDigCorreto: TCheckBox
+    BorderSpacing.OnChange = nil
+    Caption = 'Exibe Digito Calculado'
+    OnClick = cbExibeDigCorretoClick
+    TabOrder = 6
+    Left = 144
+    Height = 17
+    Top = 104
+    Width = 153
+  end
+  object edDocto: TEdit
+    BorderSpacing.OnChange = nil
+    OnChange = edDoctoChange
+    TabOrder = 0
+    Cursor = crIBeam
+    Left = 8
+    Height = 21
+    Top = 24
+    Width = 121
+  end
+  object edComple: TEdit
+    BorderSpacing.OnChange = nil
+    TabOrder = 1
+    Cursor = crIBeam
+    Left = 144
+    Height = 21
+    Top = 24
+    Width = 73
+  end
+  object cbTipoDocto: TComboBox
+    BorderSpacing.OnChange = nil
+    ItemHeight = 13
+    Items.Strings = (
+      'docCPF'
+      'docCNPJ'
+      'docUF'
+      'docInscEst'
+      'docNumCheque'
+      'docPIS'
+      'docCEP'
+      'docCartaoCredito'
+    )
+    MaxLength = 0
+    OnChange = cbTipoDoctoChange
+    Style = csDropDownList
+    TabOrder = 2
+    Left = 232
+    Height = 21
+    Top = 24
+    Width = 97
+  end
+  object ACBrValidador1: TACBrValidador
+    IgnorarChar = './-'
+    left = 224
+    top = 304
+  end
+end

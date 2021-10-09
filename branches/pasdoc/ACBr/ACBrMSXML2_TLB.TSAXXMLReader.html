@@ -1,0 +1,449 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrMSXML2_TLB: Classe TSAXXMLReader</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TSAXXMLReader"></a><h1 class="cio">Classe TSAXXMLReader</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrMSXML2_TLB.html">ACBrMSXML2_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TSAXXMLReader = class(TOleServer)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// OLE Server Proxy class declaration Server Object : <code>TSAXXMLReader</code> Help String : SAX XML Reader (version independent) coclass Default Interface: <a class="normal"  href="ACBrMSXML2_TLB.IVBSAXXMLReader.html">IVBSAXXMLReader</a> Def. Intf. DISP? : No Event Interface: TypeFlags : (2) CanCreate *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TOleServer</li>
+<li class="thisitem">TSAXXMLReader</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#FIntf">FIntf</a></b>:        <a   href="ACBrMSXML2_TLB.IVBSAXXMLReader.html">IVBSAXXMLReader</a>;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#GetDefaultInterface">GetDefaultInterface</a></b>: <a   href="ACBrMSXML2_TLB.IVBSAXXMLReader.html">IVBSAXXMLReader</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#InitServerData">InitServerData</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_entityResolver">Get_entityResolver</a></b>: <a   href="ACBrMSXML2_TLB.IVBSAXEntityResolver.html">IVBSAXEntityResolver</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#_Set_entityResolver">_Set_entityResolver</a></b>(const oResolver: <a   href="ACBrMSXML2_TLB.IVBSAXEntityResolver.html">IVBSAXEntityResolver</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_contentHandler">Get_contentHandler</a></b>: <a   href="ACBrMSXML2_TLB.IVBSAXContentHandler.html">IVBSAXContentHandler</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#_Set_contentHandler">_Set_contentHandler</a></b>(const oHandler: <a   href="ACBrMSXML2_TLB.IVBSAXContentHandler.html">IVBSAXContentHandler</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_dtdHandler">Get_dtdHandler</a></b>: <a   href="ACBrMSXML2_TLB.IVBSAXDTDHandler.html">IVBSAXDTDHandler</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#_Set_dtdHandler">_Set_dtdHandler</a></b>(const oHandler: <a   href="ACBrMSXML2_TLB.IVBSAXDTDHandler.html">IVBSAXDTDHandler</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_errorHandler">Get_errorHandler</a></b>: <a   href="ACBrMSXML2_TLB.IVBSAXErrorHandler.html">IVBSAXErrorHandler</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#_Set_errorHandler">_Set_errorHandler</a></b>(const oHandler: <a   href="ACBrMSXML2_TLB.IVBSAXErrorHandler.html">IVBSAXErrorHandler</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_baseURL">Get_baseURL</a></b>: WideString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Set_baseURL">Set_baseURL</a></b>(const strBaseURL: WideString);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_secureBaseURL">Get_secureBaseURL</a></b>: WideString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Set_secureBaseURL">Set_secureBaseURL</a></b>(const strSecureBaseURL: WideString);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Connect">Connect</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#ConnectTo">ConnectTo</a></b>(svrIntf: <a   href="ACBrMSXML2_TLB.IVBSAXXMLReader.html">IVBSAXXMLReader</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Disconnect">Disconnect</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#getFeature">getFeature</a></b>(const strName: WideString): WordBool;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#putFeature">putFeature</a></b>(const strName: WideString; fValue: WordBool);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#getProperty">getProperty</a></b>(const strName: WideString): OleVariant;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#putProperty">putProperty</a></b>(const strName: WideString; varValue: OleVariant);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#parse">parse</a></b>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#parse">parse</a></b>(varInput: OleVariant); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#parseURL">parseURL</a></b>(const strURL: WideString);</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#DefaultInterface">DefaultInterface</a></b>: <a   href="ACBrMSXML2_TLB.IVBSAXXMLReader.html">IVBSAXXMLReader</a> read <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#GetDefaultInterface">GetDefaultInterface</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#entityResolver">entityResolver</a></b>: <a   href="ACBrMSXML2_TLB.IVBSAXEntityResolver.html">IVBSAXEntityResolver</a> read <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_entityResolver">Get_entityResolver</a> write <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#_Set_entityResolver">_Set_entityResolver</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#contentHandler">contentHandler</a></b>: <a   href="ACBrMSXML2_TLB.IVBSAXContentHandler.html">IVBSAXContentHandler</a> read <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_contentHandler">Get_contentHandler</a> write <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#_Set_contentHandler">_Set_contentHandler</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#dtdHandler">dtdHandler</a></b>: <a   href="ACBrMSXML2_TLB.IVBSAXDTDHandler.html">IVBSAXDTDHandler</a> read <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_dtdHandler">Get_dtdHandler</a> write <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#_Set_dtdHandler">_Set_dtdHandler</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#errorHandler">errorHandler</a></b>: <a   href="ACBrMSXML2_TLB.IVBSAXErrorHandler.html">IVBSAXErrorHandler</a> read <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_errorHandler">Get_errorHandler</a> write <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#_Set_errorHandler">_Set_errorHandler</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#baseURL">baseURL</a></b>: WideString read <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_baseURL">Get_baseURL</a> write <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Set_baseURL">Set_baseURL</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#secureBaseURL">secureBaseURL</a></b>: WideString read <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_secureBaseURL">Get_secureBaseURL</a> write <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Set_secureBaseURL">Set_secureBaseURL</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FIntf"></a><code><b>FIntf</b>:        <a   href="ACBrMSXML2_TLB.IVBSAXXMLReader.html">IVBSAXXMLReader</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetDefaultInterface"></a><code>function <b>GetDefaultInterface</b>: <a   href="ACBrMSXML2_TLB.IVBSAXXMLReader.html">IVBSAXXMLReader</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="InitServerData"></a><code>procedure <b>InitServerData</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_entityResolver"></a><code>function <b>Get_entityResolver</b>: <a   href="ACBrMSXML2_TLB.IVBSAXEntityResolver.html">IVBSAXEntityResolver</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="_Set_entityResolver"></a><code>procedure <b>_Set_entityResolver</b>(const oResolver: <a   href="ACBrMSXML2_TLB.IVBSAXEntityResolver.html">IVBSAXEntityResolver</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_contentHandler"></a><code>function <b>Get_contentHandler</b>: <a   href="ACBrMSXML2_TLB.IVBSAXContentHandler.html">IVBSAXContentHandler</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="_Set_contentHandler"></a><code>procedure <b>_Set_contentHandler</b>(const oHandler: <a   href="ACBrMSXML2_TLB.IVBSAXContentHandler.html">IVBSAXContentHandler</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_dtdHandler"></a><code>function <b>Get_dtdHandler</b>: <a   href="ACBrMSXML2_TLB.IVBSAXDTDHandler.html">IVBSAXDTDHandler</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="_Set_dtdHandler"></a><code>procedure <b>_Set_dtdHandler</b>(const oHandler: <a   href="ACBrMSXML2_TLB.IVBSAXDTDHandler.html">IVBSAXDTDHandler</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_errorHandler"></a><code>function <b>Get_errorHandler</b>: <a   href="ACBrMSXML2_TLB.IVBSAXErrorHandler.html">IVBSAXErrorHandler</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="_Set_errorHandler"></a><code>procedure <b>_Set_errorHandler</b>(const oHandler: <a   href="ACBrMSXML2_TLB.IVBSAXErrorHandler.html">IVBSAXErrorHandler</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_baseURL"></a><code>function <b>Get_baseURL</b>: WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Set_baseURL"></a><code>procedure <b>Set_baseURL</b>(const strBaseURL: WideString);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_secureBaseURL"></a><code>function <b>Get_secureBaseURL</b>: WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Set_secureBaseURL"></a><code>procedure <b>Set_secureBaseURL</b>(const strSecureBaseURL: WideString);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Connect"></a><code>procedure <b>Connect</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ConnectTo"></a><code>procedure <b>ConnectTo</b>(svrIntf: <a   href="ACBrMSXML2_TLB.IVBSAXXMLReader.html">IVBSAXXMLReader</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Disconnect"></a><code>procedure <b>Disconnect</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="getFeature"></a><code>function <b>getFeature</b>(const strName: WideString): WordBool;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="putFeature"></a><code>procedure <b>putFeature</b>(const strName: WideString; fValue: WordBool);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="getProperty"></a><code>function <b>getProperty</b>(const strName: WideString): OleVariant;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="putProperty"></a><code>procedure <b>putProperty</b>(const strName: WideString; varValue: OleVariant);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="parse"></a><code>procedure <b>parse</b>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="parse"></a><code>procedure <b>parse</b>(varInput: OleVariant); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="parseURL"></a><code>procedure <b>parseURL</b>(const strURL: WideString);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DefaultInterface"></a><code>property <b>DefaultInterface</b>: <a   href="ACBrMSXML2_TLB.IVBSAXXMLReader.html">IVBSAXXMLReader</a> read <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#GetDefaultInterface">GetDefaultInterface</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="entityResolver"></a><code>property <b>entityResolver</b>: <a   href="ACBrMSXML2_TLB.IVBSAXEntityResolver.html">IVBSAXEntityResolver</a> read <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_entityResolver">Get_entityResolver</a> write <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#_Set_entityResolver">_Set_entityResolver</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="contentHandler"></a><code>property <b>contentHandler</b>: <a   href="ACBrMSXML2_TLB.IVBSAXContentHandler.html">IVBSAXContentHandler</a> read <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_contentHandler">Get_contentHandler</a> write <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#_Set_contentHandler">_Set_contentHandler</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="dtdHandler"></a><code>property <b>dtdHandler</b>: <a   href="ACBrMSXML2_TLB.IVBSAXDTDHandler.html">IVBSAXDTDHandler</a> read <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_dtdHandler">Get_dtdHandler</a> write <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#_Set_dtdHandler">_Set_dtdHandler</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="errorHandler"></a><code>property <b>errorHandler</b>: <a   href="ACBrMSXML2_TLB.IVBSAXErrorHandler.html">IVBSAXErrorHandler</a> read <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_errorHandler">Get_errorHandler</a> write <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#_Set_errorHandler">_Set_errorHandler</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="baseURL"></a><code>property <b>baseURL</b>: WideString read <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_baseURL">Get_baseURL</a> write <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Set_baseURL">Set_baseURL</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="secureBaseURL"></a><code>property <b>secureBaseURL</b>: WideString read <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Get_secureBaseURL">Get_secureBaseURL</a> write <a   href="ACBrMSXML2_TLB.TSAXXMLReader.html#Set_secureBaseURL">Set_secureBaseURL</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:47</em>
+</span>
+</body></html>

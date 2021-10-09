@@ -1,0 +1,601 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: synachar</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit synachar</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td>Classes, Interfaces, Objetos e Registros</td><td><a class="section"  href="#%40FuncsProcs">Funções e Procedimentos</a></td><td><a class="section"  href="#%40Types">Tipos</a></td><td><a class="section"  href="#%40Constants">Constantes</a></td><td><a class="section"  href="#%40Variables">Variáveis</a></td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+Charset conversion support</p>
+<p>
+:  This unit contains a routines for lot of charset conversions.
+
+<p>It using built-in conversion tables or external Iconv library. Iconv is used when needed conversion is known by Iconv library. When Iconv library is not found or Iconv not know requested conversion, then are internal routines used for conversion. (You <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> disable Iconv support from your program too!)
+
+<p>Internal routines knows all major charsets for Europe or America. For East-Asian charsets you must use Iconv library!</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Windows</li><li>SysUtils</li><li><a   href="synautil.html">synautil</a></li><li><a   href="synacode.html">synacode</a></li><li><a   href="synaicnv.html">synaicnv</a></li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40FuncsProcs"></a><h3 class="summary">Funções e Procedimentos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="synachar.html#CharsetConversion">CharsetConversion</a></b>(const Value: AnsiString; CharFrom: <a   href="synachar.html#TMimeChar">TMimeChar</a>; CharTo: <a   href="synachar.html#TMimeChar">TMimeChar</a>): AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="synachar.html#CharsetConversionEx">CharsetConversionEx</a></b>(const Value: AnsiString; CharFrom: <a   href="synachar.html#TMimeChar">TMimeChar</a>; CharTo: <a   href="synachar.html#TMimeChar">TMimeChar</a>; const TransformTable: array of Word): AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="synachar.html#CharsetConversionTrans">CharsetConversionTrans</a></b>(Value: AnsiString; CharFrom: <a   href="synachar.html#TMimeChar">TMimeChar</a>; CharTo: <a   href="synachar.html#TMimeChar">TMimeChar</a>; const TransformTable: array of Word; Translit: Boolean): AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="synachar.html#GetCurCP">GetCurCP</a></b>: <a   href="synachar.html#TMimeChar">TMimeChar</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="synachar.html#GetCurOEMCP">GetCurOEMCP</a></b>: <a   href="synachar.html#TMimeChar">TMimeChar</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="synachar.html#GetCPFromID">GetCPFromID</a></b>(Value: AnsiString): <a   href="synachar.html#TMimeChar">TMimeChar</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="synachar.html#GetIDFromCP">GetIDFromCP</a></b>(Value: <a   href="synachar.html#TMimeChar">TMimeChar</a>): AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="synachar.html#NeedCharsetConversion">NeedCharsetConversion</a></b>(const Value: AnsiString): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="synachar.html#IdealCharsetCoding">IdealCharsetCoding</a></b>(const Value: AnsiString; CharFrom: <a   href="synachar.html#TMimeChar">TMimeChar</a>; CharTo: <a   href="synachar.html#TMimeSetChar">TMimeSetChar</a>): <a   href="synachar.html#TMimeChar">TMimeChar</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="synachar.html#GetBOM">GetBOM</a></b>(Value: <a   href="synachar.html#TMimeChar">TMimeChar</a>): AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="synachar.html#StringToWide">StringToWide</a></b>(const Value: AnsiString): WideString;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="synachar.html#WideToString">WideToString</a></b>(const Value: WideString): AnsiString;</code></td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="synachar.html#TMimeChar">TMimeChar</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="synachar.html#TMimeSetChar">TMimeSetChar</a></b> = set of <a   href="synachar.html#TMimeChar">TMimeChar</a>;</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="synachar.html#IconvOnlyChars">IconvOnlyChars</a></b>: set of <a   href="synachar.html#TMimeChar">TMimeChar</a> = [UTF_16, UTF_16LE, UTF_32, UTF_32LE,
+    C99, JAVA, ISO_8859_16, KOI8_U, KOI8_RU, CP862, CP866, MAC, MACCE, MACICE,
+    MACCRO, MACRO, MACCYR, MACUK, MACGR, MACTU, MACHEB, MACAR, MACTH, ROMAN8,
+    NEXTSTEP, ARMASCII, GEORGIAN_AC, GEORGIAN_PS, KOI8_T, MULELAO, CP1133,
+    TIS620, CP874, VISCII, TCVN, ISO_IR_14, JIS_X0201, JIS_X0208, JIS_X0212,
+    GB1988_80, GB2312_80, ISO_IR_165, ISO_IR_149, EUC_JP, SHIFT_JIS, CP932,
+    ISO_2022_JP, ISO_2022_JP1, ISO_2022_JP2, GB2312, CP936, GB18030,
+    ISO_2022_CN, ISO_2022_CNE, HZ, EUC_TW, BIG5, CP950, BIG5_HKSCS, EUC_KR,
+    CP949, CP1361, ISO_2022_KR, CP737, CP775, CP853, CP855, CP857, CP858,
+    CP860, CP861, CP863, CP864, CP865, CP869, CP1125];</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="synachar.html#NoIconvChars">NoIconvChars</a></b>: set of <a   href="synachar.html#TMimeChar">TMimeChar</a> = [CP895, UTF_7mod];</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="synachar.html#Replace_None">Replace_None</a></b>: array[0..0] of Word =
+    (0);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="synachar.html#Replace_Czech">Replace_Czech</a></b>: array[0..59] of Word =
+    (
+      $00E1, $0061,
+      $010D, $0063,
+      $010F, $0064,
+      $010E, $0044,
+      $00E9, $0065,
+      $011B, $0065,
+      $00ED, $0069,
+      $0148, $006E,
+      $00F3, $006F,
+      $0159, $0072,
+      $0161, $0073,
+      $0165, $0074,
+      $00FA, $0075,
+      $016F, $0075,
+      $00FD, $0079,
+      $017E, $007A,
+      $00C1, $0041,
+      $010C, $0043,
+      $00C9, $0045,
+      $011A, $0045,
+      $00CD, $0049,
+      $0147, $004E,
+      $00D3, $004F,
+      $0158, $0052,
+      $0160, $0053,
+      $0164, $0054,
+      $00DA, $0055,
+      $016E, $0055,
+      $00DD, $0059,
+      $017D, $005A
+    );</code></td>
+</tr>
+</table>
+<a name="%40Variables"></a><h3 class="summary">Variáveis</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="synachar.html#DisableIconv">DisableIconv</a></b>: Boolean = False;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="synachar.html#IdealCharsets">IdealCharsets</a></b>: <a   href="synachar.html#TMimeSetChar">TMimeSetChar</a> =
+    [ISO_8859_1, ISO_8859_2, ISO_8859_3, ISO_8859_4, ISO_8859_5,
+    ISO_8859_6, ISO_8859_7, ISO_8859_8, ISO_8859_9, ISO_8859_10,
+    KOI8_R, KOI8_U
+     
+    , GB2312, EUC_KR, ISO_2022_JP, EUC_TW
+    
+    ];</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Funções e Procedimentos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CharsetConversion"></a><code>function <b>CharsetConversion</b>(const Value: AnsiString; CharFrom: <a   href="synachar.html#TMimeChar">TMimeChar</a>; CharTo: <a   href="synachar.html#TMimeChar">TMimeChar</a>): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Convert Value from one charset to another. See: <a class="normal"  href="synachar.html#CharsetConversionEx">CharsetConversionEx</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CharsetConversionEx"></a><code>function <b>CharsetConversionEx</b>(const Value: AnsiString; CharFrom: <a   href="synachar.html#TMimeChar">TMimeChar</a>; CharTo: <a   href="synachar.html#TMimeChar">TMimeChar</a>; const TransformTable: array of Word): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Convert Value from one charset to another with additional character conversion. see: <a class="normal"  href="synachar.html#Replace_None">Replace_None</a> and <a class="normal"  href="synachar.html#Replace_Czech">Replace_Czech</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CharsetConversionTrans"></a><code>function <b>CharsetConversionTrans</b>(Value: AnsiString; CharFrom: <a   href="synachar.html#TMimeChar">TMimeChar</a>; CharTo: <a   href="synachar.html#TMimeChar">TMimeChar</a>; const TransformTable: array of Word; Translit: Boolean): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Convert Value from one charset to another with additional character conversion. This funtion is similar to <a class="normal"  href="synachar.html#CharsetConversionEx">CharsetConversionEx</a>, but you <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> disable transliteration of unconvertible characters.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetCurCP"></a><code>function <b>GetCurCP</b>: <a   href="synachar.html#TMimeChar">TMimeChar</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Returns charset used by operating system.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetCurOEMCP"></a><code>function <b>GetCurOEMCP</b>: <a   href="synachar.html#TMimeChar">TMimeChar</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Returns charset used by operating system as OEM charset. (in Windows DOS box, for example)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetCPFromID"></a><code>function <b>GetCPFromID</b>(Value: AnsiString): <a   href="synachar.html#TMimeChar">TMimeChar</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Converting string with charset name to <a class="normal"  href="synachar.html#TMimeChar">TMimeChar</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetIDFromCP"></a><code>function <b>GetIDFromCP</b>(Value: <a   href="synachar.html#TMimeChar">TMimeChar</a>): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Converting <a class="normal"  href="synachar.html#TMimeChar">TMimeChar</a> to string with name of charset.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NeedCharsetConversion"></a><code>function <b>NeedCharsetConversion</b>(const Value: AnsiString): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:return <code>True</code> when value need to be converted. (It is not 7-bit ASCII)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IdealCharsetCoding"></a><code>function <b>IdealCharsetCoding</b>(const Value: AnsiString; CharFrom: <a   href="synachar.html#TMimeChar">TMimeChar</a>; CharTo: <a   href="synachar.html#TMimeSetChar">TMimeSetChar</a>): <a   href="synachar.html#TMimeChar">TMimeChar</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Finding best target charset from set of TMimeChars with minimal count of unconvertible characters.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetBOM"></a><code>function <b>GetBOM</b>(Value: <a   href="synachar.html#TMimeChar">TMimeChar</a>): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Return BOM (Byte Order Mark) for given unicode charset.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StringToWide"></a><code>function <b>StringToWide</b>(const Value: AnsiString): WideString;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Convert binary string with unicode content to WideString.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="WideToString"></a><code>function <b>WideToString</b>(const Value: WideString): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Convert WideString to binary string with unicode content.</p>
+</td></tr>
+</table>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TMimeChar"></a><code><b>TMimeChar</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Type with all supported charsets.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ISO_8859_1: &nbsp;</li>
+<li>
+ISO_8859_2: &nbsp;</li>
+<li>
+ISO_8859_3: &nbsp;</li>
+<li>
+ISO_8859_4: &nbsp;</li>
+<li>
+ISO_8859_5: &nbsp;</li>
+<li>
+ISO_8859_6: &nbsp;</li>
+<li>
+ISO_8859_7: &nbsp;</li>
+<li>
+ISO_8859_8: &nbsp;</li>
+<li>
+ISO_8859_9: &nbsp;</li>
+<li>
+ISO_8859_10: &nbsp;</li>
+<li>
+ISO_8859_13: &nbsp;</li>
+<li>
+ISO_8859_14: &nbsp;</li>
+<li>
+ISO_8859_15: &nbsp;</li>
+<li>
+CP1250: &nbsp;</li>
+<li>
+CP1251: &nbsp;</li>
+<li>
+CP1252: &nbsp;</li>
+<li>
+CP1253: &nbsp;</li>
+<li>
+CP1254: &nbsp;</li>
+<li>
+CP1255: &nbsp;</li>
+<li>
+CP1256: &nbsp;</li>
+<li>
+CP1257: &nbsp;</li>
+<li>
+CP1258: &nbsp;</li>
+<li>
+KOI8_R: &nbsp;</li>
+<li>
+CP895: &nbsp;</li>
+<li>
+CP852: &nbsp;</li>
+<li>
+UCS_2: &nbsp;</li>
+<li>
+UCS_4: &nbsp;</li>
+<li>
+UTF_8: &nbsp;</li>
+<li>
+UTF_7: &nbsp;</li>
+<li>
+UTF_7mod: &nbsp;</li>
+<li>
+UCS_2LE: &nbsp;</li>
+<li>
+UCS_4LE: &nbsp;</li>
+<li>
+UTF_16: next is supported by Iconv only...</li>
+<li>
+UTF_16LE: &nbsp;</li>
+<li>
+UTF_32: &nbsp;</li>
+<li>
+UTF_32LE: &nbsp;</li>
+<li>
+C99: &nbsp;</li>
+<li>
+JAVA: &nbsp;</li>
+<li>
+ISO_8859_16: &nbsp;</li>
+<li>
+KOI8_U: &nbsp;</li>
+<li>
+KOI8_RU: &nbsp;</li>
+<li>
+CP862: &nbsp;</li>
+<li>
+CP866: &nbsp;</li>
+<li>
+MAC: &nbsp;</li>
+<li>
+MACCE: &nbsp;</li>
+<li>
+MACICE: &nbsp;</li>
+<li>
+MACCRO: &nbsp;</li>
+<li>
+MACRO: &nbsp;</li>
+<li>
+MACCYR: &nbsp;</li>
+<li>
+MACUK: &nbsp;</li>
+<li>
+MACGR: &nbsp;</li>
+<li>
+MACTU: &nbsp;</li>
+<li>
+MACHEB: &nbsp;</li>
+<li>
+MACAR: &nbsp;</li>
+<li>
+MACTH: &nbsp;</li>
+<li>
+ROMAN8: &nbsp;</li>
+<li>
+NEXTSTEP: &nbsp;</li>
+<li>
+ARMASCII: &nbsp;</li>
+<li>
+GEORGIAN_AC: &nbsp;</li>
+<li>
+GEORGIAN_PS: &nbsp;</li>
+<li>
+KOI8_T: &nbsp;</li>
+<li>
+MULELAO: &nbsp;</li>
+<li>
+CP1133: &nbsp;</li>
+<li>
+TIS620: &nbsp;</li>
+<li>
+CP874: &nbsp;</li>
+<li>
+VISCII: &nbsp;</li>
+<li>
+TCVN: &nbsp;</li>
+<li>
+ISO_IR_14: &nbsp;</li>
+<li>
+JIS_X0201: &nbsp;</li>
+<li>
+JIS_X0208: &nbsp;</li>
+<li>
+JIS_X0212: &nbsp;</li>
+<li>
+GB1988_80: &nbsp;</li>
+<li>
+GB2312_80: &nbsp;</li>
+<li>
+ISO_IR_165: &nbsp;</li>
+<li>
+ISO_IR_149: &nbsp;</li>
+<li>
+EUC_JP: &nbsp;</li>
+<li>
+SHIFT_JIS: &nbsp;</li>
+<li>
+CP932: &nbsp;</li>
+<li>
+ISO_2022_JP: &nbsp;</li>
+<li>
+ISO_2022_JP1: &nbsp;</li>
+<li>
+ISO_2022_JP2: &nbsp;</li>
+<li>
+GB2312: &nbsp;</li>
+<li>
+CP936: &nbsp;</li>
+<li>
+GB18030: &nbsp;</li>
+<li>
+ISO_2022_CN: &nbsp;</li>
+<li>
+ISO_2022_CNE: &nbsp;</li>
+<li>
+HZ: &nbsp;</li>
+<li>
+EUC_TW: &nbsp;</li>
+<li>
+BIG5: &nbsp;</li>
+<li>
+CP950: &nbsp;</li>
+<li>
+BIG5_HKSCS: &nbsp;</li>
+<li>
+EUC_KR: &nbsp;</li>
+<li>
+CP949: &nbsp;</li>
+<li>
+CP1361: &nbsp;</li>
+<li>
+ISO_2022_KR: &nbsp;</li>
+<li>
+CP737: &nbsp;</li>
+<li>
+CP775: &nbsp;</li>
+<li>
+CP853: &nbsp;</li>
+<li>
+CP855: &nbsp;</li>
+<li>
+CP857: &nbsp;</li>
+<li>
+CP858: &nbsp;</li>
+<li>
+CP860: &nbsp;</li>
+<li>
+CP861: &nbsp;</li>
+<li>
+CP863: &nbsp;</li>
+<li>
+CP864: &nbsp;</li>
+<li>
+CP865: &nbsp;</li>
+<li>
+CP869: &nbsp;</li>
+<li>
+CP1125: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TMimeSetChar"></a><code><b>TMimeSetChar</b> = set of <a   href="synachar.html#TMimeChar">TMimeChar</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Set of any charsets.</p>
+</td></tr>
+</table>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IconvOnlyChars"></a><code><b>IconvOnlyChars</b>: set of <a   href="synachar.html#TMimeChar">TMimeChar</a> = [UTF_16, UTF_16LE, UTF_32, UTF_32LE,
+    C99, JAVA, ISO_8859_16, KOI8_U, KOI8_RU, CP862, CP866, MAC, MACCE, MACICE,
+    MACCRO, MACRO, MACCYR, MACUK, MACGR, MACTU, MACHEB, MACAR, MACTH, ROMAN8,
+    NEXTSTEP, ARMASCII, GEORGIAN_AC, GEORGIAN_PS, KOI8_T, MULELAO, CP1133,
+    TIS620, CP874, VISCII, TCVN, ISO_IR_14, JIS_X0201, JIS_X0208, JIS_X0212,
+    GB1988_80, GB2312_80, ISO_IR_165, ISO_IR_149, EUC_JP, SHIFT_JIS, CP932,
+    ISO_2022_JP, ISO_2022_JP1, ISO_2022_JP2, GB2312, CP936, GB18030,
+    ISO_2022_CN, ISO_2022_CNE, HZ, EUC_TW, BIG5, CP950, BIG5_HKSCS, EUC_KR,
+    CP949, CP1361, ISO_2022_KR, CP737, CP775, CP853, CP855, CP857, CP858,
+    CP860, CP861, CP863, CP864, CP865, CP869, CP1125];</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Set of charsets supported by Iconv library only.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NoIconvChars"></a><code><b>NoIconvChars</b>: set of <a   href="synachar.html#TMimeChar">TMimeChar</a> = [CP895, UTF_7mod];</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Set of charsets supported by internal routines only.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Replace_None"></a><code><b>Replace_None</b>: array[0..0] of Word =
+    (0);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:null character replace table. (Usable for disable charater replacing.)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Replace_Czech"></a><code><b>Replace_Czech</b>: array[0..59] of Word =
+    (
+      $00E1, $0061,
+      $010D, $0063,
+      $010F, $0064,
+      $010E, $0044,
+      $00E9, $0065,
+      $011B, $0065,
+      $00ED, $0069,
+      $0148, $006E,
+      $00F3, $006F,
+      $0159, $0072,
+      $0161, $0073,
+      $0165, $0074,
+      $00FA, $0075,
+      $016F, $0075,
+      $00FD, $0079,
+      $017E, $007A,
+      $00C1, $0041,
+      $010C, $0043,
+      $00C9, $0045,
+      $011A, $0045,
+      $00CD, $0049,
+      $0147, $004E,
+      $00D3, $004F,
+      $0158, $0052,
+      $0160, $0053,
+      $0164, $0054,
+      $00DA, $0055,
+      $016E, $0055,
+      $00DD, $0059,
+      $017D, $005A
+    );</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Character replace table for remove Czech diakritics.</p>
+</td></tr>
+</table>
+<h3 class="detail">Variáveis</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DisableIconv"></a><code><b>DisableIconv</b>: Boolean = False;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:By this you <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> generally disable/enable Iconv support.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IdealCharsets"></a><code><b>IdealCharsets</b>: <a   href="synachar.html#TMimeSetChar">TMimeSetChar</a> =
+    [ISO_8859_1, ISO_8859_2, ISO_8859_3, ISO_8859_4, ISO_8859_5,
+    ISO_8859_6, ISO_8859_7, ISO_8859_8, ISO_8859_9, ISO_8859_10,
+    KOI8_R, KOI8_U
+     
+    , GB2312, EUC_KR, ISO_2022_JP, EUC_TW
+    
+    ];</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:Default set of charsets for <a class="normal"  href="synachar.html#IdealCharsetCoding">IdealCharsetCoding</a> function.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:21:06</em>
+</span>
+</body></html>

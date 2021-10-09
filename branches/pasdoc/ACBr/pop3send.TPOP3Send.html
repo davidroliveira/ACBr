@@ -1,0 +1,630 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: pop3send: Classe TPOP3Send</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TPOP3Send"></a><h1 class="cio">Classe TPOP3Send</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="pop3send.html">pop3send</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TPOP3Send = class(<a class="normal"  href="blcksock.TSynaClient.html">TSynaClient</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+Implementation of POP3 client protocol.</p>
+<p>
+:
+
+<p>Note: Are you missing properties for setting <a class="normal"  href="blcksock.TSynaClient.html#UserName">Username</a> and <a class="normal"  href="blcksock.TSynaClient.html#Password">Password</a>? Look to parent <a class="normal"  href="blcksock.TSynaClient.html">TSynaClient</a> object!
+
+<p>Are you missing properties for specify server address and port? Look to parent <a class="normal"  href="blcksock.TSynaClient.html">TSynaClient</a> too!</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal"  href="blcksock.TSynaClient.html">TSynaClient</a></li>
+<li class="thisitem">TPOP3Send</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pop3send.TPOP3Send.html#FSock">FSock</a></b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pop3send.TPOP3Send.html#FResultCode">FResultCode</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pop3send.TPOP3Send.html#FResultString">FResultString</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pop3send.TPOP3Send.html#FFullResult">FFullResult</a></b>: TStringList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pop3send.TPOP3Send.html#FStatCount">FStatCount</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pop3send.TPOP3Send.html#FStatSize">FStatSize</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pop3send.TPOP3Send.html#FListSize">FListSize</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pop3send.TPOP3Send.html#FTimeStamp">FTimeStamp</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pop3send.TPOP3Send.html#FAuthType">FAuthType</a></b>: <a   href="pop3send.html#TPOP3AuthType">TPOP3AuthType</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pop3send.TPOP3Send.html#FPOP3cap">FPOP3cap</a></b>: TStringList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pop3send.TPOP3Send.html#FAutoTLS">FAutoTLS</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pop3send.TPOP3Send.html#FFullSSL">FFullSSL</a></b>: Boolean;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#ReadResult">ReadResult</a></b>(Full: Boolean): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#Connect">Connect</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#AuthLogin">AuthLogin</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#AuthApop">AuthApop</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="pop3send.TPOP3Send.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="pop3send.TPOP3Send.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#CustomCommand">CustomCommand</a></b>(const Command: string; MultiLine: Boolean): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#Capability">Capability</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#Login">Login</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#Logout">Logout</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#Reset">Reset</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#NoOp">NoOp</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#Stat">Stat</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#List">List</a></b>(Value: Integer): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#Retr">Retr</a></b>(Value: Integer): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#RetrStream">RetrStream</a></b>(Value: Integer; Stream: TStream): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#Dele">Dele</a></b>(Value: Integer): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#Top">Top</a></b>(Value, Maxlines: Integer): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#Uidl">Uidl</a></b>(Value: Integer): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#StartTLS">StartTLS</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="pop3send.TPOP3Send.html#FindCap">FindCap</a></b>(const Value: string): string;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pop3send.TPOP3Send.html#ResultCode">ResultCode</a></b>: Integer read <a   href="pop3send.TPOP3Send.html#FResultCode">FResultCode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pop3send.TPOP3Send.html#ResultString">ResultString</a></b>: string read <a   href="pop3send.TPOP3Send.html#FResultString">FResultString</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pop3send.TPOP3Send.html#FullResult">FullResult</a></b>: TStringList read <a   href="pop3send.TPOP3Send.html#FFullResult">FFullResult</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pop3send.TPOP3Send.html#StatCount">StatCount</a></b>: Integer read <a   href="pop3send.TPOP3Send.html#FStatCount">FStatCount</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pop3send.TPOP3Send.html#StatSize">StatSize</a></b>: Integer read  <a   href="pop3send.TPOP3Send.html#FStatSize">FStatSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pop3send.TPOP3Send.html#ListSize">ListSize</a></b>: Integer read  <a   href="pop3send.TPOP3Send.html#FListSize">FListSize</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pop3send.TPOP3Send.html#TimeStamp">TimeStamp</a></b>: string read <a   href="pop3send.TPOP3Send.html#FTimeStamp">FTimeStamp</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pop3send.TPOP3Send.html#AuthType">AuthType</a></b>: <a   href="pop3send.html#TPOP3AuthType">TPOP3AuthType</a> read <a   href="pop3send.TPOP3Send.html#FAuthType">FAuthType</a> Write <a   href="pop3send.TPOP3Send.html#FAuthType">FAuthType</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pop3send.TPOP3Send.html#AutoTLS">AutoTLS</a></b>: Boolean read <a   href="pop3send.TPOP3Send.html#FAutoTLS">FAutoTLS</a> Write <a   href="pop3send.TPOP3Send.html#FAutoTLS">FAutoTLS</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pop3send.TPOP3Send.html#FullSSL">FullSSL</a></b>: Boolean read <a   href="pop3send.TPOP3Send.html#FFullSSL">FFullSSL</a> Write <a   href="pop3send.TPOP3Send.html#FFullSSL">FFullSSL</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pop3send.TPOP3Send.html#Sock">Sock</a></b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a> read <a   href="pop3send.TPOP3Send.html#FSock">FSock</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FSock"></a><code><b>FSock</b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FResultCode"></a><code><b>FResultCode</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FResultString"></a><code><b>FResultString</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FFullResult"></a><code><b>FFullResult</b>: TStringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FStatCount"></a><code><b>FStatCount</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FStatSize"></a><code><b>FStatSize</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FListSize"></a><code><b>FListSize</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FTimeStamp"></a><code><b>FTimeStamp</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FAuthType"></a><code><b>FAuthType</b>: <a   href="pop3send.html#TPOP3AuthType">TPOP3AuthType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FPOP3cap"></a><code><b>FPOP3cap</b>: TStringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FAutoTLS"></a><code><b>FAutoTLS</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FFullSSL"></a><code><b>FFullSSL</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="ReadResult"></a><code>function <b>ReadResult</b>(Full: Boolean): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Connect"></a><code>function <b>Connect</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="AuthLogin"></a><code>function <b>AuthLogin</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="AuthApop"></a><code>function <b>AuthApop</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CustomCommand"></a><code>function <b>CustomCommand</b>(const Command: string; MultiLine: Boolean): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:You <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> call any custom by this method. Call Command without trailing <a class="normal"  href="blcksock.html#CRLF">CRLF</a>. If MultiLine parameter is <code>True</code>, multilined response are expected. Result is <code>True</code> on sucess.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Capability"></a><code>function <b>Capability</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Call CAPA command for get POP3 server capabilites. note: not all servers support this command!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Login"></a><code>function <b>Login</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<a class="normal"  href="pop3send.TPOP3Send.html#Connect">Connect</a> to remote POP3 host. If all OK, result is <code>True</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Logout"></a><code>function <b>Logout</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Disconnects from POP3 server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Reset"></a><code>function <b>Reset</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send RSET command. If all OK, result is <code>True</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NoOp"></a><code>function <b>NoOp</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send <code>NOOP</code> command. If all OK, result is <code>True</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Stat"></a><code>function <b>Stat</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send <code>STAT</code> command and fill <a class="normal"  href="pop3send.TPOP3Send.html#StatCount">StatCount</a> and <a class="normal"  href="pop3send.TPOP3Send.html#StatSize">StatSize</a> property. If all OK, result is <code>True</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="List"></a><code>function <b>List</b>(Value: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send <code>LIST</code> command. If Value is 0, <code>LIST</code> is for all messages. After successful operation is listing in <a class="normal"  href="pop3send.TPOP3Send.html#FullResult">FullResult</a>. If all OK, result is <code>True</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Retr"></a><code>function <b>Retr</b>(Value: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send <code>RETR</code> command. After successful operation dowloaded message in <a class="normal"  href="pop3send.TPOP3Send.html#FullResult">FullResult</a>. If all OK, result is <code>True</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RetrStream"></a><code>function <b>RetrStream</b>(Value: Integer; Stream: TStream): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send <a class="normal"  href="pop3send.TPOP3Send.html#Retr">RETR</a> command. After successful operation dowloaded message in <code>Stream</code>. If all OK, result is <code>True</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Dele"></a><code>function <b>Dele</b>(Value: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send <code>DELE</code> command for delete specified message. If all OK, result is <code>True</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Top"></a><code>function <b>Top</b>(Value, Maxlines: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send <code>TOP</code> command. After successful operation dowloaded headers of message and maxlines count of message in <a class="normal"  href="pop3send.TPOP3Send.html#FullResult">FullResult</a>. If all OK, result is <code>True</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Uidl"></a><code>function <b>Uidl</b>(Value: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Send <code>UIDL</code> command. If Value is 0, <code>UIDL</code> is for all messages. After successful operation is listing in <a class="normal"  href="pop3send.TPOP3Send.html#FullResult">FullResult</a>. If all OK, result is <code>True</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StartTLS"></a><code>function <b>StartTLS</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Call STLS command for upgrade connection to SSL/TLS mode.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FindCap"></a><code>function <b>FindCap</b>(const Value: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Try to find given capabily in capabilty string returned from POP3 server by CAPA command.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ResultCode"></a><code>property <b>ResultCode</b>: Integer read <a   href="pop3send.TPOP3Send.html#FResultCode">FResultCode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Result code of last POP3 operation. 0 - error, 1 - OK.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ResultString"></a><code>property <b>ResultString</b>: string read <a   href="pop3send.TPOP3Send.html#FResultString">FResultString</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Result string of last POP3 operation.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FullResult"></a><code>property <b>FullResult</b>: TStringList read <a   href="pop3send.TPOP3Send.html#FFullResult">FFullResult</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Stringlist with full lines returned as result of POP3 operation. I.e. if operation is <a class="normal"  href="pop3send.TPOP3Send.html#List">LIST</a>, this property is filled by <a class="normal"  href="pop3send.TPOP3Send.html#List">list</a> of messages. If operation is <a class="normal"  href="pop3send.TPOP3Send.html#Retr">RETR</a>, this property have downloaded message.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="StatCount"></a><code>property <b>StatCount</b>: Integer read <a   href="pop3send.TPOP3Send.html#FStatCount">FStatCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:After <a class="normal"  href="pop3send.TPOP3Send.html#Stat">STAT</a> command is there count of messages in inbox.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="StatSize"></a><code>property <b>StatSize</b>: Integer read  <a   href="pop3send.TPOP3Send.html#FStatSize">FStatSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:After <a class="normal"  href="pop3send.TPOP3Send.html#Stat">STAT</a> command is there size of all messages in inbox.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ListSize"></a><code>property <b>ListSize</b>: Integer read  <a   href="pop3send.TPOP3Send.html#FListSize">FListSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:After <a class="normal"  href="pop3send.TPOP3Send.html#List">LIST</a> 0 command size of all messages on server, After <a class="normal"  href="pop3send.TPOP3Send.html#List">LIST</a> x size of message x on server</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="TimeStamp"></a><code>property <b>TimeStamp</b>: string read <a   href="pop3send.TPOP3Send.html#FTimeStamp">FTimeStamp</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:If server support this, after comnnect is in this property <code>timestamp</code> of remote server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AuthType"></a><code>property <b>AuthType</b>: <a   href="pop3send.html#TPOP3AuthType">TPOP3AuthType</a> read <a   href="pop3send.TPOP3Send.html#FAuthType">FAuthType</a> Write <a   href="pop3send.TPOP3Send.html#FAuthType">FAuthType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Type of authorisation for <a class="normal"  href="pop3send.TPOP3Send.html#Login">login</a> to POP3 server. Dafault is autodetect one of possible authorisation. Autodetect do this:
+
+<p>If remote POP3 server support APOP, try <a class="normal"  href="pop3send.TPOP3Send.html#Login">login</a> by APOP method. If APOP is not supported, or if APOP <a class="normal"  href="pop3send.TPOP3Send.html#Login">login</a> failed, try classic USER+PASS <a class="normal"  href="pop3send.TPOP3Send.html#Login">login</a> method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AutoTLS"></a><code>property <b>AutoTLS</b>: Boolean read <a   href="pop3send.TPOP3Send.html#FAutoTLS">FAutoTLS</a> Write <a   href="pop3send.TPOP3Send.html#FAutoTLS">FAutoTLS</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:If is set to <code>True</code>, then upgrade to SSL/TLS mode if remote server support it.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FullSSL"></a><code>property <b>FullSSL</b>: Boolean read <a   href="pop3send.TPOP3Send.html#FFullSSL">FFullSSL</a> Write <a   href="pop3send.TPOP3Send.html#FFullSSL">FFullSSL</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:SSL/TLS mode is used from first contact to server. Servers with full SSL/TLS mode usualy using non-standard TCP port!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Sock"></a><code>property <b>Sock</b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a> read <a   href="pop3send.TPOP3Send.html#FSock">FSock</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Socket object used for TCP/IP operation. Good for seting OnStatus hook, etc.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:21:05</em>
+</span>
+</body></html>

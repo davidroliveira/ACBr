@@ -1,0 +1,513 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrEFDBloco_C: Classe TRegistroC800</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TRegistroC800"></a><h1 class="cio">Classe TRegistroC800</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrEFDBloco_C.html">ACBrEFDBloco_C</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TRegistroC800 = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+/ Registro C800 - CUPOM FISCAL ELETRÔNICO (CÓDIGO 59) (somente notas de saída)</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TRegistroC800</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fCOD_MOD">fCOD_MOD</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fCOD_SIT">fCOD_SIT</a></b>: <a   href="ACBrEFDBlocos.html#TACBrSituacaoDocto">TACBrSituacaoDocto</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fNUM_CFE">fNUM_CFE</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fDT_DOC">fDT_DOC</a></b>: TDateTime;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_CFE">fVL_CFE</a></b>: currency;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_PIS">fVL_PIS</a></b>: currency;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_COFINS">fVL_COFINS</a></b>: currency;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fCNPJ_CPF">fCNPJ_CPF</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fNR_SAT">fNR_SAT</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fCHV_CFE">fCHV_CFE</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_DESC">fVL_DESC</a></b>: currency;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_MERC">fVL_MERC</a></b>: currency;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_OUT_DA">fVL_OUT_DA</a></b>: currency;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_ICMS">fVL_ICMS</a></b>: currency;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_PIS_ST">fVL_PIS_ST</a></b>: currency;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_COFINS_ST">fVL_COFINS_ST</a></b>: currency;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrEFDBloco_C.TRegistroC800.html#FRegistroC850">FRegistroC850</a></b>: <a   href="ACBrEFDBloco_C.TRegistroC850List.html">TRegistroC850List</a>;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#Create">Create</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#COD_MOD">COD_MOD</a></b>: String read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCOD_MOD">FCOD_MOD</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCOD_MOD">FCOD_MOD</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#COD_SIT">COD_SIT</a></b>: <a   href="ACBrEFDBlocos.html#TACBrSituacaoDocto">TACBrSituacaoDocto</a> read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCOD_SIT">FCOD_SIT</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCOD_SIT">FCOD_SIT</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#NUM_CFE">NUM_CFE</a></b>: String read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fNUM_CFE">FNUM_CFE</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fNUM_CFE">FNUM_CFE</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#DT_DOC">DT_DOC</a></b>: TDateTime read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fDT_DOC">FDT_DOC</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fDT_DOC">FDT_DOC</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#VL_CFE">VL_CFE</a></b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_CFE">FVL_CFE</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_CFE">FVL_CFE</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#VL_PIS">VL_PIS</a></b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_PIS">FVL_PIS</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_PIS">FVL_PIS</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#VL_COFINS">VL_COFINS</a></b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_COFINS">FVL_COFINS</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_COFINS">FVL_COFINS</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#CNPJ_CPF">CNPJ_CPF</a></b>: String read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCNPJ_CPF">FCNPJ_CPF</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCNPJ_CPF">FCNPJ_CPF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#NR_SAT">NR_SAT</a></b>: String read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fNR_SAT">FNR_SAT</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fNR_SAT">FNR_SAT</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#CHV_CFE">CHV_CFE</a></b>: String read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCHV_CFE">FCHV_CFE</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCHV_CFE">FCHV_CFE</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#VL_DESC">VL_DESC</a></b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_DESC">FVL_DESC</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_DESC">FVL_DESC</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#VL_MERC">VL_MERC</a></b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_MERC">FVL_MERC</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_MERC">FVL_MERC</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#VL_OUT_DA">VL_OUT_DA</a></b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_OUT_DA">FVL_OUT_DA</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_OUT_DA">FVL_OUT_DA</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#VL_ICMS">VL_ICMS</a></b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_ICMS">FVL_ICMS</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_ICMS">FVL_ICMS</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#VL_PIS_ST">VL_PIS_ST</a></b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_PIS_ST">FVL_PIS_ST</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_PIS_ST">FVL_PIS_ST</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#VL_COFINS_ST">VL_COFINS_ST</a></b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_COFINS_ST">FVL_COFINS_ST</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_COFINS_ST">FVL_COFINS_ST</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrEFDBloco_C.TRegistroC800.html#RegistroC850">RegistroC850</a></b>: <a   href="ACBrEFDBloco_C.TRegistroC850List.html">TRegistroC850List</a> read <a   href="ACBrEFDBloco_C.TRegistroC800.html#FRegistroC850">FRegistroC850</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#FRegistroC850">FRegistroC850</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fCOD_MOD"></a><code><b>fCOD_MOD</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fCOD_SIT"></a><code><b>fCOD_SIT</b>: <a   href="ACBrEFDBlocos.html#TACBrSituacaoDocto">TACBrSituacaoDocto</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Código do modelo do documento fiscal, conforme a Tabela 4.1.1</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fNUM_CFE"></a><code><b>fNUM_CFE</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Código da situação do documento fiscal, conforme a Tabela 4.1.2</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fDT_DOC"></a><code><b>fDT_DOC</b>: TDateTime;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Número do Cupom Fiscal Eletrônico</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fVL_CFE"></a><code><b>fVL_CFE</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Data da emissão do documento fiscal Eletrônico</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fVL_PIS"></a><code><b>fVL_PIS</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Valor total do Cupom Fiscal Eletrônico</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fVL_COFINS"></a><code><b>fVL_COFINS</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Valor total do PIS</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fCNPJ_CPF"></a><code><b>fCNPJ_CPF</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Valor total da COFINS</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fNR_SAT"></a><code><b>fNR_SAT</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ CNPJ ou CPF do destinatário</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fCHV_CFE"></a><code><b>fCHV_CFE</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Número de Série do equipamento SAT</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fVL_DESC"></a><code><b>fVL_DESC</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Chave do Cupom Fiscal Eletrônico</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fVL_MERC"></a><code><b>fVL_MERC</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Valor total do desconto sobre item</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fVL_OUT_DA"></a><code><b>fVL_OUT_DA</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Valor das mercadorias e serviço</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fVL_ICMS"></a><code><b>fVL_ICMS</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Valor de outras desp. acessórias (acréscimo)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fVL_PIS_ST"></a><code><b>fVL_PIS_ST</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Valor do ICMS</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fVL_COFINS_ST"></a><code><b>fVL_COFINS_ST</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Valor total do PIS retido por substituição tributária</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FRegistroC850"></a><code><b>FRegistroC850</b>: <a   href="ACBrEFDBloco_C.TRegistroC850List.html">TRegistroC850List</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Valor total da COFINS retido por substituição tributária</p>
+</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ BLOCO C - Lista de <a class="normal"  href="ACBrEFDBloco_C.TRegistroC800.html#RegistroC850">RegistroC850</a> (FILHO)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ <a class="normal"  href="ACBrEFDBloco_C.TRegistroC800.html#Create">Create</a></p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="COD_MOD"></a><code>property <b>COD_MOD</b>: String read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCOD_MOD">FCOD_MOD</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCOD_MOD">FCOD_MOD</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ <a class="normal"  href="ACBrEFDBloco_C.TRegistroC800.html#Destroy">Destroy</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="COD_SIT"></a><code>property <b>COD_SIT</b>: <a   href="ACBrEFDBlocos.html#TACBrSituacaoDocto">TACBrSituacaoDocto</a> read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCOD_SIT">FCOD_SIT</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCOD_SIT">FCOD_SIT</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NUM_CFE"></a><code>property <b>NUM_CFE</b>: String read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fNUM_CFE">FNUM_CFE</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fNUM_CFE">FNUM_CFE</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DT_DOC"></a><code>property <b>DT_DOC</b>: TDateTime read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fDT_DOC">FDT_DOC</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fDT_DOC">FDT_DOC</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VL_CFE"></a><code>property <b>VL_CFE</b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_CFE">FVL_CFE</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_CFE">FVL_CFE</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VL_PIS"></a><code>property <b>VL_PIS</b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_PIS">FVL_PIS</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_PIS">FVL_PIS</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VL_COFINS"></a><code>property <b>VL_COFINS</b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_COFINS">FVL_COFINS</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_COFINS">FVL_COFINS</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CNPJ_CPF"></a><code>property <b>CNPJ_CPF</b>: String read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCNPJ_CPF">FCNPJ_CPF</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCNPJ_CPF">FCNPJ_CPF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NR_SAT"></a><code>property <b>NR_SAT</b>: String read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fNR_SAT">FNR_SAT</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fNR_SAT">FNR_SAT</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CHV_CFE"></a><code>property <b>CHV_CFE</b>: String read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCHV_CFE">FCHV_CFE</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fCHV_CFE">FCHV_CFE</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VL_DESC"></a><code>property <b>VL_DESC</b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_DESC">FVL_DESC</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_DESC">FVL_DESC</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VL_MERC"></a><code>property <b>VL_MERC</b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_MERC">FVL_MERC</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_MERC">FVL_MERC</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VL_OUT_DA"></a><code>property <b>VL_OUT_DA</b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_OUT_DA">FVL_OUT_DA</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_OUT_DA">FVL_OUT_DA</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VL_ICMS"></a><code>property <b>VL_ICMS</b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_ICMS">FVL_ICMS</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_ICMS">FVL_ICMS</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VL_PIS_ST"></a><code>property <b>VL_PIS_ST</b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_PIS_ST">FVL_PIS_ST</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_PIS_ST">FVL_PIS_ST</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VL_COFINS_ST"></a><code>property <b>VL_COFINS_ST</b>: currency read <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_COFINS_ST">FVL_COFINS_ST</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#fVL_COFINS_ST">FVL_COFINS_ST</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RegistroC850"></a><code>property <b>RegistroC850</b>: <a   href="ACBrEFDBloco_C.TRegistroC850List.html">TRegistroC850List</a> read <a   href="ACBrEFDBloco_C.TRegistroC800.html#FRegistroC850">FRegistroC850</a> write <a   href="ACBrEFDBloco_C.TRegistroC800.html#FRegistroC850">FRegistroC850</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Registros FILHOS</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:33</em>
+</span>
+</body></html>

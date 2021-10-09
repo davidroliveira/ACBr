@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrTEFDClass: Classe TACBrTEFDArquivo</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrTEFDArquivo"></a><h1 class="cio">Classe TACBrTEFDArquivo</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrTEFDClass.html">ACBrTEFDClass</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrTEFDArquivo = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+<code>TACBrTEFDArquivo</code></p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TACBrTEFDArquivo</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#fStringList">fStringList</a></b>: TStringList ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#fACBrTEFDLinha">fACBrTEFDLinha</a></b>: <a   href="ACBrTEFDClass.TACBrTEFDLinha.html">TACBrTEFDLinha</a> ;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#AchaLinha">AchaLinha</a></b>(const Identificacao : Integer; const Sequencia : Integer = 0 ) : Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#GetCount">GetCount</a></b> : Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#GetLinha">GetLinha</a></b>(Index : Integer) : <a   href="ACBrTEFDClass.TACBrTEFDLinha.html">TACBrTEFDLinha</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#NomeCampo">NomeCampo</a></b>(const Identificacao: Integer; const Sequencia: Integer ): String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#Create">Create</a></b> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#Destroy">Destroy</a></b> ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#Clear">Clear</a></b> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#GravarArquivo">GravarArquivo</a></b>( const NomeArquivo : String; DoFlushToDisk : Boolean = False ) ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#LeArquivo">LeArquivo</a></b>( const NomeArquivo : String ) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#GravaInformacao">GravaInformacao</a></b>( const Chave, Informacao : AnsiString ) ; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#GravaInformacao">GravaInformacao</a></b>( const Chave : AnsiString; const Informacao : <a   href="ACBrTEFDClass.TACBrTEFDLinhaInformacao.html">TACBrTEFDLinhaInformacao</a> ) ; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#GravaInformacao">GravaInformacao</a></b>( const Identificacao : Integer; const Sequencia : Integer; const Informacao : AnsiString ) ; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#GravaInformacao">GravaInformacao</a></b>( const Identificacao : Integer; const Sequencia : Integer; const Informacao : <a   href="ACBrTEFDClass.TACBrTEFDLinhaInformacao.html">TACBrTEFDLinhaInformacao</a> ) ; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#LeInformacao">LeInformacao</a></b>( const Identificacao : Integer; const Sequencia : Integer = 0 ) : <a   href="ACBrTEFDClass.TACBrTEFDLinhaInformacao.html">TACBrTEFDLinhaInformacao</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#LeLinha">LeLinha</a></b>( const Identificacao : Integer; const Sequencia : Integer = 0) : <a   href="ACBrTEFDClass.TACBrTEFDLinha.html">TACBrTEFDLinha</a> ;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#Conteudo">Conteudo</a></b> : TStringList read <a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#fStringList">fStringList</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#Count">Count</a></b>    : Integer read <a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#GetCount">GetCount</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#Linha">Linha</a></b> [Index: Integer]: <a   href="ACBrTEFDClass.TACBrTEFDLinha.html">TACBrTEFDLinha</a> read <a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#GetLinha">GetLinha</a> ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fStringList"></a><code><b>fStringList</b>: TStringList ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fACBrTEFDLinha"></a><code><b>fACBrTEFDLinha</b>: <a   href="ACBrTEFDClass.TACBrTEFDLinha.html">TACBrTEFDLinha</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="AchaLinha"></a><code>function <b>AchaLinha</b>(const Identificacao : Integer; const Sequencia : Integer = 0 ) : Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetCount"></a><code>function <b>GetCount</b> : Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetLinha"></a><code>function <b>GetLinha</b>(Index : Integer) : <a   href="ACBrTEFDClass.TACBrTEFDLinha.html">TACBrTEFDLinha</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="NomeCampo"></a><code>function <b>NomeCampo</b>(const Identificacao: Integer; const Sequencia: Integer ): String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GravarArquivo"></a><code>procedure <b>GravarArquivo</b>( const NomeArquivo : String; DoFlushToDisk : Boolean = False ) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LeArquivo"></a><code>procedure <b>LeArquivo</b>( const NomeArquivo : String ) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GravaInformacao"></a><code>procedure <b>GravaInformacao</b>( const Chave, Informacao : AnsiString ) ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GravaInformacao"></a><code>procedure <b>GravaInformacao</b>( const Chave : AnsiString; const Informacao : <a   href="ACBrTEFDClass.TACBrTEFDLinhaInformacao.html">TACBrTEFDLinhaInformacao</a> ) ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GravaInformacao"></a><code>procedure <b>GravaInformacao</b>( const Identificacao : Integer; const Sequencia : Integer; const Informacao : AnsiString ) ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GravaInformacao"></a><code>procedure <b>GravaInformacao</b>( const Identificacao : Integer; const Sequencia : Integer; const Informacao : <a   href="ACBrTEFDClass.TACBrTEFDLinhaInformacao.html">TACBrTEFDLinhaInformacao</a> ) ; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LeInformacao"></a><code>function <b>LeInformacao</b>( const Identificacao : Integer; const Sequencia : Integer = 0 ) : <a   href="ACBrTEFDClass.TACBrTEFDLinhaInformacao.html">TACBrTEFDLinhaInformacao</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LeLinha"></a><code>function <b>LeLinha</b>( const Identificacao : Integer; const Sequencia : Integer = 0) : <a   href="ACBrTEFDClass.TACBrTEFDLinha.html">TACBrTEFDLinha</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Conteudo"></a><code>property <b>Conteudo</b> : TStringList read <a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#fStringList">fStringList</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Count"></a><code>property <b>Count</b>    : Integer read <a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#GetCount">GetCount</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Linha"></a><code>property <b>Linha</b> [Index: Integer]: <a   href="ACBrTEFDClass.TACBrTEFDLinha.html">TACBrTEFDLinha</a> read <a   href="ACBrTEFDClass.TACBrTEFDArquivo.html#GetLinha">GetLinha</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:54</em>
+</span>
+</body></html>

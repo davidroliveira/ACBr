@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: libeay32: record BN_MONT_CTX</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="BN_MONT_CTX"></a><h1 class="cio">record BN_MONT_CTX</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td>Hierarquia</td><td><a class="section"  href="#%40Fields">Campos</a></td><td>Métodos</td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="libeay32.html">libeay32</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type BN_MONT_CTX = record</code></p>
+<h2 class="description">Descrição</h2>
+&nbsp;<h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="libeay32.BN_MONT_CTX.html#ri">ri</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="libeay32.BN_MONT_CTX.html#RR">RR</a></b>: <a   href="libeay32.BIGNUM.html">BIGNUM</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="libeay32.BN_MONT_CTX.html#N">N</a></b>: <a   href="libeay32.BIGNUM.html">BIGNUM</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="libeay32.BN_MONT_CTX.html#Ni">Ni</a></b>: <a   href="libeay32.BIGNUM.html">BIGNUM</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="libeay32.BN_MONT_CTX.html#n0">n0</a></b>: <a   href="libeay32.html#BN_ULONG">BN_ULONG</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="libeay32.BN_MONT_CTX.html#flags">flags</a></b>: integer;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ri"></a><code><b>ri</b>: integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RR"></a><code><b>RR</b>: <a   href="libeay32.BIGNUM.html">BIGNUM</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+number of bits in <a class="normal"  href="ACBrECFUrano.html#R">R</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="N"></a><code><b>N</b>: <a   href="libeay32.BIGNUM.html">BIGNUM</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+used to convert to montgomery form</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Ni"></a><code><b>Ni</b>: <a   href="libeay32.BIGNUM.html">BIGNUM</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The modulus</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="n0"></a><code><b>n0</b>: <a   href="libeay32.html#BN_ULONG">BN_ULONG</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<a class="normal"  href="ACBrECFUrano.html#R">R</a>*(1/<a class="normal"  href="ACBrECFUrano.html#R">R</a> mod <a class="normal"  href="libeay32.BN_MONT_CTX.html#N">N</a>) - <a class="normal"  href="libeay32.BN_MONT_CTX.html#N">N</a>*<a class="normal"  href="libeay32.BN_MONT_CTX.html#Ni">Ni</a> = 1 (<a class="normal"  href="libeay32.BN_MONT_CTX.html#Ni">Ni</a> is only stored for <a class="normal"  href="libeay32.BIGNUM.html">bignum</a> <a class="normal"  href="ACBrCAPICOM_TLB.html#Algorithm">algorithm</a>)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="flags"></a><code><b>flags</b>: integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+least significant word of <a class="normal"  href="libeay32.BN_MONT_CTX.html#Ni">Ni</a></p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:57</em>
+</span>
+</body></html>

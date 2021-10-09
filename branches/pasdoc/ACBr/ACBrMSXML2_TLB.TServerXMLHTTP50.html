@@ -1,0 +1,569 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrMSXML2_TLB: Classe TServerXMLHTTP50</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TServerXMLHTTP50"></a><h1 class="cio">Classe TServerXMLHTTP50</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrMSXML2_TLB.html">ACBrMSXML2_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TServerXMLHTTP50 = class(TOleServer)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// OLE Server Proxy class declaration Server Object : <code>TServerXMLHTTP50</code> Help String : Server XML HTTP Request class. Default Interface: <a class="normal"  href="ACBrMSXML2_TLB.IServerXMLHTTPRequest2.html">IServerXMLHTTPRequest2</a> Def. Intf. DISP? : No Event Interface: TypeFlags : (2) CanCreate *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TOleServer</li>
+<li class="thisitem">TServerXMLHTTP50</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#FIntf">FIntf</a></b>:        <a   href="ACBrMSXML2_TLB.IServerXMLHTTPRequest2.html">IServerXMLHTTPRequest2</a>;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#GetDefaultInterface">GetDefaultInterface</a></b>: <a   href="ACBrMSXML2_TLB.IServerXMLHTTPRequest2.html">IServerXMLHTTPRequest2</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#InitServerData">InitServerData</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_status">Get_status</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_statusText">Get_statusText</a></b>: WideString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_responseXML">Get_responseXML</a></b>: IDispatch;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_responseText">Get_responseText</a></b>: WideString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_responseBody">Get_responseBody</a></b>: OleVariant;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_responseStream">Get_responseStream</a></b>: OleVariant;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_readyState">Get_readyState</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Set_onreadystatechange">Set_onreadystatechange</a></b>(const Param1: IDispatch);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Connect">Connect</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#ConnectTo">ConnectTo</a></b>(svrIntf: <a   href="ACBrMSXML2_TLB.IServerXMLHTTPRequest2.html">IServerXMLHTTPRequest2</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Disconnect">Disconnect</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#open">open</a></b>(const bstrMethod: WideString; const bstrUrl: WideString); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#open">open</a></b>(const bstrMethod: WideString; const bstrUrl: WideString; varAsync: OleVariant); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#open">open</a></b>(const bstrMethod: WideString; const bstrUrl: WideString; varAsync: OleVariant; bstrUser: OleVariant); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#open">open</a></b>(const bstrMethod: WideString; const bstrUrl: WideString; varAsync: OleVariant; bstrUser: OleVariant; bstrPassword: OleVariant); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#setRequestHeader">setRequestHeader</a></b>(const bstrHeader: WideString; const bstrValue: WideString);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#getResponseHeader">getResponseHeader</a></b>(const bstrHeader: WideString): WideString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#getAllResponseHeaders">getAllResponseHeaders</a></b>: WideString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#send">send</a></b>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#send">send</a></b>(varBody: OleVariant); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#abort">abort</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#setTimeouts">setTimeouts</a></b>(resolveTimeout: Integer; connectTimeout: Integer; sendTimeout: Integer; receiveTimeout: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#waitForResponse">waitForResponse</a></b>: WordBool; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#waitForResponse">waitForResponse</a></b>(timeoutInSeconds: OleVariant): WordBool; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#getOption">getOption</a></b>(option: <a   href="ACBrMSXML2_TLB.html#SERVERXMLHTTP_OPTION">SERVERXMLHTTP_OPTION</a>): OleVariant;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#setOption">setOption</a></b>(option: <a   href="ACBrMSXML2_TLB.html#SERVERXMLHTTP_OPTION">SERVERXMLHTTP_OPTION</a>; value: OleVariant);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#setProxy">setProxy</a></b>(proxySetting: <a   href="ACBrMSXML2_TLB.html#SXH_PROXY_SETTING">SXH_PROXY_SETTING</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#setProxy">setProxy</a></b>(proxySetting: <a   href="ACBrMSXML2_TLB.html#SXH_PROXY_SETTING">SXH_PROXY_SETTING</a>; varProxyServer: OleVariant); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#setProxy">setProxy</a></b>(proxySetting: <a   href="ACBrMSXML2_TLB.html#SXH_PROXY_SETTING">SXH_PROXY_SETTING</a>; varProxyServer: OleVariant; varBypassList: OleVariant); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#setProxyCredentials">setProxyCredentials</a></b>(const bstrUserName: WideString; const bstrPassword: WideString);</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#DefaultInterface">DefaultInterface</a></b>: <a   href="ACBrMSXML2_TLB.IServerXMLHTTPRequest2.html">IServerXMLHTTPRequest2</a> read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#GetDefaultInterface">GetDefaultInterface</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#status">status</a></b>: Integer read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_status">Get_status</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#statusText">statusText</a></b>: WideString read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_statusText">Get_statusText</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#responseXML">responseXML</a></b>: IDispatch read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_responseXML">Get_responseXML</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#responseText">responseText</a></b>: WideString read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_responseText">Get_responseText</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#responseBody">responseBody</a></b>: OleVariant read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_responseBody">Get_responseBody</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#responseStream">responseStream</a></b>: OleVariant read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_responseStream">Get_responseStream</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#readyState">readyState</a></b>: Integer read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_readyState">Get_readyState</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#onreadystatechange">onreadystatechange</a></b>: IDispatch write <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Set_onreadystatechange">Set_onreadystatechange</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FIntf"></a><code><b>FIntf</b>:        <a   href="ACBrMSXML2_TLB.IServerXMLHTTPRequest2.html">IServerXMLHTTPRequest2</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetDefaultInterface"></a><code>function <b>GetDefaultInterface</b>: <a   href="ACBrMSXML2_TLB.IServerXMLHTTPRequest2.html">IServerXMLHTTPRequest2</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="InitServerData"></a><code>procedure <b>InitServerData</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_status"></a><code>function <b>Get_status</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_statusText"></a><code>function <b>Get_statusText</b>: WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_responseXML"></a><code>function <b>Get_responseXML</b>: IDispatch;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_responseText"></a><code>function <b>Get_responseText</b>: WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_responseBody"></a><code>function <b>Get_responseBody</b>: OleVariant;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_responseStream"></a><code>function <b>Get_responseStream</b>: OleVariant;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Get_readyState"></a><code>function <b>Get_readyState</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Set_onreadystatechange"></a><code>procedure <b>Set_onreadystatechange</b>(const Param1: IDispatch);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Connect"></a><code>procedure <b>Connect</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ConnectTo"></a><code>procedure <b>ConnectTo</b>(svrIntf: <a   href="ACBrMSXML2_TLB.IServerXMLHTTPRequest2.html">IServerXMLHTTPRequest2</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Disconnect"></a><code>procedure <b>Disconnect</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="open"></a><code>procedure <b>open</b>(const bstrMethod: WideString; const bstrUrl: WideString); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="open"></a><code>procedure <b>open</b>(const bstrMethod: WideString; const bstrUrl: WideString; varAsync: OleVariant); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="open"></a><code>procedure <b>open</b>(const bstrMethod: WideString; const bstrUrl: WideString; varAsync: OleVariant; bstrUser: OleVariant); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="open"></a><code>procedure <b>open</b>(const bstrMethod: WideString; const bstrUrl: WideString; varAsync: OleVariant; bstrUser: OleVariant; bstrPassword: OleVariant); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="setRequestHeader"></a><code>procedure <b>setRequestHeader</b>(const bstrHeader: WideString; const bstrValue: WideString);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="getResponseHeader"></a><code>function <b>getResponseHeader</b>(const bstrHeader: WideString): WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="getAllResponseHeaders"></a><code>function <b>getAllResponseHeaders</b>: WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="send"></a><code>procedure <b>send</b>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="send"></a><code>procedure <b>send</b>(varBody: OleVariant); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="abort"></a><code>procedure <b>abort</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="setTimeouts"></a><code>procedure <b>setTimeouts</b>(resolveTimeout: Integer; connectTimeout: Integer; sendTimeout: Integer; receiveTimeout: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="waitForResponse"></a><code>function <b>waitForResponse</b>: WordBool; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="waitForResponse"></a><code>function <b>waitForResponse</b>(timeoutInSeconds: OleVariant): WordBool; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="getOption"></a><code>function <b>getOption</b>(option: <a   href="ACBrMSXML2_TLB.html#SERVERXMLHTTP_OPTION">SERVERXMLHTTP_OPTION</a>): OleVariant;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="setOption"></a><code>procedure <b>setOption</b>(option: <a   href="ACBrMSXML2_TLB.html#SERVERXMLHTTP_OPTION">SERVERXMLHTTP_OPTION</a>; value: OleVariant);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="setProxy"></a><code>procedure <b>setProxy</b>(proxySetting: <a   href="ACBrMSXML2_TLB.html#SXH_PROXY_SETTING">SXH_PROXY_SETTING</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="setProxy"></a><code>procedure <b>setProxy</b>(proxySetting: <a   href="ACBrMSXML2_TLB.html#SXH_PROXY_SETTING">SXH_PROXY_SETTING</a>; varProxyServer: OleVariant); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="setProxy"></a><code>procedure <b>setProxy</b>(proxySetting: <a   href="ACBrMSXML2_TLB.html#SXH_PROXY_SETTING">SXH_PROXY_SETTING</a>; varProxyServer: OleVariant; varBypassList: OleVariant); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="setProxyCredentials"></a><code>procedure <b>setProxyCredentials</b>(const bstrUserName: WideString; const bstrPassword: WideString);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DefaultInterface"></a><code>property <b>DefaultInterface</b>: <a   href="ACBrMSXML2_TLB.IServerXMLHTTPRequest2.html">IServerXMLHTTPRequest2</a> read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#GetDefaultInterface">GetDefaultInterface</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="status"></a><code>property <b>status</b>: Integer read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_status">Get_status</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="statusText"></a><code>property <b>statusText</b>: WideString read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_statusText">Get_statusText</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="responseXML"></a><code>property <b>responseXML</b>: IDispatch read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_responseXML">Get_responseXML</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="responseText"></a><code>property <b>responseText</b>: WideString read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_responseText">Get_responseText</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="responseBody"></a><code>property <b>responseBody</b>: OleVariant read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_responseBody">Get_responseBody</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="responseStream"></a><code>property <b>responseStream</b>: OleVariant read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_responseStream">Get_responseStream</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="readyState"></a><code>property <b>readyState</b>: Integer read <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Get_readyState">Get_readyState</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="onreadystatechange"></a><code>property <b>onreadystatechange</b>: IDispatch write <a   href="ACBrMSXML2_TLB.TServerXMLHTTP50.html#Set_onreadystatechange">Set_onreadystatechange</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:47</em>
+</span>
+</body></html>

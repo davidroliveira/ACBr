@@ -1,0 +1,895 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: snmpsend: Classe TSNMPRec</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TSNMPRec"></a><h1 class="cio">Classe TSNMPRec</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="snmpsend.html">snmpsend</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TSNMPRec = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+Data object abstracts SNMP data packet</p>
+<p>
+:</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TSNMPRec</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FVersion">FVersion</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FPDUType">FPDUType</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FID">FID</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FErrorStatus">FErrorStatus</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FErrorIndex">FErrorIndex</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FCommunity">FCommunity</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FSNMPMibList">FSNMPMibList</a></b>: TList;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FMaxSize">FMaxSize</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FFlags">FFlags</a></b>: <a   href="snmpsend.html#TV3Flags">TV3Flags</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FFlagReportable">FFlagReportable</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FContextEngineID">FContextEngineID</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FContextName">FContextName</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FAuthMode">FAuthMode</a></b>: <a   href="snmpsend.html#TV3Auth">TV3Auth</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FAuthEngineID">FAuthEngineID</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FAuthEngineBoots">FAuthEngineBoots</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FAuthEngineTime">FAuthEngineTime</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FAuthEngineTimeStamp">FAuthEngineTimeStamp</a></b>: cardinal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FUserName">FUserName</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FPassword">FPassword</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FAuthKey">FAuthKey</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FPrivKey">FPrivKey</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FOldTrapEnterprise">FOldTrapEnterprise</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FOldTrapHost">FOldTrapHost</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FOldTrapGen">FOldTrapGen</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FOldTrapSpec">FOldTrapSpec</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><b><a   href="snmpsend.TSNMPRec.html#FOldTrapTimeTicks">FOldTrapTimeTicks</a></b>: Integer;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="snmpsend.TSNMPRec.html#Pass2Key">Pass2Key</a></b>(const Value: AnsiString): AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="snmpsend.TSNMPRec.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="snmpsend.TSNMPRec.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="snmpsend.TSNMPRec.html#DecodeBuf">DecodeBuf</a></b>(const Buffer: AnsiString): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="snmpsend.TSNMPRec.html#EncodeBuf">EncodeBuf</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="snmpsend.TSNMPRec.html#Clear">Clear</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="snmpsend.TSNMPRec.html#MIBAdd">MIBAdd</a></b>(const MIB, Value: AnsiString; ValueType: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="snmpsend.TSNMPRec.html#MIBDelete">MIBDelete</a></b>(Index: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="snmpsend.TSNMPRec.html#MIBGet">MIBGet</a></b>(const MIB: AnsiString): AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="snmpsend.TSNMPRec.html#MIBCount">MIBCount</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="snmpsend.TSNMPRec.html#MIBByIndex">MIBByIndex</a></b>(Index: Integer): <a   href="snmpsend.TSNMPMib.html">TSNMPMib</a>;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#SNMPMibList">SNMPMibList</a></b>: TList read <a   href="snmpsend.TSNMPRec.html#FSNMPMibList">FSNMPMibList</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#Version">Version</a></b>: Integer read <a   href="snmpsend.TSNMPRec.html#FVersion">FVersion</a> write <a   href="snmpsend.TSNMPRec.html#FVersion">FVersion</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#Community">Community</a></b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FCommunity">FCommunity</a> write <a   href="snmpsend.TSNMPRec.html#FCommunity">FCommunity</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#PDUType">PDUType</a></b>: Integer read <a   href="snmpsend.TSNMPRec.html#FPDUType">FPDUType</a> write <a   href="snmpsend.TSNMPRec.html#FPDUType">FPDUType</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#ID">ID</a></b>: Integer read <a   href="snmpsend.TSNMPRec.html#FID">FID</a> write <a   href="snmpsend.TSNMPRec.html#FID">FID</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#ErrorStatus">ErrorStatus</a></b>: Integer read <a   href="snmpsend.TSNMPRec.html#FErrorStatus">FErrorStatus</a> write <a   href="snmpsend.TSNMPRec.html#FErrorStatus">FErrorStatus</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#ErrorIndex">ErrorIndex</a></b>: Integer read <a   href="snmpsend.TSNMPRec.html#FErrorIndex">FErrorIndex</a> write <a   href="snmpsend.TSNMPRec.html#FErrorIndex">FErrorIndex</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#NonRepeaters">NonRepeaters</a></b>: Integer read <a   href="snmpsend.TSNMPRec.html#FErrorStatus">FErrorStatus</a> write <a   href="snmpsend.TSNMPRec.html#FErrorStatus">FErrorStatus</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#MaxRepetitions">MaxRepetitions</a></b>: Integer read <a   href="snmpsend.TSNMPRec.html#FErrorIndex">FErrorIndex</a> write <a   href="snmpsend.TSNMPRec.html#FErrorIndex">FErrorIndex</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#MaxSize">MaxSize</a></b>: Integer read <a   href="snmpsend.TSNMPRec.html#FMaxSize">FMaxSize</a> write <a   href="snmpsend.TSNMPRec.html#FMaxSize">FMaxSize</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#Flags">Flags</a></b>: <a   href="snmpsend.html#TV3Flags">TV3Flags</a> read <a   href="snmpsend.TSNMPRec.html#FFlags">FFlags</a> write <a   href="snmpsend.TSNMPRec.html#FFlags">FFlags</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#FlagReportable">FlagReportable</a></b>: Boolean read <a   href="snmpsend.TSNMPRec.html#FFlagReportable">FFlagReportable</a> write <a   href="snmpsend.TSNMPRec.html#FFlagReportable">FFlagReportable</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#ContextEngineID">ContextEngineID</a></b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FContextEngineID">FContextEngineID</a> write <a   href="snmpsend.TSNMPRec.html#FContextEngineID">FContextEngineID</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#ContextName">ContextName</a></b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FContextName">FContextName</a> write <a   href="snmpsend.TSNMPRec.html#FContextName">FContextName</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#AuthMode">AuthMode</a></b>: <a   href="snmpsend.html#TV3Auth">TV3Auth</a> read <a   href="snmpsend.TSNMPRec.html#FAuthMode">FAuthMode</a> write <a   href="snmpsend.TSNMPRec.html#FAuthMode">FAuthMode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#AuthEngineID">AuthEngineID</a></b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FAuthEngineID">FAuthEngineID</a> write <a   href="snmpsend.TSNMPRec.html#FAuthEngineID">FAuthEngineID</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#AuthEngineBoots">AuthEngineBoots</a></b>: Integer read <a   href="snmpsend.TSNMPRec.html#FAuthEngineBoots">FAuthEngineBoots</a> write <a   href="snmpsend.TSNMPRec.html#FAuthEngineBoots">FAuthEngineBoots</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#AuthEngineTime">AuthEngineTime</a></b>: Integer read <a   href="snmpsend.TSNMPRec.html#FAuthEngineTime">FAuthEngineTime</a> write <a   href="snmpsend.TSNMPRec.html#FAuthEngineTime">FAuthEngineTime</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#AuthEngineTimeStamp">AuthEngineTimeStamp</a></b>: Cardinal read <a   href="snmpsend.TSNMPRec.html#FAuthEngineTimeStamp">FAuthEngineTimeStamp</a> Write <a   href="snmpsend.TSNMPRec.html#FAuthEngineTimeStamp">FAuthEngineTimeStamp</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#UserName">UserName</a></b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FUserName">FUserName</a> write <a   href="snmpsend.TSNMPRec.html#FUserName">FUserName</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#Password">Password</a></b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FPassword">FPassword</a> write <a   href="snmpsend.TSNMPRec.html#FPassword">FPassword</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#AuthKey">AuthKey</a></b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FAuthKey">FAuthKey</a> write <a   href="snmpsend.TSNMPRec.html#FAuthKey">FAuthKey</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#PrivKey">PrivKey</a></b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FPrivKey">FPrivKey</a> write <a   href="snmpsend.TSNMPRec.html#FPrivKey">FPrivKey</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#OldTrapEnterprise">OldTrapEnterprise</a></b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FOldTrapEnterprise">FOldTrapEnterprise</a> write <a   href="snmpsend.TSNMPRec.html#FOldTrapEnterprise">FOldTrapEnterprise</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#OldTrapHost">OldTrapHost</a></b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FOldTrapHost">FOldTrapHost</a> write <a   href="snmpsend.TSNMPRec.html#FOldTrapHost">FOldTrapHost</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#OldTrapGen">OldTrapGen</a></b>: Integer read <a   href="snmpsend.TSNMPRec.html#FOldTrapGen">FOldTrapGen</a> write <a   href="snmpsend.TSNMPRec.html#FOldTrapGen">FOldTrapGen</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#OldTrapSpec">OldTrapSpec</a></b>: Integer read <a   href="snmpsend.TSNMPRec.html#FOldTrapSpec">FOldTrapSpec</a> write <a   href="snmpsend.TSNMPRec.html#FOldTrapSpec">FOldTrapSpec</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="snmpsend.TSNMPRec.html#OldTrapTimeTicks">OldTrapTimeTicks</a></b>: Integer read <a   href="snmpsend.TSNMPRec.html#FOldTrapTimeTicks">FOldTrapTimeTicks</a> write <a   href="snmpsend.TSNMPRec.html#FOldTrapTimeTicks">FOldTrapTimeTicks</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FVersion"></a><code><b>FVersion</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FPDUType"></a><code><b>FPDUType</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FID"></a><code><b>FID</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FErrorStatus"></a><code><b>FErrorStatus</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FErrorIndex"></a><code><b>FErrorIndex</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FCommunity"></a><code><b>FCommunity</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FSNMPMibList"></a><code><b>FSNMPMibList</b>: TList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FMaxSize"></a><code><b>FMaxSize</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FFlags"></a><code><b>FFlags</b>: <a   href="snmpsend.html#TV3Flags">TV3Flags</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FFlagReportable"></a><code><b>FFlagReportable</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FContextEngineID"></a><code><b>FContextEngineID</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FContextName"></a><code><b>FContextName</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FAuthMode"></a><code><b>FAuthMode</b>: <a   href="snmpsend.html#TV3Auth">TV3Auth</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FAuthEngineID"></a><code><b>FAuthEngineID</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FAuthEngineBoots"></a><code><b>FAuthEngineBoots</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FAuthEngineTime"></a><code><b>FAuthEngineTime</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FAuthEngineTimeStamp"></a><code><b>FAuthEngineTimeStamp</b>: cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FUserName"></a><code><b>FUserName</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FPassword"></a><code><b>FPassword</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FAuthKey"></a><code><b>FAuthKey</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FPrivKey"></a><code><b>FPrivKey</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FOldTrapEnterprise"></a><code><b>FOldTrapEnterprise</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FOldTrapHost"></a><code><b>FOldTrapHost</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FOldTrapGen"></a><code><b>FOldTrapGen</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FOldTrapSpec"></a><code><b>FOldTrapSpec</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="FOldTrapTimeTicks"></a><code><b>FOldTrapTimeTicks</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Pass2Key"></a><code>function <b>Pass2Key</b>(const Value: AnsiString): AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DecodeBuf"></a><code>function <b>DecodeBuf</b>(const Buffer: AnsiString): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Decode SNMP packet in buffer to object properties.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EncodeBuf"></a><code>function <b>EncodeBuf</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Encode obeject properties to SNMP packet.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Clears all object properties to default values.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MIBAdd"></a><code>procedure <b>MIBAdd</b>(const MIB, Value: AnsiString; ValueType: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Add entry to <a class="normal"  href="snmpsend.TSNMPRec.html#SNMPMibList">SNMPMibList</a>. For queries use value as empty string, and ValueType as <a class="normal"  href="asn1util.html#ASN1_NULL">ASN1_NULL</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MIBDelete"></a><code>procedure <b>MIBDelete</b>(Index: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Delete entry from <a class="normal"  href="snmpsend.TSNMPRec.html#SNMPMibList">SNMPMibList</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MIBGet"></a><code>function <b>MIBGet</b>(const MIB: AnsiString): AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Search <a class="normal"  href="snmpsend.TSNMPRec.html#SNMPMibList">SNMPMibList</a> list for MIB and return correspond value.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MIBCount"></a><code>function <b>MIBCount</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:return number of entries in MIB array.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MIBByIndex"></a><code>function <b>MIBByIndex</b>(Index: Integer): <a   href="snmpsend.TSNMPMib.html">TSNMPMib</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Return MIB information from given row of MIB array.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SNMPMibList"></a><code>property <b>SNMPMibList</b>: TList read <a   href="snmpsend.TSNMPRec.html#FSNMPMibList">FSNMPMibList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:List of <a class="normal"  href="snmpsend.TSNMPMib.html">TSNMPMib</a> objects.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Version"></a><code>property <b>Version</b>: Integer read <a   href="snmpsend.TSNMPRec.html#FVersion">FVersion</a> write <a   href="snmpsend.TSNMPRec.html#FVersion">FVersion</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<code>Version</code> of SNMP packet. Default value is 0 (SNMP ver. 1). You <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> use value 1 for SNMPv2c or value 3 for SNMPv3.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Community"></a><code>property <b>Community</b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FCommunity">FCommunity</a> write <a   href="snmpsend.TSNMPRec.html#FCommunity">FCommunity</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<code>Community</code> string for autorize access to SNMP server. (Case sensitive!) <code>Community</code> string is not used in SNMPv3! Use <a class="normal"  href="snmpsend.TSNMPRec.html#UserName">Username</a> and <a class="normal"  href="snmpsend.TSNMPRec.html#Password">password</a> instead!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="PDUType"></a><code>property <b>PDUType</b>: Integer read <a   href="snmpsend.TSNMPRec.html#FPDUType">FPDUType</a> write <a   href="snmpsend.TSNMPRec.html#FPDUType">FPDUType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Define type of SNMP operation.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ID"></a><code>property <b>ID</b>: Integer read <a   href="snmpsend.TSNMPRec.html#FID">FID</a> write <a   href="snmpsend.TSNMPRec.html#FID">FID</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Contains <code>ID</code> number. Not need to use.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ErrorStatus"></a><code>property <b>ErrorStatus</b>: Integer read <a   href="snmpsend.TSNMPRec.html#FErrorStatus">FErrorStatus</a> write <a   href="snmpsend.TSNMPRec.html#FErrorStatus">FErrorStatus</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:When packet is reply, contains error code. Supported values are defined by E* constants.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ErrorIndex"></a><code>property <b>ErrorIndex</b>: Integer read <a   href="snmpsend.TSNMPRec.html#FErrorIndex">FErrorIndex</a> write <a   href="snmpsend.TSNMPRec.html#FErrorIndex">FErrorIndex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Point to error position in reply packet. Not usefull for users. It only good for debugging!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="NonRepeaters"></a><code>property <b>NonRepeaters</b>: Integer read <a   href="snmpsend.TSNMPRec.html#FErrorStatus">FErrorStatus</a> write <a   href="snmpsend.TSNMPRec.html#FErrorStatus">FErrorStatus</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:special value for GetBulkRequest of SNMPv2 and v3.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MaxRepetitions"></a><code>property <b>MaxRepetitions</b>: Integer read <a   href="snmpsend.TSNMPRec.html#FErrorIndex">FErrorIndex</a> write <a   href="snmpsend.TSNMPRec.html#FErrorIndex">FErrorIndex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:special value for GetBulkRequest of SNMPv2 and v3.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MaxSize"></a><code>property <b>MaxSize</b>: Integer read <a   href="snmpsend.TSNMPRec.html#FMaxSize">FMaxSize</a> write <a   href="snmpsend.TSNMPRec.html#FMaxSize">FMaxSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Maximum message size in bytes for SNMPv3. For sending is default 1472 bytes.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Flags"></a><code>property <b>Flags</b>: <a   href="snmpsend.html#TV3Flags">TV3Flags</a> read <a   href="snmpsend.TSNMPRec.html#FFlags">FFlags</a> write <a   href="snmpsend.TSNMPRec.html#FFlags">FFlags</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Specify if message is authorised or encrypted. Used only in SNMPv3, and encryption is not yet supported!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FlagReportable"></a><code>property <b>FlagReportable</b>: Boolean read <a   href="snmpsend.TSNMPRec.html#FFlagReportable">FFlagReportable</a> write <a   href="snmpsend.TSNMPRec.html#FFlagReportable">FFlagReportable</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:For SNMPv3.... If is <code>True</code>, SNMP agent must send reply (at least with some error).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ContextEngineID"></a><code>property <b>ContextEngineID</b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FContextEngineID">FContextEngineID</a> write <a   href="snmpsend.TSNMPRec.html#FContextEngineID">FContextEngineID</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:For SNMPv3. If not specified, is used value from <a class="normal"  href="snmpsend.TSNMPRec.html#AuthEngineID">AuthEngineID</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ContextName"></a><code>property <b>ContextName</b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FContextName">FContextName</a> write <a   href="snmpsend.TSNMPRec.html#FContextName">FContextName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:For SNMPv3.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AuthMode"></a><code>property <b>AuthMode</b>: <a   href="snmpsend.html#TV3Auth">TV3Auth</a> read <a   href="snmpsend.TSNMPRec.html#FAuthMode">FAuthMode</a> write <a   href="snmpsend.TSNMPRec.html#FAuthMode">FAuthMode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:For SNMPv3. Specify Authorization mode. (specify used hash for authorization)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AuthEngineID"></a><code>property <b>AuthEngineID</b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FAuthEngineID">FAuthEngineID</a> write <a   href="snmpsend.TSNMPRec.html#FAuthEngineID">FAuthEngineID</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:value used by SNMPv3 authorisation for synchronization with SNMP agent.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AuthEngineBoots"></a><code>property <b>AuthEngineBoots</b>: Integer read <a   href="snmpsend.TSNMPRec.html#FAuthEngineBoots">FAuthEngineBoots</a> write <a   href="snmpsend.TSNMPRec.html#FAuthEngineBoots">FAuthEngineBoots</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:value used by SNMPv3 authorisation for synchronization with SNMP agent.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AuthEngineTime"></a><code>property <b>AuthEngineTime</b>: Integer read <a   href="snmpsend.TSNMPRec.html#FAuthEngineTime">FAuthEngineTime</a> write <a   href="snmpsend.TSNMPRec.html#FAuthEngineTime">FAuthEngineTime</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:value used by SNMPv3 authorisation for synchronization with SNMP agent.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AuthEngineTimeStamp"></a><code>property <b>AuthEngineTimeStamp</b>: Cardinal read <a   href="snmpsend.TSNMPRec.html#FAuthEngineTimeStamp">FAuthEngineTimeStamp</a> Write <a   href="snmpsend.TSNMPRec.html#FAuthEngineTimeStamp">FAuthEngineTimeStamp</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:value used by SNMPv3 authorisation for synchronization with SNMP agent.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="UserName"></a><code>property <b>UserName</b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FUserName">FUserName</a> write <a   href="snmpsend.TSNMPRec.html#FUserName">FUserName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:SNMPv3 authorization <code>username</code></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Password"></a><code>property <b>Password</b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FPassword">FPassword</a> write <a   href="snmpsend.TSNMPRec.html#FPassword">FPassword</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:SNMPv3 authorization <code>password</code></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AuthKey"></a><code>property <b>AuthKey</b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FAuthKey">FAuthKey</a> write <a   href="snmpsend.TSNMPRec.html#FAuthKey">FAuthKey</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:For SNMPv3. Computed Athorization key from <a class="normal"  href="snmpsend.TSNMPRec.html#Password">password</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="PrivKey"></a><code>property <b>PrivKey</b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FPrivKey">FPrivKey</a> write <a   href="snmpsend.TSNMPRec.html#FPrivKey">FPrivKey</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:For SNMPv3. Encryption key for message encryption. Not yet used!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OldTrapEnterprise"></a><code>property <b>OldTrapEnterprise</b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FOldTrapEnterprise">FOldTrapEnterprise</a> write <a   href="snmpsend.TSNMPRec.html#FOldTrapEnterprise">FOldTrapEnterprise</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:MIB value to identify the object that sent the TRAPv1.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OldTrapHost"></a><code>property <b>OldTrapHost</b>: AnsiString read <a   href="snmpsend.TSNMPRec.html#FOldTrapHost">FOldTrapHost</a> write <a   href="snmpsend.TSNMPRec.html#FOldTrapHost">FOldTrapHost</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Address of TRAPv1 sender (IP address).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OldTrapGen"></a><code>property <b>OldTrapGen</b>: Integer read <a   href="snmpsend.TSNMPRec.html#FOldTrapGen">FOldTrapGen</a> write <a   href="snmpsend.TSNMPRec.html#FOldTrapGen">FOldTrapGen</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Generic TRAPv1 identification.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OldTrapSpec"></a><code>property <b>OldTrapSpec</b>: Integer read <a   href="snmpsend.TSNMPRec.html#FOldTrapSpec">FOldTrapSpec</a> write <a   href="snmpsend.TSNMPRec.html#FOldTrapSpec">FOldTrapSpec</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Specific TRAPv1 identification.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OldTrapTimeTicks"></a><code>property <b>OldTrapTimeTicks</b>: Integer read <a   href="snmpsend.TSNMPRec.html#FOldTrapTimeTicks">FOldTrapTimeTicks</a> write <a   href="snmpsend.TSNMPRec.html#FOldTrapTimeTicks">FOldTrapTimeTicks</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Number of 1/100th of seconds since last reboot or power up. (for TRAPv1)</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:21:05</em>
+</span>
+</body></html>

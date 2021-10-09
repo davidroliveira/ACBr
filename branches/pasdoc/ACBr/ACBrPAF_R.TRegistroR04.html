@@ -1,0 +1,535 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrPAF_R: Classe TRegistroR04</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TRegistroR04"></a><h1 class="cio">Classe TRegistroR04</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrPAF_R.html">ACBrPAF_R</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TRegistroR04 = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+/ REGISTRO TIPO R04 - CUPOM FISCAL, NOTA FISCAL DE VENDA A CONSUMIDOR E BILHETE DE PASSAGEM</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TRegistroR04</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fRegistroValido">fRegistroValido</a></b>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fNUM_USU">fNUM_USU</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fNUM_CONT">fNUM_CONT</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fCOO">fCOO</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fDT_INI">fDT_INI</a></b>: TDateTime;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fSUB_DOCTO">fSUB_DOCTO</a></b>: currency;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fSUB_DESCTO">fSUB_DESCTO</a></b>: currency;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fTP_DESCTO">fTP_DESCTO</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fSUB_ACRES">fSUB_ACRES</a></b>: currency;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fTP_ACRES">fTP_ACRES</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fVL_TOT">fVL_TOT</a></b>: currency;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fCANC">fCANC</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fVL_CA">fVL_CA</a></b>: currency;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fORDEM_DA">fORDEM_DA</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fNOME_CLI">fNOME_CLI</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fCNPJ_CPF">fCNPJ_CPF</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fRegistroR05">fRegistroR05</a></b>: <a   href="ACBrPAF_R.TRegistroR05List.html">TRegistroR05List</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrPAF_R.TRegistroR04.html#fRegistroR07">fRegistroR07</a></b>: <a   href="ACBrPAF_R.TRegistroR07List.html">TRegistroR07List</a>;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrPAF_R.TRegistroR04.html#Create">Create</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrPAF_R.TRegistroR04.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#RegistroValido">RegistroValido</a></b>: Boolean read <a   href="ACBrPAF_R.TRegistroR04.html#fRegistroValido">fRegistroValido</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fRegistroValido">fRegistroValido</a> default True;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#NUM_USU">NUM_USU</a></b>: integer read <a   href="ACBrPAF_R.TRegistroR04.html#fNUM_USU">FNUM_USU</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fNUM_USU">FNUM_USU</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#NUM_CONT">NUM_CONT</a></b>: integer read <a   href="ACBrPAF_R.TRegistroR04.html#fNUM_CONT">FNUM_CONT</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fNUM_CONT">FNUM_CONT</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#COO">COO</a></b>: integer read <a   href="ACBrPAF_R.TRegistroR04.html#fCOO">FCOO</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fCOO">FCOO</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#DT_INI">DT_INI</a></b>: TDateTime read <a   href="ACBrPAF_R.TRegistroR04.html#fDT_INI">FDT_INI</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fDT_INI">FDT_INI</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#SUB_DOCTO">SUB_DOCTO</a></b>: currency read <a   href="ACBrPAF_R.TRegistroR04.html#fSUB_DOCTO">FSUB_DOCTO</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fSUB_DOCTO">FSUB_DOCTO</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#SUB_DESCTO">SUB_DESCTO</a></b>: currency read <a   href="ACBrPAF_R.TRegistroR04.html#fSUB_DESCTO">FSUB_DESCTO</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fSUB_DESCTO">FSUB_DESCTO</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#TP_DESCTO">TP_DESCTO</a></b>: string read <a   href="ACBrPAF_R.TRegistroR04.html#fTP_DESCTO">FTP_DESCTO</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fTP_DESCTO">FTP_DESCTO</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#SUB_ACRES">SUB_ACRES</a></b>: currency read <a   href="ACBrPAF_R.TRegistroR04.html#fSUB_ACRES">FSUB_ACRES</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fSUB_ACRES">FSUB_ACRES</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#TP_ACRES">TP_ACRES</a></b>: string read <a   href="ACBrPAF_R.TRegistroR04.html#fTP_ACRES">FTP_ACRES</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fTP_ACRES">FTP_ACRES</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#VL_TOT">VL_TOT</a></b>: currency read <a   href="ACBrPAF_R.TRegistroR04.html#fVL_TOT">FVL_TOT</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fVL_TOT">FVL_TOT</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#CANC">CANC</a></b>: string read <a   href="ACBrPAF_R.TRegistroR04.html#fCANC">FCANC</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fCANC">FCANC</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#VL_CA">VL_CA</a></b>: currency read <a   href="ACBrPAF_R.TRegistroR04.html#fVL_CA">FVL_CA</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fVL_CA">FVL_CA</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#ORDEM_DA">ORDEM_DA</a></b>: string read <a   href="ACBrPAF_R.TRegistroR04.html#fORDEM_DA">FORDEM_DA</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fORDEM_DA">FORDEM_DA</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#NOME_CLI">NOME_CLI</a></b>: string read <a   href="ACBrPAF_R.TRegistroR04.html#fNOME_CLI">FNOME_CLI</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fNOME_CLI">FNOME_CLI</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#CNPJ_CPF">CNPJ_CPF</a></b>: string read <a   href="ACBrPAF_R.TRegistroR04.html#fCNPJ_CPF">FCNPJ_CPF</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fCNPJ_CPF">FCNPJ_CPF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#RegistroR05">RegistroR05</a></b>: <a   href="ACBrPAF_R.TRegistroR05List.html">TRegistroR05List</a> read <a   href="ACBrPAF_R.TRegistroR04.html#fRegistroR05">FRegistroR05</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fRegistroR05">FRegistroR05</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrPAF_R.TRegistroR04.html#RegistroR07">RegistroR07</a></b>: <a   href="ACBrPAF_R.TRegistroR07List.html">TRegistroR07List</a> read <a   href="ACBrPAF_R.TRegistroR04.html#fRegistroR07">FRegistroR07</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fRegistroR07">FRegistroR07</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fRegistroValido"></a><code><b>fRegistroValido</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fNUM_USU"></a><code><b>fNUM_USU</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fNUM_CONT"></a><code><b>fNUM_CONT</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Nº de ordem do usuário do ECF</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fCOO"></a><code><b>fCOO</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Nº do contador do respectivo documento emitido</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fDT_INI"></a><code><b>fDT_INI</b>: TDateTime;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Nº do <a class="normal"  href="ACBrPAF_R.TRegistroR04.html#COO">COO</a> relativo ao respectivo documento</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fSUB_DOCTO"></a><code><b>fSUB_DOCTO</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Data de início da emissão do documento impressa no cabeçalho do documento</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fSUB_DESCTO"></a><code><b>fSUB_DESCTO</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Valor total do documento, com duas casas decimais.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fTP_DESCTO"></a><code><b>fTP_DESCTO</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Valor do desconto ou Percentual aplicado sobre o valor do subtotal do documento, com duas casas decimais.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fSUB_ACRES"></a><code><b>fSUB_ACRES</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Informar “V” para valor monetário ou “P” para percentual</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fTP_ACRES"></a><code><b>fTP_ACRES</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Valor do acréscimo ou Percentual aplicado sobre o valor do subtotal do documento, com duas casas decimais</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fVL_TOT"></a><code><b>fVL_TOT</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Informar “V” para valor monetário ou “P” para percentual</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fCANC"></a><code><b>fCANC</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Valor total do Cupom Fiscal após desconto/acréscimo, com duas casas decimais.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fVL_CA"></a><code><b>fVL_CA</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Informar &quot;S&quot; ou &quot;N&quot;, conforme tenha ocorrido ou não, o cancelamento do documento.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fORDEM_DA"></a><code><b>fORDEM_DA</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Valor do cancelamento de acréscimo no subtotal</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fNOME_CLI"></a><code><b>fNOME_CLI</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Indicador de ordem de aplicação de desconto/acréscimo em Subtotal. ‘D’ ou ‘A’ caso tenha ocorrido primeiro desconto ou acréscimo, respectivamente</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fCNPJ_CPF"></a><code><b>fCNPJ_CPF</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Nome do Cliente</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fRegistroR05"></a><code><b>fRegistroR05</b>: <a   href="ACBrPAF_R.TRegistroR05List.html">TRegistroR05List</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ CPF ou CNPJ do adquirente</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fRegistroR07"></a><code><b>fRegistroR07</b>: <a   href="ACBrPAF_R.TRegistroR07List.html">TRegistroR07List</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Registro FILHO</p>
+</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ Registro FILHO</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ <a class="normal"  href="ACBrPAF_R.TRegistroR04.html#Create">Create</a></p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RegistroValido"></a><code>property <b>RegistroValido</b>: Boolean read <a   href="ACBrPAF_R.TRegistroR04.html#fRegistroValido">fRegistroValido</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fRegistroValido">fRegistroValido</a> default True;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+/ <a class="normal"  href="ACBrPAF_R.TRegistroR04.html#Destroy">Destroy</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NUM_USU"></a><code>property <b>NUM_USU</b>: integer read <a   href="ACBrPAF_R.TRegistroR04.html#fNUM_USU">FNUM_USU</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fNUM_USU">FNUM_USU</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NUM_CONT"></a><code>property <b>NUM_CONT</b>: integer read <a   href="ACBrPAF_R.TRegistroR04.html#fNUM_CONT">FNUM_CONT</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fNUM_CONT">FNUM_CONT</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="COO"></a><code>property <b>COO</b>: integer read <a   href="ACBrPAF_R.TRegistroR04.html#fCOO">FCOO</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fCOO">FCOO</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DT_INI"></a><code>property <b>DT_INI</b>: TDateTime read <a   href="ACBrPAF_R.TRegistroR04.html#fDT_INI">FDT_INI</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fDT_INI">FDT_INI</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SUB_DOCTO"></a><code>property <b>SUB_DOCTO</b>: currency read <a   href="ACBrPAF_R.TRegistroR04.html#fSUB_DOCTO">FSUB_DOCTO</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fSUB_DOCTO">FSUB_DOCTO</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SUB_DESCTO"></a><code>property <b>SUB_DESCTO</b>: currency read <a   href="ACBrPAF_R.TRegistroR04.html#fSUB_DESCTO">FSUB_DESCTO</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fSUB_DESCTO">FSUB_DESCTO</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TP_DESCTO"></a><code>property <b>TP_DESCTO</b>: string read <a   href="ACBrPAF_R.TRegistroR04.html#fTP_DESCTO">FTP_DESCTO</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fTP_DESCTO">FTP_DESCTO</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SUB_ACRES"></a><code>property <b>SUB_ACRES</b>: currency read <a   href="ACBrPAF_R.TRegistroR04.html#fSUB_ACRES">FSUB_ACRES</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fSUB_ACRES">FSUB_ACRES</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TP_ACRES"></a><code>property <b>TP_ACRES</b>: string read <a   href="ACBrPAF_R.TRegistroR04.html#fTP_ACRES">FTP_ACRES</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fTP_ACRES">FTP_ACRES</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VL_TOT"></a><code>property <b>VL_TOT</b>: currency read <a   href="ACBrPAF_R.TRegistroR04.html#fVL_TOT">FVL_TOT</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fVL_TOT">FVL_TOT</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CANC"></a><code>property <b>CANC</b>: string read <a   href="ACBrPAF_R.TRegistroR04.html#fCANC">FCANC</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fCANC">FCANC</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VL_CA"></a><code>property <b>VL_CA</b>: currency read <a   href="ACBrPAF_R.TRegistroR04.html#fVL_CA">FVL_CA</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fVL_CA">FVL_CA</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ORDEM_DA"></a><code>property <b>ORDEM_DA</b>: string read <a   href="ACBrPAF_R.TRegistroR04.html#fORDEM_DA">FORDEM_DA</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fORDEM_DA">FORDEM_DA</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NOME_CLI"></a><code>property <b>NOME_CLI</b>: string read <a   href="ACBrPAF_R.TRegistroR04.html#fNOME_CLI">FNOME_CLI</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fNOME_CLI">FNOME_CLI</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CNPJ_CPF"></a><code>property <b>CNPJ_CPF</b>: string read <a   href="ACBrPAF_R.TRegistroR04.html#fCNPJ_CPF">FCNPJ_CPF</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fCNPJ_CPF">FCNPJ_CPF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RegistroR05"></a><code>property <b>RegistroR05</b>: <a   href="ACBrPAF_R.TRegistroR05List.html">TRegistroR05List</a> read <a   href="ACBrPAF_R.TRegistroR04.html#fRegistroR05">FRegistroR05</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fRegistroR05">FRegistroR05</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RegistroR07"></a><code>property <b>RegistroR07</b>: <a   href="ACBrPAF_R.TRegistroR07List.html">TRegistroR07List</a> read <a   href="ACBrPAF_R.TRegistroR04.html#fRegistroR07">FRegistroR07</a> write <a   href="ACBrPAF_R.TRegistroR04.html#fRegistroR07">FRegistroR07</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:51</em>
+</span>
+</body></html>

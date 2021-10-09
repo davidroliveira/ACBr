@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: OpenSSL: record DSA</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="DSA"></a><h1 class="cio">record DSA</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td>Hierarquia</td><td><a class="section"  href="#%40Fields">Campos</a></td><td>Métodos</td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="OpenSSL.html">OpenSSL</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type DSA = record</code></p>
+<h2 class="description">Descrição</h2>
+&nbsp;<h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.DSA.html#pad">pad</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.DSA.html#version">version</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.DSA.html#write_params">write_params</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.DSA.html#p">p</a></b>: pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.DSA.html#q">q</a></b>: pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.DSA.html#g">g</a></b>: pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.DSA.html#pub_key">pub_key</a></b>: pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.DSA.html#priv_key">priv_key</a></b>: pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.DSA.html#kinv">kinv</a></b>: pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.DSA.html#r">r</a></b>: pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.DSA.html#flags">flags</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.DSA.html#method_mont_p">method_mont_p</a></b>: PChar;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.DSA.html#references">references</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.DSA.html#ex_data">ex_data</a></b>: record</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.DSA.html#meth">meth</a></b>: pointer;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="pad"></a><code><b>pad</b>: integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="version"></a><code><b>version</b>: integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="write_params"></a><code><b>write_params</b>: integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="p"></a><code><b>p</b>: pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="q"></a><code><b>q</b>: pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="g"></a><code><b>g</b>: pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="pub_key"></a><code><b>pub_key</b>: pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="priv_key"></a><code><b>priv_key</b>: pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="kinv"></a><code><b>kinv</b>: pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="r"></a><code><b>r</b>: pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="flags"></a><code><b>flags</b>: integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="method_mont_p"></a><code><b>method_mont_p</b>: PChar;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="references"></a><code><b>references</b>: integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ex_data"></a><code><b>ex_data</b>: record</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="meth"></a><code><b>meth</b>: pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:58</em>
+</span>
+</body></html>

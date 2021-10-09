@@ -1,0 +1,303 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrMSXML2_TLB: Interface ISchemaElement</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="ISchemaElement"></a><h1 class="cio">Interface ISchemaElement</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td>Campos</td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrMSXML2_TLB.html">ACBrMSXML2_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type ISchemaElement = interface(<a class="normal"  href="ACBrMSXML2_TLB.ISchemaParticle.html">ISchemaParticle</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// Interface: <code>ISchemaElement</code> Flags: (4544) Dual NonExtensible OleAutomation Dispatchable GUID: {50EA08B7-DD1B-4664-9A50-C2F40F4BD79A} *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">IDispatch</li>
+<li class="ancestor"><a class="normal"  href="ACBrMSXML2_TLB.ISchemaItem.html">ISchemaItem</a></li>
+<li class="ancestor"><a class="normal"  href="ACBrMSXML2_TLB.ISchemaParticle.html">ISchemaParticle</a></li>
+<li class="thisitem">ISchemaElement</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_type_">Get_type_</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaType.html">ISchemaType</a>; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_scope">Get_scope</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaComplexType.html">ISchemaComplexType</a>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_defaultValue">Get_defaultValue</a></b>: WideString; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_fixedValue">Get_fixedValue</a></b>: WideString; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_isNillable">Get_isNillable</a></b>: WordBool; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_identityConstraints">Get_identityConstraints</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaItemCollection.html">ISchemaItemCollection</a>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_substitutionGroup">Get_substitutionGroup</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaElement.html">ISchemaElement</a>; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_substitutionGroupExclusions">Get_substitutionGroupExclusions</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_disallowedSubstitutions">Get_disallowedSubstitutions</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a>; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_isAbstract">Get_isAbstract</a></b>: WordBool; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_isReference">Get_isReference</a></b>: WordBool; safecall;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#type_">type_</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaType.html">ISchemaType</a> read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_type_">Get_type_</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#scope">scope</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaComplexType.html">ISchemaComplexType</a> read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_scope">Get_scope</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#defaultValue">defaultValue</a></b>: WideString read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_defaultValue">Get_defaultValue</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#fixedValue">fixedValue</a></b>: WideString read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_fixedValue">Get_fixedValue</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#isNillable">isNillable</a></b>: WordBool read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_isNillable">Get_isNillable</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#identityConstraints">identityConstraints</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaItemCollection.html">ISchemaItemCollection</a> read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_identityConstraints">Get_identityConstraints</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#substitutionGroup">substitutionGroup</a></b>: <a   href="ACBrMSXML2_TLB.ISchemaElement.html">ISchemaElement</a> read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_substitutionGroup">Get_substitutionGroup</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#substitutionGroupExclusions">substitutionGroupExclusions</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a> read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_substitutionGroupExclusions">Get_substitutionGroupExclusions</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#disallowedSubstitutions">disallowedSubstitutions</a></b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a> read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_disallowedSubstitutions">Get_disallowedSubstitutions</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#isAbstract">isAbstract</a></b>: WordBool read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_isAbstract">Get_isAbstract</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.ISchemaElement.html#isReference">isReference</a></b>: WordBool read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_isReference">Get_isReference</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_type_"></a><code>function <b>Get_type_</b>: <a   href="ACBrMSXML2_TLB.ISchemaType.html">ISchemaType</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_scope"></a><code>function <b>Get_scope</b>: <a   href="ACBrMSXML2_TLB.ISchemaComplexType.html">ISchemaComplexType</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_defaultValue"></a><code>function <b>Get_defaultValue</b>: WideString; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_fixedValue"></a><code>function <b>Get_fixedValue</b>: WideString; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_isNillable"></a><code>function <b>Get_isNillable</b>: WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_identityConstraints"></a><code>function <b>Get_identityConstraints</b>: <a   href="ACBrMSXML2_TLB.ISchemaItemCollection.html">ISchemaItemCollection</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_substitutionGroup"></a><code>function <b>Get_substitutionGroup</b>: <a   href="ACBrMSXML2_TLB.ISchemaElement.html">ISchemaElement</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_substitutionGroupExclusions"></a><code>function <b>Get_substitutionGroupExclusions</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_disallowedSubstitutions"></a><code>function <b>Get_disallowedSubstitutions</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_isAbstract"></a><code>function <b>Get_isAbstract</b>: WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_isReference"></a><code>function <b>Get_isReference</b>: WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="type_"></a><code>property <b>type_</b>: <a   href="ACBrMSXML2_TLB.ISchemaType.html">ISchemaType</a> read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_type_">Get_type_</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="scope"></a><code>property <b>scope</b>: <a   href="ACBrMSXML2_TLB.ISchemaComplexType.html">ISchemaComplexType</a> read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_scope">Get_scope</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="defaultValue"></a><code>property <b>defaultValue</b>: WideString read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_defaultValue">Get_defaultValue</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="fixedValue"></a><code>property <b>fixedValue</b>: WideString read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_fixedValue">Get_fixedValue</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="isNillable"></a><code>property <b>isNillable</b>: WordBool read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_isNillable">Get_isNillable</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="identityConstraints"></a><code>property <b>identityConstraints</b>: <a   href="ACBrMSXML2_TLB.ISchemaItemCollection.html">ISchemaItemCollection</a> read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_identityConstraints">Get_identityConstraints</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="substitutionGroup"></a><code>property <b>substitutionGroup</b>: <a   href="ACBrMSXML2_TLB.ISchemaElement.html">ISchemaElement</a> read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_substitutionGroup">Get_substitutionGroup</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="substitutionGroupExclusions"></a><code>property <b>substitutionGroupExclusions</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a> read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_substitutionGroupExclusions">Get_substitutionGroupExclusions</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="disallowedSubstitutions"></a><code>property <b>disallowedSubstitutions</b>: <a   href="ACBrMSXML2_TLB.html#SCHEMADERIVATIONMETHOD">SCHEMADERIVATIONMETHOD</a> read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_disallowedSubstitutions">Get_disallowedSubstitutions</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="isAbstract"></a><code>property <b>isAbstract</b>: WordBool read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_isAbstract">Get_isAbstract</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="isReference"></a><code>property <b>isReference</b>: WordBool read <a   href="ACBrMSXML2_TLB.ISchemaElement.html#Get_isReference">Get_isReference</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:44</em>
+</span>
+</body></html>

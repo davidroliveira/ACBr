@@ -1,0 +1,513 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: mimemess: Classe TMessHeader</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TMessHeader"></a><h1 class="cio">Classe TMessHeader</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="mimemess.html">mimemess</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TMessHeader = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+Object for basic e-mail header fields.</p>
+<p>
+:</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TMessHeader</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="mimemess.TMessHeader.html#FFrom">FFrom</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="mimemess.TMessHeader.html#FToList">FToList</a></b>: TStringList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="mimemess.TMessHeader.html#FCCList">FCCList</a></b>: TStringList;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="mimemess.TMessHeader.html#FSubject">FSubject</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="mimemess.TMessHeader.html#FOrganization">FOrganization</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="mimemess.TMessHeader.html#FCustomHeaders">FCustomHeaders</a></b>: TStringList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="mimemess.TMessHeader.html#FDate">FDate</a></b>: TDateTime;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="mimemess.TMessHeader.html#FXMailer">FXMailer</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="mimemess.TMessHeader.html#FCharsetCode">FCharsetCode</a></b>: <a   href="synachar.html#TMimeChar">TMimeChar</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="mimemess.TMessHeader.html#FReplyTo">FReplyTo</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="mimemess.TMessHeader.html#FMessageID">FMessageID</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="mimemess.TMessHeader.html#FPriority">FPriority</a></b>: <a   href="mimemess.html#TMessPriority">TMessPriority</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="mimemess.TMessHeader.html#Fpri">Fpri</a></b>: <a   href="mimemess.html#TMessPriority">TMessPriority</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="mimemess.TMessHeader.html#Fxpri">Fxpri</a></b>: <a   href="mimemess.html#TMessPriority">TMessPriority</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="mimemess.TMessHeader.html#Fxmspri">Fxmspri</a></b>: <a   href="mimemess.html#TMessPriority">TMessPriority</a>;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="mimemess.TMessHeader.html#ParsePriority">ParsePriority</a></b>(value: string): <a   href="mimemess.html#TMessPriority">TMessPriority</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="mimemess.TMessHeader.html#DecodeHeader">DecodeHeader</a></b>(value: string): boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="mimemess.TMessHeader.html#Create">Create</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="mimemess.TMessHeader.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="mimemess.TMessHeader.html#Clear">Clear</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="mimemess.TMessHeader.html#EncodeHeaders">EncodeHeaders</a></b>(const Value: TStrings); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="mimemess.TMessHeader.html#DecodeHeaders">DecodeHeaders</a></b>(const Value: TStrings);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="mimemess.TMessHeader.html#FindHeader">FindHeader</a></b>(Value: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="mimemess.TMessHeader.html#FindHeaderList">FindHeaderList</a></b>(Value: string; const HeaderList: TStrings);</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="mimemess.TMessHeader.html#From">From</a></b>: string read <a   href="mimemess.TMessHeader.html#FFrom">FFrom</a> Write <a   href="mimemess.TMessHeader.html#FFrom">FFrom</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="mimemess.TMessHeader.html#ToList">ToList</a></b>: TStringList read <a   href="mimemess.TMessHeader.html#FToList">FToList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="mimemess.TMessHeader.html#CCList">CCList</a></b>: TStringList read <a   href="mimemess.TMessHeader.html#FCCList">FCCList</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="mimemess.TMessHeader.html#Subject">Subject</a></b>: string read <a   href="mimemess.TMessHeader.html#FSubject">FSubject</a> Write <a   href="mimemess.TMessHeader.html#FSubject">FSubject</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="mimemess.TMessHeader.html#Organization">Organization</a></b>: string read <a   href="mimemess.TMessHeader.html#FOrganization">FOrganization</a> Write <a   href="mimemess.TMessHeader.html#FOrganization">FOrganization</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="mimemess.TMessHeader.html#CustomHeaders">CustomHeaders</a></b>: TStringList read <a   href="mimemess.TMessHeader.html#FCustomHeaders">FCustomHeaders</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="mimemess.TMessHeader.html#Date">Date</a></b>: TDateTime read <a   href="mimemess.TMessHeader.html#FDate">FDate</a> Write <a   href="mimemess.TMessHeader.html#FDate">FDate</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="mimemess.TMessHeader.html#XMailer">XMailer</a></b>: string read <a   href="mimemess.TMessHeader.html#FXMailer">FXMailer</a> Write <a   href="mimemess.TMessHeader.html#FXMailer">FXMailer</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="mimemess.TMessHeader.html#ReplyTo">ReplyTo</a></b>: string read <a   href="mimemess.TMessHeader.html#FReplyTo">FReplyTo</a> Write <a   href="mimemess.TMessHeader.html#FReplyTo">FReplyTo</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="mimemess.TMessHeader.html#MessageID">MessageID</a></b>: string read <a   href="mimemess.TMessHeader.html#FMessageID">FMessageID</a> Write <a   href="mimemess.TMessHeader.html#FMessageID">FMessageID</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="mimemess.TMessHeader.html#Priority">Priority</a></b>: <a   href="mimemess.html#TMessPriority">TMessPriority</a> read <a   href="mimemess.TMessHeader.html#FPriority">FPriority</a> Write <a   href="mimemess.TMessHeader.html#FPriority">FPriority</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="mimemess.TMessHeader.html#CharsetCode">CharsetCode</a></b>: <a   href="synachar.html#TMimeChar">TMimeChar</a> read <a   href="mimemess.TMessHeader.html#FCharsetCode">FCharsetCode</a> Write <a   href="mimemess.TMessHeader.html#FCharsetCode">FCharsetCode</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FFrom"></a><code><b>FFrom</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FToList"></a><code><b>FToList</b>: TStringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCCList"></a><code><b>FCCList</b>: TStringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FSubject"></a><code><b>FSubject</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FOrganization"></a><code><b>FOrganization</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCustomHeaders"></a><code><b>FCustomHeaders</b>: TStringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FDate"></a><code><b>FDate</b>: TDateTime;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FXMailer"></a><code><b>FXMailer</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCharsetCode"></a><code><b>FCharsetCode</b>: <a   href="synachar.html#TMimeChar">TMimeChar</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FReplyTo"></a><code><b>FReplyTo</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FMessageID"></a><code><b>FMessageID</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FPriority"></a><code><b>FPriority</b>: <a   href="mimemess.html#TMessPriority">TMessPriority</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Fpri"></a><code><b>Fpri</b>: <a   href="mimemess.html#TMessPriority">TMessPriority</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Fxpri"></a><code><b>Fxpri</b>: <a   href="mimemess.html#TMessPriority">TMessPriority</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Fxmspri"></a><code><b>Fxmspri</b>: <a   href="mimemess.html#TMessPriority">TMessPriority</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="ParsePriority"></a><code>function <b>ParsePriority</b>(value: string): <a   href="mimemess.html#TMessPriority">TMessPriority</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="DecodeHeader"></a><code>function <b>DecodeHeader</b>(value: string): boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Clears all data fields.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EncodeHeaders"></a><code>procedure <b>EncodeHeaders</b>(const Value: TStrings); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add headers <a class="normal"  href="mimemess.TMessHeader.html#From">from</a> <a class="normal"  href="mimemess.TMessHeader.html#From">from</a> this object to Value.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DecodeHeaders"></a><code>procedure <b>DecodeHeaders</b>(const Value: TStrings);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Parse header <a class="normal"  href="mimemess.TMessHeader.html#From">from</a> Value to this object.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FindHeader"></a><code>function <b>FindHeader</b>(Value: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Try find specific header in CustomHeader. Search is case insensitive. This is good for reading any non-parsed header.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FindHeaderList"></a><code>procedure <b>FindHeaderList</b>(Value: string; const HeaderList: TStrings);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Try find specific headers in CustomHeader. This metod is for repeatly used headers like 'received' header, etc. Search is case insensitive. This is good for reading ano non-parsed header.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="From"></a><code>property <b>From</b>: string read <a   href="mimemess.TMessHeader.html#FFrom">FFrom</a> Write <a   href="mimemess.TMessHeader.html#FFrom">FFrom</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Sender of message.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ToList"></a><code>property <b>ToList</b>: TStringList read <a   href="mimemess.TMessHeader.html#FToList">FToList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Stringlist with receivers of message. (one per line)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CCList"></a><code>property <b>CCList</b>: TStringList read <a   href="mimemess.TMessHeader.html#FCCList">FCCList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Stringlist with Carbon Copy receivers of message. (one per line)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Subject"></a><code>property <b>Subject</b>: string read <a   href="mimemess.TMessHeader.html#FSubject">FSubject</a> Write <a   href="mimemess.TMessHeader.html#FSubject">FSubject</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<code>Subject</code> of message.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Organization"></a><code>property <b>Organization</b>: string read <a   href="mimemess.TMessHeader.html#FOrganization">FOrganization</a> Write <a   href="mimemess.TMessHeader.html#FOrganization">FOrganization</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<code>Organization</code> string.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CustomHeaders"></a><code>property <b>CustomHeaders</b>: TStringList read <a   href="mimemess.TMessHeader.html#FCustomHeaders">FCustomHeaders</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:After decoding contains all headers lines witch not have parsed to any other structures in this object. It mean: this conatins all other headers except:
+
+<p>X-MAILER, <a class="normal"  href="mimemess.TMessHeader.html#From">FROM</a>, <a class="normal"  href="mimemess.TMessHeader.html#Subject">SUBJECT</a>, <a class="normal"  href="mimemess.TMessHeader.html#Organization">ORGANIZATION</a>, TO, CC, <a class="normal"  href="mimemess.TMessHeader.html#Date">DATE</a>, MIME-VERSION, CONTENT-TYPE, CONTENT-DESCRIPTION, CONTENT-DISPOSITION, CONTENT-ID, CONTENT-TRANSFER-ENCODING, REPLY-TO, MESSAGE-ID, X-MSMAIL-<a class="normal"  href="mimemess.TMessHeader.html#Priority">PRIORITY</a>, X-<a class="normal"  href="mimemess.TMessHeader.html#Priority">PRIORITY</a>, <a class="normal"  href="mimemess.TMessHeader.html#Priority">PRIORITY</a>
+
+<p>When you encode headers, all this lines is added as headers. Be carefull for duplicites!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Date"></a><code>property <b>Date</b>: TDateTime read <a   href="mimemess.TMessHeader.html#FDate">FDate</a> Write <a   href="mimemess.TMessHeader.html#FDate">FDate</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<code>Date</code> and time of message.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="XMailer"></a><code>property <b>XMailer</b>: string read <a   href="mimemess.TMessHeader.html#FXMailer">FXMailer</a> Write <a   href="mimemess.TMessHeader.html#FXMailer">FXMailer</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Mailer identification.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ReplyTo"></a><code>property <b>ReplyTo</b>: string read <a   href="mimemess.TMessHeader.html#FReplyTo">FReplyTo</a> Write <a   href="mimemess.TMessHeader.html#FReplyTo">FReplyTo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Address for replies</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MessageID"></a><code>property <b>MessageID</b>: string read <a   href="mimemess.TMessHeader.html#FMessageID">FMessageID</a> Write <a   href="mimemess.TMessHeader.html#FMessageID">FMessageID</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:message indetifier</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Priority"></a><code>property <b>Priority</b>: <a   href="mimemess.html#TMessPriority">TMessPriority</a> read <a   href="mimemess.TMessHeader.html#FPriority">FPriority</a> Write <a   href="mimemess.TMessHeader.html#FPriority">FPriority</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:message <code>priority</code></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CharsetCode"></a><code>property <b>CharsetCode</b>: <a   href="synachar.html#TMimeChar">TMimeChar</a> read <a   href="mimemess.TMessHeader.html#FCharsetCode">FCharsetCode</a> Write <a   href="mimemess.TMessHeader.html#FCharsetCode">FCharsetCode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Specify base charset. By default is used system charset.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:58</em>
+</span>
+</body></html>

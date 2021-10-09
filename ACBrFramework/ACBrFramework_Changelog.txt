@@ -1,0 +1,1220 @@
+{******************************************************************************}
+{ Projeto: ACBrFramework                                                       }
+{ Biblioteca multi plataforma que permite usar os componentes do ACBr em       }
+{ outras linguagens como .NET, Java, xBase, VB6, etc ...                       }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na página do Projeto          }
+{  ACBrFramework localizado em      http://acbrframework.sourceforge.net/      }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{                                                                              }
+{******************************************************************************}
+
+Agradecimentos:
+
+* Administradores:
+- Rafael Batiati
+
+* Desenvolvedores:
+- Rafael Dias
+- Adenilton Silva
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+Changelog
+
+10/12/2017
+-- ACBrFramework 0.9.8.0
+[-] Corrigido erro de compilação - ACBRETQ - Rafael Dias.
+[*] Ajustes nas propriedades para ficar de acordo com o refactory - ACBRETQ - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.8.0
+[*] Ajustes nas propriedades para ficar de acordo com o refactory - ACBRETQ - Rafael Dias.
+[*] Adicionado o demo para o ACBrETQ - ACBRETQ - Rafael Dias.
+
+14/11/2017
+-- ACBrFramework 0.9.7.10
+[+] Adicionado a versão 111 no Sped - Rafael Dias.
+
+18/10/2017
+-- ACBrFramework 0.9.7.9
+[*] Removido a propriedade AdicionarComandoP - ACBrETQ - Rafael Dias.
+[*] Arrumado a propriedade BackFeed - ACBrETQ - Rafael Dias.
+[*] Atualizado as dlls do OpenSSL - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.7.9
+[*] Removido a propriedade AdicionarComandoP - ACBrETQ - Rafael Dias.
+[*] Arrumado a propriedade BackFeed - ACBrETQ - Rafael Dias.
+[*] Adicionado novos modelos de balança - ACBrBAL - Rafael Dias.
+
+22/12/2016
+-- ACBrFramework 0.9.7.8
+[*] Adicionado uma melhoria para geração do SPEDFiscal - Rafael Dias.
+[*] Arrumado a propriedade CodigoAutorizacaoTransacao da Resposta do TEF que agora passou a ser string - ACBrTEFD - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.7.8
+[+] Adicionado novos enum do SPEDFiscal - ACBrSpedFiscal - Rafael Dias.
+[*] Arrumado a propriedade CodigoAutorizacaoTransacao da Resposta do TEF que agora passou a ser string - ACBrTEFD - Rafael Dias.
+
+12/11/2016
+-- ACBrFramework 0.9.7.7
+[+] Adicionado o interop do ACBrETQ - Rafael Dias.
+[*] Ajustado o interop do ACBrECF com as novas modificações do ACBr - ACBrECF - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.7.7
+[+] Adicionado o ACBrETQ - Rafael Dias.
+[*] Ajustado o ACBrECF com as novas modificações do ACBr - ACBrECF - Rafael Dias.
+
+12/11/2016
+-- ACBrFramework 0.9.7.6
+[*] Passado todos os Handlers para ACBrHandlers.pas - Rafael Dias.
+[*] Arrumado o enum das balanças para acompanhar as modificações no codigo do ACBr - Rafael Dias.
+[+] Iniciado o interop do ACBrPosPrinter - Rafael Dias.
+
+13/10/2016
+-- ACBrFramework 0.9.7.5
+[*] Inclusão das propriedades ArqLOG, DataHoraFiscal, DocumentoFiscal, ExibirErroRetorno, LogDebug, PortaPinPad e UsaUTF8 para o grupo CliSiTef - ACBrTEFD - Adenilton
+[*] Adicionado método TEF_Inicializado - ACBrTEFD - Adenilton
+[*] Correção: Exemplo para uso com ClisiTef não passava da tela de solicitar o número do cartão - ACBrTEFD - Adenilton
+[*] Reorganização dos métodos para o ClisiTef no ACBrFramework e ACBrFramework.net. Métodos organizados conforme ordem alfabética das propriedades - ACBrTEFD - Adenilton
+[*] Dll compilada com o ACBr revisão 12439, de 30/09/2016 - Adenilton
+[*] Outras pequenas correções na aplicação de demonstração do TEFD.
+
+23/06/2016
+-- ACBrFramework 0.9.7.5
+[*] Mudança nos exports para funcionar em Linux - ACBrFramework - Rafael Dias
+[*] Adicionado o Metodo TEF_Req_GravaInformacao - ACBrTEFD - RobertoRP
+	http://www.projetoacbr.com.br/forum/topic/30272-acbrtefd-temos-a-op%C3%A7%C3%A3o-de-interceptar-uma-requisi%C3%A7%C3%A3o-e-slavar-no-arquivo/#comment-203782
+
+-- ACBrFramework.Net 0.9.7.5
+[*] Alterado a versão minima para .Net Framework 4.0 - ACBrFramework.Net - Rafael Dias.
+[*] Adicionado o Metodo GravaInformacao - ACBrTEFD - RobertoRP
+	http://www.projetoacbr.com.br/forum/topic/30272-acbrtefd-temos-a-op%C3%A7%C3%A3o-de-interceptar-uma-requisi%C3%A7%C3%A3o-e-slavar-no-arquivo/#comment-203782
+
+23/04/2016
+-- ACBrFramework.Net 0.9.7.4
+[*] Reorganizado as pasta do projeto - ACBrFramework.Net - Rafael Dias
+[*] Tentativa de correção dos eventos para VB.Net - ACBrFramework.Net - Rafael Dias
+
+24/03/2016
+-- ACBrFramework 0.9.7.4
+[*] Mudado o método VendeItemEx para atender as ultimas modificações no ACBr - Rafael Dias
+
+22/03/2016
+-- ACBrFramework 0.9.7.3
+[*] Mudado o método EfetuaPagamento para atender as ultimas modificações no ACBr - Rafael Dias
+[*] Mudado o método VendeItemEx para atender as ultimas modificações no ACBr - Rafael Dias
+
+23/01/2016
+-- ACBrFramework 0.9.7.2
+[*] Mudados o método CancelaCupom para atender as ultimas modificações no ACBr - Rafael Dias
+[+] Adicionado o método EstornaCCD para atender as ultimas modificações no ACBr - Rafael Dias
+
+16/01/2016
+-- ACBrFramework 0.9.7.1
+[-] Mudado as funções PadLeft para PadRight, conforme orientação 
+    instruções de modificação do Trunk2 mostrado pelo Daniel Simoes - Rafael Dias
+
+15/01/2016
+-- ACBrFramework 0.9.7.0
+[*] Modificado o ACBrFramework para usar o Trunk2 do ACBr - joaoelson
+    http://www.projetoacbr.com.br/forum/topic/26415-acbrframework-trunk2/
+[*] Retorno da compilação em x64(não testado completamente, mas já compilando) - Rafael Dias
+
+03/08/2015
+-- ACBrFramework 0.9.6.12
+[+] Inclusão do componente ACBrLFD - Rafael Batiati
+Alguns blocos e registros ainda pendentes
+[-] Correções de bugs nos registros do PAF
+
+15/07/2015
+-- ACBrFramework 0.9.6.11
+[+] Inclusão da propriedade InclusaoExclusao no registro U1 do ACBrPAF - Rafael Batiati
+[*] Excluído propriedades HORA que não estavam sendo utilizadas nos registros do PAF
+	Apenas um campo DateTime é o suficiente
+
+13/07/2015
+-- ACBrFramework 0.9.6.10
+[+] Inclusão da propriedade AAC.IdentPaf.Paf.PerfilRequisitos - Rafael Batiati
+[*] Renomeado as propriedades do AAC.IdentPaf.Paf para padronização com ACBr
+
+10/07/2015
+
+-- ACBrFramework 0.9.6.9
+[-] Possivel correção para o erro do SPED Registro 1370 - ACBrSPEDFiscal - Rafael Dias.
+	http://www.projetoacbr.com.br/forum/topic/22579-erro-ao-salvar-o-sped/
+
+15/06/2015
+
+-- ACBrFramework 0.9.6.8
+[*] Inclusão da propriedade "Margem" na classe ConfigBarras - Rafael Batiati
+	http://www.projetoacbr.com.br/forum/index.php?/topic/22083-acbrecf-centralizar-c%C3%B3digo-de-barras/
+
+07/02/2015
+
+-- ACBrFramework 0.9.6.7 --
+[-] Ajustes nos eventos do TEF - ACBrTEFD - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.6.7 --
+[-] Ajustes nos eventos do TEF - ACBrTEFD - Rafael Dias.
+[+] Adicionado no enum do sped as novas versões - ACBrSPEDFiscal - Rafael Dias.
+
+21/01/2015
+
+-- ACBrFramework 0.9.6.6 --
+[-] Ajustes nas funções de preenchimento dos dados - ACBrPAF - Rafael Dias.
+[-] Corrigido erro no Registro R - ACBrPAF - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.6.6 --
+[-] Ajustes nas funções de preenchimento dos dados - ACBrPAF - Rafael Dias.
+[-] Corrigido erro no Registro R - ACBrPAF - Rafael Dias.
+
+13/11/2014
+
+-- ACBrFramework 0.9.6.5 --
+[+] Implementado as novas informações de impostos "Lei de Olho no Imposto" - ACBrECF - Rafael Dias.
+http://www.projetoacbr.com.br/forum/index.php?/topic/18613-altera%C3%A7%C3%A3o-no-acbrecf-para-lei-de-olho-no-imposto/
+
+-- ACBrFramework.Net 0.9.6.5 --
+[+] Implementado as novas informações de impostos "Lei de Olho no Imposto" - ACBrECF - Rafael Dias.
+http://www.projetoacbr.com.br/forum/index.php?/topic/18613-altera%C3%A7%C3%A3o-no-acbrecf-para-lei-de-olho-no-imposto/
+[-] Corrigido a compilação em COM Interop - Rafael Dias.
+
+05/11/2014
+
+-- ACBrFramework 0.9.6.4 --
+[+] Adicinado a função ECF_VendeItemEx - ACBrECF - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.6.4 --
+[+] Adicinado a função VendeItemEx - ACBrECF - Rafael Dias.
+
+14/10/2014
+
+-- ACBrFramework 0.9.6.3 --
+[*] Modificado a função ECF_DAV_Abrir para compatibilizar com o projeto em pascal - ACBrECF - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.6.3 --
+[*] Modificado a função DAV_Abrir para compatibilizar com o projeto em pascal - ACBrECF - Rafael Dias.
+
+06/09/2014
+
+-- ACBrFramework 0.9.6.2 --
+[+] Adicionado a propriedade QuebraLinhaRodape - ACBrECF - Rafael Dias.
+[+] Adicionado Rodape para Posto de Combustiveis - ACBrECF - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.6.2 --
+[+] Adicionado a propriedade QuebraLinhaRodape - ACBrECF - Rafael Dias.
+[+] Adicionado Rodape para Posto de Combustiveis - ACBrECF - Rafael Dias.
+
+
+09/07/2014
+
+-- ACBrFramework 0.9.6.1 --
+[-] Correção no registro R7 adicionado o COO - ACBrPAF - Rafael Dias.
+[-] Descontinuação da dll em x64.
+
+-- ACBrFramework.Net 0.9.6.1 --
+[-] Correção no registro R7 adicionado o COO - ACBrPAF - Rafael Dias.
+[-] Descontinuação da dll em x64.
+
+09/07/2014
+
+-- ACBrFramework 0.9.6.0 --
+[+] Adicionado os registros S2 e S3 - ACBrPAF - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.6.0 --
+[+] Adicionado os registros S2 e S3 - ACBrPAF - Rafael Dias.    
+
+09/07/2014
+
+-- ACBrFramework 0.9.5.9 --
+[-] Correção na geraçao do registro D4 - ACBrPAF - Rafael Dias.
+    http://www.projetoacbr.com.br/forum/index.php?/topic/16409-registros-paf-ecf-d4/
+
+10/06/2014
+
+-- ACBrFramework 0.9.5.8 --
+[-] Correção na geraçao do registro A2 - ACBrPAF - Rafael Dias.
+    http://www.projetoacbr.com.br/forum/index.php?/topic/16074-registros-paf-ecf-a2/
+[-] Correção da propriedade UltimoCodigo - ACBrBal - Rafael Dias. 
+
+21/05/2014
+
+-- ACBrFramework 0.9.5.8 --
+[*] Acréscimo da propriedade ControlePorta acompanhando o projeto em delphi - ACBrECF - Rafael Dias.
+[+] Correção de erro ao gerar arquivo PAF - ACBrPAF - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.5.8 --
+[*] Acréscimo da propriedade ControlePorta acompanhando o projeto em delphi - ACBrECF - Rafael Dias.
+[+] Correção de erro ao gerar arquivo PAF - ACBrPAF - Rafael Dias.
+
+23/04/2014
+
+-- ACBrFramework.Net 0.9.5.7 --
+[*] Acréscimo da Versão 107 do Leiaute pelo Ato COTEPE/ICMS 52/13, efeitos a partir de 27.11.13. - ACBrSpedFiscal - José Mauro.
+
+04/04/2014
+
+-- ACBrFramework 0.9.5.7 --
+[*] Habilitado a propriedade ReTentar, para evitar loop infinito em caso de falha de comunicação e o evento OnMsgRetentar não esteja programado - ACBrECF - Rafael Dias.
+
+18/03/2014
+
+-- ACBrFramework 0.9.5.6 --
+[*] Modificado metodo GetRodape para GetRodapePaf agora como publico, acompanhando as modificações do ACBr - ACBrECF - Rafael Dias.
+[*] Modificado metodo DAV_Fechar adicionado os parametros desconto e acrescimo - ACBrECF - Rafael Dias.
+[*] Adicionado novos modelos de balança - ACBrBAL - Rafael Dias.
+[-] Corrigido erro na hora de subtotalizar alguns modelos de ECF - ACBrECF - Rafael Dias.
+    
+
+31/01/2014
+
+-- ACBrFramework 0.9.5.5 --
+[+] Adicionado o TEFVespague contribuição por daspn - ACBrTEFD - Rafael Dias.
+    http://www.projetoacbr.com.br/forum/index.php?/topic/14160-contribui%C3%A7%C3%A3o-tef-vpague-em-background/#entry86294
+
+29/11/2013
+
+-- ACBrFramework 0.9.5.1 --
+[*] Modificado PafMF_RelParametrosConfiguracao para ficar compativel com a nova ER - ACBrECF - Rafael Dias.
+
+28/11/2013
+
+-- ACBrFramework 0.9.5.1 --
+[-] Corrigido erros na declaração do esports do SPED - ACBrSPED - Rafael Dias.
+
+26/11/2013
+
+-- ACBrFramework 0.9.5.0 --
+[-] Corrigido erros na compilação COMInterop - ACBrFramework - Rafael Dias.
+
+25/11/2013
+
+-- ACBrFramework 0.9.5.0 --
+[*] Ajustes na classe do paf para ficar de acordo com as novas especificações - ACBrPAF - Marcelo Unimake.
+[-] Tentativa de correção nos eventos TEF - ACBrTEFD - Rafael Dias.
+
+05/11/2013
+
+-- ACBrFramework 0.9.4.5 --
+[+] Adicionado suporte ao COMInterop - ACBrLCB - Rafael Dias.
+[+] Adicionado suporte ao COMInterop - ACBrBAL - Rafael Dias.
+
+01/11/2013
+
+-- ACBrFramework 0.9.4.5 --
+[+] Adicionado as funções PafMF_ArqMF - ACBrECF - Rafael Dias.
+[+] Adicionado as funções PafMF_ArqMFD - ACBrECF - Rafael Dias.
+[*] Modificado o RegistroR do PAF para ficar igual a versão atual do ACBr - ACBrPAF - Rafael Dias.
+
+08/10/2013
+
+-- ACBrFramework 0.9.4.2 --
+[*] Incluída as dlls dependentes do ACBr na dll ACBrFramework.Net.dll. - Rafael Batiati
+    Além da ACBrFramework32.dll, agora a inpout32.dll, libeay32.dll e ssleay32.dll 
+    são automaticamente copiadas para um path válido.
+
+18/06/2013
+
+-- ACBrFramework 0.9.4.2 --
+[+] Adicionado Webservice do correios - ACBrCEP - Rafael Dias.
+[*] Adicionado novos campos na consulta por nome uf e exato - ACBrIBGE - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.4.2 --
+[+] Adicionado Webservice do correios - ACBrCEP - Rafael Dias.
+[*] Adicionado novos campos na consulta por nome uf e exato - ACBrIBGE - Rafael Dias.
+[-] Removido ACBrNFe do projeto - Rafael Dias.
+
+18/06/2013
+
+-- ACBrFramework 0.9.4.0 --
+[+] Adicionado a função PafMF_Binario - ACBrECF  - Rafael Dias.
+[*] Inicio da implementação COMInterop - ACBrSintegra - Rafael Dias.
+    Contribuição - Amilton Soares.
+[*] Adicionado COMInterop - ACBrPAF - Rafael Dias.
+    Contribuição - Amilton Soares.
+
+-- ACBrFramework.Net 0.9.4.0 --
+[+] Adicionado a função ECF_PafMF_Binario - ACBrECF - Rafael Dias.
+
+06/06/2013
+
+-- ACBrFramework 0.9.3.3 --
+[+] Adicionado a propriedade SuportaSaque - ACBrTED - Rafael Dias.
+[+] Adicionado a propriedade SuportaDesconto - ACBrTED - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.3.3 --
+[+] Adicionado a propriedade SuportaSaque - ACBrTED - Rafael Dias.
+[+] Adicionado a propriedade SuportaDesconto - ACBrTED - Rafael Dias.
+[+] Inicio da implementação COMInterop - ACBrPAF - Rafael Dias.
+[-] Corrigido erro nos valores do imposto no rodape - ACBrECF - Rafael Dias.
+
+22/05/2013
+
+-- ACBrFramework 0.9.3.2 --
+[+] Adicionado o Imposto no rodape - ACBrECF - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.3.2 --
+[+] Adicionado o Imposto no rodape - ACBrECF - Rafael Dias.
+
+26/04/2013
+
+-- ACBrFramework 0.9.3.1 --
+[-] Corrigido o evento OnBobinaAdicionaLinhas - ACBrECF - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.3.1 --
+[-] Corrigido o evento OnBobinaAdicionaLinhas - ACBrECF - Rafael Dias.
+
+18/04/2013
+
+-- ACBrFramework.Net 0.9.3.0 --
+[+] Adicionado suporte a COMInterop - ACBrDIS - Rafael Batiati.
+
+15/04/2013
+
+-- ACBrFramework 0.9.3.0 --
+[*] Modificado a diretiva de compilação para manter compatibilidade com a nova versão do ACBr - Rafael Dias.
+
+-- ACBrFramework 0.9.2.12 --
+[-] Corrigido erro no campos decimais em alguns registros do ACBrSpedFiscal - Rafael Batiati.
+
+-- ACBrFramework.Net 0.9.2.12 --
+[-] Corrigido erro no campos decimais em alguns registros do ACBrSpedFiscal - Rafael Batiati.
+
+04/04/2013
+
+-- ACBrFramework 0.9.2.11 --
+[-] Corrigido erro no campo RegistroValido do Registro H1 - ACBrPAF - Rafael Batiati.
+[*] Modificado Encoding de UTF8 para Latin1, resolvendo problemas de acentuação - ACBrInteropBase - Rafael Batiati.
+[+] Adicinado a função SegundaViaVinculado - ACBrECF - Rafael Dias.
+
+22/03/2013
+
+-- ACBrFramework 0.9.2.10 --
+[+] Adicionado novo provedor ByJG - ACBrCEP - Rafael Dias. 
+
+-- ACBrFramework.Net 0.9.2.10 --
+[-] Corrigido erro nos modelos de balança - ACBrBAL - Rafael Dias.
+[+] Adicionado novo provedor ByJG - ACBrCEP - Rafael Dias. 
+
+18/03/2013
+
+-- ACBrFramework.Net 0.9.2.9 --
+[+] Inclusão da propriedade "Restaurante" no rodapé do cupom - ACBrECF - Rafael Batiati
+[-] Correção nos registros - ACBrPAF - Rafael Batiati
+[*] Inclusão de atributos para COM Interop em enuns do EAD - ACBrECF/ACBrAAC/ACBrEAD - Rafael Batiati
+
+-- ACBrFramework 0.9.2.9 --
+[+] Inclusão da propriedade "Restaurante" no rodapé do cupom - ACBrECF - Rafael Batiati
+
+05/03/2013
+
+-- ACBrFramework.Net 0.9.2.8 --
+[-] Correção funções ToUTF8 - ACBrInteropBase - Rafael Batiati.
+[+] Inclusão do componente ACBrDIS - Rafael Batiati.
+
+-- ACBrFramework 0.9.2.8 --
+[+] Inclusão do componente ACBrDIS - Rafael Batiati.
+
+
+04/03/2013
+
+-- jACBrFramework --
+[*] Implementação de todos os Eventos/Métodos/Propriedades - ACBrECF - Rafael Batiati.
+    (Pendente apenas propriedades/métodos com ComposedComponent)
+
+-- ACBrFramework.Net 0.9.2.8 --
+[*] Padronização de nomes em Eventos, EventArgs, Callbacks e funções ECF_SetOn... - ACBrECF - Rafael Batiati.
+[-] Correção das propriedades Enviado e Atribuido da classe Cliente - ACBrECF - Rafael Batiati.
+
+-- ACBrFramework 0.9.2.8 --
+[*] Padronização de nomes em Callbacks e funções ECF_SetOn... - ACBrECF - Rafael Batiati.
+[-] Correção das propriedades Enviado e Atribuido da classe Cliente - ACBrECF - Rafael Batiati.
+
+03/03/2013
+
+-- jACBrFramework --
+[*] Finalização das mudanças para suporte a JNA - Rafael Batiati.
+[*] Projeto JNI (em C++) descontinuado - Rafael Batiati.
+[+] Refactoring nos packages e classes bases para adequação ao JNA - Rafael Batiati.
+[*] Implementada classe ACBrECF com todos os métodos e propriedades (Exceto métodos que envolvem tipos complexos) - Rafael Batiati
+
+-- DefExporter --
+[+] Adicionado suporte a gerar as chamadas JNA para Java
+
+01/03/2013
+
+-- ACBrFramework.Net 0.9.2.8 --
+[-] Correção do evento VerificarRecomporValorGT - ACBrAAC - Rafael Batiati.
+[+] Adicionado método IdentificaOperador - ACBrECF - Rafael Batiati.
+
+-- ACBrFramework 0.9.2.8 --
+[-] Correção do evento VerificarRecomporValorGT - ACBrAAC - Rafael Batiati.
+[+] Adicionado método IdentificaOperador - ACBrECF - Rafael Batiati.
+
+28/02/2013
+
+-- ACBrFramework.Net 0.9.2.7 --
+[-] Correção do evento VerificarRecomporValorGT - ACBrAAC - Rafael Batiati.
+[-] Correção da Propriedade ValorVendaBruta da classe DadosReducaoZClass - ACBrECF - Rafael Batiati.
+[*] Alterado Registro R5 com as novas modificações do ACBr - ACBrPAF - Rafael Dias.
+
+
+23/02/2013
+
+-- ACBrFramework 0.9.2.7 --
+[*] Alteração nos métodos _Destroy - Rafael Batiati.
+
+-- ACBrFramework.Net 0.9.2.7 --
+[*] Alteração nos métodos _Destroy resolvendo o problema de AccessViolationException quando executa dentro do Visual Studio - Rafael Batiati.
+
+22/02/2013
+
+-- ACBrFramework.Net 0.9.2.7 --
+[*] Correção nas chamados dos evento OnPafCalcEAD e OnPafGetKeyRSA - ACBrECF - Rafael Dias.
+
+21/02/2013
+
+-- jACBrFramework --
+[+] Mudança inicial do jACBrFramework de JNI para JNA - Rafael Batiati
+[+] Criação das classes JNA para interop - Rafael Batiati
+
+19/02/2013
+
+-- jACBrFramework --
+[*] Refactory das classes bases do projeto (criação de ACBrInteropBase, ACBrClass e ACBrComposedClass) - Rafael Batiati.
+[*] Criação da classe Device e inclusão da propriedade Device no ACBrECF - Rafael Batiati.
+[+] Criação do projeto no NetBeans (descontinuado o projeto no Eclipse) - Rafael Batiati.
+
+-- jACBrFramework_JNI --
+[*] Atualização das libs e dos headers do ACBrFramework - Rafael Batiati.
+[*] Suporte as novas classes bases ACBrClass e ACBrComposedClass - Rafael Batiati.
+
+-- ACBrFramework.Net 0.9.2.7 --
+[*] Inclusão do ACBrDevice no DefExporter - Rafael Batiati.
+
+17/02/2013
+
+-- ACBrFramework.Net 0.9.2.7 --
+[+] Adicionado COM_INTEROP em ACBrAAC e ACBrEAD - Rafael Batiati.
+[*] Refactoring de nomes de EventArgs para adequar ao padrão .Net - Rafael Batiati.
+[-] Refactoring do método ReducaoZ(DateTime) para suportar parâmetro opicional no COM_INTEROP - Rafael Batiati.
+
+-- ACBrFramework.ActiveX
+[-] Adequação do demo em VB6 para as últimas mudanças no projeto - Rafael Batiati.
+
+15/02/2013
+
+-- ACBrFramework 0.9.2.7 --
+[*] Adicionados opções de posto de combustivel e transporte de passageiros - ACBrAAC - Rafael Dias.
+[-] Correções de bugs - ACBrSped - Rafael Batiati.
+
+-- ACBrFramework.Net 0.9.2.7 --
+[*] Adicionados opções de posto de combustivel e transporte de passageiros - ACBrAAC - Rafael Dias.
+[+] ACBrSpedFiscalTeste - Rafael Batiati.
+
+13/02/2013
+
+-- ACBrFramework 0.9.2.6 --
+[-] Correções nos records - ACBrSpedFiscal - Rafael Batiati.
+
+-- ACBrFramework.Net 0.9.2.6 --
+[-] Correções nos records - ACBrSpedFiscal - Rafael Batiati.
+
+12/02/2013
+
+-- ACBrFramework 0.9.2.6 --
+[*] ACBrSped implementado (em debug)- Rafael Batiati.
+
+-- ACBrFramework.Net 0.9.2.6 --
+[*] ACBrSped implementado (em debug)- Rafael Batiati.
+
+11/02/2013
+
+-- ACBrFramework 0.9.2.6 --
+[*] Alteração nas Menssagens - ACBrSMS - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.2.6 --
+[*] Alteração nas classes bases ACBrClassInterop, ACBrComponent e ACBrListInterop - Rafael Batiati.
+[*] Alteração nas Menssagens - ACBrSMS - Rafael Dias.
+
+10/02/2013
+
+-- ACBrFramework 0.9.2.5 --
+[+] Implementação parcial dos blocos C e D - ACBrSped - Rafael Batiati.
+
+-- ACBrFramework.Net 0.9.2.5 --
+[+] Implementação parcial dos blocos C e D - ACBrSped - Rafael Batiati.
+[*] Modificação na forma como os registros são enviados via interop - ACBrSped métodos SendRecord<TRecord>(...) e Bind<TRecord> - Rafael Batiati
+
+07/02/2013
+
+-- ACBrFramework 0.9.2.5 --
+[+] Implementação parcial dos blocos 0,1,9 e C - ACBrSped - Rafael Batiati.
+
+-- ACBrFramework.Net 0.9.2.5 --
+[*] Padronização do uso das funções ToUTF8 e FromUTF8 em ACBrInteropBase - ACBrFramework.Net - Rafael Batiati
+
+04/02/2013
+
+-- ACBrFramework 0.9.2.5 --
+[*] Componente adicionado - ACBrCEP - Rafael Dias.
+[+] Adicionado a opção ParaibaLegal - ACBrAAC - Rafael Dias.
+[+] Adicionado a opção NotaLegalDF - ACBrAAC - Rafael Dias.
+[+] Adicionado a opção RecompoeNumSerie - ACBrAAC - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.2.5 --
+[*] Componente adicionado - ACBrCEP - Rafael Dias.
+[+] Adicionado a opção ParaibaLegal - ACBrAAC - Rafael Dias.
+[+] Adicionado a opção NotaLegalDF - ACBrAAC - Rafael Dias.
+[+] Adicionado a opção RecompoeNumSerie - ACBrAAC - Rafael Dias.
+
+03/02/2013
+
+-- ACBrFramework.Net 0.9.2.4 --
+[-] Corrigido erro no Registro 11 - ACBrSintegra - Rafael Dias.
+
+31/01/2013
+
+-- ACBrFramework 0.9.2.4 --
+[*] Modificado metodos para compatibilizar com COMInterop - ACBrECF - Rafael Dias.
+
+
+-- ACBrFramework.Net 0.9.2.4 --
+[-] Corrigido erro VerificarGTECF - ACBrAAC - Rafael Dias.
+     http://www.projetoacbr.com.br/forum/index.php?/topic/8871-arquivo-convenio-35-2005/
+[*] Removido overloads substituido por valores padrão para compatibilizar com COMInterop - ACBrECF - Rafael Dias.
+
+31/01/2013
+
+-- ACBrFramework.Net 0.9.2.3 --
+[*] Modificações para COM Interop - ACBrECF - Rafael Batiati
+[+] Adicionadas propriedades NumSerieMFD, ParamDescontoISSQN  - Rafael Batiati
+[+] Adicionado método MudaArredondamento(bool arredondar)  - Rafael Batiati
+[+] Adicionado demo VB6 com ACBrFramework.ActiveX  - Rafael Batiati
+    Baseado no demo do projeto ACBrX desenvolvido por Robson Braga
+
+25/01/2013
+
+-- ACBrFramework 0.9.2.3 --
+[*] Modificado o bloqueio(teclado/mouse) e limpeza do buffer do teclado - ACBrTEFD - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.2.3 --
+[*] Modificado o bloqueio(teclado/mouse) e limpeza do buffer do teclado - ACBrTEFD - Rafael Dias.
+
+23/01/2013
+
+-- ACBrFramework 0.9.2.2 --
+[+] Adicionado DefineMensagemPermanentePinPad - ClisiTEF - ACBrTEFD - Rafael Dias.
+[+] Adicionado ObtemQuantidadeTransacoesPendentes - ClisiTEF - ACBrTEFD - Rafael Dias.
+[+] Adicionado ParametrosAdicionais - ClisiTEF - ACBrTEFD - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.2.2 --
+[+] Adicionado DefineMensagemPermanentePinPad - ClisiTEF - ACBrTEFD - Rafael Dias.
+[+] Adicionado ObtemQuantidadeTransacoesPendentes - ClisiTEF - ACBrTEFD - Rafael Dias.
+[+] Adicionado ParametrosAdicionais - ClisiTEF - ACBrTEFD - Rafael Dias.
+[-] Corrigido PafMF_RelDAVEmitidos - ACBrECF - Rafael Dias.
+
+23/01/2013
+
+-- ACBrFramework.Net 0.9.2.1 --
+[+] Suporte a ActiveX COM para as últimas alterações do ECF (eventos e métodos) - Rafael Batiati
+
+22/01/2013
+
+-- ACBrFramework 0.9.2.1 --
+[+] Adicionado EnviaComando - ACBrECF - Rafael Dias.
+[+] Adicionado ImprimeCheque - ACBrECF - Rafael Dias.
+[+] Adicionado CancelaImpressaoCheque - ACBrECF - Rafael Dias.
+[+] Adicionado LeituraCMC7 - ACBrECF - Rafael Dias.
+[+] Adicionado eventos restantes - ACBrECF - Rafael Dias. 
+
+-- ACBrFramework.Net 0.9.2.1 --
+[+] Adicionado EnviaComando - ACBrECF - Rafael Dias.
+[+] Adicionado ImprimeCheque - ACBrECF - Rafael Dias.
+[+] Adicionado CancelaImpressaoCheque - ACBrECF - Rafael Dias.
+[+] Adicionado LeituraCMC7 - ACBrECF - Rafael Dias.
+[+] Adicionado eventos restantes - ACBrECF - Rafael Dias.
+[-] Correções no salvamento dos arquivos - ACBrSintegra - Rafael Dias.
+
+18/01/2013
+
+-- ACBrFramework 0.9.2.0 --
+[*] Implementação parcial do Sped - ACBrSped - Rafael Batiati.
+
+-- ACBrFramework.Net 0.9.2.0 --
+[+] Modo de compilação "COM Interop" para o ACBrFramework.Net - ACBrECF - Rafael Batiati
+    Permite usar o componente em VB6 e outras linguagens compatíveis com ActiveX
+	
+[*] Implementação parcial do Sped - ACBrSped - Rafael Batiati.
+
+09/01/2013
+
+-- ACBrFramework 0.9.1.39 --
+[*] Refactory completo na DadosReducaoZClass - ACBrECF - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.1.39 --
+[*] Refactory completo na DadosReducaoZClass - ACBrECF - Rafael Dias.
+
+08/01/2012
+
+-- ACBrFramework 0.9.1.38 --
+[+] Adicionado AchaCNFDescricao - ACBrECF - Rafael Dias.
+[+] Adicionado GetFPGCount - ACBrECF - Rafael Dias.
+[+] Adicionado GetALCount - ACBrECF - Rafael Dias.
+[+] Adicionado GetCNFCount - ACBrECF - Rafael Dias.
+[+] Adicionado todo os eventos - ACBrAAC - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.1.38 --
+[+] Adicionado AchaCNFDescricao - ACBrECF - Rafael Dias.
+[+] Adicionado todo os eventos - ACBrAAC - Rafael Dias.
+
+
+07/01/2012
+
+-- ACBrFramework 0.9.1.37 --
+[+] Adicionado AchaFPGDescricao - ACBrECF - Rafael Dias.
+[+] Corrigido erro no Modulo - ACBrValidador - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.1.37 --
+[+] Adicionado AchaFPGDescricao - ACBrECF - Rafael Dias.
+[+] Corrigido erro no Modulo - ACBrValidador - Rafael Dias.
+[+] Adicionado o Demo - ACBrValidador - Rafael Dias.
+
+06/01/2012
+
+-- ACBrFramework 0.9.1.36 --
+[+] Adicionado Consumidor - ACBrECF - Rafael Dias.
+[+] Adicionado ConfigBarras - ACBrECF - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.1.36 --
+[+] Adicionado Consumidor - ACBrECF - Rafael Dias.
+[+] Adicionado ConfigBarras - ACBrECF - Rafael Dias.
+
+05/01/2012
+
+-- ACBrFramework 0.9.1.35 --
+[+] Adicionado o ACBrRFD - ACBrRFD - Rafael Dias.
+[-] Corrigido bugs na funções PAF - ACBrECF - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.1.35 --
+[+] Adicionado o ACBrRFD - ACBrRFD - Rafael Dias.
+[-] Corrigido erro no Registro 10 - ACBrSintegra - Rafael Dias.
+
+04/01/2012
+
+-- ACBrFramework 0.9.1.34 --
+[+] Adicionado o ACBrValidador - ACBrValidador - Rafael Dias.
+[+] Adicionado novos Eventos  - ACBrECF - Rafael Dias.
+[*] Adicionado a opção de enviar a Data Atual na Redução Z  - ACBrECF - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.1.34 --
+[+] Adicionado o ACBrValidador - ACBrValidador - Rafael Dias.
+[+] Adicionado novos Eventos - ACBrECF - Rafael Dias.
+[*] Adicionado a opção de enviar a Data Atual na Redução Z - ACBrECF - Rafael Dias.
+[*] Adicionado a TestaPodeAbrirCupom - ACBrECF - Rafael Dias.
+
+28/12/2012
+
+-- ACBrFramework 0.9.1.33 --
+[+] Componente ACBrSped parcialmente implementado - Rafael Batiati.
+
+-- ACBrFramework.Net 0.9.1.33 --
+[*] Refacory de nomes de classes dos componentes removendo prefixos desnecessários - Rafael Batiati.
+[+] Componente ACBrSped parcialmente implementado - Rafael Batiati.
+
+25/12/2012 ho! ho! ho!
+
+-- ACBrFramework 0.9.1.32 --
+[+] Adicionado o ACBrIBGE - ACBrIBGE - Rafael Batiati.
+[-] Adicionado o pacote LazUtil com dependencia para compatibilidade com a nova versão do ACBr - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.1.32 --
+[+] Adicionado o ACBrIBGE - ACBrIBGE - Rafael Batiati.
+
+05/12/2012
+
+-- ACBrFramework 0.9.1.31 --
+[+] Adicionado o ACBrSMS - ACBrSMS - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.1.31 --
+[+] Adicionado o ACBrSMS - ACBrSMS - Rafael Dias.
+
+03/12/2012
+
+-- ACBrFramework.Net 0.9.1.30 --
+[*] Corrigido PafMF_RelParametrosConfiguracao - ACBrECF - Rafael Dias.
+[*] Corrigido PafMF_RelIdentificacaoPafECF - ACBrECF - Rafael Dias.
+
+01/12/2012
+
+-- ACBrFramework 0.9.1.30 --
+[+] Iniciado Bloco 0 - ACBrSped - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.1.30 --
+[+] Iniciado Bloco 0 - ACBrSped - Rafael Dias.
+
+30/11/2012
+
+-- ACBrFramework 0.9.1.30 --
+[+] Adicionado o metodo AAC_AtualizarMD5 - ACBrAAC - Rafael Dias.
+[+] Adicionado o metodo AAC_AchaECF - ACBrAAC - Rafael Dias.
+[+] Adicionado o metodo AAC_AchaIndiceECF - ACBrAAC - Rafael Dias.
+[+] Adicionado o metodo AAC_VerificaReCarregarArquivo - ACBrAAC - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.1.30 --
+[+] Adicionado o metodo AtualizarMD5 - ACBrAAC - Rafael Dias.
+[+] Adicionado o metodo AtualizarValorGT - ACBrAAC - Rafael Dias.
+[+] Adicionado o metodo AchaECF - ACBrAAC - Rafael Dias.
+[+] Adicionado o metodo AchaIndiceECF - ACBrAAC - Rafael Dias.
+[+] Adicionado o metodo VerificaReCarregarArquivo - ACBrAAC - Rafael Dias.
+[*] Modificado o PAF_SaveFileTXT_N para checar valores null - ACBrPAF - Rafael Dias.
+[*] Modificado o PAF_SaveFileTXT_R para checar valores null - ACBrPAF - Rafael Dias.
+[-] Corrigido os registros R1 e R2 - ACBrPAF - Rafael Batiati
+
+29/11/2012
+
+-- ACBrFramework.Net 0.9.1.29 --
+[-] Corrigido métodos ToUTF8 e FromUTF8 do ACBrFramework.Net para receberem valores nulos - Rafael Batiati
+
+27/11/2012
+ 
+-- ACBrFramework 0.9.1.29 --
+[+] Adicionado propriedade AAC_IdentPaf_ArquivoListaAutenticados_GetNome - Rafael Dias.
+[+] Adicionado propriedade AAC_IdentPaf_ArquivoListaAutenticados_SetNome - Rafael Dias.
+[+] Adicionado propriedade AAC_IdentPaf_ArquivoListaAutenticados_GetMD5 - Rafael Dias.
+[+] Adicionado propriedade AAC_IdentPaf_ArquivoListaAutenticados_SetMD5 - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_GetMD5, ECF_InfoRodapeCupom_SetMD5 - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_GetDav, ECF_InfoRodapeCupom_SetDav - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_GetDavOs, ECF_InfoRodapeCupom_SetDavOs - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_GetPreVenda, ECF_InfoRodapeCupom_SetPreVenda - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_GetCupomMania, ECF_InfoRodapeCupom_SetCupomMania - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_GetMinasLegal, ECF_InfoRodapeCupom_SetMinasLegal - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_GetParaibaLegal, ECF_InfoRodapeCupom_SetParaibaLegal - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_NotaLegalDF_GetImprimir, ECF_InfoRodapeCupom_NotaLegalDF_SetImprimir - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_NotaLegalDF_GetProgramaDeCredito,  ECF_InfoRodapeCupom_NotaLegalDF_SetProgramaDeCredito - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_NotaLegalDF_GetValorICMS, ECF_InfoRodapeCupom_NotaLegalDF_SetValorICMS - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_NotaLegalDF_GetValorISS, ECF_InfoRodapeCupom_NotaLegalDF_SetValorISS - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.1.29 --
+[+] Adicionado propriedade AAC_IdentPaf_ArquivoListaAutenticados_GetNome - Rafael Dias.
+[+] Adicionado propriedade AAC_IdentPaf_ArquivoListaAutenticados_SetNome - Rafael Dias.
+[+] Adicionado propriedade AAC_IdentPaf_ArquivoListaAutenticados_GetMD5 - Rafael Dias.
+[+] Adicionado propriedade AAC_IdentPaf_ArquivoListaAutenticados_SetMD5 - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_GetMD5, ECF_InfoRodapeCupom_SetMD5 - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_GetDav, ECF_InfoRodapeCupom_SetDav - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_GetDavOs, ECF_InfoRodapeCupom_SetDavOs - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_GetPreVenda, ECF_InfoRodapeCupom_SetPreVenda - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_GetCupomMania, ECF_InfoRodapeCupom_SetCupomMania - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_GetMinasLegal, ECF_InfoRodapeCupom_SetMinasLegal - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_GetParaibaLegal, ECF_InfoRodapeCupom_SetParaibaLegal - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_NotaLegalDF_GetImprimir, ECF_InfoRodapeCupom_NotaLegalDF_SetImprimir - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_NotaLegalDF_GetProgramaDeCredito,  ECF_InfoRodapeCupom_NotaLegalDF_SetProgramaDeCredito - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_NotaLegalDF_GetValorICMS, ECF_InfoRodapeCupom_NotaLegalDF_SetValorICMS - Rafael Dias.
+[+] Adicionado propriedade ECF_InfoRodapeCupom_NotaLegalDF_GetValorISS, ECF_InfoRodapeCupom_NotaLegalDF_SetValorISS - Rafael Dias.
+
+27/11/2012
+
+-- ACBrFramework.Net 0.9.1.28 --
+[-] Corrigido bug no SetStringArray no ACBrInteropBase - Rafael Batiati.
+
+26/11/2012 
+
+-- ACBrFramework 0.9.1.27 --
+[+] Adicionado propriedade DEV_GetProcessMessages, DEV_SetProcessMessages - Rafael Dias.
+[+] Adicionado propriedade DEV_GetMaxBandwidth, DEV_SetMaxBandwidth - Rafael Dias.
+[+] Adicionado propriedade ECF_GetArredondaPorQtd, ECF_SetArredondaPorQtd - Rafael Dias.
+[+] Adicionado propriedade ECF_GetArredondaItemMFD, ECF_SetArredondaItemMFD - Rafael Dias.
+[+] Adicionado propriedade ECF_GetIgnorarTagsFormatacao, ECF_SetIgnorarTagsFormatacao - Rafael Dias.
+[+] Adicionado propriedade ECF_GetPaginaDeCodigo, ECF_SetPaginaDeCodigo - Rafael Dias.
+[+] Adicionado propriedade ECF_GetAbout - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.1.27 --
+[+] Adicionado propriedade DEV_GetProcessMessages, DEV_SetProcessMessages - Rafael Dias.
+[+] Adicionado propriedade DEV_GetMaxBandwidth, DEV_SetMaxBandwidth - Rafael Dias.
+[+] Adicionado propriedade ECF_GetArredondaPorQtd, ECF_SetArredondaPorQtd - Rafael Dias.
+[+] Adicionado propriedade ECF_GetArredondaItemMFD, ECF_SetArredondaItemMFD - Rafael Dias.
+[+] Adicionado propriedade ECF_GetIgnorarTagsFormatacao, ECF_SetIgnorarTagsFormatacao - Rafael Dias.
+[+] Adicionado propriedade ECF_GetPaginaDeCodigo, ECF_SetPaginaDeCodigo - Rafael Dias.
+[+] Adicionado propriedade ECF_GetAbout - Rafael Dias.
+
+26/11/2012
+
+-- ACBrFramework 0.9.1.26 --
+[+] Adicionado propriedade AAC_GetCriarBAK, AAC_SetCriarBAK - Rafael Dias.
+[+] Adicionado propriedade AAC_GetEfetuarFlush, AAC_SetEfetuarFlush - Rafael Dias.
+[+] Adicionado propriedade AAC_GetGravarConfigApp, AAC_SetGravarConfigApp - Rafael Dias.
+[+] Adicionado propriedade AAC_GetGravarDadosPAF, AAC_SetGravarDadosPAF - Rafael Dias.
+[+] Adicionado propriedade AAC_GetGravarDadosSH, AAC_SetGravarDadosSH - Rafael Dias.
+[+] Adicionado propriedade AAC_GetGravarTodosECFs, AAC_SetGravarTodosECFs - Rafael Dias.
+[*] Melhorado a propriedade AAC_GetParams - Rafael Dias.
+
+-- ACBrFramework.Net 0.9.1.26 --
+[+] Adicionado propriedade AAC_GetCriarBAK, AAC_SetCriarBAK - Rafael Dias.
+[+] Adicionado propriedade AAC_GetEfetuarFlush, AAC_SetEfetuarFlush - Rafael Dias.
+[+] Adicionado propriedade AAC_GetGravarConfigApp, AAC_SetGravarConfigApp - Rafael Dias.
+[+] Adicionado propriedade AAC_GetGravarDadosPAF, AAC_SetGravarDadosPAF - Rafael Dias.
+[+] Adicionado propriedade AAC_GetGravarDadosSH, AAC_SetGravarDadosSH - Rafael Dias.
+[+] Adicionado propriedade AAC_GetGravarTodosECFs, AAC_SetGravarTodosECFs - Rafael Dias.
+[*] Melhorado a propriedade AAC_GetParams - Rafael Dias.
+
+26/11/2012
+
+-- ACBrFramework 0.9.1.25 --
+[+] Adicionado propriedade UltimaLeitura e LerString no componente LCB - Rafael Batiati.
+
+-- ACBrFramework.Net 0.9.1.25 --
+[*] Mudança na classe ACBrInteropEventHandlerBase para disparar o evento na thread do controle/form que declara o handler,
+    previnindo erros de manipulação CrossThread de componentes da UI. - Rafael Batiati. 
+[+] Adicionado propriedade UltimaLeitura e LerString no componente LCB - Rafael Batiati.
+
+25/11/2012
+
+-- ACBrFramework 0.9.1.24 --
+[*] Mudança na classe ACBrTEFDReq adequando ao padrão do ComposedComponente suportando múltiplas instâncias. - Rafael Batiati.
+[+] Adicionado ECF_PreparaTEF - Rafael Dias. 
+
+-- ACBrFramework.Net 0.9.1.24 --
+[*] Mudança na classe ACBrTEFDReq adequando ao padrão do ComposedComponente suportando múltiplas instâncias. - Rafael Batiati.
+[+] Adicionado ECF_PreparaTEF - Rafael Dias. 
+
+24/11/2012 (ACBrFramework 0.9.1.23)
+[+] Adicionado SPDF_GetAbout, SPDF_GetArquivo, SPDF_SetArquivo - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Adicionado SPDF_GetCurMascara, SPDF_SetCurMascara, SPDF_GetPath - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Adicionado SPDF_SetPath, SPDF_GetDelimitador, SPDF_SetDelimitador - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Adicionado SPDF_GetLinhasBuffer, SPDF_SetLinhasBuffer, SPDF_GetTrimString- ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Adicionado SPDF_SetTrimString, SPDF_GetDT_INI, SPDF_SetDT_INI - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Adicionado SPDF_GetDT_FIN, SPDF_SetDT_FIN, SPDF_IniciaGeracao - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+
+24/11/2012 (ACBrFramework 0.9.1.22)
+[*] Mudanças no ComposedComponent para permitir ao ACBrTEFD enviar diversas instâncias diferentes de Resp e RespostasPendentes por propriedade e por eventos. - ACBrFramework e ACBrFramework.Net - Rafael Batiati.
+[+] Adicionado TEF_Resp_LeInformacao - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+
+23/11/2012 (ACBrFramework 0.9.1.21)
+[+] Implementado o metodo EAD_RemoveEADArquivo, EAD_VerificarEAD - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo EAD_CalcularEAD, EAD_MD5FromString, EAD_MD5FromFile - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+
+23/11/2012 (ACBrFramework 0.9.1.20)
+[*] Alterados de int para string os campos CPF,CNPJ,Telefone,CEP do Sintegra - ACBrFramework.Net - Rafael Batiati
+
+22/11/2012 (ACBrFramework 0.9.1.20)
+[*] Adicionado as propriedades data e titulo ao PAF.TITP - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+
+21/11/2012 (ACBrFramework 0.9.1.19)
+[*] Mudança de double para decimal nos campos do PAF.TITP, mantendo o padrão com os demais componentes - ACBrFramework.Net - Rafael Batiati
+
+20/11/2012 (ACBrFramework 0.9.1.19)
+[-] Corrigido bug ao enviar valores muito altos ACBrTEFD - ACBrFramework.Net - Rafael Dias.
+[+] Inicio da implementação do ACBrSPEDFiscal - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[-] Corrigido bug TEFD ao executar a partir de VB.Net - Rafael Batiati.
+
+20/11/2012 (ACBrFramework 0.9.1.18)
+[+] Adicionado TEF_SetNumVias, TEF_GetNumVias - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Adicionado TEF_SetArqLOG, TEF_GetArqLOG - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Adicionado TEF_SetNumeroMaximoCartoes, TEF_GetNumeroMaximoCartoes - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Adicionado TEF_SetEsperaSTS, TEF_GetEsperaSTS,  - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Adicionado TEF_SetExibirMsgAutenticacao, TEF_GetExibirMsgAutenticacao,   - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Adicionado TEF_SetPathBackup, TEF_GetPathBackup - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Adicionado TEF_SetTrocoMaximo, TEF_GetTrocoMaximo, TEF_GetAbout - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[*] Mudança de double para decimal nos campos do Sintegra, mantendo o padrão com os demais componentes - ACBrFramework.Net - Rafael Batiati
+
+19/11/2012 (ACBrFramework 0.9.1.17)
+[+] Adicionado EAD_CalcularHash - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[*] Melhorado a função ECF_ComandoEnviado, ECF_RespostaRecebida - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[*] Melhoras no DEMO ECF(ainda em desenvolvimento) - ACBrFramework.Net - Rafael Dias.
+[-] Correção do Registro10 Sintegra - ACBrFramework.Net - Rafael Dias.
+[-] Correção do SaveFileTXT_R - ACBrFramework.Net - Rafael Dias.
+
+17/11/2012 (ACBrFramework 0.9.1.16)
+[+] Adicionado ECF_GetArqLog, ECF_SetArqLog - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[*] Reorganização do codigo - ACBrFramework - Rafael Dias.
+
+17/11/2012 (ACBrFramework 0.9.1.15)
+[+] Adicionado ECF_GetMemoParams, ECF_GetMemoParamsLineCount - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[*] Modificado o ECF_VendeItem adicionado o paramentro (int) CodDepartamento - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+
+16/11/2012 (ACBrFramework 0.9.1.14)
+[-] Correção do SaveFileTXT_N - ACBrFramework - Rafael Dias.
+
+16/11/2012 (ACBrFramework 0.9.1.13)
+[*] Modificações para compatibilidade com os componentes Delphi - ACBrFramework.Net - Rafael Dias.
+[-] Correções PAF_N e PAF_H - ACBrFramework.Net - Rafael Dias.
+
+15/11/2012 (ACBrFramework 0.9.1.13)
+[+] Implementado o componente ACBrCNIEE - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Adicionado o Demo do ACBrCNIEE - ACBrFramework.Net - Rafael Dias.
+
+14/11/2012 (ACBrFramework 0.9.1.12)
+[+] Implementado TEF_CHQ - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+
+13/11/2012 (ACBrFramework 0.9.1.11)
+[+] Implementado a propriedade ECF_MaxLinhasBuffer, ECF_MaxLinhasBuffer - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[*] Melhorado os metodos ECF_AbreCupomVinculado, ECF_EfetuaPagamento, ECF_EfetuaPagamentoNaoFiscal - ACBrFramework.Net - Rafael Dias.
+[+] Adicionado ECF_ProgramaFormaPagamento no DEMO ECF - ACBrFramework.Net - Rafael Dias.
+[+] Finalização do DEMO ACBrTEFD - ACBrFramework.Net - Rafael Dias.
+
+12/11/2012 (ACBrFramework 0.9.1.10)
+[+] Implementado a propriedade TEF_TEFxxx_SetHabilitado, TEF_TEFxxx_GetHabilitado - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado a propriedade TEF_TEFxxx_SetName, TEF_TEFxxx_GetName - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[*] Melhorado os metodos ECF_VendeItem, ECF_AbreCupom, ECF_EfetuaPagamento - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo ECF_AchaFPGIndice - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+
+11/11/2012 (ACBrFramework 0.9.1.9)
+[+] Implementado o metodo TEF_DesInicializar - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo TEF_AtivarGP - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo TEF_GetEsperaSleep, TEF_SetEsperaSleep - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[*] Organização das pasta do ACBrTED - ACBrFramework.Net - Rafael Dias.
+
+11/11/2012 (ACBrFramework 0.9.1.8)
+[*] Modificado o DefExporter para suportar os eventos - DefExporter - Rafael Batiati.
+[-] Atualizado e corrigido o projeto jACBrFramework para funcionar com os ultimos Defs - jACBrFramework - Rafael Batiati.
+[*] Padronização dos Callbacks de eventos no código Delphi - ACBrFramework - Rafael Batiati.
+[-] Correção dos ícones do toolbox do ACBrFramework.net - ACBrFramework.Net - Rafael Batiati.
+[*] Melhoras na versão Demo do componente ACBrTEFD - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo TEF_SetAutoAtivar, TEF_GetAutoAtivar - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo TEF_GetGPAtual, TEF_SetGPAtual - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo TEF_SetMultiplosCartoes, TEF_GetMultiplosCartoes - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo TEF_SetAutoEfetuarPagamento, TEF_GetAutoEfetuarPagamento - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo TEF_SetAutoFinalizarCupom, TEF_GetAutoFinalizarCupom - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo TEF_SetCHQEmGerencial, TEF_GetCHQEmGerencial - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+
+08/11/2012 (ACBrFramework 0.9.1.6)
+[+] Versão BETA do componente ACBrTEFD - Rafael Batiati
+[+] Métodos TEFD ATV, ADM, CNC, CNF e NCN, e GetImagemComprovante 1a e 2a via em Resp e RespostasPendentes - Rafael Batiati
+
+
+07/11/2012 (ACBrFramework 0.9.1.6)
+[-] Remoção das solution folders para compatibilidade com as versões express do Visual Studio - ACBrFramework.Net   - Rafael Dias.
+[+] Inicio do ACBrSpedFiscal  - ACBrFramework - Rafael Dias. 
+
+06/11/2012 (ACBrFramework 0.9.1.6)
+[*] Inclusão de Namespaces nos componentes .Net - ACBrFramework.Net - Rafael Batiati.
+
+04/11/2012 (ACBrFramework 0.9.1.6)
+[*] Reestrututação do ACBrPAF para ficar similar a versão Delphi - ACBrFramework.Net   - Rafael Dias.
+[*] Reestrututação do ACBrSintegra para ficar similar a versão Delphi - ACBrFramework.Net   - Rafael Dias.
+[+] Implementado o metodo PAF_SaveFileTXT_T e PAF_SaveFileTXT_TITP - ACBrFramework e ACBrFramework.Net  - Rafael Dias.
+[*] Melhora na chamada dos eventos em todos os componentes - ACBrFramework.Net  - Rafael Dias\Rafael Batiati.
+
+03/11/2012 (ACBrFramework 0.9.1.5)
+[*] Reorganização de pastas para permitir namespaces nos componentes .Net - ACBrFramework.Net - Rafael Batiati.
+[+] Versão inicial do componente TEF - ACBrFramework e ACBrFramework.Net Rafael - Batiati.
+
+01/11/2012 (ACBrFramework 0.9.1.5)
+[-] Corrigido erro no evento OnGetChave do AAC - ACBrFramework.Net - Rafael Dias.
+
+31/10/2012 (ACBrFramework 0.9.1.4)
+[*] Alterado os tipos de dados double para decimal - ACBrFramework.Net - Rafael Batiati.
+[*] Melhorado o disparo de eventos nos componentes BAL e LCB - ACBrFramework e ACBrFramework.Net - Rafael Batiati.
+[*] Melhorado o disparo de eventos nos componentes ECF, AAC e EAD - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Adicionado o evento OnPAFGetKeyRSA no PAF - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Adicionado o evento OnBobinaAdicionaLinhas no ECF - ACBrFramework e ACBrFramework.Net - Rafael Dias/Rafael Batiati.
+[*] Métodos SaveTXT_??? do ACBrPAF recebem arrays ou IEnumerables para facilitar a utilização - Rafael Batiati
+[*] Listas de registros do ACBrPAF trocadas para readonly e instanciadas no construtor - Rafael Batiati
+
+29/10/2012 (ACBrFramework 0.9.1.2)
+[-] Corrigido método RelatorioGerencial - ACBrFramework e ACBrFramework.Net - Rafael Batiati
+[+] Implementado o metodo SIN_GeraArquivo - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro60I - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro60R - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro61I - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro61R - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro71 - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro76 - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro77 - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro85 - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro86 - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro55 - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro56 - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro60M - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro60A - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro60D - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro70 - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro74 - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro75 - ACBrFramework.Net - Rafael Dias.
+
+29/10/2012 (ACBrFramework 0.9.1.1)
+[+] Implementado o metodo ECF_MudaHorarioVerao - ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro60I - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo SIN_Registro60R - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo SIN_Registro61I - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo SIN_Registro61R - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo SIN_Registro71 - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo SIN_Registro76 - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo SIN_Registro77 - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo SIN_Registro85 - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo SIN_Registro86 - ACBrFramework - Rafael Dias.
+
+26/10/2012 (ACBrFramework 0.9.1.0)
+[+] Adicionado instalador dos componentes - ACBrFramework.Net - Rafael Dias.
+[+] Adicionado aplicativo ACBrFramework.Net.BALTeste - ACBrFramework.Net - Rafael Batiati
+[+] Adicionado evento OnLePeso e propriedade MonitorarBalanca no componente BAL - ACBrFramework e ACBrFramework.Net - Rafael Batiati
+[+] Adicionado eventos no componente EAD OnGetChavePublica e OnGetChavePrivada - ACBrFramework e ACBrFramework.Net - Rafael Batiati
+[+] Adicionado eventos no componente ECF OnPoucoPapel - ACBrFramework e ACBrFramework.Net - Rafael Batiati
+[+] Adicionado eventos no componente AAC OnGetChave - ACBrFramework e ACBrFramework.Net - Rafael Batiati
+[-] Corrigido o ícone dos componentes - ACBrFramework.Net - Rafael Batiati
+[*] Propriedade DadosReducaoZ transformado em método GetDadosReducaoZ() - ACBrFramework.Net - Rafael Batiati
+
+25/10/2012 (ACBrFramework 0.9.0.172)
+[+] SUPORTE A EVENTOS nos componentes ACBrFramework.Net: Evento do componente LCB.OnLeCodigo implementado. - ACBrFramework e ACBrFramework.Net - Rafael Batiati
+[+] Inclusão da classe ACBrDevice que contém as propriedades referentes a comunicação Serial - Rafael Batiati.
+[+] Inclusão da propriedade Device nos componentes ECF, LCB e BAL - ACBrFramework.Net - Rafael Batiati.
+[*] Removido do componente ECF as propriedades referentes a comunicação Serial (Baud,Parity,StopBits, etc..). - ACBrFramework.Net - Rafael Batiati.
+[*] Estrutura de pastas do ACBrFramework.Net modificada, incluindo a pasta ACBrSerial e os componentes ACBrECF, ACBrBAL e ACBrLCB sob essa pasta. - ACBrFramework.Net - Rafael Batiati.
+
+25/10/2012(ACBrFramework 0.9.0.163)
+[+] Inclusão do campo MFAdicional em ACBrECF - ACBrFramework e ACBrFramework.Net - Rafael Batiati.
+[-] Remoção do campo DT_FIN no registro R2 em ACBrPAF - ACBrFramework e ACBrFramework.Net - Rafael Batiati.
+
+25/10/2012 (ACBrFramework 0.9.0.162)
+[+] Adicionado novo modelo de ECF, ecfEscECF - ACBrFramework.Net - Rafael Dias.
+
+23/10/2012(ACBrFramework 0.9.0.162)
+[+] Implementado o metodo SIN_Registro55 - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo SIN_Registro56 - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo SIN_Registro60M - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo SIN_Registro60A - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo SIN_Registro60D - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo SIN_Registro70 - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo SIN_Registro74 - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo SIN_Registro75 - ACBrFramework - Rafael Dias.
+
+21/10/2012(ACBrFramework 0.9.0.161)
+[*] Modificado os metodo do ACBrPAF - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+
+21/10/2012(ACBrFramework 0.9.0.160)
+[-] Corrigido o metodo EAD_ConverteXMLeECFcParaOpenSSL - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[-] Corrigido o metodo EAD_AssinarArquivoComEAD - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[*] Terminando o Demo do ACBrEAD  - ACBrFramework.Net - Rafael Dias.
+
+20/10/2012(ACBrFramework 0.9.0.159)
+[+] Implementado o metodo ECF_DoAtualizarValorGT - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo ECF_DoVerificaValorGT - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+
+18/10/2012(ACBrFramework 0.9.0.158)
+[-] Corrigido erro na Função PafMF_RelParametrosConfiguracao - ACBrFramework.Net - Rafael Dias.
+
+18/10/2012(ACBrFramework 0.9.0.158)
+[+] Implementado o metodo ECF_ArquivoMFD_DLL - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo ECF_ArquivoMFD_DLL_COO - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo ECF_EspelhoMFD_DLL - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo ECF_EspelhoMFD_DLL_COO - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[*] Reorganização da Pasta ACBrECF - ACBrFramework.Net - Rafael Dias.
+
+18/10/2012(ACBrFramework 0.9.0.156)
+[+] Implementado o metodo ECF_PafMF_RelParametrosConfiguracao - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+
+17/10/2012(ACBrFramework 0.9.0.155)
+[+] Adicionado demo do ACBrEAD - ACBrFramework.Net - Rafael Dias.
+[+] Adicionado demo do ACBrPAF - ACBrFramework.Net - Rafael Dias.
+
+12/10/2012 (ACBrFramework 0.9.0.155)
+[+] Implementado a Função SIN_Registro53 e SIN_Registro54 - ACBrFramework - Rafael Dias.
+[-] Corrigido erro na função PAF_SaveFileTXT_R e PAF_SaveFileTXT_B - ACBrFramework - Rafael Dias.
+
+10/10/2012 (ACBrFramework 0.9.0.151)
+[*] Saída do ACBrFramework da pasta \Projetos do repositório ACBr e criação de um novo repositório na raiz
+[*] Alteração nos paths dos projetos para nova estrutura de diretórios do ACBrFramework
+
+08/10/2012 (ACBrFramework 0.9.0.151)
+[*] Projeto jACBrFramework reorganizado e funcionando com as definições geradas pelo DefExport - Rafael Batiati
+[+] Adicionado os campos Endereco, Cep, Cidade, Uf, Telefone, Contato, Email, IE na identificação da Empresa no ACBrAAC - Rafael Batiati
+
+07/10/2012 (ACBrFramework - 0.9.0.150)
+[+] Implementado o Metodo SIN_Registro50 - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o Metodo SIN_Registro51 - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+
+06/10/2012 (ACBrFramework - 0.9.0.149)
+[+] Implementado o Metodo ECF_RelatorioGerencial - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o Metodo SIN_Registro11 - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[-] Corrigindo o Registro10 ACBrSintegra - ACBrFramework.Net - Rafael Dias.
+
+06/10/2012 (ACBrFramework - 0.9.0.145)
+[*] Reorganizado o projeto ACBrFramework.OCX e alterado para utilizar as declarações da ACBrFramework32.DLL exportadas pelo ACBrDefExporter - Rafael Batiati
+[+] Implementado no ACBrDefExporter Função para exportar para o VB6 - Rafael Batiati
+[+] Implementado o metodo ECF_SetEAD - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo ECF_CarregaRelatoriosGerenciais - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+[+] Implementado o metodo ECF_LerTotaisRelatoriosGerenciais - ACBrFramework e ACBrFramework.Net - Rafael Dias.
+
+05/10/2012 - (ACBrFramework - 0.9.0.142)
+[*] Correção do tipo ACBrECFFormaPagamento incluindo os campos "Data" e "TipoDocto" - Rafael Batiati
+[+] Implementado o metodo ECF_CarregaRelatoriosGerenciais - ACBrFramework - Rafael Dias.
+[+] Implementado o metodo ECF_LerTotaisRelatoriosGerenciais - ACBrFramework - Rafael Dias.
+[*] Projeto ACBrFramework.OCX Renomeado - Rafael Batiati.
+[*] Organização dos projetos do ACBrFramework
+[+] Criação de componentes visuais para o ACBrFramework.Net (agora é possível utilizar os componentes diretamente do Toolbox!) - Rafael Batiati.
+[+] Dll nativa embutida junto com o ACBrFramework.Net (não é mais necessário copiar a DLL junto do aplicativo) - Rafael Batiati.
+
+04/10/2012
+[+] Implementado o metodo ECF_GetRelatoriosGerenciais - ACBrFramework e ACBrFramework.net - Rafael Dias.
+[+] Implementado o metodo ECF_ProgramaRelatoriosGerenciais - ACBrFramework e ACBrFramework.net - Rafael Dias.
+[+] Implementado o metodo SIN_LimparRegistros - ACBrFramework e ACBrFramework.net - Rafael Dias.
+[+] Implementado o metodo SIN_Registro10 - ACBrFramework e ACBrFramework.net - Rafael Dias.
+
+01/10/2012
+[*] Mudança de nome de ACBr32.dll para ACBrFramework - Equipe ACBrFramework.
+[*] Nova organização das chamadas a DLL Nativa (Cada componente possui sua classe com as funções de Interop) -Rafael Batiati
+[+] Iniciado aplicativo ACBrDefExporter, capaz de gerar as definições de funções e tipos da DLL nativa para C/C++, VB6 e xBase (Clipper, FoxPro e Harbour) - Rafael Batiati
+[-] Correções no método ECF_PafMF_RelIdentificacaoPafECF - ACBrFramework - Rafael Batiati
+[-] Correções no método PafMF_RelMeiosPagamento da classe ACBrECF - ACBrFramework - Rafael Batiati
+
+28/09/2012
+[-] Corrigido erro no metodo LeituraMemoriaFiscal - ACBr.Net - Rafael Dias.
+
+27/09/2012
+[+] Implementado a Função PAF_SaveFileTXT_N - ACBr32.dll e ACBr.NET - Rafael Dias.
+[+] Terminado as implementações do ACBrPAF - Rafael Dias.
+[+] Adicionado método PafMF_RelIdentificacaoPafECF em ACBrECF - ACBr32.dll  - Rafael Batiati.
+[*] Modificado build de x86 e x64 - ACBr.NET - Rafael Batiati.
+[-] Corrigido AccessViolationException quando executado dentro do Visual Studio - ACBr.NET - Rafael Batiati.
+[+] Inserido método PafMF_RelIdentificacaoPafECF na classe ACBrECF - ACBr.NET - Rafael Batiati.
+[*] Reorganizadas as classes do ACBrAAC - ACBr.NET - Rafael Batiati.
+[*] Propriedades GetDadosUltimaReducaoZ() e GetDadosReducaoZClass() do ACBrECF transformadas em métodos. - ACBr.NET - Rafael Batiati.
+
+23/09/2012
+[+] Implementado o metodo PAF_SaveFile_B - ACBr32.dll e ACBr.Net - Rafael Dias.
+[+] Implementado o metodo SIN_GetAtivo - ACBr32.dll e ACBr.Net - Rafael Dias.
+[+] Implementado o metodo SIN_GetFileName - ACBr32.dll e ACBr.Net - Rafael Dias.
+[+] Implementado o metodo SIN_SetFileName - ACBr32.dll e ACBr.Net - Rafael Dias.
+[+] Implementado o metodo SIN_GetVersaoValidador - ACBr32.dll e ACBr.Net - Rafael Dias.
+[+] Implementado o metodo SIN_SetVersaoValidador - ACBr32.dll e ACBr.Net - Rafael Dias.
+
+22/09/2012
+[+] Foi adicionado ao repositorio arquivo do Lazarus para compilação da Dll em padrão STDCALL e x64. - Rafael Dias.
+[-] Correções no ACBrEAD - ACBr32.dll e ACBr.Net - Rafael Dias
+[+] Implementado o Metodo EAD_SetChavePrivada - ACBr32.dll e ACBr.Net - Rafael Dias
+[+] Implementado o Metodo EAD_GetChavePrivada - ACBr32.dll e ACBr.Net - Rafael Dias
+[+] Implementado o Metodo EAD_SetChavePublica - ACBr32.dll e ACBr.Net - Rafael Dias
+[+] Implementado o Metodo EAD_GetChavePublica - ACBr32.dll e ACBr.Net - Rafael Dias
+[+] Implementado o Metodo EAD_CalcularChavePublica - ACBr32.dll e ACBr.Net - Rafael Dias
+[+] Implementado o Metodo PAF_AssinaArquivoComEAD - ACBr32.dll e ACBr.Net - Rafael Dias
+
+19/09/212
+[+] Inicio da Implementação do ACBrSintegra - ACBr32.dll - Rafael Dias.
+[+] Adicionado ECF_AcharECF - ACBr32.dll e ACBr.Net  - Rafael Dias.
+[+] Adicionado ECF_AcharPorta - ACBr32.dll e ACBr.Net  - Rafael Dias.
+
+18/09/2012
+[+] Foi implementado o ACBrEAD e ACBrPAF - ACBr32.dll e ACBr.Net - Rafael Dias.
+
+31/05/2010
+[+] Primeira versão do ACBr32.DLL no SVN

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="ACBrBoleto.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="902"/>
+        <CursorPos X="77" Y="3596"/>
+        <UsageCount Value="10"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="ACBrBancoBanestes.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="82"/>
+        <CursorPos X="89" Y="15"/>
+        <UsageCount Value="10"/>
+      </Unit1>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

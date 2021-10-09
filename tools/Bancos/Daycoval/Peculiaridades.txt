@@ -1,0 +1,11 @@
+- Layout 6 ou 4 significa a nota de versão 3 do manual:
+
+- Layout 4:
+N/Número do Banco Cobrador deve vir nas posições 63 a 70 e 76 a 83. 
+Nesta Carteira, o cliente envia o título para o banco Daycoval, já com o Nosso Número do Correspondente Itaú sem o DV calculado. O Campo deve ocupar 08 posições, com zeros à esquerda. O DV do NN Itaú irá somente no boleto físico.
+
+- Layout 6:
+N/N Daycoval inserido nas posições 63 a 70.
+
+- Nome do arquivo fixo, utilizar a propriedade PrefixNomeRemessa
+- Informar o código do layout 4 ou 6 no campo LayoutVersaoLote

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>E:\Programacao\ACBr\ACBrFramework\ACBrFramework.Net\DefExporter\ACBrDefExporter\JavaDefExporter.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>e:\programacao\acbr\acbrframework\acbrframework.net\defexporter\acbrdefexporter\mainform.cs</string>
+      <string>e:\programacao\acbr\acbrframework\acbrframework.net\defexporter\acbrdefexporter\mainform.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>e:\programacao\acbr\acbrframework\acbrframework.net\defexporter\acbrdefexporter\javaconverter\stubgenerator.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>e:\programacao\acbr\acbrframework\acbrframework.net\defexporter\acbrdefexporter\javaconverter\javahelper.cs</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>

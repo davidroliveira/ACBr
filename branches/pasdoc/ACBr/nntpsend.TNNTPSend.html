@@ -1,0 +1,606 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: nntpsend: Classe TNNTPSend</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TNNTPSend"></a><h1 class="cio">Classe TNNTPSend</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="nntpsend.html">nntpsend</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TNNTPSend = class(<a class="normal"  href="blcksock.TSynaClient.html">TSynaClient</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+:abstract(Implementation of Network News Transfer Protocol.
+
+<p>Note: Are you missing properties for setting <a class="normal"  href="blcksock.TSynaClient.html#UserName">Username</a> and <a class="normal"  href="blcksock.TSynaClient.html#Password">Password</a>? Look to parent <a class="normal"  href="blcksock.TSynaClient.html">TSynaClient</a> object!
+
+<p>Are you missing properties for specify server address and port? Look to parent <a class="normal"  href="blcksock.TSynaClient.html">TSynaClient</a> too!</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal"  href="blcksock.TSynaClient.html">TSynaClient</a></li>
+<li class="thisitem">TNNTPSend</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="nntpsend.TNNTPSend.html#FSock">FSock</a></b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="nntpsend.TNNTPSend.html#FResultCode">FResultCode</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="nntpsend.TNNTPSend.html#FResultString">FResultString</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="nntpsend.TNNTPSend.html#FData">FData</a></b>: TStringList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="nntpsend.TNNTPSend.html#FDataToSend">FDataToSend</a></b>: TStringList;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="nntpsend.TNNTPSend.html#FAutoTLS">FAutoTLS</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="nntpsend.TNNTPSend.html#FFullSSL">FFullSSL</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="nntpsend.TNNTPSend.html#FNNTPcap">FNNTPcap</a></b>: TStringList;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#ReadResult">ReadResult</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#ReadData">ReadData</a></b>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#SendData">SendData</a></b>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#Connect">Connect</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="nntpsend.TNNTPSend.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="nntpsend.TNNTPSend.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#Login">Login</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#Logout">Logout</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#DoCommand">DoCommand</a></b>(const Command: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#DoCommandRead">DoCommandRead</a></b>(const Command: string): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#DoCommandWrite">DoCommandWrite</a></b>(const Command: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#GetArticle">GetArticle</a></b>(const Value: string): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#GetBody">GetBody</a></b>(const Value: string): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#GetHead">GetHead</a></b>(const Value: string): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#GetStat">GetStat</a></b>(const Value: string): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#SelectGroup">SelectGroup</a></b>(const Value: string): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#IHave">IHave</a></b>(const MessID: string): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#GotoLast">GotoLast</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#GotoNext">GotoNext</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#ListGroups">ListGroups</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#ListNewGroups">ListNewGroups</a></b>(Since: TDateTime): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#NewArticles">NewArticles</a></b>(const Group: string; Since: TDateTime): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#PostArticle">PostArticle</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#SwitchToSlave">SwitchToSlave</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#Xover">Xover</a></b>(xoStart, xoEnd: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#StartTLS">StartTLS</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#FindCap">FindCap</a></b>(const Value: string): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="nntpsend.TNNTPSend.html#ListExtensions">ListExtensions</a></b>: Boolean;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="nntpsend.TNNTPSend.html#ResultCode">ResultCode</a></b>: Integer read <a   href="nntpsend.TNNTPSend.html#FResultCode">FResultCode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="nntpsend.TNNTPSend.html#ResultString">ResultString</a></b>: string read <a   href="nntpsend.TNNTPSend.html#FResultString">FResultString</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="nntpsend.TNNTPSend.html#Data">Data</a></b>: TStringList read <a   href="nntpsend.TNNTPSend.html#FData">FData</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="nntpsend.TNNTPSend.html#AutoTLS">AutoTLS</a></b>: Boolean read <a   href="nntpsend.TNNTPSend.html#FAutoTLS">FAutoTLS</a> Write <a   href="nntpsend.TNNTPSend.html#FAutoTLS">FAutoTLS</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="nntpsend.TNNTPSend.html#FullSSL">FullSSL</a></b>: Boolean read <a   href="nntpsend.TNNTPSend.html#FFullSSL">FFullSSL</a> Write <a   href="nntpsend.TNNTPSend.html#FFullSSL">FFullSSL</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="nntpsend.TNNTPSend.html#Sock">Sock</a></b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a> read <a   href="nntpsend.TNNTPSend.html#FSock">FSock</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FSock"></a><code><b>FSock</b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FResultCode"></a><code><b>FResultCode</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FResultString"></a><code><b>FResultString</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FData"></a><code><b>FData</b>: TStringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FDataToSend"></a><code><b>FDataToSend</b>: TStringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FAutoTLS"></a><code><b>FAutoTLS</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FFullSSL"></a><code><b>FFullSSL</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FNNTPcap"></a><code><b>FNNTPcap</b>: TStringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="ReadResult"></a><code>function <b>ReadResult</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="ReadData"></a><code>function <b>ReadData</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SendData"></a><code>function <b>SendData</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Connect"></a><code>function <b>Connect</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Login"></a><code>function <b>Login</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Connects to NNTP server and begin session.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Logout"></a><code>function <b>Logout</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<code>Logout</code> from NNTP server and terminate session.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DoCommand"></a><code>function <b>DoCommand</b>(const Command: string): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:By this you <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> call any NNTP command.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DoCommandRead"></a><code>function <b>DoCommandRead</b>(const Command: string): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:by this you <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> call any NNTP command. This variant is used for commands for download information from server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DoCommandWrite"></a><code>function <b>DoCommandWrite</b>(const Command: string): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:by this you <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> call any NNTP command. This variant is used for commands for upload information to server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetArticle"></a><code>function <b>GetArticle</b>(const Value: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Download full message to <a class="normal"  href="nntpsend.TNNTPSend.html#Data">data</a> property. Value <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be number of message or message-id (in brackets).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetBody"></a><code>function <b>GetBody</b>(const Value: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Download only body of message to <a class="normal"  href="nntpsend.TNNTPSend.html#Data">data</a> property. Value <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be number of message or message-id (in brackets).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetHead"></a><code>function <b>GetHead</b>(const Value: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Download only headers of message to <a class="normal"  href="nntpsend.TNNTPSend.html#Data">data</a> property. Value <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be number of message or message-id (in brackets).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetStat"></a><code>function <b>GetStat</b>(const Value: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Get message status. Value <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be number of message or message-id (in brackets).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SelectGroup"></a><code>function <b>SelectGroup</b>(const Value: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Select given group.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IHave"></a><code>function <b>IHave</b>(const MessID: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Tell to server 'I have mesage with given message-ID.' If server need this message, message is uploaded to server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GotoLast"></a><code>function <b>GotoLast</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Move message pointer to last item in group.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GotoNext"></a><code>function <b>GotoNext</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Move message pointer to next item in group.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ListGroups"></a><code>function <b>ListGroups</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Download to <a class="normal"  href="nntpsend.TNNTPSend.html#Data">data</a> property list of all groups on NNTP server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ListNewGroups"></a><code>function <b>ListNewGroups</b>(Since: TDateTime): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Download to <a class="normal"  href="nntpsend.TNNTPSend.html#Data">data</a> property list of all groups created after given time.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NewArticles"></a><code>function <b>NewArticles</b>(const Group: string; Since: TDateTime): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Download to <a class="normal"  href="nntpsend.TNNTPSend.html#Data">data</a> property list of message-ids in given group since given time.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PostArticle"></a><code>function <b>PostArticle</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Upload new article to server. (for new messages by you)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SwitchToSlave"></a><code>function <b>SwitchToSlave</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Tells to remote NNTP server 'I am not NNTP client, but I am another NNTP server'.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Xover"></a><code>function <b>Xover</b>(xoStart, xoEnd: string): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Call NNTP <code>XOVER</code> command.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StartTLS"></a><code>function <b>StartTLS</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Call <code>STARTTLS</code> command for upgrade connection to SSL/TLS mode.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FindCap"></a><code>function <b>FindCap</b>(const Value: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Try to find given capability in <a class="normal"  href="ACBrCAPICOM_TLB.html#Extension">extension</a> list. This list is getted after successful <a class="normal"  href="nntpsend.TNNTPSend.html#Login">login</a> to NNTP server. If <a class="normal"  href="ACBrCAPICOM_TLB.html#Extension">extension</a> capability is not found, then return is empty string.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ListExtensions"></a><code>function <b>ListExtensions</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Try get list of server <a class="normal"  href="ACBrCAPICOM_TLB.html#Extensions">extensions</a>. List is returned in <a class="normal"  href="nntpsend.TNNTPSend.html#Data">data</a> property.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ResultCode"></a><code>property <b>ResultCode</b>: Integer read <a   href="nntpsend.TNNTPSend.html#FResultCode">FResultCode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Result code number of last operation.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ResultString"></a><code>property <b>ResultString</b>: string read <a   href="nntpsend.TNNTPSend.html#FResultString">FResultString</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:String description of last result code from NNTP server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Data"></a><code>property <b>Data</b>: TStringList read <a   href="nntpsend.TNNTPSend.html#FData">FData</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Readed <code>data</code>. (message, etc.)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AutoTLS"></a><code>property <b>AutoTLS</b>: Boolean read <a   href="nntpsend.TNNTPSend.html#FAutoTLS">FAutoTLS</a> Write <a   href="nntpsend.TNNTPSend.html#FAutoTLS">FAutoTLS</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:If is set to <code>True</code>, then upgrade to SSL/TLS mode after <a class="normal"  href="nntpsend.TNNTPSend.html#Login">login</a> if remote server support it.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FullSSL"></a><code>property <b>FullSSL</b>: Boolean read <a   href="nntpsend.TNNTPSend.html#FFullSSL">FFullSSL</a> Write <a   href="nntpsend.TNNTPSend.html#FFullSSL">FFullSSL</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:SSL/TLS mode is used from first contact to server. Servers with full SSL/TLS mode usualy using non-standard TCP port!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Sock"></a><code>property <b>Sock</b>: <a   href="blcksock.TTCPBlockSocket.html">TTCPBlockSocket</a> read <a   href="nntpsend.TNNTPSend.html#FSock">FSock</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Socket object used for TCP/IP operation. Good for seting OnStatus hook, etc.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:58</em>
+</span>
+</body></html>

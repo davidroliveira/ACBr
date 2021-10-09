@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="5"/>
+    <General>
+      <MainUnit Value="0"/>
+      <ActiveEditorIndexAtStart Value="1"/>
+      <IconPath Value="./"/>
+      <TargetFileExt Value=".exe"/>
+    </General>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
+    <Units Count="6">
+      <Unit0>
+        <CursorPos X="12" Y="2"/>
+        <EditorIndex Value="0"/>
+        <Filename Value="validadorteste.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <Loaded Value="True"/>
+        <TopLine Value="1"/>
+        <UnitName Value="ValidadorTeste"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <CursorPos X="20" Y="11"/>
+        <Filename Value="unit1.pas"/>
+        <ComponentName Value="Form1"/>
+        <ResourceFilename Value="unit1.lrs"/>
+        <TopLine Value="1"/>
+        <UnitName Value="Unit1"/>
+        <UsageCount Value="20"/>
+      </Unit1>
+      <Unit2>
+        <CursorPos X="12" Y="14"/>
+        <EditorIndex Value="1"/>
+        <Filename Value="ValidadorTeste1.pas"/>
+        <ComponentName Value="frValidador"/>
+        <HasResources Value="True"/>
+        <IsPartOfProject Value="True"/>
+        <Loaded Value="True"/>
+        <ResourceFilename Value="ValidadorTeste1.lrs"/>
+        <TopLine Value="9"/>
+        <UnitName Value="ValidadorTeste1"/>
+        <UsageCount Value="20"/>
+      </Unit2>
+      <Unit3>
+        <CursorPos X="1" Y="1"/>
+        <Filename Value="unit1.pas"/>
+        <ComponentName Value="Form1"/>
+        <ResourceFilename Value="unit1.lrs"/>
+        <TopLine Value="1"/>
+        <UnitName Value="Unit1"/>
+        <UsageCount Value="20"/>
+      </Unit3>
+      <Unit4>
+        <CursorPos X="1" Y="1"/>
+        <Filename Value="ValidadorTeste1.lfm"/>
+        <SyntaxHighlighter Value="LFM"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <CursorPos X="13" Y="218"/>
+        <Filename Value="C:\DELPHI\ACBr\source\Pascal\ACBrReg.pas"/>
+        <TopLine Value="196"/>
+        <UnitName Value="ACBrReg"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+    </Units>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="ACBr_LCL"/>
+        <MinVersion Minor="8" Release="3" Valid="True"/>
+      </Item2>
+    </RequiredPackages>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="5"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <SrcPath Value="$(LazarusDir)\lcl\;$(LazarusDir)\lcl\interfaces\$(LCLWidgetType)\"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <Generate Value="Faster"/>
+    </CodeGeneration>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="2">
+      <Item1>
+        <Name Value="ECodetoolError"/>
+      </Item1>
+      <Item2>
+        <Name Value="EFOpenError"/>
+      </Item2>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

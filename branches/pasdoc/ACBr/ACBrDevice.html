@@ -1,0 +1,373 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrDevice</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrDevice</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td><a class="section"  href="#%40Types">Tipos</a></td><td>Constantes</td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF} {$DEFINE ThreadEnviaLPT} { Use // no inicio dessa linha para desabilitar a Thread}</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a   href="synaser.html">synaser</a></li><li>SysUtils</li><li>math</li><li><a   href="ACBrConsts.html">ACBrConsts</a></li><li>Windows</li><li>DateUtils</li><li>Types</li><li>StrUtils</li><li>Forms</li><li>Printers</li><li>Classes</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrDevice.TACBrDevice.html"><code>TACBrDevice</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrDevice.TACBrThreadEnviaLPT.html"><code>TACBrThreadEnviaLPT</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrDevice.html#TACBrECFEstado">TACBrECFEstado</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrDevice.html#TACBrECFEstadoSet">TACBrECFEstadoSet</a></b> = set of <a   href="ACBrDevice.html#TACBrECFEstado">TACBrECFEstado</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrDevice.html#TACBrGAVAberturaAntecipada">TACBrGAVAberturaAntecipada</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrDevice.html#TACBrETQUnidade">TACBrETQUnidade</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrDevice.html#TACBrETQDPI">TACBrETQDPI</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrDevice.html#TACBrETQOrientacao">TACBrETQOrientacao</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrDevice.html#TACBrETQBarraExibeCodigo">TACBrETQBarraExibeCodigo</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrDevice.html#TACBrECFTipoCodBarra">TACBrECFTipoCodBarra</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrDevice.html#TACBrECFFinalizaArqMFD">TACBrECFFinalizaArqMFD</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrDevice.html#TACBrECFTipoDocumento">TACBrECFTipoDocumento</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrDevice.html#TACBrECFTipoDocumentoSet">TACBrECFTipoDocumentoSet</a></b> = set of <a   href="ACBrDevice.html#TACBrECFTipoDocumento">TACBrECFTipoDocumento</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrDevice.html#TACBrSerialParity">TACBrSerialParity</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrDevice.html#TACBrSerialStop">TACBrSerialStop</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrDevice.html#TACBrHandShake">TACBrHandShake</a></b> = (...);</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFEstado"></a><code><b>TACBrECFEstado</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Unit da <a class="normal"  href="synaser.html">SynaSer</a> (comunicação serial)</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+estNaoInicializada: &nbsp;</li>
+<li>
+estDesconhecido: Porta Serial ainda nao foi aberta</li>
+<li>
+estLivre: Porta aberta, mas estado ainda nao definido</li>
+<li>
+estVenda: Impressora Livre, sem nenhum cupom aberto, pronta para nova venda, Reducao Z e Leitura X ok, pode ou nao já ter ocorrido 1ª venda no dia...</li>
+<li>
+estPagamento: Cupom de Venda Aberto com ou sem venda do 1º Item</li>
+<li>
+estRelatorio: Iniciado Fechamento de Cupom com Formas Pagto pode ou nao ter efetuado o 1º pagto. Nao pode mais vender itens, ou alterar Subtotal</li>
+<li>
+estBloqueada: Imprimindo Cupom Fiscal Vinculado ou Relatorio Gerencial</li>
+<li>
+estRequerZ: Reduçao Z já emitida, bloqueada até as 00:00</li>
+<li>
+estRequerX: Reducao Z dia anterior nao emitida. Emita agora</li>
+<li>
+estNaoFiscal: Esta impressora requer Leitura X todo inicio de dia. Imprima uma Leitura X para poder vender</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFEstadoSet"></a><code><b>TACBrECFEstadoSet</b> = set of <a   href="ACBrDevice.html#TACBrECFEstado">TACBrECFEstado</a> ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Comprovante Nao Fiscal Aberto</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrGAVAberturaAntecipada"></a><code><b>TACBrGAVAberturaAntecipada</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+aaIgnorar: &nbsp;</li>
+<li>
+aaException: &nbsp;</li>
+<li>
+aaAguardar: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrETQUnidade"></a><code><b>TACBrETQUnidade</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+etqMilimetros: &nbsp;</li>
+<li>
+etqPolegadas: &nbsp;</li>
+<li>
+etqDots: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrETQDPI"></a><code><b>TACBrETQDPI</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+dpi203: &nbsp;</li>
+<li>
+dpi300: &nbsp;</li>
+<li>
+dpi600: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrETQOrientacao"></a><code><b>TACBrETQOrientacao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+orNormal: &nbsp;</li>
+<li>
+or270: &nbsp;</li>
+<li>
+or180: &nbsp;</li>
+<li>
+or90: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrETQBarraExibeCodigo"></a><code><b>TACBrETQBarraExibeCodigo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+becPadrao: &nbsp;</li>
+<li>
+becSIM: &nbsp;</li>
+<li>
+becNAO: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFTipoCodBarra"></a><code><b>TACBrECFTipoCodBarra</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Criando o tipo enumerado para tipos de código de barras</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+barEAN13: &nbsp;</li>
+<li>
+barEAN8: &nbsp;</li>
+<li>
+barSTANDARD: &nbsp;</li>
+<li>
+barINTERLEAVED: &nbsp;</li>
+<li>
+barCODE128: &nbsp;</li>
+<li>
+barCODE39: &nbsp;</li>
+<li>
+barCODE93: &nbsp;</li>
+<li>
+barUPCA: &nbsp;</li>
+<li>
+barCODABAR: &nbsp;</li>
+<li>
+barMSI: &nbsp;</li>
+<li>
+barCODE11: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFFinalizaArqMFD"></a><code><b>TACBrECFFinalizaArqMFD</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Criando tipo enumerado para a finalidade do arquivo MFD</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+finMF: &nbsp;</li>
+<li>
+finMFD: &nbsp;</li>
+<li>
+finTDM: &nbsp;</li>
+<li>
+finRZ: &nbsp;</li>
+<li>
+finRFD: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFTipoDocumento"></a><code><b>TACBrECFTipoDocumento</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Criando o tipo enumerado para tipo de documentos em Leitura da MFD</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+docRZ: &nbsp;</li>
+<li>
+docLX: &nbsp;</li>
+<li>
+docCF: &nbsp;</li>
+<li>
+docCFBP: &nbsp;</li>
+<li>
+docCupomAdicional: &nbsp;</li>
+<li>
+docCFCancelamento: &nbsp;</li>
+<li>
+docCCD: &nbsp;</li>
+<li>
+docAdicionalCCD: &nbsp;</li>
+<li>
+docSegViaCCD: &nbsp;</li>
+<li>
+docReimpressaoCCD: &nbsp;</li>
+<li>
+docEstornoCCD: &nbsp;</li>
+<li>
+docCNF: &nbsp;</li>
+<li>
+docCNFCancelamento: &nbsp;</li>
+<li>
+docSangria: &nbsp;</li>
+<li>
+docSuprimento: &nbsp;</li>
+<li>
+docEstornoPagto: &nbsp;</li>
+<li>
+docRG: &nbsp;</li>
+<li>
+docLMF: &nbsp;</li>
+<li>
+docTodos: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFTipoDocumentoSet"></a><code><b>TACBrECFTipoDocumentoSet</b> = set of <a   href="ACBrDevice.html#TACBrECFTipoDocumento">TACBrECFTipoDocumento</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrSerialParity"></a><code><b>TACBrSerialParity</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+pNone: &nbsp;</li>
+<li>
+pOdd: &nbsp;</li>
+<li>
+pEven: &nbsp;</li>
+<li>
+pMark: &nbsp;</li>
+<li>
+pSpace: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrSerialStop"></a><code><b>TACBrSerialStop</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+s1: &nbsp;</li>
+<li>
+s1eMeio: &nbsp;</li>
+<li>
+s2: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrHandShake"></a><code><b>TACBrHandShake</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+hsNenhum: &nbsp;</li>
+<li>
+hsXON_XOFF: &nbsp;</li>
+<li>
+hsRTS_CTS: &nbsp;</li>
+<li>
+hsDTR_DSR: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:24</em>
+</span>
+</body></html>

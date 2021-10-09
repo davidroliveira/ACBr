@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: tnpdf</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit tnpdf</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td><a class="section"  href="#%40Types">Tipos</a></td><td>Constantes</td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+******************************************************************************
+
+<p>Nishita's PDF Creation VCL (<code>TNPDF</code>) Version 2.0
+
+<p>Filename: tnpdf.pas Author: K. Nishita Compiler: Delphi 1.0, 2.0, 3.0, 4.0, 5.0
+
+<p>Description: Create PDF Files
+
+<p>NOTE: If you want to use FlateDecode/Zlib compression, copy paszlib files (paszlib.zip) included with this distribution to your Delphi librally path.
+
+<p>Copyright (c) 2002, K. Nishita. All Rights Reserved. Last Revised Date: 3/3/2002
+
+<p>******************************************************************************
+
+<p>MOD by Toci &lt;toth.akos@interware.hu&gt; for <a class="normal"  href="QRMultiExport.TQRMultiExport.html">TQRMultiExport</a>
+
+<p>Last modified: 25/1/2008
+
+<p>@ line 706 - a part commented casue of a drawing problem: The output image was larger than the PDF page solve it and contact me!
+
+<p>@ lines 98, 174, 245, 900 - Property for JPEG Quality added
+
+<p>******************************************************************************</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>WinProcs</li><li>WinTypes</li><li>Messages</li><li>Classes</li><li>Graphics</li><li>Controls</li><li>StdCtrls</li><li>ExtCtrls</li><li>Forms</li><li>Dialogs</li><li>JPEG</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="tnpdf.TPDFFont.html"><code>TPDFFont</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="tnpdf.TPrintPDF.html"><code>TPrintPDF</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="tnpdf.html#TPDFOrientation">TPDFOrientation</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="tnpdf.html#TPDFBrushStyle">TPDFBrushStyle</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="tnpdf.html#TPDFFontName">TPDFFontName</a></b> = (...);</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPDFOrientation"></a><code><b>TPDFOrientation</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+NOTE: If you want to use FlateDecode/Zlib compression, copy paszlib files (paszlib.zip) included with this distribution to your Delphi librally path.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+poPortrait: &nbsp;</li>
+<li>
+poLandscape: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPDFBrushStyle"></a><code><b>TPDFBrushStyle</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+poSolid: &nbsp;</li>
+<li>
+poDashed: &nbsp;</li>
+<li>
+poBeveled: &nbsp;</li>
+<li>
+poInset: &nbsp;</li>
+<li>
+poUnderline: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPDFFontName"></a><code><b>TPDFFontName</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+poHelvetica: &nbsp;</li>
+<li>
+poHelveticaBold: &nbsp;</li>
+<li>
+poHelveticaOblique: &nbsp;</li>
+<li>
+poHelveticaBoldOblique: &nbsp;</li>
+<li>
+poCourier: &nbsp;</li>
+<li>
+poCourierBold: &nbsp;</li>
+<li>
+poCourierOblique: &nbsp;</li>
+<li>
+poCourierBoldOblique: &nbsp;</li>
+<li>
+poTimesRoman: &nbsp;</li>
+<li>
+poTimesBold: &nbsp;</li>
+<li>
+poTimesItalic: &nbsp;</li>
+<li>
+poTimesBoldItalic: &nbsp;</li>
+<li>
+poSymbol: &nbsp;</li>
+<li>
+poZapfDingbats: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:21:06</em>
+</span>
+</body></html>

@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ldapsend: Classe TLDAPResultList</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TLDAPResultList"></a><h1 class="cio">Classe TLDAPResultList</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ldapsend.html">ldapsend</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TLDAPResultList = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+List of LDAP result objects</p>
+<p>
+: This object <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> hold list of LDAP objects. (for example result of LDAP SEARCH.)</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TLDAPResultList</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ldapsend.TLDAPResultList.html#FResultList">FResultList</a></b>: TList;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ldapsend.TLDAPResultList.html#GetResult">GetResult</a></b>(Index: integer): <a   href="ldapsend.TLDAPResult.html">TLDAPResult</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ldapsend.TLDAPResultList.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ldapsend.TLDAPResultList.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ldapsend.TLDAPResultList.html#Clear">Clear</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ldapsend.TLDAPResultList.html#Count">Count</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ldapsend.TLDAPResultList.html#Add">Add</a></b>: <a   href="ldapsend.TLDAPResult.html">TLDAPResult</a>;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ldapsend.TLDAPResultList.html#Items">Items</a></b>[Index: Integer]: <a   href="ldapsend.TLDAPResult.html">TLDAPResult</a> read <a   href="ldapsend.TLDAPResultList.html#GetResult">GetResult</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FResultList"></a><code><b>FResultList</b>: TList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetResult"></a><code>function <b>GetResult</b>(Index: integer): <a   href="ldapsend.TLDAPResult.html">TLDAPResult</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<code>Clear</code> all <a class="normal"  href="ldapsend.TLDAPResult.html">TLDAPResult</a> objects in list.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Count"></a><code>function <b>Count</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:Return <code>count</code> of <a class="normal"  href="ldapsend.TLDAPResult.html">TLDAPResult</a> objects in list.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Add"></a><code>function <b>Add</b>: <a   href="ldapsend.TLDAPResult.html">TLDAPResult</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:<a class="normal"  href="ldapsend.TLDAPResultList.html#Create">Create</a> and <code>add</code> new <a class="normal"  href="ldapsend.TLDAPResult.html">TLDAPResult</a> object to list.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Items"></a><code>property <b>Items</b>[Index: Integer]: <a   href="ldapsend.TLDAPResult.html">TLDAPResult</a> read <a   href="ldapsend.TLDAPResultList.html#GetResult">GetResult</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+:List of <a class="normal"  href="ldapsend.TLDAPResult.html">TLDAPResult</a> objects.</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:57</em>
+</span>
+</body></html>

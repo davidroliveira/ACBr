@@ -1,0 +1,98 @@
+object Form1: TForm1
+  Caption = 'Form1'
+  ClientHeight = 300
+  ClientWidth = 400
+  PixelsPerInch = 96
+  HorzScrollBar.Page = 399
+  VertScrollBar.Page = 299
+  Left = 234
+  Height = 300
+  Top = 190
+  Width = 400
+  object Label1: TLabel
+    BorderSpacing.OnChange = nil
+    Caption = 'Complemento'
+    Color = clNone
+    Left = 144
+    Height = 13
+    Top = 8
+    Width = 64
+  end
+  object Label2: TLabel
+    BorderSpacing.OnChange = nil
+    Caption = 'Tipo'
+    Color = clNone
+    Left = 232
+    Height = 13
+    Top = 8
+    Width = 21
+  end
+  object Label3: TLabel
+    BorderSpacing.OnChange = nil
+    Caption = 'Documento'
+    Color = clNone
+    Left = 8
+    Height = 13
+    Top = 8
+    Width = 55
+  end
+  object bFormatar1: TButton
+    BorderSpacing.OnChange = nil
+    Caption = 'Formatar'
+    OnClick = bFormatar1Click
+    TabOrder = 0
+    Left = 192
+    Height = 25
+    Top = 218
+    Width = 75
+  end
+  object bValidar1: TButton
+    BorderSpacing.OnChange = nil
+    Caption = '&Validar'
+    Default = True
+    TabOrder = 1
+    Left = 72
+    Height = 25
+    Top = 218
+    Width = 75
+  end
+  object edComple1: TEdit
+    BorderSpacing.OnChange = nil
+    TabOrder = 2
+    Cursor = crIBeam
+    Left = 144
+    Height = 21
+    Top = 24
+    Width = 73
+  end
+  object cbTipoDocto1: TComboBox
+    BorderSpacing.OnChange = nil
+    ItemHeight = 13
+    Items.Strings = (
+      'docCPF'
+      'docCNPJ'
+      'docUF'
+      'docInscEst'
+      'docNumCheque'
+      'docPIS'
+      'docCEP'
+      'docCartaoCredito'
+    )
+    MaxLength = 0
+    Style = csDropDownList
+    TabOrder = 3
+    Left = 232
+    Height = 21
+    Top = 24
+    Width = 97
+  end
+  object edDocto1: TEdit
+    BorderSpacing.OnChange = nil
+    TabOrder = 4
+    Cursor = crIBeam
+    Left = 8
+    Height = 21
+    Top = 24
+    Width = 121
+  end
+end

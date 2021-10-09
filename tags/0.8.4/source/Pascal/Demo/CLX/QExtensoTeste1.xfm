@@ -1,0 +1,63 @@
+object frExtenso: TfrExtenso
+  Left = 238
+  Top = 107
+  Width = 236
+  Height = 135
+  HorzScrollBar.Range = 225
+  VertScrollBar.Range = 121
+  ActiveControl = edValor
+  Caption = 'Numeros por Extenso'
+  Color = clBackground
+  Font.Color = clBlack
+  Font.Height = 12
+  Font.Name = 'Bitstream Vera Sans'
+  Font.Pitch = fpVariable
+  Font.Style = []
+  Font.Weight = 48
+  ParentFont = False
+  Scaled = False
+  PixelsPerInch = 84
+  object edValor: TEdit
+    Left = 8
+    Top = 24
+    Width = 101
+    Height = 23
+    Cursor = crIBeam
+    TabOrder = 0
+    Text = '123456,12'
+    OnKeyPress = edValorKeyPress
+  end
+  object Label1: TLabel
+    Left = 8
+    Top = 8
+    Width = 86
+    Height = 15
+    Caption = 'Digite o Valor'
+  end
+  object bExtenso: TButton
+    Left = 144
+    Top = 16
+    Width = 75
+    Height = 25
+    Caption = 'Extenso'
+    Default = True
+    TabOrder = 1
+    OnClick = bExtensoClick
+  end
+  object mExtenso: TMemo
+    Left = 8
+    Top = 64
+    Width = 217
+    Height = 57
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object ACBrExtenso1: TACBrExtenso
+    StrMoeda = 'Real'
+    StrMoedas = 'Reais'
+    StrCentavo = 'Centavo'
+    StrCentavos = 'Centavos'
+    Left = 48
+    Top = 80
+  end
+end

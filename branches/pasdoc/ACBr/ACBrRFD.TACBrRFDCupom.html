@@ -1,0 +1,615 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrRFD: Classe TACBrRFDCupom</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrRFDCupom"></a><h1 class="cio">Classe TACBrRFDCupom</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrRFD.html">ACBrRFD</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrRFDCupom = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TACBrRFDCupom</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsOwner">fsOwner</a></b>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsCCF">fsCCF</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsCOO">fsCOO</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsSubTotal">fsSubTotal</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsDesconto">fsDesconto</a></b>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsDataEmissao">fsDataEmissao</a></b>: TDateTime;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsTipoDesconto">fsTipoDesconto</a></b>: Char;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsTipoAcrescimo">fsTipoAcrescimo</a></b>: Char;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsAcrescimo">fsAcrescimo</a></b>: Double;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsOrdemDA">fsOrdemDA</a></b>: Char;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsCancelado">fsCancelado</a></b>: Char;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsTotalLiquido">fsTotalLiquido</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsNomeConsumidor">fsNomeConsumidor</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsDoctoConsumidor">fsDoctoConsumidor</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsItens">fsItens</a></b>: TObjectList;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsPagamentos">fsPagamentos</a></b>: TObjectList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrRFD.TACBrRFDCupom.html#fsNomeArq">fsNomeArq</a></b>: String;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrRFD.TACBrRFDCupom.html#SetOrdemDA">SetOrdemDA</a></b>(const AValue: Char);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrRFD.TACBrRFDCupom.html#SetTipoAcrescimo">SetTipoAcrescimo</a></b>(const AValue: Char);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrRFD.TACBrRFDCupom.html#SetTipoDesconto">SetTipoDesconto</a></b>(const AValue: Char);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrRFD.TACBrRFDCupom.html#SetCancelado">SetCancelado</a></b>(const AValue: Char);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrRFD.TACBrRFDCupom.html#SetDoctoConsumidor">SetDoctoConsumidor</a></b>(const AValue: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrRFD.TACBrRFDCupom.html#SetNomeArq">SetNomeArq</a></b>(const AValue: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrRFD.TACBrRFDCupom.html#ZeraCupom">ZeraCupom</a></b> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrRFD.TACBrRFDCupom.html#Le">Le</a></b> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrRFD.TACBrRFDCupom.html#Grava">Grava</a></b> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrRFD.TACBrRFDCupom.html#create">create</a></b>( AOwner : TObject ) ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrRFD.TACBrRFDCupom.html#Destroy">Destroy</a></b> ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrRFD.TACBrRFDCupom.html#Descarrega">Descarrega</a></b> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrRFD.TACBrRFDCupom.html#VendeItem">VendeItem</a></b>( Codigo, Descricao: String; const Qtd, ValorUnitario: Double; const Unidade: String; const ValorDescAcres: Double; Aliquota: String) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrRFD.TACBrRFDCupom.html#CancelaItemVendido">CancelaItemVendido</a></b>(const NumItem: Integer) ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrRFD.TACBrRFDCupom.html#EfetuaPagamento">EfetuaPagamento</a></b>(DescricaoFormaPagto: String; Valor: Double ) ;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#NomeArq">NomeArq</a></b> : String read <a   href="ACBrRFD.TACBrRFDCupom.html#fsNomeArq">fsNomeArq</a> write <a   href="ACBrRFD.TACBrRFDCupom.html#SetNomeArq">SetNomeArq</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#CCF">CCF</a></b>           : Integer   read <a   href="ACBrRFD.TACBrRFDCupom.html#fsCCF">fsCCF</a>           write <a   href="ACBrRFD.TACBrRFDCupom.html#fsCCF">fsCCF</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#COO">COO</a></b>           : Integer   read <a   href="ACBrRFD.TACBrRFDCupom.html#fsCOO">fsCOO</a>           write <a   href="ACBrRFD.TACBrRFDCupom.html#fsCOO">fsCOO</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#DataEmissao">DataEmissao</a></b>   : TDateTime read <a   href="ACBrRFD.TACBrRFDCupom.html#fsDataEmissao">fsDataEmissao</a>   write <a   href="ACBrRFD.TACBrRFDCupom.html#fsDataEmissao">fsDataEmissao</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#SubTotal">SubTotal</a></b>      : Double    read <a   href="ACBrRFD.TACBrRFDCupom.html#fsSubTotal">fsSubTotal</a>      write <a   href="ACBrRFD.TACBrRFDCupom.html#fsSubTotal">fsSubTotal</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#Desconto">Desconto</a></b>      : Double    read <a   href="ACBrRFD.TACBrRFDCupom.html#fsDesconto">fsDesconto</a>      write <a   href="ACBrRFD.TACBrRFDCupom.html#fsDesconto">fsDesconto</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#TipoDesconto">TipoDesconto</a></b>  : Char      read <a   href="ACBrRFD.TACBrRFDCupom.html#fsTipoDesconto">fsTipoDesconto</a>  write <a   href="ACBrRFD.TACBrRFDCupom.html#SetTipoDesconto">SetTipoDesconto</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#Acrescimo">Acrescimo</a></b>     : Double    read <a   href="ACBrRFD.TACBrRFDCupom.html#fsAcrescimo">fsAcrescimo</a>     write <a   href="ACBrRFD.TACBrRFDCupom.html#fsAcrescimo">fsAcrescimo</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#TipoAcrescimo">TipoAcrescimo</a></b> : Char      read <a   href="ACBrRFD.TACBrRFDCupom.html#fsTipoAcrescimo">fsTipoAcrescimo</a> write <a   href="ACBrRFD.TACBrRFDCupom.html#SetTipoAcrescimo">SetTipoAcrescimo</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#TotalLiquido">TotalLiquido</a></b>  : Double    read <a   href="ACBrRFD.TACBrRFDCupom.html#fsTotalLiquido">fsTotalLiquido</a>  write <a   href="ACBrRFD.TACBrRFDCupom.html#fsTotalLiquido">fsTotalLiquido</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#Cancelado">Cancelado</a></b>     : Char      read <a   href="ACBrRFD.TACBrRFDCupom.html#fsCancelado">fsCancelado</a>     write <a   href="ACBrRFD.TACBrRFDCupom.html#SetCancelado">SetCancelado</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#OrdemDA">OrdemDA</a></b>       : Char      read <a   href="ACBrRFD.TACBrRFDCupom.html#fsOrdemDA">fsOrdemDA</a>       write <a   href="ACBrRFD.TACBrRFDCupom.html#SetOrdemDA">SetOrdemDA</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#NomeConsumidor">NomeConsumidor</a></b> : String read <a   href="ACBrRFD.TACBrRFDCupom.html#fsNomeConsumidor">fsNomeConsumidor</a>  write <a   href="ACBrRFD.TACBrRFDCupom.html#fsNomeConsumidor">fsNomeConsumidor</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#DoctoConsumidor">DoctoConsumidor</a></b>: String read <a   href="ACBrRFD.TACBrRFDCupom.html#fsDoctoConsumidor">fsDoctoConsumidor</a> write <a   href="ACBrRFD.TACBrRFDCupom.html#SetDoctoConsumidor">SetDoctoConsumidor</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#Itens">Itens</a></b>      : TObjectList read <a   href="ACBrRFD.TACBrRFDCupom.html#fsItens">fsItens</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrRFD.TACBrRFDCupom.html#Pagamentos">Pagamentos</a></b> : TObjectList read <a   href="ACBrRFD.TACBrRFDCupom.html#fsPagamentos">fsPagamentos</a> ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsOwner"></a><code><b>fsOwner</b>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsCCF"></a><code><b>fsCCF</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsCOO"></a><code><b>fsCOO</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsSubTotal"></a><code><b>fsSubTotal</b>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsDesconto"></a><code><b>fsDesconto</b>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsDataEmissao"></a><code><b>fsDataEmissao</b>: TDateTime;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsTipoDesconto"></a><code><b>fsTipoDesconto</b>: Char;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsTipoAcrescimo"></a><code><b>fsTipoAcrescimo</b>: Char;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsAcrescimo"></a><code><b>fsAcrescimo</b>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsOrdemDA"></a><code><b>fsOrdemDA</b>: Char;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsCancelado"></a><code><b>fsCancelado</b>: Char;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsTotalLiquido"></a><code><b>fsTotalLiquido</b>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsNomeConsumidor"></a><code><b>fsNomeConsumidor</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsDoctoConsumidor"></a><code><b>fsDoctoConsumidor</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsItens"></a><code><b>fsItens</b>: TObjectList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsPagamentos"></a><code><b>fsPagamentos</b>: TObjectList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fsNomeArq"></a><code><b>fsNomeArq</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetOrdemDA"></a><code>procedure <b>SetOrdemDA</b>(const AValue: Char);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetTipoAcrescimo"></a><code>procedure <b>SetTipoAcrescimo</b>(const AValue: Char);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetTipoDesconto"></a><code>procedure <b>SetTipoDesconto</b>(const AValue: Char);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetCancelado"></a><code>procedure <b>SetCancelado</b>(const AValue: Char);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetDoctoConsumidor"></a><code>procedure <b>SetDoctoConsumidor</b>(const AValue: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetNomeArq"></a><code>procedure <b>SetNomeArq</b>(const AValue: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="ZeraCupom"></a><code>procedure <b>ZeraCupom</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Le"></a><code>procedure <b>Le</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Grava"></a><code>procedure <b>Grava</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="create"></a><code>constructor <b>create</b>( AOwner : TObject ) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Descarrega"></a><code>Procedure <b>Descarrega</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="VendeItem"></a><code>Procedure <b>VendeItem</b>( Codigo, Descricao: String; const Qtd, ValorUnitario: Double; const Unidade: String; const ValorDescAcres: Double; Aliquota: String) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CancelaItemVendido"></a><code>Procedure <b>CancelaItemVendido</b>(const NumItem: Integer) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EfetuaPagamento"></a><code>Procedure <b>EfetuaPagamento</b>(DescricaoFormaPagto: String; Valor: Double ) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NomeArq"></a><code>property <b>NomeArq</b> : String read <a   href="ACBrRFD.TACBrRFDCupom.html#fsNomeArq">fsNomeArq</a> write <a   href="ACBrRFD.TACBrRFDCupom.html#SetNomeArq">SetNomeArq</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CCF"></a><code>property <b>CCF</b>           : Integer   read <a   href="ACBrRFD.TACBrRFDCupom.html#fsCCF">fsCCF</a>           write <a   href="ACBrRFD.TACBrRFDCupom.html#fsCCF">fsCCF</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="COO"></a><code>property <b>COO</b>           : Integer   read <a   href="ACBrRFD.TACBrRFDCupom.html#fsCOO">fsCOO</a>           write <a   href="ACBrRFD.TACBrRFDCupom.html#fsCOO">fsCOO</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DataEmissao"></a><code>property <b>DataEmissao</b>   : TDateTime read <a   href="ACBrRFD.TACBrRFDCupom.html#fsDataEmissao">fsDataEmissao</a>   write <a   href="ACBrRFD.TACBrRFDCupom.html#fsDataEmissao">fsDataEmissao</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SubTotal"></a><code>property <b>SubTotal</b>      : Double    read <a   href="ACBrRFD.TACBrRFDCupom.html#fsSubTotal">fsSubTotal</a>      write <a   href="ACBrRFD.TACBrRFDCupom.html#fsSubTotal">fsSubTotal</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Desconto"></a><code>property <b>Desconto</b>      : Double    read <a   href="ACBrRFD.TACBrRFDCupom.html#fsDesconto">fsDesconto</a>      write <a   href="ACBrRFD.TACBrRFDCupom.html#fsDesconto">fsDesconto</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TipoDesconto"></a><code>property <b>TipoDesconto</b>  : Char      read <a   href="ACBrRFD.TACBrRFDCupom.html#fsTipoDesconto">fsTipoDesconto</a>  write <a   href="ACBrRFD.TACBrRFDCupom.html#SetTipoDesconto">SetTipoDesconto</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Acrescimo"></a><code>property <b>Acrescimo</b>     : Double    read <a   href="ACBrRFD.TACBrRFDCupom.html#fsAcrescimo">fsAcrescimo</a>     write <a   href="ACBrRFD.TACBrRFDCupom.html#fsAcrescimo">fsAcrescimo</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TipoAcrescimo"></a><code>property <b>TipoAcrescimo</b> : Char      read <a   href="ACBrRFD.TACBrRFDCupom.html#fsTipoAcrescimo">fsTipoAcrescimo</a> write <a   href="ACBrRFD.TACBrRFDCupom.html#SetTipoAcrescimo">SetTipoAcrescimo</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TotalLiquido"></a><code>property <b>TotalLiquido</b>  : Double    read <a   href="ACBrRFD.TACBrRFDCupom.html#fsTotalLiquido">fsTotalLiquido</a>  write <a   href="ACBrRFD.TACBrRFDCupom.html#fsTotalLiquido">fsTotalLiquido</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Cancelado"></a><code>property <b>Cancelado</b>     : Char      read <a   href="ACBrRFD.TACBrRFDCupom.html#fsCancelado">fsCancelado</a>     write <a   href="ACBrRFD.TACBrRFDCupom.html#SetCancelado">SetCancelado</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OrdemDA"></a><code>property <b>OrdemDA</b>       : Char      read <a   href="ACBrRFD.TACBrRFDCupom.html#fsOrdemDA">fsOrdemDA</a>       write <a   href="ACBrRFD.TACBrRFDCupom.html#SetOrdemDA">SetOrdemDA</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NomeConsumidor"></a><code>property <b>NomeConsumidor</b> : String read <a   href="ACBrRFD.TACBrRFDCupom.html#fsNomeConsumidor">fsNomeConsumidor</a>  write <a   href="ACBrRFD.TACBrRFDCupom.html#fsNomeConsumidor">fsNomeConsumidor</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DoctoConsumidor"></a><code>property <b>DoctoConsumidor</b>: String read <a   href="ACBrRFD.TACBrRFDCupom.html#fsDoctoConsumidor">fsDoctoConsumidor</a> write <a   href="ACBrRFD.TACBrRFDCupom.html#SetDoctoConsumidor">SetDoctoConsumidor</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Itens"></a><code>property <b>Itens</b>      : TObjectList read <a   href="ACBrRFD.TACBrRFDCupom.html#fsItens">fsItens</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Pagamentos"></a><code>property <b>Pagamentos</b> : TObjectList read <a   href="ACBrRFD.TACBrRFDCupom.html#fsPagamentos">fsPagamentos</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:51</em>
+</span>
+</body></html>

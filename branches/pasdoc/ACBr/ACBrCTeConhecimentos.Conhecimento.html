@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrCTeConhecimentos: Classe Conhecimento</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="Conhecimento"></a><h1 class="cio">Classe Conhecimento</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrCTeConhecimentos.html">ACBrCTeConhecimentos</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type Conhecimento = class(TCollectionItem)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+units para enviar email</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TCollectionItem</li>
+<li class="thisitem">Conhecimento</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeConhecimentos.Conhecimento.html#FCTe">FCTe</a></b>: <a   href="pcteCTe.TCTe.html">TCTe</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeConhecimentos.Conhecimento.html#FXML">FXML</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeConhecimentos.Conhecimento.html#FConfirmada">FConfirmada</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeConhecimentos.Conhecimento.html#FMsg">FMsg</a></b>: AnsiString ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeConhecimentos.Conhecimento.html#FAlertas">FAlertas</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrCTeConhecimentos.Conhecimento.html#FNomeArq">FNomeArq</a></b>: String;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCTeConhecimentos.Conhecimento.html#GetCTeXML">GetCTeXML</a></b>: AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrCTeConhecimentos.Conhecimento.html#Create">Create</a></b>(Collection2: TCollection); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrCTeConhecimentos.Conhecimento.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeConhecimentos.Conhecimento.html#Imprimir">Imprimir</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeConhecimentos.Conhecimento.html#ImprimirPDF">ImprimirPDF</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCTeConhecimentos.Conhecimento.html#SaveToFile">SaveToFile</a></b>(CaminhoArquivo: string = ''): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCTeConhecimentos.Conhecimento.html#SaveToStream">SaveToStream</a></b>(Stream: TStringStream): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrCTeConhecimentos.Conhecimento.html#EnviarEmail">EnviarEmail</a></b>(const sSmtpHost, sSmtpPort, sSmtpUser, sSmtpPasswd, sFrom, sTo, sAssunto: String; sMensagem : TStrings; SSL : Boolean; EnviaPDF: Boolean = true; sCC: TStrings = nil; Anexos:TStrings=nil; PedeConfirma: Boolean = False; AguardarEnvio: Boolean = False; NomeRemetente: String = ''; TLS : Boolean = True);</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCTeConhecimentos.Conhecimento.html#CTe">CTe</a></b>: <a   href="pcteCTe.TCTe.html">TCTe</a>  read <a   href="ACBrCTeConhecimentos.Conhecimento.html#FCTe">FCTe</a> write <a   href="ACBrCTeConhecimentos.Conhecimento.html#FCTe">FCTe</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCTeConhecimentos.Conhecimento.html#XML">XML</a></b>: AnsiString  read <a   href="ACBrCTeConhecimentos.Conhecimento.html#GetCTeXML">GetCTeXML</a> write <a   href="ACBrCTeConhecimentos.Conhecimento.html#FXML">FXML</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCTeConhecimentos.Conhecimento.html#Confirmada">Confirmada</a></b>: Boolean  read <a   href="ACBrCTeConhecimentos.Conhecimento.html#FConfirmada">FConfirmada</a> write <a   href="ACBrCTeConhecimentos.Conhecimento.html#FConfirmada">FConfirmada</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCTeConhecimentos.Conhecimento.html#Msg">Msg</a></b>: AnsiString  read <a   href="ACBrCTeConhecimentos.Conhecimento.html#FMsg">FMsg</a> write <a   href="ACBrCTeConhecimentos.Conhecimento.html#FMsg">FMsg</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCTeConhecimentos.Conhecimento.html#Alertas">Alertas</a></b>: AnsiString read <a   href="ACBrCTeConhecimentos.Conhecimento.html#FAlertas">FAlertas</a> write <a   href="ACBrCTeConhecimentos.Conhecimento.html#FAlertas">FAlertas</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrCTeConhecimentos.Conhecimento.html#NomeArq">NomeArq</a></b>: String read <a   href="ACBrCTeConhecimentos.Conhecimento.html#FNomeArq">FNomeArq</a> write <a   href="ACBrCTeConhecimentos.Conhecimento.html#FNomeArq">FNomeArq</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCTe"></a><code><b>FCTe</b>: <a   href="pcteCTe.TCTe.html">TCTe</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FXML"></a><code><b>FXML</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FConfirmada"></a><code><b>FConfirmada</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FMsg"></a><code><b>FMsg</b>: AnsiString ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FAlertas"></a><code><b>FAlertas</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FNomeArq"></a><code><b>FNomeArq</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetCTeXML"></a><code>function <b>GetCTeXML</b>: AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(Collection2: TCollection); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Imprimir"></a><code>procedure <b>Imprimir</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ImprimirPDF"></a><code>procedure <b>ImprimirPDF</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToFile"></a><code>function <b>SaveToFile</b>(CaminhoArquivo: string = ''): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SaveToStream"></a><code>function <b>SaveToStream</b>(Stream: TStringStream): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EnviarEmail"></a><code>procedure <b>EnviarEmail</b>(const sSmtpHost, sSmtpPort, sSmtpUser, sSmtpPasswd, sFrom, sTo, sAssunto: String; sMensagem : TStrings; SSL : Boolean; EnviaPDF: Boolean = true; sCC: TStrings = nil; Anexos:TStrings=nil; PedeConfirma: Boolean = False; AguardarEnvio: Boolean = False; NomeRemetente: String = ''; TLS : Boolean = True);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CTe"></a><code>property <b>CTe</b>: <a   href="pcteCTe.TCTe.html">TCTe</a>  read <a   href="ACBrCTeConhecimentos.Conhecimento.html#FCTe">FCTe</a> write <a   href="ACBrCTeConhecimentos.Conhecimento.html#FCTe">FCTe</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="XML"></a><code>property <b>XML</b>: AnsiString  read <a   href="ACBrCTeConhecimentos.Conhecimento.html#GetCTeXML">GetCTeXML</a> write <a   href="ACBrCTeConhecimentos.Conhecimento.html#FXML">FXML</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Confirmada"></a><code>property <b>Confirmada</b>: Boolean  read <a   href="ACBrCTeConhecimentos.Conhecimento.html#FConfirmada">FConfirmada</a> write <a   href="ACBrCTeConhecimentos.Conhecimento.html#FConfirmada">FConfirmada</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Alterada por Italo em 30/09/2010</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Msg"></a><code>property <b>Msg</b>: AnsiString  read <a   href="ACBrCTeConhecimentos.Conhecimento.html#FMsg">FMsg</a> write <a   href="ACBrCTeConhecimentos.Conhecimento.html#FMsg">FMsg</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Alertas"></a><code>property <b>Alertas</b>: AnsiString read <a   href="ACBrCTeConhecimentos.Conhecimento.html#FAlertas">FAlertas</a> write <a   href="ACBrCTeConhecimentos.Conhecimento.html#FAlertas">FAlertas</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NomeArq"></a><code>property <b>NomeArq</b>: String read <a   href="ACBrCTeConhecimentos.Conhecimento.html#FNomeArq">FNomeArq</a> write <a   href="ACBrCTeConhecimentos.Conhecimento.html#FNomeArq">FNomeArq</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:22</em>
+</span>
+</body></html>

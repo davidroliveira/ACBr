@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrMSXML2_TLB: Interface IStream</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="IStream"></a><h1 class="cio">Interface IStream</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td>Campos</td><td><a class="section"  href="#%40Methods">Métodos</a></td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrMSXML2_TLB.html">ACBrMSXML2_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type IStream = interface(<a class="normal"  href="ACBrMSXML2_TLB.ISequentialStream.html">ISequentialStream</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// Interface: <code>IStream</code> Flags: (0) GUID: {0000000C-0000-0000-C000-000000000046} *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">IUnknown</li>
+<li class="ancestor"><a class="normal"  href="ACBrMSXML2_TLB.ISequentialStream.html">ISequentialStream</a></li>
+<li class="thisitem">IStream</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IStream.html#RemoteSeek">RemoteSeek</a></b>(dlibMove: <a   href="ACBrMSXML2_TLB._LARGE_INTEGER.html">_LARGE_INTEGER</a>; dwOrigin: LongWord; out plibNewPosition: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>): HResult; stdcall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IStream.html#SetSize">SetSize</a></b>(libNewSize: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>): HResult; stdcall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IStream.html#RemoteCopyTo">RemoteCopyTo</a></b>(const pstm: <a   href="ACBrMSXML2_TLB.IStream.html">IStream</a>; cb: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>; out pcbRead: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>; out pcbWritten: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>): HResult; stdcall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IStream.html#Commit">Commit</a></b>(grfCommitFlags: LongWord): HResult; stdcall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IStream.html#Revert">Revert</a></b>: HResult; stdcall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IStream.html#LockRegion">LockRegion</a></b>(libOffset: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>; cb: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>; dwLockType: LongWord): HResult; stdcall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IStream.html#UnlockRegion">UnlockRegion</a></b>(libOffset: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>; cb: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>; dwLockType: LongWord): HResult; stdcall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IStream.html#Stat">Stat</a></b>(out pstatstg: <a   href="ACBrMSXML2_TLB.tagSTATSTG.html">tagSTATSTG</a>; grfStatFlag: LongWord): HResult; stdcall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IStream.html#clone">clone</a></b>(out ppstm: <a   href="ACBrMSXML2_TLB.IStream.html">IStream</a>): HResult; stdcall;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RemoteSeek"></a><code>function <b>RemoteSeek</b>(dlibMove: <a   href="ACBrMSXML2_TLB._LARGE_INTEGER.html">_LARGE_INTEGER</a>; dwOrigin: LongWord; out plibNewPosition: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetSize"></a><code>function <b>SetSize</b>(libNewSize: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RemoteCopyTo"></a><code>function <b>RemoteCopyTo</b>(const pstm: <a   href="ACBrMSXML2_TLB.IStream.html">IStream</a>; cb: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>; out pcbRead: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>; out pcbWritten: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Commit"></a><code>function <b>Commit</b>(grfCommitFlags: LongWord): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Revert"></a><code>function <b>Revert</b>: HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LockRegion"></a><code>function <b>LockRegion</b>(libOffset: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>; cb: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>; dwLockType: LongWord): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UnlockRegion"></a><code>function <b>UnlockRegion</b>(libOffset: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>; cb: <a   href="ACBrMSXML2_TLB._ULARGE_INTEGER.html">_ULARGE_INTEGER</a>; dwLockType: LongWord): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Stat"></a><code>function <b>Stat</b>(out pstatstg: <a   href="ACBrMSXML2_TLB.tagSTATSTG.html">tagSTATSTG</a>; grfStatFlag: LongWord): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="clone"></a><code>function <b>clone</b>(out ppstm: <a   href="ACBrMSXML2_TLB.IStream.html">IStream</a>): HResult; stdcall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:46</em>
+</span>
+</body></html>

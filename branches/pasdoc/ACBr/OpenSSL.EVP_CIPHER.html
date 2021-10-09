@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: OpenSSL: record EVP_CIPHER</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="EVP_CIPHER"></a><h1 class="cio">record EVP_CIPHER</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td>Hierarquia</td><td><a class="section"  href="#%40Fields">Campos</a></td><td>Métodos</td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="OpenSSL.html">OpenSSL</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type EVP_CIPHER = record</code></p>
+<h2 class="description">Descrição</h2>
+&nbsp;<h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER.html#nid">nid</a></b>: cint;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER.html#block_size">block_size</a></b>: cint;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER.html#key_len">key_len</a></b>: cint;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER.html#iv_len">iv_len</a></b>: cint;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER.html#flags">flags</a></b>: culong;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER.html#init">init</a></b>: <a   href="OpenSSL.html#EVP_CIPHER_INIT_FUNC">EVP_CIPHER_INIT_FUNC</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER.html#do_cipher">do_cipher</a></b>: <a   href="OpenSSL.html#EVP_CIPHER_DO_CIPHER_FUNC">EVP_CIPHER_DO_CIPHER_FUNC</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER.html#cleanup">cleanup</a></b>: <a   href="OpenSSL.html#EVP_CIPHER_CLEANUP_FUNC">EVP_CIPHER_CLEANUP_FUNC</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER.html#ctx_size">ctx_size</a></b>: cint;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER.html#set_asn1_parameters">set_asn1_parameters</a></b>: <a   href="OpenSSL.html#EVP_CIPHER_SET_ASN1_PARAMETERS_FUNC">EVP_CIPHER_SET_ASN1_PARAMETERS_FUNC</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER.html#get_asn1_parameters">get_asn1_parameters</a></b>: <a   href="OpenSSL.html#EVP_CIPHER_GET_ASN1_PARAMETERS_FUNC">EVP_CIPHER_GET_ASN1_PARAMETERS_FUNC</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER.html#ctrl">ctrl</a></b>: <a   href="OpenSSL.html#EVP_CIPHER_CTRL_FUNC">EVP_CIPHER_CTRL_FUNC</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER.html#app_data">app_data</a></b>: Pointer;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="nid"></a><code><b>nid</b>: cint;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Updated with EVP.h from <a class="normal"  href="OpenSSL.html">OpenSSL</a> 1.0.0</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="block_size"></a><code><b>block_size</b>: cint;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="key_len"></a><code><b>key_len</b>: cint;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="iv_len"></a><code><b>iv_len</b>: cint;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* Default value for variable length ciphers */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="flags"></a><code><b>flags</b>: culong;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="init"></a><code><b>init</b>: <a   href="OpenSSL.html#EVP_CIPHER_INIT_FUNC">EVP_CIPHER_INIT_FUNC</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* Various <a class="normal"  href="OpenSSL.EVP_CIPHER.html#flags">flags</a> */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="do_cipher"></a><code><b>do_cipher</b>: <a   href="OpenSSL.html#EVP_CIPHER_DO_CIPHER_FUNC">EVP_CIPHER_DO_CIPHER_FUNC</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* <a class="normal"  href="OpenSSL.EVP_CIPHER.html#init">init</a> key */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cleanup"></a><code><b>cleanup</b>: <a   href="OpenSSL.html#EVP_CIPHER_CLEANUP_FUNC">EVP_CIPHER_CLEANUP_FUNC</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* encrypt/decrypt data */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ctx_size"></a><code><b>ctx_size</b>: cint;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* <a class="normal"  href="OpenSSL.EVP_CIPHER.html#cleanup">cleanup</a> ctx */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="set_asn1_parameters"></a><code><b>set_asn1_parameters</b>: <a   href="OpenSSL.html#EVP_CIPHER_SET_ASN1_PARAMETERS_FUNC">EVP_CIPHER_SET_ASN1_PARAMETERS_FUNC</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* how big ctx-&gt;cipher_data needs to be */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="get_asn1_parameters"></a><code><b>get_asn1_parameters</b>: <a   href="OpenSSL.html#EVP_CIPHER_GET_ASN1_PARAMETERS_FUNC">EVP_CIPHER_GET_ASN1_PARAMETERS_FUNC</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* Populate a ASN1_TYPE with parameters */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ctrl"></a><code><b>ctrl</b>: <a   href="OpenSSL.html#EVP_CIPHER_CTRL_FUNC">EVP_CIPHER_CTRL_FUNC</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* Get parameters from a ASN1_TYPE */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="app_data"></a><code><b>app_data</b>: Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* Miscellaneous operations */</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:58</em>
+</span>
+</body></html>

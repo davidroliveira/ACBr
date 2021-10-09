@@ -1,0 +1,216 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrECFClass</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrECFClass</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td><a class="section"  href="#%40Types">Tipos</a></td><td>Constantes</td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF}</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a   href="ACBrDevice.html">ACBrDevice</a></li><li>SysUtils</li><li>Classes</li><li><a   href="ACBrConsts.html">ACBrConsts</a></li><li>Contnrs</li><li>Controls</li><li>Forms</li><li>Graphics</li><li>Dialogs</li><li>ExtCtrls</li><li>Messages</li><li>Windows</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.EACBrECFErro.html"><code>EACBrECFErro</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.EACBrECFCMDInvalido.html"><code>EACBrECFCMDInvalido</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.EACBrECFSemResposta.html"><code>EACBrECFSemResposta</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.EACBrECFNaoInicializado.html"><code>EACBrECFNaoInicializado</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.EACBrECFOcupado.html"><code>EACBrECFOcupado</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFEmpresa.html"><code>TACBrECFEmpresa</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFArquivo.html"><code>TACBrECFArquivo</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFArquivos.html"><code>TACBrECFArquivos</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFInfoPaf.html"><code>TACBrECFInfoPaf</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFIdentificacaoPAF.html"><code>TACBrECFIdentificacaoPAF</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFAliquota.html"><code>TACBrECFAliquota</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFAliquotas.html"><code>TACBrECFAliquotas</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFDAV.html"><code>TACBrECFDAV</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFDAVs.html"><code>TACBrECFDAVs</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFFormaPagamento.html"><code>TACBrECFFormaPagamento</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFFormasPagamento.html"><code>TACBrECFFormasPagamento</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFUnidadeMedida.html"><code>TACBrECFUnidadeMedida</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFUnidadesMedida.html"><code>TACBrECFUnidadesMedida</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFRelatorioGerencial.html"><code>TACBrECFRelatorioGerencial</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFRelatoriosGerenciais.html"><code>TACBrECFRelatoriosGerenciais</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFComprovanteNaoFiscal.html"><code>TACBrECFComprovanteNaoFiscal</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFConsumidor.html"><code>TACBrECFConsumidor</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFCodBarras.html"><code>TACBrECFCodBarras</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFComprovantesNaoFiscais.html"><code>TACBrECFComprovantesNaoFiscais</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFDadosRZ.html"><code>TACBrECFDadosRZ</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrECFClass.TACBrECFClass.html"><code>TACBrECFClass</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFClass.html#TACBrECFExibeErroEvent">TACBrECFExibeErroEvent</a></b> = procedure(Erro : Exception) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFClass.html#TACBrECFMsgAguarde">TACBrECFMsgAguarde</a></b> = procedure(const Mensagem : String) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFClass.html#TACBrECFMsgRetentar">TACBrECFMsgRetentar</a></b> = procedure(const Mensagem : String; const Situacao : String; var Result : Boolean) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFClass.html#TACBrECFBobinaAdicionaLinhas">TACBrECFBobinaAdicionaLinhas</a></b> = procedure(const Linhas : String; const Operacao : String) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrECFClass.html#TACBrFormMsgProcedure">TACBrFormMsgProcedure</a></b> = procedure of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrECFClass.html#TACBrFormMsgEstado">TACBrFormMsgEstado</a></b> = (...);</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFExibeErroEvent"></a><code><b>TACBrECFExibeErroEvent</b> = procedure(Erro : Exception) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Evento para o usuário exibir os erros encontrados pela classe <a class="normal"  href="ACBrECFClass.TACBrECFClass.html">TACBrECFClass</a>. Se o evento OnMsgErro NAO for programado a Classe <a class="normal"  href="ACBrECFClass.TACBrECFClass.html">TACBrECFClass</a> exibirá as Msg de erro através de Exceçoes. Se o evento OnMsgErro for programado a Classe nao exibe nenhuma msg de erro, que deverao ser tratados dentro deste evento</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFMsgAguarde"></a><code><b>TACBrECFMsgAguarde</b> = procedure(const Mensagem : String) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Evento para enviar as msg de Aguarde para o Componente</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFMsgRetentar"></a><code><b>TACBrECFMsgRetentar</b> = procedure(const Mensagem : String; const Situacao : String; var Result : Boolean) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Evento para enviar mensagem de Retentar para o Componente</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrECFBobinaAdicionaLinhas"></a><code><b>TACBrECFBobinaAdicionaLinhas</b> = procedure(const Linhas : String; const Operacao : String) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Evento disparado quando o componente adicionar algo em MemoBobina</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrFormMsgProcedure"></a><code><b>TACBrFormMsgProcedure</b> = procedure of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrFormMsgEstado"></a><code><b>TACBrFormMsgEstado</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+fmsNenhum: &nbsp;</li>
+<li>
+fmsProcessando: &nbsp;</li>
+<li>
+fmsConcluido: &nbsp;</li>
+<li>
+fmsAbortado: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:26</em>
+</span>
+</body></html>

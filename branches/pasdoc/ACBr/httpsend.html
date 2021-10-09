@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: httpsend</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit httpsend</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td><a class="section"  href="#%40FuncsProcs">Funções e Procedimentos</a></td><td><a class="section"  href="#%40Types">Tipos</a></td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+old Delphi does not have MSWINDOWS define.</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>Classes</li><li><a   href="blcksock.html">blcksock</a></li><li><a   href="synautil.html">synautil</a></li><li><a   href="synaip.html">synaip</a></li><li><a   href="synacode.html">synacode</a></li><li>synsock</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="httpsend.THTTPSend.html"><code>THTTPSend</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40FuncsProcs"></a><h3 class="summary">Funções e Procedimentos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="httpsend.html#HttpGetText">HttpGetText</a></b>(const URL: string; const Response: TStrings): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="httpsend.html#HttpGetBinary">HttpGetBinary</a></b>(const URL: string; const Response: TStream): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="httpsend.html#HttpPostBinary">HttpPostBinary</a></b>(const URL: string; const Data: TStream): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="httpsend.html#HttpPostURL">HttpPostURL</a></b>(const URL, URLData: string; const Data: TStream): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="httpsend.html#HttpPostFile">HttpPostFile</a></b>(const URL, FieldName, FileName: string; const Data: TStream; const ResultData: TStrings): Boolean;</code></td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="httpsend.html#TTransferEncoding">TTransferEncoding</a></b> = (...);</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="httpsend.html#cHttpProtocol">cHttpProtocol</a></b> = '80';</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Funções e Procedimentos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="HttpGetText"></a><code>function <b>HttpGetText</b>(const URL: string; const Response: TStrings): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:A very usefull function, and example of use <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be found in the <a class="normal"  href="httpsend.THTTPSend.html">THTTPSend</a> object. It implements the GET method of the HTTP protocol. This function sends the GET method for URL document to an HTTP server. Returned document is in the &quot;Response&quot; stringlist (without any headers). Returns boolean TRUE if all went well.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="HttpGetBinary"></a><code>function <b>HttpGetBinary</b>(const URL: string; const Response: TStream): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:A very usefull function, and example of use <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be found in the <a class="normal"  href="httpsend.THTTPSend.html">THTTPSend</a> object. It implements the GET method of the HTTP protocol. This function sends the GET method for URL document to an HTTP server. Returned document is in the &quot;Response&quot; stream. Returns boolean TRUE if all went well.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="HttpPostBinary"></a><code>function <b>HttpPostBinary</b>(const URL: string; const Data: TStream): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:A very useful function, and example of use <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be found in the <a class="normal"  href="httpsend.THTTPSend.html">THTTPSend</a> object. It implements the POST method of the HTTP protocol. This function sends the SEND method for a URL document to an HTTP server. The document to be sent is located in &quot;Data&quot; stream. The returned document is in the &quot;Data&quot; stream. Returns boolean TRUE if all went well.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="HttpPostURL"></a><code>function <b>HttpPostURL</b>(const URL, URLData: string; const Data: TStream): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:A very useful function, and example of use <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be found in the <a class="normal"  href="httpsend.THTTPSend.html">THTTPSend</a> object. It implements the POST method of the HTTP protocol. This function is good for POSTing form data. It sends the POST method for a URL document to an HTTP server. You must prepare the form data in the same manner as you would the URL data, and pass this prepared data to &quot;URLdata&quot;. The following is a sample of how the data would appear: 'name=Lukas&amp;field1=some%20data'. The information in the field must be encoded by <a class="normal"  href="synacode.html#EncodeURLElement">EncodeURLElement</a> function. The returned document is in the &quot;Data&quot; stream. Returns boolean TRUE if all went well.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="HttpPostFile"></a><code>function <b>HttpPostFile</b>(const URL, FieldName, FileName: string; const Data: TStream; const ResultData: TStrings): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:A very useful function, and example of use <a class="normal"  href="ACBrECFNCR.html#CAN">can</a> be found in the <a class="normal"  href="httpsend.THTTPSend.html">THTTPSend</a> object. It implements the POST method of the HTTP protocol. This function sends the POST method for a URL document to an HTTP server. This function simulate posting of file by HTML form used method 'multipart/form-data'. Posting file is in DATA stream. Its name is Filename string. Fieldname is for name of formular field with file. (simulate HTML INPUT FILE) The returned document is in the ResultData Stringlist. Returns boolean TRUE if all went well.</p>
+</td></tr>
+</table>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TTransferEncoding"></a><code><b>TTransferEncoding</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+:These encoding types are used internally by the <a class="normal"  href="httpsend.THTTPSend.html">THTTPSend</a> object to identify the transfer data types.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+TE_UNKNOWN: &nbsp;</li>
+<li>
+TE_IDENTITY: &nbsp;</li>
+<li>
+TE_CHUNKED: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cHttpProtocol"></a><code><b>cHttpProtocol</b> = '80';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:57</em>
+</span>
+</body></html>

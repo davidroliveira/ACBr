@@ -1,0 +1,612 @@
+object Form1: TForm1
+  Left = 299
+  Top = 108
+  Width = 460
+  Height = 437
+  VertScrollBar.Range = 233
+  HorzScrollBar.Range = 449
+  ActiveControl = cbxModelo
+  Caption = 'Teste de Impressora Fiscal'
+  Color = clBackground
+  Constraints.MinHeight = 315
+  Constraints.MinWidth = 460
+  Font.Color = clBlack
+  Font.Height = 11
+  Font.Name = 'helvetica'
+  Font.Pitch = fpVariable
+  Font.Style = []
+  Font.Weight = 40
+  Menu = MainMenu1
+  ParentFont = False
+  Position = poScreenCenter
+  Scaled = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  object mEnviado: TMemo
+    Left = 8
+    Top = 160
+    Width = 446
+    Height = 39
+    Anchors = [akLeft, akTop, akRight]
+    TabOrder = 9
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 144
+    Width = 86
+    Height = 14
+    Caption = 'Comando Enviado'
+  end
+  object Label3: TLabel
+    Left = 8
+    Top = 200
+    Width = 52
+    Height = 14
+    Caption = 'Respostas'
+  end
+  object mResp: TMemo
+    Left = 0
+    Top = 216
+    Width = 460
+    Height = 179
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 13
+    Font.Name = 'Courier'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    Font.Weight = 40
+    ParentFont = False
+    ScrollBars = ssAutoBoth
+    TabOrder = 10
+    WordWrap = False
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 395
+    Width = 460
+    Height = 19
+    Panels = <
+      item
+        Width = 80
+      end
+      item
+      end>
+  end
+  object cbxModelo: TComboBox
+    Left = 8
+    Top = 16
+    Width = 105
+    Height = 22
+    Style = csDropDownList
+    Items.Strings = (
+      'Procurar'
+      'ecfNaoFiscal'
+      'ecfBematech'
+      'ecfSweda'
+      'ecfDaruma'
+      'ecfSchalter'
+      'ecfMecaf'
+      'ecfYanco'
+      'ecfDataRegis'
+      'ecfUrano'
+      'ecfICash'
+      'ecfQuattro')
+    ItemIndex = 0
+    TabOrder = 0
+    Text = 'Procurar'
+    OnChange = cbxModeloChange
+  end
+  object Label1: TLabel
+    Left = 8
+    Top = 0
+    Width = 37
+    Height = 14
+    Caption = 'Modelo:'
+  end
+  object Label4: TLabel
+    Left = 128
+    Top = 0
+    Width = 25
+    Height = 14
+    Caption = 'Porta'
+  end
+  object cbxPorta: TComboBox
+    Left = 128
+    Top = 16
+    Width = 105
+    Height = 22
+    Items.Strings = (
+      'Procurar'
+      'COM1'
+      'COM2'
+      'COM3'
+      'COM4'
+      'COM5'
+      'LPT1'
+      'LPT2'
+      'LPT3'
+      '/dev/ttyS0'
+      '/dev/ttyS1'
+      '/dev/ttyUSB0'
+      '/dev/ttyUSB1')
+    ItemIndex = 0
+    TabOrder = 1
+    Text = 'Procurar'
+    OnChange = cbxPortaChange
+  end
+  object edTimeout: TEdit
+    Left = 248
+    Top = 16
+    Width = 37
+    Height = 22
+    Cursor = crIBeam
+    TabOrder = 2
+    Text = '3'
+    OnChange = edTimeoutChange
+  end
+  object Label5: TLabel
+    Left = 247
+    Top = 0
+    Width = 39
+    Height = 14
+    Caption = 'TimeOut'
+  end
+  object chTentar: TCheckBox
+    Left = 14
+    Top = 44
+    Width = 121
+    Height = 17
+    Caption = 'Tentar Novamente'
+    TabOrder = 4
+    OnClick = chTentarClick
+  end
+  object chBloqueia: TCheckBox
+    Left = 14
+    Top = 62
+    Width = 145
+    Height = 17
+    Caption = 'Bloqueia Mouse Teclado'
+    Checked = True
+    State = cbChecked
+    TabOrder = 5
+    OnClick = chBloqueiaClick
+  end
+  object chExibeMsg: TCheckBox
+    Left = 14
+    Top = 81
+    Width = 131
+    Height = 17
+    Caption = 'Exibe Msg Aguarde...'
+    Checked = True
+    State = cbChecked
+    TabOrder = 6
+    OnClick = chExibeMsgClick
+  end
+  object mMsg: TMemo
+    Left = 216
+    Top = 72
+    Width = 233
+    Height = 65
+    Lines.Strings = (
+      'Aguardando o retorno do ECF'
+      'Faltam %d segundos para TimeOut')
+    ScrollBars = ssVertical
+    TabOrder = 8
+    OnChange = mMsgChange
+  end
+  object Label6: TLabel
+    Left = 216
+    Top = 48
+    Width = 106
+    Height = 14
+    Caption = 'Mensagem Aguarde...'
+  end
+  object bAtivar: TButton
+    Left = 360
+    Top = 16
+    Width = 75
+    Height = 25
+    Caption = 'Ativar'
+    TabOrder = 3
+    OnClick = bAtivarClick
+  end
+  object chArredondaPorQtd: TCheckBox
+    Left = 14
+    Top = 100
+    Width = 187
+    Height = 17
+    Caption = 'Arredondamento por Quantidade'
+    TabOrder = 7
+    OnClick = chArredondaPorQtdClick
+  end
+  object chGavetaSinalInvertido: TCheckBox
+    Left = 14
+    Top = 120
+    Width = 187
+    Height = 17
+    Caption = 'Gaveta Sinal Invertido'
+    TabOrder = 18
+    OnClick = chGavetaSinalInvertidoClick
+  end
+  object Label7: TLabel
+    Left = 303
+    Top = 0
+    Width = 41
+    Height = 14
+    Caption = 'Intervalo'
+  end
+  object edIntervaloAposComando: TEdit
+    Left = 304
+    Top = 16
+    Width = 37
+    Height = 22
+    Cursor = crIBeam
+    TabOrder = 20
+    Text = '100'
+    OnChange = edIntervaloAposComandoChange
+  end
+  object MainMenu1: TMainMenu
+    Left = 32
+    Top = 232
+    object Principal1: TMenuItem
+      Caption = 'Principal'
+      object Ativcar1: TMenuItem
+        Caption = 'Ativar'
+        OnClick = Ativcar1Click
+      end
+      object Desativar1: TMenuItem
+        Caption = 'Desativar'
+        OnClick = Desativar1Click
+      end
+      object Testar1: TMenuItem
+        Caption = 'Testar'
+        OnClick = Testar1Click
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object Sobre1: TMenuItem
+        Caption = 'Sobre ACBr'
+        OnClick = Sobre1Click
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Sair1: TMenuItem
+        Caption = 'Sair'
+        OnClick = Sair1Click
+      end
+    end
+    object Variaveis1: TMenuItem
+      Caption = 'Variaveis'
+      object DataHora1: TMenuItem
+        Caption = 'Data Hora'
+        OnClick = DataHora1Click
+      end
+      object NumECF1: TMenuItem
+        Caption = 'Num ECF'
+        OnClick = NumECF1Click
+      end
+      object NumLoja1: TMenuItem
+        Caption = 'Num Loja'
+        OnClick = NumLoja1Click
+      end
+      object NSrie1: TMenuItem
+        Caption = 'Num S'#233'rie'
+        OnClick = NSrie1Click
+      end
+      object NVerso1: TMenuItem
+        Caption = 'Num Vers'#227'o'
+        OnClick = NVerso1Click
+      end
+      object NumCRO1: TMenuItem
+        Caption = 'Num CRO'
+        OnClick = NumCRO1Click
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object PoucoPapel1: TMenuItem
+        Caption = 'Pouco Papel ?'
+        OnClick = PoucoPapel1Click
+      end
+      object Estado1: TMenuItem
+        Caption = 'Estado'
+        OnClick = Estado1Click
+      end
+      object HorarioVerao2: TMenuItem
+        Caption = 'Horario Verao ?'
+        OnClick = HorarioVerao2Click
+      end
+      object Arredonda1: TMenuItem
+        Caption = 'Arredonda ?'
+        OnClick = Arredonda1Click
+      end
+      object MFD1: TMenuItem
+        Caption = #201' MFD ?'
+        OnClick = MFD1Click
+      end
+      object Termica1: TMenuItem
+        Caption = #201' Termica ?'
+        OnClick = Termica1Click
+      end
+      object N4: TMenuItem
+        Caption = '-'
+      end
+      object AliquotasICMS1: TMenuItem
+        Caption = 'Carrega Aliquotas (ICMS)'
+        OnClick = AliquotasICMS1Click
+      end
+      object FormasdePagamento1: TMenuItem
+        Caption = 'Carrega Formas Pagamento'
+        OnClick = FormasdePagamento1Click
+      end
+      object CarregaComprovantesNAOFiscais1: TMenuItem
+        Caption = 'Carrega Comprovantes NAO Fiscais'
+        OnClick = CarregaComprovantesNAOFiscais1Click
+      end
+      object CarregaUnidadesdeMedida1: TMenuItem
+        Caption = 'Carrega Unidades de Medida'
+        OnClick = CarregaUnidadesdeMedida1Click
+      end
+      object N18: TMenuItem
+        Caption = '-'
+      end
+      object LerTodasasVariveis1: TMenuItem
+        Caption = 'Ler Todas as Variveis'
+        OnClick = LerTodasasVariveis1Click
+      end
+    end
+    object Relatrios1: TMenuItem
+      Caption = 'Relat'#243'rios'
+      object LeituraX1: TMenuItem
+        Caption = 'Leitura X'
+        OnClick = LeituraX1Click
+      end
+      object ReduoZ1: TMenuItem
+        Caption = 'Redu'#231#227'o Z'
+        OnClick = ReduoZ1Click
+      end
+      object N9: TMenuItem
+        Caption = '-'
+      end
+      object RelatorioGerencial1: TMenuItem
+        Caption = 'Relatorio Gerencial'
+        object ListaRelatorioGerencial1: TMenuItem
+          Caption = 'Relatorio Gerencial Completo'
+          OnClick = ListaRelatorioGerencial1Click
+        end
+        object N17: TMenuItem
+          Caption = '-'
+        end
+        object AbreRelatorioGerencial1: TMenuItem
+          Caption = 'Abre Relatorio Gerencial'
+          OnClick = AbreRelatorioGerencial1Click
+        end
+        object ImprimeLinhaRelatorio1: TMenuItem
+          Caption = 'Imprime Linha Relatorio'
+          OnClick = ImprimeLinhaRelatorio1Click
+        end
+      end
+      object CupomVinculado1: TMenuItem
+        Caption = 'Cupom Vinculado'
+        object ListaCupomVinculado1: TMenuItem
+          Caption = 'Cupom Vinculado Completo'
+          OnClick = ListaCupomVinculado1Click
+        end
+        object N16: TMenuItem
+          Caption = '-'
+        end
+        object AbreCupomVinculado1: TMenuItem
+          Caption = 'Abre Cupom Vinculado'
+          OnClick = AbreCupomVinculado1Click
+        end
+        object ImprimeLinhaVinculado1: TMenuItem
+          Caption = 'Imprime Linha Vinculado'
+          OnClick = ImprimeLinhaVinculado1Click
+        end
+      end
+      object PularLinhas1: TMenuItem
+        Caption = 'Pular Linhas'
+        OnClick = PularLinhas1Click
+      end
+      object N15: TMenuItem
+        Caption = '-'
+      end
+      object FechaRelatrio1: TMenuItem
+        Caption = 'Fecha Relat'#243'rio / Vinculado'
+        OnClick = FechaRelatrio1Click
+      end
+      object N12: TMenuItem
+        Caption = '-'
+      end
+      object LeituradeMemoriaFiscal1: TMenuItem
+        Caption = 'Leitura de Memoria Fiscal'
+        object CapturaporNReduaoZ1: TMenuItem
+          Caption = 'Captura por N.Redu'#231'aoZ'
+          OnClick = CapturaporNReduaoZ1Click
+        end
+        object CapturaporPeriodo1: TMenuItem
+          Caption = 'Captura por Periodo'
+          OnClick = CapturaporPeriodo1Click
+        end
+        object ImprimeporNReduaoZ1: TMenuItem
+          Caption = 'Imprime por N.Redu'#231'aoZ'
+          OnClick = ImprimeporNReduaoZ1Click
+        end
+        object ImprimeporPeriodo1: TMenuItem
+          Caption = 'Imprime por Periodo'
+          OnClick = ImprimeporPeriodo1Click
+        end
+      end
+    end
+    object CopumFiscal1: TMenuItem
+      Caption = 'Cupom Fiscal'
+      object TestaPodeAbrirCupom1: TMenuItem
+        Caption = 'Testa Pode Abrir Cupom'
+        OnClick = TestaPodeAbrirCupom1Click
+      end
+      object AbrirCupom1: TMenuItem
+        Caption = 'Abre Cupom'
+        OnClick = AbrirCupom1Click
+      end
+      object N5: TMenuItem
+        Caption = '-'
+      end
+      object VenderItem1: TMenuItem
+        Caption = 'Vende Item'
+        OnClick = VenderItem1Click
+      end
+      object CancelarItemVendido1: TMenuItem
+        Caption = 'Cancela Item Vendido'
+        OnClick = CancelarItemVendido1Click
+      end
+      object N6: TMenuItem
+        Caption = '-'
+      end
+      object Sub1: TMenuItem
+        Caption = 'SubTotaliza Cupom'
+        OnClick = Sub1Click
+      end
+      object EfetuarPagamento1: TMenuItem
+        Caption = 'Efetua Pagamento'
+        OnClick = EfetuarPagamento1Click
+      end
+      object FecharCupom1: TMenuItem
+        Caption = 'Fecha Cupom'
+        OnClick = FecharCupom1Click
+      end
+      object N10: TMenuItem
+        Caption = '-'
+      end
+      object CancelaCupom1: TMenuItem
+        Caption = 'Cancela Cupom'
+        OnClick = CancelaCupom1Click
+      end
+      object N8: TMenuItem
+        Caption = '-'
+      end
+      object Variveis1: TMenuItem
+        Caption = 'Vari'#225'veis'
+        object NUltimoCupom1: TMenuItem
+          Caption = 'Num Cupom'
+          OnClick = NUltimoCupom1Click
+        end
+        object SubTotal1: TMenuItem
+          Caption = 'SubTotal'
+          OnClick = SubTotal1Click
+        end
+        object TotalPago1: TMenuItem
+          Caption = 'Total Pago'
+          OnClick = TotalPago1Click
+        end
+      end
+      object N11: TMenuItem
+        Caption = '-'
+      end
+      object TestedeVelocidade1: TMenuItem
+        Caption = 'Teste de Velocidade'
+        OnClick = TestedeVelocidade1Click
+      end
+    end
+    object Dispositivos1: TMenuItem
+      Caption = 'Dispositivos'
+      object Gaveta1: TMenuItem
+        Caption = '&Gaveta'
+        object AbreGaveta1: TMenuItem
+          Caption = 'Abre Gaveta'
+          OnClick = AbreGaveta1Click
+        end
+        object GavetaAberta1: TMenuItem
+          Caption = 'Gaveta Aberta ?'
+          OnClick = GavetaAberta1Click
+        end
+      end
+      object Cheque1: TMenuItem
+        Caption = '&Cheque'
+        object ChequePronto1: TMenuItem
+          Caption = 'Cheque Pronto ?'
+          OnClick = ChequePronto1Click
+        end
+        object ImprimeCheque1: TMenuItem
+          Caption = 'Imprime Cheque'
+          OnClick = ImprimeCheque1Click
+        end
+        object CancelaImpressoCheque1: TMenuItem
+          Caption = 'Cancela Impress'#227'o Cheque'
+          OnClick = CancelaImpressoCheque1Click
+        end
+      end
+    end
+    object Utilitrios1: TMenuItem
+      Caption = 'Utilit'#225'rios'
+      object ProgramaAliquota1: TMenuItem
+        Caption = 'Programa Aliquota'
+        OnClick = ProgramaAliquota1Click
+      end
+      object ProgramaFormadePagamento1: TMenuItem
+        Caption = 'Programa Forma de Pagamento'
+        OnClick = ProgramaFormadePagamento1Click
+      end
+      object ProgramaComprovanteNAOFiscal1: TMenuItem
+        Caption = 'Programa Comprovante NAO Fiscal'
+        OnClick = ProgramaComprovanteNAOFiscal1Click
+      end
+      object ProgramaUnidadeMedida1: TMenuItem
+        Caption = 'Programa Unidade Medida'
+        OnClick = ProgramaUnidadeMedida1Click
+      end
+      object N13: TMenuItem
+        Caption = '-'
+      end
+      object HorarioVerao1: TMenuItem
+        Caption = 'Muda Hor'#225'rio Ver'#227'o'
+        OnClick = HorarioVerao1Click
+      end
+      object MudaArredondamento1: TMenuItem
+        Caption = 'Muda Arredondamento'
+        OnClick = MudaArredondamento1Click
+      end
+      object ImpactoAgulhas1: TMenuItem
+        Caption = 'Impacto Agulhas'
+        OnClick = ImpactoAgulhas1Click
+      end
+      object N7: TMenuItem
+        Caption = '-'
+      end
+      object CorrigeEstadodeErro1: TMenuItem
+        Caption = 'Corrige Estado de Erro'
+        OnClick = CorrigeEstadodeErro1Click
+      end
+      object N14: TMenuItem
+        Caption = '-'
+      end
+      object EnviaComando1: TMenuItem
+        Caption = 'Envia Comando'
+        OnClick = EnviaComando1Click
+      end
+    end
+  end
+  object ACBrECF1: TACBrECF
+    Porta = 'procurar'
+    ReTentar = False
+    DescricaoGrande = True
+    MsgAguarde = 'Aguardando a resposta da Impressora: %d segundos'
+    MsgRelatorio = 'Imprimindo %s  %d'#170' Via '
+    MsgPausaRelatorio = 'Destaque a %d'#170' via, <ENTER> proxima, %d seg.'
+    FormMsgFonte.Color = clWhite
+    FormMsgFonte.Height = 11
+    FormMsgFonte.Name = 'MS Sans Serif'
+    FormMsgFonte.Pitch = fpVariable
+    FormMsgFonte.Style = []
+    FormMsgFonte.Weight = 40
+    FormMsgColor = clBlack
+    OnMsgAguarde = ACBrECF1MsgAguarde
+    OnAguardandoRespostaChange = ACBrECF1AguardandoRespostaChange
+    OnMsgPoucoPapel = ACBrECF1MsgPoucoPapel
+    Left = 216
+    Top = 296
+  end
+end

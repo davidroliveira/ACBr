@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrSpedUtils</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrSpedUtils</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td>Classes, Interfaces, Objetos e Registros</td><td><a class="section"  href="#%40FuncsProcs">Funções e Procedimentos</a></td><td>Tipos</td><td>Constantes</td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+****************************************************************************** |* Historico |* |* 10/04/2009: Isaque Pinheiro |* - Criação e distribuição da Primeira Versao *******************************************************************************</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>Variants</li><li>Classes</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40FuncsProcs"></a><h3 class="summary">Funções e Procedimentos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#funChecaUF">funChecaUF</a></b>(const UF: String): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#funChecaMUN">funChecaMUN</a></b>(const COD: Integer): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#funChecaCNPJ">funChecaCNPJ</a></b>(const CNPJ: String): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#funChecaCPF">funChecaCPF</a></b>(const CPF: String): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#funChecaIE">funChecaIE</a></b>(const IE, TIPO: String): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#funChecaCFOP">funChecaCFOP</a></b>(const CFOP: Integer): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#funChecaCEP">funChecaCEP</a></b>(const CEP, UF: String): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#funChecaCST">funChecaCST</a></b>(const CST: String): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#funChecaGENERO">funChecaGENERO</a></b>(const COD: String): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#funChecaPAISIBGE">funChecaPAISIBGE</a></b>(const COD: String): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#funChecaMODNF">funChecaMODNF</a></b>(const COD: String): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#funChecaSITDOCTO">funChecaSITDOCTO</a></b>(const COD: String): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#funChecaCSTCOFINS">funChecaCSTCOFINS</a></b>(const CST: String): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#funChecaCSTPIS">funChecaCSTPIS</a></b>(const CST: String): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#funStrZero">funStrZero</a></b>(Zeros: String; Quant: Integer): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#IfThen">IfThen</a></b>(AValue: Boolean; const ATrue: Char; AFalse: Char): Char; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrSpedUtils.html#IfThen">IfThen</a></b>(AValue: Boolean; const ATrue: Double; AFalse: Double): Double; overload;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Funções e Procedimentos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="funChecaUF"></a><code>function <b>funChecaUF</b>(const UF: String): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Funções de checagem de dados</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="funChecaMUN"></a><code>function <b>funChecaMUN</b>(const COD: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="funChecaCNPJ"></a><code>function <b>funChecaCNPJ</b>(const CNPJ: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="funChecaCPF"></a><code>function <b>funChecaCPF</b>(const CPF: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="funChecaIE"></a><code>function <b>funChecaIE</b>(const IE, TIPO: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="funChecaCFOP"></a><code>function <b>funChecaCFOP</b>(const CFOP: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="funChecaCEP"></a><code>function <b>funChecaCEP</b>(const CEP, UF: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="funChecaCST"></a><code>function <b>funChecaCST</b>(const CST: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="funChecaGENERO"></a><code>function <b>funChecaGENERO</b>(const COD: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="funChecaPAISIBGE"></a><code>function <b>funChecaPAISIBGE</b>(const COD: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="funChecaMODNF"></a><code>function <b>funChecaMODNF</b>(const COD: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="funChecaSITDOCTO"></a><code>function <b>funChecaSITDOCTO</b>(const COD: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="funChecaCSTCOFINS"></a><code>function <b>funChecaCSTCOFINS</b>(const CST: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="funChecaCSTPIS"></a><code>function <b>funChecaCSTPIS</b>(const CST: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="funStrZero"></a><code>function <b>funStrZero</b>(Zeros: String; Quant: Integer): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IfThen"></a><code>function <b>IfThen</b>(AValue: Boolean; const ATrue: Char; AFalse: Char): Char; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IfThen"></a><code>function <b>IfThen</b>(AValue: Boolean; const ATrue: Double; AFalse: Double): Double; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:53</em>
+</span>
+</body></html>

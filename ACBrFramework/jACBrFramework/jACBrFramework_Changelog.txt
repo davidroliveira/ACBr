@@ -1,0 +1,254 @@
+{******************************************************************************}
+{ Projeto: ACBrFramework                                                       }
+{ Biblioteca multi plataforma que permite usar os componentes do ACBr em       }
+{ outras linguagens como .NET, Java, xBase, VB6, etc ...                       }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na página do Projeto          }
+{  ACBrFramework localizado em      http://acbrframework.sourceforge.net/      }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{                                                                              }
+{******************************************************************************}
+
+Agradecimentos:
+
+* Administradores:
+- Rafael Batiati
+
+* Desenvolvedores:
+- Rafael Dias
+- José Mauro da Silva Sandy
+- Willian Resplandes
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+Changelog
+
+14/11/2017
+[+] Adicionado a versão 111 no Sped - Rafael Dias.
+
+25/01/2017
+[+] Adicionado ACBrIBGE - Willian Resplandes
+	http://www.projetoacbr.com.br/forum/topic/34775-acbribge-jacbrframework
+
+20/01/2017
+[+] Adicionado ACBrBal - Willian Resplandes
+	http://www.projetoacbr.com.br/forum/topic/34709-adicionado-acbrbal-no-jacbrframework/
+
+18/01/2017
+[-] Corrigido erro ao carrega os interops - Rafael Dias.
+
+11/01/2017
+[*] Arrumado classes para utilizar os novos interops - Rafael Dias.
+
+09/01/2017
+[*] Adcionado novos interops - Rafael Dias.
+
+06/01/2017
+[-] Correção na classe de conversão de data para OleDate - Willian Resplandes.
+    http://www.projetoacbr.com.br/forum/topic/34412-data-do-arquivo-sped/
+
+30/01/2016
+[-] Correção no retorno de datas - edsonmoretti.
+    http://www.projetoacbr.com.br/forum/topic/27753-datahoraecf-incrementando-um-dia/
+
+-- jACBrFramework --
+[-] Ajustes na geração dos registros do PAF com base nos patches recebidos no fórum. - ACBrPAF - José Mauro.
+
+23/08/2015
+
+-- jACBrFramework --
+[-] Ajustes na geração dos registros do PAF com base nos patches recebidos no fórum. - ACBrPAF - José Mauro.
+
+02/06/2015
+
+-- jACBrFramework --
+[-] Ajuste do evento onBobinaAdicionaLinhas para que não haja problema de acionar o listener em ambiente multithread. Utilizar como padrão. - ACBrECF - José Mauro.
+[-] Correção da nomenclatura de campos. - ACBrPAF - José Mauro.
+
+19/09/2014
+
+-- jACBrFramework --
+[-] Ajuste no processo de formação do menu voltar do TEF - ACBrTEFD - José Mauro.
+
+29/08/2014
+
+-- jACBrFramework --
+[*] Correção na obtenção das chaves de criptografia - ACBrAAC - José Mauro.
+[*] Ajustes nos eventos do TEF para o CliSiTef - ACBrTEFD - José Mauro.
+
+25/08/2014
+
+-- jACBrFramework --
+[-] Correção no registro R7 adicionado o COO - ACBrPAF - José Mauro.
+
+19/08/2014
+
+-- jACBrFramework --
+[-] Modificação na classe OleDate, método toOADate, para retornar 0d caso a data recebida seja nula. Ajuste na recuperação da Ecf presente no arquivo criptografado. - ACBrPAF/ACBrAAC - José Mauro.
+
+19/08/2014
+
+-- jACBrFramework --
+[-] Correção na geração dos registros do PAF - ACBrPAF - José Mauro.
+[*] Sincronismo dos interops - ACBr - José Mauro.
+
+04/08/2014
+
+-- jACBrFramework --
+[+] Adicionado os registros S2 e S3 - ACBrPAF - José Mauro.
+
+02/08/2014
+
+-- jACBrFramework --
+[-] Ajuste no sequencial das alíquotas: http://www.projetoacbr.com.br/forum/index.php?/topic/16850-objeto-aliquota-propriedade-sequencia/ - ACBrECF - José Mauro.
+
+
+01/08/2014
+
+-- jACBrFramework --
+[-] Correção do registro C100: http://www.projetoacbr.com.br/forum/index.php?/topic/16824-sped-fiscal-registro-c100/ e modifições nos enums - ACBrSPEDFiscal - José Mauro.
+
+31/07/2014
+
+-- jACBrFramework --
+[*] Teste de utilização do ACBrTEFD para CliSiTef - ACBrTEFD - José Mauro.
+
+31/07/2014
+
+-- jACBrFramework --
+[-] Correção do registro C100: http://www.projetoacbr.com.br/forum/index.php?/topic/16805-sped-fiscal-icms/ - ACBrPAF - José Mauro.
+
+10/07/2014
+
+-- jACBrFramework --
+[-] Ajustes no métodos que podem que podem ser utilizados com COO/CRZ e Data - ACBrECF - José Mauro.
+[*] Melhoria no processo de processamento das chaves privadas nos componentes: ACBrECF, ACBrEAD, ACBrPAF e ACBrAAC - José Mauro.
+
+07/07/2014
+
+-- jACBrFramework --
+[-] Ajuste ao realizar a LMFS por RZ: http://www.projetoacbr.com.br/forum/index.php?/topic/16418-leitura-de-mem%C3%B3ria-fiscal-completa-por-contador-de-redu%C3%A7%C3%A3o-z/ - ACBrECF - José Mauro.
+
+27/05/2014
+
+-- jACBrFramework --
+[*] [ACBrFramework 0.9.5.8] Habilitado a propriedade ReTentar, para evitar loop infinito em caso de falha de comunicação e o evento OnMsgRetentar não esteja programado - ACBrECF - José Mauro.
+[+] [ACBrFramework 0.9.5.8] Acréscimo da propriedade ControlePorta acompanhando o projeto em delphi - ACBrECF - José Mauro.
+
+26/05/2014
+
+-- jACBrFramework --
+[+] Acréscimo da funcionalidade de leitura de códigos de barra serial - ACBrLCB - José Mauro.
+
+28/04/2014
+
+-- jACBrFramework --
+[+] Acréscimo da funcionalidade para carregar a biblioteca com base na JVM em execução.
+    http://www.projetoacbr.com.br/forum/index.php?/topic/15333-pegar-dll-autom%C3%A1ticamente-32-ou-64/#entry94370
+[*] Melhoria no processo de reflexão para permitir enuns vazios e ajustes no indicadores de movimentos - José Mauro
+
+23/04/2014
+
+-- jACBrFramework --
+[+] Acréscimo do método valueOf para recuperar enums pelo código no ACBrPAF - José Mauro
+[*] Refactor do registro C470 para compatibilizar os acessores com o nome da propriedade informada no cotepe e ajuste/acréscimo na ordem do enum layout do sped fiscal - José Mauro
+
+27/03/2014
+
+-- jACBrFramework --
+[*] Modificado metodo GetRodape para GetRodapePaf agora como publico, acompanhando as modificações do ACBr - ACBrECF - José Mauro
+[*] Modificado metodo DAV_Fechar adicionado os parametros desconto e acrescimo - ACBrECF - José Mauro
+[*] Modificaçao do relatório de Registros do ECF para não obrigar que sejam preenchidas DAV's - ACBrPAF - José Mauro
+[+] Acréscimo do método valueOf para recuperar enums pelo código no ACBrPAF - José Mauro
+
+21/03/2014
+
+-- jACBrFramework --
+[-] Correção na gravação dos outros arquivos autenticados para geração dos arquivos do PAF - José Mauro
+[+] Acréscimo do método valueOf pelo código nos enuns utilizados no Sintegra - José Mauro
+
+07/03/2014
+
+-- jACBrFramework --
+[+] Acréscimo da estrutura para utilizacao do TEF, em desenvolvimento - José Mauro
+
+07/02/2014
+
+-- jACBrFramework --
+[+] Acréscimo da estrutura para geração do Sped Fiscal - José Mauro
+
+26/11/2013
+
+-- jACBrFramework --
+[-] Correção na classe Aliquota - ACBrECF - jmsandy.
+    http://www.projetoacbr.com.br/forum/index.php?/topic/13369-patch-recupera%C3%A7%C3%A3o-tipos-de-al%C3%ADquota/
+
+22/11/2013
+
+-- jACBrFramework --
+[+] Propriedades Relatorios Gerenciais e Metodos - ACBrECF - jmsandy.
+    http://www.projetoacbr.com.br/forum/index.php?/topic/13332-patch-relatorios-gerenciais/
+
+[+] Adicionado a função carregaComprovantesNaoFiscais - ACBrECF - jmsandy;
+    http://www.projetoacbr.com.br/forum/index.php?/topic/13205-path-totalizadores-n%C3%A3o-fiscais/
+
+06/03/2013
+
+-- jACBrFramework --
+[*] Propriedades getAliquotas() e métodos relacionados - Rafael Batiati.
+
+04/03/2013
+
+-- jACBrFramework --
+[*] Implementação de todos os Eventos/Métodos/Propriedades em ACBrECF - Rafael Batiati.
+    (Pendente apenas propriedades/métodos com ComposedComponent)
+
+03/03/2013
+
+-- jACBrFramework --
+[*] Finalização das mudanças para suporte a JNA - Rafael Batiati.
+[*] Projeto JNI (em C++) descontinuado - Rafael Batiati.
+[+] Refactoring nos packages e classes bases para adequação ao JNA - Rafael Batiati.
+[*] Implementada classe ACBrECF com todos os métodos e propriedades (Exceto métodos que envolvem tipos complexos) - Rafael Batiati
+
+-- jACBrFramework --
+[+] Mudança inicial do jACBrFramework de JNI para JNA - Rafael Batiati
+[+] Criação das classes JNA para interop - Rafael Batiati
+
+19/02/2013
+
+-- jACBrFramework --
+[*] Refactory das classes bases do projeto (criação de ACBrInteropBase, ACBrClass e ACBrComposedClass) - Rafael Batiati.
+[*] Criação da classe Device e inclusão da propriedade Device no ACBrECF - Rafael Batiati.
+[+] Criação do projeto no NetBeans (descontinuado o projeto no Eclipse) - Rafael Batiati.
+
+-- jACBrFramework_JNI --
+[*] Atualização das libs e dos headers do ACBrFramework - Rafael Batiati.
+[*] Suporte as novas classes bases ACBrClass e ACBrComposedClass - Rafael Batiati.
+
+11/11/2012 (ACBrFramework 0.9.1.8)
+[-] Atualizado e corrigido o projeto jACBrFramework para funcionar com os ultimos Defs - jACBrFramework - Rafael Batiati.
+
+08/10/2012 (ACBrFramework 0.9.0.151)
+[*] Projeto jACBrFramework reorganizado e funcionando com as definições geradas pelo DefExport - Rafael Batiati
+[+] Adicionado os campos Endereco, Cep, Cidade, Uf, Telefone, Contato, Email, IE na identificação da Empresa no ACBrAAC - Rafael Batiati

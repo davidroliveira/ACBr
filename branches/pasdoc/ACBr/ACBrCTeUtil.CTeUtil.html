@@ -1,0 +1,695 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrCTeUtil: Classe CTeUtil</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="CTeUtil"></a><h1 class="cio">Classe CTeUtil</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td>Campos</td><td><a class="section"  href="#%40Methods">Métodos</a></td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrCTeUtil.html">ACBrCTeUtil</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type CTeUtil = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">CTeUtil</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#GetURLSVRS">GetURLSVRS</a></b>(AAmbiente: Integer; ALayOut: <a   href="pcnConversao.html#TLayOut">TLayOut</a>): WideString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#GetURLMG">GetURLMG</a></b>(AAmbiente: Integer; ALayOut: <a   href="pcnConversao.html#TLayOut">TLayOut</a>): WideString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#GetURLRS">GetURLRS</a></b>(AAmbiente: Integer; ALayOut: <a   href="pcnConversao.html#TLayOut">TLayOut</a>): WideString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#GetURLSP">GetURLSP</a></b>(AAmbiente: Integer; ALayOut: <a   href="pcnConversao.html#TLayOut">TLayOut</a>): WideString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#GetURLMT">GetURLMT</a></b>(AAmbiente: Integer; ALayOut: <a   href="pcnConversao.html#TLayOut">TLayOut</a>): WideString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#GetURLMS">GetURLMS</a></b>(AAmbiente: Integer; ALayOut: <a   href="pcnConversao.html#TLayOut">TLayOut</a>): WideString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#GetURL">GetURL</a></b>(const AUF, AAmbiente, FormaEmissao: Integer; ALayOut: <a   href="pcnConversao.html#TLayOut">TLayOut</a>): WideString;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#SeparaDados">SeparaDados</a></b>( Texto : AnsiString; Chave : String; MantemChave : Boolean = False ) : AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#Valida">Valida</a></b>(const AXML: AnsiString; var AMsg: AnsiString; const APathSchemas: string = ''): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#LimpaNumero">LimpaNumero</a></b>(AValue: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#FormatarCPF">FormatarCPF</a></b>(AValue: string): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#FormatarCNPJ">FormatarCNPJ</a></b>(AValue: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#FormatarCEP">FormatarCEP</a></b>(AValue: string): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#FormatarFone">FormatarFone</a></b>(AValue: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#FormatDate">FormatDate</a></b>(const AString: string): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#FormatDateTime">FormatDateTime</a></b>(const AString: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#EstaVazio">EstaVazio</a></b>(const AValue: string): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="ACBrCTeUtil.CTeUtil.html#EstaVazio">EstaVazio</a></b>(const AValue, AMensagem: string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#NaoEstaVazio">NaoEstaVazio</a></b>(AValue: string): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#EstaZerado">EstaZerado</a></b>(AValue: Double): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#EstaZerado">EstaZerado</a></b>(AValue: Integer): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="ACBrCTeUtil.CTeUtil.html#EstaZerado">EstaZerado</a></b>(AValue: Integer; AMensagem: string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#NaoEstaZerado">NaoEstaZerado</a></b>(AValue: Double): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#NaoEstaZerado">NaoEstaZerado</a></b>(AValue: Integer): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#Poem_Zeros">Poem_Zeros</a></b>(const Texto: string; const Tamanho: Integer): string; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#Poem_Zeros">Poem_Zeros</a></b>(const Valor: Integer; const Tamanho: Integer): string; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#PosEx">PosEx</a></b>(const SubStr, S: AnsiString; Offset: Cardinal = 1): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#PosLast">PosLast</a></b>(const SubStr, S: AnsiString): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#PadE">PadE</a></b>(const AString: string; const nLen: Integer; const Caracter: Char = ' '): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#PadD">PadD</a></b>(const AString: string; const nLen: Integer; const Caracter: Char = ' '): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#padC">padC</a></b>(const AString: string; const nLen: Integer; const Caracter: Char = ' '): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#SeSenao">SeSenao</a></b>(ACondicao: Boolean; ATrue, AFalse: Variant): Variant;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#StringToDate">StringToDate</a></b>(const AString: string): TDateTime;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#StringToTime">StringToTime</a></b>(const AString: string): TDateTime;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#TamanhoIgual">TamanhoIgual</a></b>(const AValue: string; const ATamanho: Integer): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="ACBrCTeUtil.CTeUtil.html#TamanhoIgual">TamanhoIgual</a></b>(const AValue: string; const ATamanho: Integer; AMensagem: string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#TamanhoIgual">TamanhoIgual</a></b>(const AValue: Integer; const ATamanho: Integer): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="ACBrCTeUtil.CTeUtil.html#TamanhoIgual">TamanhoIgual</a></b>(const AValue: Integer; const ATamanho: Integer; AMensagem: string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#TamanhoMenor">TamanhoMenor</a></b>(const AValue: string; const ATamanho: Integer): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#ValidaUFCidade">ValidaUFCidade</a></b>(const UF, Cidade: Integer): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="ACBrCTeUtil.CTeUtil.html#ValidaUFCidade">ValidaUFCidade</a></b>(const UF, Cidade: Integer; const AMensagem: string); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#FormatarChaveAcesso">FormatarChaveAcesso</a></b>(AValue : String ): String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#FormatarNumCTe">FormatarNumCTe</a></b>(const AValue: Integer): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#FormatarValor">FormatarValor</a></b>(mask: <a   href="pcnConversao.html#TpcteMask">TpcteMask</a>; const AValue: real): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#GerarChaveContingencia">GerarChaveContingencia</a></b>(FCTe:<a   href="pcteCTe.TCTe.html">TCTe</a>): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#FormatarChaveContigencia">FormatarChaveContigencia</a></b>(AValue: String): String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#Assinar">Assinar</a></b>(const AXML: AnsiString; Certificado: <a   href="ACBrCAPICOM_TLB.ICertificate2.html">ICertificate2</a>; out AXMLAssinado, FMensagem: AnsiString): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#PathAplication">PathAplication</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="ACBrCTeUtil.CTeUtil.html#ConfAmbiente">ConfAmbiente</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#ParseText">ParseText</a></b>( Texto : AnsiString; Decode : Boolean = True) : AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#TrataString">TrataString</a></b>(const AValue: String): String; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#TrataString">TrataString</a></b>(const AValue: String; const ATamanho: Integer): String; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#CortaD">CortaD</a></b>(const AString: string; const ATamanho: Integer): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#CortaE">CortaE</a></b>(const AString: string; const ATamanho: Integer): String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="ACBrCTeUtil.CTeUtil.html#UFtoCUF">UFtoCUF</a></b>(UF : String): Integer;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetURLSVRS"></a><code>class function <b>GetURLSVRS</b>(AAmbiente: Integer; ALayOut: <a   href="pcnConversao.html#TLayOut">TLayOut</a>): WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Estados Emissores pela Sefaz Virtual RS (Rio Grande do Sul): AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, PA, PB, PR, PE, PI, RJ, RN, RO, RR, SC, SE, TO.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetURLMG"></a><code>class function <b>GetURLMG</b>(AAmbiente: Integer; ALayOut: <a   href="pcnConversao.html#TLayOut">TLayOut</a>): WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetURLRS"></a><code>class function <b>GetURLRS</b>(AAmbiente: Integer; ALayOut: <a   href="pcnConversao.html#TLayOut">TLayOut</a>): WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetURLSP"></a><code>class function <b>GetURLSP</b>(AAmbiente: Integer; ALayOut: <a   href="pcnConversao.html#TLayOut">TLayOut</a>): WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetURLMT"></a><code>class function <b>GetURLMT</b>(AAmbiente: Integer; ALayOut: <a   href="pcnConversao.html#TLayOut">TLayOut</a>): WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetURLMS"></a><code>class function <b>GetURLMS</b>(AAmbiente: Integer; ALayOut: <a   href="pcnConversao.html#TLayOut">TLayOut</a>): WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetURL"></a><code>class function <b>GetURL</b>(const AUF, AAmbiente, FormaEmissao: Integer; ALayOut: <a   href="pcnConversao.html#TLayOut">TLayOut</a>): WideString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SeparaDados"></a><code>class function <b>SeparaDados</b>( Texto : AnsiString; Chave : String; MantemChave : Boolean = False ) : AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Valida"></a><code>class function <b>Valida</b>(const AXML: AnsiString; var AMsg: AnsiString; const APathSchemas: string = ''): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LimpaNumero"></a><code>class function <b>LimpaNumero</b>(AValue: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FormatarCPF"></a><code>class function <b>FormatarCPF</b>(AValue: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FormatarCNPJ"></a><code>class function <b>FormatarCNPJ</b>(AValue: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FormatarCEP"></a><code>class function <b>FormatarCEP</b>(AValue: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FormatarFone"></a><code>class function <b>FormatarFone</b>(AValue: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FormatDate"></a><code>class function <b>FormatDate</b>(const AString: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FormatDateTime"></a><code>class function <b>FormatDateTime</b>(const AString: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EstaVazio"></a><code>class function <b>EstaVazio</b>(const AValue: string): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EstaVazio"></a><code>class procedure <b>EstaVazio</b>(const AValue, AMensagem: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NaoEstaVazio"></a><code>class function <b>NaoEstaVazio</b>(AValue: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EstaZerado"></a><code>class function <b>EstaZerado</b>(AValue: Double): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EstaZerado"></a><code>class function <b>EstaZerado</b>(AValue: Integer): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EstaZerado"></a><code>class procedure <b>EstaZerado</b>(AValue: Integer; AMensagem: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NaoEstaZerado"></a><code>class function <b>NaoEstaZerado</b>(AValue: Double): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NaoEstaZerado"></a><code>class function <b>NaoEstaZerado</b>(AValue: Integer): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Poem_Zeros"></a><code>class function <b>Poem_Zeros</b>(const Texto: string; const Tamanho: Integer): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Poem_Zeros"></a><code>class function <b>Poem_Zeros</b>(const Valor: Integer; const Tamanho: Integer): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PosEx"></a><code>class function <b>PosEx</b>(const SubStr, S: AnsiString; Offset: Cardinal = 1): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PosLast"></a><code>class function <b>PosLast</b>(const SubStr, S: AnsiString): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PadE"></a><code>class function <b>PadE</b>(const AString: string; const nLen: Integer; const Caracter: Char = ' '): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PadD"></a><code>class function <b>PadD</b>(const AString: string; const nLen: Integer; const Caracter: Char = ' '): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="padC"></a><code>class function <b>padC</b>(const AString: string; const nLen: Integer; const Caracter: Char = ' '): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SeSenao"></a><code>class function <b>SeSenao</b>(ACondicao: Boolean; ATrue, AFalse: Variant): Variant;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StringToDate"></a><code>class function <b>StringToDate</b>(const AString: string): TDateTime;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StringToTime"></a><code>class function <b>StringToTime</b>(const AString: string): TDateTime;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TamanhoIgual"></a><code>class function <b>TamanhoIgual</b>(const AValue: string; const ATamanho: Integer): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TamanhoIgual"></a><code>class procedure <b>TamanhoIgual</b>(const AValue: string; const ATamanho: Integer; AMensagem: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TamanhoIgual"></a><code>class function <b>TamanhoIgual</b>(const AValue: Integer; const ATamanho: Integer): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TamanhoIgual"></a><code>class procedure <b>TamanhoIgual</b>(const AValue: Integer; const ATamanho: Integer; AMensagem: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TamanhoMenor"></a><code>class function <b>TamanhoMenor</b>(const AValue: string; const ATamanho: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ValidaUFCidade"></a><code>class function <b>ValidaUFCidade</b>(const UF, Cidade: Integer): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ValidaUFCidade"></a><code>class procedure <b>ValidaUFCidade</b>(const UF, Cidade: Integer; const AMensagem: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FormatarChaveAcesso"></a><code>class function <b>FormatarChaveAcesso</b>(AValue : String ): String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FormatarNumCTe"></a><code>class function <b>FormatarNumCTe</b>(const AValue: Integer): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FormatarValor"></a><code>class function <b>FormatarValor</b>(mask: <a   href="pcnConversao.html#TpcteMask">TpcteMask</a>; const AValue: real): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GerarChaveContingencia"></a><code>class function <b>GerarChaveContingencia</b>(FCTe:<a   href="pcteCTe.TCTe.html">TCTe</a>): String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Incluido por Italo em 28/01/2011</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FormatarChaveContigencia"></a><code>class function <b>FormatarChaveContigencia</b>(AValue: String): String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Assinar"></a><code>class function <b>Assinar</b>(const AXML: AnsiString; Certificado: <a   href="ACBrCAPICOM_TLB.ICertificate2.html">ICertificate2</a>; out AXMLAssinado, FMensagem: AnsiString): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PathAplication"></a><code>class function <b>PathAplication</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ConfAmbiente"></a><code>class procedure <b>ConfAmbiente</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ParseText"></a><code>class function <b>ParseText</b>( Texto : AnsiString; Decode : Boolean = True) : AnsiString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TrataString"></a><code>class function <b>TrataString</b>(const AValue: String): String; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TrataString"></a><code>class function <b>TrataString</b>(const AValue: String; const ATamanho: Integer): String; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CortaD"></a><code>class function <b>CortaD</b>(const AString: string; const ATamanho: Integer): String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CortaE"></a><code>class function <b>CortaE</b>(const AString: string; const ATamanho: Integer): String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UFtoCUF"></a><code>class function <b>UFtoCUF</b>(UF : String): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:23</em>
+</span>
+</body></html>

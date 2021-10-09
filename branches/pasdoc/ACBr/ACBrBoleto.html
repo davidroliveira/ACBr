@@ -1,0 +1,546 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrBoleto</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrBoleto</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td><a class="section"  href="#%40FuncsProcs">Funções e Procedimentos</a></td><td><a class="section"  href="#%40Types">Tipos</a></td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF}</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a   href="ACBrBase.html">ACBrBase</a></li><li>SysUtils</li><li><a   href="ACBrValidador.html">ACBrValidador</a></li><li>Types</li><li>Graphics</li><li>Contnrs</li><li>Classes</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrBoleto.TACBrOcorrencia.html"><code>TACBrOcorrencia</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrBoleto.TACBrBancoClass.html"><code>TACBrBancoClass</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrBoleto.TACBrBanco.html"><code>TACBrBanco</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrBoleto.TACBrCedente.html"><code>TACBrCedente</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrBoleto.TACBrSacado.html"><code>TACBrSacado</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrBoleto.TACBrTitulo.html"><code>TACBrTitulo</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrBoleto.TListadeBoletos.html"><code>TListadeBoletos</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrBoleto.TACBrBoleto.html"><code>TACBrBoleto</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrBoleto.TACBrBoletoFCClass.html"><code>TACBrBoletoFCClass</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40FuncsProcs"></a><h3 class="summary">Funções e Procedimentos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a   href="ACBrBoleto.html#Register">Register</a></b>;</code></td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrBoleto.html#TACBrLayoutRemessa">TACBrLayoutRemessa</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrBoleto.html#TACBrTipoOcorrencia">TACBrTipoOcorrencia</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrBoleto.html#TACBrResponEmissao">TACBrResponEmissao</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrBoleto.html#TACBrPessoa">TACBrPessoa</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrBoleto.html#TACBrAceiteTitulo">TACBrAceiteTitulo</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrBoleto.html#TACBrBolLayOut">TACBrBolLayOut</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrBoleto.html#TACBrBoletoFCFiltro">TACBrBoletoFCFiltro</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrBoleto.html#TACBrBoletoFCOnObterLogo">TACBrBoletoFCOnObterLogo</a></b> = procedure( const PictureLogo : TPicture; const NumeroBanco: Integer ) of object ;</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrBoleto.html#CACBrBoleto_Versao">CACBrBoleto_Versao</a></b> = '0.0.25a' ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Funções e Procedimentos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Register"></a><code>procedure <b>Register</b>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrLayoutRemessa"></a><code><b>TACBrLayoutRemessa</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+c400: &nbsp;</li>
+<li>
+c240: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTipoOcorrencia"></a><code><b>TACBrTipoOcorrencia</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Tipos de ocorrências permitidas no arquivos remessa / retorno</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+toRemessaRegistrar: Ocorrências para arquivo remessa</li>
+<li>
+toRemessaBaixar: &nbsp;</li>
+<li>
+toRemessaDebitarEmConta: &nbsp;</li>
+<li>
+toRemessaConcederAbatimento: &nbsp;</li>
+<li>
+toRemessaCancelarAbatimento: &nbsp;</li>
+<li>
+toRemessaConcederDesconto: &nbsp;</li>
+<li>
+toRemessaCancelarDesconto: &nbsp;</li>
+<li>
+toRemessaAlterarVencimento: &nbsp;</li>
+<li>
+toRemessaProtestar: &nbsp;</li>
+<li>
+toRemessaSustarProtesto: &nbsp;</li>
+<li>
+toRemessaCancelarIntrucaoProtestoBaixa: &nbsp;</li>
+<li>
+toRemessaCancelarInstrucaoProtesto: &nbsp;</li>
+<li>
+toRemessaDispensarJuros: &nbsp;</li>
+<li>
+toRemessaAlterarNomeEnderecoSacado: &nbsp;</li>
+<li>
+toRemessaAlterarNumeroControle: &nbsp;</li>
+<li>
+toRemessaOutrasOcorrencias: &nbsp;</li>
+<li>
+toRemessaAlterarControleParticipante: &nbsp;</li>
+<li>
+toRemessaAlterarSeuNumero: &nbsp;</li>
+<li>
+toRemessaTransfCessaoCreditoIDProd10: &nbsp;</li>
+<li>
+toRemessaTransferenciaCarteira: &nbsp;</li>
+<li>
+toRemessaDevTransferenciaCarteira: &nbsp;</li>
+<li>
+toRemessaDesagendarDebitoAutomatico: &nbsp;</li>
+<li>
+toRemessaAcertarRateioCredito: &nbsp;</li>
+<li>
+toRemessaCancelarRateioCredito: &nbsp;</li>
+<li>
+toRemessaAlterarUsoEmpresa: &nbsp;</li>
+<li>
+toRemessaNaoProtestar: &nbsp;</li>
+<li>
+toRemessaProtestoFinsFalimentares: &nbsp;</li>
+<li>
+toRemessaBaixaporPagtoDiretoCedente: &nbsp;</li>
+<li>
+toRemessaCancelarInstrucao: &nbsp;</li>
+<li>
+toRemessaAlterarVencSustarProtesto: &nbsp;</li>
+<li>
+toRemessaCedenteDiscordaSacado: &nbsp;</li>
+<li>
+toRemessaCedenteSolicitaDispensaJuros: &nbsp;</li>
+<li>
+toRemessaOutrasAlteracoes: &nbsp;</li>
+<li>
+toRemessaAlterarModalidade: &nbsp;</li>
+<li>
+toRetornoRegistroConfirmado: Ocorrências para arquivo retorno</li>
+<li>
+toRetornoRegistroRecusado: &nbsp;</li>
+<li>
+toRetornoComandoRecusado: &nbsp;</li>
+<li>
+toRetornoLiquidado: &nbsp;</li>
+<li>
+toRetornoLiquidadoEmCartorio: &nbsp;</li>
+<li>
+toRetornoLiquidadoParcialmente: &nbsp;</li>
+<li>
+toRetornoLiquidadoSaldoRestante: &nbsp;</li>
+<li>
+toRetornoLiquidadoSemRegistro: &nbsp;</li>
+<li>
+toRetornoLiquidadoPorConta: &nbsp;</li>
+<li>
+toRetornoLiquidadoAposBaixaouNaoRegistro: &nbsp;</li>
+<li>
+toRetornoBaixaRejeitada: &nbsp;</li>
+<li>
+toRetornoBaixaSolicitada: &nbsp;</li>
+<li>
+toRetornoBaixado: &nbsp;</li>
+<li>
+toRetornoBaixaAutomatica: &nbsp;</li>
+<li>
+toRetornoBaixadoViaArquivo: &nbsp;</li>
+<li>
+toRetornoBaixadoInstAgencia: &nbsp;</li>
+<li>
+toRetornoBaixadoPorDevolucao: &nbsp;</li>
+<li>
+toRetornoBaixadoFrancoPagamento: &nbsp;</li>
+<li>
+toRetornoBaixaPorProtesto: &nbsp;</li>
+<li>
+toRetornoBaixaSimples: &nbsp;</li>
+<li>
+toRetornoBaixaPorTerSidoLiquidado: &nbsp;</li>
+<li>
+toRetornoBaixaOuLiquidacaoEstornada: &nbsp;</li>
+<li>
+toRetornoBaixaTransferenciaParaDesconto: &nbsp;</li>
+<li>
+toRetornoBaixaCreditoCCAtravesSispag: &nbsp;</li>
+<li>
+toRetornoBaixaCreditoCCAtravesSispagSemTituloCorresp: &nbsp;</li>
+<li>
+toRetornoTituloEmSer: &nbsp;</li>
+<li>
+toRetornoTituloNaoExiste: &nbsp;</li>
+<li>
+toRetornoTituloPagoemCheque: &nbsp;</li>
+<li>
+toRetornoTituloPagamentoCancelado: &nbsp;</li>
+<li>
+toRetornoTituloJaBaixado: &nbsp;</li>
+<li>
+toRetornoTituloSustadoJudicialmente: &nbsp;</li>
+<li>
+toRetornoRecebimentoInstrucaoBaixar: &nbsp;</li>
+<li>
+toRetornoRecebimentoInstrucaoConcederAbatimento: &nbsp;</li>
+<li>
+toRetornoRecebimentoInstrucaoCancelarAbatimento: &nbsp;</li>
+<li>
+toRetornoRecebimentoInstrucaoConcederDesconto: &nbsp;</li>
+<li>
+toRetornoRecebimentoInstrucaoCancelarDesconto: &nbsp;</li>
+<li>
+toRetornoRecebimentoInstrucaoAlterarDados: &nbsp;</li>
+<li>
+toRetornoRecebimentoInstrucaoAlterarVencimento: &nbsp;</li>
+<li>
+toRetornoRecebimentoInstrucaoProtestar: &nbsp;</li>
+<li>
+toRetornoRecebimentoInstrucaoSustarProtesto: &nbsp;</li>
+<li>
+toRetornoRecebimentoInstrucaoNaoProtestar: &nbsp;</li>
+<li>
+toRetornoRecebimentoInstrucaoAlterarNomeSacado: &nbsp;</li>
+<li>
+toRetornoRecebimentoInstrucaoAlterarEnderecoSacado: &nbsp;</li>
+<li>
+toRetornoRecebimentoInstrucaoAlterarTipoCobranca: &nbsp;</li>
+<li>
+toRetornoRecebimentoInstrucaoDispensarJuros: &nbsp;</li>
+<li>
+toRetornoAbatimentoConcedido: &nbsp;</li>
+<li>
+toRetornoAbatimentoCancelado: &nbsp;</li>
+<li>
+toRetornoDescontoConcedido: &nbsp;</li>
+<li>
+toRetornoDescontoCancelado: &nbsp;</li>
+<li>
+toRetornoDadosAlterados: &nbsp;</li>
+<li>
+toRetornoVencimentoAlterado: &nbsp;</li>
+<li>
+toRetornoAlteracaoDadosNovaEntrada: &nbsp;</li>
+<li>
+toRetornoAlteracaoDadosBaixa: &nbsp;</li>
+<li>
+toRetornoAlteracaoDadosRejeitados: &nbsp;</li>
+<li>
+toRetornoAlteracaoOutrosDadosRejeitada: &nbsp;</li>
+<li>
+toRetornoProtestado: &nbsp;</li>
+<li>
+toRetornoProtestoSustado: &nbsp;</li>
+<li>
+toRetornoProtestoOuSustacaoEstornado: &nbsp;</li>
+<li>
+toRetornoInstrucaoProtestoRejeitadaSustadaOuPendente: &nbsp;</li>
+<li>
+toRetornoInstrucaoRejeitada: &nbsp;</li>
+<li>
+toRetornoInstrucaoCancelada: &nbsp;</li>
+<li>
+toRetornoDebitoEmConta: &nbsp;</li>
+<li>
+toRetornoNomeSacadoAlterado: &nbsp;</li>
+<li>
+toRetornoEnderecoSacadoAlterado: &nbsp;</li>
+<li>
+toRetornoEncaminhadoACartorio: &nbsp;</li>
+<li>
+toREtornoEntradaEmCartorio: &nbsp;</li>
+<li>
+toRetornoRetiradoDeCartorio: &nbsp;</li>
+<li>
+toRetornoJurosDispensados: &nbsp;</li>
+<li>
+toRetornoDespesasProtesto: &nbsp;</li>
+<li>
+toRetornoDespesasSustacaoProtesto: &nbsp;</li>
+<li>
+toRetornoCustasSustacao: &nbsp;</li>
+<li>
+toRetornoCustasProtesto: &nbsp;</li>
+<li>
+toRetornoCustasCartorioDistribuidor: &nbsp;</li>
+<li>
+toRetornoCustasEdital: &nbsp;</li>
+<li>
+toRetornoCustasSustacaoJudicial: &nbsp;</li>
+<li>
+toRetornoCustasIrregularidade: &nbsp;</li>
+<li>
+toRetornoAcertoDepositaria: &nbsp;</li>
+<li>
+toRetornoAcertoControleParticipante: &nbsp;</li>
+<li>
+toRetornoAcertoDadosRateioCredito: &nbsp;</li>
+<li>
+toRetornoEntradaRejeitaCEPIrregular: &nbsp;</li>
+<li>
+toRetornoEntradaConfirmadaRateioCredito: &nbsp;</li>
+<li>
+toRetornoEntradaRegistradaAguardandoAvaliacao: &nbsp;</li>
+<li>
+toRetornoEntradaRejeitadaCarne: &nbsp;</li>
+<li>
+toRetornoDesagendamentoDebitoAutomatico: &nbsp;</li>
+<li>
+toRetornoEstornoPagamento: &nbsp;</li>
+<li>
+toRetornoSustadoJudicial: &nbsp;</li>
+<li>
+toRetornoManutencaoTituloVencido: &nbsp;</li>
+<li>
+toRetornoTipoCobrancaAlterado: &nbsp;</li>
+<li>
+toRetornoCancelamentoDadosRateio: &nbsp;</li>
+<li>
+toRetornoOutrasOcorrencias: &nbsp;</li>
+<li>
+toRetornoOcorrenciasdoSacado: &nbsp;</li>
+<li>
+toRetornoCobrancaContratual: &nbsp;</li>
+<li>
+toRetornoTarifaExtratoPosicao: &nbsp;</li>
+<li>
+toRetornoTarifaDeRelacaoDasLiquidacoes: &nbsp;</li>
+<li>
+toRetornoTarifaDeManutencaoDeTitulosVencidos: &nbsp;</li>
+<li>
+toRetornoTarifaEmissaoBoletoEnvioDuplicata: &nbsp;</li>
+<li>
+toRetornoTarifaInstrucao: &nbsp;</li>
+<li>
+toRetornoTarifaOcorrencias: &nbsp;</li>
+<li>
+toRetornoTarifaAvisoCobranca: &nbsp;</li>
+<li>
+toRetornoTarifaMensalEmissaoBoletoEnvioDuplicata: &nbsp;</li>
+<li>
+toRetornoTarifaMensalRefEntradasBancosCorrespCarteira: &nbsp;</li>
+<li>
+toRetornoTarifaMensalBaixasCarteira: &nbsp;</li>
+<li>
+toRetornoTarifaMensalBaixasBancosCorrespCarteira: &nbsp;</li>
+<li>
+toRetornoTarifaMensalLiquidacoesCarteira: &nbsp;</li>
+<li>
+toRetornoTarifaMensalLiquidacoesBancosCorrespCarteira: &nbsp;</li>
+<li>
+toRetornoTarifaEmissaoAvisoMovimentacaoTitulos: &nbsp;</li>
+<li>
+toRetornoDebitoTarifas: &nbsp;</li>
+<li>
+toRetornoDebitoCustasAntecipadas: &nbsp;</li>
+<li>
+toRetornoDebitoMensalTarifasExtradoPosicao: &nbsp;</li>
+<li>
+toRetornoDebitoMensalTarifasOutrasInstrucoes: &nbsp;</li>
+<li>
+toRetornoDebitoMensalTarifasManutencaoTitulosVencidos: &nbsp;</li>
+<li>
+toRetornoDebitoMensalTarifasOutrasOcorrencias: &nbsp;</li>
+<li>
+toRetornoDebitoMensalTarifasProtestos: &nbsp;</li>
+<li>
+toRetornoDebitoMensalTarifasSustacaoProtestos: &nbsp;</li>
+<li>
+toRetornoDebitoMensalTarifaAvisoMovimentacaoTitulos: &nbsp;</li>
+<li>
+toRetornoChequeDevolvido: &nbsp;</li>
+<li>
+toRetornoChequeCompensado: &nbsp;</li>
+<li>
+toRetornoConfirmacaoEntradaCobrancaSimples: &nbsp;</li>
+<li>
+toRetornoAlegacaoDoSacado: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrResponEmissao"></a><code><b>TACBrResponEmissao</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+tbCliEmite: &nbsp;</li>
+<li>
+tbBancoEmite: &nbsp;</li>
+<li>
+tbBancoReemite: &nbsp;</li>
+<li>
+tbBancoNaoReemite: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrPessoa"></a><code><b>TACBrPessoa</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+pFisica: &nbsp;</li>
+<li>
+pJuridica: &nbsp;</li>
+<li>
+pOutras: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrAceiteTitulo"></a><code><b>TACBrAceiteTitulo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Aceite do titulo</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+atSim: &nbsp;</li>
+<li>
+atNao: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrBolLayOut"></a><code><b>TACBrBolLayOut</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+lPadrao: &nbsp;</li>
+<li>
+lCarne: &nbsp;</li>
+<li>
+lFatura: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrBoletoFCFiltro"></a><code><b>TACBrBoletoFCFiltro</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<a class="normal"  href="ACBrBoleto.TACBrBoletoFCClass.html">TACBrBoletoFCClass</a></p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+fiNenhum: &nbsp;</li>
+<li>
+fiPDF: &nbsp;</li>
+<li>
+fiHTML: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrBoletoFCOnObterLogo"></a><code><b>TACBrBoletoFCOnObterLogo</b> = procedure( const PictureLogo : TPicture; const NumeroBanco: Integer ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CACBrBoleto_Versao"></a><code><b>CACBrBoleto_Versao</b> = '0.0.25a' ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Units da ACBr</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:19</em>
+</span>
+</body></html>

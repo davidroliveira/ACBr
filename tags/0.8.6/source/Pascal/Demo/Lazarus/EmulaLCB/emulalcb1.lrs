@@ -1,0 +1,48 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TForm1','FORMDATA',[
+  'TPF0'#6'TForm1'#5'Form1'#4'Left'#3'#'#1#6'Height'#3','#1#3'Top'#3#175#0#5'Wi'
+  +'dth'#3#144#1#18'HorzScrollBar.Page'#3#143#1#18'VertScrollBar.Page'#3'+'#1#7
+  +'Caption'#6#5'Form1'#0#0
+]);
+
+LazarusResources.Add('TfrEmulador','FORMDATA',[
+  'TPF0'#11'TfrEmulador'#10'frEmulador'#4'Left'#3#21#1#6'Height'#3#192#0#3'Top'
+  +#3#0#1#5'Width'#3'_'#1#18'HorzScrollBar.Page'#3'^'#1#19'HorzScrollBar.Range'
+  +#3'S'#1#18'VertScrollBar.Page'#3#191#0#19'VertScrollBar.Range'#3#180#0#13'Ac'
+  +'tiveControl'#7#7'edBarra'#11'BorderStyle'#7#12'bsToolWindow'#7'Caption'#6#22
+  +'Emulando Leitor Serial'#11'Font.Height'#2#245#9'Font.Name'#6#13'MS Sans Ser'
+  +'if'#8'OnCreate'#7#10'FormCreate'#8'Position'#7#9'poDefault'#0#6'TLabel'#6'L'
+  +'abel1'#4'Left'#2#8#6'Height'#2#14#3'Top'#2'M'#5'Width'#2'L'#7'Caption'#6#15
+  +'C'#243'digo a Enviar'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TLabel'#6
+  +'Label4'#4'Left'#3#16#1#6'Height'#2#14#3'Top'#2'M'#5'Width'#2#27#7'Caption'#6
+  +#5'Porta'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TLabel'#6'Label2'#4'L'
+  +'eft'#2#11#6'Height'#2'9'#3'Top'#2#8#5'Width'#3'C'#1#9'Alignment'#7#8'taCent'
+  +'er'#8'AutoSize'#8#7'Caption'#6#216'Use uma porta Serial diferente da especi'
+  +'ficada no ACBrLCB. Essa janela envia Strings pela Serial simulando um Leito'
+  +'r de Cod.Barras. Use o mesmo cabo utilizado pelos Emuladores de ECF para li'
+  +'gar as duas Portas Seriais'#5'Color'#7#6'clNone'#11'ParentColor'#8#8'WordWr'
+  +'ap'#9#0#0#6'TLabel'#6'Label5'#4'Left'#3#192#0#6'Height'#2#14#3'Top'#2'M'#5
+  +'Width'#2#31#7'Caption'#6#6'Sufixo'#5'Color'#7#6'clNone'#11'ParentColor'#8#0
+  +#0#6'TLabel'#6'Label3'#4'Left'#2#16#6'Height'#2#14#3'Top'#3#160#0#5'Width'#2
+  +'R'#7'Caption'#6#16'C'#243'digo Enviado: '#5'Color'#7#6'clNone'#11'ParentCol'
+  +'or'#8#0#0#6'TLabel'#8'lEnviado'#4'Left'#2'k'#6'Height'#2#20#3'Top'#3#160#0#5
+  +'Width'#3#230#0#8'AutoSize'#8#5'Color'#7#6'clNone'#10'Font.Color'#7#7'clBlac'
+  +'k'#11'Font.Height'#2#11#9'Font.Name'#6#13'MS Sans Serif'#10'Font.Pitch'#7#10
+  +'fpVariable'#10'Font.Style'#11#6'fsBold'#0#11'ParentColor'#8#0#0#5'TEdit'#7
+  +'edBarra'#6'Cursor'#7#7'crIBeam'#4'Left'#2#10#6'Height'#2#21#3'Top'#2']'#5'W'
+  +'idth'#3#169#0#8'TabOrder'#2#0#4'Text'#6#13'7893000440166'#0#0#9'TComboBox'#8
+  +'cbxPorta'#4'Left'#3#16#1#6'Height'#2#21#3'Top'#2']'#5'Width'#2'A'#16'AutoCo'
+  +'mpleteText'#11#22'cbactEndOfLineComplete'#20'cbactSearchAscending'#0#10'Ite'
+  +'mHeight'#2#13#9'ItemIndex'#2#1#13'Items.Strings'#1#6#4'COM1'#6#4'COM2'#6#4
+  +'COM3'#6#4'COM4'#6#4'COM5'#6#4'LPT1'#6#4'LPT2'#6#4'LPT3'#0#9'MaxLength'#2#0#8
+  +'OnChange'#7#14'cbxPortaChange'#8'TabOrder'#2#2#4'Text'#6#4'COM2'#0#0#5'TEdi'
+  +'t'#8'edSufixo'#6'Cursor'#7#7'crIBeam'#4'Left'#3#192#0#6'Height'#2#21#3'Top'
+  +#2']'#5'Width'#2'A'#8'TabOrder'#2#1#4'Text'#6#3'#13'#0#0#7'TButton'#7'Button'
+  +'1'#4'Left'#3#8#1#6'Height'#2#25#3'Top'#3#129#0#5'Width'#2'K'#25'BorderSpaci'
+  +'ng.InnerBorder'#2#4#7'Caption'#6#6'Enviar'#7'Default'#9#7'OnClick'#7#12'But'
+  +'ton1Click'#8'TabOrder'#2#4#0#0#9'TCheckBox'#12'cbMudaCodigo'#4'Left'#2#8#6
+  +'Height'#2#13#3'Top'#2'x'#5'Width'#3#171#0#7'Caption'#6#28'Mudar C'#243'digo'
+  +' Autom'#225'ticamente'#7'Checked'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#3
+  +#0#0#0
+]);

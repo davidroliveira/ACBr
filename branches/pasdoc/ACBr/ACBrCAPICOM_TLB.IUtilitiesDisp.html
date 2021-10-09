@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrCAPICOM_TLB: DispInterface IUtilitiesDisp</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="IUtilitiesDisp"></a><h1 class="cio">DispInterface IUtilitiesDisp</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td>Campos</td><td><a class="section"  href="#%40Methods">Métodos</a></td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrCAPICOM_TLB.html">ACBrCAPICOM_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type IUtilitiesDisp = dispinterface(IDispInterface)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// DispIntf: <code>IUtilitiesDisp</code> Flags: (4416) Dual OleAutomation Dispatchable GUID: {EB166CF6-2AE6-44DA-BD96-0C1635D183FE} *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">IDispInterface</li>
+<li class="thisitem">IUtilitiesDisp</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.IUtilitiesDisp.html#GetRandom">GetRandom</a></b>(Length: Integer; EncodingType: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_ENCODING_TYPE">CAPICOM_ENCODING_TYPE</a>): WideString; dispid 1; </code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.IUtilitiesDisp.html#Base64Encode">Base64Encode</a></b>(const SrcString: WideString): WideString; dispid 2; </code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.IUtilitiesDisp.html#Base64Decode">Base64Decode</a></b>(const EncodedString: WideString): WideString; dispid 3; </code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.IUtilitiesDisp.html#BinaryToHex">BinaryToHex</a></b>(const BinaryString: WideString): WideString; dispid 4; </code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.IUtilitiesDisp.html#HexToBinary">HexToBinary</a></b>(const HexString: WideString): WideString; dispid 5; </code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.IUtilitiesDisp.html#BinaryStringToByteArray">BinaryStringToByteArray</a></b>(const BinaryString: WideString): OleVariant; dispid 6; </code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.IUtilitiesDisp.html#ByteArrayToBinaryString">ByteArrayToBinaryString</a></b>(varByteArray: OleVariant): WideString; dispid 7; </code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.IUtilitiesDisp.html#LocalTimeToUTCTime">LocalTimeToUTCTime</a></b>(LocalTime: TDateTime): TDateTime; dispid 8; </code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrCAPICOM_TLB.IUtilitiesDisp.html#UTCTimeToLocalTime">UTCTimeToLocalTime</a></b>(UTCTime: TDateTime): TDateTime; dispid 9; </code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetRandom"></a><code>function <b>GetRandom</b>(Length: Integer; EncodingType: <a   href="ACBrCAPICOM_TLB.html#CAPICOM_ENCODING_TYPE">CAPICOM_ENCODING_TYPE</a>): WideString; dispid 1; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Base64Encode"></a><code>function <b>Base64Encode</b>(const SrcString: WideString): WideString; dispid 2; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Base64Decode"></a><code>function <b>Base64Decode</b>(const EncodedString: WideString): WideString; dispid 3; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BinaryToHex"></a><code>function <b>BinaryToHex</b>(const BinaryString: WideString): WideString; dispid 4; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HexToBinary"></a><code>function <b>HexToBinary</b>(const HexString: WideString): WideString; dispid 5; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BinaryStringToByteArray"></a><code>function <b>BinaryStringToByteArray</b>(const BinaryString: WideString): OleVariant; dispid 6; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ByteArrayToBinaryString"></a><code>function <b>ByteArrayToBinaryString</b>(varByteArray: OleVariant): WideString; dispid 7; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LocalTimeToUTCTime"></a><code>function <b>LocalTimeToUTCTime</b>(LocalTime: TDateTime): TDateTime; dispid 8; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UTCTimeToLocalTime"></a><code>function <b>UTCTimeToLocalTime</b>(UTCTime: TDateTime): TDateTime; dispid 9; </code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:21</em>
+</span>
+</body></html>

@@ -1,0 +1,80 @@
+{******************************************************************************}
+{ Projeto: Componentes ACBr                                                    }
+{ Biblioteca multi plataforma de componentes Delphi para interação com equipa- }
+{ mentos de Automação Comercial utilizados no Brasil                           }
+{                                                                              }
+{ Direitos Autorais Reservados (c) 2006 Daniel Simoes de Almeida               }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na página do Projeto ACBr     }
+{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+Agradecimentos:
+
+- Fábio Rogério Baía  -   Auxilio no desenvolvimento da comunicação TCP/IP
+
+{******************************************************************************
+|* ACBrMonitor
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+
+Versão 0.4a    20/05/06
+[*]    Melhorada a interface geral do programa
+[*]    Vários componentes da interface agora possuem "Hints" com dicas de ajuda 
+[+]    Adicionado Form "Sobre o ACBrMonitor", com botão para exibir o manual de
+       ajuda
+[-]    Corrigido alguns bugs na comunicação TCP/IP: congelamento do programa,
+       não re-conectava pela 2a vez
+[+]    Adicionada opção para definir quantas conexões simultâneas são permitidas
+       em modo TCP/IP. Default = 1
+[+]    Adicionada opção para definir o tempo (em milisegundos) para
+       monitoramento do arquivo de Entrada em modo TXT... O Default é 100,
+       diminua esse tempo para obter respostas mais rápidas do ACBrMonitor
+       quando usando o modo TXT
+[-]    Corrigido Bug no método "ECF.TotalPago" (não era executado)
+[-]    Alguns métodos como "CupomVinculado" ou "AbreCupomVinculado" não
+       efetuavam a conversão de valores com Decimais corretamente
+[*]    Adicionado suporte ao caracter (") Aspas dupla dentro da String. Para
+       informar uma Aspas dentro da String use 2 aspas (""), ela será convertida
+       para apenas uma Aspas.. Exemplo: "Texto ""com aspas"" dentro"  será
+       considerado "Texto "com aspas" dentro"
+[+]    Adicionado o objeto "ACBR", para métodos genéricos
+[+]    Adicionado o método:
+          ACBr.Run( cComando [, cParams, bAguarda, nWindowState, bAltTab ] )
+       que permite executar comandos remotamente, na máquina do ACBrMonitor
+[+]    Adicionada opção na configuração que permite habilitar a execução de
+       comandos remotos (o padrão é desabilitado)
+[+]    Adicionado novos métodos no objeto ECF
+        - ECF.AchaICMSAliquota( nALiquota [, cTipo ] ) -> Procura por uma
+          alíquota previamente cadastrada. Se encontrar, retorna os dados da
+          Alíquota no mesmo formato de "CarregaAliquotas"
+        - ECF.AchaFPGDescricao( cDescricao ) -> Procura por uma Forma de
+          Pagamento pela Descrição, se encontrar, retorna os dados da Forma de
+          Pagamento no mesmo formato de "CarregaFormasPagamento"
+        - ECF.AchaCNFDescricao( cDescricao ) -> Procura por um Comprovante NAO
+          Fiscal pela Descrição, se encontrar, retorna os dados do Comprovante
+          NAO Fiscal no mesmo formato de "CarregaComprovantesNaoFiscais"
+[+]    Adicionada a funcionabilidade da aba "Leitor Serial". Ela permite desviar
+       toda a leitura de dados de um Leitor Serial para o buffer de teclado do
+       Windows. Permitindo modificar os sufixos / prefixos enviados pelo leitor
+       - Funciona mesmo quando em Prompt do MS-DOS tela cheia
+[*]    Métodos "LinhaCupomVinculado" e "LinhaRelatorioGerencial" agora permitem
+       informar várias linhas simultaneamente, sepradas por | (pipe).
+
+
+Versão 0.3a    09/03/06
+
+[+]    Primeira versão distribuida do ACBrMonitor com instaladores para Windows
+       e Linux
+

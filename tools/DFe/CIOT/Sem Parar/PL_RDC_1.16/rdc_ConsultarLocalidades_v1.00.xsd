@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 sp1 (http://www.altova.com) by End User (free.org) -->
+<xs:schema xmlns:rdc="https://ws.rodocred.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://ws.rodocred.com.br/" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xs:include schemaLocation="rdc_TiposPadrao_v1.04.xsd"/>
+	<xs:element name="ConsultarLocalidades">
+		<xs:annotation>
+			<xs:documentation>Permite consultar localidades para o cadastro de rota</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="rdc:ConsultarLocalidadesRequest"/>
+				<xs:element ref="rdc:ConsultarLocalidadesResponse"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ConsultarLocalidadesRequest">
+		<xs:annotation>
+			<xs:documentation>Mensagem de Requisição para Consultar Localidades</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="rdc:IdentificacaoIntegracao"/>
+				<xs:element ref="rdc:TipoLocalidade"/>
+				<xs:element ref="rdc:Localidade"/>
+				<xs:element ref="rdc:UF"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ConsultarLocalidadesResponse">
+		<xs:annotation>
+			<xs:documentation>Mensagem de Retorno para a Consulta de Localidades</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="rdc:RetornoMensagem"/>
+				<xs:element name="ListaLocalidades" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="rdc:Localidades" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

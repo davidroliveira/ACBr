@@ -1,0 +1,590 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrMSXML2_TLB: Interface IXMLDOMDocument</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="IXMLDOMDocument"></a><h1 class="cio">Interface IXMLDOMDocument</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td>Campos</td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrMSXML2_TLB.html">ACBrMSXML2_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type IXMLDOMDocument = interface(<a class="normal"  href="ACBrMSXML2_TLB.IXMLDOMNode.html">IXMLDOMNode</a>)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// Interface: <code>IXMLDOMDocument</code> Flags: (4560) Hidden Dual NonExtensible OleAutomation Dispatchable GUID: {2933BF81-7B36-11D2-B20E-00C04F983E60} *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">IDispatch</li>
+<li class="ancestor"><a class="normal"  href="ACBrMSXML2_TLB.IXMLDOMNode.html">IXMLDOMNode</a></li>
+<li class="thisitem">IXMLDOMDocument</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_doctype">Get_doctype</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMDocumentType.html">IXMLDOMDocumentType</a>; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_implementation_">Get_implementation_</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMImplementation.html">IXMLDOMImplementation</a>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_documentElement">Get_documentElement</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMElement.html">IXMLDOMElement</a>; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#_Set_documentElement">_Set_documentElement</a></b>(const DOMElement: <a   href="ACBrMSXML2_TLB.IXMLDOMElement.html">IXMLDOMElement</a>); safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#createElement">createElement</a></b>(const tagName: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMElement.html">IXMLDOMElement</a>; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#createDocumentFragment">createDocumentFragment</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMDocumentFragment.html">IXMLDOMDocumentFragment</a>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#createTextNode">createTextNode</a></b>(const data: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMText.html">IXMLDOMText</a>; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#createComment">createComment</a></b>(const data: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMComment.html">IXMLDOMComment</a>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#createCDATASection">createCDATASection</a></b>(const data: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMCDATASection.html">IXMLDOMCDATASection</a>; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#createProcessingInstruction">createProcessingInstruction</a></b>(const target: WideString; const data: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMProcessingInstruction.html">IXMLDOMProcessingInstruction</a>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#createAttribute">createAttribute</a></b>(const name: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMAttribute.html">IXMLDOMAttribute</a>; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#createEntityReference">createEntityReference</a></b>(const name: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMEntityReference.html">IXMLDOMEntityReference</a>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#getElementsByTagName">getElementsByTagName</a></b>(const tagName: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMNodeList.html">IXMLDOMNodeList</a>; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#createNode">createNode</a></b>(type_: OleVariant; const name: WideString; const namespaceURI: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMNode.html">IXMLDOMNode</a>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#nodeFromID">nodeFromID</a></b>(const idString: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMNode.html">IXMLDOMNode</a>; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#load">load</a></b>(xmlSource: OleVariant): WordBool; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_readyState">Get_readyState</a></b>: Integer; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_parseError">Get_parseError</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMParseError.html">IXMLDOMParseError</a>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_url">Get_url</a></b>: WideString; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_async">Get_async</a></b>: WordBool; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_async">Set_async</a></b>(isAsync: WordBool); safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#abort">abort</a></b>; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#loadXML">loadXML</a></b>(const bstrXML: WideString): WordBool; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#save">save</a></b>(destination: OleVariant); safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_validateOnParse">Get_validateOnParse</a></b>: WordBool; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_validateOnParse">Set_validateOnParse</a></b>(isValidating: WordBool); safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_resolveExternals">Get_resolveExternals</a></b>: WordBool; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_resolveExternals">Set_resolveExternals</a></b>(isResolving: WordBool); safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_preserveWhiteSpace">Get_preserveWhiteSpace</a></b>: WordBool; safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_preserveWhiteSpace">Set_preserveWhiteSpace</a></b>(isPreserving: WordBool); safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_onreadystatechange">Set_onreadystatechange</a></b>(Param1: OleVariant); safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_ondataavailable">Set_ondataavailable</a></b>(Param1: OleVariant); safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_ontransformnode">Set_ontransformnode</a></b>(Param1: OleVariant); safecall;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#doctype">doctype</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMDocumentType.html">IXMLDOMDocumentType</a> read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_doctype">Get_doctype</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#implementation_">implementation_</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMImplementation.html">IXMLDOMImplementation</a> read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_implementation_">Get_implementation_</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#documentElement">documentElement</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMElement.html">IXMLDOMElement</a> read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_documentElement">Get_documentElement</a> write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#_Set_documentElement">_Set_documentElement</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#readyState">readyState</a></b>: Integer read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_readyState">Get_readyState</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#parseError">parseError</a></b>: <a   href="ACBrMSXML2_TLB.IXMLDOMParseError.html">IXMLDOMParseError</a> read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_parseError">Get_parseError</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#url">url</a></b>: WideString read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_url">Get_url</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#async">async</a></b>: WordBool read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_async">Get_async</a> write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_async">Set_async</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#validateOnParse">validateOnParse</a></b>: WordBool read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_validateOnParse">Get_validateOnParse</a> write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_validateOnParse">Set_validateOnParse</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#resolveExternals">resolveExternals</a></b>: WordBool read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_resolveExternals">Get_resolveExternals</a> write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_resolveExternals">Set_resolveExternals</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#preserveWhiteSpace">preserveWhiteSpace</a></b>: WordBool read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_preserveWhiteSpace">Get_preserveWhiteSpace</a> write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_preserveWhiteSpace">Set_preserveWhiteSpace</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#onreadystatechange">onreadystatechange</a></b>: OleVariant write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_onreadystatechange">Set_onreadystatechange</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#ondataavailable">ondataavailable</a></b>: OleVariant write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_ondataavailable">Set_ondataavailable</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#ontransformnode">ontransformnode</a></b>: OleVariant write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_ontransformnode">Set_ontransformnode</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_doctype"></a><code>function <b>Get_doctype</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMDocumentType.html">IXMLDOMDocumentType</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_implementation_"></a><code>function <b>Get_implementation_</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMImplementation.html">IXMLDOMImplementation</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_documentElement"></a><code>function <b>Get_documentElement</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMElement.html">IXMLDOMElement</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="_Set_documentElement"></a><code>procedure <b>_Set_documentElement</b>(const DOMElement: <a   href="ACBrMSXML2_TLB.IXMLDOMElement.html">IXMLDOMElement</a>); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="createElement"></a><code>function <b>createElement</b>(const tagName: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMElement.html">IXMLDOMElement</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="createDocumentFragment"></a><code>function <b>createDocumentFragment</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMDocumentFragment.html">IXMLDOMDocumentFragment</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="createTextNode"></a><code>function <b>createTextNode</b>(const data: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMText.html">IXMLDOMText</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="createComment"></a><code>function <b>createComment</b>(const data: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMComment.html">IXMLDOMComment</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="createCDATASection"></a><code>function <b>createCDATASection</b>(const data: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMCDATASection.html">IXMLDOMCDATASection</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="createProcessingInstruction"></a><code>function <b>createProcessingInstruction</b>(const target: WideString; const data: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMProcessingInstruction.html">IXMLDOMProcessingInstruction</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="createAttribute"></a><code>function <b>createAttribute</b>(const name: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMAttribute.html">IXMLDOMAttribute</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="createEntityReference"></a><code>function <b>createEntityReference</b>(const name: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMEntityReference.html">IXMLDOMEntityReference</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="getElementsByTagName"></a><code>function <b>getElementsByTagName</b>(const tagName: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMNodeList.html">IXMLDOMNodeList</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="createNode"></a><code>function <b>createNode</b>(type_: OleVariant; const name: WideString; const namespaceURI: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMNode.html">IXMLDOMNode</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="nodeFromID"></a><code>function <b>nodeFromID</b>(const idString: WideString): <a   href="ACBrMSXML2_TLB.IXMLDOMNode.html">IXMLDOMNode</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="load"></a><code>function <b>load</b>(xmlSource: OleVariant): WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_readyState"></a><code>function <b>Get_readyState</b>: Integer; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_parseError"></a><code>function <b>Get_parseError</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMParseError.html">IXMLDOMParseError</a>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_url"></a><code>function <b>Get_url</b>: WideString; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_async"></a><code>function <b>Get_async</b>: WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_async"></a><code>procedure <b>Set_async</b>(isAsync: WordBool); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="abort"></a><code>procedure <b>abort</b>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="loadXML"></a><code>function <b>loadXML</b>(const bstrXML: WideString): WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="save"></a><code>procedure <b>save</b>(destination: OleVariant); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_validateOnParse"></a><code>function <b>Get_validateOnParse</b>: WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_validateOnParse"></a><code>procedure <b>Set_validateOnParse</b>(isValidating: WordBool); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_resolveExternals"></a><code>function <b>Get_resolveExternals</b>: WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_resolveExternals"></a><code>procedure <b>Set_resolveExternals</b>(isResolving: WordBool); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_preserveWhiteSpace"></a><code>function <b>Get_preserveWhiteSpace</b>: WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_preserveWhiteSpace"></a><code>procedure <b>Set_preserveWhiteSpace</b>(isPreserving: WordBool); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_onreadystatechange"></a><code>procedure <b>Set_onreadystatechange</b>(Param1: OleVariant); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_ondataavailable"></a><code>procedure <b>Set_ondataavailable</b>(Param1: OleVariant); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_ontransformnode"></a><code>procedure <b>Set_ontransformnode</b>(Param1: OleVariant); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="doctype"></a><code>property <b>doctype</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMDocumentType.html">IXMLDOMDocumentType</a> read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_doctype">Get_doctype</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="implementation_"></a><code>property <b>implementation_</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMImplementation.html">IXMLDOMImplementation</a> read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_implementation_">Get_implementation_</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="documentElement"></a><code>property <b>documentElement</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMElement.html">IXMLDOMElement</a> read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_documentElement">Get_documentElement</a> write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#_Set_documentElement">_Set_documentElement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="readyState"></a><code>property <b>readyState</b>: Integer read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_readyState">Get_readyState</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="parseError"></a><code>property <b>parseError</b>: <a   href="ACBrMSXML2_TLB.IXMLDOMParseError.html">IXMLDOMParseError</a> read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_parseError">Get_parseError</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="url"></a><code>property <b>url</b>: WideString read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_url">Get_url</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="async"></a><code>property <b>async</b>: WordBool read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_async">Get_async</a> write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_async">Set_async</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="validateOnParse"></a><code>property <b>validateOnParse</b>: WordBool read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_validateOnParse">Get_validateOnParse</a> write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_validateOnParse">Set_validateOnParse</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="resolveExternals"></a><code>property <b>resolveExternals</b>: WordBool read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_resolveExternals">Get_resolveExternals</a> write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_resolveExternals">Set_resolveExternals</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="preserveWhiteSpace"></a><code>property <b>preserveWhiteSpace</b>: WordBool read <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Get_preserveWhiteSpace">Get_preserveWhiteSpace</a> write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_preserveWhiteSpace">Set_preserveWhiteSpace</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="onreadystatechange"></a><code>property <b>onreadystatechange</b>: OleVariant write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_onreadystatechange">Set_onreadystatechange</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ondataavailable"></a><code>property <b>ondataavailable</b>: OleVariant write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_ondataavailable">Set_ondataavailable</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ontransformnode"></a><code>property <b>ontransformnode</b>: OleVariant write <a   href="ACBrMSXML2_TLB.IXMLDOMDocument.html#Set_ontransformnode">Set_ontransformnode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:42</em>
+</span>
+</body></html>

@@ -1,0 +1,1059 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: Gif1: Classe TGif</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TGif"></a><h1 class="cio">Classe TGif</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="Gif1.html">Gif1</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TGif = class(TObject)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+define a GIF</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TGif</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="Gif1.TGif.html#fIOStream">fIOStream</a></b>:              TMemoryStream;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="Gif1.TGif.html#fDataStream">fDataStream</a></b>:            TMemoryStream;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="Gif1.TGif.html#fExtension">fExtension</a></b>:             TList;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="Gif1.TGif.html#fSignature">fSignature</a></b>:             <a   href="Gif1.html#PGifSignature">PGifSignature</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="Gif1.TGif.html#fScreenDescriptor">fScreenDescriptor</a></b>:      <a   href="Gif1.html#PGifScreenDescriptor">PGifScreenDescriptor</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="Gif1.TGif.html#fImageDescriptorList">fImageDescriptorList</a></b>:   TList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="Gif1.TGif.html#fColorTableList">fColorTableList</a></b>:        TList;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="Gif1.TGif.html#fPaletteList">fPaletteList</a></b>:           TList;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="Gif1.TGif.html#fZipData">fZipData</a></b>:               <a   href="Gif1.html#PGifZip">PGifZip</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="Gif1.TGif.html#FLoopCount">FLoopCount</a></b>:             integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="Gif1.TGif.html#FStripBitmap">FStripBitmap</a></b>: TBitmap;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetStripBitmap">GetStripBitmap</a></b>: TBitmap;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetHeight">GetHeight</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetWidth">GetWidth</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetTransparent">GetTransparent</a></b>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#ReadSignature">ReadSignature</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#ReadScreenDescriptor">ReadScreenDescriptor</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#ReadColorTable">ReadColorTable</a></b>(Size: integer; var Table: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#ReadImageDescriptor">ReadImageDescriptor</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#ReadDataBlockList">ReadDataBlockList</a></b>(List: TList);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#ReadExtension">ReadExtension</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#ReadSourceInteger">ReadSourceInteger</a></b>(size: integer; var value: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#LZWDecode">LZWDecode</a></b>(pID: <a   href="Gif1.html#PGifImageDescriptor">PGifImageDescriptor</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#LZWInit">LZWInit</a></b>(pID: <a   href="Gif1.html#PGifImageDescriptor">PGifImageDescriptor</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#LZWFinit">LZWFinit</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#LZWReset">LZWReset</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#LZWGetCode">LZWGetCode</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#LZWSaveCode">LZWSaveCode</a></b>(Code: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#LZWDecodeCode">LZWDecodeCode</a></b>(var Code: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#LZWSaveSlot">LZWSaveSlot</a></b>(Prefix, Suffix: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#LZWIncrPosition">LZWIncrPosition</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#LZWCheckSlot">LZWCheckSlot</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#LZWWriteBitmap">LZWWriteBitmap</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#LZWReadBitmap">LZWReadBitmap</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetSignature">GetSignature</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetScreenDescriptor">GetScreenDescriptor</a></b>: <a   href="Gif1.html#PGifScreenDescriptor">PGifScreenDescriptor</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetImageCount">GetImageCount</a></b>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetImageDescriptor">GetImageDescriptor</a></b>(image: integer): <a   href="Gif1.html#PGifImageDescriptor">PGifImageDescriptor</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetBitmap">GetBitmap</a></b>(image: integer): TBitmap;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetColorTableCount">GetColorTableCount</a></b>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetColorTable">GetColorTable</a></b>(table: integer): <a   href="Gif1.html#PGifColorTable">PGifColorTable</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetImageDelay">GetImageDelay</a></b>(Image: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetImageDisposal">GetImageDisposal</a></b>(Image: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetColorIndex">GetColorIndex</a></b>(image, x, y: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetTransparentIndex">GetTransparentIndex</a></b>(image: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetTransparentColor">GetTransparentColor</a></b>: TColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetImageLeft">GetImageLeft</a></b>(image: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetImageTop">GetImageTop</a></b>(image: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetImageWidth">GetImageWidth</a></b>(image: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetImageHeight">GetImageHeight</a></b>(image: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#GetImageDepth">GetImageDepth</a></b>(image: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#FreeDataBlockList">FreeDataBlockList</a></b>(var list: TList);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#FreeExtensionList">FreeExtensionList</a></b>(var list: TList);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#MakeBitmaps">MakeBitmaps</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#FindGraphicExtension">FindGraphicExtension</a></b>(image: integer): <a   href="Gif1.html#PGifExtensionGraphic">PGifExtensionGraphic</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="Gif1.TGif.html#FindColorIndex">FindColorIndex</a></b>(c: TColor; ct: <a   href="Gif1.html#PGifColorTable">PGifColorTable</a>): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#ExtractLoopCount">ExtractLoopCount</a></b>(List: TList);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="Gif1.TGif.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#Free">Free</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#FreeImage">FreeImage</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="Gif1.TGif.html#LoadFromStream">LoadFromStream</a></b>(Source: TStream);</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#Signature">Signature</a></b>: string                  read <a   href="Gif1.TGif.html#GetSignature">GetSignature</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#ScreenDescriptor">ScreenDescriptor</a></b>: <a   href="Gif1.html#PGifScreenDescriptor">PGifScreenDescriptor</a>    read <a   href="Gif1.TGif.html#GetScreenDescriptor">GetScreenDescriptor</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#ImageCount">ImageCount</a></b>: integer                 read <a   href="Gif1.TGif.html#GetImageCount">GetImageCount</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#ImageDescriptor">ImageDescriptor</a></b>[Image: integer]: <a   href="Gif1.html#PGifImageDescriptor">PGifImageDescriptor</a>     read <a   href="Gif1.TGif.html#GetImageDescriptor">GetImageDescriptor</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#Bitmap">Bitmap</a></b>[Image: integer]: TBitmap                 read <a   href="Gif1.TGif.html#GetBitmap">GetBitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#ColorTableCount">ColorTableCount</a></b>: integer                 read <a   href="Gif1.TGif.html#GetColorTableCount">GetColorTableCount</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#ColorTable">ColorTable</a></b>[Table: integer]: <a   href="Gif1.html#PGifColorTable">PGifColorTable</a>          read <a   href="Gif1.TGif.html#GetColorTable">GetColorTable</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#Height">Height</a></b>: integer                 read <a   href="Gif1.TGif.html#GetHeight">GetHeight</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#Width">Width</a></b>: integer                 read <a   href="Gif1.TGif.html#GetWidth">GetWidth</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#ImageDelay">ImageDelay</a></b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetImageDelay">GetImageDelay</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#ImageDisposal">ImageDisposal</a></b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetImageDisposal">GetImageDisposal</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#Transparent">Transparent</a></b>: boolean                 read <a   href="Gif1.TGif.html#GetTransparent">GetTransparent</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#TransparentIndex">TransparentIndex</a></b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetTransparentIndex">GetTransparentIndex</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#TransparentColor">TransparentColor</a></b>: TColor                  read <a   href="Gif1.TGif.html#GetTransparentColor">GetTransparentColor</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#ImageLeft">ImageLeft</a></b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetImageLeft">GetImageLeft</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#ImageTop">ImageTop</a></b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetImageTop">GetImageTop</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#ImageWidth">ImageWidth</a></b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetImageWidth">GetImageWidth</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#ImageHeight">ImageHeight</a></b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetImageHeight">GetImageHeight</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#ImageDepth">ImageDepth</a></b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetImageDepth">GetImageDepth</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#LoopCount">LoopCount</a></b>: integer                 read <a   href="Gif1.TGif.html#FLoopCount">FLoopCount</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="Gif1.TGif.html#StripBitmap">StripBitmap</a></b>: TBitmap                 read <a   href="Gif1.TGif.html#GetStripBitmap">GetStripBitmap</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fIOStream"></a><code><b>fIOStream</b>:              TMemoryStream;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fDataStream"></a><code><b>fDataStream</b>:            TMemoryStream;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+read or write the image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fExtension"></a><code><b>fExtension</b>:             TList;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+temp storage for LZW</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fSignature"></a><code><b>fSignature</b>:             <a   href="Gif1.html#PGifSignature">PGifSignature</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+latest <a class="normal"  href="ACBrCAPICOM_TLB.html#Extensions">extensions</a> read/written</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fScreenDescriptor"></a><code><b>fScreenDescriptor</b>:      <a   href="Gif1.html#PGifScreenDescriptor">PGifScreenDescriptor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+version of GIF</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fImageDescriptorList"></a><code><b>fImageDescriptorList</b>:   TList;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+logical screen descriptor</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fColorTableList"></a><code><b>fColorTableList</b>:        TList;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+list of all images</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fPaletteList"></a><code><b>fPaletteList</b>:           TList;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+list of all color tables</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fZipData"></a><code><b>fZipData</b>:               <a   href="Gif1.html#PGifZip">PGifZip</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+list of palettes from color tables</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FLoopCount"></a><code><b>FLoopCount</b>:             integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+for encode/decode image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FStripBitmap"></a><code><b>FStripBitmap</b>: TBitmap;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+number of animated iterations</p>
+</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetStripBitmap"></a><code>function <b>GetStripBitmap</b>: TBitmap;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetHeight"></a><code>function <b>GetHeight</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+functions that override TGraphic items</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetWidth"></a><code>function <b>GetWidth</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="GetTransparent"></a><code>function <b>GetTransparent</b>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="ReadSignature"></a><code>procedure <b>ReadSignature</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+procedures to read a <a class="normal"  href="Gif1.TGif.html#Bitmap">bitmap</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="ReadScreenDescriptor"></a><code>procedure <b>ReadScreenDescriptor</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="ReadColorTable"></a><code>procedure <b>ReadColorTable</b>(Size: integer; var Table: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="ReadImageDescriptor"></a><code>procedure <b>ReadImageDescriptor</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="ReadDataBlockList"></a><code>procedure <b>ReadDataBlockList</b>(List: TList);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="ReadExtension"></a><code>procedure <b>ReadExtension</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="ReadSourceInteger"></a><code>procedure <b>ReadSourceInteger</b>(size: integer; var value: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LZWDecode"></a><code>procedure <b>LZWDecode</b>(pID: <a   href="Gif1.html#PGifImageDescriptor">PGifImageDescriptor</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+LZW encode and decode</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LZWInit"></a><code>procedure <b>LZWInit</b>(pID: <a   href="Gif1.html#PGifImageDescriptor">PGifImageDescriptor</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LZWFinit"></a><code>procedure <b>LZWFinit</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LZWReset"></a><code>procedure <b>LZWReset</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LZWGetCode"></a><code>function <b>LZWGetCode</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LZWSaveCode"></a><code>procedure <b>LZWSaveCode</b>(Code: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LZWDecodeCode"></a><code>procedure <b>LZWDecodeCode</b>(var Code: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LZWSaveSlot"></a><code>procedure <b>LZWSaveSlot</b>(Prefix, Suffix: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LZWIncrPosition"></a><code>procedure <b>LZWIncrPosition</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LZWCheckSlot"></a><code>procedure <b>LZWCheckSlot</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LZWWriteBitmap"></a><code>procedure <b>LZWWriteBitmap</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="LZWReadBitmap"></a><code>function <b>LZWReadBitmap</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetSignature"></a><code>function <b>GetSignature</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+procedures used to implement the PROPERTIES</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetScreenDescriptor"></a><code>function <b>GetScreenDescriptor</b>: <a   href="Gif1.html#PGifScreenDescriptor">PGifScreenDescriptor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetImageCount"></a><code>function <b>GetImageCount</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetImageDescriptor"></a><code>function <b>GetImageDescriptor</b>(image: integer): <a   href="Gif1.html#PGifImageDescriptor">PGifImageDescriptor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetBitmap"></a><code>function <b>GetBitmap</b>(image: integer): TBitmap;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetColorTableCount"></a><code>function <b>GetColorTableCount</b>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetColorTable"></a><code>function <b>GetColorTable</b>(table: integer): <a   href="Gif1.html#PGifColorTable">PGifColorTable</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetImageDelay"></a><code>function <b>GetImageDelay</b>(Image: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetImageDisposal"></a><code>function <b>GetImageDisposal</b>(Image: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+LDB</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetColorIndex"></a><code>function <b>GetColorIndex</b>(image, x, y: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+LDB</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetTransparentIndex"></a><code>function <b>GetTransparentIndex</b>(image: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetTransparentColor"></a><code>function <b>GetTransparentColor</b>: TColor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetImageLeft"></a><code>function <b>GetImageLeft</b>(image: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetImageTop"></a><code>function <b>GetImageTop</b>(image: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetImageWidth"></a><code>function <b>GetImageWidth</b>(image: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetImageHeight"></a><code>function <b>GetImageHeight</b>(image: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetImageDepth"></a><code>function <b>GetImageDepth</b>(image: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FreeDataBlockList"></a><code>procedure <b>FreeDataBlockList</b>(var list: TList);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+generally usefull routines</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FreeExtensionList"></a><code>procedure <b>FreeExtensionList</b>(var list: TList);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="MakeBitmaps"></a><code>procedure <b>MakeBitmaps</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FindGraphicExtension"></a><code>function <b>FindGraphicExtension</b>(image: integer): <a   href="Gif1.html#PGifExtensionGraphic">PGifExtensionGraphic</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FindColorIndex"></a><code>function <b>FindColorIndex</b>(c: TColor; ct: <a   href="Gif1.html#PGifColorTable">PGifColorTable</a>): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="ExtractLoopCount"></a><code>procedure <b>ExtractLoopCount</b>(List: TList);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Free"></a><code>procedure <b>Free</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FreeImage"></a><code>procedure <b>FreeImage</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadFromStream"></a><code>procedure <b>LoadFromStream</b>(Source: TStream);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Signature"></a><code>property <b>Signature</b>: string                  read <a   href="Gif1.TGif.html#GetSignature">GetSignature</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ScreenDescriptor"></a><code>property <b>ScreenDescriptor</b>: <a   href="Gif1.html#PGifScreenDescriptor">PGifScreenDescriptor</a>    read <a   href="Gif1.TGif.html#GetScreenDescriptor">GetScreenDescriptor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ImageCount"></a><code>property <b>ImageCount</b>: integer                 read <a   href="Gif1.TGif.html#GetImageCount">GetImageCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ImageDescriptor"></a><code>property <b>ImageDescriptor</b>[Image: integer]: <a   href="Gif1.html#PGifImageDescriptor">PGifImageDescriptor</a>     read <a   href="Gif1.TGif.html#GetImageDescriptor">GetImageDescriptor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Bitmap"></a><code>property <b>Bitmap</b>[Image: integer]: TBitmap                 read <a   href="Gif1.TGif.html#GetBitmap">GetBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ColorTableCount"></a><code>property <b>ColorTableCount</b>: integer                 read <a   href="Gif1.TGif.html#GetColorTableCount">GetColorTableCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ColorTable"></a><code>property <b>ColorTable</b>[Table: integer]: <a   href="Gif1.html#PGifColorTable">PGifColorTable</a>          read <a   href="Gif1.TGif.html#GetColorTable">GetColorTable</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Height"></a><code>property <b>Height</b>: integer                 read <a   href="Gif1.TGif.html#GetHeight">GetHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Width"></a><code>property <b>Width</b>: integer                 read <a   href="Gif1.TGif.html#GetWidth">GetWidth</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ImageDelay"></a><code>property <b>ImageDelay</b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetImageDelay">GetImageDelay</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ImageDisposal"></a><code>property <b>ImageDisposal</b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetImageDisposal">GetImageDisposal</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Transparent"></a><code>property <b>Transparent</b>: boolean                 read <a   href="Gif1.TGif.html#GetTransparent">GetTransparent</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TransparentIndex"></a><code>property <b>TransparentIndex</b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetTransparentIndex">GetTransparentIndex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TransparentColor"></a><code>property <b>TransparentColor</b>: TColor                  read <a   href="Gif1.TGif.html#GetTransparentColor">GetTransparentColor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ImageLeft"></a><code>property <b>ImageLeft</b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetImageLeft">GetImageLeft</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ImageTop"></a><code>property <b>ImageTop</b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetImageTop">GetImageTop</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ImageWidth"></a><code>property <b>ImageWidth</b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetImageWidth">GetImageWidth</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ImageHeight"></a><code>property <b>ImageHeight</b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetImageHeight">GetImageHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ImageDepth"></a><code>property <b>ImageDepth</b>[Image: integer]: integer                 read <a   href="Gif1.TGif.html#GetImageDepth">GetImageDepth</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoopCount"></a><code>property <b>LoopCount</b>: integer                 read <a   href="Gif1.TGif.html#FLoopCount">FLoopCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StripBitmap"></a><code>property <b>StripBitmap</b>: TBitmap                 read <a   href="Gif1.TGif.html#GetStripBitmap">GetStripBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:56</em>
+</span>
+</body></html>

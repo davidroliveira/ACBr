@@ -1,0 +1,437 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: QRMultiExport: Classe TQRMultiExport</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TQRMultiExport"></a><h1 class="cio">Classe TQRMultiExport</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="QRMultiExport.html">QRMultiExport</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TQRMultiExport = class(TComponent)</code></p>
+<h2 class="description">Descrição</h2>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="thisitem">TQRMultiExport</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="QRMultiExport.TQRMultiExport.html#FReport">FReport</a></b>: TQuickRep;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="QRMultiExport.TQRMultiExport.html#FWidth">FWidth</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="QRMultiExport.TQRMultiExport.html#FHeight">FHeight</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="QRMultiExport.TQRMultiExport.html#FCompression">FCompression</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="QRMultiExport.TQRMultiExport.html#FExportFormat">FExportFormat</a></b>: <a   href="QRMultiExport.html#TQRExportFormat">TQRExportFormat</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="QRMultiExport.TQRMultiExport.html#FPixelFormat">FPixelFormat</a></b>: TPixelFormat;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="QRMultiExport.TQRMultiExport.html#FShowDialog">FShowDialog</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="QRMultiExport.TQRMultiExport.html#FFileName">FFileName</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="QRMultiExport.TQRMultiExport.html#FDialogTitle">FDialogTitle</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="QRMultiExport.TQRMultiExport.html#Fdpi">Fdpi</a></b>: Real;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="QRMultiExport.TQRMultiExport.html#FOnBeginExport">FOnBeginExport</a></b>: TNotifyEvent;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="QRMultiExport.TQRMultiExport.html#FOnFinishExport">FOnFinishExport</a></b>: TNotifyEvent;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="QRMultiExport.TQRMultiExport.html#FOnPage">FOnPage</a></b>: <a   href="QRMultiExport.html#TNotifyPageEvent">TNotifyPageEvent</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="QRMultiExport.TQRMultiExport.html#FOnPrepare">FOnPrepare</a></b>: <a   href="QRMultiExport.html#TNotifyPrepEvent">TNotifyPrepEvent</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="QRMultiExport.TQRMultiExport.html#FMetaFile">FMetaFile</a></b>: TMetafile;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="QRMultiExport.TQRMultiExport.html#SetCompression">SetCompression</a></b>(const Value : Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="QRMultiExport.TQRMultiExport.html#SetDPI">SetDPI</a></b>(const Value : Real);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="QRMultiExport.TQRMultiExport.html#Create">Create</a></b>(AOwner : TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="QRMultiExport.TQRMultiExport.html#DoExport">DoExport</a></b>;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="QRMultiExport.TQRMultiExport.html#Report">Report</a></b>       : TQuickRep read <a   href="QRMultiExport.TQRMultiExport.html#FReport">FReport</a> write <a   href="QRMultiExport.TQRMultiExport.html#FReport">FReport</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="QRMultiExport.TQRMultiExport.html#MinWidth">MinWidth</a></b>     : Integer read <a   href="QRMultiExport.TQRMultiExport.html#FWidth">FWidth</a> write <a   href="QRMultiExport.TQRMultiExport.html#FWidth">FWidth</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="QRMultiExport.TQRMultiExport.html#MinHeight">MinHeight</a></b>    : Integer read <a   href="QRMultiExport.TQRMultiExport.html#FHeight">FHeight</a> write <a   href="QRMultiExport.TQRMultiExport.html#FHeight">FHeight</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="QRMultiExport.TQRMultiExport.html#Compression">Compression</a></b>  : Integer read <a   href="QRMultiExport.TQRMultiExport.html#FCompression">FCompression</a> write <a   href="QRMultiExport.TQRMultiExport.html#SetCompression">SetCompression</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="QRMultiExport.TQRMultiExport.html#PixelFormat">PixelFormat</a></b>  : TPixelFormat read <a   href="QRMultiExport.TQRMultiExport.html#FPixelFormat">FPixelFormat</a> write <a   href="QRMultiExport.TQRMultiExport.html#FPixelFormat">FPixelFormat</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="QRMultiExport.TQRMultiExport.html#ExportFormat">ExportFormat</a></b> : <a   href="QRMultiExport.html#TQRExportFormat">TQRExportFormat</a> read <a   href="QRMultiExport.TQRMultiExport.html#FExportFormat">FExportFormat</a> write <a   href="QRMultiExport.TQRMultiExport.html#FExportFormat">FExportFormat</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="QRMultiExport.TQRMultiExport.html#DPI">DPI</a></b>          : Real read <a   href="QRMultiExport.TQRMultiExport.html#Fdpi">Fdpi</a> write <a   href="QRMultiExport.TQRMultiExport.html#SetDPI">SetDPI</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="QRMultiExport.TQRMultiExport.html#FileName">FileName</a></b>     : String read <a   href="QRMultiExport.TQRMultiExport.html#FFileName">FFileName</a> write <a   href="QRMultiExport.TQRMultiExport.html#FFileName">FFileName</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="QRMultiExport.TQRMultiExport.html#ShowDialog">ShowDialog</a></b>   : Boolean read <a   href="QRMultiExport.TQRMultiExport.html#FShowDialog">FShowDialog</a> write <a   href="QRMultiExport.TQRMultiExport.html#FShowDialog">FShowDialog</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="QRMultiExport.TQRMultiExport.html#DialogTitle">DialogTitle</a></b>  : String read <a   href="QRMultiExport.TQRMultiExport.html#FDialogTitle">FDialogTitle</a> write <a   href="QRMultiExport.TQRMultiExport.html#FDialogTitle">FDialogTitle</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="QRMultiExport.TQRMultiExport.html#OnBeginExport">OnBeginExport</a></b>  : TNotifyEvent read <a   href="QRMultiExport.TQRMultiExport.html#FOnBeginExport">FOnBeginExport</a> write <a   href="QRMultiExport.TQRMultiExport.html#FOnBeginExport">FOnBeginExport</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="QRMultiExport.TQRMultiExport.html#OnFinishExport">OnFinishExport</a></b> : TNotifyEvent read <a   href="QRMultiExport.TQRMultiExport.html#FOnFinishExport">FOnFinishExport</a> write <a   href="QRMultiExport.TQRMultiExport.html#FOnFinishExport">FOnFinishExport</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="QRMultiExport.TQRMultiExport.html#OnPrepare">OnPrepare</a></b>      : <a   href="QRMultiExport.html#TNotifyPrepEvent">TNotifyPrepEvent</a> read <a   href="QRMultiExport.TQRMultiExport.html#FOnPrepare">FOnPrepare</a> write <a   href="QRMultiExport.TQRMultiExport.html#FOnPrepare">FOnPrepare</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="QRMultiExport.TQRMultiExport.html#OnPage">OnPage</a></b>         : <a   href="QRMultiExport.html#TNotifyPageEvent">TNotifyPageEvent</a> read <a   href="QRMultiExport.TQRMultiExport.html#FOnPage">FOnPage</a> write <a   href="QRMultiExport.TQRMultiExport.html#FOnPage">FOnPage</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FReport"></a><code><b>FReport</b>: TQuickRep;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Private declarations</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FWidth"></a><code><b>FWidth</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FHeight"></a><code><b>FHeight</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCompression"></a><code><b>FCompression</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FExportFormat"></a><code><b>FExportFormat</b>: <a   href="QRMultiExport.html#TQRExportFormat">TQRExportFormat</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FPixelFormat"></a><code><b>FPixelFormat</b>: TPixelFormat;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FShowDialog"></a><code><b>FShowDialog</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FFileName"></a><code><b>FFileName</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FDialogTitle"></a><code><b>FDialogTitle</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Fdpi"></a><code><b>Fdpi</b>: Real;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FOnBeginExport"></a><code><b>FOnBeginExport</b>: TNotifyEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FOnFinishExport"></a><code><b>FOnFinishExport</b>: TNotifyEvent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FOnPage"></a><code><b>FOnPage</b>: <a   href="QRMultiExport.html#TNotifyPageEvent">TNotifyPageEvent</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FOnPrepare"></a><code><b>FOnPrepare</b>: <a   href="QRMultiExport.html#TNotifyPrepEvent">TNotifyPrepEvent</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FMetaFile"></a><code><b>FMetaFile</b>: TMetafile;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetCompression"></a><code>procedure <b>SetCompression</b>(const Value : Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetDPI"></a><code>procedure <b>SetDPI</b>(const Value : Real);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner : TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DoExport"></a><code>procedure <b>DoExport</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Report"></a><code>property <b>Report</b>       : TQuickRep read <a   href="QRMultiExport.TQRMultiExport.html#FReport">FReport</a> write <a   href="QRMultiExport.TQRMultiExport.html#FReport">FReport</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MinWidth"></a><code>property <b>MinWidth</b>     : Integer read <a   href="QRMultiExport.TQRMultiExport.html#FWidth">FWidth</a> write <a   href="QRMultiExport.TQRMultiExport.html#FWidth">FWidth</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MinHeight"></a><code>property <b>MinHeight</b>    : Integer read <a   href="QRMultiExport.TQRMultiExport.html#FHeight">FHeight</a> write <a   href="QRMultiExport.TQRMultiExport.html#FHeight">FHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Compression"></a><code>property <b>Compression</b>  : Integer read <a   href="QRMultiExport.TQRMultiExport.html#FCompression">FCompression</a> write <a   href="QRMultiExport.TQRMultiExport.html#SetCompression">SetCompression</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="PixelFormat"></a><code>property <b>PixelFormat</b>  : TPixelFormat read <a   href="QRMultiExport.TQRMultiExport.html#FPixelFormat">FPixelFormat</a> write <a   href="QRMultiExport.TQRMultiExport.html#FPixelFormat">FPixelFormat</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ExportFormat"></a><code>property <b>ExportFormat</b> : <a   href="QRMultiExport.html#TQRExportFormat">TQRExportFormat</a> read <a   href="QRMultiExport.TQRMultiExport.html#FExportFormat">FExportFormat</a> write <a   href="QRMultiExport.TQRMultiExport.html#FExportFormat">FExportFormat</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DPI"></a><code>property <b>DPI</b>          : Real read <a   href="QRMultiExport.TQRMultiExport.html#Fdpi">Fdpi</a> write <a   href="QRMultiExport.TQRMultiExport.html#SetDPI">SetDPI</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="FileName"></a><code>property <b>FileName</b>     : String read <a   href="QRMultiExport.TQRMultiExport.html#FFileName">FFileName</a> write <a   href="QRMultiExport.TQRMultiExport.html#FFileName">FFileName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ShowDialog"></a><code>property <b>ShowDialog</b>   : Boolean read <a   href="QRMultiExport.TQRMultiExport.html#FShowDialog">FShowDialog</a> write <a   href="QRMultiExport.TQRMultiExport.html#FShowDialog">FShowDialog</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="DialogTitle"></a><code>property <b>DialogTitle</b>  : String read <a   href="QRMultiExport.TQRMultiExport.html#FDialogTitle">FDialogTitle</a> write <a   href="QRMultiExport.TQRMultiExport.html#FDialogTitle">FDialogTitle</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnBeginExport"></a><code>property <b>OnBeginExport</b>  : TNotifyEvent read <a   href="QRMultiExport.TQRMultiExport.html#FOnBeginExport">FOnBeginExport</a> write <a   href="QRMultiExport.TQRMultiExport.html#FOnBeginExport">FOnBeginExport</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnFinishExport"></a><code>property <b>OnFinishExport</b> : TNotifyEvent read <a   href="QRMultiExport.TQRMultiExport.html#FOnFinishExport">FOnFinishExport</a> write <a   href="QRMultiExport.TQRMultiExport.html#FOnFinishExport">FOnFinishExport</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnPrepare"></a><code>property <b>OnPrepare</b>      : <a   href="QRMultiExport.html#TNotifyPrepEvent">TNotifyPrepEvent</a> read <a   href="QRMultiExport.TQRMultiExport.html#FOnPrepare">FOnPrepare</a> write <a   href="QRMultiExport.TQRMultiExport.html#FOnPrepare">FOnPrepare</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnPage"></a><code>property <b>OnPage</b>         : <a   href="QRMultiExport.html#TNotifyPageEvent">TNotifyPageEvent</a> read <a   href="QRMultiExport.TQRMultiExport.html#FOnPage">FOnPage</a> write <a   href="QRMultiExport.TQRMultiExport.html#FOnPage">FOnPage</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:21:05</em>
+</span>
+</body></html>

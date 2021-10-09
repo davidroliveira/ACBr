@@ -1,0 +1,10 @@
+NF-e  - Protocolo ENAT 03/2005, de 27/08/2005 - instituído pelo AJUSTE SINIEF 07/05, de 05/10/2007
+CT-e  - Protocolo ENAT 03/2006, de 10/11/2006 - instituído pelo AJUSTE SINIEF 09/07, de 25/10/2007
+NFS-e - Protocolo ENAT 02/2007, de 07/12/2007 -
+MDF-e -                                       - instituído pelo AJUSTE SINIEF 21/10, de 10/12/2010
+NFC-e -                                       - instituído pelo AJUSTE SINIEF 19/16, de 09/12/2016
+BP-e  -                                       - instituído pelo AJUSTE SINIEF 01/17, de 07/04/2017
+NF3-e -                                       - instituído pelo AJUSTE SINIEF 01/19, de 05/04/2019
+NFF   -                                       - instituído pelo AJUSTE SINIEF 37/19, de 13/12/2019
+DC-e  -                                       - instituído pelo AJUSTE SINIEF 05/21, de 08/04/2021
+

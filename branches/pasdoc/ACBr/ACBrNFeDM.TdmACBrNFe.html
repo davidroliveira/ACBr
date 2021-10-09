@@ -1,0 +1,987 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrNFeDM: Classe TdmACBrNFe</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TdmACBrNFe"></a><h1 class="cio">Classe TdmACBrNFe</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrNFeDM.html">ACBrNFeDM</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TdmACBrNFe = class(TDataModule)</code></p>
+<h2 class="description">Descrição</h2>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TDataModule</li>
+<li class="thisitem">TdmACBrNFe</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#FNFe">FNFe</a></b>: <a   href="pcnNFe.TNFe.html">TNFe</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#FLogo">FLogo</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#FSistema">FSistema</a></b>:String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#FUsuario">FUsuario</a></b>:String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#FPathArquivos">FPathArquivos</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#FImpressora">FImpressora</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#FImprimirHoraSaida">FImprimirHoraSaida</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#FImprimirDataEmissao">FImprimirDataEmissao</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#FMostrarPreview">FMostrarPreview</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#RvSystem1">RvSystem1</a></b>: TRvSystem;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#RvProject">RvProject</a></b>: TRvProject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#RvRenderPDF1">RvRenderPDF1</a></b>: TRvRenderPDF;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomDestinatarioCXN">CustomDestinatarioCXN</a></b>: TRvCustomConnection;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomEmitenteCXN">CustomEmitenteCXN</a></b>: TRvCustomConnection;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomDadosProdutosCXN">CustomDadosProdutosCXN</a></b>: TRvCustomConnection;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomTransportadorCXN">CustomTransportadorCXN</a></b>: TRvCustomConnection;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomCalculoImpostoCXN">CustomCalculoImpostoCXN</a></b>: TRvCustomConnection;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomParametrosCXN">CustomParametrosCXN</a></b>: TRvCustomConnection;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomDuplicatasCXN">CustomDuplicatasCXN</a></b>: TRvCustomConnection;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomIdentificacaoCXN">CustomIdentificacaoCXN</a></b>: TRvCustomConnection;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomVeiculoCXN">CustomVeiculoCXN</a></b>: TRvCustomConnection;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomVolumesCXN">CustomVolumesCXN</a></b>: TRvCustomConnection;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomInformacoesAdicionaisCXN">CustomInformacoesAdicionaisCXN</a></b>: TRvCustomConnection;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#SetNFE">SetNFE</a></b>(const Value: TComponent);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#RvSystem1BeforePrint">RvSystem1BeforePrint</a></b>(Sender: TObject);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomDestinatarioCXNGetCols">CustomDestinatarioCXNGetCols</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomDestinatarioCXNGetRow">CustomDestinatarioCXNGetRow</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomDestinatarioCXNOpen">CustomDestinatarioCXNOpen</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomEmitenteCXNGetCols">CustomEmitenteCXNGetCols</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomEmitenteCXNOpen">CustomEmitenteCXNOpen</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomEmitenteCXNGetRow">CustomEmitenteCXNGetRow</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomCalculoImpostoCXNGetCols">CustomCalculoImpostoCXNGetCols</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomCalculoImpostoCXNGetRow">CustomCalculoImpostoCXNGetRow</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomCalculoImpostoCXNOpen">CustomCalculoImpostoCXNOpen</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomDadosProdutosCXNGetCols">CustomDadosProdutosCXNGetCols</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomDadosProdutosCXNOpen">CustomDadosProdutosCXNOpen</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomDadosProdutosCXNGetRow">CustomDadosProdutosCXNGetRow</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomTransportadorCXNGetCols">CustomTransportadorCXNGetCols</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomTransportadorCXNGetRow">CustomTransportadorCXNGetRow</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomTransportadorCXNOpen">CustomTransportadorCXNOpen</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomParametrosCXNGetCols">CustomParametrosCXNGetCols</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomParametrosCXNOpen">CustomParametrosCXNOpen</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomParametrosCXNGetRow">CustomParametrosCXNGetRow</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomIdentificacaoCXNGetCols">CustomIdentificacaoCXNGetCols</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomIdentificacaoCXNGetRow">CustomIdentificacaoCXNGetRow</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomIdentificacaoCXNOpen">CustomIdentificacaoCXNOpen</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomDuplicatasCXNGetCols">CustomDuplicatasCXNGetCols</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomDuplicatasCXNGetRow">CustomDuplicatasCXNGetRow</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomDuplicatasCXNOpen">CustomDuplicatasCXNOpen</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomVeiculoCXNGetCols">CustomVeiculoCXNGetCols</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomVeiculoCXNGetRow">CustomVeiculoCXNGetRow</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomVeiculoCXNOpen">CustomVeiculoCXNOpen</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomVolumesCXNGetCols">CustomVolumesCXNGetCols</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomVolumesCXNGetRow">CustomVolumesCXNGetRow</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomVolumesCXNOpen">CustomVolumesCXNOpen</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomInformacoesAdicionaisCXNGetCols">CustomInformacoesAdicionaisCXNGetCols</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomInformacoesAdicionaisCXNGetRow">CustomInformacoesAdicionaisCXNGetRow</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomInformacoesAdicionaisCXNOpen">CustomInformacoesAdicionaisCXNOpen</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomObservacaoFiscoCXNGetCols">CustomObservacaoFiscoCXNGetCols</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomObservacaoFiscoCXNGetRow">CustomObservacaoFiscoCXNGetRow</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomObservacaoFiscoCXNOpen">CustomObservacaoFiscoCXNOpen</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomISSQNCXNGetCols">CustomISSQNCXNGetCols</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomISSQNCXNGetRow">CustomISSQNCXNGetRow</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomISSQNCXNOpen">CustomISSQNCXNOpen</a></b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#CustomEmitenteCXNEOF">CustomEmitenteCXNEOF</a></b>(Connection: TRvCustomConnection; var Eof: Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#Notification">Notification</a></b>(AComponent: TComponent; Operation: TOperation); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrNFeDM.TdmACBrNFe.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrNFeDM.TdmACBrNFe.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#Imprimir">Imprimir</a></b>(ANFe: <a   href="pcnNFe.TNFe.html">TNFe</a>; ALogo: String = '');</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrNFeDM.TdmACBrNFe.html#ImprimirPDF">ImprimirPDF</a></b>(ANFe: <a   href="pcnNFe.TNFe.html">TNFe</a>; ALogo: String = '');</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrNFeDM.TdmACBrNFe.html#ACBrNFe">ACBrNFe</a></b> : TComponent  read <a   href="ACBrNFeDM.TdmACBrNFe.html#FNFe">FNFe</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#SetNFE">SetNFE</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrNFeDM.TdmACBrNFe.html#Logo">Logo</a></b>: String read <a   href="ACBrNFeDM.TdmACBrNFe.html#FLogo">FLogo</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FLogo">FLogo</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrNFeDM.TdmACBrNFe.html#Sistema">Sistema</a></b>: String read <a   href="ACBrNFeDM.TdmACBrNFe.html#FSistema">FSistema</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FSistema">FSistema</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrNFeDM.TdmACBrNFe.html#Usuario">Usuario</a></b>: String read <a   href="ACBrNFeDM.TdmACBrNFe.html#FUsuario">FUsuario</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FUsuario">FUsuario</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrNFeDM.TdmACBrNFe.html#PathArquivos">PathArquivos</a></b>: String read <a   href="ACBrNFeDM.TdmACBrNFe.html#FPathArquivos">FPathArquivos</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FPathArquivos">FPathArquivos</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrNFeDM.TdmACBrNFe.html#Impressora">Impressora</a></b>: String read <a   href="ACBrNFeDM.TdmACBrNFe.html#FImpressora">FImpressora</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FImpressora">FImpressora</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrNFeDM.TdmACBrNFe.html#ImprimirHoraSaida">ImprimirHoraSaida</a></b>: Boolean read <a   href="ACBrNFeDM.TdmACBrNFe.html#FImprimirHoraSaida">FImprimirHoraSaida</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FImprimirHoraSaida">FImprimirHoraSaida</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrNFeDM.TdmACBrNFe.html#ImprimirDataEmissao">ImprimirDataEmissao</a></b>: Boolean read <a   href="ACBrNFeDM.TdmACBrNFe.html#FImprimirDataEmissao">FImprimirDataEmissao</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FImprimirDataEmissao">FImprimirDataEmissao</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrNFeDM.TdmACBrNFe.html#MostrarPreview">MostrarPreview</a></b>: Boolean read <a   href="ACBrNFeDM.TdmACBrNFe.html#FMostrarPreview">FMostrarPreview</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FMostrarPreview">FMostrarPreview</a> ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FNFe"></a><code><b>FNFe</b>: <a   href="pcnNFe.TNFe.html">TNFe</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FLogo"></a><code><b>FLogo</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FSistema"></a><code><b>FSistema</b>:String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FUsuario"></a><code><b>FUsuario</b>:String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FPathArquivos"></a><code><b>FPathArquivos</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FImpressora"></a><code><b>FImpressora</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FImprimirHoraSaida"></a><code><b>FImprimirHoraSaida</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FImprimirDataEmissao"></a><code><b>FImprimirDataEmissao</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FMostrarPreview"></a><code><b>FMostrarPreview</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="RvSystem1"></a><code><b>RvSystem1</b>: TRvSystem;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="RvProject"></a><code><b>RvProject</b>: TRvProject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="RvRenderPDF1"></a><code><b>RvRenderPDF1</b>: TRvRenderPDF;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomDestinatarioCXN"></a><code><b>CustomDestinatarioCXN</b>: TRvCustomConnection;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomEmitenteCXN"></a><code><b>CustomEmitenteCXN</b>: TRvCustomConnection;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomDadosProdutosCXN"></a><code><b>CustomDadosProdutosCXN</b>: TRvCustomConnection;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomTransportadorCXN"></a><code><b>CustomTransportadorCXN</b>: TRvCustomConnection;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomCalculoImpostoCXN"></a><code><b>CustomCalculoImpostoCXN</b>: TRvCustomConnection;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomParametrosCXN"></a><code><b>CustomParametrosCXN</b>: TRvCustomConnection;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomDuplicatasCXN"></a><code><b>CustomDuplicatasCXN</b>: TRvCustomConnection;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomIdentificacaoCXN"></a><code><b>CustomIdentificacaoCXN</b>: TRvCustomConnection;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomVeiculoCXN"></a><code><b>CustomVeiculoCXN</b>: TRvCustomConnection;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomVolumesCXN"></a><code><b>CustomVolumesCXN</b>: TRvCustomConnection;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomInformacoesAdicionaisCXN"></a><code><b>CustomInformacoesAdicionaisCXN</b>: TRvCustomConnection;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetNFE"></a><code>procedure <b>SetNFE</b>(const Value: TComponent);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="RvSystem1BeforePrint"></a><code>procedure <b>RvSystem1BeforePrint</b>(Sender: TObject);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomDestinatarioCXNGetCols"></a><code>procedure <b>CustomDestinatarioCXNGetCols</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomDestinatarioCXNGetRow"></a><code>procedure <b>CustomDestinatarioCXNGetRow</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomDestinatarioCXNOpen"></a><code>procedure <b>CustomDestinatarioCXNOpen</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomEmitenteCXNGetCols"></a><code>procedure <b>CustomEmitenteCXNGetCols</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomEmitenteCXNOpen"></a><code>procedure <b>CustomEmitenteCXNOpen</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomEmitenteCXNGetRow"></a><code>procedure <b>CustomEmitenteCXNGetRow</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomCalculoImpostoCXNGetCols"></a><code>procedure <b>CustomCalculoImpostoCXNGetCols</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomCalculoImpostoCXNGetRow"></a><code>procedure <b>CustomCalculoImpostoCXNGetRow</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomCalculoImpostoCXNOpen"></a><code>procedure <b>CustomCalculoImpostoCXNOpen</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomDadosProdutosCXNGetCols"></a><code>procedure <b>CustomDadosProdutosCXNGetCols</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomDadosProdutosCXNOpen"></a><code>procedure <b>CustomDadosProdutosCXNOpen</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomDadosProdutosCXNGetRow"></a><code>procedure <b>CustomDadosProdutosCXNGetRow</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomTransportadorCXNGetCols"></a><code>procedure <b>CustomTransportadorCXNGetCols</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomTransportadorCXNGetRow"></a><code>procedure <b>CustomTransportadorCXNGetRow</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomTransportadorCXNOpen"></a><code>procedure <b>CustomTransportadorCXNOpen</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomParametrosCXNGetCols"></a><code>procedure <b>CustomParametrosCXNGetCols</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomParametrosCXNOpen"></a><code>procedure <b>CustomParametrosCXNOpen</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomParametrosCXNGetRow"></a><code>procedure <b>CustomParametrosCXNGetRow</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomIdentificacaoCXNGetCols"></a><code>procedure <b>CustomIdentificacaoCXNGetCols</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomIdentificacaoCXNGetRow"></a><code>procedure <b>CustomIdentificacaoCXNGetRow</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomIdentificacaoCXNOpen"></a><code>procedure <b>CustomIdentificacaoCXNOpen</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomDuplicatasCXNGetCols"></a><code>procedure <b>CustomDuplicatasCXNGetCols</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomDuplicatasCXNGetRow"></a><code>procedure <b>CustomDuplicatasCXNGetRow</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomDuplicatasCXNOpen"></a><code>procedure <b>CustomDuplicatasCXNOpen</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomVeiculoCXNGetCols"></a><code>procedure <b>CustomVeiculoCXNGetCols</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomVeiculoCXNGetRow"></a><code>procedure <b>CustomVeiculoCXNGetRow</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomVeiculoCXNOpen"></a><code>procedure <b>CustomVeiculoCXNOpen</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomVolumesCXNGetCols"></a><code>procedure <b>CustomVolumesCXNGetCols</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomVolumesCXNGetRow"></a><code>procedure <b>CustomVolumesCXNGetRow</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomVolumesCXNOpen"></a><code>procedure <b>CustomVolumesCXNOpen</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomInformacoesAdicionaisCXNGetCols"></a><code>procedure <b>CustomInformacoesAdicionaisCXNGetCols</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomInformacoesAdicionaisCXNGetRow"></a><code>procedure <b>CustomInformacoesAdicionaisCXNGetRow</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomInformacoesAdicionaisCXNOpen"></a><code>procedure <b>CustomInformacoesAdicionaisCXNOpen</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomObservacaoFiscoCXNGetCols"></a><code>procedure <b>CustomObservacaoFiscoCXNGetCols</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomObservacaoFiscoCXNGetRow"></a><code>procedure <b>CustomObservacaoFiscoCXNGetRow</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomObservacaoFiscoCXNOpen"></a><code>procedure <b>CustomObservacaoFiscoCXNOpen</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomISSQNCXNGetCols"></a><code>procedure <b>CustomISSQNCXNGetCols</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomISSQNCXNGetRow"></a><code>procedure <b>CustomISSQNCXNGetRow</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomISSQNCXNOpen"></a><code>procedure <b>CustomISSQNCXNOpen</b>(Connection: TRvCustomConnection);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="CustomEmitenteCXNEOF"></a><code>procedure <b>CustomEmitenteCXNEOF</b>(Connection: TRvCustomConnection; var Eof: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Notification"></a><code>procedure <b>Notification</b>(AComponent: TComponent; Operation: TOperation); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Imprimir"></a><code>procedure <b>Imprimir</b>(ANFe: <a   href="pcnNFe.TNFe.html">TNFe</a>; ALogo: String = '');</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ImprimirPDF"></a><code>procedure <b>ImprimirPDF</b>(ANFe: <a   href="pcnNFe.TNFe.html">TNFe</a>; ALogo: String = '');</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ACBrNFe"></a><code>property <b>ACBrNFe</b> : TComponent  read <a   href="ACBrNFeDM.TdmACBrNFe.html#FNFe">FNFe</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#SetNFE">SetNFE</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Logo"></a><code>property <b>Logo</b>: String read <a   href="ACBrNFeDM.TdmACBrNFe.html#FLogo">FLogo</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FLogo">FLogo</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Sistema"></a><code>property <b>Sistema</b>: String read <a   href="ACBrNFeDM.TdmACBrNFe.html#FSistema">FSistema</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FSistema">FSistema</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Usuario"></a><code>property <b>Usuario</b>: String read <a   href="ACBrNFeDM.TdmACBrNFe.html#FUsuario">FUsuario</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FUsuario">FUsuario</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="PathArquivos"></a><code>property <b>PathArquivos</b>: String read <a   href="ACBrNFeDM.TdmACBrNFe.html#FPathArquivos">FPathArquivos</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FPathArquivos">FPathArquivos</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="Impressora"></a><code>property <b>Impressora</b>: String read <a   href="ACBrNFeDM.TdmACBrNFe.html#FImpressora">FImpressora</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FImpressora">FImpressora</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ImprimirHoraSaida"></a><code>property <b>ImprimirHoraSaida</b>: Boolean read <a   href="ACBrNFeDM.TdmACBrNFe.html#FImprimirHoraSaida">FImprimirHoraSaida</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FImprimirHoraSaida">FImprimirHoraSaida</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ImprimirDataEmissao"></a><code>property <b>ImprimirDataEmissao</b>: Boolean read <a   href="ACBrNFeDM.TdmACBrNFe.html#FImprimirDataEmissao">FImprimirDataEmissao</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FImprimirDataEmissao">FImprimirDataEmissao</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MostrarPreview"></a><code>property <b>MostrarPreview</b>: Boolean read <a   href="ACBrNFeDM.TdmACBrNFe.html#FMostrarPreview">FMostrarPreview</a> write <a   href="ACBrNFeDM.TdmACBrNFe.html#FMostrarPreview">FMostrarPreview</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:49</em>
+</span>
+</body></html>

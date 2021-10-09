@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <Name Value="ACBr_Recopi"/>
+    <Type Value="RunAndDesignTime"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="../../../../Fontes/ACBrDFe/ACBrRecopi;../../../../Fontes/ACBrDFe/ACBrRecopi/PCNRecopi"/>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Files Count="18">
+      <Item1>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/ACBrRecopi.pas"/>
+        <UnitName Value="ACBrRecopi"/>
+      </Item1>
+      <Item2>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/ACBrRecopiReg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="ACBrRecopiReg"/>
+      </Item2>
+      <Item3>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/ACBrRecopiWebServices.pas"/>
+        <UnitName Value="ACBrRecopiWebServices"/>
+      </Item3>
+      <Item4>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/ACBrRecopiConfiguracoes.pas"/>
+        <UnitName Value="ACBrRecopiConfiguracoes"/>
+      </Item4>
+      <Item5>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/PCNRecopi/pcnConsConsultaPublica.pas"/>
+        <UnitName Value="pcnConsConsultaPublica"/>
+      </Item5>
+      <Item6>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/PCNRecopi/pcnConsObterVersao.pas"/>
+        <UnitName Value="pcnConsObterVersao"/>
+      </Item6>
+      <Item7>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/PCNRecopi/pcnRetConsConsultaPublica.pas"/>
+        <UnitName Value="pcnRetConsConsultaPublica"/>
+      </Item7>
+      <Item8>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/PCNRecopi/pcnRetConsObterVersao.pas"/>
+        <UnitName Value="pcnRetConsObterVersao"/>
+      </Item8>
+      <Item9>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/PCNRecopi/pcnConversaoRecopi.pas"/>
+        <UnitName Value="pcnConversaoRecopi"/>
+      </Item9>
+      <Item10>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/PCNRecopi/pcnRecopi.pas"/>
+        <UnitName Value="pcnRecopi"/>
+      </Item10>
+      <Item11>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/PCNRecopi/pcnConsPedidoSolicitacao.pas"/>
+        <UnitName Value="pcnConsPedidoSolicitacao"/>
+      </Item11>
+      <Item12>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/PCNRecopi/pcnRetPedidoSolicitacao.pas"/>
+        <UnitName Value="pcnRetPedidoSolicitacao"/>
+      </Item12>
+      <Item13>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/PCNRecopi/pcnConsInclusaoNF.pas"/>
+        <UnitName Value="pcnConsInclusaoNF"/>
+      </Item13>
+      <Item14>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/PCNRecopi/pcnRetInclusaoNF.pas"/>
+        <UnitName Value="pcnRetInclusaoNF"/>
+      </Item14>
+      <Item15>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/PCNRecopi/pcnConsPedidoConfirmacao.pas"/>
+        <UnitName Value="pcnConsPedidoConfirmacao"/>
+      </Item15>
+      <Item16>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/PCNRecopi/pcnRetPedidoConfirmacao.pas"/>
+        <UnitName Value="pcnRetPedidoConfirmacao"/>
+      </Item16>
+      <Item17>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/PCNRecopi/pcnConsControleEstoque.pas"/>
+        <UnitName Value="pcnConsControleEstoque"/>
+      </Item17>
+      <Item18>
+        <Filename Value="../../../../Fontes/ACBrDFe/ACBrRecopi/PCNRecopi/pcnRetControleEstoque.pas"/>
+        <UnitName Value="pcnRetControleEstoque"/>
+      </Item18>
+    </Files>
+    <RequiredPkgs Count="1">
+      <Item1>
+        <PackageName Value="ACBrDFeComum"/>
+      </Item1>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

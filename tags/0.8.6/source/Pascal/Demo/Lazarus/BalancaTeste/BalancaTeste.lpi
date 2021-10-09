@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="5"/>
+    <General>
+      <MainUnit Value="0"/>
+      <TargetFileExt Value=".exe"/>
+      <ActiveEditorIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <ProjectVersion Value=""/>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="ACBr_LCL"/>
+        <MinVersion Minor="8" Release="5" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="BalancaTeste.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="BalancaTeste"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="balancateste1.pas"/>
+        <ComponentName Value="Form1"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceFilename Value="balancateste1.lrs"/>
+        <UnitName Value="BalancaTeste1"/>
+        <CursorPos X="3" Y="119"/>
+        <TopLine Value="117"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit1>
+    </Units>
+    <JumpHistory Count="10" HistoryIndex="9">
+      <Position1>
+        <Filename Value="balancateste1.pas"/>
+        <Caret Line="159" Column="17" TopLine="144"/>
+      </Position1>
+      <Position2>
+        <Filename Value="balancateste1.pas"/>
+        <Caret Line="53" Column="73" TopLine="52"/>
+      </Position2>
+      <Position3>
+        <Filename Value="balancateste1.pas"/>
+        <Caret Line="49" Column="73" TopLine="32"/>
+      </Position3>
+      <Position4>
+        <Filename Value="balancateste1.pas"/>
+        <Caret Line="76" Column="25" TopLine="57"/>
+      </Position4>
+      <Position5>
+        <Filename Value="balancateste1.pas"/>
+        <Caret Line="89" Column="33" TopLine="75"/>
+      </Position5>
+      <Position6>
+        <Filename Value="balancateste1.pas"/>
+        <Caret Line="75" Column="32" TopLine="57"/>
+      </Position6>
+      <Position7>
+        <Filename Value="balancateste1.pas"/>
+        <Caret Line="27" Column="23" TopLine="1"/>
+      </Position7>
+      <Position8>
+        <Filename Value="balancateste1.pas"/>
+        <Caret Line="77" Column="58" TopLine="57"/>
+      </Position8>
+      <Position9>
+        <Filename Value="balancateste1.pas"/>
+        <Caret Line="78" Column="25" TopLine="63"/>
+      </Position9>
+      <Position10>
+        <Filename Value="balancateste1.pas"/>
+        <Caret Line="71" Column="1" TopLine="61"/>
+      </Position10>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="5"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <SrcPath Value="$(LazarusDir)\lcl\;$(LazarusDir)\lcl\interfaces\$(LCLWidgetType)\"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <Generate Value="Faster"/>
+    </CodeGeneration>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="2">
+      <Item1>
+        <Name Value="ECodetoolError"/>
+      </Item1>
+      <Item2>
+        <Name Value="EFOpenError"/>
+      </Item2>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

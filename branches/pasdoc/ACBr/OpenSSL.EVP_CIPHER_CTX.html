@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: OpenSSL: record EVP_CIPHER_CTX</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="EVP_CIPHER_CTX"></a><h1 class="cio">record EVP_CIPHER_CTX</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td>Hierarquia</td><td><a class="section"  href="#%40Fields">Campos</a></td><td>Métodos</td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="OpenSSL.html">OpenSSL</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type EVP_CIPHER_CTX = record</code></p>
+<h2 class="description">Descrição</h2>
+&nbsp;<h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#cipher">cipher</a></b>: <a   href="OpenSSL.html#PEVP_CIPHER">PEVP_CIPHER</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#engine">engine</a></b>: <a   href="OpenSSL.html#PENGINE">PENGINE</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#encrypt">encrypt</a></b>: cint;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#buf_len">buf_len</a></b>: cint;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#oiv">oiv</a></b>: array[0..<a   href="OpenSSL.html#EVP_MAX_IV_LENGTH">EVP_MAX_IV_LENGTH</a>-1] of Byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#iv">iv</a></b>: array[0..<a   href="OpenSSL.html#EVP_MAX_IV_LENGTH">EVP_MAX_IV_LENGTH</a>-1] of Byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#buf">buf</a></b>: array[0..<a   href="OpenSSL.html#EVP_MAX_IV_LENGTH">EVP_MAX_IV_LENGTH</a>-1] of Byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#num">num</a></b>: cint;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#app_data">app_data</a></b>: Pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#key_len">key_len</a></b>: cint;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#flags">flags</a></b>: culong;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#cipher_data">cipher_data</a></b>: Pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#final_used">final_used</a></b>: cint;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#block_mask">block_mask</a></b>: cint;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#final">final</a></b>: array[0..<a   href="OpenSSL.html#EVP_MAX_BLOCK_LENGTH">EVP_MAX_BLOCK_LENGTH</a>-1] of Byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="OpenSSL.EVP_CIPHER_CTX.html#final2">final2</a></b>: array[0..$1FFF] of Byte;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cipher"></a><code><b>cipher</b>: <a   href="OpenSSL.html#PEVP_CIPHER">PEVP_CIPHER</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Updated with EVP.h from <a class="normal"  href="OpenSSL.html">OpenSSL</a> 1.0.0</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="engine"></a><code><b>engine</b>: <a   href="OpenSSL.html#PENGINE">PENGINE</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="encrypt"></a><code><b>encrypt</b>: cint;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* functional reference if '<a class="normal"  href="OpenSSL.EVP_CIPHER_CTX.html#cipher">cipher</a>' is <a class="normal"  href="OpenSSL.EVP_CIPHER_CTX.html#engine">ENGINE</a>-provided */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="buf_len"></a><code><b>buf_len</b>: cint;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* <a class="normal"  href="OpenSSL.EVP_CIPHER_CTX.html#encrypt">encrypt</a> or decrypt */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="oiv"></a><code><b>oiv</b>: array[0..<a   href="OpenSSL.html#EVP_MAX_IV_LENGTH">EVP_MAX_IV_LENGTH</a>-1] of Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* number we have left */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="iv"></a><code><b>iv</b>: array[0..<a   href="OpenSSL.html#EVP_MAX_IV_LENGTH">EVP_MAX_IV_LENGTH</a>-1] of Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* original <code>iv</code> */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="buf"></a><code><b>buf</b>: array[0..<a   href="OpenSSL.html#EVP_MAX_IV_LENGTH">EVP_MAX_IV_LENGTH</a>-1] of Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* working <a class="normal"  href="OpenSSL.EVP_CIPHER_CTX.html#iv">iv</a> */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="num"></a><code><b>num</b>: cint;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* saved partial block */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="app_data"></a><code><b>app_data</b>: Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* used by cfb/ofb mode */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="key_len"></a><code><b>key_len</b>: cint;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* application stuff */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="flags"></a><code><b>flags</b>: culong;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* May change for variable length <a class="normal"  href="OpenSSL.EVP_CIPHER_CTX.html#cipher">cipher</a> */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cipher_data"></a><code><b>cipher_data</b>: Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* Various <a class="normal"  href="OpenSSL.EVP_CIPHER_CTX.html#flags">flags</a> */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="final_used"></a><code><b>final_used</b>: cint;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* per EVP data */</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="block_mask"></a><code><b>block_mask</b>: cint;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="final"></a><code><b>final</b>: array[0..<a   href="OpenSSL.html#EVP_MAX_BLOCK_LENGTH">EVP_MAX_BLOCK_LENGTH</a>-1] of Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="final2"></a><code><b>final2</b>: array[0..$1FFF] of Byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+* possible <a class="normal"  href="OpenSSL.EVP_CIPHER_CTX.html#final">final</a> block */</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:58</em>
+</span>
+</body></html>

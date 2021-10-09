@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" targetNamespace="http://www.fazenda.sp.gov.br/" xmlns:mstns="http://www.fazenda.sp.gov.br/" xmlns="http://www.fazenda.sp.gov.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="ListaInclusoesNF">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="InclusaoNF" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoControle" type="xs:string" />
+              <xs:element name="NF">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Numero" type="xs:string" />
+                    <xs:element name="Serie" type="xs:string" />
+                    <xs:element name="DataEmissao" type="xs:string" />
+                    <xs:element name="DataEntrada" type="xs:string" minOccurs="0" />
+                    <xs:element name="DataSaida" type="xs:string" minOccurs="0" />
+                    <xs:element name="Valor" type="xs:decimal" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ErroStatus" type="xs:int" minOccurs="0" />
+              <xs:element name="ErroDescricao" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ErroGeralStatus" type="xs:int" minOccurs="0" />
+        <xs:element name="ErroGeralDescricao" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

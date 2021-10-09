@@ -1,0 +1,337 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrMSXML2_TLB: Interface IMXWriter</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="IMXWriter"></a><h1 class="cio">Interface IMXWriter</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td>Campos</td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrMSXML2_TLB.html">ACBrMSXML2_TLB</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type IMXWriter = interface(IDispatch)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+*********************************************************************// Interface: <code>IMXWriter</code> Flags: (4544) Dual NonExtensible OleAutomation Dispatchable GUID: {4D7FF4BA-1565-4EA8-94E1-6E724A46F98D} *********************************************************************//</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">IDispatch</li>
+<li class="thisitem">IMXWriter</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_output">Set_output</a></b>(varDestination: OleVariant); safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_output">Get_output</a></b>: OleVariant; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_encoding">Set_encoding</a></b>(const strEncoding: WideString); safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_encoding">Get_encoding</a></b>: WideString; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_byteOrderMark">Set_byteOrderMark</a></b>(fWriteByteOrderMark: WordBool); safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_byteOrderMark">Get_byteOrderMark</a></b>: WordBool; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_indent">Set_indent</a></b>(fIndentMode: WordBool); safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_indent">Get_indent</a></b>: WordBool; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_standalone">Set_standalone</a></b>(fValue: WordBool); safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_standalone">Get_standalone</a></b>: WordBool; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_omitXMLDeclaration">Set_omitXMLDeclaration</a></b>(fValue: WordBool); safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_omitXMLDeclaration">Get_omitXMLDeclaration</a></b>: WordBool; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_version">Set_version</a></b>(const strVersion: WideString); safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_version">Get_version</a></b>: WideString; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_disableOutputEscaping">Set_disableOutputEscaping</a></b>(fValue: WordBool); safecall;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_disableOutputEscaping">Get_disableOutputEscaping</a></b>: WordBool; safecall;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#flush">flush</a></b>; safecall;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#output">output</a></b>: OleVariant read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_output">Get_output</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_output">Set_output</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#encoding">encoding</a></b>: WideString read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_encoding">Get_encoding</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_encoding">Set_encoding</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#byteOrderMark">byteOrderMark</a></b>: WordBool read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_byteOrderMark">Get_byteOrderMark</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_byteOrderMark">Set_byteOrderMark</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#indent">indent</a></b>: WordBool read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_indent">Get_indent</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_indent">Set_indent</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#standalone">standalone</a></b>: WordBool read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_standalone">Get_standalone</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_standalone">Set_standalone</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#omitXMLDeclaration">omitXMLDeclaration</a></b>: WordBool read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_omitXMLDeclaration">Get_omitXMLDeclaration</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_omitXMLDeclaration">Set_omitXMLDeclaration</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#version">version</a></b>: WideString read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_version">Get_version</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_version">Set_version</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrMSXML2_TLB.IMXWriter.html#disableOutputEscaping">disableOutputEscaping</a></b>: WordBool read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_disableOutputEscaping">Get_disableOutputEscaping</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_disableOutputEscaping">Set_disableOutputEscaping</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_output"></a><code>procedure <b>Set_output</b>(varDestination: OleVariant); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_output"></a><code>function <b>Get_output</b>: OleVariant; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_encoding"></a><code>procedure <b>Set_encoding</b>(const strEncoding: WideString); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_encoding"></a><code>function <b>Get_encoding</b>: WideString; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_byteOrderMark"></a><code>procedure <b>Set_byteOrderMark</b>(fWriteByteOrderMark: WordBool); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_byteOrderMark"></a><code>function <b>Get_byteOrderMark</b>: WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_indent"></a><code>procedure <b>Set_indent</b>(fIndentMode: WordBool); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_indent"></a><code>function <b>Get_indent</b>: WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_standalone"></a><code>procedure <b>Set_standalone</b>(fValue: WordBool); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_standalone"></a><code>function <b>Get_standalone</b>: WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_omitXMLDeclaration"></a><code>procedure <b>Set_omitXMLDeclaration</b>(fValue: WordBool); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_omitXMLDeclaration"></a><code>function <b>Get_omitXMLDeclaration</b>: WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_version"></a><code>procedure <b>Set_version</b>(const strVersion: WideString); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_version"></a><code>function <b>Get_version</b>: WideString; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Set_disableOutputEscaping"></a><code>procedure <b>Set_disableOutputEscaping</b>(fValue: WordBool); safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get_disableOutputEscaping"></a><code>function <b>Get_disableOutputEscaping</b>: WordBool; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="flush"></a><code>procedure <b>flush</b>; safecall;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="output"></a><code>property <b>output</b>: OleVariant read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_output">Get_output</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_output">Set_output</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="encoding"></a><code>property <b>encoding</b>: WideString read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_encoding">Get_encoding</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_encoding">Set_encoding</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="byteOrderMark"></a><code>property <b>byteOrderMark</b>: WordBool read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_byteOrderMark">Get_byteOrderMark</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_byteOrderMark">Set_byteOrderMark</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="indent"></a><code>property <b>indent</b>: WordBool read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_indent">Get_indent</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_indent">Set_indent</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="standalone"></a><code>property <b>standalone</b>: WordBool read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_standalone">Get_standalone</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_standalone">Set_standalone</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="omitXMLDeclaration"></a><code>property <b>omitXMLDeclaration</b>: WordBool read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_omitXMLDeclaration">Get_omitXMLDeclaration</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_omitXMLDeclaration">Set_omitXMLDeclaration</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="version"></a><code>property <b>version</b>: WideString read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_version">Get_version</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_version">Set_version</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="disableOutputEscaping"></a><code>property <b>disableOutputEscaping</b>: WordBool read <a   href="ACBrMSXML2_TLB.IMXWriter.html#Get_disableOutputEscaping">Get_disableOutputEscaping</a> write <a   href="ACBrMSXML2_TLB.IMXWriter.html#Set_disableOutputEscaping">Set_disableOutputEscaping</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:44</em>
+</span>
+</body></html>

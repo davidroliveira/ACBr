@@ -1,0 +1,814 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrUtil</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrUtil</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td>Classes, Interfaces, Objetos e Registros</td><td><a class="section"  href="#%40FuncsProcs">Funções e Procedimentos</a></td><td>Tipos</td><td>Constantes</td><td><a class="section"  href="#%40Variables">Variáveis</a></td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF}</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>Math</li><li>Classes</li><li>StrUtils</li><li>DateUtils</li><li>Windows</li><li>ShellAPI</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40FuncsProcs"></a><h3 class="summary">Funções e Procedimentos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#ACBrStr">ACBrStr</a></b>( AString : AnsiString ) : String ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#ACBrStrToAnsi">ACBrStrToAnsi</a></b>( AString : String ) : AnsiString ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#TruncFix">TruncFix</a></b>( X : Double ) : Integer ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#TestBit">TestBit</a></b>(const Value: Integer; const Bit: Byte): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#IntToBin">IntToBin</a></b> (value: LongInt; digits: integer ): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#BinToInt">BinToInt</a></b>(Value: String): LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <b><a   href="ACBrUtil.html#BcdToAsc">BcdToAsc</a></b>( const StrBCD : AnsiString) : AnsiString ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <b><a   href="ACBrUtil.html#AscToBcd">AscToBcd</a></b>( const ANumStr: AnsiString ; const TamanhoBCD : Byte) : AnsiString ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <b><a   href="ACBrUtil.html#HexToAscii">HexToAscii</a></b>(const HexStr : AnsiString) : AnsiString ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <b><a   href="ACBrUtil.html#AsciiToHex">AsciiToHex</a></b>(const ABinaryString: AnsiString): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#BinaryStringToString">BinaryStringToString</a></b>(const AString: AnsiString): AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#StringToBinaryString">StringToBinaryString</a></b>(const AString: AnsiString): AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#padL">padL</a></b>(const AString : AnsiString; const nLen : Integer; const Caracter : AnsiChar = ' ') : AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#padR">padR</a></b>(const AString : AnsiString; const nLen : Integer; const Caracter : AnsiChar = ' ') : AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#padC">padC</a></b>(const AString : AnsiString; const nLen : Integer; const Caracter : AnsiChar = ' ') : AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#padS">padS</a></b>(const AString : AnsiString; const nLen : Integer; Separador : String; const Caracter : AnsiChar = ' ') : AnsiString ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#RemoveString">RemoveString</a></b>(const sSubStr, sString: AnsiString): AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#RemoveStrings">RemoveStrings</a></b>(const AText: AnsiString; StringsToRemove: array of AnsiString): AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#StripHTML">StripHTML</a></b>(const AHTMLString : AnsiString) : AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#RandomName">RandomName</a></b>(const LenName : Integer = 8) : String ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#PosAt">PosAt</a></b>(const SubStr, S: AnsiString; Ocorrencia : Cardinal = 1): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#PosLast">PosLast</a></b>(const SubStr, S: AnsiString): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#CountStr">CountStr</a></b>(const AString, SubStr : AnsiString ) : Integer ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <b><a   href="ACBrUtil.html#Poem_Zeros">Poem_Zeros</a></b>(const Texto : AnsiString; const Tamanho : Integer) : AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <b><a   href="ACBrUtil.html#IntToStrZero">IntToStrZero</a></b>(const NumInteiro : Int64; Tamanho : Integer) : AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <b><a   href="ACBrUtil.html#StringToFloat">StringToFloat</a></b>( NumString : String ) : Double ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <b><a   href="ACBrUtil.html#StringToFloatDef">StringToFloatDef</a></b>( const NumString : String ; const DefaultValue : Double ) : Double ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <b><a   href="ACBrUtil.html#StringToDateTime">StringToDateTime</a></b>( const DateTimeString : String; const Format : String = '') : TDateTime ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <b><a   href="ACBrUtil.html#StringToDateTimeDef">StringToDateTimeDef</a></b>( const DateTimeString : String ; const DefaultValue : TDateTime; const Format : String = '') : TDateTime ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#StoD">StoD</a></b>( YYYYMMDDhhnnss: String) : TDateTime;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#DtoS">DtoS</a></b>( ADate : TDateTime) : String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#DTtoS">DTtoS</a></b>( ADateTime : TDateTime) : String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#StrIsAlpha">StrIsAlpha</a></b>(const S: AnsiString): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#StrIsAlphaNum">StrIsAlphaNum</a></b>(const S: AnsiString): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#StrIsNumber">StrIsNumber</a></b>(const S: AnsiString): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#CharIsAlpha">CharIsAlpha</a></b>(const C: AnsiChar): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#CharIsAlphaNum">CharIsAlphaNum</a></b>(const C: AnsiChar): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#CharIsNum">CharIsNum</a></b>(const C: AnsiChar): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#OnlyNumber">OnlyNumber</a></b>(const AValue: AnsiString): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#OnlyAlpha">OnlyAlpha</a></b>(const AValue: AnsiString): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#OnlyAlphaNum">OnlyAlphaNum</a></b>(const AValue: AnsiString): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#StrIsIP">StrIsIP</a></b>(const AValue: string): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#TiraAcentos">TiraAcentos</a></b>( const AString : AnsiString ) : AnsiString ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#TiraAcento">TiraAcento</a></b>( const AChar : AnsiChar ) : AnsiChar ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#AjustaLinhas">AjustaLinhas</a></b>(Texto: AnsiString; Colunas: Integer ; NumMaxLinhas: Integer = 0; PadLinhas: Boolean = False): AnsiString;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#QuebraLinhas">QuebraLinhas</a></b>(const Texto: String; const Colunas: Integer; const CaracterQuebrar : Char = ' '): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#TraduzComando">TraduzComando</a></b>( AString : AnsiString ) : AnsiString ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <b><a   href="ACBrUtil.html#StringToAsc">StringToAsc</a></b>( AString : AnsiString ) : AnsiString ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <b><a   href="ACBrUtil.html#AscToString">AscToString</a></b>( AString : AnsiString ) : AnsiString ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#InPort">InPort</a></b>(const PortAddr:word): byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a   href="ACBrUtil.html#OutPort">OutPort</a></b>(const PortAddr: word; const Databyte: byte); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#StrCrypt">StrCrypt</a></b>(const AString, StrChave: AnsiString): AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#SomaAscII">SomaAscII</a></b>(const AString : AnsiString): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#StringCrc16">StringCrc16</a></b>(AString : AnsiString ) : word;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <b><a   href="ACBrUtil.html#FindFiles">FindFiles</a></b>( const FileMask : String; AStringList : TStrings; IncludePath : Boolean = True ) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <b><a   href="ACBrUtil.html#FilesExists">FilesExists</a></b>(const FileMask: String) : Boolean ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <b><a   href="ACBrUtil.html#DeleteFiles">DeleteFiles</a></b>(const FileMask: String; RaiseExceptionOnFail : Boolean = True) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <b><a   href="ACBrUtil.html#TryDeleteFile">TryDeleteFile</a></b>(const AFile: String; WaitTime: Integer = 100) ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#CopyFileTo">CopyFileTo</a></b>(const AFromFileName, AToFileName : String; const AFailIfExists : Boolean = false) : Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Function <b><a   href="ACBrUtil.html#PathWithDelim">PathWithDelim</a></b>( const APath : String ) : String ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Function <b><a   href="ACBrUtil.html#PathWithoutDelim">PathWithoutDelim</a></b>( const APath : String ) : String ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <b><a   href="ACBrUtil.html#CopyFilesToDir">CopyFilesToDir</a></b>( FileMask : String ; ToDirName : String; const ForceDirectory : Boolean = False) ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a   href="ACBrUtil.html#RunCommand">RunCommand</a></b>(Command: String; Params: String = ''; Wait : Boolean = false; WindowState : Word = 5);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a   href="ACBrUtil.html#OpenURL">OpenURL</a></b>( const URL : String ) ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#FunctionDetect">FunctionDetect</a></b> (LibName, FuncName: String; var LibPointer: Pointer) : boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#FunctionDetect">FunctionDetect</a></b> (LibName, FuncName: String; var LibPointer: Pointer; var LibHandle: THandle ): boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <b><a   href="ACBrUtil.html#DesligarMaquina">DesligarMaquina</a></b>(Reboot: Boolean = False; Forcar: Boolean = False) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>Procedure <b><a   href="ACBrUtil.html#WriteToTXT">WriteToTXT</a></b>( const ArqTXT, AString : AnsiString; const AppendIfExists : Boolean = True; AddLineBreak : Boolean = True );</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#TiraPontos">TiraPontos</a></b>(Str: string): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#TBStrZero">TBStrZero</a></b>(const i: string; const Casas: byte): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#Space">Space</a></b>(Tamanho: Integer): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#LinhaSimples">LinhaSimples</a></b>(Tamanho: Integer): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#LinhaDupla">LinhaDupla</a></b>(Tamanho: Integer): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#EAN13Valido">EAN13Valido</a></b>( CodEAN13 : String ) : Boolean ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="ACBrUtil.html#EAN13_DV">EAN13_DV</a></b>( CodEAN13 : String ) : String ;</code></td>
+</tr>
+</table>
+<a name="%40Variables"></a><h3 class="summary">Variáveis</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrUtil.html#xInp32">xInp32</a></b>: function(wAddr: word): byte; stdcall;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrUtil.html#xOut32">xOut32</a></b>: function(wAddr: word; bOut: byte): byte; stdcall;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrUtil.html#xBlockInput">xBlockInput</a></b>: function(Block: BOOL): BOOL; stdcall;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Funções e Procedimentos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ACBrStr"></a><code>function <b>ACBrStr</b>( AString : AnsiString ) : String ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ACBrStrToAnsi"></a><code>function <b>ACBrStrToAnsi</b>( AString : String ) : AnsiString ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TruncFix"></a><code>function <b>TruncFix</b>( X : Double ) : Integer ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TestBit"></a><code>function <b>TestBit</b>(const Value: Integer; const Bit: Byte): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IntToBin"></a><code>function <b>IntToBin</b> (value: LongInt; digits: integer ): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="BinToInt"></a><code>function <b>BinToInt</b>(Value: String): LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="BcdToAsc"></a><code>Function <b>BcdToAsc</b>( const StrBCD : AnsiString) : AnsiString ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AscToBcd"></a><code>Function <b>AscToBcd</b>( const ANumStr: AnsiString ; const TamanhoBCD : Byte) : AnsiString ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="HexToAscii"></a><code>Function <b>HexToAscii</b>(const HexStr : AnsiString) : AnsiString ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AsciiToHex"></a><code>Function <b>AsciiToHex</b>(const ABinaryString: AnsiString): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="BinaryStringToString"></a><code>function <b>BinaryStringToString</b>(const AString: AnsiString): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StringToBinaryString"></a><code>function <b>StringToBinaryString</b>(const AString: AnsiString): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="padL"></a><code>function <b>padL</b>(const AString : AnsiString; const nLen : Integer; const Caracter : AnsiChar = ' ') : AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="padR"></a><code>function <b>padR</b>(const AString : AnsiString; const nLen : Integer; const Caracter : AnsiChar = ' ') : AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="padC"></a><code>function <b>padC</b>(const AString : AnsiString; const nLen : Integer; const Caracter : AnsiChar = ' ') : AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="padS"></a><code>function <b>padS</b>(const AString : AnsiString; const nLen : Integer; Separador : String; const Caracter : AnsiChar = ' ') : AnsiString ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RemoveString"></a><code>function <b>RemoveString</b>(const sSubStr, sString: AnsiString): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RemoveStrings"></a><code>function <b>RemoveStrings</b>(const AText: AnsiString; StringsToRemove: array of AnsiString): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StripHTML"></a><code>function <b>StripHTML</b>(const AHTMLString : AnsiString) : AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RandomName"></a><code>function <b>RandomName</b>(const LenName : Integer = 8) : String ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PosAt"></a><code>function <b>PosAt</b>(const SubStr, S: AnsiString; Ocorrencia : Cardinal = 1): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+PosEx, retirada de StrUtils.pas do D7, para compatibilizar com o Delphi 6 (que nao possui essa funçao)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PosLast"></a><code>function <b>PosLast</b>(const SubStr, S: AnsiString): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CountStr"></a><code>function <b>CountStr</b>(const AString, SubStr : AnsiString ) : Integer ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Poem_Zeros"></a><code>Function <b>Poem_Zeros</b>(const Texto : AnsiString; const Tamanho : Integer) : AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IntToStrZero"></a><code>Function <b>IntToStrZero</b>(const NumInteiro : Int64; Tamanho : Integer) : AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StringToFloat"></a><code>Function <b>StringToFloat</b>( NumString : String ) : Double ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StringToFloatDef"></a><code>Function <b>StringToFloatDef</b>( const NumString : String ; const DefaultValue : Double ) : Double ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StringToDateTime"></a><code>Function <b>StringToDateTime</b>( const DateTimeString : String; const Format : String = '') : TDateTime ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StringToDateTimeDef"></a><code>Function <b>StringToDateTimeDef</b>( const DateTimeString : String ; const DefaultValue : TDateTime; const Format : String = '') : TDateTime ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StoD"></a><code>function <b>StoD</b>( YYYYMMDDhhnnss: String) : TDateTime;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DtoS"></a><code>function <b>DtoS</b>( ADate : TDateTime) : String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DTtoS"></a><code>function <b>DTtoS</b>( ADateTime : TDateTime) : String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrIsAlpha"></a><code>function <b>StrIsAlpha</b>(const S: AnsiString): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrIsAlphaNum"></a><code>function <b>StrIsAlphaNum</b>(const S: AnsiString): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrIsNumber"></a><code>function <b>StrIsNumber</b>(const S: AnsiString): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CharIsAlpha"></a><code>function <b>CharIsAlpha</b>(const C: AnsiChar): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CharIsAlphaNum"></a><code>function <b>CharIsAlphaNum</b>(const C: AnsiChar): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CharIsNum"></a><code>function <b>CharIsNum</b>(const C: AnsiChar): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="OnlyNumber"></a><code>function <b>OnlyNumber</b>(const AValue: AnsiString): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="OnlyAlpha"></a><code>function <b>OnlyAlpha</b>(const AValue: AnsiString): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="OnlyAlphaNum"></a><code>function <b>OnlyAlphaNum</b>(const AValue: AnsiString): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrIsIP"></a><code>function <b>StrIsIP</b>(const AValue: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TiraAcentos"></a><code>function <b>TiraAcentos</b>( const AString : AnsiString ) : AnsiString ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TiraAcento"></a><code>function <b>TiraAcento</b>( const AChar : AnsiChar ) : AnsiChar ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AjustaLinhas"></a><code>function <b>AjustaLinhas</b>(Texto: AnsiString; Colunas: Integer ; NumMaxLinhas: Integer = 0; PadLinhas: Boolean = False): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="QuebraLinhas"></a><code>function <b>QuebraLinhas</b>(const Texto: String; const Colunas: Integer; const CaracterQuebrar : Char = ' '): String;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TraduzComando"></a><code>function <b>TraduzComando</b>( AString : AnsiString ) : AnsiString ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StringToAsc"></a><code>Function <b>StringToAsc</b>( AString : AnsiString ) : AnsiString ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AscToString"></a><code>Function <b>AscToString</b>( AString : AnsiString ) : AnsiString ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="InPort"></a><code>function <b>InPort</b>(const PortAddr:word): byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="OutPort"></a><code>procedure <b>OutPort</b>(const PortAddr: word; const Databyte: byte); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StrCrypt"></a><code>function <b>StrCrypt</b>(const AString, StrChave: AnsiString): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SomaAscII"></a><code>function <b>SomaAscII</b>(const AString : AnsiString): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="StringCrc16"></a><code>function <b>StringCrc16</b>(AString : AnsiString ) : word;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FindFiles"></a><code>Procedure <b>FindFiles</b>( const FileMask : String; AStringList : TStrings; IncludePath : Boolean = True ) ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FilesExists"></a><code>Function <b>FilesExists</b>(const FileMask: String) : Boolean ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DeleteFiles"></a><code>Procedure <b>DeleteFiles</b>(const FileMask: String; RaiseExceptionOnFail : Boolean = True) ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TryDeleteFile"></a><code>Procedure <b>TryDeleteFile</b>(const AFile: String; WaitTime: Integer = 100) ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CopyFileTo"></a><code>function <b>CopyFileTo</b>(const AFromFileName, AToFileName : String; const AFailIfExists : Boolean = false) : Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PathWithDelim"></a><code>Function <b>PathWithDelim</b>( const APath : String ) : String ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="PathWithoutDelim"></a><code>Function <b>PathWithoutDelim</b>( const APath : String ) : String ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CopyFilesToDir"></a><code>Procedure <b>CopyFilesToDir</b>( FileMask : String ; ToDirName : String; const ForceDirectory : Boolean = False) ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RunCommand"></a><code>procedure <b>RunCommand</b>(Command: String; Params: String = ''; Wait : Boolean = false; WindowState : Word = 5);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="OpenURL"></a><code>procedure <b>OpenURL</b>( const URL : String ) ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FunctionDetect"></a><code>function <b>FunctionDetect</b> (LibName, FuncName: String; var LibPointer: Pointer) : boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="FunctionDetect"></a><code>function <b>FunctionDetect</b> (LibName, FuncName: String; var LibPointer: Pointer; var LibHandle: THandle ): boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DesligarMaquina"></a><code>Procedure <b>DesligarMaquina</b>(Reboot: Boolean = False; Forcar: Boolean = False) ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="WriteToTXT"></a><code>Procedure <b>WriteToTXT</b>( const ArqTXT, AString : AnsiString; const AppendIfExists : Boolean = True; AddLineBreak : Boolean = True );</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TiraPontos"></a><code>function <b>TiraPontos</b>(Str: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+funcoes para uso com o modulo <a class="normal"  href="ACBrSintegra.html">ACBrSintegra</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TBStrZero"></a><code>function <b>TBStrZero</b>(const i: string; const Casas: byte): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Space"></a><code>function <b>Space</b>(Tamanho: Integer): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="LinhaSimples"></a><code>function <b>LinhaSimples</b>(Tamanho: Integer): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="LinhaDupla"></a><code>function <b>LinhaDupla</b>(Tamanho: Integer): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="EAN13Valido"></a><code>function <b>EAN13Valido</b>( CodEAN13 : String ) : Boolean ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="EAN13_DV"></a><code>function <b>EAN13_DV</b>( CodEAN13 : String ) : String ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Variáveis</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="xInp32"></a><code><b>xInp32</b>: function(wAddr: word): byte; stdcall;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="xOut32"></a><code><b>xOut32</b>: function(wAddr: word; bOut: byte): byte; stdcall;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="xBlockInput"></a><code><b>xBlockInput</b>: function(Block: BOOL): BOOL; stdcall;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:55</em>
+</span>
+</body></html>

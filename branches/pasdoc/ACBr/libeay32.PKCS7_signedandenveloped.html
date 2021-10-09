@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: libeay32: record PKCS7_signedandenveloped</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="PKCS7_signedandenveloped"></a><h1 class="cio">record PKCS7_signedandenveloped</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td>Hierarquia</td><td><a class="section"  href="#%40Fields">Campos</a></td><td>Métodos</td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="libeay32.html">libeay32</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type PKCS7_signedandenveloped = record</code></p>
+<h2 class="description">Descrição</h2>
+&nbsp;<h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7_signedandenveloped.html#version">version</a></b>: <a   href="libeay32.html#pASN1_INTEGER">pASN1_INTEGER</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7_signedandenveloped.html#md_algs">md_algs</a></b>: pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7_signedandenveloped.html#cert">cert</a></b>: pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7_signedandenveloped.html#crl">crl</a></b>: pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7_signedandenveloped.html#signer_info">signer_info</a></b>: <a   href="libeay32.html#pSTACK_OFPKCS7_SIGNER_INFO">pSTACK_OFPKCS7_SIGNER_INFO</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7_signedandenveloped.html#enc_data">enc_data</a></b>: pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="libeay32.PKCS7_signedandenveloped.html#recipientinfo">recipientinfo</a></b>: pointer;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="version"></a><code><b>version</b>: <a   href="libeay32.html#pASN1_INTEGER">pASN1_INTEGER</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="md_algs"></a><code><b>md_algs</b>: pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="cert"></a><code><b>cert</b>: pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&circ;STACK_OF(X509_ALGOR)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="crl"></a><code><b>crl</b>: pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&circ;STACK_OF(<a class="normal"  href="libeay32.X509.html">X509</a>)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="signer_info"></a><code><b>signer_info</b>: <a   href="libeay32.html#pSTACK_OFPKCS7_SIGNER_INFO">pSTACK_OFPKCS7_SIGNER_INFO</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&circ;STACK_OF(X509_CRL)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="enc_data"></a><code><b>enc_data</b>: pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="recipientinfo"></a><code><b>recipientinfo</b>: pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&circ;PKCS7_ENC_CONTENT</p>
+</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:58</em>
+</span>
+</body></html>

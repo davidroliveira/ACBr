@@ -1,0 +1,214 @@
+object frPagamento: TfrPagamento
+  Left = 477
+  Height = 286
+  Top = 167
+  Width = 352
+  HorzScrollBar.Page = 351
+  HorzScrollBar.Range = 327
+  VertScrollBar.Page = 285
+  VertScrollBar.Range = 245
+  ActiveControl = edCod
+  BorderStyle = bsSingle
+  Caption = 'Efetuar Pagamento'
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  KeyPreview = True
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object SpeedButton1: TSpeedButton
+    Left = 88
+    Height = 22
+    Top = 94
+    Width = 23
+    Color = clBtnFace
+    Glyph.Data = {
+      C90200002F2A2058504D202A2F0A7374617469632063686172202A6772617068
+      69635B5D203D207B0A22333220313620362031222C0A222E2063204E6F6E6522
+      2C0A222C20632023303030303030222C0A222D20632023413139304131222C0A
+      222A20632023303046434639222C0A226120632023463946434639222C0A2262
+      20632023463946433030222C0A222E2E2E2C2C2C2C2C2E2E2E2E2E2E2E2E2E2E
+      2E2E2D2D2D2E2E2E2E2E2E2E2E2E222C0A222E2E2C2A2A2A2A2A2C2E2E2E2E2E
+      2E2E2E2E2D2D2E61612D2D2E2E2E2E2E2E2E222C0A222E2C2A2A2A2A2A2A2A2C
+      2E2E2E2E2E2E2E2D2E61612E2E2E612D2E2E2E2E2E2E222C0A222C2A2A2A6161
+      2A2A2A2A2C2E2E2E2E2E2E2D612E2E2E2E2E2E2D612E2E2E2E2E222C0A222C2A
+      2A612A2A2A2A2A2A2C2E2E2E2E2E2D2E612E2E2E61612E2E2D2E2E2E2E2E222C
+      0A222C2A612A2A2A2A2A2A2A2C2E2E2E2E2E2D612E2E2E612E2E2E2E2D612E2E
+      2E2E222C0A222C2A612A2A2A2A2A2A2A2C2E2E2E2E2E2D612E2E612E2E2E2E2E
+      2D612E2E2E2E222C0A222C2A2A2A2A2A2A2A2A2A2C2E2E2E2E2E2E2D2E2E612E
+      2E2E2E2D2E612E2E2E2E222C0A222E2C2A2A2A2A2A2A2A2C2E2E2E2E2E2E2E2D
+      612E2E2E2E2E2E2D612E2E2E2E2E222C0A222E2E2C2A2A2A2A2A2C2C622E2E2E
+      2E2E2E2E2D2D2E2E2E2D2D2D2D2E2E2E2E2E222C0A222E2E2E2C2C2C2C2C2E62
+      2D2C2E2E2E2E2E2E2E612D2D2D2E612D2D2D2E2E2E2E222C0A222E2E2E2E2E2E
+      2E2E2E2E2C2C2C2E2E2E2E2E2E2E2E6161612E612D2D2D2E2E2E222C0A222E2E
+      2E2E2E2E2E2E2E2E2E2C2C2C2E2E2E2E2E2E2E2E2E2E2E2E612D2D2D2E2E222C
+      0A222E2E2E2E2E2E2E2E2E2E2E2E2C2C2C2E2E2E2E2E2E2E2E2E2E2E2E612D2D
+      2D2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2C2C2C2E2E2E2E2E2E2E2E2E2E
+      2E2E612D2D2D222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2C2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E612D61227D0A
+    }
+    NumGlyphs = 2
+    OnClick = SpeedButton1Click
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 14
+    Top = 102
+    Width = 24
+    Caption = '&Cod.'
+    Color = clNone
+    FocusControl = edCod
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 14
+    Top = 134
+    Width = 25
+    Caption = '&Valor'
+    Color = clNone
+    FocusControl = edValor
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 168
+    Height = 14
+    Top = 73
+    Width = 108
+    Caption = 'Formas de Pagamento'
+    Color = clNone
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 144
+    Height = 14
+    Top = 230
+    Width = 94
+    Caption = 'TOTAL DO CUPOM:'
+    Color = clNone
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 168
+    Height = 14
+    Top = 254
+    Width = 64
+    Caption = 'TOTAL PAGO'
+    Color = clNone
+    ParentColor = False
+  end
+  object lTotalAPAGAR: TLabel
+    Left = 280
+    Height = 14
+    Top = 230
+    Width = 48
+    Alignment = taRightJustify
+    Caption = '1000.00'
+    Color = clBtnFace
+    Font.Color = clBlack
+    Font.Height = 11
+    Font.Name = 'MS Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentColor = False
+    Transparent = False
+  end
+  object lTotalPago: TLabel
+    Left = 280
+    Height = 14
+    Top = 254
+    Width = 48
+    Alignment = taRightJustify
+    Caption = '1000.00'
+    Color = clBtnFace
+    Font.Color = clBlack
+    Font.Height = 11
+    Font.Name = 'MS Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentColor = False
+    Transparent = False
+  end
+  object Label6: TLabel
+    Left = 15
+    Height = 27
+    Top = 8
+    Width = 288
+    Caption = '- Entre com um ou vários pagamentos até atingir o Total do Cupom'
+    Color = clNone
+    ParentColor = False
+    WordWrap = True
+  end
+  object Label7: TLabel
+    Left = 16
+    Height = 26
+    Top = 48
+    Width = 313
+    AutoSize = False
+    Caption = '- Se o valor pago for superior ao Total do Cupom será calculado o    TROCO'
+    Color = clNone
+    ParentColor = False
+    WordWrap = True
+  end
+  object Label8: TLabel
+    Left = 16
+    Height = 14
+    Top = 166
+    Width = 24
+    Caption = '&Obs:'
+    Color = clNone
+    FocusControl = edObs
+    ParentColor = False
+  end
+  object mFormas: TMemo
+    Left = 168
+    Height = 128
+    Top = 88
+    Width = 167
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 5
+  end
+  object edCod: TEdit
+    Cursor = crIBeam
+    Left = 48
+    Height = 21
+    Top = 94
+    Width = 33
+    TabOrder = 0
+  end
+  object edValor: TEdit
+    Cursor = crIBeam
+    Left = 48
+    Height = 21
+    Top = 126
+    Width = 101
+    OnKeyPress = edValorKeyPress
+    TabOrder = 1
+  end
+  object btImprimir: TButton
+    Left = 40
+    Height = 25
+    Top = 238
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = '&Imprimir'
+    OnClick = btImprimirClick
+    TabOrder = 4
+  end
+  object cbVinc: TCheckBox
+    Left = 24
+    Height = 13
+    Top = 182
+    Width = 103
+    Caption = 'Cupom &Vinculado'
+    TabOrder = 3
+  end
+  object edObs: TEdit
+    Cursor = crIBeam
+    Left = 48
+    Height = 21
+    Top = 158
+    Width = 101
+    TabOrder = 2
+  end
+end

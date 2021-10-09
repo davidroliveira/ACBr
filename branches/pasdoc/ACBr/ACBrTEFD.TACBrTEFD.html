@@ -1,0 +1,1801 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrTEFD: Classe TACBrTEFD</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TACBrTEFD"></a><h1 class="cio">Classe TACBrTEFD</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td><a class="section"  href="#%40Methods">Métodos</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="ACBrTEFD.html">ACBrTEFD</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TACBrTEFD = class(TComponent)</code></p>
+<h2 class="description">Descrição</h2>
+<p>
+<a class="normal"  href="ACBrTEFDClass.TACBrTEFDClass.html">TACBrTEFDClass</a></p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="thisitem">TACBrTEFD</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fAutoAtivarGP">fAutoAtivarGP</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fAutoFinalizarCupom">fAutoFinalizarCupom</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fAutoEfetuarPagamento">fAutoEfetuarPagamento</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fEsperaSleep">fEsperaSleep</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fEstadoReq">fEstadoReq</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDReqEstado">TACBrTEFDReqEstado</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fEstadoResp">fEstadoResp</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDRespEstado">TACBrTEFDRespEstado</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fExibirMsgAutenticacao">fExibirMsgAutenticacao</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fMultiplosCartoes">fMultiplosCartoes</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fNumeroMaximoCartoes">fNumeroMaximoCartoes</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fNumVias">fNumVias</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnAguardaResp">fOnAguardaResp</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDAguardaRespEvent">TACBrTEFDAguardaRespEvent</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnAntesCancelarTransacao">fOnAntesCancelarTransacao</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDAntesCancelarTransacao">TACBrTEFDAntesCancelarTransacao</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnAntesFinalizarRequisicao">fOnAntesFinalizarRequisicao</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDAntesFinalizarReq">TACBrTEFDAntesFinalizarReq</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnBloqueiaMouseTeclado">fOnBloqueiaMouseTeclado</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDBloqueiaMouseTeclado">TACBrTEFDBloqueiaMouseTeclado</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECF">fOnComandaECF</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECF">TACBrTEFDComandaECF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECFAbreVinculado">fOnComandaECFAbreVinculado</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECFAbreVinculado">TACBrTEFDComandaECFAbreVinculado</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECFImprimeVia">fOnComandaECFImprimeVia</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECFImprimeVia">TACBrTEFDComandaECFImprimeVia</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECFPagamento">fOnComandaECFPagamento</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECFPagamento">TACBrTEFDComandaECFPagamento</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnDepoisCancelarTransacoes">fOnDepoisCancelarTransacoes</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDProcessarTransacoesPendentes">TACBrTEFDProcessarTransacoesPendentes</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnDepoisConfirmarTransacoes">fOnDepoisConfirmarTransacoes</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDProcessarTransacoesPendentes">TACBrTEFDProcessarTransacoesPendentes</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnExibeMsg">fOnExibeMsg</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDExibeMsg">TACBrTEFDExibeMsg</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnInfoECF">fOnInfoECF</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDObterInfoECF">TACBrTEFDObterInfoECF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnLimpaTeclado">fOnLimpaTeclado</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDExecutaAcao">TACBrTEFDExecutaAcao</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnMudaEstadoReq">fOnMudaEstadoReq</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDMudaEstadoReq">TACBrTEFDMudaEstadoReq</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnMudaEstadoResp">fOnMudaEstadoResp</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDMudaEstadoResp">TACBrTEFDMudaEstadoResp</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fOnRestauraFocoAplicacao">fOnRestauraFocoAplicacao</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDExecutaAcao">TACBrTEFDExecutaAcao</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fPathBackup">fPathBackup</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fGPAtual">fGPAtual</a></b>: <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fTecladoBloqueado">fTecladoBloqueado</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fTefClass">fTefClass</a></b>: <a   href="ACBrTEFDClass.TACBrTEFDClass.html">TACBrTEFDClass</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fTefDial">fTefDial</a></b>: <a   href="ACBrTEFDDial.TACBrTEFDDial.html">TACBrTEFDDial</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fTefGPU">fTefGPU</a></b>: <a   href="ACBrTEFDGpu.TACBrTEFDGpu.html">TACBrTEFDGpu</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fTefCliSiTef">fTefCliSiTef</a></b>: <a   href="ACBrTEFDCliSiTef.TACBrTEFDCliSiTef.html">TACBrTEFDCliSiTef</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fTefVeSPague">fTefVeSPague</a></b>: <a   href="ACBrTEFDVeSPague.TACBrTEFDVeSPague.html">TACBrTEFDVeSPague</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fTefDisc">fTefDisc</a></b>: <a   href="ACBrTEFDDisc.TACBrTEFDDisc.html">TACBrTEFDDisc</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fTefHiper">fTefHiper</a></b>: <a   href="ACBrTEFDHiper.TACBrTEFDHiper.html">TACBrTEFDHiper</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fTefBanese">fTefBanese</a></b>: <a   href="ACBrTEFDBanese.TACBrTEFDBanese.html">TACBrTEFDBanese</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fEsperaSTS">fEsperaSTS</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fTEFList">fTEFList</a></b>: <a   href="ACBrTEFDClass.TACBrTEFDClassList.html">TACBrTEFDClassList</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fpRespostasPendentes">fpRespostasPendentes</a></b>: <a   href="ACBrTEFDClass.TACBrTEFDRespostasPendentes.html">TACBrTEFDRespostasPendentes</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="ACBrTEFD.TACBrTEFD.html#fArqLOG">fArqLOG</a></b>: string;</code></td>
+</tr>
+</table>
+<a name="%40Methods"></a><h3 class="summary">Métodos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#GetAbout">GetAbout</a></b> : String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#GetAguardandoResposta">GetAguardandoResposta</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#GetArqReq">GetArqReq</a></b> : String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#GetArqResp">GetArqResp</a></b> : String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#GetArqSTS">GetArqSTS</a></b> : String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#GetArqTmp">GetArqTmp</a></b> : String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#GetGPExeName">GetGPExeName</a></b> : String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#GetPathBackup">GetPathBackup</a></b> : String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#GetReq">GetReq</a></b> : <a   href="ACBrTEFDClass.TACBrTEFDReq.html">TACBrTEFDReq</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#GetResp">GetResp</a></b> : <a   href="ACBrTEFDClass.TACBrTEFDResp.html">TACBrTEFDResp</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#SetAutoAtivarGP">SetAutoAtivarGP</a></b>(const AValue : Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#SetAutoEfetuarPagamento">SetAutoEfetuarPagamento</a></b>(const AValue : Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#SetAutoFinalizarCupom">SetAutoFinalizarCupom</a></b>(const AValue : Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#SetEsperaSleep">SetEsperaSleep</a></b>(const AValue : Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#SetEsperaSTS">SetEsperaSTS</a></b>(const AValue : Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#SetEstadoReq">SetEstadoReq</a></b>(const AValue : <a   href="ACBrTEFDClass.html#TACBrTEFDReqEstado">TACBrTEFDReqEstado</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#SetEstadoResp">SetEstadoResp</a></b>(const AValue : <a   href="ACBrTEFDClass.html#TACBrTEFDRespEstado">TACBrTEFDRespEstado</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#SetMultiplosCartoes">SetMultiplosCartoes</a></b>(const AValue : Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#SetNumeroMaximoCartoes">SetNumeroMaximoCartoes</a></b>(const AValue: Integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#SetNumVias">SetNumVias</a></b>(const AValue : Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#SetPathBackup">SetPathBackup</a></b>(const AValue : String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#SetGPAtual">SetGPAtual</a></b>(const AValue : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#SetAbout">SetAbout</a></b>(const Value: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#SetArqLOG">SetArqLOG</a></b>(const AValue : String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Function <b><a   href="ACBrTEFD.TACBrTEFD.html#EstadoECF">EstadoECF</a></b> : AnsiChar ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#SubTotalECF">SubTotalECF</a></b>: Double;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#DoExibeMsg">DoExibeMsg</a></b>( Operacao : <a   href="ACBrTEFDClass.html#TACBrTEFDOperacaoMensagem">TACBrTEFDOperacaoMensagem</a>; Mensagem : String ) : TModalResult;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#ComandarECF">ComandarECF</a></b>(Operacao : <a   href="ACBrTEFDClass.html#TACBrTEFDOperacaoECF">TACBrTEFDOperacaoECF</a>) : Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#ECFPagamento">ECFPagamento</a></b>(Indice : String; Valor : Double) : Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#ECFAbreVinculado">ECFAbreVinculado</a></b>(COO, Indice : String; Valor : Double) : Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#ECFImprimeVia">ECFImprimeVia</a></b>( TipoRelatorio : <a   href="ACBrTEFDClass.html#TACBrTEFDTipoRelatorio">TACBrTEFDTipoRelatorio</a>; Via : Integer; ImagemComprovante : TStringList) : Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#BloquearMouseTeclado">BloquearMouseTeclado</a></b>(Bloqueia : Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#LimparTeclado">LimparTeclado</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#RestaurarFocoAplicacao">RestaurarFocoAplicacao</a></b> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="ACBrTEFD.TACBrTEFD.html#Create">Create</a></b>( AOwner : TComponent ) ; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="ACBrTEFD.TACBrTEFD.html#Destroy">Destroy</a></b> ; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#Inicializar">Inicializar</a></b>( GP : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a> = gpNenhum ) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#DesInicializar">DesInicializar</a></b>( GP : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a> = gpNenhum ) ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="ACBrTEFD.TACBrTEFD.html#Inicializado">Inicializado</a></b>( GP : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a> = gpNenhum ) : Boolean ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#AtivarGP">AtivarGP</a></b>(GP : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#ATV">ATV</a></b>( GP : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a> = gpNenhum ) ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Function <b><a   href="ACBrTEFD.TACBrTEFD.html#ADM">ADM</a></b>( GP : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a> = gpNenhum ) : Boolean ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Function <b><a   href="ACBrTEFD.TACBrTEFD.html#CRT">CRT</a></b>( const Valor : Double; const IndiceFPG_ECF : String; const DocumentoVinculado : String = ''; const Moeda : Integer = 0 ) : Boolean ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Function <b><a   href="ACBrTEFD.TACBrTEFD.html#CHQ">CHQ</a></b>( const Valor : Double; const IndiceFPG_ECF : String; const DocumentoVinculado : String = ''; const CMC7 : String = ''; const TipoPessoa : AnsiChar = 'F'; const DocumentoPessoa : String = ''; const DataCheque : TDateTime = 0; const Banco : String = ''; const Agencia : String = ''; const AgenciaDC : String = ''; const Conta : String = ''; const ContaDC : String = ''; const Cheque : String = ''; const ChequeDC : String = ''; const Compensacao: String = '' ) : Boolean ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>Function <b><a   href="ACBrTEFD.TACBrTEFD.html#CNC">CNC</a></b>(const Rede, NSU : String; const DataHoraTransacao : TDateTime; const Valor : Double) : Boolean ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#CNF">CNF</a></b>(const Rede, NSU, Finalizacao : String; const DocumentoVinculado : String = '');</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#NCN">NCN</a></b>(const Rede, NSU, Finalizacao : String; const Valor : Double = 0; const DocumentoVinculado : String = '');</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#FinalizarCupom">FinalizarCupom</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#CancelarTransacoesPendentes">CancelarTransacoesPendentes</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#ConfirmarTransacoesPendentes">ConfirmarTransacoesPendentes</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#ImprimirTransacoesPendentes">ImprimirTransacoesPendentes</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="ACBrTEFD.TACBrTEFD.html#AgruparRespostasPendentes">AgruparRespostasPendentes</a></b>( var Grupo : <a   href="ACBrTEFDClass.html#TACBrTEFDArrayGrupoRespostasPendentes">TACBrTEFDArrayGrupoRespostasPendentes</a>) ;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#GPAtual">GPAtual</a></b> : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fGPAtual">fGPAtual</a> write <a   href="ACBrTEFD.TACBrTEFD.html#SetGPAtual">SetGPAtual</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#TecladoBloqueado">TecladoBloqueado</a></b> : Boolean read <a   href="ACBrTEFD.TACBrTEFD.html#fTecladoBloqueado">fTecladoBloqueado</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#AguardandoResposta">AguardandoResposta</a></b> : Boolean read <a   href="ACBrTEFD.TACBrTEFD.html#GetAguardandoResposta">GetAguardandoResposta</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#TEF">TEF</a></b>  : <a   href="ACBrTEFDClass.TACBrTEFDClass.html">TACBrTEFDClass</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fTefClass">fTefClass</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#Req">Req</a></b>  : <a   href="ACBrTEFDClass.TACBrTEFDReq.html">TACBrTEFDReq</a>   read <a   href="ACBrTEFD.TACBrTEFD.html#GetReq">GetReq</a>  ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#Resp">Resp</a></b> : <a   href="ACBrTEFDClass.TACBrTEFDResp.html">TACBrTEFDResp</a>  read <a   href="ACBrTEFD.TACBrTEFD.html#GetResp">GetResp</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#RespostasPendentes">RespostasPendentes</a></b> : <a   href="ACBrTEFDClass.TACBrTEFDRespostasPendentes.html">TACBrTEFDRespostasPendentes</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fpRespostasPendentes">fpRespostasPendentes</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#ArqTemp">ArqTemp</a></b>  : String read <a   href="ACBrTEFD.TACBrTEFD.html#GetArqTmp">GetArqTmp</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#ArqReq">ArqReq</a></b>   : String read <a   href="ACBrTEFD.TACBrTEFD.html#GetArqReq">GetArqReq</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#ArqSTS">ArqSTS</a></b>   : String read <a   href="ACBrTEFD.TACBrTEFD.html#GetArqSTS">GetArqSTS</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#ArqResp">ArqResp</a></b>  : String read <a   href="ACBrTEFD.TACBrTEFD.html#GetArqResp">GetArqResp</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#GPExeName">GPExeName</a></b>: String read <a   href="ACBrTEFD.TACBrTEFD.html#GetGPExeName">GetGPExeName</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#EstadoReq">EstadoReq</a></b>  : <a   href="ACBrTEFDClass.html#TACBrTEFDReqEstado">TACBrTEFDReqEstado</a>  read <a   href="ACBrTEFD.TACBrTEFD.html#fEstadoReq">fEstadoReq</a>  write <a   href="ACBrTEFD.TACBrTEFD.html#SetEstadoReq">SetEstadoReq</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#EstadoResp">EstadoResp</a></b> : <a   href="ACBrTEFDClass.html#TACBrTEFDRespEstado">TACBrTEFDRespEstado</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fEstadoResp">fEstadoResp</a> write <a   href="ACBrTEFD.TACBrTEFD.html#SetEstadoResp">SetEstadoResp</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#About">About</a></b> : String read <a   href="ACBrTEFD.TACBrTEFD.html#GetAbout">GetAbout</a> write <a   href="ACBrTEFD.TACBrTEFD.html#SetAbout">SetAbout</a> stored False ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#MultiplosCartoes">MultiplosCartoes</a></b> : Boolean read <a   href="ACBrTEFD.TACBrTEFD.html#fMultiplosCartoes">fMultiplosCartoes</a>
+       write <a   href="ACBrTEFD.TACBrTEFD.html#SetMultiplosCartoes">SetMultiplosCartoes</a> default False ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#NumeroMaximoCartoes">NumeroMaximoCartoes</a></b> : Integer read <a   href="ACBrTEFD.TACBrTEFD.html#fNumeroMaximoCartoes">fNumeroMaximoCartoes</a>
+       write <a   href="ACBrTEFD.TACBrTEFD.html#SetNumeroMaximoCartoes">SetNumeroMaximoCartoes</a> default 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#AutoAtivarGP">AutoAtivarGP</a></b> : Boolean read <a   href="ACBrTEFD.TACBrTEFD.html#fAutoAtivarGP">fAutoAtivarGP</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fAutoAtivarGP">fAutoAtivarGP</a>
+       default True ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#ExibirMsgAutenticacao">ExibirMsgAutenticacao</a></b> : Boolean read <a   href="ACBrTEFD.TACBrTEFD.html#fExibirMsgAutenticacao">fExibirMsgAutenticacao</a>
+       write <a   href="ACBrTEFD.TACBrTEFD.html#fExibirMsgAutenticacao">fExibirMsgAutenticacao</a> default True ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#AutoEfetuarPagamento">AutoEfetuarPagamento</a></b> : Boolean read <a   href="ACBrTEFD.TACBrTEFD.html#fAutoEfetuarPagamento">fAutoEfetuarPagamento</a>
+       write <a   href="ACBrTEFD.TACBrTEFD.html#SetAutoEfetuarPagamento">SetAutoEfetuarPagamento</a> default False ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#AutoFinalizarCupom">AutoFinalizarCupom</a></b> : Boolean read <a   href="ACBrTEFD.TACBrTEFD.html#fAutoFinalizarCupom">fAutoFinalizarCupom</a>
+       write <a   href="ACBrTEFD.TACBrTEFD.html#SetAutoFinalizarCupom">SetAutoFinalizarCupom</a> default True ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#NumVias">NumVias</a></b>   : Integer read <a   href="ACBrTEFD.TACBrTEFD.html#fNumVias">fNumVias</a>   write <a   href="ACBrTEFD.TACBrTEFD.html#SetNumVias">SetNumVias</a>
+       default <a   href="ACBrTEFDClass.html#CACBrTEFD_NumVias">CACBrTEFD_NumVias</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#EsperaSTS">EsperaSTS</a></b> : Integer read <a   href="ACBrTEFD.TACBrTEFD.html#fEsperaSTS">fEsperaSTS</a> write <a   href="ACBrTEFD.TACBrTEFD.html#SetEsperaSTS">SetEsperaSTS</a>
+        default <a   href="ACBrTEFDClass.html#CACBrTEFD_EsperaSleep">CACBrTEFD_EsperaSleep</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#EsperaSleep">EsperaSleep</a></b> : Integer read <a   href="ACBrTEFD.TACBrTEFD.html#fEsperaSleep">fEsperaSleep</a> write <a   href="ACBrTEFD.TACBrTEFD.html#SetEsperaSleep">SetEsperaSleep</a>
+        default <a   href="ACBrTEFDClass.html#CACBrTEFD_EsperaSleep">CACBrTEFD_EsperaSleep</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#PathBackup">PathBackup</a></b> : String read <a   href="ACBrTEFD.TACBrTEFD.html#GetPathBackup">GetPathBackup</a> write <a   href="ACBrTEFD.TACBrTEFD.html#SetPathBackup">SetPathBackup</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#ArqLOG">ArqLOG</a></b> : String read <a   href="ACBrTEFD.TACBrTEFD.html#fArqLOG">fArqLOG</a> write <a   href="ACBrTEFD.TACBrTEFD.html#SetArqLOG">SetArqLOG</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#TEFDial">TEFDial</a></b>    : <a   href="ACBrTEFDDial.TACBrTEFDDial.html">TACBrTEFDDial</a>     read <a   href="ACBrTEFD.TACBrTEFD.html#fTefDial">fTefDial</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#TEFDisc">TEFDisc</a></b>    : <a   href="ACBrTEFDDisc.TACBrTEFDDisc.html">TACBrTEFDDisc</a>     read <a   href="ACBrTEFD.TACBrTEFD.html#fTefDisc">fTefDisc</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#TEFHiper">TEFHiper</a></b>   : <a   href="ACBrTEFDHiper.TACBrTEFDHiper.html">TACBrTEFDHiper</a>    read <a   href="ACBrTEFD.TACBrTEFD.html#fTefHiper">fTefHiper</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#TEFCliSiTef">TEFCliSiTef</a></b>: <a   href="ACBrTEFDCliSiTef.TACBrTEFDCliSiTef.html">TACBrTEFDCliSiTef</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fTefCliSiTef">fTefCliSiTef</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#TEFVeSPague">TEFVeSPague</a></b>: <a   href="ACBrTEFDVeSPague.TACBrTEFDVeSPague.html">TACBrTEFDVeSPague</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fTefVeSPague">fTefVeSPague</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#TEFGPU">TEFGPU</a></b>     : <a   href="ACBrTEFDGpu.TACBrTEFDGpu.html">TACBrTEFDGpu</a>      read <a   href="ACBrTEFD.TACBrTEFD.html#fTefGPU">fTefGPU</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#TEFBanese">TEFBanese</a></b>  : <a   href="ACBrTEFDBanese.TACBrTEFDBanese.html">TACBrTEFDBanese</a>   read <a   href="ACBrTEFD.TACBrTEFD.html#fTefBanese">fTefBanese</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnAguardaResp">OnAguardaResp</a></b> : <a   href="ACBrTEFDClass.html#TACBrTEFDAguardaRespEvent">TACBrTEFDAguardaRespEvent</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fOnAguardaResp">fOnAguardaResp</a>
+        write <a   href="ACBrTEFD.TACBrTEFD.html#fOnAguardaResp">fOnAguardaResp</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnExibeMsg">OnExibeMsg</a></b>    : <a   href="ACBrTEFDClass.html#TACBrTEFDExibeMsg">TACBrTEFDExibeMsg</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fOnExibeMsg">fOnExibeMsg</a>
+        write <a   href="ACBrTEFD.TACBrTEFD.html#fOnExibeMsg">fOnExibeMsg</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnBloqueiaMouseTeclado">OnBloqueiaMouseTeclado</a></b> : <a   href="ACBrTEFDClass.html#TACBrTEFDBloqueiaMouseTeclado">TACBrTEFDBloqueiaMouseTeclado</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnBloqueiaMouseTeclado">fOnBloqueiaMouseTeclado</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnBloqueiaMouseTeclado">fOnBloqueiaMouseTeclado</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnRestauraFocoAplicacao">OnRestauraFocoAplicacao</a></b> : <a   href="ACBrTEFDClass.html#TACBrTEFDExecutaAcao">TACBrTEFDExecutaAcao</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnRestauraFocoAplicacao">fOnRestauraFocoAplicacao</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnRestauraFocoAplicacao">fOnRestauraFocoAplicacao</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnLimpaTeclado">OnLimpaTeclado</a></b> : <a   href="ACBrTEFDClass.html#TACBrTEFDExecutaAcao">TACBrTEFDExecutaAcao</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fOnLimpaTeclado">fOnLimpaTeclado</a>
+        write <a   href="ACBrTEFD.TACBrTEFD.html#fOnLimpaTeclado">fOnLimpaTeclado</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnComandaECF">OnComandaECF</a></b>  : <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECF">TACBrTEFDComandaECF</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECF">fOnComandaECF</a>
+        write <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECF">fOnComandaECF</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnComandaECFPagamento">OnComandaECFPagamento</a></b>  : <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECFPagamento">TACBrTEFDComandaECFPagamento</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECFPagamento">fOnComandaECFPagamento</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECFPagamento">fOnComandaECFPagamento</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnComandaECFAbreVinculado">OnComandaECFAbreVinculado</a></b> : <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECFAbreVinculado">TACBrTEFDComandaECFAbreVinculado</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECFAbreVinculado">fOnComandaECFAbreVinculado</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECFAbreVinculado">fOnComandaECFAbreVinculado</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnComandaECFImprimeVia">OnComandaECFImprimeVia</a></b> : <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECFImprimeVia">TACBrTEFDComandaECFImprimeVia</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECFImprimeVia">fOnComandaECFImprimeVia</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECFImprimeVia">fOnComandaECFImprimeVia</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnInfoECF">OnInfoECF</a></b> : <a   href="ACBrTEFDClass.html#TACBrTEFDObterInfoECF">TACBrTEFDObterInfoECF</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fOnInfoECF">fOnInfoECF</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnInfoECF">fOnInfoECF</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnAntesFinalizarRequisicao">OnAntesFinalizarRequisicao</a></b> : <a   href="ACBrTEFDClass.html#TACBrTEFDAntesFinalizarReq">TACBrTEFDAntesFinalizarReq</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnAntesFinalizarRequisicao">fOnAntesFinalizarRequisicao</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnAntesFinalizarRequisicao">fOnAntesFinalizarRequisicao</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnDepoisConfirmarTransacoes">OnDepoisConfirmarTransacoes</a></b> : <a   href="ACBrTEFDClass.html#TACBrTEFDProcessarTransacoesPendentes">TACBrTEFDProcessarTransacoesPendentes</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnDepoisConfirmarTransacoes">fOnDepoisConfirmarTransacoes</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnDepoisConfirmarTransacoes">fOnDepoisConfirmarTransacoes</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnAntesCancelarTransacao">OnAntesCancelarTransacao</a></b> : <a   href="ACBrTEFDClass.html#TACBrTEFDAntesCancelarTransacao">TACBrTEFDAntesCancelarTransacao</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnAntesCancelarTransacao">fOnAntesCancelarTransacao</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnAntesCancelarTransacao">fOnAntesCancelarTransacao</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnDepoisCancelarTransacoes">OnDepoisCancelarTransacoes</a></b> : <a   href="ACBrTEFDClass.html#TACBrTEFDProcessarTransacoesPendentes">TACBrTEFDProcessarTransacoesPendentes</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnDepoisCancelarTransacoes">fOnDepoisCancelarTransacoes</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnDepoisCancelarTransacoes">fOnDepoisCancelarTransacoes</a> ;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnMudaEstadoReq">OnMudaEstadoReq</a></b>  : <a   href="ACBrTEFDClass.html#TACBrTEFDMudaEstadoReq">TACBrTEFDMudaEstadoReq</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fOnMudaEstadoReq">fOnMudaEstadoReq</a>
+        write <a   href="ACBrTEFD.TACBrTEFD.html#fOnMudaEstadoReq">fOnMudaEstadoReq</a> ;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="ACBrTEFD.TACBrTEFD.html#OnMudaEstadoResp">OnMudaEstadoResp</a></b> : <a   href="ACBrTEFDClass.html#TACBrTEFDMudaEstadoResp">TACBrTEFDMudaEstadoResp</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fOnMudaEstadoResp">fOnMudaEstadoResp</a>
+        write <a   href="ACBrTEFD.TACBrTEFD.html#fOnMudaEstadoResp">fOnMudaEstadoResp</a> ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fAutoAtivarGP"></a><code><b>fAutoAtivarGP</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fAutoFinalizarCupom"></a><code><b>fAutoFinalizarCupom</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fAutoEfetuarPagamento"></a><code><b>fAutoEfetuarPagamento</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fEsperaSleep"></a><code><b>fEsperaSleep</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fEstadoReq"></a><code><b>fEstadoReq</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDReqEstado">TACBrTEFDReqEstado</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fEstadoResp"></a><code><b>fEstadoResp</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDRespEstado">TACBrTEFDRespEstado</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fExibirMsgAutenticacao"></a><code><b>fExibirMsgAutenticacao</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fMultiplosCartoes"></a><code><b>fMultiplosCartoes</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fNumeroMaximoCartoes"></a><code><b>fNumeroMaximoCartoes</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fNumVias"></a><code><b>fNumVias</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnAguardaResp"></a><code><b>fOnAguardaResp</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDAguardaRespEvent">TACBrTEFDAguardaRespEvent</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnAntesCancelarTransacao"></a><code><b>fOnAntesCancelarTransacao</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDAntesCancelarTransacao">TACBrTEFDAntesCancelarTransacao</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnAntesFinalizarRequisicao"></a><code><b>fOnAntesFinalizarRequisicao</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDAntesFinalizarReq">TACBrTEFDAntesFinalizarReq</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnBloqueiaMouseTeclado"></a><code><b>fOnBloqueiaMouseTeclado</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDBloqueiaMouseTeclado">TACBrTEFDBloqueiaMouseTeclado</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnComandaECF"></a><code><b>fOnComandaECF</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECF">TACBrTEFDComandaECF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnComandaECFAbreVinculado"></a><code><b>fOnComandaECFAbreVinculado</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECFAbreVinculado">TACBrTEFDComandaECFAbreVinculado</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnComandaECFImprimeVia"></a><code><b>fOnComandaECFImprimeVia</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECFImprimeVia">TACBrTEFDComandaECFImprimeVia</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnComandaECFPagamento"></a><code><b>fOnComandaECFPagamento</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECFPagamento">TACBrTEFDComandaECFPagamento</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnDepoisCancelarTransacoes"></a><code><b>fOnDepoisCancelarTransacoes</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDProcessarTransacoesPendentes">TACBrTEFDProcessarTransacoesPendentes</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnDepoisConfirmarTransacoes"></a><code><b>fOnDepoisConfirmarTransacoes</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDProcessarTransacoesPendentes">TACBrTEFDProcessarTransacoesPendentes</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnExibeMsg"></a><code><b>fOnExibeMsg</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDExibeMsg">TACBrTEFDExibeMsg</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnInfoECF"></a><code><b>fOnInfoECF</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDObterInfoECF">TACBrTEFDObterInfoECF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnLimpaTeclado"></a><code><b>fOnLimpaTeclado</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDExecutaAcao">TACBrTEFDExecutaAcao</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnMudaEstadoReq"></a><code><b>fOnMudaEstadoReq</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDMudaEstadoReq">TACBrTEFDMudaEstadoReq</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnMudaEstadoResp"></a><code><b>fOnMudaEstadoResp</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDMudaEstadoResp">TACBrTEFDMudaEstadoResp</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fOnRestauraFocoAplicacao"></a><code><b>fOnRestauraFocoAplicacao</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDExecutaAcao">TACBrTEFDExecutaAcao</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fPathBackup"></a><code><b>fPathBackup</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fGPAtual"></a><code><b>fGPAtual</b>: <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fTecladoBloqueado"></a><code><b>fTecladoBloqueado</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fTefClass"></a><code><b>fTefClass</b>: <a   href="ACBrTEFDClass.TACBrTEFDClass.html">TACBrTEFDClass</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fTefDial"></a><code><b>fTefDial</b>: <a   href="ACBrTEFDDial.TACBrTEFDDial.html">TACBrTEFDDial</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fTefGPU"></a><code><b>fTefGPU</b>: <a   href="ACBrTEFDGpu.TACBrTEFDGpu.html">TACBrTEFDGpu</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fTefCliSiTef"></a><code><b>fTefCliSiTef</b>: <a   href="ACBrTEFDCliSiTef.TACBrTEFDCliSiTef.html">TACBrTEFDCliSiTef</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fTefVeSPague"></a><code><b>fTefVeSPague</b>: <a   href="ACBrTEFDVeSPague.TACBrTEFDVeSPague.html">TACBrTEFDVeSPague</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fTefDisc"></a><code><b>fTefDisc</b>: <a   href="ACBrTEFDDisc.TACBrTEFDDisc.html">TACBrTEFDDisc</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fTefHiper"></a><code><b>fTefHiper</b>: <a   href="ACBrTEFDHiper.TACBrTEFDHiper.html">TACBrTEFDHiper</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fTefBanese"></a><code><b>fTefBanese</b>: <a   href="ACBrTEFDBanese.TACBrTEFDBanese.html">TACBrTEFDBanese</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fEsperaSTS"></a><code><b>fEsperaSTS</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+fTefGood : <a class="normal"  href="ACBrTEFDGoodCard.TACBrTEFDGoodCard.html">TACBrTEFDGoodCard</a> ; fTefFW : <a class="normal"  href="ACBrTEFDFoxWin.TACBrTEFDFoxWin.html">TACBrTEFDFoxWin</a> ;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fTEFList"></a><code><b>fTEFList</b>: <a   href="ACBrTEFDClass.TACBrTEFDClassList.html">TACBrTEFDClassList</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fpRespostasPendentes"></a><code><b>fpRespostasPendentes</b>: <a   href="ACBrTEFDClass.TACBrTEFDRespostasPendentes.html">TACBrTEFDRespostasPendentes</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="fArqLOG"></a><code><b>fArqLOG</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Métodos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetAbout"></a><code>function <b>GetAbout</b> : String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetAguardandoResposta"></a><code>function <b>GetAguardandoResposta</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetArqReq"></a><code>function <b>GetArqReq</b> : String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetArqResp"></a><code>function <b>GetArqResp</b> : String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetArqSTS"></a><code>function <b>GetArqSTS</b> : String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetArqTmp"></a><code>function <b>GetArqTmp</b> : String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetGPExeName"></a><code>function <b>GetGPExeName</b> : String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetPathBackup"></a><code>function <b>GetPathBackup</b> : String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetReq"></a><code>function <b>GetReq</b> : <a   href="ACBrTEFDClass.TACBrTEFDReq.html">TACBrTEFDReq</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="GetResp"></a><code>function <b>GetResp</b> : <a   href="ACBrTEFDClass.TACBrTEFDResp.html">TACBrTEFDResp</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetAutoAtivarGP"></a><code>procedure <b>SetAutoAtivarGP</b>(const AValue : Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetAutoEfetuarPagamento"></a><code>procedure <b>SetAutoEfetuarPagamento</b>(const AValue : Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetAutoFinalizarCupom"></a><code>procedure <b>SetAutoFinalizarCupom</b>(const AValue : Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetEsperaSleep"></a><code>procedure <b>SetEsperaSleep</b>(const AValue : Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetEsperaSTS"></a><code>procedure <b>SetEsperaSTS</b>(const AValue : Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetEstadoReq"></a><code>procedure <b>SetEstadoReq</b>(const AValue : <a   href="ACBrTEFDClass.html#TACBrTEFDReqEstado">TACBrTEFDReqEstado</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetEstadoResp"></a><code>procedure <b>SetEstadoResp</b>(const AValue : <a   href="ACBrTEFDClass.html#TACBrTEFDRespEstado">TACBrTEFDRespEstado</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetMultiplosCartoes"></a><code>procedure <b>SetMultiplosCartoes</b>(const AValue : Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetNumeroMaximoCartoes"></a><code>procedure <b>SetNumeroMaximoCartoes</b>(const AValue: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetNumVias"></a><code>procedure <b>SetNumVias</b>(const AValue : Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetPathBackup"></a><code>procedure <b>SetPathBackup</b>(const AValue : String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetGPAtual"></a><code>procedure <b>SetGPAtual</b>(const AValue : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetAbout"></a><code>procedure <b>SetAbout</b>(const Value: String);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="SetArqLOG"></a><code>procedure <b>SetArqLOG</b>(const AValue : String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+%h-</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EstadoECF"></a><code>Function <b>EstadoECF</b> : AnsiChar ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SubTotalECF"></a><code>function <b>SubTotalECF</b>: Double;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DoExibeMsg"></a><code>function <b>DoExibeMsg</b>( Operacao : <a   href="ACBrTEFDClass.html#TACBrTEFDOperacaoMensagem">TACBrTEFDOperacaoMensagem</a>; Mensagem : String ) : TModalResult;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ComandarECF"></a><code>function <b>ComandarECF</b>(Operacao : <a   href="ACBrTEFDClass.html#TACBrTEFDOperacaoECF">TACBrTEFDOperacaoECF</a>) : Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ECFPagamento"></a><code>function <b>ECFPagamento</b>(Indice : String; Valor : Double) : Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ECFAbreVinculado"></a><code>function <b>ECFAbreVinculado</b>(COO, Indice : String; Valor : Double) : Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ECFImprimeVia"></a><code>function <b>ECFImprimeVia</b>( TipoRelatorio : <a   href="ACBrTEFDClass.html#TACBrTEFDTipoRelatorio">TACBrTEFDTipoRelatorio</a>; Via : Integer; ImagemComprovante : TStringList) : Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BloquearMouseTeclado"></a><code>procedure <b>BloquearMouseTeclado</b>(Bloqueia : Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LimparTeclado"></a><code>procedure <b>LimparTeclado</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RestaurarFocoAplicacao"></a><code>procedure <b>RestaurarFocoAplicacao</b> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>( AOwner : TComponent ) ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b> ; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Inicializar"></a><code>Procedure <b>Inicializar</b>( GP : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a> = gpNenhum ) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DesInicializar"></a><code>Procedure <b>DesInicializar</b>( GP : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a> = gpNenhum ) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Inicializado"></a><code>function <b>Inicializado</b>( GP : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a> = gpNenhum ) : Boolean ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AtivarGP"></a><code>procedure <b>AtivarGP</b>(GP : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ATV"></a><code>procedure <b>ATV</b>( GP : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a> = gpNenhum ) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ADM"></a><code>Function <b>ADM</b>( GP : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a> = gpNenhum ) : Boolean ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CRT"></a><code>Function <b>CRT</b>( const Valor : Double; const IndiceFPG_ECF : String; const DocumentoVinculado : String = ''; const Moeda : Integer = 0 ) : Boolean ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CHQ"></a><code>Function <b>CHQ</b>( const Valor : Double; const IndiceFPG_ECF : String; const DocumentoVinculado : String = ''; const CMC7 : String = ''; const TipoPessoa : AnsiChar = 'F'; const DocumentoPessoa : String = ''; const DataCheque : TDateTime = 0; const Banco : String = ''; const Agencia : String = ''; const AgenciaDC : String = ''; const Conta : String = ''; const ContaDC : String = ''; const Cheque : String = ''; const ChequeDC : String = ''; const Compensacao: String = '' ) : Boolean ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CNC"></a><code>Function <b>CNC</b>(const Rede, NSU : String; const DataHoraTransacao : TDateTime; const Valor : Double) : Boolean ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CNF"></a><code>procedure <b>CNF</b>(const Rede, NSU, Finalizacao : String; const DocumentoVinculado : String = '');</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="NCN"></a><code>procedure <b>NCN</b>(const Rede, NSU, Finalizacao : String; const Valor : Double = 0; const DocumentoVinculado : String = '');</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FinalizarCupom"></a><code>procedure <b>FinalizarCupom</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CancelarTransacoesPendentes"></a><code>procedure <b>CancelarTransacoesPendentes</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ConfirmarTransacoesPendentes"></a><code>procedure <b>ConfirmarTransacoesPendentes</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ImprimirTransacoesPendentes"></a><code>procedure <b>ImprimirTransacoesPendentes</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AgruparRespostasPendentes"></a><code>procedure <b>AgruparRespostasPendentes</b>( var Grupo : <a   href="ACBrTEFDClass.html#TACBrTEFDArrayGrupoRespostasPendentes">TACBrTEFDArrayGrupoRespostasPendentes</a>) ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GPAtual"></a><code>property <b>GPAtual</b> : <a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fGPAtual">fGPAtual</a> write <a   href="ACBrTEFD.TACBrTEFD.html#SetGPAtual">SetGPAtual</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TecladoBloqueado"></a><code>property <b>TecladoBloqueado</b> : Boolean read <a   href="ACBrTEFD.TACBrTEFD.html#fTecladoBloqueado">fTecladoBloqueado</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AguardandoResposta"></a><code>property <b>AguardandoResposta</b> : Boolean read <a   href="ACBrTEFD.TACBrTEFD.html#GetAguardandoResposta">GetAguardandoResposta</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TEF"></a><code>property <b>TEF</b>  : <a   href="ACBrTEFDClass.TACBrTEFDClass.html">TACBrTEFDClass</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fTefClass">fTefClass</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Req"></a><code>property <b>Req</b>  : <a   href="ACBrTEFDClass.TACBrTEFDReq.html">TACBrTEFDReq</a>   read <a   href="ACBrTEFD.TACBrTEFD.html#GetReq">GetReq</a>  ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Resp"></a><code>property <b>Resp</b> : <a   href="ACBrTEFDClass.TACBrTEFDResp.html">TACBrTEFDResp</a>  read <a   href="ACBrTEFD.TACBrTEFD.html#GetResp">GetResp</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RespostasPendentes"></a><code>property <b>RespostasPendentes</b> : <a   href="ACBrTEFDClass.TACBrTEFDRespostasPendentes.html">TACBrTEFDRespostasPendentes</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fpRespostasPendentes">fpRespostasPendentes</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ArqTemp"></a><code>property <b>ArqTemp</b>  : String read <a   href="ACBrTEFD.TACBrTEFD.html#GetArqTmp">GetArqTmp</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ArqReq"></a><code>property <b>ArqReq</b>   : String read <a   href="ACBrTEFD.TACBrTEFD.html#GetArqReq">GetArqReq</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ArqSTS"></a><code>property <b>ArqSTS</b>   : String read <a   href="ACBrTEFD.TACBrTEFD.html#GetArqSTS">GetArqSTS</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ArqResp"></a><code>property <b>ArqResp</b>  : String read <a   href="ACBrTEFD.TACBrTEFD.html#GetArqResp">GetArqResp</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GPExeName"></a><code>property <b>GPExeName</b>: String read <a   href="ACBrTEFD.TACBrTEFD.html#GetGPExeName">GetGPExeName</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EstadoReq"></a><code>property <b>EstadoReq</b>  : <a   href="ACBrTEFDClass.html#TACBrTEFDReqEstado">TACBrTEFDReqEstado</a>  read <a   href="ACBrTEFD.TACBrTEFD.html#fEstadoReq">fEstadoReq</a>  write <a   href="ACBrTEFD.TACBrTEFD.html#SetEstadoReq">SetEstadoReq</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EstadoResp"></a><code>property <b>EstadoResp</b> : <a   href="ACBrTEFDClass.html#TACBrTEFDRespEstado">TACBrTEFDRespEstado</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fEstadoResp">fEstadoResp</a> write <a   href="ACBrTEFD.TACBrTEFD.html#SetEstadoResp">SetEstadoResp</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="About"></a><code>property <b>About</b> : String read <a   href="ACBrTEFD.TACBrTEFD.html#GetAbout">GetAbout</a> write <a   href="ACBrTEFD.TACBrTEFD.html#SetAbout">SetAbout</a> stored False ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="MultiplosCartoes"></a><code>property <b>MultiplosCartoes</b> : Boolean read <a   href="ACBrTEFD.TACBrTEFD.html#fMultiplosCartoes">fMultiplosCartoes</a>
+       write <a   href="ACBrTEFD.TACBrTEFD.html#SetMultiplosCartoes">SetMultiplosCartoes</a> default False ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="NumeroMaximoCartoes"></a><code>property <b>NumeroMaximoCartoes</b> : Integer read <a   href="ACBrTEFD.TACBrTEFD.html#fNumeroMaximoCartoes">fNumeroMaximoCartoes</a>
+       write <a   href="ACBrTEFD.TACBrTEFD.html#SetNumeroMaximoCartoes">SetNumeroMaximoCartoes</a> default 0;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AutoAtivarGP"></a><code>property <b>AutoAtivarGP</b> : Boolean read <a   href="ACBrTEFD.TACBrTEFD.html#fAutoAtivarGP">fAutoAtivarGP</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fAutoAtivarGP">fAutoAtivarGP</a>
+       default True ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ExibirMsgAutenticacao"></a><code>property <b>ExibirMsgAutenticacao</b> : Boolean read <a   href="ACBrTEFD.TACBrTEFD.html#fExibirMsgAutenticacao">fExibirMsgAutenticacao</a>
+       write <a   href="ACBrTEFD.TACBrTEFD.html#fExibirMsgAutenticacao">fExibirMsgAutenticacao</a> default True ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AutoEfetuarPagamento"></a><code>property <b>AutoEfetuarPagamento</b> : Boolean read <a   href="ACBrTEFD.TACBrTEFD.html#fAutoEfetuarPagamento">fAutoEfetuarPagamento</a>
+       write <a   href="ACBrTEFD.TACBrTEFD.html#SetAutoEfetuarPagamento">SetAutoEfetuarPagamento</a> default False ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="AutoFinalizarCupom"></a><code>property <b>AutoFinalizarCupom</b> : Boolean read <a   href="ACBrTEFD.TACBrTEFD.html#fAutoFinalizarCupom">fAutoFinalizarCupom</a>
+       write <a   href="ACBrTEFD.TACBrTEFD.html#SetAutoFinalizarCupom">SetAutoFinalizarCupom</a> default True ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="NumVias"></a><code>property <b>NumVias</b>   : Integer read <a   href="ACBrTEFD.TACBrTEFD.html#fNumVias">fNumVias</a>   write <a   href="ACBrTEFD.TACBrTEFD.html#SetNumVias">SetNumVias</a>
+       default <a   href="ACBrTEFDClass.html#CACBrTEFD_NumVias">CACBrTEFD_NumVias</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="EsperaSTS"></a><code>property <b>EsperaSTS</b> : Integer read <a   href="ACBrTEFD.TACBrTEFD.html#fEsperaSTS">fEsperaSTS</a> write <a   href="ACBrTEFD.TACBrTEFD.html#SetEsperaSTS">SetEsperaSTS</a>
+        default <a   href="ACBrTEFDClass.html#CACBrTEFD_EsperaSleep">CACBrTEFD_EsperaSleep</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="EsperaSleep"></a><code>property <b>EsperaSleep</b> : Integer read <a   href="ACBrTEFD.TACBrTEFD.html#fEsperaSleep">fEsperaSleep</a> write <a   href="ACBrTEFD.TACBrTEFD.html#SetEsperaSleep">SetEsperaSleep</a>
+        default <a   href="ACBrTEFDClass.html#CACBrTEFD_EsperaSleep">CACBrTEFD_EsperaSleep</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="PathBackup"></a><code>property <b>PathBackup</b> : String read <a   href="ACBrTEFD.TACBrTEFD.html#GetPathBackup">GetPathBackup</a> write <a   href="ACBrTEFD.TACBrTEFD.html#SetPathBackup">SetPathBackup</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="ArqLOG"></a><code>property <b>ArqLOG</b> : String read <a   href="ACBrTEFD.TACBrTEFD.html#fArqLOG">fArqLOG</a> write <a   href="ACBrTEFD.TACBrTEFD.html#SetArqLOG">SetArqLOG</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="TEFDial"></a><code>property <b>TEFDial</b>    : <a   href="ACBrTEFDDial.TACBrTEFDDial.html">TACBrTEFDDial</a>     read <a   href="ACBrTEFD.TACBrTEFD.html#fTefDial">fTefDial</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="TEFDisc"></a><code>property <b>TEFDisc</b>    : <a   href="ACBrTEFDDisc.TACBrTEFDDisc.html">TACBrTEFDDisc</a>     read <a   href="ACBrTEFD.TACBrTEFD.html#fTefDisc">fTefDisc</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="TEFHiper"></a><code>property <b>TEFHiper</b>   : <a   href="ACBrTEFDHiper.TACBrTEFDHiper.html">TACBrTEFDHiper</a>    read <a   href="ACBrTEFD.TACBrTEFD.html#fTefHiper">fTefHiper</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="TEFCliSiTef"></a><code>property <b>TEFCliSiTef</b>: <a   href="ACBrTEFDCliSiTef.TACBrTEFDCliSiTef.html">TACBrTEFDCliSiTef</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fTefCliSiTef">fTefCliSiTef</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="TEFVeSPague"></a><code>property <b>TEFVeSPague</b>: <a   href="ACBrTEFDVeSPague.TACBrTEFDVeSPague.html">TACBrTEFDVeSPague</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fTefVeSPague">fTefVeSPague</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="TEFGPU"></a><code>property <b>TEFGPU</b>     : <a   href="ACBrTEFDGpu.TACBrTEFDGpu.html">TACBrTEFDGpu</a>      read <a   href="ACBrTEFD.TACBrTEFD.html#fTefGPU">fTefGPU</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="TEFBanese"></a><code>property <b>TEFBanese</b>  : <a   href="ACBrTEFDBanese.TACBrTEFDBanese.html">TACBrTEFDBanese</a>   read <a   href="ACBrTEFD.TACBrTEFD.html#fTefBanese">fTefBanese</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAguardaResp"></a><code>property <b>OnAguardaResp</b> : <a   href="ACBrTEFDClass.html#TACBrTEFDAguardaRespEvent">TACBrTEFDAguardaRespEvent</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fOnAguardaResp">fOnAguardaResp</a>
+        write <a   href="ACBrTEFD.TACBrTEFD.html#fOnAguardaResp">fOnAguardaResp</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+property TEFGood : <a class="normal"  href="ACBrTEFDGoodCard.TACBrTEFDGoodCard.html">TACBrTEFDGoodCard</a> read fTefGood ; property TEFFoxWin : <a class="normal"  href="ACBrTEFDFoxWin.TACBrTEFDFoxWin.html">TACBrTEFDFoxWin</a> read fTefFW ;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnExibeMsg"></a><code>property <b>OnExibeMsg</b>    : <a   href="ACBrTEFDClass.html#TACBrTEFDExibeMsg">TACBrTEFDExibeMsg</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fOnExibeMsg">fOnExibeMsg</a>
+        write <a   href="ACBrTEFD.TACBrTEFD.html#fOnExibeMsg">fOnExibeMsg</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnBloqueiaMouseTeclado"></a><code>property <b>OnBloqueiaMouseTeclado</b> : <a   href="ACBrTEFDClass.html#TACBrTEFDBloqueiaMouseTeclado">TACBrTEFDBloqueiaMouseTeclado</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnBloqueiaMouseTeclado">fOnBloqueiaMouseTeclado</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnBloqueiaMouseTeclado">fOnBloqueiaMouseTeclado</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnRestauraFocoAplicacao"></a><code>property <b>OnRestauraFocoAplicacao</b> : <a   href="ACBrTEFDClass.html#TACBrTEFDExecutaAcao">TACBrTEFDExecutaAcao</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnRestauraFocoAplicacao">fOnRestauraFocoAplicacao</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnRestauraFocoAplicacao">fOnRestauraFocoAplicacao</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnLimpaTeclado"></a><code>property <b>OnLimpaTeclado</b> : <a   href="ACBrTEFDClass.html#TACBrTEFDExecutaAcao">TACBrTEFDExecutaAcao</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fOnLimpaTeclado">fOnLimpaTeclado</a>
+        write <a   href="ACBrTEFD.TACBrTEFD.html#fOnLimpaTeclado">fOnLimpaTeclado</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnComandaECF"></a><code>property <b>OnComandaECF</b>  : <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECF">TACBrTEFDComandaECF</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECF">fOnComandaECF</a>
+        write <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECF">fOnComandaECF</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnComandaECFPagamento"></a><code>property <b>OnComandaECFPagamento</b>  : <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECFPagamento">TACBrTEFDComandaECFPagamento</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECFPagamento">fOnComandaECFPagamento</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECFPagamento">fOnComandaECFPagamento</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnComandaECFAbreVinculado"></a><code>property <b>OnComandaECFAbreVinculado</b> : <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECFAbreVinculado">TACBrTEFDComandaECFAbreVinculado</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECFAbreVinculado">fOnComandaECFAbreVinculado</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECFAbreVinculado">fOnComandaECFAbreVinculado</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnComandaECFImprimeVia"></a><code>property <b>OnComandaECFImprimeVia</b> : <a   href="ACBrTEFDClass.html#TACBrTEFDComandaECFImprimeVia">TACBrTEFDComandaECFImprimeVia</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECFImprimeVia">fOnComandaECFImprimeVia</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnComandaECFImprimeVia">fOnComandaECFImprimeVia</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnInfoECF"></a><code>property <b>OnInfoECF</b> : <a   href="ACBrTEFDClass.html#TACBrTEFDObterInfoECF">TACBrTEFDObterInfoECF</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fOnInfoECF">fOnInfoECF</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnInfoECF">fOnInfoECF</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAntesFinalizarRequisicao"></a><code>property <b>OnAntesFinalizarRequisicao</b> : <a   href="ACBrTEFDClass.html#TACBrTEFDAntesFinalizarReq">TACBrTEFDAntesFinalizarReq</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnAntesFinalizarRequisicao">fOnAntesFinalizarRequisicao</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnAntesFinalizarRequisicao">fOnAntesFinalizarRequisicao</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnDepoisConfirmarTransacoes"></a><code>property <b>OnDepoisConfirmarTransacoes</b> : <a   href="ACBrTEFDClass.html#TACBrTEFDProcessarTransacoesPendentes">TACBrTEFDProcessarTransacoesPendentes</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnDepoisConfirmarTransacoes">fOnDepoisConfirmarTransacoes</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnDepoisConfirmarTransacoes">fOnDepoisConfirmarTransacoes</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnAntesCancelarTransacao"></a><code>property <b>OnAntesCancelarTransacao</b> : <a   href="ACBrTEFDClass.html#TACBrTEFDAntesCancelarTransacao">TACBrTEFDAntesCancelarTransacao</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnAntesCancelarTransacao">fOnAntesCancelarTransacao</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnAntesCancelarTransacao">fOnAntesCancelarTransacao</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnDepoisCancelarTransacoes"></a><code>property <b>OnDepoisCancelarTransacoes</b> : <a   href="ACBrTEFDClass.html#TACBrTEFDProcessarTransacoesPendentes">TACBrTEFDProcessarTransacoesPendentes</a>
+        read <a   href="ACBrTEFD.TACBrTEFD.html#fOnDepoisCancelarTransacoes">fOnDepoisCancelarTransacoes</a> write <a   href="ACBrTEFD.TACBrTEFD.html#fOnDepoisCancelarTransacoes">fOnDepoisCancelarTransacoes</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnMudaEstadoReq"></a><code>property <b>OnMudaEstadoReq</b>  : <a   href="ACBrTEFDClass.html#TACBrTEFDMudaEstadoReq">TACBrTEFDMudaEstadoReq</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fOnMudaEstadoReq">fOnMudaEstadoReq</a>
+        write <a   href="ACBrTEFD.TACBrTEFD.html#fOnMudaEstadoReq">fOnMudaEstadoReq</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="OnMudaEstadoResp"></a><code>property <b>OnMudaEstadoResp</b> : <a   href="ACBrTEFDClass.html#TACBrTEFDMudaEstadoResp">TACBrTEFDMudaEstadoResp</a> read <a   href="ACBrTEFD.TACBrTEFD.html#fOnMudaEstadoResp">fOnMudaEstadoResp</a>
+        write <a   href="ACBrTEFD.TACBrTEFD.html#fOnMudaEstadoResp">fOnMudaEstadoResp</a> ;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:53</em>
+</span>
+</body></html>

@@ -1,0 +1,633 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: pcnNFe: Classe TICMS</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TICMS"></a><h1 class="cio">Classe TICMS</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Hierarchy">Hierarquia</a></td><td><a class="section"  href="#%40Fields">Campos</a></td><td>Métodos</td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="pcnNFe.html">pcnNFe</a></p>
+<h2 class="declaration">Declaração</h2>
+<p class="declaration">
+<code>type TICMS = class(TPersistent)</code></p>
+<h2 class="description">Descrição</h2>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarquia</h2>
+<ul class="hierarchy"><li class="ancestor">TPersistent</li>
+<li class="thisitem">TICMS</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Fields"></a><h3 class="summary">Campos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#Forig">Forig</a></b>: <a   href="pcnConversao.html#TpcnOrigemMercadoria">TpcnOrigemMercadoria</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FCST">FCST</a></b>: <a   href="pcnConversao.html#TpcnCSTIcms">TpcnCSTIcms</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FCSOSN">FCSOSN</a></b>: <a   href="pcnConversao.html#TpcnCSOSNIcms">TpcnCSOSNIcms</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FmodBC">FmodBC</a></b>: <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcms">TpcnDeterminacaoBaseIcms</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FpRedBC">FpRedBC</a></b>: currency;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FvBC">FvBC</a></b>: currency;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FpICMS">FpICMS</a></b>: currency;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FvICMS">FvICMS</a></b>: currency;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FmodBCST">FmodBCST</a></b>: <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcmsST">TpcnDeterminacaoBaseIcmsST</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FpMVAST">FpMVAST</a></b>: currency;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FpRedBCST">FpRedBCST</a></b>: currency;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FvBCST">FvBCST</a></b>: currency;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FpICMSST">FpICMSST</a></b>: currency;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FvICMSST">FvICMSST</a></b>: currency;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FUFST">FUFST</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FpBCOp">FpBCOp</a></b>: currency;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FvBCSTRet">FvBCSTRet</a></b>: currency;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FvICMSSTRet">FvICMSSTRet</a></b>: currency;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FmotDesICMS">FmotDesICMS</a></b>: <a   href="pcnConversao.html#TpcnMotivoDesoneracaoICMS">TpcnMotivoDesoneracaoICMS</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FpCredSN">FpCredSN</a></b>: currency;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FvCredICMSSN">FvCredICMSSN</a></b>: currency;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FvBCSTDest">FvBCSTDest</a></b>: currency;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><code><b><a   href="pcnNFe.TICMS.html#FvICMSSTDest">FvICMSSTDest</a></b>: currency;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#orig">orig</a></b>: <a   href="pcnConversao.html#TpcnOrigemMercadoria">TpcnOrigemMercadoria</a> read <a   href="pcnNFe.TICMS.html#Forig">Forig</a> write <a   href="pcnNFe.TICMS.html#Forig">Forig</a> default oeNacional;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#CST">CST</a></b>: <a   href="pcnConversao.html#TpcnCSTIcms">TpcnCSTIcms</a> read <a   href="pcnNFe.TICMS.html#FCST">FCST</a> write <a   href="pcnNFe.TICMS.html#FCST">FCST</a> default cst00;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#CSOSN">CSOSN</a></b>: <a   href="pcnConversao.html#TpcnCSOSNIcms">TpcnCSOSNIcms</a> read <a   href="pcnNFe.TICMS.html#FCSOSN">FCSOSN</a> write <a   href="pcnNFe.TICMS.html#FCSOSN">FCSOSN</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#modBC">modBC</a></b>: <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcms">TpcnDeterminacaoBaseIcms</a> read <a   href="pcnNFe.TICMS.html#FmodBC">FmodBC</a> write <a   href="pcnNFe.TICMS.html#FmodBC">FmodBC</a> default dbiMargemValorAgregado;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#pRedBC">pRedBC</a></b>: currency read <a   href="pcnNFe.TICMS.html#FpRedBC">FpRedBC</a> write <a   href="pcnNFe.TICMS.html#FpRedBC">FpRedBC</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#vBC">vBC</a></b>: currency read <a   href="pcnNFe.TICMS.html#FvBC">FvBC</a> write <a   href="pcnNFe.TICMS.html#FvBC">FvBC</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#pICMS">pICMS</a></b>: currency read <a   href="pcnNFe.TICMS.html#FpICMS">FpICMS</a> write <a   href="pcnNFe.TICMS.html#FpICMS">FpICMS</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#vICMS">vICMS</a></b>: currency read <a   href="pcnNFe.TICMS.html#FvICMS">FvICMS</a> write <a   href="pcnNFe.TICMS.html#FvICMS">FvICMS</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#modBCST">modBCST</a></b>: <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcmsST">TpcnDeterminacaoBaseIcmsST</a> read <a   href="pcnNFe.TICMS.html#FmodBCST">FmodBCST</a> write <a   href="pcnNFe.TICMS.html#FmodBCST">FmodBCST</a> default dbisPrecoTabelado;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#pMVAST">pMVAST</a></b>: currency read <a   href="pcnNFe.TICMS.html#FpMVAST">FpMVAST</a> write <a   href="pcnNFe.TICMS.html#FpMVAST">FpMVAST</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#pRedBCST">pRedBCST</a></b>: currency read <a   href="pcnNFe.TICMS.html#FpRedBCST">FpRedBCST</a> write <a   href="pcnNFe.TICMS.html#FpRedBCST">FpRedBCST</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#vBCST">vBCST</a></b>: currency read <a   href="pcnNFe.TICMS.html#FvBCST">FvBCST</a> write <a   href="pcnNFe.TICMS.html#FvBCST">FvBCST</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#pICMSST">pICMSST</a></b>: currency read <a   href="pcnNFe.TICMS.html#FpICMSST">FpICMSST</a> write <a   href="pcnNFe.TICMS.html#FpICMSST">FpICMSST</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#vICMSST">vICMSST</a></b>: currency read <a   href="pcnNFe.TICMS.html#FvICMSST">FvICMSST</a> write <a   href="pcnNFe.TICMS.html#FvICMSST">FvICMSST</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#UFST">UFST</a></b>: string read <a   href="pcnNFe.TICMS.html#FUFST">FUFST</a> write <a   href="pcnNFe.TICMS.html#FUFST">FUFST</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#pBCOp">pBCOp</a></b>: currency read <a   href="pcnNFe.TICMS.html#FpBCOp">FpBCOp</a> write <a   href="pcnNFe.TICMS.html#FpBCOp">FpBCOp</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#vBCSTRet">vBCSTRet</a></b>: currency read <a   href="pcnNFe.TICMS.html#FvBCSTRet">FvBCSTRet</a> write <a   href="pcnNFe.TICMS.html#FvBCSTRet">FvBCSTRet</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#vICMSSTRet">vICMSSTRet</a></b>: currency read <a   href="pcnNFe.TICMS.html#FvICMSSTRet">FvICMSSTRet</a> write <a   href="pcnNFe.TICMS.html#FvICMSSTRet">FvICMSSTRet</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#motDesICMS">motDesICMS</a></b>: <a   href="pcnConversao.html#TpcnMotivoDesoneracaoICMS">TpcnMotivoDesoneracaoICMS</a> read <a   href="pcnNFe.TICMS.html#FmotDesICMS">FmotDesICMS</a> write <a   href="pcnNFe.TICMS.html#FmotDesICMS">FmotDesICMS</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#pCredSN">pCredSN</a></b>: currency read <a   href="pcnNFe.TICMS.html#FpCredSN">FpCredSN</a> write <a   href="pcnNFe.TICMS.html#FpCredSN">FpCredSN</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#vCredICMSSN">vCredICMSSN</a></b>: currency read <a   href="pcnNFe.TICMS.html#FvCredICMSSN">FvCredICMSSN</a> write <a   href="pcnNFe.TICMS.html#FvCredICMSSN">FvCredICMSSN</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#vBCSTDest">vBCSTDest</a></b>: currency read <a   href="pcnNFe.TICMS.html#FvBCSTDest">FvBCSTDest</a> write <a   href="pcnNFe.TICMS.html#FvBCSTDest">FvBCSTDest</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><code>property <b><a   href="pcnNFe.TICMS.html#vICMSSTDest">vICMSSTDest</a></b>: currency read <a   href="pcnNFe.TICMS.html#FvICMSSTDest">FvICMSSTDest</a> write <a   href="pcnNFe.TICMS.html#FvICMSSTDest">FvICMSSTDest</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Campos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="Forig"></a><code><b>Forig</b>: <a   href="pcnConversao.html#TpcnOrigemMercadoria">TpcnOrigemMercadoria</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCST"></a><code><b>FCST</b>: <a   href="pcnConversao.html#TpcnCSTIcms">TpcnCSTIcms</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N11</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FCSOSN"></a><code><b>FCSOSN</b>: <a   href="pcnConversao.html#TpcnCSOSNIcms">TpcnCSOSNIcms</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N12</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FmodBC"></a><code><b>FmodBC</b>: <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcms">TpcnDeterminacaoBaseIcms</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N12a</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FpRedBC"></a><code><b>FpRedBC</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N13</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FvBC"></a><code><b>FvBC</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N14</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FpICMS"></a><code><b>FpICMS</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N15</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FvICMS"></a><code><b>FvICMS</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N16</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FmodBCST"></a><code><b>FmodBCST</b>: <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcmsST">TpcnDeterminacaoBaseIcmsST</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N17</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FpMVAST"></a><code><b>FpMVAST</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N18</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FpRedBCST"></a><code><b>FpRedBCST</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N19</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FvBCST"></a><code><b>FvBCST</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N20</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FpICMSST"></a><code><b>FpICMSST</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N21</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FvICMSST"></a><code><b>FvICMSST</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N22</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FUFST"></a><code><b>FUFST</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N23</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FpBCOp"></a><code><b>FpBCOp</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N24</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FvBCSTRet"></a><code><b>FvBCSTRet</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N25</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FvICMSSTRet"></a><code><b>FvICMSSTRet</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N26</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FmotDesICMS"></a><code><b>FmotDesICMS</b>: <a   href="pcnConversao.html#TpcnMotivoDesoneracaoICMS">TpcnMotivoDesoneracaoICMS</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N27</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FpCredSN"></a><code><b>FpCredSN</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N28</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FvCredICMSSN"></a><code><b>FvCredICMSSN</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N29</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FvBCSTDest"></a><code><b>FvBCSTDest</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N30</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="private.gif" alt="Private" title="Private"></a></td>
+<td class="itemcode"><a name="FvICMSSTDest"></a><code><b>FvICMSSTDest</b>: currency;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N31</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="orig"></a><code>property <b>orig</b>: <a   href="pcnConversao.html#TpcnOrigemMercadoria">TpcnOrigemMercadoria</a> read <a   href="pcnNFe.TICMS.html#Forig">Forig</a> write <a   href="pcnNFe.TICMS.html#Forig">Forig</a> default oeNacional;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+N32</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CST"></a><code>property <b>CST</b>: <a   href="pcnConversao.html#TpcnCSTIcms">TpcnCSTIcms</a> read <a   href="pcnNFe.TICMS.html#FCST">FCST</a> write <a   href="pcnNFe.TICMS.html#FCST">FCST</a> default cst00;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="CSOSN"></a><code>property <b>CSOSN</b>: <a   href="pcnConversao.html#TpcnCSOSNIcms">TpcnCSOSNIcms</a> read <a   href="pcnNFe.TICMS.html#FCSOSN">FCSOSN</a> write <a   href="pcnNFe.TICMS.html#FCSOSN">FCSOSN</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="modBC"></a><code>property <b>modBC</b>: <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcms">TpcnDeterminacaoBaseIcms</a> read <a   href="pcnNFe.TICMS.html#FmodBC">FmodBC</a> write <a   href="pcnNFe.TICMS.html#FmodBC">FmodBC</a> default dbiMargemValorAgregado;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="pRedBC"></a><code>property <b>pRedBC</b>: currency read <a   href="pcnNFe.TICMS.html#FpRedBC">FpRedBC</a> write <a   href="pcnNFe.TICMS.html#FpRedBC">FpRedBC</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="vBC"></a><code>property <b>vBC</b>: currency read <a   href="pcnNFe.TICMS.html#FvBC">FvBC</a> write <a   href="pcnNFe.TICMS.html#FvBC">FvBC</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="pICMS"></a><code>property <b>pICMS</b>: currency read <a   href="pcnNFe.TICMS.html#FpICMS">FpICMS</a> write <a   href="pcnNFe.TICMS.html#FpICMS">FpICMS</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="vICMS"></a><code>property <b>vICMS</b>: currency read <a   href="pcnNFe.TICMS.html#FvICMS">FvICMS</a> write <a   href="pcnNFe.TICMS.html#FvICMS">FvICMS</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="modBCST"></a><code>property <b>modBCST</b>: <a   href="pcnConversao.html#TpcnDeterminacaoBaseIcmsST">TpcnDeterminacaoBaseIcmsST</a> read <a   href="pcnNFe.TICMS.html#FmodBCST">FmodBCST</a> write <a   href="pcnNFe.TICMS.html#FmodBCST">FmodBCST</a> default dbisPrecoTabelado;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="pMVAST"></a><code>property <b>pMVAST</b>: currency read <a   href="pcnNFe.TICMS.html#FpMVAST">FpMVAST</a> write <a   href="pcnNFe.TICMS.html#FpMVAST">FpMVAST</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="pRedBCST"></a><code>property <b>pRedBCST</b>: currency read <a   href="pcnNFe.TICMS.html#FpRedBCST">FpRedBCST</a> write <a   href="pcnNFe.TICMS.html#FpRedBCST">FpRedBCST</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="vBCST"></a><code>property <b>vBCST</b>: currency read <a   href="pcnNFe.TICMS.html#FvBCST">FvBCST</a> write <a   href="pcnNFe.TICMS.html#FvBCST">FvBCST</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="pICMSST"></a><code>property <b>pICMSST</b>: currency read <a   href="pcnNFe.TICMS.html#FpICMSST">FpICMSST</a> write <a   href="pcnNFe.TICMS.html#FpICMSST">FpICMSST</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="vICMSST"></a><code>property <b>vICMSST</b>: currency read <a   href="pcnNFe.TICMS.html#FvICMSST">FvICMSST</a> write <a   href="pcnNFe.TICMS.html#FvICMSST">FvICMSST</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="UFST"></a><code>property <b>UFST</b>: string read <a   href="pcnNFe.TICMS.html#FUFST">FUFST</a> write <a   href="pcnNFe.TICMS.html#FUFST">FUFST</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="pBCOp"></a><code>property <b>pBCOp</b>: currency read <a   href="pcnNFe.TICMS.html#FpBCOp">FpBCOp</a> write <a   href="pcnNFe.TICMS.html#FpBCOp">FpBCOp</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="vBCSTRet"></a><code>property <b>vBCSTRet</b>: currency read <a   href="pcnNFe.TICMS.html#FvBCSTRet">FvBCSTRet</a> write <a   href="pcnNFe.TICMS.html#FvBCSTRet">FvBCSTRet</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="vICMSSTRet"></a><code>property <b>vICMSSTRet</b>: currency read <a   href="pcnNFe.TICMS.html#FvICMSSTRet">FvICMSSTRet</a> write <a   href="pcnNFe.TICMS.html#FvICMSSTRet">FvICMSSTRet</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="motDesICMS"></a><code>property <b>motDesICMS</b>: <a   href="pcnConversao.html#TpcnMotivoDesoneracaoICMS">TpcnMotivoDesoneracaoICMS</a> read <a   href="pcnNFe.TICMS.html#FmotDesICMS">FmotDesICMS</a> write <a   href="pcnNFe.TICMS.html#FmotDesICMS">FmotDesICMS</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="pCredSN"></a><code>property <b>pCredSN</b>: currency read <a   href="pcnNFe.TICMS.html#FpCredSN">FpCredSN</a> write <a   href="pcnNFe.TICMS.html#FpCredSN">FpCredSN</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="vCredICMSSN"></a><code>property <b>vCredICMSSN</b>: currency read <a   href="pcnNFe.TICMS.html#FvCredICMSSN">FvCredICMSSN</a> write <a   href="pcnNFe.TICMS.html#FvCredICMSSN">FvCredICMSSN</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="vBCSTDest"></a><code>property <b>vBCSTDest</b>: currency read <a   href="pcnNFe.TICMS.html#FvBCSTDest">FvBCSTDest</a> write <a   href="pcnNFe.TICMS.html#FvBCSTDest">FvBCSTDest</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="published.gif" alt="Published" title="Published"></a></td>
+<td class="itemcode"><a name="vICMSSTDest"></a><code>property <b>vICMSSTDest</b>: currency read <a   href="pcnNFe.TICMS.html#FvICMSSTDest">FvICMSSTDest</a> write <a   href="pcnNFe.TICMS.html#FvICMSSTDest">FvICMSSTDest</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:21:00</em>
+</span>
+</body></html>

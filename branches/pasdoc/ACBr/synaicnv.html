@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: synaicnv</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit synaicnv</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td>Classes, Interfaces, Objetos e Registros</td><td><a class="section"  href="#%40FuncsProcs">Funções e Procedimentos</a></td><td><a class="section"  href="#%40Types">Tipos</a></td><td><a class="section"  href="#%40Constants">Constantes</a></td><td><a class="section"  href="#%40Variables">Variáveis</a></td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+LibIconv support</p>
+<p>
+:
+
+<p>This unit is Pascal interface to LibIconv library for charset translations. LibIconv is loaded dynamicly on-demand. If this library is not found in system, requested LibIconv function just return errorcode.</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a   href="synafpc.html">synafpc</a></li><li>Windows</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40FuncsProcs"></a><h3 class="summary">Funções e Procedimentos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="synaicnv.html#SynaIconvOpen">SynaIconvOpen</a></b>(const tocode, fromcode: Ansistring): <a   href="synaicnv.html#iconv_t">iconv_t</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="synaicnv.html#SynaIconvOpenTranslit">SynaIconvOpenTranslit</a></b>(const tocode, fromcode: Ansistring): <a   href="synaicnv.html#iconv_t">iconv_t</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="synaicnv.html#SynaIconvOpenIgnore">SynaIconvOpenIgnore</a></b>(const tocode, fromcode: Ansistring): <a   href="synaicnv.html#iconv_t">iconv_t</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="synaicnv.html#SynaIconv">SynaIconv</a></b>(cd: <a   href="synaicnv.html#iconv_t">iconv_t</a>; inbuf: AnsiString; var outbuf: AnsiString): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="synaicnv.html#SynaIconvClose">SynaIconvClose</a></b>(var cd: <a   href="synaicnv.html#iconv_t">iconv_t</a>): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="synaicnv.html#SynaIconvCtl">SynaIconvCtl</a></b>(cd: <a   href="synaicnv.html#iconv_t">iconv_t</a>; request: integer; argument: <a   href="synaicnv.html#argptr">argptr</a>): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="synaicnv.html#IsIconvloaded">IsIconvloaded</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a   href="synaicnv.html#InitIconvInterface">InitIconvInterface</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a   href="synaicnv.html#DestroyIconvInterface">DestroyIconvInterface</a></b>: Boolean;</code></td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="synaicnv.html#size_t">size_t</a></b> = Cardinal;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="synaicnv.html#iconv_t">iconv_t</a></b> = Pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="synaicnv.html#argptr">argptr</a></b> = <a   href="synaicnv.html#iconv_t">iconv_t</a>;</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="synaicnv.html#DLLIconvName">DLLIconvName</a></b> = 'iconv.dll';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="synaicnv.html#ICONV_TRIVIALP">ICONV_TRIVIALP</a></b>          = 0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="synaicnv.html#ICONV_GET_TRANSLITERATE">ICONV_GET_TRANSLITERATE</a></b> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="synaicnv.html#ICONV_SET_TRANSLITERATE">ICONV_SET_TRANSLITERATE</a></b> = 2;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="synaicnv.html#ICONV_GET_DISCARD_ILSEQ">ICONV_GET_DISCARD_ILSEQ</a></b> = 3;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="synaicnv.html#ICONV_SET_DISCARD_ILSEQ">ICONV_SET_DISCARD_ILSEQ</a></b> = 4;</code></td>
+</tr>
+</table>
+<a name="%40Variables"></a><h3 class="summary">Variáveis</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="synaicnv.html#iconvLibHandle">iconvLibHandle</a></b>: <a   href="synafpc.html#TLibHandle">TLibHandle</a> = 0;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Funções e Procedimentos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SynaIconvOpen"></a><code>function <b>SynaIconvOpen</b>(const tocode, fromcode: Ansistring): <a   href="synaicnv.html#iconv_t">iconv_t</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SynaIconvOpenTranslit"></a><code>function <b>SynaIconvOpenTranslit</b>(const tocode, fromcode: Ansistring): <a   href="synaicnv.html#iconv_t">iconv_t</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SynaIconvOpenIgnore"></a><code>function <b>SynaIconvOpenIgnore</b>(const tocode, fromcode: Ansistring): <a   href="synaicnv.html#iconv_t">iconv_t</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SynaIconv"></a><code>function <b>SynaIconv</b>(cd: <a   href="synaicnv.html#iconv_t">iconv_t</a>; inbuf: AnsiString; var outbuf: AnsiString): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SynaIconvClose"></a><code>function <b>SynaIconvClose</b>(var cd: <a   href="synaicnv.html#iconv_t">iconv_t</a>): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SynaIconvCtl"></a><code>function <b>SynaIconvCtl</b>(cd: <a   href="synaicnv.html#iconv_t">iconv_t</a>; request: integer; argument: <a   href="synaicnv.html#argptr">argptr</a>): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IsIconvloaded"></a><code>function <b>IsIconvloaded</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="InitIconvInterface"></a><code>function <b>InitIconvInterface</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DestroyIconvInterface"></a><code>function <b>DestroyIconvInterface</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="size_t"></a><code><b>size_t</b> = Cardinal;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="iconv_t"></a><code><b>iconv_t</b> = Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="argptr"></a><code><b>argptr</b> = <a   href="synaicnv.html#iconv_t">iconv_t</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DLLIconvName"></a><code><b>DLLIconvName</b> = 'iconv.dll';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ICONV_TRIVIALP"></a><code><b>ICONV_TRIVIALP</b>          = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ICONV_GET_TRANSLITERATE"></a><code><b>ICONV_GET_TRANSLITERATE</b> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+int *argument</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ICONV_SET_TRANSLITERATE"></a><code><b>ICONV_SET_TRANSLITERATE</b> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+int *argument</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ICONV_GET_DISCARD_ILSEQ"></a><code><b>ICONV_GET_DISCARD_ILSEQ</b> = 3;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+const int *argument</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ICONV_SET_DISCARD_ILSEQ"></a><code><b>ICONV_SET_DISCARD_ILSEQ</b> = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+int *argument</p>
+</td></tr>
+</table>
+<h3 class="detail">Variáveis</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="iconvLibHandle"></a><code><b>iconvLibHandle</b>: <a   href="synafpc.html#TLibHandle">TLibHandle</a> = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:21:06</em>
+</span>
+</body></html>

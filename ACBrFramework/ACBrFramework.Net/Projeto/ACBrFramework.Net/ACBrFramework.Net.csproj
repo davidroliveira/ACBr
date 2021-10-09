@@ -1,0 +1,899 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C66AC69F-8537-46AD-A6DB-576A61670FA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ACBrFramework</RootNamespace>
+    <AssemblyName>ACBrFramework.Net</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;x86</DefineConstants>
+    <NoWarn>1591</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;x86</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>1591</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DebugSymbols>true</DebugSymbols>
+    <DocumentationFile>bin\Release\ACBrFramework.Net.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;x64</DefineConstants>
+    <NoWarn>1591</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;x64</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>1591</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ACBrFramework.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'COM Interop|x86'">
+    <OutputPath>bin\COM Interop\</OutputPath>
+    <DefineConstants>x86;COM_INTEROP</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <NoWarn>1591</NoWarn>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>default</LangVersion>
+    <ErrorReport>none</ErrorReport>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'COM Interop|x64'">
+    <OutputPath>bin\x64\COM Interop\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AAC\ACBrAAC.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="AAC\Classes\Arquivo.cs" />
+    <Compile Include="AAC\Classes\Arquivos.cs" />
+    <Compile Include="AAC\Classes\AACECF.cs" />
+    <Compile Include="AAC\Classes\ECFs.cs" />
+    <Compile Include="AAC\ACBrAACInterop.cs" />
+    <Compile Include="AAC\Classes\Empresa.cs" />
+    <Compile Include="AAC\Classes\IdenticacaoPaf.cs" />
+    <Compile Include="AAC\Classes\InfoPaf.cs" />
+    <Compile Include="AAC\Classes\ArquivoListaAutenticados.cs" />
+    <Compile Include="AAC\Eventos\AntesArquivoEventArgs.cs" />
+    <Compile Include="AAC\Eventos\CryptEventArgs.cs" />
+    <Compile Include="AAC\Eventos\DecryptEventArgs.cs" />
+    <Compile Include="AAC\Eventos\VerificarRecomporNumSerieEventArgs.cs" />
+    <Compile Include="AAC\Eventos\VerificarRecomporValorGTEventArgs.cs" />
+    <Compile Include="ACBrFramework\ACBrClassInterop.cs" />
+    <Compile Include="ACBrFramework\ACBrEventHandler.cs" />
+    <Compile Include="ACBrFramework\ACBrExpandableObjectConverter.cs" />
+    <Compile Include="ACBrFramework\ACBrFrameworkExtensions.cs" />
+    <Compile Include="ACBrFramework\ACBrInteropEventHandlerBase.cs" />
+    <Compile Include="CEP\Classes\CEPWebService.cs" />
+    <Compile Include="CEP\Classes\Endereco.cs" />
+    <Compile Include="CEP\Classes\Enderecos.cs" />
+    <Compile Include="CEP\Eventos\AntesAbrirHTTPEventArgs.cs" />
+    <Compile Include="ACBrFramework\ChaveEventArgs.cs" />
+    <Compile Include="ACBrFramework\ACBrComponent.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="ACBrFramework\ACBrComposedComponent.cs" />
+    <Compile Include="ACBrFramework\ACBrException.cs" />
+    <Compile Include="ACBrFramework\ACBrInteropBase.cs" />
+    <Compile Include="CEP\ACBrCEP.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="CEP\ACBrCEPInterop.cs" />
+    <Compile Include="CNIEE\ACBrCNIEE.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="CNIEE\ACBrCNIEEInterop.cs" />
+    <Compile Include="CNIEE\Registro.cs" />
+    <Compile Include="CNIEE\Classes\Exporta.cs" />
+    <Compile Include="ACBrFramework\ACBrListInterop.cs" />
+    <Compile Include="EAD\ACBrEAD.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="EAD\ACBrEADInterop.cs" />
+    <Compile Include="EAD\Classes\EADDigest.cs" />
+    <Compile Include="IBGE\ACBrIBGE.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="IBGE\ACBrIBGEInterop.cs" />
+    <Compile Include="IBGE\Classes\Cidade.cs" />
+    <Compile Include="LFD\Classes\ParticipacaoSocietaria.cs" />
+    <Compile Include="LFD\Classes\Escolaridade.cs" />
+    <Compile Include="LFD\Classes\HabilitacaoProfissional.cs" />
+    <Compile Include="LFD\Classes\TipoCompensacaoISS.cs" />
+    <Compile Include="LFD\Classes\TipoDeducaoISS.cs" />
+    <Compile Include="LFD\Classes\TotalAquisicaoPrestacao.cs" />
+    <Compile Include="LFD\Classes\DataInventario.cs" />
+    <Compile Include="LFD\Classes\ObsMapaResumo.cs" />
+    <Compile Include="LFD\Classes\TipoTotalECF.cs" />
+    <Compile Include="LFD\Classes\IndicadorCirculacao.cs" />
+    <Compile Include="LFD\Classes\TipoOperacao.cs" />
+    <Compile Include="LFD\Classes\Emitente.cs" />
+    <Compile Include="LFD\Classes\TipoPagamento.cs" />
+    <Compile Include="LFD\Classes\TipoFrete.cs" />
+    <Compile Include="LFD\Classes\OrigemProcesso.cs" />
+    <Compile Include="LFD\Classes\TipoOperacaoST.cs" />
+    <Compile Include="LFD\Classes\DoctoArrecada.cs" />
+    <Compile Include="LFD\Classes\TipoTransporte.cs" />
+    <Compile Include="LFD\Classes\TipoTitulo.cs" />
+    <Compile Include="LFD\Classes\TipoBaseMedicamento.cs" />
+    <Compile Include="LFD\Classes\TipoProduto.cs" />
+    <Compile Include="LFD\Classes\TipoArmaFogo.cs" />
+    <Compile Include="LFD\Classes\TipoOperacaoVeiculo.cs" />
+    <Compile Include="LFD\Classes\TipoReceita.cs" />
+    <Compile Include="LFD\Classes\TipoVeiculo.cs" />
+    <Compile Include="LFD\Classes\TipoNavegacao.cs" />
+    <Compile Include="LFD\Classes\TipoTarifa.cs" />
+    <Compile Include="LFD\Classes\NaturezaFrete.cs" />
+    <Compile Include="LFD\Classes\IndTipoReceita.cs" />
+    <Compile Include="LFD\Classes\ServicoPrestado.cs" />
+    <Compile Include="LFD\Classes\MovimentoST.cs" />
+    <Compile Include="LFD\Classes\TipoAjuste.cs" />
+    <Compile Include="LFD\Classes\OrigemDocto.cs" />
+    <Compile Include="LFD\Classes\PosseItem.cs" />
+    <Compile Include="LFD\Classes\Medicao.cs" />
+    <Compile Include="LFD\Classes\GrupoTensao.cs" />
+    <Compile Include="LFD\Classes\ClasseConsumo.cs" />
+    <Compile Include="LFD\Classes\TipoLigacao.cs" />
+    <Compile Include="LFD\Classes\Dispositivo.cs" />
+    <Compile Include="LFD\Classes\TipoAssinante.cs" />
+    <Compile Include="LFD\Classes\TipoEntradaDados.cs" />
+    <Compile Include="LFD\Classes\ConteudoArquivo.cs" />
+    <Compile Include="LFD\Classes\TipoEscrFiscal.cs" />
+    <Compile Include="LFD\Classes\TipoEscrContabil.cs" />
+    <Compile Include="LFD\Classes\TipoTributacao.cs" />
+    <Compile Include="LFD\Classes\AnexoRT.cs" />
+    <Compile Include="LFD\Classes\AnexoCRD.cs" />
+    <Compile Include="LFD\Classes\CODBFICMS.cs" />
+    <Compile Include="LFD\Classes\CODBFISS.cs" />
+    <Compile Include="LFD\Classes\IndAlteracao.cs" />
+    <Compile Include="LFD\Classes\IndCompICMS.cs" />
+    <Compile Include="LFD\Registros\BlocoA\BlocoA.cs" />
+    <Compile Include="LFD\Registros\BlocoA\RegistroA360.cs" />
+    <Compile Include="LFD\Registros\BlocoA\RegistroA350.cs" />
+    <Compile Include="LFD\Registros\BlocoA\RegistroA001.cs" />
+    <Compile Include="LFD\Registros\BlocoA\RegistroA990.cs" />
+    <Compile Include="LFD\Registros\BlocoC\RegistroC605.cs" />
+    <Compile Include="LFD\Registros\BlocoC\RegistroC555.cs" />
+    <Compile Include="LFD\Registros\BlocoC\RegistroC550.cs" />
+    <Compile Include="LFD\Registros\BlocoC\RegistroC600.cs" />
+    <Compile Include="LFD\Registros\BlocoC\RegistroC020.cs" />
+    <Compile Include="PAF\ACBrPAF.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="PAF\ACBrPAFInterop.cs" />
+    <Compile Include="PAF\Classes\TipoDesenvolvimento.cs" />
+    <Compile Include="PAF\Classes\TipoFuncionamento.cs" />
+    <Compile Include="PAF\Classes\TipoIntegracao.cs" />
+    <Compile Include="PAF\Registros\PAF_A\ACBrPAFRegistroA1.cs" />
+    <Compile Include="PAF\Registros\PAF_A\ACBrPAFRegistroA2.cs" />
+    <Compile Include="PAF\Registros\PAF_A\ACBrPAFRegistrosA2.cs" />
+    <Compile Include="PAF\Registros\PAF_A\ACBrPAF_A.cs" />
+    <Compile Include="PAF\Registros\PAF_A\CodigoTipoDocumento.cs" />
+    <Compile Include="PAF\Registros\PAF_B\ACBrPAFRegistroB1.cs" />
+    <Compile Include="PAF\Registros\PAF_B\ACBrPAFRegistroB2.cs" />
+    <Compile Include="PAF\Registros\PAF_C\ACBrPAFRegistrosC2.cs" />
+    <Compile Include="PAF\Registros\PAF_D\ACBrPAFRegistroD4.cs" />
+    <Compile Include="PAF\Registros\PAF_D\ACBrPAFRegistrosD2.cs" />
+    <Compile Include="PAF\Registros\PAF_C\ACBrPAF_C.cs" />
+    <Compile Include="PAF\Registros\PAF_C\ACBrPAFRegistroC1.cs" />
+    <Compile Include="PAF\Registros\PAF_C\ACBrPAFRegistroC2.cs" />
+    <Compile Include="PAF\Registros\PAF_D\ACBrPAFRegistrosD3.cs" />
+    <Compile Include="PAF\Registros\PAF_D\ACBrPAFRegistrosD4.cs" />
+    <Compile Include="PAF\Registros\PAF_D\ACBrPAF_D.cs" />
+    <Compile Include="PAF\Registros\PAF_D\ACBrPAFRegistroD1.cs" />
+    <Compile Include="PAF\Registros\PAF_D\ACBrPAFRegistroD2.cs" />
+    <Compile Include="PAF\Registros\PAF_D\ACBrPAFRegistroD3.cs" />
+    <Compile Include="PAF\Registros\PAF_E\ACBrPAFRegistroE1.cs" />
+    <Compile Include="PAF\Registros\PAF_E\ACBrPAFRegistroE2.cs" />
+    <Compile Include="PAF\Registros\PAF_E\ACBrPAFRegistroE3.cs" />
+    <Compile Include="PAF\Registros\PAF_H\ACBrPAFRegistroH1.cs" />
+    <Compile Include="PAF\Registros\PAF_H\ACBrPAFRegistroH2.cs" />
+    <Compile Include="PAF\Registros\PAF_H\ACBrPAF_H.cs" />
+    <Compile Include="PAF\Registros\PAF_H\ACBrPAFRegistrosH2.cs" />
+    <Compile Include="PAF\Registros\PAF_P\ACBrPAFRegistrosP2.cs" />
+    <Compile Include="PAF\Registros\PAF_P\ACBrPAF_P.cs" />
+    <Compile Include="PAF\Registros\PAF_N\ACBrPAFRegistroN1.cs" />
+    <Compile Include="PAF\Registros\PAF_N\ACBrPAFRegistroN2.cs" />
+    <Compile Include="PAF\Registros\PAF_N\ACBrPAFRegistroN3.cs" />
+    <Compile Include="PAF\Registros\PAF_N\ACBrPAFRegistrosN3.cs" />
+    <Compile Include="PAF\Registros\PAF_N\ACBrPAF_N.cs" />
+    <Compile Include="PAF\Registros\PAF_P\ACBrPAFRegistroP1.cs" />
+    <Compile Include="PAF\Registros\PAF_P\ACBrPAFRegistroP2.cs" />
+    <Compile Include="PAF\Registros\PAF_R\ACBrPAFRegistroR1.cs" />
+    <Compile Include="PAF\Registros\PAF_R\ACBrPAFRegistroR2.cs" />
+    <Compile Include="PAF\Registros\PAF_R\ACBrPAFRegistroR3.cs" />
+    <Compile Include="PAF\Registros\PAF_R\ACBrPAFRegistroR4.cs" />
+    <Compile Include="PAF\Registros\PAF_R\ACBrPAFRegistroR5.cs" />
+    <Compile Include="PAF\Registros\PAF_R\ACBrPAFRegistroR6.cs" />
+    <Compile Include="PAF\Registros\PAF_R\ACBrPAFRegistroR7.cs" />
+    <Compile Include="PAF\Registros\PAF_B\ACBrPAFRegistrosB2.cs" />
+    <Compile Include="PAF\Registros\PAF_B\ACBrPAF_B.cs" />
+    <Compile Include="PAF\Registros\PAF_E\ACBrPAFRegistrosE2.cs" />
+    <Compile Include="PAF\Registros\PAF_E\ACBrPAF_E.cs" />
+    <Compile Include="PAF\Registros\PAF_R\ACBrPAFRegistrosR1.cs" />
+    <Compile Include="PAF\Registros\PAF_R\ACBrPAFRegistrosR2.cs" />
+    <Compile Include="PAF\Registros\PAF_R\ACBrPAFRegistrosR3.cs" />
+    <Compile Include="PAF\Registros\PAF_R\ACBrPAFRegistrosR4.cs" />
+    <Compile Include="PAF\Registros\PAF_R\ACBrPAFRegistrosR5.cs" />
+    <Compile Include="PAF\Registros\PAF_R\ACBrPAFRegistrosR6.cs" />
+    <Compile Include="PAF\Registros\PAF_R\ACBrPAFRegistrosR7.cs" />
+    <Compile Include="PAF\Registros\PAF_R\ACBrPAF_R.cs" />
+    <Compile Include="PAF\Registros\PAF_S\ACBrPAFRegistroS3.cs" />
+    <Compile Include="PAF\Registros\PAF_S\ACBrPAFRegistrosS2.cs" />
+    <Compile Include="PAF\Registros\PAF_T\ACBrPAFRegistroT2.cs" />
+    <Compile Include="PAF\Registros\PAF_TITP\ACBrPAF_TITP.cs" />
+    <Compile Include="PAF\Registros\PAF_TITP\ACBrPAFRegistroInsumo.cs" />
+    <Compile Include="PAF\Registros\PAF_TITP\ACBrPAFRegistroInsumos.cs" />
+    <Compile Include="PAF\Registros\PAF_TITP\ACBrPAFRegistroMercadoria.cs" />
+    <Compile Include="PAF\Registros\PAF_TITP\ACBrPAFRegistroMercadorias.cs" />
+    <Compile Include="PAF\Registros\PAF_T\ACBrPAFRegistroT1.cs" />
+    <Compile Include="PAF\Registros\PAF_T\ACBrPAFRegistrosT2.cs" />
+    <Compile Include="PAF\Registros\PAF_S\ACBrPAFRegistroS2.cs" />
+    <Compile Include="PAF\Registros\PAF_S\ACBrPAF_S.cs" />
+    <Compile Include="PAF\Registros\PAF_T\ACBrPAF_T.cs" />
+    <Compile Include="PAF\Registros\PAF_U\ACBrPAFRegistroU1.cs" />
+    <Compile Include="PAF\Registros\PAF_U\ACBrPAF_U.cs" />
+    <Compile Include="Properties\Framework32.Designer.cs" Condition=" $(Platform) == x86 ">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Framework32.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Framework64.Designer.cs" Condition=" $(Platform) == x64 ">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Framework64.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serial\Device\Interfaces\IACBrDevice.cs" />
+    <Compile Include="Serial\DIS\ACBrDIS.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="Serial\DIS\ACBrDISInterop.cs" />
+    <Compile Include="Serial\DIS\Classes\Alinhamento.cs" />
+    <Compile Include="Serial\DIS\Classes\EfeitoExibir.cs" />
+    <Compile Include="Serial\DIS\Classes\EfeitoRolar.cs" />
+    <Compile Include="Serial\DIS\Classes\ModeloDIS.cs" />
+    <Compile Include="Serial\DIS\Eventos\AtualizaEventArgs.cs" />
+    <Compile Include="Serial\ECF\ACBrECF.LXRZ.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="Serial\ECF\ACBrECF.CF.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="Serial\ECF\ACBrECF.DAV.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="Serial\ECF\ACBrECF.CNF.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="Serial\ECF\ACBrECF.PAF.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="Serial\ECF\Classes\Imposto.cs" />
+    <Compile Include="Serial\ECF\Classes\Restaurante.cs" />
+    <Compile Include="Serial\ECF\Classes\RodapeAbastecimento.cs" />
+    <Compile Include="Serial\ECF\Classes\RodapeAbastecimentos.cs" />
+    <Compile Include="Serial\ECF\Eventos\ErrorEventArgs.cs" />
+    <Compile Include="Serial\ECF\Eventos\ErrorRelatorioEventArgs.cs" />
+    <Compile Include="Serial\ECF\Eventos\MsgEventArgs.cs" />
+    <Compile Include="Serial\ECF\Eventos\MsgRetentarEventArgs.cs" />
+    <Compile Include="Serial\ECF\Eventos\PAFCalcEADEventArgs.cs" />
+    <Compile Include="Serial\ECF\Eventos\SangriaSuprimentoEventArgs.cs" />
+    <Compile Include="Serial\ECF\Eventos\SubtotalizaCupomEventArgs.cs" />
+    <Compile Include="Serial\ECF\Eventos\VendeItemEventArgs.cs" />
+    <Compile Include="Serial\ECF\Interfaces\IACBrECF.cs" />
+    <Compile Include="Serial\ETQ\Classes\ACBrETQClass.cs" />
+    <Compile Include="Serial\ETQ\ACBrETQInterop.cs" />
+    <Compile Include="Serial\ETQ\ACBrETQ.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="Serial\ETQ\Classes\EtqBackFeed.cs" />
+    <Compile Include="Serial\ETQ\Classes\ETQBarraExibeCodigo.cs" />
+    <Compile Include="Serial\ETQ\Classes\ETQDPI.cs" />
+    <Compile Include="Serial\ETQ\Classes\ETQModelo.cs" />
+    <Compile Include="Serial\ETQ\Classes\EtqOrientacao.cs" />
+    <Compile Include="Serial\ETQ\Classes\ETQOrigem.cs" />
+    <Compile Include="Serial\ETQ\Classes\ETQUnidade.cs" />
+    <Compile Include="Serial\ETQ\Classes\LogEventArgs.cs" />
+    <Compile Include="Serial\RFD\ACBrRFD.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="Serial\RFD\ACBrRFDInterop.cs" />
+    <Compile Include="Serial\RFD\Eventos\CalcEADArgs.cs" />
+    <Compile Include="Serial\RFD\Eventos\OnCalcHashLogArgs.cs" />
+    <Compile Include="Serial\Device\ACBrDevice.cs" />
+    <Compile Include="Serial\Device\ACBrDeviceInterop.cs" />
+    <Compile Include="Serial\BAL\ACBrBAL.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="Serial\BAL\ACBrBALInterop.cs" />
+    <Compile Include="Serial\BAL\Eventos\LePesoEventArgs.cs" />
+    <Compile Include="Serial\BAL\Classes\ModeloBal.cs" />
+    <Compile Include="Serial\ECF\ACBrECF.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="Serial\ECF\ACBrECFInterop.cs" />
+    <Compile Include="Serial\ECF\Classes\CHQEstado.cs" />
+    <Compile Include="Serial\ECF\Classes\ConfigBarras.cs" />
+    <Compile Include="Serial\ECF\Classes\Consumidor.cs" />
+    <Compile Include="Serial\ECF\Classes\Rodape.cs" />
+    <Compile Include="Serial\ECF\Classes\RodapeNotaLegalDF.cs" />
+    <Compile Include="Serial\ECF\Eventos\AbreCupomEventArgs.cs" />
+    <Compile Include="Serial\ECF\Eventos\RelatorioGerencialEventArgs.cs" />
+    <Compile Include="Serial\ECF\Eventos\BobinaAdicionaLinhasEventArgs.cs" />
+    <Compile Include="Serial\ECF\Classes\Aliquota.cs" />
+    <Compile Include="Serial\ECF\Classes\ComprovanteNaoFiscal.cs" />
+    <Compile Include="Serial\ECF\Classes\DadosReducaoZClass.cs" />
+    <Compile Include="Serial\ECF\Classes\DAVs.cs" />
+    <Compile Include="Serial\ECF\Classes\FinalizaArqMFD.cs" />
+    <Compile Include="Serial\ECF\Classes\FormaPagamento.cs" />
+    <Compile Include="Serial\ECF\Classes\RelatorioGerencial.cs" />
+    <Compile Include="Serial\ECF\Classes\TipoContador.cs" />
+    <Compile Include="Serial\ECF\Classes\TipoDocumento.cs" />
+    <Compile Include="Serial\ECF\Classes\EstadoECF.cs" />
+    <Compile Include="Serial\ECF\Classes\ModeloECF.cs" />
+    <Compile Include="Serial\ECF\Eventos\CancelaItemEventArgs.cs" />
+    <Compile Include="Serial\ECF\Eventos\ChangeEstadoEventArgs.cs" />
+    <Compile Include="Serial\ECF\Eventos\ChequeEstadoEventArgs.cs" />
+    <Compile Include="Serial\ECF\Eventos\EfetuaPagamentoEventArgs.cs" />
+    <Compile Include="Serial\ECF\Eventos\FechaCupomEventArgs.cs" />
+    <Compile Include="Serial\LCB\ACBrLCB.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="Serial\LCB\ACBrLCBInterop.cs" />
+    <Compile Include="Serial\Device\Classes\SerialHandShake.cs" />
+    <Compile Include="Serial\Device\Classes\SerialParity.cs" />
+    <Compile Include="Serial\Device\Classes\SerialStopBits.cs" />
+    <Compile Include="Serial\SMS\ACBrSMS.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="Serial\SMS\ACBrSMSInterop.cs" />
+    <Compile Include="Serial\SMS\Classes\Filtro.cs" />
+    <Compile Include="Serial\SMS\Classes\MensagemCollection.cs" />
+    <Compile Include="Serial\SMS\Classes\Modelo.cs" />
+    <Compile Include="Serial\SMS\Classes\SimCard.cs" />
+    <Compile Include="Serial\SMS\Classes\Sincronismo.cs" />
+    <Compile Include="Serial\SMS\Classes\Mensagem.cs" />
+    <Compile Include="Serial\SMS\Classes\OnProgressoEventArgs.cs" />
+    <Compile Include="Sintegra\ACBrSintegra.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="Sintegra\ACBrSintegraInterop.cs" />
+    <Compile Include="Sintegra\Classes\TipoReceita.cs" />
+    <Compile Include="Sintegra\Classes\VersaoEan.cs" />
+    <Compile Include="Sintegra\Classes\VersaoValidador.cs" />
+    <Compile Include="Sintegra\Registro\Registro 50\SintegraRegistros50.cs" />
+    <Compile Include="Sintegra\Registro\Registro 10\SintegraRegistro10.cs" />
+    <Compile Include="Sintegra\Registro\Registro 11\SintegraRegistro11.cs" />
+    <Compile Include="Sintegra\Registro\Registro 50\SintegraRegistro50.cs" />
+    <Compile Include="Sintegra\Registro\Registro 51\SintegraRegistro51.cs" />
+    <Compile Include="Sintegra\Registro\Registro 51\SintegraRegistros51.cs" />
+    <Compile Include="Sintegra\Registro\Registro 53\SintegraRegistro53.cs" />
+    <Compile Include="Sintegra\Registro\Registro 53\SintegraRegistros53.cs" />
+    <Compile Include="Sintegra\Registro\Registro 54\SintegraRegistro54.cs" />
+    <Compile Include="Sintegra\Registro\Registro 54\SintegraRegistros54.cs" />
+    <Compile Include="Sintegra\Registro\Registro 55\SintegraRegistro55.cs" />
+    <Compile Include="Sintegra\Registro\Registro 55\SintegraRegistros55.cs" />
+    <Compile Include="Sintegra\Registro\Registro 56\SintegraRegistro56.cs" />
+    <Compile Include="Sintegra\Registro\Registro 56\SintegraRegistros56.cs" />
+    <Compile Include="Sintegra\Registro\Registro 60A\SintegraRegistro60A.cs" />
+    <Compile Include="Sintegra\Registro\Registro 60A\SintegraRegistros60A.cs" />
+    <Compile Include="Sintegra\Registro\Registro 60D\SintegraRegistro60D.cs" />
+    <Compile Include="Sintegra\Registro\Registro 60D\SintegraRegistros60D.cs" />
+    <Compile Include="Sintegra\Registro\Registro 60I\SintegraRegistro60I.cs" />
+    <Compile Include="Sintegra\Registro\Registro 60I\SintegraRegistros60I.cs" />
+    <Compile Include="Sintegra\Registro\Registro 60M\SintegraRegistro60M.cs" />
+    <Compile Include="Sintegra\Registro\Registro 60M\SintegraRegistros60M.cs" />
+    <Compile Include="Sintegra\Registro\Registro 60R\SintegraRegistro60R.cs" />
+    <Compile Include="Sintegra\Registro\Registro 60R\SintegraRegistros60R.cs" />
+    <Compile Include="Sintegra\Registro\Registro 61R\SintegraRegistros61R.cs" />
+    <Compile Include="Sintegra\Registro\Registro 61\SintegraRegistro61.cs" />
+    <Compile Include="Sintegra\Registro\Registro 61\SintegraRegistros61.cs" />
+    <Compile Include="Sintegra\Registro\Registro 61R\SintegraRegistro61R.cs" />
+    <Compile Include="Sintegra\Registro\Registro 70\SintegraRegistro70.cs" />
+    <Compile Include="Sintegra\Registro\Registro 70\SintegraRegistros70.cs" />
+    <Compile Include="Sintegra\Registro\Registro 71\SintegraRegistro71.cs" />
+    <Compile Include="Sintegra\Registro\Registro 71\SintegraRegistros71.cs" />
+    <Compile Include="Sintegra\Registro\Registro 74\SintegraRegistro74.cs" />
+    <Compile Include="Sintegra\Registro\Registro 74\SintegraRegistros74.cs" />
+    <Compile Include="Sintegra\Registro\Registro 75\SintegraRegistro75.cs" />
+    <Compile Include="Sintegra\Registro\Registro 75\SintegraRegistros75.cs" />
+    <Compile Include="Sintegra\Registro\Registro 76\SintegraRegistro76.cs" />
+    <Compile Include="Sintegra\Registro\Registro 76\SintegraRegistros76.cs" />
+    <Compile Include="Sintegra\Registro\Registro 77\SintegraRegistro77.cs" />
+    <Compile Include="Sintegra\Registro\Registro 77\SintegraRegistros77.cs" />
+    <Compile Include="Sintegra\Registro\Registro 85\SintegraRegistro85.cs" />
+    <Compile Include="Sintegra\Registro\Registro 85\SintegraRegistros85.cs" />
+    <Compile Include="Sintegra\Registro\Registro 86\SintegraRegistro86.cs" />
+    <Compile Include="Sintegra\Registro\Registro 86\SintegraRegistros86.cs" />
+    <Compile Include="LFD\ACBrLFD.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="LFD\ACBrLFDInterop.cs" />
+    <Compile Include="LFD\Classes\CodFinalidade.cs" />
+    <Compile Include="LFD\Classes\IndicadorMovimento.cs" />
+    <Compile Include="LFD\Classes\SituacaoDocto.cs" />
+    <Compile Include="LFD\Classes\TipoItem.cs" />
+    <Compile Include="LFD\Classes\VersaoLeiaute.cs" />
+    <Compile Include="LFD\Eventos\ErrorEventArgs.cs" />
+    <Compile Include="LFD\Registros\Bloco0\Bloco0.cs" />
+    <Compile Include="LFD\Registros\Bloco0\Registro0000.cs" />
+    <Compile Include="LFD\Registros\Bloco0\Registro0001.cs" />
+    <Compile Include="LFD\Registros\Bloco0\Registro0005.cs" />
+    <Compile Include="LFD\Registros\Bloco0\Registro0025.cs" />
+    <Compile Include="LFD\Registros\Bloco0\Registro0100.cs" />
+    <Compile Include="LFD\Registros\Bloco0\Registro0150.cs" />
+    <Compile Include="LFD\Registros\Bloco0\Registro0175.cs" />
+    <Compile Include="LFD\Registros\Bloco0\Registro0200.cs" />
+    <Compile Include="LFD\Registros\Bloco0\Registro0205.cs" />
+    <Compile Include="LFD\Registros\Bloco0\Registro0210.cs" />
+    <Compile Include="LFD\Registros\Bloco0\Registro0990.cs" />
+    <Compile Include="LFD\Registros\Bloco9\Bloco9.cs" />
+    <Compile Include="LFD\Registros\Bloco9\Registro9001.cs" />
+    <Compile Include="LFD\Registros\Bloco9\Registro9900.cs" />
+    <Compile Include="LFD\Registros\Bloco9\Registro9990.cs" />
+    <Compile Include="LFD\Registros\Bloco9\Registro9999.cs" />
+    <Compile Include="LFD\Registros\BlocoC\BlocoC.cs" />
+    <Compile Include="LFD\Registros\BlocoC\RegistroC001.cs" />
+    <Compile Include="LFD\Registros\BlocoC\RegistroC990.cs" />
+    <Compile Include="LFD\Registros\RegistroList.cs" />
+    <Compile Include="Sped\Eventos\ErrorEventArgs.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Bloco0.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0200.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0205.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0206.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0220.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0300.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0305.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0400.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0450.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0460.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0500.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0600.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0990.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Bloco1.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1990.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1001.cs" />
+    <Compile Include="Sped\Registros\Bloco9\Bloco9.cs" />
+    <Compile Include="Sped\ACBrSpedFiscal.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="Sped\ACBrSpedFiscalInterop.cs" />
+    <Compile Include="Sped\Classes\ApuracaoIPI.cs" />
+    <Compile Include="Sped\Classes\Atividade.cs" />
+    <Compile Include="Sped\Classes\ClasseConsumo.cs" />
+    <Compile Include="Sped\Classes\CodFinalidade.cs" />
+    <Compile Include="Sped\Classes\ConhecEmbarque.cs" />
+    <Compile Include="Sped\Classes\Dispositivo.cs" />
+    <Compile Include="Sped\Classes\DoctoArrecada.cs" />
+    <Compile Include="Sped\Classes\DoctoImporta.cs" />
+    <Compile Include="Sped\Classes\Emitente.cs" />
+    <Compile Include="Sped\Classes\Exportacao.cs" />
+    <Compile Include="Sped\Classes\GrupoTensao.cs" />
+    <Compile Include="Sped\Classes\IndicadorMovimento.cs" />
+    <Compile Include="Sped\Classes\IndTipoReceita.cs" />
+    <Compile Include="Sped\Classes\Medicao.cs" />
+    <Compile Include="Sped\Classes\MotivoInventario.cs" />
+    <Compile Include="Sped\Classes\MovimentacaoFisica.cs" />
+    <Compile Include="Sped\Classes\MovimentoBens.cs" />
+    <Compile Include="Sped\Classes\MovimentoST.cs" />
+    <Compile Include="Sped\Classes\NaturezaFrete.cs" />
+    <Compile Include="Sped\Classes\OrigemDocto.cs" />
+    <Compile Include="Sped\Classes\OrigemProcesso.cs" />
+    <Compile Include="Sped\Classes\Perfil.cs" />
+    <Compile Include="Sped\Classes\PosseItem.cs" />
+    <Compile Include="Sped\Classes\ServicoPrestado.cs" />
+    <Compile Include="Sped\Classes\SituacaoDocto.cs" />
+    <Compile Include="Sped\Classes\TipoAjuste.cs" />
+    <Compile Include="Sped\Classes\TipoArmaFogo.cs" />
+    <Compile Include="Sped\Classes\TipoAssinante.cs" />
+    <Compile Include="Sped\Classes\TipoBaseMedicamento.cs" />
+    <Compile Include="Sped\Classes\TipoDocto.cs" />
+    <Compile Include="Sped\Classes\TipoFrete.cs" />
+    <Compile Include="Sped\Classes\TipoFreteRedespacho.cs" />
+    <Compile Include="Sped\Classes\TipoItem.cs" />
+    <Compile Include="Sped\Classes\TipoLigacao.cs" />
+    <Compile Include="Sped\Classes\TipoNavegacao.cs" />
+    <Compile Include="Sped\Classes\TipoOperacao.cs" />
+    <Compile Include="Sped\Classes\TipoOperacaoST.cs" />
+    <Compile Include="Sped\Classes\TipoOperacaoVeiculo.cs" />
+    <Compile Include="Sped\Classes\TipoPagamento.cs" />
+    <Compile Include="Sped\Classes\TipoProduto.cs" />
+    <Compile Include="Sped\Classes\TipoReceita.cs" />
+    <Compile Include="Sped\Classes\TipoTarifa.cs" />
+    <Compile Include="Sped\Classes\TipoTitulo.cs" />
+    <Compile Include="Sped\Classes\TipoTransporte.cs" />
+    <Compile Include="Sped\Classes\TipoVeiculo.cs" />
+    <Compile Include="Sped\Classes\VersaoLeiaute.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0000.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0190.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1010.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1100.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1105.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1110.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1200.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1210.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1300.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1310.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1320.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1350.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1360.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1370.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1390.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1400.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1500.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1510.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1600.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1700.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1710.cs" />
+    <Compile Include="Sped\Registros\Bloco1\Registro1800.cs" />
+    <Compile Include="Sped\Registros\Bloco9\Registro9999.cs" />
+    <Compile Include="Sped\Registros\BlocoC\BlocoC.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC001.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC100.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC105.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC110.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC111.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC112.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC113.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC114.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC115.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC116.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC120.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC130.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC140.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC141.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC160.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC165.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC170.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC171.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC172.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC173.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC174.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC175.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC176.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC177.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC178.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC179.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC190.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC195.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC197.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC300.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC310.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC320.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC321.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC350.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC370.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC390.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC400.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC405.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC410.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC420.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC425.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC460.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC470.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC490.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC495.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC500.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC510.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC590.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC600.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC601.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC610.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC690.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC700.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC790.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC791.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC800.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC850.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC860.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC890.cs" />
+    <Compile Include="Sped\Registros\BlocoC\RegistroC990.cs" />
+    <Compile Include="Sped\Registros\BlocoD\BlocoD.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD001.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD100.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD110.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD120.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD130.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD140.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD150.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD160.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD161.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD162.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD170.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD180.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD190.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD195.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD197.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD300.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD301.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD310.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD350.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD355.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD360.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD365.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD370.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD390.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD400.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD410.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD411.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD420.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD500.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD510.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD530.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD590.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD600.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD610.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD690.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD695.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD696.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD697.cs" />
+    <Compile Include="Sped\Registros\BlocoD\RegistroD990.cs" />
+    <Compile Include="Sped\Registros\BlocoE\BlocoE.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE001.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE100.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE110.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE111.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE112.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE113.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE115.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE116.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE200.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE210.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE220.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE230.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE240.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE250.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE500.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE510.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE520.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE530.cs" />
+    <Compile Include="Sped\Registros\BlocoE\RegistroE990.cs" />
+    <Compile Include="Sped\Registros\BlocoG\BlocoG.cs" />
+    <Compile Include="Sped\Registros\BlocoG\RegistroG001.cs" />
+    <Compile Include="Sped\Registros\BlocoG\RegistroG110.cs" />
+    <Compile Include="Sped\Registros\BlocoG\RegistroG125.cs" />
+    <Compile Include="Sped\Registros\BlocoG\RegistroG126.cs" />
+    <Compile Include="Sped\Registros\BlocoG\RegistroG130.cs" />
+    <Compile Include="Sped\Registros\BlocoG\RegistroG140.cs" />
+    <Compile Include="Sped\Registros\BlocoG\RegistroG990.cs" />
+    <Compile Include="Sped\Registros\BlocoH\BlocoH.cs" />
+    <Compile Include="Sped\Registros\BlocoH\RegistroH001.cs" />
+    <Compile Include="Sped\Registros\BlocoH\RegistroH005.cs" />
+    <Compile Include="Sped\Registros\BlocoH\RegistroH010.cs" />
+    <Compile Include="Sped\Registros\BlocoH\RegistroH020.cs" />
+    <Compile Include="Sped\Registros\BlocoH\RegistroH990.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0001.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0005.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0015.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0100.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0150.cs" />
+    <Compile Include="Sped\Registros\Bloco0\Registro0175.cs" />
+    <Compile Include="Sped\Registros\Bloco9\Registro9001.cs" />
+    <Compile Include="Sped\Registros\Bloco9\Registro9990.cs" />
+    <Compile Include="Sped\Registros\Bloco9\Registro9900.cs" />
+    <Compile Include="Sped\Registros\RegistroList.cs" />
+    <Compile Include="TEFD\ACBrTEFD.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="TEFD\Classes\TEFVeSPague.cs" />
+    <Compile Include="TEFD\Classes\TefAuttar.cs" />
+    <Compile Include="TEFD\Classes\TefCliSiTef.cs" />
+    <Compile Include="TEFD\Classes\TefCliSiTefOperacaoCampo.cs" />
+    <Compile Include="TEFD\Classes\TefCrediShop.cs" />
+    <Compile Include="TEFD\Classes\TefDial.cs" />
+    <Compile Include="TEFD\Classes\TefDisc.cs" />
+    <Compile Include="TEFD\Classes\TefFoxWin.cs" />
+    <Compile Include="TEFD\Classes\TefGood.cs" />
+    <Compile Include="TEFD\Classes\TefGPU.cs" />
+    <Compile Include="TEFD\Classes\TefHiper.cs" />
+    <Compile Include="TEFD\Classes\Identificacao.cs" />
+    <Compile Include="TEFD\Classes\InfoECF.cs" />
+    <Compile Include="TEFD\Classes\OperacaoECF.cs" />
+    <Compile Include="TEFD\Classes\OperacaoMensagem.cs" />
+    <Compile Include="TEFD\Classes\TefPetrocard.cs" />
+    <Compile Include="TEFD\Classes\Req.cs" />
+    <Compile Include="TEFD\Classes\ReqEstado.cs" />
+    <Compile Include="TEFD\Classes\RespEstado.cs" />
+    <Compile Include="TEFD\Classes\TefTipo.cs" />
+    <Compile Include="TEFD\Classes\TipoRelatorio.cs" />
+    <Compile Include="TEFD\ACBrTEFInterop.cs" />
+    <Compile Include="TEFD\Eventos\AguardaRespEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\AntesCancelarTransacaoEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\AntesFinalizarRequisicaoEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\BloqueiaMouseTecladoEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\ComandaECFAbreVinculadoEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\ComandaECFEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\ComandaECFImprimeViaEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\ComandaECFPagamentoEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\ComandaECFSubtotalizaEventArgs.cs" />
+    <Compile Include="TEFD\Classes\Resp.cs" />
+    <Compile Include="TEFD\Eventos\TEFVeSPagueExibeMenuEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\TEFVeSPagueObtemCampoEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\DepoisCancelarTransacoesEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\DepoisConfirmarTransacoesEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\ExecutaAcaoEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\ExibeMensagemEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\InfoECFEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\ModalResult.cs" />
+    <Compile Include="TEFD\Eventos\MudaEstadoReqEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\MudaEstadoRespEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\RetornoECF.cs" />
+    <Compile Include="TEFD\Eventos\TEFCliSiTefExibeMenuEventArgs.cs" />
+    <Compile Include="TEFD\Eventos\TEFCliSiTefObtemCampoEventArgs.cs" />
+    <Compile Include="TEFD\Classes\RespostasPendentes.cs" />
+    <Compile Include="UnmanagedResources.cs" />
+    <Compile Include="Validador\ACBrValidador.cs">
+      <SubType>ACBr</SubType>
+    </Compile>
+    <Compile Include="Validador\ACBrValidadorInterop.cs" />
+    <Compile Include="Validador\Classes\CalcDigFormula.cs" />
+    <Compile Include="Validador\Classes\Modulo.cs" />
+    <Compile Include="Validador\Classes\OnMsgErroEventArgs.cs" />
+    <Compile Include="Validador\Classes\ValTipoDocto.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Framework32.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Framework32.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Framework64.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Framework64.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ACBrFramework.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AAC\ico.bmp" />
+    <EmbeddedResource Include="EAD\ico.bmp" />
+    <EmbeddedResource Include="PAF\ico.bmp" />
+    <EmbeddedResource Include="Serial\BAL\ico.bmp" />
+    <EmbeddedResource Include="Serial\ECF\ico.bmp" />
+    <EmbeddedResource Include="Serial\LCB\ico.bmp" />
+    <EmbeddedResource Include="Sintegra\ico.bmp" />
+    <EmbeddedResource Include="TEFD\ico.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CNIEE\ico.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sped\ico.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Serial\SMS\ico.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Serial\DIS\ico.bmp" />
+    <EmbeddedResource Include="CEP\ico.bmp" />
+    <EmbeddedResource Include="IBGE\ico.bmp" />
+    <EmbeddedResource Include="Serial\RFD\ico.bmp" />
+    <EmbeddedResource Include="Validador\ico.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LFD\ico.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Serial\ETQ\ico.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>if "COM Interop" == "$(ConfigurationName)" (
+$(SolutionDir)..\Dll\TlbExp.exe "$(TargetPath)" /out:"$(TargetDir)$(TargetName).tlb"
+)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

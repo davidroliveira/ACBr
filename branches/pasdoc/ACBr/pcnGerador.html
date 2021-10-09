@@ -1,0 +1,3205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: pcnGerador</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit pcnGerador</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td>Tipos</td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+////////////////////////////////////////////////////////////////////////////// // PCN - Projeto Cooperar NFe // // Descrição: Classes para geração/leitura dos arquivos xml da NFe // // site: www.projetocooperar.org/nfe // email: projetocooperar@zipmail.com.br // forum: <a  target="_parent" href="http://br.groups.yahoo.com/group/projeto_cooperar_nfe/">http://br.groups.yahoo.com/group/projeto_cooperar_nfe/</a> // projeto: <a  target="_parent" href="http://code.google.com/p/projetocooperar/">http://code.google.com/p/projetocooperar/</a> // svn: <a  target="_parent" href="http://projetocooperar.googlecode.com/svn/trunk/">http://projetocooperar.googlecode.com/svn/trunk/</a> // // Coordenação: (c) 2009 - Paulo Casagrande // // Equipe: Vide o arquivo leiame.txt na pasta raiz do projeto // // Desenvolvimento // de Cte: Wiliam Zacarias da Silva Rosa // // // Versão: Vide o arquivo leiame.txt na pasta raiz do projeto // // Licença: GNU Lesser General Public License (GNU LGPL) // // - Este programa é software livre; você pode redistribuí-lo // e/ou modificá-lo sob os termos da Licença Pública Geral GNU, // conforme publicada pela Free Software Foundation; tanto a // versão 2 da Licença como (a seu critério) qualquer versão // mais nova. // // - Este programa é distribuído na expectativa de ser útil, // mas SEM QUALQUER GARANTIA; sem mesmo a garantia implícita de // COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO EM // PARTICULAR. Consulte a Licença Pública Geral GNU para obter // mais detalhes. Você deve ter recebido uma cópia da Licença // Pública Geral GNU junto com este programa; se não, escreva // para a Free Software Foundation, Inc., 59 Temple Place, // Suite 330, Boston, MA - 02111-1307, USA ou consulte a // licença oficial em <a  target="_parent" href="http://www.gnu.org/licenses/gpl.txt">http://www.gnu.org/licenses/gpl.txt</a> // // Nota (1): - Esta licença não concede o direito de uso do nome // &quot;PCN - Projeto Cooperar NFe&quot;, não podendo o mesmo ser // utilizado sem previa autorização. // // Nota (2): - O uso integral (ou parcial) das units do projeto esta // condicionado a manutenção deste cabeçalho junto ao código // // //////////////////////////////////////////////////////////////////////////////</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li>Classes</li><li>Variants</li><li><a   href="pcnAuxiliar.html">pcnAuxiliar</a></li><li><a   href="pcnConversao.html">pcnConversao</a></li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnGerador.TGerador.html"><code>TGerador</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="pcnGerador.TGeradorOpcoes.html"><code>TGeradorOpcoes</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#ERR_MSG_MAIOR">ERR_MSG_MAIOR</a></b> = 'Tamanho maior que o máximo permitido';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#ERR_MSG_MENOR">ERR_MSG_MENOR</a></b> = 'Tamanho menor que o mínimo permitido';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#ERR_MSG_VAZIO">ERR_MSG_VAZIO</a></b> = 'Nenhum valor informado';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#ERR_MSG_INVALIDO">ERR_MSG_INVALIDO</a></b> = 'Conteúdo inválido';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#ERR_MSG_MAXIMO_DECIMAIS">ERR_MSG_MAXIMO_DECIMAIS</a></b> = 'Numero máximo de casas decimais permitidas';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#ERR_MSG_MAIOR_MAXIMO">ERR_MSG_MAIOR_MAXIMO</a></b> = 'Número de ocorrências maior que o máximo permitido - Máximo ';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#ERR_MSG_GERAR_CHAVE">ERR_MSG_GERAR_CHAVE</a></b> = 'Erro ao gerar a chave da NFe!';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#ERR_MSG_FINAL_MENOR_INICIAL">ERR_MSG_FINAL_MENOR_INICIAL</a></b> = 'O numero final não pode ser menor que o inicial';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#ERR_MSG_ARQUIVO_NAO_ENCONTRADO">ERR_MSG_ARQUIVO_NAO_ENCONTRADO</a></b> = 'Arquivo não encontrado';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#ERR_MSG_SOMENTE_UM">ERR_MSG_SOMENTE_UM</a></b> = 'Somente um campo deve ser preenchido';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#CODIGO_BRASIL">CODIGO_BRASIL</a></b> = 1058;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#ENCODING_UTF8">ENCODING_UTF8</a></b> = '?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#ENCODING_UTF8_STD">ENCODING_UTF8_STD</a></b> = '?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#NAME_SPACE">NAME_SPACE</a></b> = 'xmlns=&quot;http://www.portalfiscal.inf.br/nfe&quot;';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#NAME_SPACE_CTE">NAME_SPACE_CTE</a></b> = 'xmlns=&quot;http://www.portalfiscal.inf.br/cte&quot;';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#V1_00">V1_00</a></b> = 'versao=&quot;1.00&quot;';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#V1_01">V1_01</a></b> = 'versao=&quot;1.01&quot;';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#V1_02">V1_02</a></b> = 'versao=&quot;1.02&quot;';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#V1_03">V1_03</a></b> = 'versao=&quot;1.03&quot;';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#V1_07">V1_07</a></b> = 'versao=&quot;1.07&quot;';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#V1_10">V1_10</a></b> = 'versao=&quot;1.10&quot;';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#V2_00">V2_00</a></b> = 'versao=&quot;2.00&quot;';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_AAMM">DSC_AAMM</a></b> = 'Ano e Mês';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_ANOFAB">DSC_ANOFAB</a></b> = 'Ano de Fabricação';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_ANOMOD">DSC_ANOMOD</a></b> = 'Ano do Modelo de Fabricação';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CCOR">DSC_CCOR</a></b> = 'Cor do Veículo';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CDV">DSC_CDV</a></b> = 'Digito Verificador';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CEAN">DSC_CEAN</a></b> = 'Código de Barra do Item';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CEANTRIB">DSC_CEANTRIB</a></b> = 'Código de Barra do Item Tributação';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CENQ">DSC_CENQ</a></b> = 'Código de Enquadramento Legal do IPI';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CEP">DSC_CEP</a></b> = 'CEP';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CEXPORTADOR">DSC_CEXPORTADOR</a></b> = 'Código do exportador';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CFABRICANTE">DSC_CFABRICANTE</a></b> = 'Fabricante';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CFOP">DSC_CFOP</a></b> = 'CFOP';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CHASSI">DSC_CHASSI</a></b> = 'Número do chassi';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CHAVE">DSC_CHAVE</a></b> = 'Chave da NFe';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CLENQ">DSC_CLENQ</a></b> = 'Classe de enquadramento do IPI para Cigarros e Bebidas';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CLISTSERV">DSC_CLISTSERV</a></b> = 'Lista Prestação de Serviços';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CSITTRIB">DSC_CSITTRIB</a></b> = 'Código de Tributação do ISSQN';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CILIN">DSC_CILIN</a></b> = 'Cilindradas';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CMT">DSC_CMT</a></b> = 'Capacidade Máxima de Tração';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CMOD">DSC_CMOD</a></b> = 'Modelo do Veículo';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CCORDEN">DSC_CCORDEN</a></b> = 'Código da Cor DENATRAN';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TPREST">DSC_TPREST</a></b> = 'Restrição';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CMUN">DSC_CMUN</a></b> = 'Código do Município';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CMUNFG">DSC_CMUNFG</a></b> = 'Código do Município FG';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CNAE">DSC_CNAE</a></b> = 'Classificação Nacional de Atividades Econômicas';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CRT">DSC_CRT</a></b> = 'Código de Regime Tributário';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CNF">DSC_CNF</a></b> = 'Número da Nota Fiscal Eletrônica';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CODIF">DSC_CODIF</a></b> = 'Código de autorização / registro do CODIF';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CONDVEIC">DSC_CONDVEIC</a></b> = 'Condições do Veículo';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CPAIS">DSC_CPAIS</a></b> = 'Código do País';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CNPJPROD">DSC_CNPJPROD</a></b> = 'CNPJ do produtor da mercadoria, quando diferente do emitente';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CPROD">DSC_CPROD</a></b> = 'Código do produto ou serviço';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CPRODANP">DSC_CPRODANP</a></b> = 'Código do produto ANP';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CSELO">DSC_CSELO</a></b> = 'Código do selo';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CST">DSC_CST</a></b> = 'Código da situação tributária ';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CSOSN">DSC_CSOSN</a></b> = 'Código de Situação da Operação – Simples Nacional';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CUF">DSC_CUF</a></b> = 'Código do UF (Unidade da Federação)';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DDESEMB">DSC_DDESEMB</a></b> = 'Data do Desembaraço Aduaneiro';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DDI">DSC_DDI</a></b> = 'Data de registro da DI/DSI/DA';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DEMI">DSC_DEMI</a></b> = 'Data de emissão';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DESCR">DSC_DESCR</a></b> = 'Descrição completa';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DFAB">DSC_DFAB</a></b> = 'Data de fabricação';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DIST">DSC_DIST</a></b> = 'Distância entre os eixos';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DPAG">DSC_DPAG</a></b> = 'Data de pagamento do Documento de Arrecadação';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DSAIENT">DSC_DSAIENT</a></b> = 'Data de saída ou entrada da mercadoria/produto';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_HSAIENT">DSC_HSAIENT</a></b> = 'Hora de saída ou entrada da mercadoria/produto';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DVAL">DSC_DVAL</a></b> = 'Data de validade';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DVENC">DSC_DVENC</a></b> = 'Data de vencimento';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_ESP">DSC_ESP</a></b> = 'Espécie dos volumes transportados';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_ESPVEIC">DSC_ESPVEIC</a></b> = 'Espécie de veículo';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_EXTIPI">DSC_EXTIPI</a></b> = 'EX_TIPI';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_FINNFE">DSC_FINNFE</a></b> = 'Finalidade de emissão da NFe';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_FONE">DSC_FONE</a></b> = 'Telefone';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_GENERO">DSC_GENERO</a></b> = 'Gênero do produto ou serviço';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_IE">DSC_IE</a></b> = 'Inscrição Estadual';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_IEST">DSC_IEST</a></b> = 'Inscrição Estadual do Substituto tributário';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_IM">DSC_IM</a></b> = 'Inscrição Municipal';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_INDPAG">DSC_INDPAG</a></b> = 'Indicador da forma de pagamento';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_INDPROC">DSC_INDPROC</a></b> = 'Indicador da origem do processo';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_INFADFISCO">DSC_INFADFISCO</a></b> = 'Informações adicionais de interesse do Fisco';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_INFADPROD">DSC_INFADPROD</a></b> = 'Informações adicionais do Produto';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_INFCPL">DSC_INFCPL</a></b> = 'Informações complementares de interesse do contribuinte';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_ISUF">DSC_ISUF</a></b> = 'Inscrição na SUFRAMA';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_EMAIL">DSC_EMAIL</a></b> = 'Endereço de Email';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_IPITrib">DSC_IPITrib</a></b> = 'IPI Tributável';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_MARCA">DSC_MARCA</a></b> = 'Marca dos volumes transportados';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_MATR">DSC_MATR</a></b> = 'Matrícula do agente';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_MOD">DSC_MOD</a></b> = 'Modelo';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NECF">DSC_NECF</a></b> = 'Número de ordem seqüencial do ECF';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NCOO">DSC_NCOO</a></b> = 'Número do Contador de Ordem de Operação - COO';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_MODBC">DSC_MODBC</a></b> = 'Modalidade de determinação da BC do ICMS';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_MODBCST">DSC_MODBCST</a></b> = 'Modalidade de determinação da BC do ICMS ST';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_MOTDESICMS">DSC_MOTDESICMS</a></b> = 'Motivo da desoneração do ICMS';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_MODFRETE">DSC_MODFRETE</a></b> = 'Modalidade do Frete';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NADICAO">DSC_NADICAO</a></b> = 'Numero da Adição';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NATOP">DSC_NATOP</a></b> = 'Descrição da Natureza da Operação';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DHCONT">DSC_DHCONT</a></b> = 'Data e Hora de entrada em contingencia';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XJUSTCONT">DSC_XJUSTCONT</a></b> = 'Justificativa de entrada em contingencia';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NCANO">DSC_NCANO</a></b> = 'Numero de série do cano';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NCM">DSC_NCM</a></b> = 'Código NCM';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NDI">DSC_NDI</a></b> = 'Numero do Documento de Importação DI/DSI/DA';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_nDAR">DSC_nDAR</a></b> = 'Número do Documento Arrecadação de Receita';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NDUP">DSC_NDUP</a></b> = 'Número da duplicata';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NFAT">DSC_NFAT</a></b> = 'Número da fatura';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NITEM">DSC_NITEM</a></b> = 'Numero do item';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NLACRE">DSC_NLACRE</a></b> = 'Número dos Lacres';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NLOTE">DSC_NLOTE</a></b> = 'Número do Lote do medicamento';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NMOTOR">DSC_NMOTOR</a></b> = 'Número de Motor';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NNF">DSC_NNF</a></b> = 'Número do Documento Fiscal';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NPROC">DSC_NPROC</a></b> = 'Identificador do processo ou ato concessório';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NRO">DSC_NRO</a></b> = 'Número';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NSEQADIC">DSC_NSEQADIC</a></b> = 'Numero seqüencial do item dentro da adição';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NSERIE">DSC_NSERIE</a></b> = 'Número de série';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NVOL">DSC_NVOL</a></b> = 'Numeração dos volumes transportados';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_ORIG">DSC_ORIG</a></b> = 'Origem da mercadoria';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_OBSCONT">DSC_OBSCONT</a></b> = 'Observações de interesse do contribuite';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_OBSFISCO">DSC_OBSFISCO</a></b> = 'Observações de interesse do fisco';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PCOFINS">DSC_PCOFINS</a></b> = 'Alíquota da COFINS (em percentual)';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PESOB">DSC_PESOB</a></b> = 'Peso Bruto (em kg)';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PESOL">DSC_PESOL</a></b> = 'Peso Líquido (em kg)';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PICMS">DSC_PICMS</a></b> = 'Alíquota do imposto';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PICMSRET">DSC_PICMSRET</a></b> = 'Alíquota da Retenção';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PICMSST">DSC_PICMSST</a></b> = 'Alíquota do imposto do ICMS ST';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PIPI">DSC_PIPI</a></b> = 'Alíquota do IPI';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PISOUTR">DSC_PISOUTR</a></b> = 'Grupo PIS outras operações';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PLACA">DSC_PLACA</a></b> = 'Placa do Veículo';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PMVAST">DSC_PMVAST</a></b> = 'Percentual da margem de valor Adicionado do ICMS ST';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_POT">DSC_POT</a></b> = 'Potência Motor';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PPIS">DSC_PPIS</a></b> = 'Alíquota do PIS (em percentual)';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PREDBC">DSC_PREDBC</a></b> = 'Percentual da Redução de BC';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PCREDSN">DSC_PCREDSN</a></b> = 'Alíquota aplicável de cálculo do crédito (Simples Nacional).';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VCREDICMSSN">DSC_VCREDICMSSN</a></b> = 'Valor crédito do ICMS que pode ser aproveitado nos termos do art. 23 da LC 123 (Simples Nacional)';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PREDBCST">DSC_PREDBCST</a></b> = 'Percentual da Redução de BC do ICMS ST';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_UFST">DSC_UFST</a></b> = 'UF para qual é devido o ICMS ST';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PBCOP">DSC_PBCOP</a></b> = 'Percentual da BC operação própria';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PROCEMI">DSC_PROCEMI</a></b> = 'Processo de emissão da NF-e';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_QBCPROD">DSC_QBCPROD</a></b> = 'BC da CIDE';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_QCOM">DSC_QCOM</a></b> = 'Quantidade Comercial';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_QLOTE">DSC_QLOTE</a></b> = 'Quantidade de produto no Lote do medicamento';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_QSELO">DSC_QSELO</a></b> = 'Quantidade de selo de controle';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_QTEMP">DSC_QTEMP</a></b> = 'Quantidade de combustível faturada à temperatura ambiente.';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_QTRIB">DSC_QTRIB</a></b> = 'Quantidade Tributável';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_QUNID">DSC_QUNID</a></b> = 'Quantidade total na unidade padrão para tributação (somente para os produtos tributados por unidade)';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_QVOL">DSC_QVOL</a></b> = 'Quantidade de volumes transportados';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_REBOQUE">DSC_REBOQUE</a></b> = 'Reboque';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_REFNFE">DSC_REFNFE</a></b> = 'Chave de acesso das NF-e referenciadas';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_RENAVAM">DSC_RENAVAM</a></b> = 'RENAVAM';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_REPEMI">DSC_REPEMI</a></b> = 'Repartição Fiscal emitente';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_RNTC">DSC_RNTC</a></b> = 'Registro Nacional de Transportador de Carga (ANTT)';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VAGAO">DSC_VAGAO</a></b> = 'Identificação do vagão';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_BALSA">DSC_BALSA</a></b> = 'Identificação da balsa';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_SERIE">DSC_SERIE</a></b> = 'Série do Documento Fiscal';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TPAMB">DSC_TPAMB</a></b> = 'Identificação do Ambiente';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TPARMA">DSC_TPARMA</a></b> = 'Indicador do tipo de arma de fogo';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TPCOMB">DSC_TPCOMB</a></b> = 'Tipo de combustível';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TPEMIS">DSC_TPEMIS</a></b> = 'Forma de Emissão da NF-e';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TPIMP">DSC_TPIMP</a></b> = 'Formato de Impressão do DANFE';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TPNF">DSC_TPNF</a></b> = 'Tipo do Documento Fiscal';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TPOP">DSC_TPOP</a></b> = 'Tipo da operação';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TPPINT">DSC_TPPINT</a></b> = 'Tipo de Pintura';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TPVEIC">DSC_TPVEIC</a></b> = 'Tipo de Veículo';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_UCOM">DSC_UCOM</a></b> = 'Unidade Comercial';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_UF">DSC_UF</a></b> = 'Sigla da UF';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_UFCONS">DSC_UFCONS</a></b> = 'Sigla da UF de consumo';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_UFDESEMB">DSC_UFDESEMB</a></b> = 'Sigla da UF onde ocorreu o Desembaraço Aduaneiro';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_UFEMBARQ">DSC_UFEMBARQ</a></b> = 'Sigla da UF onde ocorrerá o embarque dos produtos';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_UTRIB">DSC_UTRIB</a></b> = 'Unidade Tributável';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VALIQ">DSC_VALIQ</a></b> = 'Alíuota';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VALIQPROD">DSC_VALIQPROD</a></b> = 'Valor da alíquota (em reais)';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VBC">DSC_VBC</a></b> = 'Valor da BC do ICMS';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VBCICMS">DSC_VBCICMS</a></b> = 'BC do ICMS';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VBCICMSST">DSC_VBCICMSST</a></b> = 'BC do ICMS ST retido';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VBCICMSSTCONS">DSC_VBCICMSSTCONS</a></b> = 'Valor do ICMS ST da UF de consumo';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VBCICMSSTDEST">DSC_VBCICMSSTDEST</a></b> = 'BC do ICMS ST da UF de destino';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VBCIRRF">DSC_VBCIRRF</a></b> = 'Base de Cálculo do IRRF';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VBCRET">DSC_VBCRET</a></b> = 'BC da Retenção do ICMS';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VBCRETPREV">DSC_VBCRETPREV</a></b> = 'Base de Cálculo da Retenção da Previdência Social';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VBCST">DSC_VBCST</a></b> = 'Valor da BC do ICMS ST';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VBCSTRET">DSC_VBCSTRET</a></b> = 'Valor da BC do ICMS ST Retido';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VCIDE">DSC_VCIDE</a></b> = 'Valor da CIDE';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VCOFINS">DSC_VCOFINS</a></b> = 'Valor do COFINS';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VDAR">DSC_VDAR</a></b> = 'Valor total constante no Documento de arrecadação de Receita';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VDESC">DSC_VDESC</a></b> = 'Valor do desconto';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_INDTOT">DSC_INDTOT</a></b> = 'Indicador de soma no total da NFe';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VDESCDI">DSC_VDESCDI</a></b> = 'Valor do desconto do item da DI – adição';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NITEMPED">DSC_NITEMPED</a></b> = 'Item do Pedido de Compra da DI – adição';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VDESPADU">DSC_VDESPADU</a></b> = 'Valor das despesas aduaneiras';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VDUP">DSC_VDUP</a></b> = 'Valor da duplicata';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VERPROC">DSC_VERPROC</a></b> = 'Versão do Processo de emissão da NF-e';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VFRETE">DSC_VFRETE</a></b> = 'Valor Total do Frete';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VICMS">DSC_VICMS</a></b> = 'Valor do ICMS';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VICMSRET">DSC_VICMSRET</a></b> = 'Valor do ICMS Retido';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VICMSST">DSC_VICMSST</a></b> = 'Valor do ICMS Substituição Tributaria';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VICMSSTRET">DSC_VICMSSTRET</a></b> = 'Valor do ICMS Substituição Tributaria Retido';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VICMSSTCONS">DSC_VICMSSTCONS</a></b> = 'Valor do ICMS Substituição Tributaria da UF de Consumo';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VICMSSTDEST">DSC_VICMSSTDEST</a></b> = 'Valor do ICMS Substituição Tributaria da UF de Destino';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VII">DSC_VII</a></b> = 'Valor do Imposto de Importação';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VIN">DSC_VIN</a></b> = 'Condição do VIN';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VIOF">DSC_VIOF</a></b> = 'Valor do Imposto sobre operações Financeiras';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_vIPI">DSC_vIPI</a></b> = 'Valor do Imposto sobre Produtos Industrializados';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VIRRF">DSC_VIRRF</a></b> = 'Valor do Imposto de Renda Retido na Fonte';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VISS">DSC_VISS</a></b> = 'Valor do Imposto sobre Serviço';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VISSQN">DSC_VISSQN</a></b> = 'Valor do Imposto sobre Serviço de Qualquer Natureza';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VLIQ">DSC_VLIQ</a></b> = 'Valor Líquido da Fatura';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VNF">DSC_VNF</a></b> = 'Valor Total da NF-e';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VORIG">DSC_VORIG</a></b> = 'Valor Original da Fatura';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VOUTRO">DSC_VOUTRO</a></b> = 'Outras Despesas Acessórias';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VPIS">DSC_VPIS</a></b> = 'Valor do PIS';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VPMC">DSC_VPMC</a></b> = 'Preço Máximo ao Consumidor';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VPROD">DSC_VPROD</a></b> = 'Valor Total Bruto dos Produtos ou Serviços';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VRETCOFINS">DSC_VRETCOFINS</a></b> = 'Valor Retido do COFINS';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VRETCSLL">DSC_VRETCSLL</a></b> = 'Valor Retido da CONTRIBUIÇÃO SOCIAL SOBRE O LUCRO LÍQUIDO';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VRETPIS">DSC_VRETPIS</a></b> = 'Valor Retido do PIS';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VRETPREV">DSC_VRETPREV</a></b> = 'Valor da Retenção da Previdência Social';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VSEG">DSC_VSEG</a></b> = 'Valor Total do Seguro';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VSERV">DSC_VSERV</a></b> = 'Valor total dos Serviços sob não incidência ou não Tributados pelo ICMS  / Valor do Serviço';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VST">DSC_VST</a></b> = 'Valor TOTAL Icms substituição Tributária';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VUNCOM">DSC_VUNCOM</a></b> = 'Valor Unitário de Comercialização';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VUNID">DSC_VUNID</a></b> = 'Valor por Unidade Tributável';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VUNTRIB">DSC_VUNTRIB</a></b> = 'Valor unitário de Tributação';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XAGENTE">DSC_XAGENTE</a></b> = 'Nome do agente';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XBAIRRO">DSC_XBAIRRO</a></b> = 'Bairro';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XCAMPO">DSC_XCAMPO</a></b> = 'Identificação do Campo';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XCONT">DSC_XCONT</a></b> = 'Contrato';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XCOR">DSC_XCOR</a></b> = 'Descrição da Cor';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XCPL">DSC_XCPL</a></b> = 'Complemento (Endereço)';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XENDER">DSC_XENDER</a></b> = 'Endereço Completo';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XFANT">DSC_XFANT</a></b> = 'Nome de Fantasia';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XLGR">DSC_XLGR</a></b> = 'Logradouro';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XLOCDESEMB">DSC_XLOCDESEMB</a></b> = 'Local de Desembaraço';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XLOCEMBARQ">DSC_XLOCEMBARQ</a></b> = 'Local onde ocorrerá o embarque dos produtos';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XMUN">DSC_XMUN</a></b> = 'Nome do Município';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XNEMP">DSC_XNEMP</a></b> = 'Nota de Empenho';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XNOME">DSC_XNOME</a></b> = 'Razão Social ou Nome';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XPAIS">DSC_XPAIS</a></b> = 'Nome do País';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XPED">DSC_XPED</a></b> = 'Pedido';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XPROD">DSC_XPROD</a></b> = 'Descrição do Produto ou Serviço';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XTEXTO">DSC_XTEXTO</a></b> = 'Conteúdo do Campo';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XORGAO">DSC_XORGAO</a></b> = 'Orgão emitente';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DigestValue">DSC_DigestValue</a></b> = 'Digest Value';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_SignatureValue">DSC_SignatureValue</a></b> = 'Signature Value';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_X509Certificate">DSC_X509Certificate</a></b> = 'X509 Certificate';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XSERV">DSC_XSERV</a></b> = 'Descrição do serviço';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_ANO">DSC_ANO</a></b> = 'Ano';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CNPJ">DSC_CNPJ</a></b> = 'CNPJ(MF)';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CPF">DSC_CPF</a></b> = 'CPF';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NNFINI">DSC_NNFINI</a></b> = 'Numero inicial';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NNFFIN">DSC_NNFFIN</a></b> = 'Numero final';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XJUST">DSC_XJUST</a></b> = 'Justificativa';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CHNFE">DSC_CHNFE</a></b> = 'Chave da NFe';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NPROT">DSC_NPROT</a></b> = 'Numero do protocolo';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NREC">DSC_NREC</a></b> = 'Numero do recibo';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_IDLOTE">DSC_IDLOTE</a></b> = 'Numero do Lote';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VERAPLIC">DSC_VERAPLIC</a></b> = 'Versão do aplicativo';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NREGDPEC">DSC_NREGDPEC</a></b> = 'Número de registro do DPEC';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DPEC_ID">DSC_DPEC_ID</a></b> = 'Grupo de Identificação da TAG a ser assinada. DPEC + CNPJ do emissor.';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_SAFRA">DSC_SAFRA</a></b> = 'Identificação da safra';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_REF">DSC_REF</a></b> = 'Mês e ano de referência';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_FORDIA">DSC_FORDIA</a></b> = 'Grupo de Fornecimento diário de cana';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DIA">DSC_DIA</a></b> = 'Dia';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_QTDE">DSC_QTDE</a></b> = 'Quantidade';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_QTOTMES">DSC_QTOTMES</a></b> = 'Quantidade Total do Mês';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_QTOTANT">DSC_QTOTANT</a></b> = 'Quantidade Total Anterior';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TOTGER">DSC_TOTGER</a></b> = 'Quantidade Total Geral';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DEDUC">DSC_DEDUC</a></b> = 'Grupo de Deduções – Taxas e Contribuições';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XDED">DSC_XDED</a></b> = 'Descrição da Dedução';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VDED">DSC_VDED</a></b> = 'Valor da Dedução';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VFOR">DSC_VFOR</a></b> = 'Valor dos Fornecimentos';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VTOTDED">DSC_VTOTDED</a></b> = 'Valor Total da Dedução';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VLIQFOR">DSC_VLIQFOR</a></b> = 'Valor Líquido dos Fornecimentos';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CHCTE">DSC_CHCTE</a></b>    = 'Chave do CTe';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TPCTe">DSC_TPCTe</a></b>    = 'Tipo do Conhecimento';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_REFCTE">DSC_REFCTE</a></b>   = 'Chave de acesso do CT-e referenciado';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CMUNEMI">DSC_CMUNEMI</a></b>  = 'Código do Município onde o CT-e está sendo emitido';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_ORIGCALC">DSC_ORIGCALC</a></b> = 'Município origem para efeito de cálculo do frete';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DESTCALC">DSC_DESTCALC</a></b> = 'Município destino para efeito de cálculo do frete';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XOBS">DSC_XOBS</a></b>     = 'Observações Gerais';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TOMA">DSC_TOMA</a></b>     = 'Tomador do Serviço';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_INFNF">DSC_INFNF</a></b>    = 'Informações da Nota Fiscal';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_INFNFE">DSC_INFNFE</a></b>   = 'Informações da Nota Fiscal Eletrônica';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NDOC">DSC_NDOC</a></b>     = 'Número da Nota Fiscal';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PESO">DSC_PESO</a></b>     = 'Peso';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TPDOC">DSC_TPDOC</a></b>    = 'Tipo de documento originário';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_OUTROS">DSC_OUTROS</a></b>   = 'Descrição';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VTPREST">DSC_VTPREST</a></b>  = 'Valor total da prestação do serviço';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VREC">DSC_VREC</a></b>     = 'Valor a Receber';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XNOMEC">DSC_XNOMEC</a></b>   = 'Nome do Componente';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VCOMP">DSC_VCOMP</a></b>    = 'Valor do Componente';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VCRED">DSC_VCRED</a></b>    = 'Valor do Crédito outorgado/presumido';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_RESPSEG">DSC_RESPSEG</a></b>  = 'Responsável pelo Seguro';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_XSEG">DSC_XSEG</a></b>     = 'Nome da Seguradora';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NAPOL">DSC_NAPOL</a></b>    = 'Número da Apólice';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_NAVER">DSC_NAVER</a></b>    = 'Número da Averbação';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VMERC">DSC_VMERC</a></b>    = 'Valor da mercadoria para efeito de averbação';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_INFSEG">DSC_INFSEG</a></b>   = 'Informações de seguro da carga';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_RNTRC">DSC_RNTRC</a></b>    = 'Registro Nacional de Transportadores Rodoviários de Carga';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DPREV">DSC_DPREV</a></b>    = 'Data prevista de entrega';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_LOTA">DSC_LOTA</a></b>     = 'Indicador de lotação';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CINT">DSC_CINT</a></b>     = 'Código interno do emitente';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_LACR">DSC_LACR</a></b>     = 'Grupo de lacres';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TPPROP">DSC_TPPROP</a></b>   = 'Tipo de Proprietário';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_INFOUTRO">DSC_INFOUTRO</a></b> = 'informações dos demais documentos';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VDOC">DSC_VDOC</a></b>     = 'Valor do documento';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_MODAL">DSC_MODAL</a></b>    = 'Tipo de Modal';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TPSERV">DSC_TPSERV</a></b>   = 'Tipo do Serviço';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_RETIRA">DSC_RETIRA</a></b>   = 'Recebedor retira na Filial?';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_PRED">DSC_PRED</a></b>     = 'Produto predominante';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_OUTCAT">DSC_OUTCAT</a></b>   = 'Outras características da carga';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_VTMERC">DSC_VTMERC</a></b>   = 'Valor total da mercadoria';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_INFQ">DSC_INFQ</a></b>     = 'Informações de quantidades da Carga';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_CUNID">DSC_CUNID</a></b>    = 'Código da unidade de medida';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_TPMED">DSC_TPMED</a></b>    = 'Tipo da Medida';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_QTD">DSC_QTD</a></b>      = 'Quantidade';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="pcnGerador.html#DSC_DRET">DSC_DRET</a></b>     = 'Detalhes da Retirada';</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ERR_MSG_MAIOR"></a><code><b>ERR_MSG_MAIOR</b> = 'Tamanho maior que o máximo permitido';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ERR_MSG_MENOR"></a><code><b>ERR_MSG_MENOR</b> = 'Tamanho menor que o mínimo permitido';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ERR_MSG_VAZIO"></a><code><b>ERR_MSG_VAZIO</b> = 'Nenhum valor informado';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ERR_MSG_INVALIDO"></a><code><b>ERR_MSG_INVALIDO</b> = 'Conteúdo inválido';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ERR_MSG_MAXIMO_DECIMAIS"></a><code><b>ERR_MSG_MAXIMO_DECIMAIS</b> = 'Numero máximo de casas decimais permitidas';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ERR_MSG_MAIOR_MAXIMO"></a><code><b>ERR_MSG_MAIOR_MAXIMO</b> = 'Número de ocorrências maior que o máximo permitido - Máximo ';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ERR_MSG_GERAR_CHAVE"></a><code><b>ERR_MSG_GERAR_CHAVE</b> = 'Erro ao gerar a chave da NFe!';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ERR_MSG_FINAL_MENOR_INICIAL"></a><code><b>ERR_MSG_FINAL_MENOR_INICIAL</b> = 'O numero final não pode ser menor que o inicial';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ERR_MSG_ARQUIVO_NAO_ENCONTRADO"></a><code><b>ERR_MSG_ARQUIVO_NAO_ENCONTRADO</b> = 'Arquivo não encontrado';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ERR_MSG_SOMENTE_UM"></a><code><b>ERR_MSG_SOMENTE_UM</b> = 'Somente um campo deve ser preenchido';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CODIGO_BRASIL"></a><code><b>CODIGO_BRASIL</b> = 1058;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ENCODING_UTF8"></a><code><b>ENCODING_UTF8</b> = '?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ENCODING_UTF8_STD"></a><code><b>ENCODING_UTF8_STD</b> = '?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NAME_SPACE"></a><code><b>NAME_SPACE</b> = 'xmlns=&quot;http://www.portalfiscal.inf.br/nfe&quot;';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NAME_SPACE_CTE"></a><code><b>NAME_SPACE_CTE</b> = 'xmlns=&quot;http://www.portalfiscal.inf.br/cte&quot;';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="V1_00"></a><code><b>V1_00</b> = 'versao=&quot;1.00&quot;';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="V1_01"></a><code><b>V1_01</b> = 'versao=&quot;1.01&quot;';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="V1_02"></a><code><b>V1_02</b> = 'versao=&quot;1.02&quot;';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="V1_03"></a><code><b>V1_03</b> = 'versao=&quot;1.03&quot;';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="V1_07"></a><code><b>V1_07</b> = 'versao=&quot;1.07&quot;';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="V1_10"></a><code><b>V1_10</b> = 'versao=&quot;1.10&quot;';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="V2_00"></a><code><b>V2_00</b> = 'versao=&quot;2.00&quot;';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_AAMM"></a><code><b>DSC_AAMM</b> = 'Ano e Mês';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+NFE //</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_ANOFAB"></a><code><b>DSC_ANOFAB</b> = 'Ano de Fabricação';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_ANOMOD"></a><code><b>DSC_ANOMOD</b> = 'Ano do Modelo de Fabricação';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CCOR"></a><code><b>DSC_CCOR</b> = 'Cor do Veículo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CDV"></a><code><b>DSC_CDV</b> = 'Digito Verificador';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CEAN"></a><code><b>DSC_CEAN</b> = 'Código de Barra do Item';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CEANTRIB"></a><code><b>DSC_CEANTRIB</b> = 'Código de Barra do Item Tributação';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CENQ"></a><code><b>DSC_CENQ</b> = 'Código de Enquadramento Legal do IPI';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CEP"></a><code><b>DSC_CEP</b> = 'CEP';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CEXPORTADOR"></a><code><b>DSC_CEXPORTADOR</b> = 'Código do exportador';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CFABRICANTE"></a><code><b>DSC_CFABRICANTE</b> = 'Fabricante';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CFOP"></a><code><b>DSC_CFOP</b> = 'CFOP';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CHASSI"></a><code><b>DSC_CHASSI</b> = 'Número do chassi';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CHAVE"></a><code><b>DSC_CHAVE</b> = 'Chave da NFe';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CLENQ"></a><code><b>DSC_CLENQ</b> = 'Classe de enquadramento do IPI para Cigarros e Bebidas';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CLISTSERV"></a><code><b>DSC_CLISTSERV</b> = 'Lista Prestação de Serviços';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CSITTRIB"></a><code><b>DSC_CSITTRIB</b> = 'Código de Tributação do ISSQN';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CILIN"></a><code><b>DSC_CILIN</b> = 'Cilindradas';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CMT"></a><code><b>DSC_CMT</b> = 'Capacidade Máxima de Tração';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CMOD"></a><code><b>DSC_CMOD</b> = 'Modelo do Veículo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CCORDEN"></a><code><b>DSC_CCORDEN</b> = 'Código da Cor DENATRAN';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TPREST"></a><code><b>DSC_TPREST</b> = 'Restrição';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CMUN"></a><code><b>DSC_CMUN</b> = 'Código do Município';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CMUNFG"></a><code><b>DSC_CMUNFG</b> = 'Código do Município FG';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CNAE"></a><code><b>DSC_CNAE</b> = 'Classificação Nacional de Atividades Econômicas';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CRT"></a><code><b>DSC_CRT</b> = 'Código de Regime Tributário';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CNF"></a><code><b>DSC_CNF</b> = 'Número da Nota Fiscal Eletrônica';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CODIF"></a><code><b>DSC_CODIF</b> = 'Código de autorização / registro do CODIF';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CONDVEIC"></a><code><b>DSC_CONDVEIC</b> = 'Condições do Veículo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CPAIS"></a><code><b>DSC_CPAIS</b> = 'Código do País';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CNPJPROD"></a><code><b>DSC_CNPJPROD</b> = 'CNPJ do produtor da mercadoria, quando diferente do emitente';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CPROD"></a><code><b>DSC_CPROD</b> = 'Código do produto ou serviço';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CPRODANP"></a><code><b>DSC_CPRODANP</b> = 'Código do produto ANP';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CSELO"></a><code><b>DSC_CSELO</b> = 'Código do selo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CST"></a><code><b>DSC_CST</b> = 'Código da situação tributária ';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CSOSN"></a><code><b>DSC_CSOSN</b> = 'Código de Situação da Operação – Simples Nacional';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CUF"></a><code><b>DSC_CUF</b> = 'Código do UF (Unidade da Federação)';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DDESEMB"></a><code><b>DSC_DDESEMB</b> = 'Data do Desembaraço Aduaneiro';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DDI"></a><code><b>DSC_DDI</b> = 'Data de registro da DI/DSI/DA';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DEMI"></a><code><b>DSC_DEMI</b> = 'Data de emissão';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DESCR"></a><code><b>DSC_DESCR</b> = 'Descrição completa';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DFAB"></a><code><b>DSC_DFAB</b> = 'Data de fabricação';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DIST"></a><code><b>DSC_DIST</b> = 'Distância entre os eixos';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DPAG"></a><code><b>DSC_DPAG</b> = 'Data de pagamento do Documento de Arrecadação';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DSAIENT"></a><code><b>DSC_DSAIENT</b> = 'Data de saída ou entrada da mercadoria/produto';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_HSAIENT"></a><code><b>DSC_HSAIENT</b> = 'Hora de saída ou entrada da mercadoria/produto';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DVAL"></a><code><b>DSC_DVAL</b> = 'Data de validade';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DVENC"></a><code><b>DSC_DVENC</b> = 'Data de vencimento';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_ESP"></a><code><b>DSC_ESP</b> = 'Espécie dos volumes transportados';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_ESPVEIC"></a><code><b>DSC_ESPVEIC</b> = 'Espécie de veículo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_EXTIPI"></a><code><b>DSC_EXTIPI</b> = 'EX_TIPI';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_FINNFE"></a><code><b>DSC_FINNFE</b> = 'Finalidade de emissão da NFe';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_FONE"></a><code><b>DSC_FONE</b> = 'Telefone';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_GENERO"></a><code><b>DSC_GENERO</b> = 'Gênero do produto ou serviço';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_IE"></a><code><b>DSC_IE</b> = 'Inscrição Estadual';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_IEST"></a><code><b>DSC_IEST</b> = 'Inscrição Estadual do Substituto tributário';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_IM"></a><code><b>DSC_IM</b> = 'Inscrição Municipal';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_INDPAG"></a><code><b>DSC_INDPAG</b> = 'Indicador da forma de pagamento';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_INDPROC"></a><code><b>DSC_INDPROC</b> = 'Indicador da origem do processo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_INFADFISCO"></a><code><b>DSC_INFADFISCO</b> = 'Informações adicionais de interesse do Fisco';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_INFADPROD"></a><code><b>DSC_INFADPROD</b> = 'Informações adicionais do Produto';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_INFCPL"></a><code><b>DSC_INFCPL</b> = 'Informações complementares de interesse do contribuinte';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_ISUF"></a><code><b>DSC_ISUF</b> = 'Inscrição na SUFRAMA';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_EMAIL"></a><code><b>DSC_EMAIL</b> = 'Endereço de Email';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_IPITrib"></a><code><b>DSC_IPITrib</b> = 'IPI Tributável';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_MARCA"></a><code><b>DSC_MARCA</b> = 'Marca dos volumes transportados';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_MATR"></a><code><b>DSC_MATR</b> = 'Matrícula do agente';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_MOD"></a><code><b>DSC_MOD</b> = 'Modelo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NECF"></a><code><b>DSC_NECF</b> = 'Número de ordem seqüencial do ECF';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NCOO"></a><code><b>DSC_NCOO</b> = 'Número do Contador de Ordem de Operação - COO';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_MODBC"></a><code><b>DSC_MODBC</b> = 'Modalidade de determinação da BC do ICMS';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_MODBCST"></a><code><b>DSC_MODBCST</b> = 'Modalidade de determinação da BC do ICMS ST';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_MOTDESICMS"></a><code><b>DSC_MOTDESICMS</b> = 'Motivo da desoneração do ICMS';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_MODFRETE"></a><code><b>DSC_MODFRETE</b> = 'Modalidade do Frete';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NADICAO"></a><code><b>DSC_NADICAO</b> = 'Numero da Adição';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NATOP"></a><code><b>DSC_NATOP</b> = 'Descrição da Natureza da Operação';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DHCONT"></a><code><b>DSC_DHCONT</b> = 'Data e Hora de entrada em contingencia';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XJUSTCONT"></a><code><b>DSC_XJUSTCONT</b> = 'Justificativa de entrada em contingencia';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NCANO"></a><code><b>DSC_NCANO</b> = 'Numero de série do cano';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NCM"></a><code><b>DSC_NCM</b> = 'Código NCM';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NDI"></a><code><b>DSC_NDI</b> = 'Numero do Documento de Importação DI/DSI/DA';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_nDAR"></a><code><b>DSC_nDAR</b> = 'Número do Documento Arrecadação de Receita';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NDUP"></a><code><b>DSC_NDUP</b> = 'Número da duplicata';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NFAT"></a><code><b>DSC_NFAT</b> = 'Número da fatura';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NITEM"></a><code><b>DSC_NITEM</b> = 'Numero do item';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NLACRE"></a><code><b>DSC_NLACRE</b> = 'Número dos Lacres';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NLOTE"></a><code><b>DSC_NLOTE</b> = 'Número do Lote do medicamento';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NMOTOR"></a><code><b>DSC_NMOTOR</b> = 'Número de Motor';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NNF"></a><code><b>DSC_NNF</b> = 'Número do Documento Fiscal';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NPROC"></a><code><b>DSC_NPROC</b> = 'Identificador do processo ou ato concessório';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NRO"></a><code><b>DSC_NRO</b> = 'Número';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NSEQADIC"></a><code><b>DSC_NSEQADIC</b> = 'Numero seqüencial do item dentro da adição';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NSERIE"></a><code><b>DSC_NSERIE</b> = 'Número de série';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NVOL"></a><code><b>DSC_NVOL</b> = 'Numeração dos volumes transportados';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_ORIG"></a><code><b>DSC_ORIG</b> = 'Origem da mercadoria';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_OBSCONT"></a><code><b>DSC_OBSCONT</b> = 'Observações de interesse do contribuite';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_OBSFISCO"></a><code><b>DSC_OBSFISCO</b> = 'Observações de interesse do fisco';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PCOFINS"></a><code><b>DSC_PCOFINS</b> = 'Alíquota da COFINS (em percentual)';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PESOB"></a><code><b>DSC_PESOB</b> = 'Peso Bruto (em kg)';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PESOL"></a><code><b>DSC_PESOL</b> = 'Peso Líquido (em kg)';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PICMS"></a><code><b>DSC_PICMS</b> = 'Alíquota do imposto';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PICMSRET"></a><code><b>DSC_PICMSRET</b> = 'Alíquota da Retenção';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PICMSST"></a><code><b>DSC_PICMSST</b> = 'Alíquota do imposto do ICMS ST';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PIPI"></a><code><b>DSC_PIPI</b> = 'Alíquota do IPI';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PISOUTR"></a><code><b>DSC_PISOUTR</b> = 'Grupo PIS outras operações';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PLACA"></a><code><b>DSC_PLACA</b> = 'Placa do Veículo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PMVAST"></a><code><b>DSC_PMVAST</b> = 'Percentual da margem de valor Adicionado do ICMS ST';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_POT"></a><code><b>DSC_POT</b> = 'Potência Motor';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PPIS"></a><code><b>DSC_PPIS</b> = 'Alíquota do PIS (em percentual)';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PREDBC"></a><code><b>DSC_PREDBC</b> = 'Percentual da Redução de BC';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PCREDSN"></a><code><b>DSC_PCREDSN</b> = 'Alíquota aplicável de cálculo do crédito (Simples Nacional).';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VCREDICMSSN"></a><code><b>DSC_VCREDICMSSN</b> = 'Valor crédito do ICMS que pode ser aproveitado nos termos do art. 23 da LC 123 (Simples Nacional)';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PREDBCST"></a><code><b>DSC_PREDBCST</b> = 'Percentual da Redução de BC do ICMS ST';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_UFST"></a><code><b>DSC_UFST</b> = 'UF para qual é devido o ICMS ST';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PBCOP"></a><code><b>DSC_PBCOP</b> = 'Percentual da BC operação própria';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PROCEMI"></a><code><b>DSC_PROCEMI</b> = 'Processo de emissão da NF-e';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_QBCPROD"></a><code><b>DSC_QBCPROD</b> = 'BC da CIDE';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_QCOM"></a><code><b>DSC_QCOM</b> = 'Quantidade Comercial';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_QLOTE"></a><code><b>DSC_QLOTE</b> = 'Quantidade de produto no Lote do medicamento';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_QSELO"></a><code><b>DSC_QSELO</b> = 'Quantidade de selo de controle';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_QTEMP"></a><code><b>DSC_QTEMP</b> = 'Quantidade de combustível faturada à temperatura ambiente.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_QTRIB"></a><code><b>DSC_QTRIB</b> = 'Quantidade Tributável';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_QUNID"></a><code><b>DSC_QUNID</b> = 'Quantidade total na unidade padrão para tributação (somente para os produtos tributados por unidade)';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_QVOL"></a><code><b>DSC_QVOL</b> = 'Quantidade de volumes transportados';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_REBOQUE"></a><code><b>DSC_REBOQUE</b> = 'Reboque';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_REFNFE"></a><code><b>DSC_REFNFE</b> = 'Chave de acesso das NF-e referenciadas';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_RENAVAM"></a><code><b>DSC_RENAVAM</b> = 'RENAVAM';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_REPEMI"></a><code><b>DSC_REPEMI</b> = 'Repartição Fiscal emitente';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_RNTC"></a><code><b>DSC_RNTC</b> = 'Registro Nacional de Transportador de Carga (ANTT)';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VAGAO"></a><code><b>DSC_VAGAO</b> = 'Identificação do vagão';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_BALSA"></a><code><b>DSC_BALSA</b> = 'Identificação da balsa';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_SERIE"></a><code><b>DSC_SERIE</b> = 'Série do Documento Fiscal';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TPAMB"></a><code><b>DSC_TPAMB</b> = 'Identificação do Ambiente';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TPARMA"></a><code><b>DSC_TPARMA</b> = 'Indicador do tipo de arma de fogo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TPCOMB"></a><code><b>DSC_TPCOMB</b> = 'Tipo de combustível';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TPEMIS"></a><code><b>DSC_TPEMIS</b> = 'Forma de Emissão da NF-e';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TPIMP"></a><code><b>DSC_TPIMP</b> = 'Formato de Impressão do DANFE';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TPNF"></a><code><b>DSC_TPNF</b> = 'Tipo do Documento Fiscal';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TPOP"></a><code><b>DSC_TPOP</b> = 'Tipo da operação';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TPPINT"></a><code><b>DSC_TPPINT</b> = 'Tipo de Pintura';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TPVEIC"></a><code><b>DSC_TPVEIC</b> = 'Tipo de Veículo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_UCOM"></a><code><b>DSC_UCOM</b> = 'Unidade Comercial';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_UF"></a><code><b>DSC_UF</b> = 'Sigla da UF';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_UFCONS"></a><code><b>DSC_UFCONS</b> = 'Sigla da UF de consumo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_UFDESEMB"></a><code><b>DSC_UFDESEMB</b> = 'Sigla da UF onde ocorreu o Desembaraço Aduaneiro';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_UFEMBARQ"></a><code><b>DSC_UFEMBARQ</b> = 'Sigla da UF onde ocorrerá o embarque dos produtos';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_UTRIB"></a><code><b>DSC_UTRIB</b> = 'Unidade Tributável';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VALIQ"></a><code><b>DSC_VALIQ</b> = 'Alíuota';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VALIQPROD"></a><code><b>DSC_VALIQPROD</b> = 'Valor da alíquota (em reais)';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VBC"></a><code><b>DSC_VBC</b> = 'Valor da BC do ICMS';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VBCICMS"></a><code><b>DSC_VBCICMS</b> = 'BC do ICMS';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VBCICMSST"></a><code><b>DSC_VBCICMSST</b> = 'BC do ICMS ST retido';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VBCICMSSTCONS"></a><code><b>DSC_VBCICMSSTCONS</b> = 'Valor do ICMS ST da UF de consumo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VBCICMSSTDEST"></a><code><b>DSC_VBCICMSSTDEST</b> = 'BC do ICMS ST da UF de destino';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VBCIRRF"></a><code><b>DSC_VBCIRRF</b> = 'Base de Cálculo do IRRF';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VBCRET"></a><code><b>DSC_VBCRET</b> = 'BC da Retenção do ICMS';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VBCRETPREV"></a><code><b>DSC_VBCRETPREV</b> = 'Base de Cálculo da Retenção da Previdência Social';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VBCST"></a><code><b>DSC_VBCST</b> = 'Valor da BC do ICMS ST';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VBCSTRET"></a><code><b>DSC_VBCSTRET</b> = 'Valor da BC do ICMS ST Retido';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VCIDE"></a><code><b>DSC_VCIDE</b> = 'Valor da CIDE';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VCOFINS"></a><code><b>DSC_VCOFINS</b> = 'Valor do COFINS';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VDAR"></a><code><b>DSC_VDAR</b> = 'Valor total constante no Documento de arrecadação de Receita';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VDESC"></a><code><b>DSC_VDESC</b> = 'Valor do desconto';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_INDTOT"></a><code><b>DSC_INDTOT</b> = 'Indicador de soma no total da NFe';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VDESCDI"></a><code><b>DSC_VDESCDI</b> = 'Valor do desconto do item da DI – adição';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NITEMPED"></a><code><b>DSC_NITEMPED</b> = 'Item do Pedido de Compra da DI – adição';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VDESPADU"></a><code><b>DSC_VDESPADU</b> = 'Valor das despesas aduaneiras';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VDUP"></a><code><b>DSC_VDUP</b> = 'Valor da duplicata';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VERPROC"></a><code><b>DSC_VERPROC</b> = 'Versão do Processo de emissão da NF-e';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VFRETE"></a><code><b>DSC_VFRETE</b> = 'Valor Total do Frete';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VICMS"></a><code><b>DSC_VICMS</b> = 'Valor do ICMS';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VICMSRET"></a><code><b>DSC_VICMSRET</b> = 'Valor do ICMS Retido';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VICMSST"></a><code><b>DSC_VICMSST</b> = 'Valor do ICMS Substituição Tributaria';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VICMSSTRET"></a><code><b>DSC_VICMSSTRET</b> = 'Valor do ICMS Substituição Tributaria Retido';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VICMSSTCONS"></a><code><b>DSC_VICMSSTCONS</b> = 'Valor do ICMS Substituição Tributaria da UF de Consumo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VICMSSTDEST"></a><code><b>DSC_VICMSSTDEST</b> = 'Valor do ICMS Substituição Tributaria da UF de Destino';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VII"></a><code><b>DSC_VII</b> = 'Valor do Imposto de Importação';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VIN"></a><code><b>DSC_VIN</b> = 'Condição do VIN';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VIOF"></a><code><b>DSC_VIOF</b> = 'Valor do Imposto sobre operações Financeiras';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_vIPI"></a><code><b>DSC_vIPI</b> = 'Valor do Imposto sobre Produtos Industrializados';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VIRRF"></a><code><b>DSC_VIRRF</b> = 'Valor do Imposto de Renda Retido na Fonte';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VISS"></a><code><b>DSC_VISS</b> = 'Valor do Imposto sobre Serviço';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VISSQN"></a><code><b>DSC_VISSQN</b> = 'Valor do Imposto sobre Serviço de Qualquer Natureza';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VLIQ"></a><code><b>DSC_VLIQ</b> = 'Valor Líquido da Fatura';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VNF"></a><code><b>DSC_VNF</b> = 'Valor Total da NF-e';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VORIG"></a><code><b>DSC_VORIG</b> = 'Valor Original da Fatura';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VOUTRO"></a><code><b>DSC_VOUTRO</b> = 'Outras Despesas Acessórias';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VPIS"></a><code><b>DSC_VPIS</b> = 'Valor do PIS';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VPMC"></a><code><b>DSC_VPMC</b> = 'Preço Máximo ao Consumidor';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VPROD"></a><code><b>DSC_VPROD</b> = 'Valor Total Bruto dos Produtos ou Serviços';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VRETCOFINS"></a><code><b>DSC_VRETCOFINS</b> = 'Valor Retido do COFINS';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VRETCSLL"></a><code><b>DSC_VRETCSLL</b> = 'Valor Retido da CONTRIBUIÇÃO SOCIAL SOBRE O LUCRO LÍQUIDO';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VRETPIS"></a><code><b>DSC_VRETPIS</b> = 'Valor Retido do PIS';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VRETPREV"></a><code><b>DSC_VRETPREV</b> = 'Valor da Retenção da Previdência Social';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VSEG"></a><code><b>DSC_VSEG</b> = 'Valor Total do Seguro';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VSERV"></a><code><b>DSC_VSERV</b> = 'Valor total dos Serviços sob não incidência ou não Tributados pelo ICMS  / Valor do Serviço';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VST"></a><code><b>DSC_VST</b> = 'Valor TOTAL Icms substituição Tributária';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VUNCOM"></a><code><b>DSC_VUNCOM</b> = 'Valor Unitário de Comercialização';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VUNID"></a><code><b>DSC_VUNID</b> = 'Valor por Unidade Tributável';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VUNTRIB"></a><code><b>DSC_VUNTRIB</b> = 'Valor unitário de Tributação';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XAGENTE"></a><code><b>DSC_XAGENTE</b> = 'Nome do agente';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XBAIRRO"></a><code><b>DSC_XBAIRRO</b> = 'Bairro';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XCAMPO"></a><code><b>DSC_XCAMPO</b> = 'Identificação do Campo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XCONT"></a><code><b>DSC_XCONT</b> = 'Contrato';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XCOR"></a><code><b>DSC_XCOR</b> = 'Descrição da Cor';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XCPL"></a><code><b>DSC_XCPL</b> = 'Complemento (Endereço)';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XENDER"></a><code><b>DSC_XENDER</b> = 'Endereço Completo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XFANT"></a><code><b>DSC_XFANT</b> = 'Nome de Fantasia';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XLGR"></a><code><b>DSC_XLGR</b> = 'Logradouro';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XLOCDESEMB"></a><code><b>DSC_XLOCDESEMB</b> = 'Local de Desembaraço';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XLOCEMBARQ"></a><code><b>DSC_XLOCEMBARQ</b> = 'Local onde ocorrerá o embarque dos produtos';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XMUN"></a><code><b>DSC_XMUN</b> = 'Nome do Município';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XNEMP"></a><code><b>DSC_XNEMP</b> = 'Nota de Empenho';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XNOME"></a><code><b>DSC_XNOME</b> = 'Razão Social ou Nome';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XPAIS"></a><code><b>DSC_XPAIS</b> = 'Nome do País';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XPED"></a><code><b>DSC_XPED</b> = 'Pedido';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XPROD"></a><code><b>DSC_XPROD</b> = 'Descrição do Produto ou Serviço';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XTEXTO"></a><code><b>DSC_XTEXTO</b> = 'Conteúdo do Campo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XORGAO"></a><code><b>DSC_XORGAO</b> = 'Orgão emitente';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DigestValue"></a><code><b>DSC_DigestValue</b> = 'Digest Value';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_SignatureValue"></a><code><b>DSC_SignatureValue</b> = 'Signature Value';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_X509Certificate"></a><code><b>DSC_X509Certificate</b> = 'X509 Certificate';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XSERV"></a><code><b>DSC_XSERV</b> = 'Descrição do serviço';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_ANO"></a><code><b>DSC_ANO</b> = 'Ano';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CNPJ"></a><code><b>DSC_CNPJ</b> = 'CNPJ(MF)';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CPF"></a><code><b>DSC_CPF</b> = 'CPF';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NNFINI"></a><code><b>DSC_NNFINI</b> = 'Numero inicial';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NNFFIN"></a><code><b>DSC_NNFFIN</b> = 'Numero final';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XJUST"></a><code><b>DSC_XJUST</b> = 'Justificativa';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CHNFE"></a><code><b>DSC_CHNFE</b> = 'Chave da NFe';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NPROT"></a><code><b>DSC_NPROT</b> = 'Numero do protocolo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NREC"></a><code><b>DSC_NREC</b> = 'Numero do recibo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_IDLOTE"></a><code><b>DSC_IDLOTE</b> = 'Numero do Lote';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VERAPLIC"></a><code><b>DSC_VERAPLIC</b> = 'Versão do aplicativo';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NREGDPEC"></a><code><b>DSC_NREGDPEC</b> = 'Número de registro do DPEC';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DPEC_ID"></a><code><b>DSC_DPEC_ID</b> = 'Grupo de Identificação da TAG a ser assinada. DPEC + CNPJ do emissor.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_SAFRA"></a><code><b>DSC_SAFRA</b> = 'Identificação da safra';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_REF"></a><code><b>DSC_REF</b> = 'Mês e ano de referência';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_FORDIA"></a><code><b>DSC_FORDIA</b> = 'Grupo de Fornecimento diário de cana';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DIA"></a><code><b>DSC_DIA</b> = 'Dia';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_QTDE"></a><code><b>DSC_QTDE</b> = 'Quantidade';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_QTOTMES"></a><code><b>DSC_QTOTMES</b> = 'Quantidade Total do Mês';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_QTOTANT"></a><code><b>DSC_QTOTANT</b> = 'Quantidade Total Anterior';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TOTGER"></a><code><b>DSC_TOTGER</b> = 'Quantidade Total Geral';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DEDUC"></a><code><b>DSC_DEDUC</b> = 'Grupo de Deduções – Taxas e Contribuições';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XDED"></a><code><b>DSC_XDED</b> = 'Descrição da Dedução';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VDED"></a><code><b>DSC_VDED</b> = 'Valor da Dedução';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VFOR"></a><code><b>DSC_VFOR</b> = 'Valor dos Fornecimentos';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VTOTDED"></a><code><b>DSC_VTOTDED</b> = 'Valor Total da Dedução';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VLIQFOR"></a><code><b>DSC_VLIQFOR</b> = 'Valor Líquido dos Fornecimentos';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CHCTE"></a><code><b>DSC_CHCTE</b>    = 'Chave do CTe';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+CTE //</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TPCTe"></a><code><b>DSC_TPCTe</b>    = 'Tipo do Conhecimento';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_REFCTE"></a><code><b>DSC_REFCTE</b>   = 'Chave de acesso do CT-e referenciado';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CMUNEMI"></a><code><b>DSC_CMUNEMI</b>  = 'Código do Município onde o CT-e está sendo emitido';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_ORIGCALC"></a><code><b>DSC_ORIGCALC</b> = 'Município origem para efeito de cálculo do frete';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DESTCALC"></a><code><b>DSC_DESTCALC</b> = 'Município destino para efeito de cálculo do frete';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XOBS"></a><code><b>DSC_XOBS</b>     = 'Observações Gerais';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TOMA"></a><code><b>DSC_TOMA</b>     = 'Tomador do Serviço';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_INFNF"></a><code><b>DSC_INFNF</b>    = 'Informações da Nota Fiscal';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_INFNFE"></a><code><b>DSC_INFNFE</b>   = 'Informações da Nota Fiscal Eletrônica';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NDOC"></a><code><b>DSC_NDOC</b>     = 'Número da Nota Fiscal';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PESO"></a><code><b>DSC_PESO</b>     = 'Peso';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TPDOC"></a><code><b>DSC_TPDOC</b>    = 'Tipo de documento originário';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_OUTROS"></a><code><b>DSC_OUTROS</b>   = 'Descrição';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VTPREST"></a><code><b>DSC_VTPREST</b>  = 'Valor total da prestação do serviço';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VREC"></a><code><b>DSC_VREC</b>     = 'Valor a Receber';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XNOMEC"></a><code><b>DSC_XNOMEC</b>   = 'Nome do Componente';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VCOMP"></a><code><b>DSC_VCOMP</b>    = 'Valor do Componente';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VCRED"></a><code><b>DSC_VCRED</b>    = 'Valor do Crédito outorgado/presumido';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_RESPSEG"></a><code><b>DSC_RESPSEG</b>  = 'Responsável pelo Seguro';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_XSEG"></a><code><b>DSC_XSEG</b>     = 'Nome da Seguradora';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NAPOL"></a><code><b>DSC_NAPOL</b>    = 'Número da Apólice';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_NAVER"></a><code><b>DSC_NAVER</b>    = 'Número da Averbação';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VMERC"></a><code><b>DSC_VMERC</b>    = 'Valor da mercadoria para efeito de averbação';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_INFSEG"></a><code><b>DSC_INFSEG</b>   = 'Informações de seguro da carga';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_RNTRC"></a><code><b>DSC_RNTRC</b>    = 'Registro Nacional de Transportadores Rodoviários de Carga';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DPREV"></a><code><b>DSC_DPREV</b>    = 'Data prevista de entrega';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_LOTA"></a><code><b>DSC_LOTA</b>     = 'Indicador de lotação';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CINT"></a><code><b>DSC_CINT</b>     = 'Código interno do emitente';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_LACR"></a><code><b>DSC_LACR</b>     = 'Grupo de lacres';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TPPROP"></a><code><b>DSC_TPPROP</b>   = 'Tipo de Proprietário';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_INFOUTRO"></a><code><b>DSC_INFOUTRO</b> = 'informações dos demais documentos';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VDOC"></a><code><b>DSC_VDOC</b>     = 'Valor do documento';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_MODAL"></a><code><b>DSC_MODAL</b>    = 'Tipo de Modal';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TPSERV"></a><code><b>DSC_TPSERV</b>   = 'Tipo do Serviço';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_RETIRA"></a><code><b>DSC_RETIRA</b>   = 'Recebedor retira na Filial?';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_PRED"></a><code><b>DSC_PRED</b>     = 'Produto predominante';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_OUTCAT"></a><code><b>DSC_OUTCAT</b>   = 'Outras características da carga';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_VTMERC"></a><code><b>DSC_VTMERC</b>   = 'Valor total da mercadoria';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_INFQ"></a><code><b>DSC_INFQ</b>     = 'Informações de quantidades da Carga';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_CUNID"></a><code><b>DSC_CUNID</b>    = 'Código da unidade de medida';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_TPMED"></a><code><b>DSC_TPMED</b>    = 'Tipo da Medida';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_QTD"></a><code><b>DSC_QTD</b>      = 'Quantidade';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DSC_DRET"></a><code><b>DSC_DRET</b>     = 'Detalhes da Retirada';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:59</em>
+</span>
+</body></html>

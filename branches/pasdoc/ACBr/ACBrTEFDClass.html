@@ -1,0 +1,484 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="PasDoc 0.12.1">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Projeto ACBr: ACBrTEFDClass</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit ACBrTEFDClass</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Descrição</a></td><td><a class="section"  href="#%40Uses">Uses</a></td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objetos e Registros</a></td><td>Funções e Procedimentos</td><td><a class="section"  href="#%40Types">Tipos</a></td><td><a class="section"  href="#%40Constants">Constantes</a></td><td>Variáveis</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Descrição</h2>
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Reduz warnings no D7: &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Delphi 6 ou inferior tem suporte apenas por <a class="normal"  href="OpenSSL.html">OpenSSL</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Definições para o Quick Report &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; Descomente a linha abaixo caso o Quick Report tenha suporte a PDF {$DEFINE QReport_PDF}</p>
+<a name="%40Uses"></a><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Classes</li><li>SysUtils</li><li>contnrs</li><li>Forms</li><li>Dialogs</li><li>Controls</li></ul><h2 class="overview">Visão Geral</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objetos e Registros</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Nome</th>
+<th class="itemdesc">Descrição</th>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.EACBrTEFDErro.html"><code>EACBrTEFDErro</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.EACBrTEFDGPNaoResponde.html"><code>EACBrTEFDGPNaoResponde</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.EACBrTEFDGPNaoInicializado.html"><code>EACBrTEFDGPNaoInicializado</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.EACBrTEFDSTSInvalido.html"><code>EACBrTEFDSTSInvalido</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.EACBrTEFDArquivo.html"><code>EACBrTEFDArquivo</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.EACBrTEFDECF.html"><code>EACBrTEFDECF</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.TACBrTEFDLinhaInformacao.html"><code>TACBrTEFDLinhaInformacao</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.TACBrTEFDLinha.html"><code>TACBrTEFDLinha</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.TACBrTEFDArquivo.html"><code>TACBrTEFDArquivo</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.TACBrTEFDReq.html"><code>TACBrTEFDReq</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.TACBrTEFDRespParcela.html"><code>TACBrTEFDRespParcela</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.TACBrTEFDRespParcelas.html"><code>TACBrTEFDRespParcelas</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.TACBrTEFDResp.html"><code>TACBrTEFDResp</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.TACBrTEFDRespTXT.html"><code>TACBrTEFDRespTXT</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.TACBrTEFDRespostasPendentes.html"><code>TACBrTEFDRespostasPendentes</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.TACBrTEFDClass.html"><code>TACBrTEFDClass</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.TACBrTEFDClassList.html"><code>TACBrTEFDClassList</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Classe&nbsp;<a class="bold"  href="ACBrTEFDClass.TACBrTEFDClassTXT.html"><code>TACBrTEFDClassTXT</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Tipos</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDTipo">TACBrTEFDTipo</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDReqEstado">TACBrTEFDReqEstado</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDRespEstado">TACBrTEFDRespEstado</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDAguardaRespEvent">TACBrTEFDAguardaRespEvent</a></b> = procedure( Arquivo: String; SegundosTimeOut : Integer; var Interromper : Boolean) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDOperacaoMensagem">TACBrTEFDOperacaoMensagem</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDAntesFinalizarReq">TACBrTEFDAntesFinalizarReq</a></b> = procedure( Req : <a   href="ACBrTEFDClass.TACBrTEFDReq.html">TACBrTEFDReq</a> ) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDMudaEstadoReq">TACBrTEFDMudaEstadoReq</a></b> = procedure( EstadoReq : <a   href="ACBrTEFDClass.html#TACBrTEFDReqEstado">TACBrTEFDReqEstado</a> ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDMudaEstadoResp">TACBrTEFDMudaEstadoResp</a></b> = procedure( EstadoResp : <a   href="ACBrTEFDClass.html#TACBrTEFDRespEstado">TACBrTEFDRespEstado</a> ) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDProcessarTransacoesPendentes">TACBrTEFDProcessarTransacoesPendentes</a></b> = procedure( RespostasPendentes : <a   href="ACBrTEFDClass.TACBrTEFDRespostasPendentes.html">TACBrTEFDRespostasPendentes</a> ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDAntesCancelarTransacao">TACBrTEFDAntesCancelarTransacao</a></b> = procedure( RespostaPendente : <a   href="ACBrTEFDClass.TACBrTEFDResp.html">TACBrTEFDResp</a> ) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDExibeMsg">TACBrTEFDExibeMsg</a></b> = procedure( Operacao : <a   href="ACBrTEFDClass.html#TACBrTEFDOperacaoMensagem">TACBrTEFDOperacaoMensagem</a>; Mensagem : String; var AModalResult : TModalResult ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDOperacaoECF">TACBrTEFDOperacaoECF</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDBloqueiaMouseTeclado">TACBrTEFDBloqueiaMouseTeclado</a></b> = procedure( Bloqueia : Boolean; var Tratado : Boolean ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDExecutaAcao">TACBrTEFDExecutaAcao</a></b> = procedure( var Tratado : Boolean ) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDComandaECF">TACBrTEFDComandaECF</a></b> = procedure( Operacao : <a   href="ACBrTEFDClass.html#TACBrTEFDOperacaoECF">TACBrTEFDOperacaoECF</a>; Resp : <a   href="ACBrTEFDClass.TACBrTEFDResp.html">TACBrTEFDResp</a>; var RetornoECF : Integer ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDComandaECFPagamento">TACBrTEFDComandaECFPagamento</a></b> = procedure( IndiceECF : String; Valor : Double; var RetornoECF : Integer ) of object ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDComandaECFAbreVinculado">TACBrTEFDComandaECFAbreVinculado</a></b> = procedure( COO, IndiceECF : String; Valor : Double; var RetornoECF : Integer ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDTipoRelatorio">TACBrTEFDTipoRelatorio</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDComandaECFImprimeVia">TACBrTEFDComandaECFImprimeVia</a></b> = procedure( TipoRelatorio : <a   href="ACBrTEFDClass.html#TACBrTEFDTipoRelatorio">TACBrTEFDTipoRelatorio</a>; Via : Integer; ImagemComprovante : TStringList; var RetornoECF : Integer ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDInfoECF">TACBrTEFDInfoECF</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDObterInfoECF">TACBrTEFDObterInfoECF</a></b> = procedure( Operacao : <a   href="ACBrTEFDClass.html#TACBrTEFDInfoECF">TACBrTEFDInfoECF</a>; var RetornoECF : String ) of object ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#TACBrTEFDArrayGrupoRespostasPendentes">TACBrTEFDArrayGrupoRespostasPendentes</a></b> = array of record
+      IndiceFPG_ECF  : String ;
+      OrdemPagamento : Integer ;
+      Total  : Double ;
+   end ;</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constantes</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#CACBrTEFD_Versao">CACBrTEFD_Versao</a></b>      = '1.30' ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#CACBrTEFD_EsperaSTS">CACBrTEFD_EsperaSTS</a></b>   = 7 ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#CACBrTEFD_EsperaSleep">CACBrTEFD_EsperaSleep</a></b> = 250 ;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="ACBrTEFDClass.html#CACBrTEFD_NumVias">CACBrTEFD_NumVias</a></b>     = 2 ;</code></td>
+</tr>
+</table>
+<h2 class="description">Descrição</h2>
+<h3 class="detail">Tipos</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDTipo"></a><code><b>TACBrTEFDTipo</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Tipos de TEF Existente. Cado novo Tipo de Tef precisa de uma NOVA Classe, filha de <a class="normal"  href="ACBrTEFDClass.TACBrTEFDClass.html">TACBrTEFDClass</a></p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+gpNenhum: &nbsp;</li>
+<li>
+gpTefDial: &nbsp;</li>
+<li>
+gpTefDisc: &nbsp;</li>
+<li>
+gpHiperTef: &nbsp;</li>
+<li>
+gpCliSiTef: &nbsp;</li>
+<li>
+gpTefGpu: &nbsp;</li>
+<li>
+gpVeSPague: &nbsp;</li>
+<li>
+gpBanese: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDReqEstado"></a><code><b>TACBrTEFDReqEstado</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+, gpGoodCard, gpFoxWin</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+reqNenhum: &nbsp;</li>
+<li>
+reqIniciando: Nennhuma Requisição em andamento</li>
+<li>
+reqCriandoArquivo: Iniciando uma nova Requisicao</li>
+<li>
+reqAguardandoResposta: Arquivo Temporário de requisição está sendo criado</li>
+<li>
+reqConferindoResposta: Requisição Escrita, Aguardando Resposta</li>
+<li>
+reqFinalizada: Verifica se o STS é válido</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDRespEstado"></a><code><b>TACBrTEFDRespEstado</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+respNenhum: &nbsp;</li>
+<li>
+respAguardandoResposta: Nennhuma Resposta em andamento</li>
+<li>
+respProcessando: Requisição Escrita, Aguardando Resposta</li>
+<li>
+respConcluida: Processando a Resposta</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDAguardaRespEvent"></a><code><b>TACBrTEFDAguardaRespEvent</b> = procedure( Arquivo: String; SegundosTimeOut : Integer; var Interromper : Boolean) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDOperacaoMensagem"></a><code><b>TACBrTEFDOperacaoMensagem</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+opmOK: &nbsp;</li>
+<li>
+opmYesNo: &nbsp;</li>
+<li>
+opmExibirMsgOperador: &nbsp;</li>
+<li>
+opmRemoverMsgOperador: &nbsp;</li>
+<li>
+opmExibirMsgCliente: &nbsp;</li>
+<li>
+opmRemoverMsgCliente: &nbsp;</li>
+<li>
+opmDestaqueVia: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDAntesFinalizarReq"></a><code><b>TACBrTEFDAntesFinalizarReq</b> = procedure( Req : <a   href="ACBrTEFDClass.TACBrTEFDReq.html">TACBrTEFDReq</a> ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDMudaEstadoReq"></a><code><b>TACBrTEFDMudaEstadoReq</b> = procedure( EstadoReq : <a   href="ACBrTEFDClass.html#TACBrTEFDReqEstado">TACBrTEFDReqEstado</a> ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDMudaEstadoResp"></a><code><b>TACBrTEFDMudaEstadoResp</b> = procedure( EstadoResp : <a   href="ACBrTEFDClass.html#TACBrTEFDRespEstado">TACBrTEFDRespEstado</a> ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDProcessarTransacoesPendentes"></a><code><b>TACBrTEFDProcessarTransacoesPendentes</b> = procedure( RespostasPendentes : <a   href="ACBrTEFDClass.TACBrTEFDRespostasPendentes.html">TACBrTEFDRespostasPendentes</a> ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDAntesCancelarTransacao"></a><code><b>TACBrTEFDAntesCancelarTransacao</b> = procedure( RespostaPendente : <a   href="ACBrTEFDClass.TACBrTEFDResp.html">TACBrTEFDResp</a> ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDExibeMsg"></a><code><b>TACBrTEFDExibeMsg</b> = procedure( Operacao : <a   href="ACBrTEFDClass.html#TACBrTEFDOperacaoMensagem">TACBrTEFDOperacaoMensagem</a>; Mensagem : String; var AModalResult : TModalResult ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDOperacaoECF"></a><code><b>TACBrTEFDOperacaoECF</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+opeAbreGerencial: &nbsp;</li>
+<li>
+opeFechaGerencial: &nbsp;</li>
+<li>
+opePulaLinhas: &nbsp;</li>
+<li>
+opeSubTotalizaCupom: &nbsp;</li>
+<li>
+opeFechaCupom: &nbsp;</li>
+<li>
+opeFechaVinculado: &nbsp;</li>
+<li>
+opeCancelaCupom: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDBloqueiaMouseTeclado"></a><code><b>TACBrTEFDBloqueiaMouseTeclado</b> = procedure( Bloqueia : Boolean; var Tratado : Boolean ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDExecutaAcao"></a><code><b>TACBrTEFDExecutaAcao</b> = procedure( var Tratado : Boolean ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDComandaECF"></a><code><b>TACBrTEFDComandaECF</b> = procedure( Operacao : <a   href="ACBrTEFDClass.html#TACBrTEFDOperacaoECF">TACBrTEFDOperacaoECF</a>; Resp : <a   href="ACBrTEFDClass.TACBrTEFDResp.html">TACBrTEFDResp</a>; var RetornoECF : Integer ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDComandaECFPagamento"></a><code><b>TACBrTEFDComandaECFPagamento</b> = procedure( IndiceECF : String; Valor : Double; var RetornoECF : Integer ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+-1 - Não tratado, 0 - Erro na Execucao, 1 - Sucesso</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDComandaECFAbreVinculado"></a><code><b>TACBrTEFDComandaECFAbreVinculado</b> = procedure( COO, IndiceECF : String; Valor : Double; var RetornoECF : Integer ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+-1 - Não tratado, 0 - Erro na Execucao, 1 - Sucesso</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDTipoRelatorio"></a><code><b>TACBrTEFDTipoRelatorio</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+-1 - Não tratado, 0 - Erro na Execucao, 1 - Sucesso</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+trGerencial: &nbsp;</li>
+<li>
+trVinculado: &nbsp;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDComandaECFImprimeVia"></a><code><b>TACBrTEFDComandaECFImprimeVia</b> = procedure( TipoRelatorio : <a   href="ACBrTEFDClass.html#TACBrTEFDTipoRelatorio">TACBrTEFDTipoRelatorio</a>; Via : Integer; ImagemComprovante : TStringList; var RetornoECF : Integer ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDInfoECF"></a><code><b>TACBrTEFDInfoECF</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+-1 - Não tratado, 0 - Erro na Execucao, 1 - Sucesso</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ineSubTotal: &nbsp;</li>
+<li>
+ineEstadoECF: Valor do Saldo restante &quot;A Pagar&quot; do Cupom</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDObterInfoECF"></a><code><b>TACBrTEFDObterInfoECF</b> = procedure( Operacao : <a   href="ACBrTEFDClass.html#TACBrTEFDInfoECF">TACBrTEFDInfoECF</a>; var RetornoECF : String ) of object ;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Estado do ECF &quot;L&quot; Livre, &quot;V&quot; Em Venda de Itens, &quot;P&quot; Em Pagamento, &quot;C&quot; CDC ou Vinculado &quot;G&quot; Relatório Gerencial &quot;N&quot; Não Fiscal (em qq fase, pois é dificil detectar a fase) &quot;O&quot; Outro</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TACBrTEFDArrayGrupoRespostasPendentes"></a><code><b>TACBrTEFDArrayGrupoRespostasPendentes</b> = array of record
+      IndiceFPG_ECF  : String ;
+      OrdemPagamento : Integer ;
+      Total  : Double ;
+   end ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constantes</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CACBrTEFD_Versao"></a><code><b>CACBrTEFD_Versao</b>      = '1.30' ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CACBrTEFD_EsperaSTS"></a><code><b>CACBrTEFD_EsperaSTS</b>   = 7 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CACBrTEFD_EsperaSleep"></a><code><b>CACBrTEFD_EsperaSleep</b> = 250 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="CACBrTEFD_NumVias"></a><code><b>CACBrTEFD_NumVias</b>     = 2 ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Gerado por <a  target="_parent" href="http://pasdoc.sourceforge.net/">PasDoc 0.12.1</a> as 2011-05-04 10:20:54</em>
+</span>
+</body></html>
